@@ -69,19 +69,19 @@ const sizeConstraintSet = new aws.wafregional.SizeConstraintSet("size_constraint
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSet">SizeConstraintSet</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSetArgs">SizeConstraintSetArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSet">SizeConstraintSet</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSetArgs">SizeConstraintSetArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SizeConstraintSet</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>name=None<span class="p">, </span>size_constraints=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/wafregional/#SizeConstraintSet">SizeConstraintSet</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>name=None<span class="p">, </span>size_constraints=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSizeConstraintSet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSetArgs">SizeConstraintSetArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSet">SizeConstraintSet</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSet">NewSizeConstraintSet</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSetArgs">SizeConstraintSetArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSet">SizeConstraintSet</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSet.html">SizeConstraintSet</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSetArgs.html">SizeConstraintSetArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSet.html">SizeConstraintSet</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSetArgs.html">SizeConstraintSetArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -247,7 +247,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -256,7 +261,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Size<wbr>Constraints</span>
+        <span id="sizeconstraints~csharp">
+<span class="nx">
+Size<wbr>Constraints
+<a class="anchorjs-link " href="#sizeconstraints~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">List&lt;Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint<wbr>Args&gt;</a></span>
     </dt>
@@ -272,7 +282,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -281,7 +296,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Size<wbr>Constraints</span>
+        <span id="sizeconstraints~go">
+<span class="nx">
+Size<wbr>Constraints
+<a class="anchorjs-link " href="#sizeconstraints~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">[]Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint</a></span>
     </dt>
@@ -297,7 +317,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -306,7 +331,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>size<wbr>Constraints</span>
+        <span id="sizeconstraints~nodejs">
+<span class="nx">
+size<wbr>Constraints
+<a class="anchorjs-link " href="#sizeconstraints~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint[]</a></span>
     </dt>
@@ -322,7 +352,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -331,7 +366,12 @@ The SizeConstraintSet resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-optional"
             title="Optional">
-        <span>size_<wbr>constraints</span>
+        <span id="size_constraints~python">
+<span class="nx">
+size_<wbr>constraints
+<a class="anchorjs-link " href="#size_constraints~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">List[Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint]</a></span>
     </dt>
@@ -358,7 +398,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -366,7 +411,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -381,7 +431,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -389,7 +444,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -404,7 +464,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -412,7 +477,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -427,7 +497,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -435,7 +510,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -456,7 +536,7 @@ Get an existing SizeConstraintSet resource's state with the given name, ID, and 
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSetState">SizeConstraintSetState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSet">SizeConstraintSet</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSetState">SizeConstraintSetState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/wafregional/#SizeConstraintSet">SizeConstraintSet</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -464,11 +544,11 @@ Get an existing SizeConstraintSet resource's state with the given name, ID, and 
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSizeConstraintSet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSetState">SizeConstraintSetState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSet">SizeConstraintSet</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSizeConstraintSet<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSetState">SizeConstraintSetState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/wafregional?tab=doc#SizeConstraintSet">SizeConstraintSet</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSet.html">SizeConstraintSet</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSetState.html">SizeConstraintSetState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSet.html">SizeConstraintSet</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.WafRegional.SizeConstraintSetState.html">SizeConstraintSetState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -576,7 +656,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -584,7 +669,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -593,7 +683,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Size<wbr>Constraints</span>
+        <span id="state_sizeconstraints~csharp">
+<span class="nx">
+Size<wbr>Constraints
+<a class="anchorjs-link " href="#state_sizeconstraints~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">List&lt;Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint<wbr>Args&gt;</a></span>
     </dt>
@@ -609,7 +704,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -617,7 +717,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -626,7 +731,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Size<wbr>Constraints</span>
+        <span id="state_sizeconstraints~go">
+<span class="nx">
+Size<wbr>Constraints
+<a class="anchorjs-link " href="#state_sizeconstraints~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">[]Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint</a></span>
     </dt>
@@ -642,7 +752,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -650,7 +765,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -659,7 +779,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>size<wbr>Constraints</span>
+        <span id="state_sizeconstraints~nodejs">
+<span class="nx">
+size<wbr>Constraints
+<a class="anchorjs-link " href="#state_sizeconstraints~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint[]</a></span>
     </dt>
@@ -675,7 +800,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -683,7 +813,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -692,7 +827,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>size_<wbr>constraints</span>
+        <span id="state_size_constraints~python">
+<span class="nx">
+size_<wbr>constraints
+<a class="anchorjs-link " href="#state_size_constraints~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraint">List[Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint]</a></span>
     </dt>
@@ -734,7 +874,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Comparison<wbr>Operator</span>
+        <span id="comparisonoperator~csharp">
+<span class="nx">
+Comparison<wbr>Operator
+<a class="anchorjs-link " href="#comparisonoperator~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -745,7 +890,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>Field<wbr>To<wbr>Match</span>
+        <span id="fieldtomatch~csharp">
+<span class="nx">
+Field<wbr>To<wbr>Match
+<a class="anchorjs-link " href="#fieldtomatch~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraintfieldtomatch">Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint<wbr>Field<wbr>To<wbr>Match<wbr>Args</a></span>
     </dt>
@@ -754,7 +904,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>Size</span>
+        <span id="size~csharp">
+<span class="nx">
+Size
+<a class="anchorjs-link " href="#size~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -764,7 +919,12 @@ Valid values are between 0 - 21474836480 bytes (0 - 20 GB).
 
     <dt class="property-required"
             title="Required">
-        <span>Text<wbr>Transformation</span>
+        <span id="texttransformation~csharp">
+<span class="nx">
+Text<wbr>Transformation
+<a class="anchorjs-link " href="#texttransformation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -785,7 +945,12 @@ for all supported values.
 
     <dt class="property-required"
             title="Required">
-        <span>Comparison<wbr>Operator</span>
+        <span id="comparisonoperator~go">
+<span class="nx">
+Comparison<wbr>Operator
+<a class="anchorjs-link " href="#comparisonoperator~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -796,7 +961,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>Field<wbr>To<wbr>Match</span>
+        <span id="fieldtomatch~go">
+<span class="nx">
+Field<wbr>To<wbr>Match
+<a class="anchorjs-link " href="#fieldtomatch~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraintfieldtomatch">Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint<wbr>Field<wbr>To<wbr>Match</a></span>
     </dt>
@@ -805,7 +975,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>Size</span>
+        <span id="size~go">
+<span class="nx">
+Size
+<a class="anchorjs-link " href="#size~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -815,7 +990,12 @@ Valid values are between 0 - 21474836480 bytes (0 - 20 GB).
 
     <dt class="property-required"
             title="Required">
-        <span>Text<wbr>Transformation</span>
+        <span id="texttransformation~go">
+<span class="nx">
+Text<wbr>Transformation
+<a class="anchorjs-link " href="#texttransformation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -836,7 +1016,12 @@ for all supported values.
 
     <dt class="property-required"
             title="Required">
-        <span>comparison<wbr>Operator</span>
+        <span id="comparisonoperator~nodejs">
+<span class="nx">
+comparison<wbr>Operator
+<a class="anchorjs-link " href="#comparisonoperator~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -847,7 +1032,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>field<wbr>To<wbr>Match</span>
+        <span id="fieldtomatch~nodejs">
+<span class="nx">
+field<wbr>To<wbr>Match
+<a class="anchorjs-link " href="#fieldtomatch~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraintfieldtomatch">Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint<wbr>Field<wbr>To<wbr>Match</a></span>
     </dt>
@@ -856,7 +1046,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>size</span>
+        <span id="size~nodejs">
+<span class="nx">
+size
+<a class="anchorjs-link " href="#size~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -866,7 +1061,12 @@ Valid values are between 0 - 21474836480 bytes (0 - 20 GB).
 
     <dt class="property-required"
             title="Required">
-        <span>text<wbr>Transformation</span>
+        <span id="texttransformation~nodejs">
+<span class="nx">
+text<wbr>Transformation
+<a class="anchorjs-link " href="#texttransformation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -887,7 +1087,12 @@ for all supported values.
 
     <dt class="property-required"
             title="Required">
-        <span>comparison_<wbr>operator</span>
+        <span id="comparison_operator~python">
+<span class="nx">
+comparison_<wbr>operator
+<a class="anchorjs-link " href="#comparison_operator~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -898,7 +1103,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>field<wbr>To<wbr>Match</span>
+        <span id="fieldtomatch~python">
+<span class="nx">
+field<wbr>To<wbr>Match
+<a class="anchorjs-link " href="#fieldtomatch~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#sizeconstraintsetsizeconstraintfieldtomatch">Dict[Size<wbr>Constraint<wbr>Set<wbr>Size<wbr>Constraint<wbr>Field<wbr>To<wbr>Match]</a></span>
     </dt>
@@ -907,7 +1117,12 @@ See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_SizeConstraint
 
     <dt class="property-required"
             title="Required">
-        <span>size</span>
+        <span id="size~python">
+<span class="nx">
+size
+<a class="anchorjs-link " href="#size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -917,7 +1132,12 @@ Valid values are between 0 - 21474836480 bytes (0 - 20 GB).
 
     <dt class="property-required"
             title="Required">
-        <span>text<wbr>Transformation</span>
+        <span id="texttransformation~python">
+<span class="nx">
+text<wbr>Transformation
+<a class="anchorjs-link " href="#texttransformation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -956,7 +1176,12 @@ for all supported values.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -968,7 +1193,12 @@ for all supported values.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data</span>
+        <span id="data~csharp">
+<span class="nx">
+Data
+<a class="anchorjs-link " href="#data~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -985,7 +1215,12 @@ If `type` is any other value, omit this field.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -997,7 +1232,12 @@ for all supported values.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data</span>
+        <span id="data~go">
+<span class="nx">
+Data
+<a class="anchorjs-link " href="#data~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1014,7 +1254,12 @@ If `type` is any other value, omit this field.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1026,7 +1271,12 @@ for all supported values.
 
     <dt class="property-optional"
             title="Optional">
-        <span>data</span>
+        <span id="data~nodejs">
+<span class="nx">
+data
+<a class="anchorjs-link " href="#data~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1043,7 +1293,12 @@ If `type` is any other value, omit this field.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1055,7 +1310,12 @@ for all supported values.
 
     <dt class="property-optional"
             title="Optional">
-        <span>data</span>
+        <span id="data~python">
+<span class="nx">
+data
+<a class="anchorjs-link " href="#data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

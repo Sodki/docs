@@ -66,19 +66,19 @@ const example = new aws.macie.S3BucketAssociation("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociation">S3BucketAssociation</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociationArgs">S3BucketAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociation">S3BucketAssociation</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociationArgs">S3BucketAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">S3BucketAssociation</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>bucket_name=None<span class="p">, </span>classification_type=None<span class="p">, </span>member_account_id=None<span class="p">, </span>prefix=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/macie/#S3BucketAssociation">S3BucketAssociation</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>bucket_name=None<span class="p">, </span>classification_type=None<span class="p">, </span>member_account_id=None<span class="p">, </span>prefix=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewS3BucketAssociation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociationArgs">S3BucketAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociation">S3BucketAssociation</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociation">NewS3BucketAssociation</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociationArgs">S3BucketAssociationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociation">S3BucketAssociation</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociation.html">S3BucketAssociation</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociationArgs.html">S3BucketAssociationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociation.html">S3BucketAssociation</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociationArgs.html">S3BucketAssociationArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -244,7 +244,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Name</span>
+        <span id="bucketname~csharp">
+<span class="nx">
+Bucket<wbr>Name
+<a class="anchorjs-link " href="#bucketname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -253,7 +258,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Classification<wbr>Type</span>
+        <span id="classificationtype~csharp">
+<span class="nx">
+Classification<wbr>Type
+<a class="anchorjs-link " href="#classificationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">S3Bucket<wbr>Association<wbr>Classification<wbr>Type<wbr>Args</a></span>
     </dt>
@@ -262,7 +272,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Member<wbr>Account<wbr>Id</span>
+        <span id="memberaccountid~csharp">
+<span class="nx">
+Member<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#memberaccountid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -271,7 +286,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -287,7 +307,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Name</span>
+        <span id="bucketname~go">
+<span class="nx">
+Bucket<wbr>Name
+<a class="anchorjs-link " href="#bucketname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -296,7 +321,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Classification<wbr>Type</span>
+        <span id="classificationtype~go">
+<span class="nx">
+Classification<wbr>Type
+<a class="anchorjs-link " href="#classificationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">S3Bucket<wbr>Association<wbr>Classification<wbr>Type</a></span>
     </dt>
@@ -305,7 +335,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Member<wbr>Account<wbr>Id</span>
+        <span id="memberaccountid~go">
+<span class="nx">
+Member<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#memberaccountid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -314,7 +349,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -330,7 +370,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Name</span>
+        <span id="bucketname~nodejs">
+<span class="nx">
+bucket<wbr>Name
+<a class="anchorjs-link " href="#bucketname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -339,7 +384,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>classification<wbr>Type</span>
+        <span id="classificationtype~nodejs">
+<span class="nx">
+classification<wbr>Type
+<a class="anchorjs-link " href="#classificationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">S3Bucket<wbr>Association<wbr>Classification<wbr>Type</a></span>
     </dt>
@@ -348,7 +398,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>member<wbr>Account<wbr>Id</span>
+        <span id="memberaccountid~nodejs">
+<span class="nx">
+member<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#memberaccountid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -357,7 +412,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -373,7 +433,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-required"
             title="Required">
-        <span>bucket_<wbr>name</span>
+        <span id="bucket_name~python">
+<span class="nx">
+bucket_<wbr>name
+<a class="anchorjs-link " href="#bucket_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -382,7 +447,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>classification_<wbr>type</span>
+        <span id="classification_type~python">
+<span class="nx">
+classification_<wbr>type
+<a class="anchorjs-link " href="#classification_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">Dict[S3Bucket<wbr>Association<wbr>Classification<wbr>Type]</a></span>
     </dt>
@@ -391,7 +461,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>member_<wbr>account_<wbr>id</span>
+        <span id="member_account_id~python">
+<span class="nx">
+member_<wbr>account_<wbr>id
+<a class="anchorjs-link " href="#member_account_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -400,7 +475,12 @@ The S3BucketAssociation resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -427,7 +507,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -442,7 +527,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -457,7 +547,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -472,7 +567,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -493,7 +593,7 @@ Get an existing S3BucketAssociation resource's state with the given name, ID, an
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociationState">S3BucketAssociationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociation">S3BucketAssociation</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociationState">S3BucketAssociationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/macie/#S3BucketAssociation">S3BucketAssociation</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -501,11 +601,11 @@ Get an existing S3BucketAssociation resource's state with the given name, ID, an
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetS3BucketAssociation<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociationState">S3BucketAssociationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociation">S3BucketAssociation</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetS3BucketAssociation<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociationState">S3BucketAssociationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/macie?tab=doc#S3BucketAssociation">S3BucketAssociation</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociation.html">S3BucketAssociation</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociationState.html">S3BucketAssociationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociation.html">S3BucketAssociation</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Macie.S3BucketAssociationState.html">S3BucketAssociationState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -613,7 +713,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket<wbr>Name</span>
+        <span id="state_bucketname~csharp">
+<span class="nx">
+Bucket<wbr>Name
+<a class="anchorjs-link " href="#state_bucketname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -622,7 +727,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Classification<wbr>Type</span>
+        <span id="state_classificationtype~csharp">
+<span class="nx">
+Classification<wbr>Type
+<a class="anchorjs-link " href="#state_classificationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">S3Bucket<wbr>Association<wbr>Classification<wbr>Type<wbr>Args</a></span>
     </dt>
@@ -631,7 +741,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Member<wbr>Account<wbr>Id</span>
+        <span id="state_memberaccountid~csharp">
+<span class="nx">
+Member<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_memberaccountid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -640,7 +755,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="state_prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#state_prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -656,7 +776,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket<wbr>Name</span>
+        <span id="state_bucketname~go">
+<span class="nx">
+Bucket<wbr>Name
+<a class="anchorjs-link " href="#state_bucketname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -665,7 +790,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Classification<wbr>Type</span>
+        <span id="state_classificationtype~go">
+<span class="nx">
+Classification<wbr>Type
+<a class="anchorjs-link " href="#state_classificationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">S3Bucket<wbr>Association<wbr>Classification<wbr>Type</a></span>
     </dt>
@@ -674,7 +804,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Member<wbr>Account<wbr>Id</span>
+        <span id="state_memberaccountid~go">
+<span class="nx">
+Member<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_memberaccountid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -683,7 +818,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="state_prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#state_prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -699,7 +839,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket<wbr>Name</span>
+        <span id="state_bucketname~nodejs">
+<span class="nx">
+bucket<wbr>Name
+<a class="anchorjs-link " href="#state_bucketname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -708,7 +853,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>classification<wbr>Type</span>
+        <span id="state_classificationtype~nodejs">
+<span class="nx">
+classification<wbr>Type
+<a class="anchorjs-link " href="#state_classificationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">S3Bucket<wbr>Association<wbr>Classification<wbr>Type</a></span>
     </dt>
@@ -717,7 +867,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>member<wbr>Account<wbr>Id</span>
+        <span id="state_memberaccountid~nodejs">
+<span class="nx">
+member<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_memberaccountid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -726,7 +881,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="state_prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#state_prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -742,7 +902,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket_<wbr>name</span>
+        <span id="state_bucket_name~python">
+<span class="nx">
+bucket_<wbr>name
+<a class="anchorjs-link " href="#state_bucket_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -751,7 +916,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>classification_<wbr>type</span>
+        <span id="state_classification_type~python">
+<span class="nx">
+classification_<wbr>type
+<a class="anchorjs-link " href="#state_classification_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#s3bucketassociationclassificationtype">Dict[S3Bucket<wbr>Association<wbr>Classification<wbr>Type]</a></span>
     </dt>
@@ -760,7 +930,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>member_<wbr>account_<wbr>id</span>
+        <span id="state_member_account_id~python">
+<span class="nx">
+member_<wbr>account_<wbr>id
+<a class="anchorjs-link " href="#state_member_account_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -769,7 +944,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="state_prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#state_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -811,7 +991,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Continuous</span>
+        <span id="continuous~csharp">
+<span class="nx">
+Continuous
+<a class="anchorjs-link " href="#continuous~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -821,7 +1006,12 @@ The only valid value is the default value, `FULL`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>One<wbr>Time</span>
+        <span id="onetime~csharp">
+<span class="nx">
+One<wbr>Time
+<a class="anchorjs-link " href="#onetime~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -838,7 +1028,12 @@ Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie onl
 
     <dt class="property-optional"
             title="Optional">
-        <span>Continuous</span>
+        <span id="continuous~go">
+<span class="nx">
+Continuous
+<a class="anchorjs-link " href="#continuous~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -848,7 +1043,12 @@ The only valid value is the default value, `FULL`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>One<wbr>Time</span>
+        <span id="onetime~go">
+<span class="nx">
+One<wbr>Time
+<a class="anchorjs-link " href="#onetime~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -865,7 +1065,12 @@ Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie onl
 
     <dt class="property-optional"
             title="Optional">
-        <span>continuous</span>
+        <span id="continuous~nodejs">
+<span class="nx">
+continuous
+<a class="anchorjs-link " href="#continuous~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -875,7 +1080,12 @@ The only valid value is the default value, `FULL`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>one<wbr>Time</span>
+        <span id="onetime~nodejs">
+<span class="nx">
+one<wbr>Time
+<a class="anchorjs-link " href="#onetime~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -892,7 +1102,12 @@ Valid values are `NONE` and `FULL`. Defaults to `NONE` indicating that Macie onl
 
     <dt class="property-optional"
             title="Optional">
-        <span>continuous</span>
+        <span id="continuous~python">
+<span class="nx">
+continuous
+<a class="anchorjs-link " href="#continuous~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -902,7 +1117,12 @@ The only valid value is the default value, `FULL`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>one<wbr>Time</span>
+        <span id="onetime~python">
+<span class="nx">
+one<wbr>Time
+<a class="anchorjs-link " href="#onetime~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

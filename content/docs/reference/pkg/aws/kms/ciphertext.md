@@ -80,19 +80,19 @@ const oauth = new aws.kms.Ciphertext("oauth", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#Ciphertext">Ciphertext</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#CiphertextArgs">CiphertextArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#Ciphertext">Ciphertext</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#CiphertextArgs">CiphertextArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Ciphertext</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>context=None<span class="p">, </span>key_id=None<span class="p">, </span>plaintext=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/kms/#Ciphertext">Ciphertext</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>context=None<span class="p">, </span>key_id=None<span class="p">, </span>plaintext=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCiphertext<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#CiphertextArgs">CiphertextArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#Ciphertext">Ciphertext</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#Ciphertext">NewCiphertext</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#CiphertextArgs">CiphertextArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#Ciphertext">Ciphertext</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.Ciphertext.html">Ciphertext</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.CiphertextArgs.html">CiphertextArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.Ciphertext.html">Ciphertext</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.CiphertextArgs.html">CiphertextArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -258,7 +258,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Key<wbr>Id</span>
+        <span id="keyid~csharp">
+<span class="nx">
+Key<wbr>Id
+<a class="anchorjs-link " href="#keyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -267,7 +272,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Plaintext</span>
+        <span id="plaintext~csharp">
+<span class="nx">
+Plaintext
+<a class="anchorjs-link " href="#plaintext~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -276,7 +286,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>Context</span>
+        <span id="context~csharp">
+<span class="nx">
+Context
+<a class="anchorjs-link " href="#context~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -292,7 +307,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Key<wbr>Id</span>
+        <span id="keyid~go">
+<span class="nx">
+Key<wbr>Id
+<a class="anchorjs-link " href="#keyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -301,7 +321,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Plaintext</span>
+        <span id="plaintext~go">
+<span class="nx">
+Plaintext
+<a class="anchorjs-link " href="#plaintext~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -310,7 +335,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>Context</span>
+        <span id="context~go">
+<span class="nx">
+Context
+<a class="anchorjs-link " href="#context~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -326,7 +356,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>key<wbr>Id</span>
+        <span id="keyid~nodejs">
+<span class="nx">
+key<wbr>Id
+<a class="anchorjs-link " href="#keyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -335,7 +370,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>plaintext</span>
+        <span id="plaintext~nodejs">
+<span class="nx">
+plaintext
+<a class="anchorjs-link " href="#plaintext~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -344,7 +384,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>context</span>
+        <span id="context~nodejs">
+<span class="nx">
+context
+<a class="anchorjs-link " href="#context~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -360,7 +405,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>key_<wbr>id</span>
+        <span id="key_id~python">
+<span class="nx">
+key_<wbr>id
+<a class="anchorjs-link " href="#key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -369,7 +419,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>plaintext</span>
+        <span id="plaintext~python">
+<span class="nx">
+plaintext
+<a class="anchorjs-link " href="#plaintext~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -378,7 +433,12 @@ The Ciphertext resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>context</span>
+        <span id="context~python">
+<span class="nx">
+context
+<a class="anchorjs-link " href="#context~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -405,7 +465,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Ciphertext<wbr>Blob</span>
+        <span id="ciphertextblob~csharp">
+<span class="nx">
+Ciphertext<wbr>Blob
+<a class="anchorjs-link " href="#ciphertextblob~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -414,7 +479,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -429,7 +499,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Ciphertext<wbr>Blob</span>
+        <span id="ciphertextblob~go">
+<span class="nx">
+Ciphertext<wbr>Blob
+<a class="anchorjs-link " href="#ciphertextblob~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -438,7 +513,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -453,7 +533,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>ciphertext<wbr>Blob</span>
+        <span id="ciphertextblob~nodejs">
+<span class="nx">
+ciphertext<wbr>Blob
+<a class="anchorjs-link " href="#ciphertextblob~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -462,7 +547,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -477,7 +567,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>ciphertext_<wbr>blob</span>
+        <span id="ciphertext_blob~python">
+<span class="nx">
+ciphertext_<wbr>blob
+<a class="anchorjs-link " href="#ciphertext_blob~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -486,7 +581,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -507,7 +607,7 @@ Get an existing Ciphertext resource's state with the given name, ID, and optiona
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#CiphertextState">CiphertextState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#Ciphertext">Ciphertext</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#CiphertextState">CiphertextState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kms/#Ciphertext">Ciphertext</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -515,11 +615,11 @@ Get an existing Ciphertext resource's state with the given name, ID, and optiona
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCiphertext<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#CiphertextState">CiphertextState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#Ciphertext">Ciphertext</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCiphertext<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#CiphertextState">CiphertextState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kms?tab=doc#Ciphertext">Ciphertext</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.Ciphertext.html">Ciphertext</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.CiphertextState.html">CiphertextState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.Ciphertext.html">Ciphertext</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kms.CiphertextState.html">CiphertextState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -627,7 +727,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ciphertext<wbr>Blob</span>
+        <span id="state_ciphertextblob~csharp">
+<span class="nx">
+Ciphertext<wbr>Blob
+<a class="anchorjs-link " href="#state_ciphertextblob~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -636,7 +741,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Context</span>
+        <span id="state_context~csharp">
+<span class="nx">
+Context
+<a class="anchorjs-link " href="#state_context~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -645,7 +755,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Id</span>
+        <span id="state_keyid~csharp">
+<span class="nx">
+Key<wbr>Id
+<a class="anchorjs-link " href="#state_keyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -654,7 +769,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Plaintext</span>
+        <span id="state_plaintext~csharp">
+<span class="nx">
+Plaintext
+<a class="anchorjs-link " href="#state_plaintext~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -670,7 +790,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ciphertext<wbr>Blob</span>
+        <span id="state_ciphertextblob~go">
+<span class="nx">
+Ciphertext<wbr>Blob
+<a class="anchorjs-link " href="#state_ciphertextblob~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -679,7 +804,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Context</span>
+        <span id="state_context~go">
+<span class="nx">
+Context
+<a class="anchorjs-link " href="#state_context~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -688,7 +818,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Id</span>
+        <span id="state_keyid~go">
+<span class="nx">
+Key<wbr>Id
+<a class="anchorjs-link " href="#state_keyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -697,7 +832,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Plaintext</span>
+        <span id="state_plaintext~go">
+<span class="nx">
+Plaintext
+<a class="anchorjs-link " href="#state_plaintext~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -713,7 +853,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>ciphertext<wbr>Blob</span>
+        <span id="state_ciphertextblob~nodejs">
+<span class="nx">
+ciphertext<wbr>Blob
+<a class="anchorjs-link " href="#state_ciphertextblob~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -722,7 +867,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>context</span>
+        <span id="state_context~nodejs">
+<span class="nx">
+context
+<a class="anchorjs-link " href="#state_context~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -731,7 +881,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>key<wbr>Id</span>
+        <span id="state_keyid~nodejs">
+<span class="nx">
+key<wbr>Id
+<a class="anchorjs-link " href="#state_keyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -740,7 +895,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>plaintext</span>
+        <span id="state_plaintext~nodejs">
+<span class="nx">
+plaintext
+<a class="anchorjs-link " href="#state_plaintext~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -756,7 +916,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>ciphertext_<wbr>blob</span>
+        <span id="state_ciphertext_blob~python">
+<span class="nx">
+ciphertext_<wbr>blob
+<a class="anchorjs-link " href="#state_ciphertext_blob~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -765,7 +930,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>context</span>
+        <span id="state_context~python">
+<span class="nx">
+context
+<a class="anchorjs-link " href="#state_context~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -774,7 +944,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>key_<wbr>id</span>
+        <span id="state_key_id~python">
+<span class="nx">
+key_<wbr>id
+<a class="anchorjs-link " href="#state_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -783,7 +958,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>plaintext</span>
+        <span id="state_plaintext~python">
+<span class="nx">
+plaintext
+<a class="anchorjs-link " href="#state_plaintext~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

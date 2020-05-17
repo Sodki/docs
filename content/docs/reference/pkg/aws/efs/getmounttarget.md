@@ -63,7 +63,7 @@ const byId = pulumi.output(aws.efs.getMountTarget({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getMountTarget<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/efs/#GetMountTargetArgs">GetMountTargetArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/efs/#GetMountTargetResult">GetMountTargetResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getMountTarget<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/efs/#GetMountTargetArgs">GetMountTargetArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/efs/#GetMountTargetResult">GetMountTargetResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -73,13 +73,16 @@ const byId = pulumi.output(aws.efs.getMountTarget({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupMountTarget<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/efs?tab=doc#LookupMountTargetArgs">LookupMountTargetArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/efs?tab=doc#LookupMountTargetResult">LookupMountTargetResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupMountTarget<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/efs?tab=doc#LookupMountTargetArgs">LookupMountTargetArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/efs?tab=doc#LookupMountTargetResult">LookupMountTargetResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupMountTarget` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetMountTarget </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Efs.GetMountTargetResult.html">GetMountTargetResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Efs.GetMountTargetArgs.html">GetMountTargetArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Efs.GetMountTargetResult.html">GetMountTargetResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Efs.GetMountTargetArgs.html">GetMountTargetArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -94,7 +97,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Mount<wbr>Target<wbr>Id</span>
+        <span id="mounttargetid~csharp">
+<span class="nx">
+Mount<wbr>Target<wbr>Id
+<a class="anchorjs-link " href="#mounttargetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -110,7 +118,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Mount<wbr>Target<wbr>Id</span>
+        <span id="mounttargetid~go">
+<span class="nx">
+Mount<wbr>Target<wbr>Id
+<a class="anchorjs-link " href="#mounttargetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -126,7 +139,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>mount<wbr>Target<wbr>Id</span>
+        <span id="mounttargetid~nodejs">
+<span class="nx">
+mount<wbr>Target<wbr>Id
+<a class="anchorjs-link " href="#mounttargetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -142,7 +160,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>mount_<wbr>target_<wbr>id</span>
+        <span id="mount_target_id~python">
+<span class="nx">
+mount_<wbr>target_<wbr>id
+<a class="anchorjs-link " href="#mount_target_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -171,7 +194,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dns<wbr>Name</span>
+        <span id="dnsname~csharp">
+<span class="nx">
+Dns<wbr>Name
+<a class="anchorjs-link " href="#dnsname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -180,7 +208,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>File<wbr>System<wbr>Arn</span>
+        <span id="filesystemarn~csharp">
+<span class="nx">
+File<wbr>System<wbr>Arn
+<a class="anchorjs-link " href="#filesystemarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -189,7 +222,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>File<wbr>System<wbr>Id</span>
+        <span id="filesystemid~csharp">
+<span class="nx">
+File<wbr>System<wbr>Id
+<a class="anchorjs-link " href="#filesystemid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -198,7 +236,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -207,7 +250,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ip<wbr>Address</span>
+        <span id="ipaddress~csharp">
+<span class="nx">
+Ip<wbr>Address
+<a class="anchorjs-link " href="#ipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -216,7 +264,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Mount<wbr>Target<wbr>Id</span>
+        <span id="mounttargetid~csharp">
+<span class="nx">
+Mount<wbr>Target<wbr>Id
+<a class="anchorjs-link " href="#mounttargetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -224,7 +277,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~csharp">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -233,7 +291,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~csharp">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -242,7 +305,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -258,7 +326,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dns<wbr>Name</span>
+        <span id="dnsname~go">
+<span class="nx">
+Dns<wbr>Name
+<a class="anchorjs-link " href="#dnsname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -267,7 +340,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>File<wbr>System<wbr>Arn</span>
+        <span id="filesystemarn~go">
+<span class="nx">
+File<wbr>System<wbr>Arn
+<a class="anchorjs-link " href="#filesystemarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -276,7 +354,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>File<wbr>System<wbr>Id</span>
+        <span id="filesystemid~go">
+<span class="nx">
+File<wbr>System<wbr>Id
+<a class="anchorjs-link " href="#filesystemid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -285,7 +368,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -294,7 +382,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ip<wbr>Address</span>
+        <span id="ipaddress~go">
+<span class="nx">
+Ip<wbr>Address
+<a class="anchorjs-link " href="#ipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -303,7 +396,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Mount<wbr>Target<wbr>Id</span>
+        <span id="mounttargetid~go">
+<span class="nx">
+Mount<wbr>Target<wbr>Id
+<a class="anchorjs-link " href="#mounttargetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -311,7 +409,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~go">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -320,7 +423,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~go">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -329,7 +437,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -345,7 +458,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>dns<wbr>Name</span>
+        <span id="dnsname~nodejs">
+<span class="nx">
+dns<wbr>Name
+<a class="anchorjs-link " href="#dnsname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -354,7 +472,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>file<wbr>System<wbr>Arn</span>
+        <span id="filesystemarn~nodejs">
+<span class="nx">
+file<wbr>System<wbr>Arn
+<a class="anchorjs-link " href="#filesystemarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -363,7 +486,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>file<wbr>System<wbr>Id</span>
+        <span id="filesystemid~nodejs">
+<span class="nx">
+file<wbr>System<wbr>Id
+<a class="anchorjs-link " href="#filesystemid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -372,7 +500,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -381,7 +514,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>ip<wbr>Address</span>
+        <span id="ipaddress~nodejs">
+<span class="nx">
+ip<wbr>Address
+<a class="anchorjs-link " href="#ipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -390,7 +528,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>mount<wbr>Target<wbr>Id</span>
+        <span id="mounttargetid~nodejs">
+<span class="nx">
+mount<wbr>Target<wbr>Id
+<a class="anchorjs-link " href="#mounttargetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -398,7 +541,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~nodejs">
+<span class="nx">
+network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -407,7 +555,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>security<wbr>Groups</span>
+        <span id="securitygroups~nodejs">
+<span class="nx">
+security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -416,7 +569,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -432,7 +590,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>dns_<wbr>name</span>
+        <span id="dns_name~python">
+<span class="nx">
+dns_<wbr>name
+<a class="anchorjs-link " href="#dns_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -441,7 +604,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>file_<wbr>system_<wbr>arn</span>
+        <span id="file_system_arn~python">
+<span class="nx">
+file_<wbr>system_<wbr>arn
+<a class="anchorjs-link " href="#file_system_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -450,7 +618,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>file_<wbr>system_<wbr>id</span>
+        <span id="file_system_id~python">
+<span class="nx">
+file_<wbr>system_<wbr>id
+<a class="anchorjs-link " href="#file_system_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -459,7 +632,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -468,7 +646,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>ip_<wbr>address</span>
+        <span id="ip_address~python">
+<span class="nx">
+ip_<wbr>address
+<a class="anchorjs-link " href="#ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -477,7 +660,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>mount_<wbr>target_<wbr>id</span>
+        <span id="mount_target_id~python">
+<span class="nx">
+mount_<wbr>target_<wbr>id
+<a class="anchorjs-link " href="#mount_target_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -485,7 +673,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>network_<wbr>interface_<wbr>id</span>
+        <span id="network_interface_id~python">
+<span class="nx">
+network_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#network_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -494,7 +687,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>security_<wbr>groups</span>
+        <span id="security_groups~python">
+<span class="nx">
+security_<wbr>groups
+<a class="anchorjs-link " href="#security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -503,7 +701,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

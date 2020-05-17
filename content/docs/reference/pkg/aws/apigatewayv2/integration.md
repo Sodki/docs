@@ -114,19 +114,19 @@ const exampleIntegration = new aws.apigatewayv2.Integration("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Integration">Integration</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Integration">Integration</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Integration</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_id=None<span class="p">, </span>connection_id=None<span class="p">, </span>connection_type=None<span class="p">, </span>content_handling_strategy=None<span class="p">, </span>credentials_arn=None<span class="p">, </span>description=None<span class="p">, </span>integration_method=None<span class="p">, </span>integration_type=None<span class="p">, </span>integration_uri=None<span class="p">, </span>passthrough_behavior=None<span class="p">, </span>payload_format_version=None<span class="p">, </span>request_templates=None<span class="p">, </span>template_selection_expression=None<span class="p">, </span>timeout_milliseconds=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigatewayv2/#Integration">Integration</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_id=None<span class="p">, </span>connection_id=None<span class="p">, </span>connection_type=None<span class="p">, </span>content_handling_strategy=None<span class="p">, </span>credentials_arn=None<span class="p">, </span>description=None<span class="p">, </span>integration_method=None<span class="p">, </span>integration_type=None<span class="p">, </span>integration_uri=None<span class="p">, </span>passthrough_behavior=None<span class="p">, </span>payload_format_version=None<span class="p">, </span>request_templates=None<span class="p">, </span>template_selection_expression=None<span class="p">, </span>timeout_milliseconds=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Integration">NewIntegration</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Integration.html">Integration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationArgs.html">IntegrationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Integration.html">Integration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationArgs.html">IntegrationArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -292,7 +292,12 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-required"
             title="Required">
-        <span>Api<wbr>Id</span>
+        <span id="apiid~csharp">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#apiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -301,7 +306,12 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-required"
             title="Required">
-        <span>Integration<wbr>Type</span>
+        <span id="integrationtype~csharp">
+<span class="nx">
+Integration<wbr>Type
+<a class="anchorjs-link " href="#integrationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -311,7 +321,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="connectionid~csharp">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#connectionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -320,7 +335,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="connectiontype~csharp">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#connectiontype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -329,7 +349,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling<wbr>Strategy</span>
+        <span id="contenthandlingstrategy~csharp">
+<span class="nx">
+Content<wbr>Handling<wbr>Strategy
+<a class="anchorjs-link " href="#contenthandlingstrategy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -338,7 +363,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="credentialsarn~csharp">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#credentialsarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -347,7 +377,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -356,7 +391,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Method</span>
+        <span id="integrationmethod~csharp">
+<span class="nx">
+Integration<wbr>Method
+<a class="anchorjs-link " href="#integrationmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -365,7 +405,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Uri</span>
+        <span id="integrationuri~csharp">
+<span class="nx">
+Integration<wbr>Uri
+<a class="anchorjs-link " href="#integrationuri~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -375,7 +420,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="passthroughbehavior~csharp">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#passthroughbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -385,7 +435,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Payload<wbr>Format<wbr>Version</span>
+        <span id="payloadformatversion~csharp">
+<span class="nx">
+Payload<wbr>Format<wbr>Version
+<a class="anchorjs-link " href="#payloadformatversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -394,7 +449,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="requesttemplates~csharp">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#requesttemplates~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -403,7 +463,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Template<wbr>Selection<wbr>Expression</span>
+        <span id="templateselectionexpression~csharp">
+<span class="nx">
+Template<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#templateselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -412,7 +477,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="timeoutmilliseconds~csharp">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#timeoutmilliseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -428,7 +498,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-required"
             title="Required">
-        <span>Api<wbr>Id</span>
+        <span id="apiid~go">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#apiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -437,7 +512,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-required"
             title="Required">
-        <span>Integration<wbr>Type</span>
+        <span id="integrationtype~go">
+<span class="nx">
+Integration<wbr>Type
+<a class="anchorjs-link " href="#integrationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -447,7 +527,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="connectionid~go">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#connectionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -456,7 +541,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="connectiontype~go">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#connectiontype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -465,7 +555,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling<wbr>Strategy</span>
+        <span id="contenthandlingstrategy~go">
+<span class="nx">
+Content<wbr>Handling<wbr>Strategy
+<a class="anchorjs-link " href="#contenthandlingstrategy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -474,7 +569,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="credentialsarn~go">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#credentialsarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -483,7 +583,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -492,7 +597,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Method</span>
+        <span id="integrationmethod~go">
+<span class="nx">
+Integration<wbr>Method
+<a class="anchorjs-link " href="#integrationmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -501,7 +611,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Uri</span>
+        <span id="integrationuri~go">
+<span class="nx">
+Integration<wbr>Uri
+<a class="anchorjs-link " href="#integrationuri~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -511,7 +626,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="passthroughbehavior~go">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#passthroughbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -521,7 +641,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Payload<wbr>Format<wbr>Version</span>
+        <span id="payloadformatversion~go">
+<span class="nx">
+Payload<wbr>Format<wbr>Version
+<a class="anchorjs-link " href="#payloadformatversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -530,7 +655,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="requesttemplates~go">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#requesttemplates~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -539,7 +669,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Template<wbr>Selection<wbr>Expression</span>
+        <span id="templateselectionexpression~go">
+<span class="nx">
+Template<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#templateselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -548,7 +683,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="timeoutmilliseconds~go">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#timeoutmilliseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -564,7 +704,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-required"
             title="Required">
-        <span>api<wbr>Id</span>
+        <span id="apiid~nodejs">
+<span class="nx">
+api<wbr>Id
+<a class="anchorjs-link " href="#apiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -573,7 +718,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-required"
             title="Required">
-        <span>integration<wbr>Type</span>
+        <span id="integrationtype~nodejs">
+<span class="nx">
+integration<wbr>Type
+<a class="anchorjs-link " href="#integrationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -583,7 +733,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Id</span>
+        <span id="connectionid~nodejs">
+<span class="nx">
+connection<wbr>Id
+<a class="anchorjs-link " href="#connectionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -592,7 +747,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Type</span>
+        <span id="connectiontype~nodejs">
+<span class="nx">
+connection<wbr>Type
+<a class="anchorjs-link " href="#connectiontype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -601,7 +761,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Handling<wbr>Strategy</span>
+        <span id="contenthandlingstrategy~nodejs">
+<span class="nx">
+content<wbr>Handling<wbr>Strategy
+<a class="anchorjs-link " href="#contenthandlingstrategy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -610,7 +775,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials<wbr>Arn</span>
+        <span id="credentialsarn~nodejs">
+<span class="nx">
+credentials<wbr>Arn
+<a class="anchorjs-link " href="#credentialsarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -619,7 +789,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -628,7 +803,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Method</span>
+        <span id="integrationmethod~nodejs">
+<span class="nx">
+integration<wbr>Method
+<a class="anchorjs-link " href="#integrationmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -637,7 +817,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Uri</span>
+        <span id="integrationuri~nodejs">
+<span class="nx">
+integration<wbr>Uri
+<a class="anchorjs-link " href="#integrationuri~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -647,7 +832,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough<wbr>Behavior</span>
+        <span id="passthroughbehavior~nodejs">
+<span class="nx">
+passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#passthroughbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -657,7 +847,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>payload<wbr>Format<wbr>Version</span>
+        <span id="payloadformatversion~nodejs">
+<span class="nx">
+payload<wbr>Format<wbr>Version
+<a class="anchorjs-link " href="#payloadformatversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -666,7 +861,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Templates</span>
+        <span id="requesttemplates~nodejs">
+<span class="nx">
+request<wbr>Templates
+<a class="anchorjs-link " href="#requesttemplates~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -675,7 +875,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>template<wbr>Selection<wbr>Expression</span>
+        <span id="templateselectionexpression~nodejs">
+<span class="nx">
+template<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#templateselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -684,7 +889,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout<wbr>Milliseconds</span>
+        <span id="timeoutmilliseconds~nodejs">
+<span class="nx">
+timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#timeoutmilliseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -700,7 +910,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-required"
             title="Required">
-        <span>api_<wbr>id</span>
+        <span id="api_id~python">
+<span class="nx">
+api_<wbr>id
+<a class="anchorjs-link " href="#api_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -709,7 +924,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-required"
             title="Required">
-        <span>integration_<wbr>type</span>
+        <span id="integration_type~python">
+<span class="nx">
+integration_<wbr>type
+<a class="anchorjs-link " href="#integration_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -719,7 +939,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>id</span>
+        <span id="connection_id~python">
+<span class="nx">
+connection_<wbr>id
+<a class="anchorjs-link " href="#connection_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -728,7 +953,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>type</span>
+        <span id="connection_type~python">
+<span class="nx">
+connection_<wbr>type
+<a class="anchorjs-link " href="#connection_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -737,7 +967,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>handling_<wbr>strategy</span>
+        <span id="content_handling_strategy~python">
+<span class="nx">
+content_<wbr>handling_<wbr>strategy
+<a class="anchorjs-link " href="#content_handling_strategy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -746,7 +981,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials_<wbr>arn</span>
+        <span id="credentials_arn~python">
+<span class="nx">
+credentials_<wbr>arn
+<a class="anchorjs-link " href="#credentials_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -755,7 +995,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -764,7 +1009,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>method</span>
+        <span id="integration_method~python">
+<span class="nx">
+integration_<wbr>method
+<a class="anchorjs-link " href="#integration_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -773,7 +1023,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>uri</span>
+        <span id="integration_uri~python">
+<span class="nx">
+integration_<wbr>uri
+<a class="anchorjs-link " href="#integration_uri~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -783,7 +1038,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough_<wbr>behavior</span>
+        <span id="passthrough_behavior~python">
+<span class="nx">
+passthrough_<wbr>behavior
+<a class="anchorjs-link " href="#passthrough_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -793,7 +1053,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>payload_<wbr>format_<wbr>version</span>
+        <span id="payload_format_version~python">
+<span class="nx">
+payload_<wbr>format_<wbr>version
+<a class="anchorjs-link " href="#payload_format_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -802,7 +1067,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>templates</span>
+        <span id="request_templates~python">
+<span class="nx">
+request_<wbr>templates
+<a class="anchorjs-link " href="#request_templates~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -811,7 +1081,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>template_<wbr>selection_<wbr>expression</span>
+        <span id="template_selection_expression~python">
+<span class="nx">
+template_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#template_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -820,7 +1095,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout_<wbr>milliseconds</span>
+        <span id="timeout_milliseconds~python">
+<span class="nx">
+timeout_<wbr>milliseconds
+<a class="anchorjs-link " href="#timeout_milliseconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -847,7 +1127,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -855,7 +1140,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Integration<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="integrationresponseselectionexpression~csharp">
+<span class="nx">
+Integration<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#integrationresponseselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -871,7 +1161,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -879,7 +1174,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Integration<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="integrationresponseselectionexpression~go">
+<span class="nx">
+Integration<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#integrationresponseselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -895,7 +1195,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -903,7 +1208,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>integration<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="integrationresponseselectionexpression~nodejs">
+<span class="nx">
+integration<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#integrationresponseselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -919,7 +1229,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -927,7 +1242,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>integration_<wbr>response_<wbr>selection_<wbr>expression</span>
+        <span id="integration_response_selection_expression~python">
+<span class="nx">
+integration_<wbr>response_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#integration_response_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -949,7 +1269,7 @@ Get an existing Integration resource's state with the given name, ID, and option
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Integration">Integration</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Integration">Integration</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -957,11 +1277,11 @@ Get an existing Integration resource's state with the given name, ID, and option
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegration<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Integration.html">Integration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationState.html">IntegrationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Integration.html">Integration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.IntegrationState.html">IntegrationState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1069,7 +1389,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Id</span>
+        <span id="state_apiid~csharp">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1078,7 +1403,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="state_connectionid~csharp">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#state_connectionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1087,7 +1417,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="state_connectiontype~csharp">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#state_connectiontype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1096,7 +1431,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling<wbr>Strategy</span>
+        <span id="state_contenthandlingstrategy~csharp">
+<span class="nx">
+Content<wbr>Handling<wbr>Strategy
+<a class="anchorjs-link " href="#state_contenthandlingstrategy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1105,7 +1445,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="state_credentialsarn~csharp">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#state_credentialsarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1114,7 +1459,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1123,7 +1473,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Method</span>
+        <span id="state_integrationmethod~csharp">
+<span class="nx">
+Integration<wbr>Method
+<a class="anchorjs-link " href="#state_integrationmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1132,7 +1487,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="state_integrationresponseselectionexpression~csharp">
+<span class="nx">
+Integration<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_integrationresponseselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1141,7 +1501,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Type</span>
+        <span id="state_integrationtype~csharp">
+<span class="nx">
+Integration<wbr>Type
+<a class="anchorjs-link " href="#state_integrationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1151,7 +1516,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Uri</span>
+        <span id="state_integrationuri~csharp">
+<span class="nx">
+Integration<wbr>Uri
+<a class="anchorjs-link " href="#state_integrationuri~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1161,7 +1531,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="state_passthroughbehavior~csharp">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#state_passthroughbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1171,7 +1546,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Payload<wbr>Format<wbr>Version</span>
+        <span id="state_payloadformatversion~csharp">
+<span class="nx">
+Payload<wbr>Format<wbr>Version
+<a class="anchorjs-link " href="#state_payloadformatversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1180,7 +1560,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="state_requesttemplates~csharp">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#state_requesttemplates~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -1189,7 +1574,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Template<wbr>Selection<wbr>Expression</span>
+        <span id="state_templateselectionexpression~csharp">
+<span class="nx">
+Template<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_templateselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1198,7 +1588,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="state_timeoutmilliseconds~csharp">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#state_timeoutmilliseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1214,7 +1609,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Id</span>
+        <span id="state_apiid~go">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1223,7 +1623,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="state_connectionid~go">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#state_connectionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1232,7 +1637,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="state_connectiontype~go">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#state_connectiontype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1241,7 +1651,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling<wbr>Strategy</span>
+        <span id="state_contenthandlingstrategy~go">
+<span class="nx">
+Content<wbr>Handling<wbr>Strategy
+<a class="anchorjs-link " href="#state_contenthandlingstrategy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1250,7 +1665,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="state_credentialsarn~go">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#state_credentialsarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1259,7 +1679,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1268,7 +1693,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Method</span>
+        <span id="state_integrationmethod~go">
+<span class="nx">
+Integration<wbr>Method
+<a class="anchorjs-link " href="#state_integrationmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1277,7 +1707,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="state_integrationresponseselectionexpression~go">
+<span class="nx">
+Integration<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_integrationresponseselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1286,7 +1721,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Type</span>
+        <span id="state_integrationtype~go">
+<span class="nx">
+Integration<wbr>Type
+<a class="anchorjs-link " href="#state_integrationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1296,7 +1736,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Uri</span>
+        <span id="state_integrationuri~go">
+<span class="nx">
+Integration<wbr>Uri
+<a class="anchorjs-link " href="#state_integrationuri~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1306,7 +1751,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="state_passthroughbehavior~go">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#state_passthroughbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1316,7 +1766,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Payload<wbr>Format<wbr>Version</span>
+        <span id="state_payloadformatversion~go">
+<span class="nx">
+Payload<wbr>Format<wbr>Version
+<a class="anchorjs-link " href="#state_payloadformatversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1325,7 +1780,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="state_requesttemplates~go">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#state_requesttemplates~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1334,7 +1794,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Template<wbr>Selection<wbr>Expression</span>
+        <span id="state_templateselectionexpression~go">
+<span class="nx">
+Template<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_templateselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1343,7 +1808,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="state_timeoutmilliseconds~go">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#state_timeoutmilliseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1359,7 +1829,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Id</span>
+        <span id="state_apiid~nodejs">
+<span class="nx">
+api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1368,7 +1843,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Id</span>
+        <span id="state_connectionid~nodejs">
+<span class="nx">
+connection<wbr>Id
+<a class="anchorjs-link " href="#state_connectionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1377,7 +1857,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Type</span>
+        <span id="state_connectiontype~nodejs">
+<span class="nx">
+connection<wbr>Type
+<a class="anchorjs-link " href="#state_connectiontype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1386,7 +1871,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Handling<wbr>Strategy</span>
+        <span id="state_contenthandlingstrategy~nodejs">
+<span class="nx">
+content<wbr>Handling<wbr>Strategy
+<a class="anchorjs-link " href="#state_contenthandlingstrategy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1395,7 +1885,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials<wbr>Arn</span>
+        <span id="state_credentialsarn~nodejs">
+<span class="nx">
+credentials<wbr>Arn
+<a class="anchorjs-link " href="#state_credentialsarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1404,7 +1899,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1413,7 +1913,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Method</span>
+        <span id="state_integrationmethod~nodejs">
+<span class="nx">
+integration<wbr>Method
+<a class="anchorjs-link " href="#state_integrationmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1422,7 +1927,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="state_integrationresponseselectionexpression~nodejs">
+<span class="nx">
+integration<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_integrationresponseselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1431,7 +1941,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Type</span>
+        <span id="state_integrationtype~nodejs">
+<span class="nx">
+integration<wbr>Type
+<a class="anchorjs-link " href="#state_integrationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1441,7 +1956,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Uri</span>
+        <span id="state_integrationuri~nodejs">
+<span class="nx">
+integration<wbr>Uri
+<a class="anchorjs-link " href="#state_integrationuri~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1451,7 +1971,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough<wbr>Behavior</span>
+        <span id="state_passthroughbehavior~nodejs">
+<span class="nx">
+passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#state_passthroughbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1461,7 +1986,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>payload<wbr>Format<wbr>Version</span>
+        <span id="state_payloadformatversion~nodejs">
+<span class="nx">
+payload<wbr>Format<wbr>Version
+<a class="anchorjs-link " href="#state_payloadformatversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1470,7 +2000,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Templates</span>
+        <span id="state_requesttemplates~nodejs">
+<span class="nx">
+request<wbr>Templates
+<a class="anchorjs-link " href="#state_requesttemplates~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1479,7 +2014,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>template<wbr>Selection<wbr>Expression</span>
+        <span id="state_templateselectionexpression~nodejs">
+<span class="nx">
+template<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_templateselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1488,7 +2028,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout<wbr>Milliseconds</span>
+        <span id="state_timeoutmilliseconds~nodejs">
+<span class="nx">
+timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#state_timeoutmilliseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1504,7 +2049,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>id</span>
+        <span id="state_api_id~python">
+<span class="nx">
+api_<wbr>id
+<a class="anchorjs-link " href="#state_api_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1513,7 +2063,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>id</span>
+        <span id="state_connection_id~python">
+<span class="nx">
+connection_<wbr>id
+<a class="anchorjs-link " href="#state_connection_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1522,7 +2077,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>type</span>
+        <span id="state_connection_type~python">
+<span class="nx">
+connection_<wbr>type
+<a class="anchorjs-link " href="#state_connection_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1531,7 +2091,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>handling_<wbr>strategy</span>
+        <span id="state_content_handling_strategy~python">
+<span class="nx">
+content_<wbr>handling_<wbr>strategy
+<a class="anchorjs-link " href="#state_content_handling_strategy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1540,7 +2105,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials_<wbr>arn</span>
+        <span id="state_credentials_arn~python">
+<span class="nx">
+credentials_<wbr>arn
+<a class="anchorjs-link " href="#state_credentials_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1549,7 +2119,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1558,7 +2133,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>method</span>
+        <span id="state_integration_method~python">
+<span class="nx">
+integration_<wbr>method
+<a class="anchorjs-link " href="#state_integration_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1567,7 +2147,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>response_<wbr>selection_<wbr>expression</span>
+        <span id="state_integration_response_selection_expression~python">
+<span class="nx">
+integration_<wbr>response_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#state_integration_response_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1576,7 +2161,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>type</span>
+        <span id="state_integration_type~python">
+<span class="nx">
+integration_<wbr>type
+<a class="anchorjs-link " href="#state_integration_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1586,7 +2176,12 @@ Valid values: `AWS`, `AWS_PROXY`, `HTTP`, `HTTP_PROXY`, `MOCK`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>uri</span>
+        <span id="state_integration_uri~python">
+<span class="nx">
+integration_<wbr>uri
+<a class="anchorjs-link " href="#state_integration_uri~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1596,7 +2191,12 @@ For an `HTTP` integration, specify a fully-qualified URL. For an HTTP API privat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough_<wbr>behavior</span>
+        <span id="state_passthrough_behavior~python">
+<span class="nx">
+passthrough_<wbr>behavior
+<a class="anchorjs-link " href="#state_passthrough_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1606,7 +2206,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>payload_<wbr>format_<wbr>version</span>
+        <span id="state_payload_format_version~python">
+<span class="nx">
+payload_<wbr>format_<wbr>version
+<a class="anchorjs-link " href="#state_payload_format_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1615,7 +2220,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>templates</span>
+        <span id="state_request_templates~python">
+<span class="nx">
+request_<wbr>templates
+<a class="anchorjs-link " href="#state_request_templates~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1624,7 +2234,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>template_<wbr>selection_<wbr>expression</span>
+        <span id="state_template_selection_expression~python">
+<span class="nx">
+template_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#state_template_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1633,7 +2248,12 @@ Valid values: `WHEN_NO_MATCH`, `WHEN_NO_TEMPLATES`, `NEVER`. Default is `WHEN_NO
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout_<wbr>milliseconds</span>
+        <span id="state_timeout_milliseconds~python">
+<span class="nx">
+timeout_<wbr>milliseconds
+<a class="anchorjs-link " href="#state_timeout_milliseconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

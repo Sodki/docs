@@ -77,7 +77,7 @@ const route = new aws.ec2.Route("r", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getVpcPeeringConnection<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcPeeringConnectionArgs">GetVpcPeeringConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcPeeringConnectionResult">GetVpcPeeringConnectionResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getVpcPeeringConnection<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcPeeringConnectionArgs">GetVpcPeeringConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcPeeringConnectionResult">GetVpcPeeringConnectionResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -87,13 +87,16 @@ const route = new aws.ec2.Route("r", {
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupVpcPeeringConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcPeeringConnectionArgs">LookupVpcPeeringConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcPeeringConnectionResult">LookupVpcPeeringConnectionResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupVpcPeeringConnection<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcPeeringConnectionArgs">LookupVpcPeeringConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcPeeringConnectionResult">LookupVpcPeeringConnectionResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupVpcPeeringConnection` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetVpcPeeringConnection </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcPeeringConnectionResult.html">GetVpcPeeringConnectionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcPeeringConnectionArgs.html">GetVpcPeeringConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcPeeringConnectionResult.html">GetVpcPeeringConnectionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcPeeringConnectionArgs.html">GetVpcPeeringConnectionArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -108,7 +111,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -117,7 +125,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List&lt;Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
@@ -126,7 +139,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -135,7 +153,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~csharp">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -144,7 +167,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Cidr<wbr>Block</span>
+        <span id="peercidrblock~csharp">
+<span class="nx">
+Peer<wbr>Cidr<wbr>Block
+<a class="anchorjs-link " href="#peercidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -153,7 +181,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Owner<wbr>Id</span>
+        <span id="peerownerid~csharp">
+<span class="nx">
+Peer<wbr>Owner<wbr>Id
+<a class="anchorjs-link " href="#peerownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -162,7 +195,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Region</span>
+        <span id="peerregion~csharp">
+<span class="nx">
+Peer<wbr>Region
+<a class="anchorjs-link " href="#peerregion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -171,7 +209,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Vpc<wbr>Id</span>
+        <span id="peervpcid~csharp">
+<span class="nx">
+Peer<wbr>Vpc<wbr>Id
+<a class="anchorjs-link " href="#peervpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -180,7 +223,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Region</span>
+        <span id="region~csharp">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -189,7 +237,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -198,7 +251,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -208,7 +266,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~csharp">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -224,7 +287,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -233,7 +301,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">[]Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter</a></span>
     </dt>
@@ -242,7 +315,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -251,7 +329,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~go">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -260,7 +343,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Cidr<wbr>Block</span>
+        <span id="peercidrblock~go">
+<span class="nx">
+Peer<wbr>Cidr<wbr>Block
+<a class="anchorjs-link " href="#peercidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -269,7 +357,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Owner<wbr>Id</span>
+        <span id="peerownerid~go">
+<span class="nx">
+Peer<wbr>Owner<wbr>Id
+<a class="anchorjs-link " href="#peerownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -278,7 +371,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Region</span>
+        <span id="peerregion~go">
+<span class="nx">
+Peer<wbr>Region
+<a class="anchorjs-link " href="#peerregion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -287,7 +385,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Peer<wbr>Vpc<wbr>Id</span>
+        <span id="peervpcid~go">
+<span class="nx">
+Peer<wbr>Vpc<wbr>Id
+<a class="anchorjs-link " href="#peervpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -296,7 +399,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Region</span>
+        <span id="region~go">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -305,7 +413,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -314,7 +427,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -324,7 +442,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~go">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -340,7 +463,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr<wbr>Block</span>
+        <span id="cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -349,7 +477,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter[]</a></span>
     </dt>
@@ -358,7 +491,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -367,7 +505,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner<wbr>Id</span>
+        <span id="ownerid~nodejs">
+<span class="nx">
+owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -376,7 +519,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer<wbr>Cidr<wbr>Block</span>
+        <span id="peercidrblock~nodejs">
+<span class="nx">
+peer<wbr>Cidr<wbr>Block
+<a class="anchorjs-link " href="#peercidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -385,7 +533,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer<wbr>Owner<wbr>Id</span>
+        <span id="peerownerid~nodejs">
+<span class="nx">
+peer<wbr>Owner<wbr>Id
+<a class="anchorjs-link " href="#peerownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -394,7 +547,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer<wbr>Region</span>
+        <span id="peerregion~nodejs">
+<span class="nx">
+peer<wbr>Region
+<a class="anchorjs-link " href="#peerregion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -403,7 +561,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer<wbr>Vpc<wbr>Id</span>
+        <span id="peervpcid~nodejs">
+<span class="nx">
+peer<wbr>Vpc<wbr>Id
+<a class="anchorjs-link " href="#peervpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -412,7 +575,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>region</span>
+        <span id="region~nodejs">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -421,7 +589,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -430,7 +603,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -440,7 +618,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Id</span>
+        <span id="vpcid~nodejs">
+<span class="nx">
+vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -456,7 +639,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr_<wbr>block</span>
+        <span id="cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -465,7 +653,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List[Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter]</a></span>
     </dt>
@@ -474,7 +667,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -483,7 +681,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner_<wbr>id</span>
+        <span id="owner_id~python">
+<span class="nx">
+owner_<wbr>id
+<a class="anchorjs-link " href="#owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -492,7 +695,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer_<wbr>cidr_<wbr>block</span>
+        <span id="peer_cidr_block~python">
+<span class="nx">
+peer_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#peer_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -501,7 +709,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer_<wbr>owner_<wbr>id</span>
+        <span id="peer_owner_id~python">
+<span class="nx">
+peer_<wbr>owner_<wbr>id
+<a class="anchorjs-link " href="#peer_owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -510,7 +723,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer_<wbr>region</span>
+        <span id="peer_region~python">
+<span class="nx">
+peer_<wbr>region
+<a class="anchorjs-link " href="#peer_region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -519,7 +737,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>peer_<wbr>vpc_<wbr>id</span>
+        <span id="peer_vpc_id~python">
+<span class="nx">
+peer_<wbr>vpc_<wbr>id
+<a class="anchorjs-link " href="#peer_vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -528,7 +751,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>region</span>
+        <span id="region~python">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -537,7 +765,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -546,7 +779,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -556,7 +794,12 @@ a pair on the desired VPC Peering Connection.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>id</span>
+        <span id="vpc_id~python">
+<span class="nx">
+vpc_<wbr>id
+<a class="anchorjs-link " href="#vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -585,7 +828,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Accepter</span>
+        <span id="accepter~csharp">
+<span class="nx">
+Accepter
+<a class="anchorjs-link " href="#accepter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, bool&gt;</span>
     </dt>
@@ -595,7 +843,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -603,7 +856,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -611,7 +869,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~csharp">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -619,7 +882,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Cidr<wbr>Block</span>
+        <span id="peercidrblock~csharp">
+<span class="nx">
+Peer<wbr>Cidr<wbr>Block
+<a class="anchorjs-link " href="#peercidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -627,7 +895,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Owner<wbr>Id</span>
+        <span id="peerownerid~csharp">
+<span class="nx">
+Peer<wbr>Owner<wbr>Id
+<a class="anchorjs-link " href="#peerownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -635,7 +908,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Region</span>
+        <span id="peerregion~csharp">
+<span class="nx">
+Peer<wbr>Region
+<a class="anchorjs-link " href="#peerregion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -643,7 +921,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Vpc<wbr>Id</span>
+        <span id="peervpcid~csharp">
+<span class="nx">
+Peer<wbr>Vpc<wbr>Id
+<a class="anchorjs-link " href="#peervpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -651,7 +934,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Region</span>
+        <span id="region~csharp">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -659,7 +947,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Requester</span>
+        <span id="requester~csharp">
+<span class="nx">
+Requester
+<a class="anchorjs-link " href="#requester~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, bool&gt;</span>
     </dt>
@@ -669,7 +962,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -677,7 +975,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -685,7 +988,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~csharp">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -693,7 +1001,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List&lt;Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter&gt;</a></span>
     </dt>
@@ -708,7 +1021,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Accepter</span>
+        <span id="accepter~go">
+<span class="nx">
+Accepter
+<a class="anchorjs-link " href="#accepter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]bool</span>
     </dt>
@@ -718,7 +1036,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -726,7 +1049,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -734,7 +1062,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~go">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -742,7 +1075,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Cidr<wbr>Block</span>
+        <span id="peercidrblock~go">
+<span class="nx">
+Peer<wbr>Cidr<wbr>Block
+<a class="anchorjs-link " href="#peercidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -750,7 +1088,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Owner<wbr>Id</span>
+        <span id="peerownerid~go">
+<span class="nx">
+Peer<wbr>Owner<wbr>Id
+<a class="anchorjs-link " href="#peerownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -758,7 +1101,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Region</span>
+        <span id="peerregion~go">
+<span class="nx">
+Peer<wbr>Region
+<a class="anchorjs-link " href="#peerregion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -766,7 +1114,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Peer<wbr>Vpc<wbr>Id</span>
+        <span id="peervpcid~go">
+<span class="nx">
+Peer<wbr>Vpc<wbr>Id
+<a class="anchorjs-link " href="#peervpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -774,7 +1127,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Region</span>
+        <span id="region~go">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -782,7 +1140,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Requester</span>
+        <span id="requester~go">
+<span class="nx">
+Requester
+<a class="anchorjs-link " href="#requester~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]bool</span>
     </dt>
@@ -792,7 +1155,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -800,7 +1168,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -808,7 +1181,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~go">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -816,7 +1194,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">[]Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter</a></span>
     </dt>
@@ -831,7 +1214,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>accepter</span>
+        <span id="accepter~nodejs">
+<span class="nx">
+accepter
+<a class="anchorjs-link " href="#accepter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: boolean}</span>
     </dt>
@@ -841,7 +1229,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>cidr<wbr>Block</span>
+        <span id="cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -849,7 +1242,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -857,7 +1255,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>owner<wbr>Id</span>
+        <span id="ownerid~nodejs">
+<span class="nx">
+owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -865,7 +1268,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer<wbr>Cidr<wbr>Block</span>
+        <span id="peercidrblock~nodejs">
+<span class="nx">
+peer<wbr>Cidr<wbr>Block
+<a class="anchorjs-link " href="#peercidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -873,7 +1281,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer<wbr>Owner<wbr>Id</span>
+        <span id="peerownerid~nodejs">
+<span class="nx">
+peer<wbr>Owner<wbr>Id
+<a class="anchorjs-link " href="#peerownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -881,7 +1294,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer<wbr>Region</span>
+        <span id="peerregion~nodejs">
+<span class="nx">
+peer<wbr>Region
+<a class="anchorjs-link " href="#peerregion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -889,7 +1307,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer<wbr>Vpc<wbr>Id</span>
+        <span id="peervpcid~nodejs">
+<span class="nx">
+peer<wbr>Vpc<wbr>Id
+<a class="anchorjs-link " href="#peervpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -897,7 +1320,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>region</span>
+        <span id="region~nodejs">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -905,7 +1333,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>requester</span>
+        <span id="requester~nodejs">
+<span class="nx">
+requester
+<a class="anchorjs-link " href="#requester~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: boolean}</span>
     </dt>
@@ -915,7 +1348,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -923,7 +1361,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -931,7 +1374,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>vpc<wbr>Id</span>
+        <span id="vpcid~nodejs">
+<span class="nx">
+vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -939,7 +1387,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter[]</a></span>
     </dt>
@@ -954,7 +1407,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>accepter</span>
+        <span id="accepter~python">
+<span class="nx">
+accepter
+<a class="anchorjs-link " href="#accepter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Boolean]</span>
     </dt>
@@ -964,7 +1422,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>cidr_<wbr>block</span>
+        <span id="cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -972,7 +1435,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -980,7 +1448,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>owner_<wbr>id</span>
+        <span id="owner_id~python">
+<span class="nx">
+owner_<wbr>id
+<a class="anchorjs-link " href="#owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -988,7 +1461,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer_<wbr>cidr_<wbr>block</span>
+        <span id="peer_cidr_block~python">
+<span class="nx">
+peer_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#peer_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -996,7 +1474,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer_<wbr>owner_<wbr>id</span>
+        <span id="peer_owner_id~python">
+<span class="nx">
+peer_<wbr>owner_<wbr>id
+<a class="anchorjs-link " href="#peer_owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1004,7 +1487,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer_<wbr>region</span>
+        <span id="peer_region~python">
+<span class="nx">
+peer_<wbr>region
+<a class="anchorjs-link " href="#peer_region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1012,7 +1500,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>peer_<wbr>vpc_<wbr>id</span>
+        <span id="peer_vpc_id~python">
+<span class="nx">
+peer_<wbr>vpc_<wbr>id
+<a class="anchorjs-link " href="#peer_vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1020,7 +1513,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>region</span>
+        <span id="region~python">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1028,7 +1526,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>requester</span>
+        <span id="requester~python">
+<span class="nx">
+requester
+<a class="anchorjs-link " href="#requester~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Boolean]</span>
     </dt>
@@ -1038,7 +1541,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1046,7 +1554,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1054,7 +1567,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>vpc_<wbr>id</span>
+        <span id="vpc_id~python">
+<span class="nx">
+vpc_<wbr>id
+<a class="anchorjs-link " href="#vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1062,7 +1580,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcpeeringconnectionfilter">List[Get<wbr>Vpc<wbr>Peering<wbr>Connection<wbr>Filter]</a></span>
     </dt>
@@ -1101,7 +1624,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1111,7 +1639,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1128,7 +1661,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1138,7 +1676,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1155,7 +1698,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1165,7 +1713,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1182,7 +1735,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1192,7 +1750,12 @@ A VPC Peering Connection will be selected if any one of the given values matches
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>

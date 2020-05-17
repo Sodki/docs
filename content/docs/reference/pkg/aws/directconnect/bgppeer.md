@@ -60,19 +60,19 @@ const peer = new aws.directconnect.BgpPeer("peer", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeer">BgpPeer</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeerArgs">BgpPeerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeer">BgpPeer</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeerArgs">BgpPeerArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">BgpPeer</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>address_family=None<span class="p">, </span>amazon_address=None<span class="p">, </span>bgp_asn=None<span class="p">, </span>bgp_auth_key=None<span class="p">, </span>customer_address=None<span class="p">, </span>virtual_interface_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/directconnect/#BgpPeer">BgpPeer</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>address_family=None<span class="p">, </span>amazon_address=None<span class="p">, </span>bgp_asn=None<span class="p">, </span>bgp_auth_key=None<span class="p">, </span>customer_address=None<span class="p">, </span>virtual_interface_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBgpPeer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeerArgs">BgpPeerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeer">BgpPeer</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeer">NewBgpPeer</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeerArgs">BgpPeerArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeer">BgpPeer</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeer.html">BgpPeer</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeerArgs.html">BgpPeerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeer.html">BgpPeer</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeerArgs.html">BgpPeerArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -238,7 +238,12 @@ The BgpPeer resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Address<wbr>Family</span>
+        <span id="addressfamily~csharp">
+<span class="nx">
+Address<wbr>Family
+<a class="anchorjs-link " href="#addressfamily~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -247,7 +252,12 @@ The BgpPeer resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Bgp<wbr>Asn</span>
+        <span id="bgpasn~csharp">
+<span class="nx">
+Bgp<wbr>Asn
+<a class="anchorjs-link " href="#bgpasn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -256,7 +266,12 @@ The BgpPeer resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Interface<wbr>Id</span>
+        <span id="virtualinterfaceid~csharp">
+<span class="nx">
+Virtual<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#virtualinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -265,7 +280,12 @@ The BgpPeer resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Amazon<wbr>Address</span>
+        <span id="amazonaddress~csharp">
+<span class="nx">
+Amazon<wbr>Address
+<a class="anchorjs-link " href="#amazonaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -275,7 +295,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Auth<wbr>Key</span>
+        <span id="bgpauthkey~csharp">
+<span class="nx">
+Bgp<wbr>Auth<wbr>Key
+<a class="anchorjs-link " href="#bgpauthkey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -284,7 +309,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Address</span>
+        <span id="customeraddress~csharp">
+<span class="nx">
+Customer<wbr>Address
+<a class="anchorjs-link " href="#customeraddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -301,7 +331,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>Address<wbr>Family</span>
+        <span id="addressfamily~go">
+<span class="nx">
+Address<wbr>Family
+<a class="anchorjs-link " href="#addressfamily~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -310,7 +345,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>Bgp<wbr>Asn</span>
+        <span id="bgpasn~go">
+<span class="nx">
+Bgp<wbr>Asn
+<a class="anchorjs-link " href="#bgpasn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -319,7 +359,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Interface<wbr>Id</span>
+        <span id="virtualinterfaceid~go">
+<span class="nx">
+Virtual<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#virtualinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -328,7 +373,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Amazon<wbr>Address</span>
+        <span id="amazonaddress~go">
+<span class="nx">
+Amazon<wbr>Address
+<a class="anchorjs-link " href="#amazonaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -338,7 +388,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Auth<wbr>Key</span>
+        <span id="bgpauthkey~go">
+<span class="nx">
+Bgp<wbr>Auth<wbr>Key
+<a class="anchorjs-link " href="#bgpauthkey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -347,7 +402,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Address</span>
+        <span id="customeraddress~go">
+<span class="nx">
+Customer<wbr>Address
+<a class="anchorjs-link " href="#customeraddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -364,7 +424,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>address<wbr>Family</span>
+        <span id="addressfamily~nodejs">
+<span class="nx">
+address<wbr>Family
+<a class="anchorjs-link " href="#addressfamily~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -373,7 +438,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>bgp<wbr>Asn</span>
+        <span id="bgpasn~nodejs">
+<span class="nx">
+bgp<wbr>Asn
+<a class="anchorjs-link " href="#bgpasn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -382,7 +452,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Interface<wbr>Id</span>
+        <span id="virtualinterfaceid~nodejs">
+<span class="nx">
+virtual<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#virtualinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -391,7 +466,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>amazon<wbr>Address</span>
+        <span id="amazonaddress~nodejs">
+<span class="nx">
+amazon<wbr>Address
+<a class="anchorjs-link " href="#amazonaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -401,7 +481,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp<wbr>Auth<wbr>Key</span>
+        <span id="bgpauthkey~nodejs">
+<span class="nx">
+bgp<wbr>Auth<wbr>Key
+<a class="anchorjs-link " href="#bgpauthkey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -410,7 +495,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer<wbr>Address</span>
+        <span id="customeraddress~nodejs">
+<span class="nx">
+customer<wbr>Address
+<a class="anchorjs-link " href="#customeraddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -427,7 +517,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>address_<wbr>family</span>
+        <span id="address_family~python">
+<span class="nx">
+address_<wbr>family
+<a class="anchorjs-link " href="#address_family~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -436,7 +531,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>bgp_<wbr>asn</span>
+        <span id="bgp_asn~python">
+<span class="nx">
+bgp_<wbr>asn
+<a class="anchorjs-link " href="#bgp_asn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -445,7 +545,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual_<wbr>interface_<wbr>id</span>
+        <span id="virtual_interface_id~python">
+<span class="nx">
+virtual_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#virtual_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -454,7 +559,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>amazon_<wbr>address</span>
+        <span id="amazon_address~python">
+<span class="nx">
+amazon_<wbr>address
+<a class="anchorjs-link " href="#amazon_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -464,7 +574,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp_<wbr>auth_<wbr>key</span>
+        <span id="bgp_auth_key~python">
+<span class="nx">
+bgp_<wbr>auth_<wbr>key
+<a class="anchorjs-link " href="#bgp_auth_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -473,7 +588,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer_<wbr>address</span>
+        <span id="customer_address~python">
+<span class="nx">
+customer_<wbr>address
+<a class="anchorjs-link " href="#customer_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -501,7 +621,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Aws<wbr>Device</span>
+        <span id="awsdevice~csharp">
+<span class="nx">
+Aws<wbr>Device
+<a class="anchorjs-link " href="#awsdevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -510,7 +635,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bgp<wbr>Peer<wbr>Id</span>
+        <span id="bgppeerid~csharp">
+<span class="nx">
+Bgp<wbr>Peer<wbr>Id
+<a class="anchorjs-link " href="#bgppeerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -519,7 +649,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bgp<wbr>Status</span>
+        <span id="bgpstatus~csharp">
+<span class="nx">
+Bgp<wbr>Status
+<a class="anchorjs-link " href="#bgpstatus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -528,7 +663,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -543,7 +683,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Aws<wbr>Device</span>
+        <span id="awsdevice~go">
+<span class="nx">
+Aws<wbr>Device
+<a class="anchorjs-link " href="#awsdevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -552,7 +697,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bgp<wbr>Peer<wbr>Id</span>
+        <span id="bgppeerid~go">
+<span class="nx">
+Bgp<wbr>Peer<wbr>Id
+<a class="anchorjs-link " href="#bgppeerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -561,7 +711,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bgp<wbr>Status</span>
+        <span id="bgpstatus~go">
+<span class="nx">
+Bgp<wbr>Status
+<a class="anchorjs-link " href="#bgpstatus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -570,7 +725,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -585,7 +745,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>aws<wbr>Device</span>
+        <span id="awsdevice~nodejs">
+<span class="nx">
+aws<wbr>Device
+<a class="anchorjs-link " href="#awsdevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -594,7 +759,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bgp<wbr>Peer<wbr>Id</span>
+        <span id="bgppeerid~nodejs">
+<span class="nx">
+bgp<wbr>Peer<wbr>Id
+<a class="anchorjs-link " href="#bgppeerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -603,7 +773,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bgp<wbr>Status</span>
+        <span id="bgpstatus~nodejs">
+<span class="nx">
+bgp<wbr>Status
+<a class="anchorjs-link " href="#bgpstatus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -612,7 +787,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -627,7 +807,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>aws_<wbr>device</span>
+        <span id="aws_device~python">
+<span class="nx">
+aws_<wbr>device
+<a class="anchorjs-link " href="#aws_device~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -636,7 +821,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bgp_<wbr>peer_<wbr>id</span>
+        <span id="bgp_peer_id~python">
+<span class="nx">
+bgp_<wbr>peer_<wbr>id
+<a class="anchorjs-link " href="#bgp_peer_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -645,7 +835,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bgp_<wbr>status</span>
+        <span id="bgp_status~python">
+<span class="nx">
+bgp_<wbr>status
+<a class="anchorjs-link " href="#bgp_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -654,7 +849,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -675,7 +875,7 @@ Get an existing BgpPeer resource's state with the given name, ID, and optional e
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeerState">BgpPeerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeer">BgpPeer</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeerState">BgpPeerState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#BgpPeer">BgpPeer</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -683,11 +883,11 @@ Get an existing BgpPeer resource's state with the given name, ID, and optional e
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBgpPeer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeerState">BgpPeerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeer">BgpPeer</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBgpPeer<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeerState">BgpPeerState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#BgpPeer">BgpPeer</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeer.html">BgpPeer</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeerState.html">BgpPeerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeer.html">BgpPeer</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.BgpPeerState.html">BgpPeerState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -795,7 +995,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Address<wbr>Family</span>
+        <span id="state_addressfamily~csharp">
+<span class="nx">
+Address<wbr>Family
+<a class="anchorjs-link " href="#state_addressfamily~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -804,7 +1009,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Amazon<wbr>Address</span>
+        <span id="state_amazonaddress~csharp">
+<span class="nx">
+Amazon<wbr>Address
+<a class="anchorjs-link " href="#state_amazonaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -814,7 +1024,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aws<wbr>Device</span>
+        <span id="state_awsdevice~csharp">
+<span class="nx">
+Aws<wbr>Device
+<a class="anchorjs-link " href="#state_awsdevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -823,7 +1038,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Asn</span>
+        <span id="state_bgpasn~csharp">
+<span class="nx">
+Bgp<wbr>Asn
+<a class="anchorjs-link " href="#state_bgpasn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -832,7 +1052,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Auth<wbr>Key</span>
+        <span id="state_bgpauthkey~csharp">
+<span class="nx">
+Bgp<wbr>Auth<wbr>Key
+<a class="anchorjs-link " href="#state_bgpauthkey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -841,7 +1066,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Peer<wbr>Id</span>
+        <span id="state_bgppeerid~csharp">
+<span class="nx">
+Bgp<wbr>Peer<wbr>Id
+<a class="anchorjs-link " href="#state_bgppeerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -850,7 +1080,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Status</span>
+        <span id="state_bgpstatus~csharp">
+<span class="nx">
+Bgp<wbr>Status
+<a class="anchorjs-link " href="#state_bgpstatus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -859,7 +1094,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Address</span>
+        <span id="state_customeraddress~csharp">
+<span class="nx">
+Customer<wbr>Address
+<a class="anchorjs-link " href="#state_customeraddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -869,7 +1109,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Interface<wbr>Id</span>
+        <span id="state_virtualinterfaceid~csharp">
+<span class="nx">
+Virtual<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#state_virtualinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -885,7 +1130,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Address<wbr>Family</span>
+        <span id="state_addressfamily~go">
+<span class="nx">
+Address<wbr>Family
+<a class="anchorjs-link " href="#state_addressfamily~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -894,7 +1144,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Amazon<wbr>Address</span>
+        <span id="state_amazonaddress~go">
+<span class="nx">
+Amazon<wbr>Address
+<a class="anchorjs-link " href="#state_amazonaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -904,7 +1159,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aws<wbr>Device</span>
+        <span id="state_awsdevice~go">
+<span class="nx">
+Aws<wbr>Device
+<a class="anchorjs-link " href="#state_awsdevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -913,7 +1173,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Asn</span>
+        <span id="state_bgpasn~go">
+<span class="nx">
+Bgp<wbr>Asn
+<a class="anchorjs-link " href="#state_bgpasn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -922,7 +1187,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Auth<wbr>Key</span>
+        <span id="state_bgpauthkey~go">
+<span class="nx">
+Bgp<wbr>Auth<wbr>Key
+<a class="anchorjs-link " href="#state_bgpauthkey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -931,7 +1201,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Peer<wbr>Id</span>
+        <span id="state_bgppeerid~go">
+<span class="nx">
+Bgp<wbr>Peer<wbr>Id
+<a class="anchorjs-link " href="#state_bgppeerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -940,7 +1215,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bgp<wbr>Status</span>
+        <span id="state_bgpstatus~go">
+<span class="nx">
+Bgp<wbr>Status
+<a class="anchorjs-link " href="#state_bgpstatus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -949,7 +1229,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Address</span>
+        <span id="state_customeraddress~go">
+<span class="nx">
+Customer<wbr>Address
+<a class="anchorjs-link " href="#state_customeraddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -959,7 +1244,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Interface<wbr>Id</span>
+        <span id="state_virtualinterfaceid~go">
+<span class="nx">
+Virtual<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#state_virtualinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -975,7 +1265,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>address<wbr>Family</span>
+        <span id="state_addressfamily~nodejs">
+<span class="nx">
+address<wbr>Family
+<a class="anchorjs-link " href="#state_addressfamily~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -984,7 +1279,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>amazon<wbr>Address</span>
+        <span id="state_amazonaddress~nodejs">
+<span class="nx">
+amazon<wbr>Address
+<a class="anchorjs-link " href="#state_amazonaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -994,7 +1294,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aws<wbr>Device</span>
+        <span id="state_awsdevice~nodejs">
+<span class="nx">
+aws<wbr>Device
+<a class="anchorjs-link " href="#state_awsdevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1003,7 +1308,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp<wbr>Asn</span>
+        <span id="state_bgpasn~nodejs">
+<span class="nx">
+bgp<wbr>Asn
+<a class="anchorjs-link " href="#state_bgpasn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1012,7 +1322,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp<wbr>Auth<wbr>Key</span>
+        <span id="state_bgpauthkey~nodejs">
+<span class="nx">
+bgp<wbr>Auth<wbr>Key
+<a class="anchorjs-link " href="#state_bgpauthkey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1021,7 +1336,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp<wbr>Peer<wbr>Id</span>
+        <span id="state_bgppeerid~nodejs">
+<span class="nx">
+bgp<wbr>Peer<wbr>Id
+<a class="anchorjs-link " href="#state_bgppeerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1030,7 +1350,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp<wbr>Status</span>
+        <span id="state_bgpstatus~nodejs">
+<span class="nx">
+bgp<wbr>Status
+<a class="anchorjs-link " href="#state_bgpstatus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1039,7 +1364,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer<wbr>Address</span>
+        <span id="state_customeraddress~nodejs">
+<span class="nx">
+customer<wbr>Address
+<a class="anchorjs-link " href="#state_customeraddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1049,7 +1379,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Interface<wbr>Id</span>
+        <span id="state_virtualinterfaceid~nodejs">
+<span class="nx">
+virtual<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#state_virtualinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1065,7 +1400,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>address_<wbr>family</span>
+        <span id="state_address_family~python">
+<span class="nx">
+address_<wbr>family
+<a class="anchorjs-link " href="#state_address_family~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1074,7 +1414,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>amazon_<wbr>address</span>
+        <span id="state_amazon_address~python">
+<span class="nx">
+amazon_<wbr>address
+<a class="anchorjs-link " href="#state_amazon_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1084,7 +1429,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aws_<wbr>device</span>
+        <span id="state_aws_device~python">
+<span class="nx">
+aws_<wbr>device
+<a class="anchorjs-link " href="#state_aws_device~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1093,7 +1443,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp_<wbr>asn</span>
+        <span id="state_bgp_asn~python">
+<span class="nx">
+bgp_<wbr>asn
+<a class="anchorjs-link " href="#state_bgp_asn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1102,7 +1457,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp_<wbr>auth_<wbr>key</span>
+        <span id="state_bgp_auth_key~python">
+<span class="nx">
+bgp_<wbr>auth_<wbr>key
+<a class="anchorjs-link " href="#state_bgp_auth_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1111,7 +1471,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp_<wbr>peer_<wbr>id</span>
+        <span id="state_bgp_peer_id~python">
+<span class="nx">
+bgp_<wbr>peer_<wbr>id
+<a class="anchorjs-link " href="#state_bgp_peer_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1120,7 +1485,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bgp_<wbr>status</span>
+        <span id="state_bgp_status~python">
+<span class="nx">
+bgp_<wbr>status
+<a class="anchorjs-link " href="#state_bgp_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1129,7 +1499,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer_<wbr>address</span>
+        <span id="state_customer_address~python">
+<span class="nx">
+customer_<wbr>address
+<a class="anchorjs-link " href="#state_customer_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1139,7 +1514,12 @@ Required for IPv4 BGP peers on public virtual interfaces.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual_<wbr>interface_<wbr>id</span>
+        <span id="state_virtual_interface_id~python">
+<span class="nx">
+virtual_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#state_virtual_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

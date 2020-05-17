@@ -65,7 +65,7 @@ const selected = pulumi.output(aws.ec2.getCoipPool({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCoipPool<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetCoipPoolArgs">GetCoipPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetCoipPoolResult">GetCoipPoolResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCoipPool<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetCoipPoolArgs">GetCoipPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetCoipPoolResult">GetCoipPoolResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -75,13 +75,14 @@ const selected = pulumi.output(aws.ec2.getCoipPool({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCoipPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetCoipPoolArgs">GetCoipPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetCoipPoolResult">GetCoipPoolResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCoipPool<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetCoipPoolArgs">GetCoipPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#GetCoipPoolResult">GetCoipPoolResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCoipPool </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetCoipPoolResult.html">GetCoipPoolResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetCoipPoolArgs.html">GetCoipPoolArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetCoipPoolResult.html">GetCoipPoolResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetCoipPoolArgs.html">GetCoipPoolArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -96,7 +97,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">List&lt;Get<wbr>Coip<wbr>Pool<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
@@ -104,7 +110,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="localgatewayroutetableid~csharp">
+<span class="nx">
+Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#localgatewayroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -113,7 +124,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pool<wbr>Id</span>
+        <span id="poolid~csharp">
+<span class="nx">
+Pool<wbr>Id
+<a class="anchorjs-link " href="#poolid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -122,7 +138,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -139,7 +160,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">[]Get<wbr>Coip<wbr>Pool<wbr>Filter</a></span>
     </dt>
@@ -147,7 +173,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="localgatewayroutetableid~go">
+<span class="nx">
+Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#localgatewayroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -156,7 +187,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pool<wbr>Id</span>
+        <span id="poolid~go">
+<span class="nx">
+Pool<wbr>Id
+<a class="anchorjs-link " href="#poolid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -165,7 +201,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -182,7 +223,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">Get<wbr>Coip<wbr>Pool<wbr>Filter[]</a></span>
     </dt>
@@ -190,7 +236,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="localgatewayroutetableid~nodejs">
+<span class="nx">
+local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#localgatewayroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -199,7 +250,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>pool<wbr>Id</span>
+        <span id="poolid~nodejs">
+<span class="nx">
+pool<wbr>Id
+<a class="anchorjs-link " href="#poolid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -208,7 +264,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -225,7 +286,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">List[Get<wbr>Coip<wbr>Pool<wbr>Filter]</a></span>
     </dt>
@@ -233,7 +299,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>local_<wbr>gateway_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="local_gateway_route_table_id~python">
+<span class="nx">
+local_<wbr>gateway_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#local_gateway_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -242,7 +313,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>pool_<wbr>id</span>
+        <span id="pool_id~python">
+<span class="nx">
+pool_<wbr>id
+<a class="anchorjs-link " href="#pool_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -251,7 +327,12 @@ a pair on the desired COIP Pool.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -281,7 +362,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -290,7 +376,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="localgatewayroutetableid~csharp">
+<span class="nx">
+Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#localgatewayroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -298,7 +389,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Pool<wbr>Cidrs</span>
+        <span id="poolcidrs~csharp">
+<span class="nx">
+Pool<wbr>Cidrs
+<a class="anchorjs-link " href="#poolcidrs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -307,7 +403,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Pool<wbr>Id</span>
+        <span id="poolid~csharp">
+<span class="nx">
+Pool<wbr>Id
+<a class="anchorjs-link " href="#poolid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -315,7 +416,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -323,7 +429,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">List&lt;Get<wbr>Coip<wbr>Pool<wbr>Filter&gt;</a></span>
     </dt>
@@ -338,7 +449,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -347,7 +463,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="localgatewayroutetableid~go">
+<span class="nx">
+Local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#localgatewayroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -355,7 +476,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Pool<wbr>Cidrs</span>
+        <span id="poolcidrs~go">
+<span class="nx">
+Pool<wbr>Cidrs
+<a class="anchorjs-link " href="#poolcidrs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -364,7 +490,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Pool<wbr>Id</span>
+        <span id="poolid~go">
+<span class="nx">
+Pool<wbr>Id
+<a class="anchorjs-link " href="#poolid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -372,7 +503,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -380,7 +516,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">[]Get<wbr>Coip<wbr>Pool<wbr>Filter</a></span>
     </dt>
@@ -395,7 +536,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -404,7 +550,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="localgatewayroutetableid~nodejs">
+<span class="nx">
+local<wbr>Gateway<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#localgatewayroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -412,7 +563,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>pool<wbr>Cidrs</span>
+        <span id="poolcidrs~nodejs">
+<span class="nx">
+pool<wbr>Cidrs
+<a class="anchorjs-link " href="#poolcidrs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -421,7 +577,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>pool<wbr>Id</span>
+        <span id="poolid~nodejs">
+<span class="nx">
+pool<wbr>Id
+<a class="anchorjs-link " href="#poolid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -429,7 +590,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -437,7 +603,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">Get<wbr>Coip<wbr>Pool<wbr>Filter[]</a></span>
     </dt>
@@ -452,7 +623,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -461,7 +637,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>local_<wbr>gateway_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="local_gateway_route_table_id~python">
+<span class="nx">
+local_<wbr>gateway_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#local_gateway_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -469,7 +650,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>pool_<wbr>cidrs</span>
+        <span id="pool_cidrs~python">
+<span class="nx">
+pool_<wbr>cidrs
+<a class="anchorjs-link " href="#pool_cidrs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -478,7 +664,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>pool_<wbr>id</span>
+        <span id="pool_id~python">
+<span class="nx">
+pool_<wbr>id
+<a class="anchorjs-link " href="#pool_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -486,7 +677,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -494,7 +690,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getcoippoolfilter">List[Get<wbr>Coip<wbr>Pool<wbr>Filter]</a></span>
     </dt>
@@ -533,7 +734,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -543,7 +749,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -560,7 +771,12 @@ A COIP Pool will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -570,7 +786,12 @@ A COIP Pool will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -587,7 +808,12 @@ A COIP Pool will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -597,7 +823,12 @@ A COIP Pool will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -614,7 +845,12 @@ A COIP Pool will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -624,7 +860,12 @@ A COIP Pool will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>

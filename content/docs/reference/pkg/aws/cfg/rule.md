@@ -176,19 +176,19 @@ const exampleRule = new aws.cfg.Rule("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#Rule">Rule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#RuleArgs">RuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#Rule">Rule</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#RuleArgs">RuleArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Rule</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>description=None<span class="p">, </span>input_parameters=None<span class="p">, </span>maximum_execution_frequency=None<span class="p">, </span>name=None<span class="p">, </span>scope=None<span class="p">, </span>source=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/cfg/#Rule">Rule</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>description=None<span class="p">, </span>input_parameters=None<span class="p">, </span>maximum_execution_frequency=None<span class="p">, </span>name=None<span class="p">, </span>scope=None<span class="p">, </span>source=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#RuleArgs">RuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#Rule">Rule</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#Rule">NewRule</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#RuleArgs">RuleArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#Rule">Rule</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.Rule.html">Rule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.RuleArgs.html">RuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.Rule.html">Rule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.RuleArgs.html">RuleArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -354,7 +354,12 @@ The Rule resource accepts the following [input]({{< relref "/docs/intro/concepts
 
     <dt class="property-required"
             title="Required">
-        <span>Source</span>
+        <span id="source~csharp">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#source~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Rule<wbr>Source<wbr>Args</a></span>
     </dt>
@@ -364,7 +369,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -373,7 +383,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Input<wbr>Parameters</span>
+        <span id="inputparameters~csharp">
+<span class="nx">
+Input<wbr>Parameters
+<a class="anchorjs-link " href="#inputparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -382,7 +397,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="maximumexecutionfrequency~csharp">
+<span class="nx">
+Maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#maximumexecutionfrequency~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -392,7 +412,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -401,7 +426,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scope</span>
+        <span id="scope~csharp">
+<span class="nx">
+Scope
+<a class="anchorjs-link " href="#scope~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Rule<wbr>Scope<wbr>Args</a></span>
     </dt>
@@ -410,7 +440,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -426,7 +461,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-required"
             title="Required">
-        <span>Source</span>
+        <span id="source~go">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#source~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Rule<wbr>Source</a></span>
     </dt>
@@ -436,7 +476,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -445,7 +490,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Input<wbr>Parameters</span>
+        <span id="inputparameters~go">
+<span class="nx">
+Input<wbr>Parameters
+<a class="anchorjs-link " href="#inputparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -454,7 +504,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="maximumexecutionfrequency~go">
+<span class="nx">
+Maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#maximumexecutionfrequency~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -464,7 +519,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -473,7 +533,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scope</span>
+        <span id="scope~go">
+<span class="nx">
+Scope
+<a class="anchorjs-link " href="#scope~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Rule<wbr>Scope</a></span>
     </dt>
@@ -482,7 +547,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -498,7 +568,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-required"
             title="Required">
-        <span>source</span>
+        <span id="source~nodejs">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#source~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Rule<wbr>Source</a></span>
     </dt>
@@ -508,7 +583,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -517,7 +597,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>input<wbr>Parameters</span>
+        <span id="inputparameters~nodejs">
+<span class="nx">
+input<wbr>Parameters
+<a class="anchorjs-link " href="#inputparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -526,7 +611,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="maximumexecutionfrequency~nodejs">
+<span class="nx">
+maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#maximumexecutionfrequency~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -536,7 +626,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -545,7 +640,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>scope</span>
+        <span id="scope~nodejs">
+<span class="nx">
+scope
+<a class="anchorjs-link " href="#scope~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Rule<wbr>Scope</a></span>
     </dt>
@@ -554,7 +654,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -570,7 +675,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-required"
             title="Required">
-        <span>source</span>
+        <span id="source~python">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#source~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Dict[Rule<wbr>Source]</a></span>
     </dt>
@@ -580,7 +690,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -589,7 +704,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>input_<wbr>parameters</span>
+        <span id="input_parameters~python">
+<span class="nx">
+input_<wbr>parameters
+<a class="anchorjs-link " href="#input_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -598,7 +718,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>maximum_<wbr>execution_<wbr>frequency</span>
+        <span id="maximum_execution_frequency~python">
+<span class="nx">
+maximum_<wbr>execution_<wbr>frequency
+<a class="anchorjs-link " href="#maximum_execution_frequency~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -608,7 +733,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -617,7 +747,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>scope</span>
+        <span id="scope~python">
+<span class="nx">
+scope
+<a class="anchorjs-link " href="#scope~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Dict[Rule<wbr>Scope]</a></span>
     </dt>
@@ -626,7 +761,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -653,7 +793,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -662,7 +807,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -670,7 +820,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Rule<wbr>Id</span>
+        <span id="ruleid~csharp">
+<span class="nx">
+Rule<wbr>Id
+<a class="anchorjs-link " href="#ruleid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -686,7 +841,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -695,7 +855,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -703,7 +868,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Rule<wbr>Id</span>
+        <span id="ruleid~go">
+<span class="nx">
+Rule<wbr>Id
+<a class="anchorjs-link " href="#ruleid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -719,7 +889,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -728,7 +903,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -736,7 +916,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>rule<wbr>Id</span>
+        <span id="ruleid~nodejs">
+<span class="nx">
+rule<wbr>Id
+<a class="anchorjs-link " href="#ruleid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -752,7 +937,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -761,7 +951,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -769,7 +964,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>rule_<wbr>id</span>
+        <span id="rule_id~python">
+<span class="nx">
+rule_<wbr>id
+<a class="anchorjs-link " href="#rule_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -791,7 +991,7 @@ Get an existing Rule resource's state with the given name, ID, and optional extr
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#RuleState">RuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#Rule">Rule</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#RuleState">RuleState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cfg/#Rule">Rule</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -799,11 +999,11 @@ Get an existing Rule resource's state with the given name, ID, and optional extr
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#RuleState">RuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#Rule">Rule</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRule<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#RuleState">RuleState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cfg?tab=doc#Rule">Rule</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.Rule.html">Rule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.RuleState.html">RuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.Rule.html">Rule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cfg.RuleState.html">RuleState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -911,7 +1111,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -920,7 +1125,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -929,7 +1139,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Input<wbr>Parameters</span>
+        <span id="state_inputparameters~csharp">
+<span class="nx">
+Input<wbr>Parameters
+<a class="anchorjs-link " href="#state_inputparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -938,7 +1153,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="state_maximumexecutionfrequency~csharp">
+<span class="nx">
+Maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#state_maximumexecutionfrequency~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -948,7 +1168,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -957,7 +1182,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Rule<wbr>Id</span>
+        <span id="state_ruleid~csharp">
+<span class="nx">
+Rule<wbr>Id
+<a class="anchorjs-link " href="#state_ruleid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -966,7 +1196,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scope</span>
+        <span id="state_scope~csharp">
+<span class="nx">
+Scope
+<a class="anchorjs-link " href="#state_scope~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Rule<wbr>Scope<wbr>Args</a></span>
     </dt>
@@ -975,7 +1210,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source</span>
+        <span id="state_source~csharp">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#state_source~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Rule<wbr>Source<wbr>Args</a></span>
     </dt>
@@ -985,7 +1225,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1001,7 +1246,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1010,7 +1260,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1019,7 +1274,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Input<wbr>Parameters</span>
+        <span id="state_inputparameters~go">
+<span class="nx">
+Input<wbr>Parameters
+<a class="anchorjs-link " href="#state_inputparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1028,7 +1288,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="state_maximumexecutionfrequency~go">
+<span class="nx">
+Maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#state_maximumexecutionfrequency~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1038,7 +1303,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1047,7 +1317,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Rule<wbr>Id</span>
+        <span id="state_ruleid~go">
+<span class="nx">
+Rule<wbr>Id
+<a class="anchorjs-link " href="#state_ruleid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1056,7 +1331,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scope</span>
+        <span id="state_scope~go">
+<span class="nx">
+Scope
+<a class="anchorjs-link " href="#state_scope~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Rule<wbr>Scope</a></span>
     </dt>
@@ -1065,7 +1345,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source</span>
+        <span id="state_source~go">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#state_source~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Rule<wbr>Source</a></span>
     </dt>
@@ -1075,7 +1360,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1091,7 +1381,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1100,7 +1395,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1109,7 +1409,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>input<wbr>Parameters</span>
+        <span id="state_inputparameters~nodejs">
+<span class="nx">
+input<wbr>Parameters
+<a class="anchorjs-link " href="#state_inputparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1118,7 +1423,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="state_maximumexecutionfrequency~nodejs">
+<span class="nx">
+maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#state_maximumexecutionfrequency~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1128,7 +1438,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1137,7 +1452,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>rule<wbr>Id</span>
+        <span id="state_ruleid~nodejs">
+<span class="nx">
+rule<wbr>Id
+<a class="anchorjs-link " href="#state_ruleid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1146,7 +1466,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>scope</span>
+        <span id="state_scope~nodejs">
+<span class="nx">
+scope
+<a class="anchorjs-link " href="#state_scope~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Rule<wbr>Scope</a></span>
     </dt>
@@ -1155,7 +1480,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>source</span>
+        <span id="state_source~nodejs">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#state_source~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Rule<wbr>Source</a></span>
     </dt>
@@ -1165,7 +1495,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1181,7 +1516,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1190,7 +1530,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1199,7 +1544,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>input_<wbr>parameters</span>
+        <span id="state_input_parameters~python">
+<span class="nx">
+input_<wbr>parameters
+<a class="anchorjs-link " href="#state_input_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1208,7 +1558,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>maximum_<wbr>execution_<wbr>frequency</span>
+        <span id="state_maximum_execution_frequency~python">
+<span class="nx">
+maximum_<wbr>execution_<wbr>frequency
+<a class="anchorjs-link " href="#state_maximum_execution_frequency~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1218,7 +1573,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1227,7 +1587,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>rule_<wbr>id</span>
+        <span id="state_rule_id~python">
+<span class="nx">
+rule_<wbr>id
+<a class="anchorjs-link " href="#state_rule_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1236,7 +1601,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>scope</span>
+        <span id="state_scope~python">
+<span class="nx">
+scope
+<a class="anchorjs-link " href="#state_scope~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulescope">Dict[Rule<wbr>Scope]</a></span>
     </dt>
@@ -1245,7 +1615,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>source</span>
+        <span id="state_source~python">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#state_source~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesource">Dict[Rule<wbr>Source]</a></span>
     </dt>
@@ -1255,7 +1630,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1297,7 +1677,12 @@ the function to evaluate your AWS resources as documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compliance<wbr>Resource<wbr>Id</span>
+        <span id="complianceresourceid~csharp">
+<span class="nx">
+Compliance<wbr>Resource<wbr>Id
+<a class="anchorjs-link " href="#complianceresourceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1307,7 +1692,12 @@ If you specify a resource ID, you must specify one resource type for `compliance
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compliance<wbr>Resource<wbr>Types</span>
+        <span id="complianceresourcetypes~csharp">
+<span class="nx">
+Compliance<wbr>Resource<wbr>Types
+<a class="anchorjs-link " href="#complianceresourcetypes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1318,7 +1708,12 @@ a resource ID for `compliance_resource_id`. See [relevant part of AWS Docs](http
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Key</span>
+        <span id="tagkey~csharp">
+<span class="nx">
+Tag<wbr>Key
+<a class="anchorjs-link " href="#tagkey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1328,7 +1723,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Value</span>
+        <span id="tagvalue~csharp">
+<span class="nx">
+Tag<wbr>Value
+<a class="anchorjs-link " href="#tagvalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1344,7 +1744,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compliance<wbr>Resource<wbr>Id</span>
+        <span id="complianceresourceid~go">
+<span class="nx">
+Compliance<wbr>Resource<wbr>Id
+<a class="anchorjs-link " href="#complianceresourceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1354,7 +1759,12 @@ If you specify a resource ID, you must specify one resource type for `compliance
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compliance<wbr>Resource<wbr>Types</span>
+        <span id="complianceresourcetypes~go">
+<span class="nx">
+Compliance<wbr>Resource<wbr>Types
+<a class="anchorjs-link " href="#complianceresourcetypes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1365,7 +1775,12 @@ a resource ID for `compliance_resource_id`. See [relevant part of AWS Docs](http
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Key</span>
+        <span id="tagkey~go">
+<span class="nx">
+Tag<wbr>Key
+<a class="anchorjs-link " href="#tagkey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1375,7 +1790,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Value</span>
+        <span id="tagvalue~go">
+<span class="nx">
+Tag<wbr>Value
+<a class="anchorjs-link " href="#tagvalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1391,7 +1811,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compliance<wbr>Resource<wbr>Id</span>
+        <span id="complianceresourceid~nodejs">
+<span class="nx">
+compliance<wbr>Resource<wbr>Id
+<a class="anchorjs-link " href="#complianceresourceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1401,7 +1826,12 @@ If you specify a resource ID, you must specify one resource type for `compliance
 
     <dt class="property-optional"
             title="Optional">
-        <span>compliance<wbr>Resource<wbr>Types</span>
+        <span id="complianceresourcetypes~nodejs">
+<span class="nx">
+compliance<wbr>Resource<wbr>Types
+<a class="anchorjs-link " href="#complianceresourcetypes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1412,7 +1842,12 @@ a resource ID for `compliance_resource_id`. See [relevant part of AWS Docs](http
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag<wbr>Key</span>
+        <span id="tagkey~nodejs">
+<span class="nx">
+tag<wbr>Key
+<a class="anchorjs-link " href="#tagkey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1422,7 +1857,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag<wbr>Value</span>
+        <span id="tagvalue~nodejs">
+<span class="nx">
+tag<wbr>Value
+<a class="anchorjs-link " href="#tagvalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1438,7 +1878,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compliance<wbr>Resource<wbr>Id</span>
+        <span id="complianceresourceid~python">
+<span class="nx">
+compliance<wbr>Resource<wbr>Id
+<a class="anchorjs-link " href="#complianceresourceid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1448,7 +1893,12 @@ If you specify a resource ID, you must specify one resource type for `compliance
 
     <dt class="property-optional"
             title="Optional">
-        <span>compliance<wbr>Resource<wbr>Types</span>
+        <span id="complianceresourcetypes~python">
+<span class="nx">
+compliance<wbr>Resource<wbr>Types
+<a class="anchorjs-link " href="#complianceresourcetypes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1459,7 +1909,12 @@ a resource ID for `compliance_resource_id`. See [relevant part of AWS Docs](http
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag<wbr>Key</span>
+        <span id="tagkey~python">
+<span class="nx">
+tag<wbr>Key
+<a class="anchorjs-link " href="#tagkey~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1469,7 +1924,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag<wbr>Value</span>
+        <span id="tagvalue~python">
+<span class="nx">
+tag<wbr>Value
+<a class="anchorjs-link " href="#tagvalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1503,7 +1963,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>Owner</span>
+        <span id="owner~csharp">
+<span class="nx">
+Owner
+<a class="anchorjs-link " href="#owner~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1512,7 +1977,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>Source<wbr>Identifier</span>
+        <span id="sourceidentifier~csharp">
+<span class="nx">
+Source<wbr>Identifier
+<a class="anchorjs-link " href="#sourceidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1521,7 +1991,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Details</span>
+        <span id="sourcedetails~csharp">
+<span class="nx">
+Source<wbr>Details
+<a class="anchorjs-link " href="#sourcedetails~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesourcesourcedetail">List&lt;Rule<wbr>Source<wbr>Source<wbr>Detail<wbr>Args&gt;</a></span>
     </dt>
@@ -1537,7 +2012,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>Owner</span>
+        <span id="owner~go">
+<span class="nx">
+Owner
+<a class="anchorjs-link " href="#owner~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1546,7 +2026,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>Source<wbr>Identifier</span>
+        <span id="sourceidentifier~go">
+<span class="nx">
+Source<wbr>Identifier
+<a class="anchorjs-link " href="#sourceidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1555,7 +2040,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Details</span>
+        <span id="sourcedetails~go">
+<span class="nx">
+Source<wbr>Details
+<a class="anchorjs-link " href="#sourcedetails~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesourcesourcedetail">[]Rule<wbr>Source<wbr>Source<wbr>Detail</a></span>
     </dt>
@@ -1571,7 +2061,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>owner</span>
+        <span id="owner~nodejs">
+<span class="nx">
+owner
+<a class="anchorjs-link " href="#owner~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1580,7 +2075,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>source<wbr>Identifier</span>
+        <span id="sourceidentifier~nodejs">
+<span class="nx">
+source<wbr>Identifier
+<a class="anchorjs-link " href="#sourceidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1589,7 +2089,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Details</span>
+        <span id="sourcedetails~nodejs">
+<span class="nx">
+source<wbr>Details
+<a class="anchorjs-link " href="#sourcedetails~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesourcesourcedetail">Rule<wbr>Source<wbr>Source<wbr>Detail[]</a></span>
     </dt>
@@ -1605,7 +2110,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>owner</span>
+        <span id="owner~python">
+<span class="nx">
+owner
+<a class="anchorjs-link " href="#owner~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1614,7 +2124,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-required"
             title="Required">
-        <span>source<wbr>Identifier</span>
+        <span id="sourceidentifier~python">
+<span class="nx">
+source<wbr>Identifier
+<a class="anchorjs-link " href="#sourceidentifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1623,7 +2138,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Details</span>
+        <span id="sourcedetails~python">
+<span class="nx">
+source<wbr>Details
+<a class="anchorjs-link " href="#sourcedetails~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#rulesourcesourcedetail">List[Rule<wbr>Source<wbr>Source<wbr>Detail]</a></span>
     </dt>
@@ -1657,7 +2177,12 @@ want to trigger an evaluation for the rule.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Source</span>
+        <span id="eventsource~csharp">
+<span class="nx">
+Event<wbr>Source
+<a class="anchorjs-link " href="#eventsource~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1667,7 +2192,12 @@ to evaluate your AWS resources. This defaults to `aws.config` and is the only va
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="maximumexecutionfrequency~csharp">
+<span class="nx">
+Maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#maximumexecutionfrequency~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1677,7 +2207,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Message<wbr>Type</span>
+        <span id="messagetype~csharp">
+<span class="nx">
+Message<wbr>Type
+<a class="anchorjs-link " href="#messagetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1693,7 +2228,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Source</span>
+        <span id="eventsource~go">
+<span class="nx">
+Event<wbr>Source
+<a class="anchorjs-link " href="#eventsource~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1703,7 +2243,12 @@ to evaluate your AWS resources. This defaults to `aws.config` and is the only va
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="maximumexecutionfrequency~go">
+<span class="nx">
+Maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#maximumexecutionfrequency~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1713,7 +2258,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>Message<wbr>Type</span>
+        <span id="messagetype~go">
+<span class="nx">
+Message<wbr>Type
+<a class="anchorjs-link " href="#messagetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1729,7 +2279,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>event<wbr>Source</span>
+        <span id="eventsource~nodejs">
+<span class="nx">
+event<wbr>Source
+<a class="anchorjs-link " href="#eventsource~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1739,7 +2294,12 @@ to evaluate your AWS resources. This defaults to `aws.config` and is the only va
 
     <dt class="property-optional"
             title="Optional">
-        <span>maximum<wbr>Execution<wbr>Frequency</span>
+        <span id="maximumexecutionfrequency~nodejs">
+<span class="nx">
+maximum<wbr>Execution<wbr>Frequency
+<a class="anchorjs-link " href="#maximumexecutionfrequency~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1749,7 +2309,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>message<wbr>Type</span>
+        <span id="messagetype~nodejs">
+<span class="nx">
+message<wbr>Type
+<a class="anchorjs-link " href="#messagetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1765,7 +2330,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>event<wbr>Source</span>
+        <span id="eventsource~python">
+<span class="nx">
+event<wbr>Source
+<a class="anchorjs-link " href="#eventsource~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1775,7 +2345,12 @@ to evaluate your AWS resources. This defaults to `aws.config` and is the only va
 
     <dt class="property-optional"
             title="Optional">
-        <span>maximum_<wbr>execution_<wbr>frequency</span>
+        <span id="maximum_execution_frequency~python">
+<span class="nx">
+maximum_<wbr>execution_<wbr>frequency
+<a class="anchorjs-link " href="#maximum_execution_frequency~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1785,7 +2360,12 @@ is triggered periodically. If specified, requires `message_type` to be `Schedule
 
     <dt class="property-optional"
             title="Optional">
-        <span>message<wbr>Type</span>
+        <span id="messagetype~python">
+<span class="nx">
+message<wbr>Type
+<a class="anchorjs-link " href="#messagetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

@@ -79,19 +79,19 @@ const main = new aws.opsworks.Stack("main", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Stack">Stack</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#StackArgs">StackArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Stack">Stack</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#StackArgs">StackArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Stack</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>agent_version=None<span class="p">, </span>berkshelf_version=None<span class="p">, </span>color=None<span class="p">, </span>configuration_manager_name=None<span class="p">, </span>configuration_manager_version=None<span class="p">, </span>custom_cookbooks_sources=None<span class="p">, </span>custom_json=None<span class="p">, </span>default_availability_zone=None<span class="p">, </span>default_instance_profile_arn=None<span class="p">, </span>default_os=None<span class="p">, </span>default_root_device_type=None<span class="p">, </span>default_ssh_key_name=None<span class="p">, </span>default_subnet_id=None<span class="p">, </span>hostname_theme=None<span class="p">, </span>manage_berkshelf=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>tags=None<span class="p">, </span>use_custom_cookbooks=None<span class="p">, </span>use_opsworks_security_groups=None<span class="p">, </span>vpc_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/opsworks/#Stack">Stack</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>agent_version=None<span class="p">, </span>berkshelf_version=None<span class="p">, </span>color=None<span class="p">, </span>configuration_manager_name=None<span class="p">, </span>configuration_manager_version=None<span class="p">, </span>custom_cookbooks_sources=None<span class="p">, </span>custom_json=None<span class="p">, </span>default_availability_zone=None<span class="p">, </span>default_instance_profile_arn=None<span class="p">, </span>default_os=None<span class="p">, </span>default_root_device_type=None<span class="p">, </span>default_ssh_key_name=None<span class="p">, </span>default_subnet_id=None<span class="p">, </span>hostname_theme=None<span class="p">, </span>manage_berkshelf=None<span class="p">, </span>name=None<span class="p">, </span>region=None<span class="p">, </span>service_role_arn=None<span class="p">, </span>tags=None<span class="p">, </span>use_custom_cookbooks=None<span class="p">, </span>use_opsworks_security_groups=None<span class="p">, </span>vpc_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStack<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackArgs">StackArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">Stack</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">NewStack</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackArgs">StackArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">Stack</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Stack.html">Stack</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.StackArgs.html">StackArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Stack.html">Stack</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.StackArgs.html">StackArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -257,7 +257,12 @@ The Stack resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-required"
             title="Required">
-        <span>Default<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="defaultinstanceprofilearn~csharp">
+<span class="nx">
+Default<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#defaultinstanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -267,7 +272,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>Region</span>
+        <span id="region~csharp">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -276,7 +286,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>Service<wbr>Role<wbr>Arn</span>
+        <span id="servicerolearn~csharp">
+<span class="nx">
+Service<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#servicerolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -285,7 +300,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="agentversion~csharp">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#agentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -294,7 +314,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Berkshelf<wbr>Version</span>
+        <span id="berkshelfversion~csharp">
+<span class="nx">
+Berkshelf<wbr>Version
+<a class="anchorjs-link " href="#berkshelfversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -303,7 +328,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Color</span>
+        <span id="color~csharp">
+<span class="nx">
+Color
+<a class="anchorjs-link " href="#color~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -312,7 +342,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Name</span>
+        <span id="configurationmanagername~csharp">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Name
+<a class="anchorjs-link " href="#configurationmanagername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -321,7 +356,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Version</span>
+        <span id="configurationmanagerversion~csharp">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Version
+<a class="anchorjs-link " href="#configurationmanagerversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -330,7 +370,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Cookbooks<wbr>Sources</span>
+        <span id="customcookbookssources~csharp">
+<span class="nx">
+Custom<wbr>Cookbooks<wbr>Sources
+<a class="anchorjs-link " href="#customcookbookssources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List&lt;Stack<wbr>Custom<wbr>Cookbooks<wbr>Source<wbr>Args&gt;</a></span>
     </dt>
@@ -340,7 +385,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="customjson~csharp">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#customjson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -349,7 +399,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Availability<wbr>Zone</span>
+        <span id="defaultavailabilityzone~csharp">
+<span class="nx">
+Default<wbr>Availability<wbr>Zone
+<a class="anchorjs-link " href="#defaultavailabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -359,7 +414,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Os</span>
+        <span id="defaultos~csharp">
+<span class="nx">
+Default<wbr>Os
+<a class="anchorjs-link " href="#defaultos~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -368,7 +428,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Device<wbr>Type</span>
+        <span id="defaultrootdevicetype~csharp">
+<span class="nx">
+Default<wbr>Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#defaultrootdevicetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -377,7 +442,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ssh<wbr>Key<wbr>Name</span>
+        <span id="defaultsshkeyname~csharp">
+<span class="nx">
+Default<wbr>Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#defaultsshkeyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -386,7 +456,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Subnet<wbr>Id</span>
+        <span id="defaultsubnetid~csharp">
+<span class="nx">
+Default<wbr>Subnet<wbr>Id
+<a class="anchorjs-link " href="#defaultsubnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -396,7 +471,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname<wbr>Theme</span>
+        <span id="hostnametheme~csharp">
+<span class="nx">
+Hostname<wbr>Theme
+<a class="anchorjs-link " href="#hostnametheme~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -406,7 +486,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manage<wbr>Berkshelf</span>
+        <span id="manageberkshelf~csharp">
+<span class="nx">
+Manage<wbr>Berkshelf
+<a class="anchorjs-link " href="#manageberkshelf~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -415,7 +500,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -424,7 +514,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -433,7 +528,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Custom<wbr>Cookbooks</span>
+        <span id="usecustomcookbooks~csharp">
+<span class="nx">
+Use<wbr>Custom<wbr>Cookbooks
+<a class="anchorjs-link " href="#usecustomcookbooks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -443,7 +543,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Opsworks<wbr>Security<wbr>Groups</span>
+        <span id="useopsworkssecuritygroups~csharp">
+<span class="nx">
+Use<wbr>Opsworks<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#useopsworkssecuritygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -453,7 +558,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~csharp">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -469,7 +579,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>Default<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="defaultinstanceprofilearn~go">
+<span class="nx">
+Default<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#defaultinstanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -479,7 +594,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>Region</span>
+        <span id="region~go">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -488,7 +608,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>Service<wbr>Role<wbr>Arn</span>
+        <span id="servicerolearn~go">
+<span class="nx">
+Service<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#servicerolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -497,7 +622,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="agentversion~go">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#agentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -506,7 +636,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Berkshelf<wbr>Version</span>
+        <span id="berkshelfversion~go">
+<span class="nx">
+Berkshelf<wbr>Version
+<a class="anchorjs-link " href="#berkshelfversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -515,7 +650,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Color</span>
+        <span id="color~go">
+<span class="nx">
+Color
+<a class="anchorjs-link " href="#color~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -524,7 +664,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Name</span>
+        <span id="configurationmanagername~go">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Name
+<a class="anchorjs-link " href="#configurationmanagername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -533,7 +678,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Version</span>
+        <span id="configurationmanagerversion~go">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Version
+<a class="anchorjs-link " href="#configurationmanagerversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -542,7 +692,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Cookbooks<wbr>Sources</span>
+        <span id="customcookbookssources~go">
+<span class="nx">
+Custom<wbr>Cookbooks<wbr>Sources
+<a class="anchorjs-link " href="#customcookbookssources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">[]Stack<wbr>Custom<wbr>Cookbooks<wbr>Source</a></span>
     </dt>
@@ -552,7 +707,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="customjson~go">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#customjson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -561,7 +721,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Availability<wbr>Zone</span>
+        <span id="defaultavailabilityzone~go">
+<span class="nx">
+Default<wbr>Availability<wbr>Zone
+<a class="anchorjs-link " href="#defaultavailabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -571,7 +736,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Os</span>
+        <span id="defaultos~go">
+<span class="nx">
+Default<wbr>Os
+<a class="anchorjs-link " href="#defaultos~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -580,7 +750,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Device<wbr>Type</span>
+        <span id="defaultrootdevicetype~go">
+<span class="nx">
+Default<wbr>Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#defaultrootdevicetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -589,7 +764,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ssh<wbr>Key<wbr>Name</span>
+        <span id="defaultsshkeyname~go">
+<span class="nx">
+Default<wbr>Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#defaultsshkeyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -598,7 +778,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Subnet<wbr>Id</span>
+        <span id="defaultsubnetid~go">
+<span class="nx">
+Default<wbr>Subnet<wbr>Id
+<a class="anchorjs-link " href="#defaultsubnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -608,7 +793,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname<wbr>Theme</span>
+        <span id="hostnametheme~go">
+<span class="nx">
+Hostname<wbr>Theme
+<a class="anchorjs-link " href="#hostnametheme~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -618,7 +808,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manage<wbr>Berkshelf</span>
+        <span id="manageberkshelf~go">
+<span class="nx">
+Manage<wbr>Berkshelf
+<a class="anchorjs-link " href="#manageberkshelf~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -627,7 +822,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -636,7 +836,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -645,7 +850,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Custom<wbr>Cookbooks</span>
+        <span id="usecustomcookbooks~go">
+<span class="nx">
+Use<wbr>Custom<wbr>Cookbooks
+<a class="anchorjs-link " href="#usecustomcookbooks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -655,7 +865,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Opsworks<wbr>Security<wbr>Groups</span>
+        <span id="useopsworkssecuritygroups~go">
+<span class="nx">
+Use<wbr>Opsworks<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#useopsworkssecuritygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -665,7 +880,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~go">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -681,7 +901,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>default<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="defaultinstanceprofilearn~nodejs">
+<span class="nx">
+default<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#defaultinstanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -691,7 +916,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>region</span>
+        <span id="region~nodejs">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -700,7 +930,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>service<wbr>Role<wbr>Arn</span>
+        <span id="servicerolearn~nodejs">
+<span class="nx">
+service<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#servicerolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -709,7 +944,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent<wbr>Version</span>
+        <span id="agentversion~nodejs">
+<span class="nx">
+agent<wbr>Version
+<a class="anchorjs-link " href="#agentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -718,7 +958,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>berkshelf<wbr>Version</span>
+        <span id="berkshelfversion~nodejs">
+<span class="nx">
+berkshelf<wbr>Version
+<a class="anchorjs-link " href="#berkshelfversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -727,7 +972,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>color</span>
+        <span id="color~nodejs">
+<span class="nx">
+color
+<a class="anchorjs-link " href="#color~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -736,7 +986,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Manager<wbr>Name</span>
+        <span id="configurationmanagername~nodejs">
+<span class="nx">
+configuration<wbr>Manager<wbr>Name
+<a class="anchorjs-link " href="#configurationmanagername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -745,7 +1000,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Manager<wbr>Version</span>
+        <span id="configurationmanagerversion~nodejs">
+<span class="nx">
+configuration<wbr>Manager<wbr>Version
+<a class="anchorjs-link " href="#configurationmanagerversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -754,7 +1014,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Cookbooks<wbr>Sources</span>
+        <span id="customcookbookssources~nodejs">
+<span class="nx">
+custom<wbr>Cookbooks<wbr>Sources
+<a class="anchorjs-link " href="#customcookbookssources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">Stack<wbr>Custom<wbr>Cookbooks<wbr>Source[]</a></span>
     </dt>
@@ -764,7 +1029,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Json</span>
+        <span id="customjson~nodejs">
+<span class="nx">
+custom<wbr>Json
+<a class="anchorjs-link " href="#customjson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -773,7 +1043,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Availability<wbr>Zone</span>
+        <span id="defaultavailabilityzone~nodejs">
+<span class="nx">
+default<wbr>Availability<wbr>Zone
+<a class="anchorjs-link " href="#defaultavailabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -783,7 +1058,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Os</span>
+        <span id="defaultos~nodejs">
+<span class="nx">
+default<wbr>Os
+<a class="anchorjs-link " href="#defaultos~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -792,7 +1072,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Root<wbr>Device<wbr>Type</span>
+        <span id="defaultrootdevicetype~nodejs">
+<span class="nx">
+default<wbr>Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#defaultrootdevicetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -801,7 +1086,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Ssh<wbr>Key<wbr>Name</span>
+        <span id="defaultsshkeyname~nodejs">
+<span class="nx">
+default<wbr>Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#defaultsshkeyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -810,7 +1100,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Subnet<wbr>Id</span>
+        <span id="defaultsubnetid~nodejs">
+<span class="nx">
+default<wbr>Subnet<wbr>Id
+<a class="anchorjs-link " href="#defaultsubnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -820,7 +1115,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname<wbr>Theme</span>
+        <span id="hostnametheme~nodejs">
+<span class="nx">
+hostname<wbr>Theme
+<a class="anchorjs-link " href="#hostnametheme~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -830,7 +1130,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>manage<wbr>Berkshelf</span>
+        <span id="manageberkshelf~nodejs">
+<span class="nx">
+manage<wbr>Berkshelf
+<a class="anchorjs-link " href="#manageberkshelf~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -839,7 +1144,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -848,7 +1158,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -857,7 +1172,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use<wbr>Custom<wbr>Cookbooks</span>
+        <span id="usecustomcookbooks~nodejs">
+<span class="nx">
+use<wbr>Custom<wbr>Cookbooks
+<a class="anchorjs-link " href="#usecustomcookbooks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -867,7 +1187,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use<wbr>Opsworks<wbr>Security<wbr>Groups</span>
+        <span id="useopsworkssecuritygroups~nodejs">
+<span class="nx">
+use<wbr>Opsworks<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#useopsworkssecuritygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -877,7 +1202,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Id</span>
+        <span id="vpcid~nodejs">
+<span class="nx">
+vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -893,7 +1223,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>default_<wbr>instance_<wbr>profile_<wbr>arn</span>
+        <span id="default_instance_profile_arn~python">
+<span class="nx">
+default_<wbr>instance_<wbr>profile_<wbr>arn
+<a class="anchorjs-link " href="#default_instance_profile_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -903,7 +1238,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>region</span>
+        <span id="region~python">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -912,7 +1252,12 @@ will have by default.
 
     <dt class="property-required"
             title="Required">
-        <span>service_<wbr>role_<wbr>arn</span>
+        <span id="service_role_arn~python">
+<span class="nx">
+service_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#service_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -921,7 +1266,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent_<wbr>version</span>
+        <span id="agent_version~python">
+<span class="nx">
+agent_<wbr>version
+<a class="anchorjs-link " href="#agent_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -930,7 +1280,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>berkshelf_<wbr>version</span>
+        <span id="berkshelf_version~python">
+<span class="nx">
+berkshelf_<wbr>version
+<a class="anchorjs-link " href="#berkshelf_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -939,7 +1294,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>color</span>
+        <span id="color~python">
+<span class="nx">
+color
+<a class="anchorjs-link " href="#color~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -948,7 +1308,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>manager_<wbr>name</span>
+        <span id="configuration_manager_name~python">
+<span class="nx">
+configuration_<wbr>manager_<wbr>name
+<a class="anchorjs-link " href="#configuration_manager_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -957,7 +1322,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>manager_<wbr>version</span>
+        <span id="configuration_manager_version~python">
+<span class="nx">
+configuration_<wbr>manager_<wbr>version
+<a class="anchorjs-link " href="#configuration_manager_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -966,7 +1336,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>cookbooks_<wbr>sources</span>
+        <span id="custom_cookbooks_sources~python">
+<span class="nx">
+custom_<wbr>cookbooks_<wbr>sources
+<a class="anchorjs-link " href="#custom_cookbooks_sources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List[Stack<wbr>Custom<wbr>Cookbooks<wbr>Source]</a></span>
     </dt>
@@ -976,7 +1351,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>json</span>
+        <span id="custom_json~python">
+<span class="nx">
+custom_<wbr>json
+<a class="anchorjs-link " href="#custom_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -985,7 +1365,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>availability_<wbr>zone</span>
+        <span id="default_availability_zone~python">
+<span class="nx">
+default_<wbr>availability_<wbr>zone
+<a class="anchorjs-link " href="#default_availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -995,7 +1380,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>os</span>
+        <span id="default_os~python">
+<span class="nx">
+default_<wbr>os
+<a class="anchorjs-link " href="#default_os~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1004,7 +1394,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>root_<wbr>device_<wbr>type</span>
+        <span id="default_root_device_type~python">
+<span class="nx">
+default_<wbr>root_<wbr>device_<wbr>type
+<a class="anchorjs-link " href="#default_root_device_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1013,7 +1408,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>ssh_<wbr>key_<wbr>name</span>
+        <span id="default_ssh_key_name~python">
+<span class="nx">
+default_<wbr>ssh_<wbr>key_<wbr>name
+<a class="anchorjs-link " href="#default_ssh_key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1022,7 +1422,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>subnet_<wbr>id</span>
+        <span id="default_subnet_id~python">
+<span class="nx">
+default_<wbr>subnet_<wbr>id
+<a class="anchorjs-link " href="#default_subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1032,7 +1437,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname_<wbr>theme</span>
+        <span id="hostname_theme~python">
+<span class="nx">
+hostname_<wbr>theme
+<a class="anchorjs-link " href="#hostname_theme~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1042,7 +1452,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>manage_<wbr>berkshelf</span>
+        <span id="manage_berkshelf~python">
+<span class="nx">
+manage_<wbr>berkshelf
+<a class="anchorjs-link " href="#manage_berkshelf~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1051,7 +1466,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1060,7 +1480,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1069,7 +1494,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use_<wbr>custom_<wbr>cookbooks</span>
+        <span id="use_custom_cookbooks~python">
+<span class="nx">
+use_<wbr>custom_<wbr>cookbooks
+<a class="anchorjs-link " href="#use_custom_cookbooks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1079,7 +1509,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use_<wbr>opsworks_<wbr>security_<wbr>groups</span>
+        <span id="use_opsworks_security_groups~python">
+<span class="nx">
+use_<wbr>opsworks_<wbr>security_<wbr>groups
+<a class="anchorjs-link " href="#use_opsworks_security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1089,7 +1524,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>id</span>
+        <span id="vpc_id~python">
+<span class="nx">
+vpc_<wbr>id
+<a class="anchorjs-link " href="#vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1116,7 +1556,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1124,7 +1569,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1132,7 +1582,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Stack<wbr>Endpoint</span>
+        <span id="stackendpoint~csharp">
+<span class="nx">
+Stack<wbr>Endpoint
+<a class="anchorjs-link " href="#stackendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1147,7 +1602,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1155,7 +1615,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1163,7 +1628,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Stack<wbr>Endpoint</span>
+        <span id="stackendpoint~go">
+<span class="nx">
+Stack<wbr>Endpoint
+<a class="anchorjs-link " href="#stackendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1178,7 +1648,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1186,7 +1661,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1194,7 +1674,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>stack<wbr>Endpoint</span>
+        <span id="stackendpoint~nodejs">
+<span class="nx">
+stack<wbr>Endpoint
+<a class="anchorjs-link " href="#stackendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1209,7 +1694,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1217,7 +1707,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1225,7 +1720,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>stack_<wbr>endpoint</span>
+        <span id="stack_endpoint~python">
+<span class="nx">
+stack_<wbr>endpoint
+<a class="anchorjs-link " href="#stack_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1246,7 +1746,7 @@ Get an existing Stack resource's state with the given name, ID, and optional ext
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#StackState">StackState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Stack">Stack</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#StackState">StackState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Stack">Stack</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1254,11 +1754,11 @@ Get an existing Stack resource's state with the given name, ID, and optional ext
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStack<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackState">StackState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">Stack</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStack<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#StackState">StackState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Stack">Stack</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Stack.html">Stack</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.StackState.html">StackState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Stack.html">Stack</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.StackState.html">StackState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1366,7 +1866,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="state_agentversion~csharp">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#state_agentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1375,7 +1880,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1383,7 +1893,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Berkshelf<wbr>Version</span>
+        <span id="state_berkshelfversion~csharp">
+<span class="nx">
+Berkshelf<wbr>Version
+<a class="anchorjs-link " href="#state_berkshelfversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1392,7 +1907,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Color</span>
+        <span id="state_color~csharp">
+<span class="nx">
+Color
+<a class="anchorjs-link " href="#state_color~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1401,7 +1921,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Name</span>
+        <span id="state_configurationmanagername~csharp">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Name
+<a class="anchorjs-link " href="#state_configurationmanagername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1410,7 +1935,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Version</span>
+        <span id="state_configurationmanagerversion~csharp">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Version
+<a class="anchorjs-link " href="#state_configurationmanagerversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1419,7 +1949,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Cookbooks<wbr>Sources</span>
+        <span id="state_customcookbookssources~csharp">
+<span class="nx">
+Custom<wbr>Cookbooks<wbr>Sources
+<a class="anchorjs-link " href="#state_customcookbookssources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List&lt;Stack<wbr>Custom<wbr>Cookbooks<wbr>Source<wbr>Args&gt;</a></span>
     </dt>
@@ -1429,7 +1964,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="state_customjson~csharp">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#state_customjson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1438,7 +1978,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Availability<wbr>Zone</span>
+        <span id="state_defaultavailabilityzone~csharp">
+<span class="nx">
+Default<wbr>Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_defaultavailabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1448,7 +1993,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_defaultinstanceprofilearn~csharp">
+<span class="nx">
+Default<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_defaultinstanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1458,7 +2008,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Os</span>
+        <span id="state_defaultos~csharp">
+<span class="nx">
+Default<wbr>Os
+<a class="anchorjs-link " href="#state_defaultos~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1467,7 +2022,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Device<wbr>Type</span>
+        <span id="state_defaultrootdevicetype~csharp">
+<span class="nx">
+Default<wbr>Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#state_defaultrootdevicetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1476,7 +2036,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ssh<wbr>Key<wbr>Name</span>
+        <span id="state_defaultsshkeyname~csharp">
+<span class="nx">
+Default<wbr>Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#state_defaultsshkeyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1485,7 +2050,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Subnet<wbr>Id</span>
+        <span id="state_defaultsubnetid~csharp">
+<span class="nx">
+Default<wbr>Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_defaultsubnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1495,7 +2065,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname<wbr>Theme</span>
+        <span id="state_hostnametheme~csharp">
+<span class="nx">
+Hostname<wbr>Theme
+<a class="anchorjs-link " href="#state_hostnametheme~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1505,7 +2080,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manage<wbr>Berkshelf</span>
+        <span id="state_manageberkshelf~csharp">
+<span class="nx">
+Manage<wbr>Berkshelf
+<a class="anchorjs-link " href="#state_manageberkshelf~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1514,7 +2094,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1523,7 +2108,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Region</span>
+        <span id="state_region~csharp">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#state_region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1532,7 +2122,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Service<wbr>Role<wbr>Arn</span>
+        <span id="state_servicerolearn~csharp">
+<span class="nx">
+Service<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_servicerolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1541,7 +2136,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stack<wbr>Endpoint</span>
+        <span id="state_stackendpoint~csharp">
+<span class="nx">
+Stack<wbr>Endpoint
+<a class="anchorjs-link " href="#state_stackendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1549,7 +2149,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1558,7 +2163,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Custom<wbr>Cookbooks</span>
+        <span id="state_usecustomcookbooks~csharp">
+<span class="nx">
+Use<wbr>Custom<wbr>Cookbooks
+<a class="anchorjs-link " href="#state_usecustomcookbooks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1568,7 +2178,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Opsworks<wbr>Security<wbr>Groups</span>
+        <span id="state_useopsworkssecuritygroups~csharp">
+<span class="nx">
+Use<wbr>Opsworks<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#state_useopsworkssecuritygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1578,7 +2193,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="state_vpcid~csharp">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#state_vpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1594,7 +2214,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="state_agentversion~go">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#state_agentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1603,7 +2228,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1611,7 +2241,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Berkshelf<wbr>Version</span>
+        <span id="state_berkshelfversion~go">
+<span class="nx">
+Berkshelf<wbr>Version
+<a class="anchorjs-link " href="#state_berkshelfversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1620,7 +2255,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Color</span>
+        <span id="state_color~go">
+<span class="nx">
+Color
+<a class="anchorjs-link " href="#state_color~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1629,7 +2269,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Name</span>
+        <span id="state_configurationmanagername~go">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Name
+<a class="anchorjs-link " href="#state_configurationmanagername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1638,7 +2283,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Manager<wbr>Version</span>
+        <span id="state_configurationmanagerversion~go">
+<span class="nx">
+Configuration<wbr>Manager<wbr>Version
+<a class="anchorjs-link " href="#state_configurationmanagerversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1647,7 +2297,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Cookbooks<wbr>Sources</span>
+        <span id="state_customcookbookssources~go">
+<span class="nx">
+Custom<wbr>Cookbooks<wbr>Sources
+<a class="anchorjs-link " href="#state_customcookbookssources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">[]Stack<wbr>Custom<wbr>Cookbooks<wbr>Source</a></span>
     </dt>
@@ -1657,7 +2312,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="state_customjson~go">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#state_customjson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1666,7 +2326,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Availability<wbr>Zone</span>
+        <span id="state_defaultavailabilityzone~go">
+<span class="nx">
+Default<wbr>Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_defaultavailabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1676,7 +2341,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_defaultinstanceprofilearn~go">
+<span class="nx">
+Default<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_defaultinstanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1686,7 +2356,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Os</span>
+        <span id="state_defaultos~go">
+<span class="nx">
+Default<wbr>Os
+<a class="anchorjs-link " href="#state_defaultos~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1695,7 +2370,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Device<wbr>Type</span>
+        <span id="state_defaultrootdevicetype~go">
+<span class="nx">
+Default<wbr>Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#state_defaultrootdevicetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1704,7 +2384,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ssh<wbr>Key<wbr>Name</span>
+        <span id="state_defaultsshkeyname~go">
+<span class="nx">
+Default<wbr>Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#state_defaultsshkeyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1713,7 +2398,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Subnet<wbr>Id</span>
+        <span id="state_defaultsubnetid~go">
+<span class="nx">
+Default<wbr>Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_defaultsubnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1723,7 +2413,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname<wbr>Theme</span>
+        <span id="state_hostnametheme~go">
+<span class="nx">
+Hostname<wbr>Theme
+<a class="anchorjs-link " href="#state_hostnametheme~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1733,7 +2428,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manage<wbr>Berkshelf</span>
+        <span id="state_manageberkshelf~go">
+<span class="nx">
+Manage<wbr>Berkshelf
+<a class="anchorjs-link " href="#state_manageberkshelf~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1742,7 +2442,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1751,7 +2456,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Region</span>
+        <span id="state_region~go">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#state_region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1760,7 +2470,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Service<wbr>Role<wbr>Arn</span>
+        <span id="state_servicerolearn~go">
+<span class="nx">
+Service<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_servicerolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1769,7 +2484,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stack<wbr>Endpoint</span>
+        <span id="state_stackendpoint~go">
+<span class="nx">
+Stack<wbr>Endpoint
+<a class="anchorjs-link " href="#state_stackendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1777,7 +2497,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1786,7 +2511,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Custom<wbr>Cookbooks</span>
+        <span id="state_usecustomcookbooks~go">
+<span class="nx">
+Use<wbr>Custom<wbr>Cookbooks
+<a class="anchorjs-link " href="#state_usecustomcookbooks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1796,7 +2526,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Opsworks<wbr>Security<wbr>Groups</span>
+        <span id="state_useopsworkssecuritygroups~go">
+<span class="nx">
+Use<wbr>Opsworks<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#state_useopsworkssecuritygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1806,7 +2541,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="state_vpcid~go">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#state_vpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1822,7 +2562,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent<wbr>Version</span>
+        <span id="state_agentversion~nodejs">
+<span class="nx">
+agent<wbr>Version
+<a class="anchorjs-link " href="#state_agentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1831,7 +2576,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1839,7 +2589,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>berkshelf<wbr>Version</span>
+        <span id="state_berkshelfversion~nodejs">
+<span class="nx">
+berkshelf<wbr>Version
+<a class="anchorjs-link " href="#state_berkshelfversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1848,7 +2603,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>color</span>
+        <span id="state_color~nodejs">
+<span class="nx">
+color
+<a class="anchorjs-link " href="#state_color~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1857,7 +2617,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Manager<wbr>Name</span>
+        <span id="state_configurationmanagername~nodejs">
+<span class="nx">
+configuration<wbr>Manager<wbr>Name
+<a class="anchorjs-link " href="#state_configurationmanagername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1866,7 +2631,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Manager<wbr>Version</span>
+        <span id="state_configurationmanagerversion~nodejs">
+<span class="nx">
+configuration<wbr>Manager<wbr>Version
+<a class="anchorjs-link " href="#state_configurationmanagerversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1875,7 +2645,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Cookbooks<wbr>Sources</span>
+        <span id="state_customcookbookssources~nodejs">
+<span class="nx">
+custom<wbr>Cookbooks<wbr>Sources
+<a class="anchorjs-link " href="#state_customcookbookssources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">Stack<wbr>Custom<wbr>Cookbooks<wbr>Source[]</a></span>
     </dt>
@@ -1885,7 +2660,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Json</span>
+        <span id="state_customjson~nodejs">
+<span class="nx">
+custom<wbr>Json
+<a class="anchorjs-link " href="#state_customjson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1894,7 +2674,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Availability<wbr>Zone</span>
+        <span id="state_defaultavailabilityzone~nodejs">
+<span class="nx">
+default<wbr>Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_defaultavailabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1904,7 +2689,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_defaultinstanceprofilearn~nodejs">
+<span class="nx">
+default<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_defaultinstanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1914,7 +2704,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Os</span>
+        <span id="state_defaultos~nodejs">
+<span class="nx">
+default<wbr>Os
+<a class="anchorjs-link " href="#state_defaultos~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1923,7 +2718,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Root<wbr>Device<wbr>Type</span>
+        <span id="state_defaultrootdevicetype~nodejs">
+<span class="nx">
+default<wbr>Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#state_defaultrootdevicetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1932,7 +2732,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Ssh<wbr>Key<wbr>Name</span>
+        <span id="state_defaultsshkeyname~nodejs">
+<span class="nx">
+default<wbr>Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#state_defaultsshkeyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1941,7 +2746,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Subnet<wbr>Id</span>
+        <span id="state_defaultsubnetid~nodejs">
+<span class="nx">
+default<wbr>Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_defaultsubnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1951,7 +2761,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname<wbr>Theme</span>
+        <span id="state_hostnametheme~nodejs">
+<span class="nx">
+hostname<wbr>Theme
+<a class="anchorjs-link " href="#state_hostnametheme~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1961,7 +2776,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>manage<wbr>Berkshelf</span>
+        <span id="state_manageberkshelf~nodejs">
+<span class="nx">
+manage<wbr>Berkshelf
+<a class="anchorjs-link " href="#state_manageberkshelf~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1970,7 +2790,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1979,7 +2804,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>region</span>
+        <span id="state_region~nodejs">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#state_region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1988,7 +2818,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>service<wbr>Role<wbr>Arn</span>
+        <span id="state_servicerolearn~nodejs">
+<span class="nx">
+service<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_servicerolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1997,7 +2832,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stack<wbr>Endpoint</span>
+        <span id="state_stackendpoint~nodejs">
+<span class="nx">
+stack<wbr>Endpoint
+<a class="anchorjs-link " href="#state_stackendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2005,7 +2845,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2014,7 +2859,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use<wbr>Custom<wbr>Cookbooks</span>
+        <span id="state_usecustomcookbooks~nodejs">
+<span class="nx">
+use<wbr>Custom<wbr>Cookbooks
+<a class="anchorjs-link " href="#state_usecustomcookbooks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2024,7 +2874,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use<wbr>Opsworks<wbr>Security<wbr>Groups</span>
+        <span id="state_useopsworkssecuritygroups~nodejs">
+<span class="nx">
+use<wbr>Opsworks<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#state_useopsworkssecuritygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2034,7 +2889,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Id</span>
+        <span id="state_vpcid~nodejs">
+<span class="nx">
+vpc<wbr>Id
+<a class="anchorjs-link " href="#state_vpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2050,7 +2910,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent_<wbr>version</span>
+        <span id="state_agent_version~python">
+<span class="nx">
+agent_<wbr>version
+<a class="anchorjs-link " href="#state_agent_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2059,7 +2924,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2067,7 +2937,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>berkshelf_<wbr>version</span>
+        <span id="state_berkshelf_version~python">
+<span class="nx">
+berkshelf_<wbr>version
+<a class="anchorjs-link " href="#state_berkshelf_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2076,7 +2951,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>color</span>
+        <span id="state_color~python">
+<span class="nx">
+color
+<a class="anchorjs-link " href="#state_color~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2085,7 +2965,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>manager_<wbr>name</span>
+        <span id="state_configuration_manager_name~python">
+<span class="nx">
+configuration_<wbr>manager_<wbr>name
+<a class="anchorjs-link " href="#state_configuration_manager_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2094,7 +2979,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>manager_<wbr>version</span>
+        <span id="state_configuration_manager_version~python">
+<span class="nx">
+configuration_<wbr>manager_<wbr>version
+<a class="anchorjs-link " href="#state_configuration_manager_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2103,7 +2993,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>cookbooks_<wbr>sources</span>
+        <span id="state_custom_cookbooks_sources~python">
+<span class="nx">
+custom_<wbr>cookbooks_<wbr>sources
+<a class="anchorjs-link " href="#state_custom_cookbooks_sources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stackcustomcookbookssource">List[Stack<wbr>Custom<wbr>Cookbooks<wbr>Source]</a></span>
     </dt>
@@ -2113,7 +3008,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>json</span>
+        <span id="state_custom_json~python">
+<span class="nx">
+custom_<wbr>json
+<a class="anchorjs-link " href="#state_custom_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2122,7 +3022,12 @@ described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>availability_<wbr>zone</span>
+        <span id="state_default_availability_zone~python">
+<span class="nx">
+default_<wbr>availability_<wbr>zone
+<a class="anchorjs-link " href="#state_default_availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2132,7 +3037,12 @@ by default. This is required unless you set `vpc_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>instance_<wbr>profile_<wbr>arn</span>
+        <span id="state_default_instance_profile_arn~python">
+<span class="nx">
+default_<wbr>instance_<wbr>profile_<wbr>arn
+<a class="anchorjs-link " href="#state_default_instance_profile_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2142,7 +3052,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>os</span>
+        <span id="state_default_os~python">
+<span class="nx">
+default_<wbr>os
+<a class="anchorjs-link " href="#state_default_os~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2151,7 +3066,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>root_<wbr>device_<wbr>type</span>
+        <span id="state_default_root_device_type~python">
+<span class="nx">
+default_<wbr>root_<wbr>device_<wbr>type
+<a class="anchorjs-link " href="#state_default_root_device_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2160,7 +3080,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>ssh_<wbr>key_<wbr>name</span>
+        <span id="state_default_ssh_key_name~python">
+<span class="nx">
+default_<wbr>ssh_<wbr>key_<wbr>name
+<a class="anchorjs-link " href="#state_default_ssh_key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2169,7 +3094,12 @@ will have by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>subnet_<wbr>id</span>
+        <span id="state_default_subnet_id~python">
+<span class="nx">
+default_<wbr>subnet_<wbr>id
+<a class="anchorjs-link " href="#state_default_subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2179,7 +3109,12 @@ if `vpc_id` is set, and forbidden if it isn't.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname_<wbr>theme</span>
+        <span id="state_hostname_theme~python">
+<span class="nx">
+hostname_<wbr>theme
+<a class="anchorjs-link " href="#state_hostname_theme~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2189,7 +3124,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>manage_<wbr>berkshelf</span>
+        <span id="state_manage_berkshelf~python">
+<span class="nx">
+manage_<wbr>berkshelf
+<a class="anchorjs-link " href="#state_manage_berkshelf~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2198,7 +3138,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2207,7 +3152,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>region</span>
+        <span id="state_region~python">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#state_region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2216,7 +3166,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>service_<wbr>role_<wbr>arn</span>
+        <span id="state_service_role_arn~python">
+<span class="nx">
+service_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#state_service_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2225,7 +3180,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stack_<wbr>endpoint</span>
+        <span id="state_stack_endpoint~python">
+<span class="nx">
+stack_<wbr>endpoint
+<a class="anchorjs-link " href="#state_stack_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2233,7 +3193,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2242,7 +3207,12 @@ within this stack.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use_<wbr>custom_<wbr>cookbooks</span>
+        <span id="state_use_custom_cookbooks~python">
+<span class="nx">
+use_<wbr>custom_<wbr>cookbooks
+<a class="anchorjs-link " href="#state_use_custom_cookbooks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2252,7 +3222,12 @@ enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>use_<wbr>opsworks_<wbr>security_<wbr>groups</span>
+        <span id="state_use_opsworks_security_groups~python">
+<span class="nx">
+use_<wbr>opsworks_<wbr>security_<wbr>groups
+<a class="anchorjs-link " href="#state_use_opsworks_security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2262,7 +3237,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>id</span>
+        <span id="state_vpc_id~python">
+<span class="nx">
+vpc_<wbr>id
+<a class="anchorjs-link " href="#state_vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2304,7 +3284,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2313,7 +3298,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>Url</span>
+        <span id="url~csharp">
+<span class="nx">
+Url
+<a class="anchorjs-link " href="#url~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2322,7 +3312,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password</span>
+        <span id="password~csharp">
+<span class="nx">
+Password
+<a class="anchorjs-link " href="#password~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2331,7 +3326,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Revision</span>
+        <span id="revision~csharp">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#revision~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2340,7 +3340,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Key</span>
+        <span id="sshkey~csharp">
+<span class="nx">
+Ssh<wbr>Key
+<a class="anchorjs-link " href="#sshkey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2349,7 +3354,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username</span>
+        <span id="username~csharp">
+<span class="nx">
+Username
+<a class="anchorjs-link " href="#username~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2365,7 +3375,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2374,7 +3389,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>Url</span>
+        <span id="url~go">
+<span class="nx">
+Url
+<a class="anchorjs-link " href="#url~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2383,7 +3403,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password</span>
+        <span id="password~go">
+<span class="nx">
+Password
+<a class="anchorjs-link " href="#password~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2392,7 +3417,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Revision</span>
+        <span id="revision~go">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#revision~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2401,7 +3431,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Key</span>
+        <span id="sshkey~go">
+<span class="nx">
+Ssh<wbr>Key
+<a class="anchorjs-link " href="#sshkey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2410,7 +3445,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username</span>
+        <span id="username~go">
+<span class="nx">
+Username
+<a class="anchorjs-link " href="#username~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2426,7 +3466,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2435,7 +3480,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>url</span>
+        <span id="url~nodejs">
+<span class="nx">
+url
+<a class="anchorjs-link " href="#url~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2444,7 +3494,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>password</span>
+        <span id="password~nodejs">
+<span class="nx">
+password
+<a class="anchorjs-link " href="#password~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2453,7 +3508,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>revision</span>
+        <span id="revision~nodejs">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#revision~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2462,7 +3522,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Key</span>
+        <span id="sshkey~nodejs">
+<span class="nx">
+ssh<wbr>Key
+<a class="anchorjs-link " href="#sshkey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2471,7 +3536,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>username</span>
+        <span id="username~nodejs">
+<span class="nx">
+username
+<a class="anchorjs-link " href="#username~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2487,7 +3557,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2496,7 +3571,12 @@ security groups apply to created instances.
 
     <dt class="property-required"
             title="Required">
-        <span>url</span>
+        <span id="url~python">
+<span class="nx">
+url
+<a class="anchorjs-link " href="#url~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2505,7 +3585,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>password</span>
+        <span id="password~python">
+<span class="nx">
+password
+<a class="anchorjs-link " href="#password~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2514,7 +3599,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>revision</span>
+        <span id="revision~python">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#revision~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2523,7 +3613,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Key</span>
+        <span id="sshkey~python">
+<span class="nx">
+ssh<wbr>Key
+<a class="anchorjs-link " href="#sshkey~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2532,7 +3627,12 @@ security groups apply to created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>username</span>
+        <span id="username~python">
+<span class="nx">
+username
+<a class="anchorjs-link " href="#username~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

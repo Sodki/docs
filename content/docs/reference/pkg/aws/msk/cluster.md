@@ -240,19 +240,19 @@ export const bootstrapBrokersTls = example.bootstrapBrokersTls;
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>broker_node_group_info=None<span class="p">, </span>client_authentication=None<span class="p">, </span>cluster_name=None<span class="p">, </span>configuration_info=None<span class="p">, </span>encryption_info=None<span class="p">, </span>enhanced_monitoring=None<span class="p">, </span>kafka_version=None<span class="p">, </span>logging_info=None<span class="p">, </span>number_of_broker_nodes=None<span class="p">, </span>open_monitoring=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/msk/#Cluster">Cluster</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>broker_node_group_info=None<span class="p">, </span>client_authentication=None<span class="p">, </span>cluster_name=None<span class="p">, </span>configuration_info=None<span class="p">, </span>encryption_info=None<span class="p">, </span>enhanced_monitoring=None<span class="p">, </span>kafka_version=None<span class="p">, </span>logging_info=None<span class="p">, </span>number_of_broker_nodes=None<span class="p">, </span>open_monitoring=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">NewCluster</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.ClusterArgs.html">ClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.ClusterArgs.html">ClusterArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -418,7 +418,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Broker<wbr>Node<wbr>Group<wbr>Info</span>
+        <span id="brokernodegroupinfo~csharp">
+<span class="nx">
+Broker<wbr>Node<wbr>Group<wbr>Info
+<a class="anchorjs-link " href="#brokernodegroupinfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -427,7 +432,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Name</span>
+        <span id="clustername~csharp">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -436,7 +446,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Kafka<wbr>Version</span>
+        <span id="kafkaversion~csharp">
+<span class="nx">
+Kafka<wbr>Version
+<a class="anchorjs-link " href="#kafkaversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -445,7 +460,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Number<wbr>Of<wbr>Broker<wbr>Nodes</span>
+        <span id="numberofbrokernodes~csharp">
+<span class="nx">
+Number<wbr>Of<wbr>Broker<wbr>Nodes
+<a class="anchorjs-link " href="#numberofbrokernodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -454,7 +474,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Authentication</span>
+        <span id="clientauthentication~csharp">
+<span class="nx">
+Client<wbr>Authentication
+<a class="anchorjs-link " href="#clientauthentication~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication<wbr>Args</a></span>
     </dt>
@@ -463,7 +488,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Info</span>
+        <span id="configurationinfo~csharp">
+<span class="nx">
+Configuration<wbr>Info
+<a class="anchorjs-link " href="#configurationinfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -472,7 +502,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>Info</span>
+        <span id="encryptioninfo~csharp">
+<span class="nx">
+Encryption<wbr>Info
+<a class="anchorjs-link " href="#encryptioninfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -481,7 +516,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Monitoring</span>
+        <span id="enhancedmonitoring~csharp">
+<span class="nx">
+Enhanced<wbr>Monitoring
+<a class="anchorjs-link " href="#enhancedmonitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -490,7 +530,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Info</span>
+        <span id="logginginfo~csharp">
+<span class="nx">
+Logging<wbr>Info
+<a class="anchorjs-link " href="#logginginfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -499,7 +544,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Open<wbr>Monitoring</span>
+        <span id="openmonitoring~csharp">
+<span class="nx">
+Open<wbr>Monitoring
+<a class="anchorjs-link " href="#openmonitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring<wbr>Args</a></span>
     </dt>
@@ -508,7 +558,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -524,7 +579,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Broker<wbr>Node<wbr>Group<wbr>Info</span>
+        <span id="brokernodegroupinfo~go">
+<span class="nx">
+Broker<wbr>Node<wbr>Group<wbr>Info
+<a class="anchorjs-link " href="#brokernodegroupinfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
@@ -533,7 +593,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Name</span>
+        <span id="clustername~go">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -542,7 +607,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Kafka<wbr>Version</span>
+        <span id="kafkaversion~go">
+<span class="nx">
+Kafka<wbr>Version
+<a class="anchorjs-link " href="#kafkaversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -551,7 +621,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Number<wbr>Of<wbr>Broker<wbr>Nodes</span>
+        <span id="numberofbrokernodes~go">
+<span class="nx">
+Number<wbr>Of<wbr>Broker<wbr>Nodes
+<a class="anchorjs-link " href="#numberofbrokernodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -560,7 +635,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Authentication</span>
+        <span id="clientauthentication~go">
+<span class="nx">
+Client<wbr>Authentication
+<a class="anchorjs-link " href="#clientauthentication~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
@@ -569,7 +649,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Info</span>
+        <span id="configurationinfo~go">
+<span class="nx">
+Configuration<wbr>Info
+<a class="anchorjs-link " href="#configurationinfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
@@ -578,7 +663,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>Info</span>
+        <span id="encryptioninfo~go">
+<span class="nx">
+Encryption<wbr>Info
+<a class="anchorjs-link " href="#encryptioninfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
@@ -587,7 +677,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Monitoring</span>
+        <span id="enhancedmonitoring~go">
+<span class="nx">
+Enhanced<wbr>Monitoring
+<a class="anchorjs-link " href="#enhancedmonitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -596,7 +691,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Info</span>
+        <span id="logginginfo~go">
+<span class="nx">
+Logging<wbr>Info
+<a class="anchorjs-link " href="#logginginfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
@@ -605,7 +705,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Open<wbr>Monitoring</span>
+        <span id="openmonitoring~go">
+<span class="nx">
+Open<wbr>Monitoring
+<a class="anchorjs-link " href="#openmonitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
@@ -614,7 +719,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -630,7 +740,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>broker<wbr>Node<wbr>Group<wbr>Info</span>
+        <span id="brokernodegroupinfo~nodejs">
+<span class="nx">
+broker<wbr>Node<wbr>Group<wbr>Info
+<a class="anchorjs-link " href="#brokernodegroupinfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
@@ -639,7 +754,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Name</span>
+        <span id="clustername~nodejs">
+<span class="nx">
+cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -648,7 +768,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>kafka<wbr>Version</span>
+        <span id="kafkaversion~nodejs">
+<span class="nx">
+kafka<wbr>Version
+<a class="anchorjs-link " href="#kafkaversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -657,7 +782,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>number<wbr>Of<wbr>Broker<wbr>Nodes</span>
+        <span id="numberofbrokernodes~nodejs">
+<span class="nx">
+number<wbr>Of<wbr>Broker<wbr>Nodes
+<a class="anchorjs-link " href="#numberofbrokernodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -666,7 +796,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Authentication</span>
+        <span id="clientauthentication~nodejs">
+<span class="nx">
+client<wbr>Authentication
+<a class="anchorjs-link " href="#clientauthentication~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
@@ -675,7 +810,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Info</span>
+        <span id="configurationinfo~nodejs">
+<span class="nx">
+configuration<wbr>Info
+<a class="anchorjs-link " href="#configurationinfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
@@ -684,7 +824,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption<wbr>Info</span>
+        <span id="encryptioninfo~nodejs">
+<span class="nx">
+encryption<wbr>Info
+<a class="anchorjs-link " href="#encryptioninfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
@@ -693,7 +838,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced<wbr>Monitoring</span>
+        <span id="enhancedmonitoring~nodejs">
+<span class="nx">
+enhanced<wbr>Monitoring
+<a class="anchorjs-link " href="#enhancedmonitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -702,7 +852,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Info</span>
+        <span id="logginginfo~nodejs">
+<span class="nx">
+logging<wbr>Info
+<a class="anchorjs-link " href="#logginginfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
@@ -711,7 +866,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>open<wbr>Monitoring</span>
+        <span id="openmonitoring~nodejs">
+<span class="nx">
+open<wbr>Monitoring
+<a class="anchorjs-link " href="#openmonitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
@@ -720,7 +880,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -736,7 +901,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>broker_<wbr>node_<wbr>group_<wbr>info</span>
+        <span id="broker_node_group_info~python">
+<span class="nx">
+broker_<wbr>node_<wbr>group_<wbr>info
+<a class="anchorjs-link " href="#broker_node_group_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Dict[Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info]</a></span>
     </dt>
@@ -745,7 +915,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>cluster_<wbr>name</span>
+        <span id="cluster_name~python">
+<span class="nx">
+cluster_<wbr>name
+<a class="anchorjs-link " href="#cluster_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -754,7 +929,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>kafka_<wbr>version</span>
+        <span id="kafka_version~python">
+<span class="nx">
+kafka_<wbr>version
+<a class="anchorjs-link " href="#kafka_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -763,7 +943,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>number_<wbr>of_<wbr>broker_<wbr>nodes</span>
+        <span id="number_of_broker_nodes~python">
+<span class="nx">
+number_<wbr>of_<wbr>broker_<wbr>nodes
+<a class="anchorjs-link " href="#number_of_broker_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -772,7 +957,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>client_<wbr>authentication</span>
+        <span id="client_authentication~python">
+<span class="nx">
+client_<wbr>authentication
+<a class="anchorjs-link " href="#client_authentication~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Dict[Cluster<wbr>Client<wbr>Authentication]</a></span>
     </dt>
@@ -781,7 +971,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>info</span>
+        <span id="configuration_info~python">
+<span class="nx">
+configuration_<wbr>info
+<a class="anchorjs-link " href="#configuration_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Dict[Cluster<wbr>Configuration<wbr>Info]</a></span>
     </dt>
@@ -790,7 +985,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption_<wbr>info</span>
+        <span id="encryption_info~python">
+<span class="nx">
+encryption_<wbr>info
+<a class="anchorjs-link " href="#encryption_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Dict[Cluster<wbr>Encryption<wbr>Info]</a></span>
     </dt>
@@ -799,7 +999,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced_<wbr>monitoring</span>
+        <span id="enhanced_monitoring~python">
+<span class="nx">
+enhanced_<wbr>monitoring
+<a class="anchorjs-link " href="#enhanced_monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -808,7 +1013,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging_<wbr>info</span>
+        <span id="logging_info~python">
+<span class="nx">
+logging_<wbr>info
+<a class="anchorjs-link " href="#logging_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Dict[Cluster<wbr>Logging<wbr>Info]</a></span>
     </dt>
@@ -817,7 +1027,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>open_<wbr>monitoring</span>
+        <span id="open_monitoring~python">
+<span class="nx">
+open_<wbr>monitoring
+<a class="anchorjs-link " href="#open_monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Dict[Cluster<wbr>Open<wbr>Monitoring]</a></span>
     </dt>
@@ -826,7 +1041,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -853,7 +1073,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -862,7 +1087,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bootstrap<wbr>Brokers</span>
+        <span id="bootstrapbrokers~csharp">
+<span class="nx">
+Bootstrap<wbr>Brokers
+<a class="anchorjs-link " href="#bootstrapbrokers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -871,7 +1101,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bootstrap<wbr>Brokers<wbr>Tls</span>
+        <span id="bootstrapbrokerstls~csharp">
+<span class="nx">
+Bootstrap<wbr>Brokers<wbr>Tls
+<a class="anchorjs-link " href="#bootstrapbrokerstls~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -880,7 +1115,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Current<wbr>Version</span>
+        <span id="currentversion~csharp">
+<span class="nx">
+Current<wbr>Version
+<a class="anchorjs-link " href="#currentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -890,7 +1130,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -898,7 +1143,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Zookeeper<wbr>Connect<wbr>String</span>
+        <span id="zookeeperconnectstring~csharp">
+<span class="nx">
+Zookeeper<wbr>Connect<wbr>String
+<a class="anchorjs-link " href="#zookeeperconnectstring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -914,7 +1164,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -923,7 +1178,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bootstrap<wbr>Brokers</span>
+        <span id="bootstrapbrokers~go">
+<span class="nx">
+Bootstrap<wbr>Brokers
+<a class="anchorjs-link " href="#bootstrapbrokers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -932,7 +1192,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Bootstrap<wbr>Brokers<wbr>Tls</span>
+        <span id="bootstrapbrokerstls~go">
+<span class="nx">
+Bootstrap<wbr>Brokers<wbr>Tls
+<a class="anchorjs-link " href="#bootstrapbrokerstls~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -941,7 +1206,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Current<wbr>Version</span>
+        <span id="currentversion~go">
+<span class="nx">
+Current<wbr>Version
+<a class="anchorjs-link " href="#currentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -951,7 +1221,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -959,7 +1234,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Zookeeper<wbr>Connect<wbr>String</span>
+        <span id="zookeeperconnectstring~go">
+<span class="nx">
+Zookeeper<wbr>Connect<wbr>String
+<a class="anchorjs-link " href="#zookeeperconnectstring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -975,7 +1255,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -984,7 +1269,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bootstrap<wbr>Brokers</span>
+        <span id="bootstrapbrokers~nodejs">
+<span class="nx">
+bootstrap<wbr>Brokers
+<a class="anchorjs-link " href="#bootstrapbrokers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -993,7 +1283,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bootstrap<wbr>Brokers<wbr>Tls</span>
+        <span id="bootstrapbrokerstls~nodejs">
+<span class="nx">
+bootstrap<wbr>Brokers<wbr>Tls
+<a class="anchorjs-link " href="#bootstrapbrokerstls~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1002,7 +1297,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>current<wbr>Version</span>
+        <span id="currentversion~nodejs">
+<span class="nx">
+current<wbr>Version
+<a class="anchorjs-link " href="#currentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1012,7 +1312,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1020,7 +1325,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>zookeeper<wbr>Connect<wbr>String</span>
+        <span id="zookeeperconnectstring~nodejs">
+<span class="nx">
+zookeeper<wbr>Connect<wbr>String
+<a class="anchorjs-link " href="#zookeeperconnectstring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1036,7 +1346,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1045,7 +1360,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bootstrap_<wbr>brokers</span>
+        <span id="bootstrap_brokers~python">
+<span class="nx">
+bootstrap_<wbr>brokers
+<a class="anchorjs-link " href="#bootstrap_brokers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1054,7 +1374,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>bootstrap_<wbr>brokers_<wbr>tls</span>
+        <span id="bootstrap_brokers_tls~python">
+<span class="nx">
+bootstrap_<wbr>brokers_<wbr>tls
+<a class="anchorjs-link " href="#bootstrap_brokers_tls~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1063,7 +1388,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>current_<wbr>version</span>
+        <span id="current_version~python">
+<span class="nx">
+current_<wbr>version
+<a class="anchorjs-link " href="#current_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1073,7 +1403,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1081,7 +1416,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>zookeeper_<wbr>connect_<wbr>string</span>
+        <span id="zookeeper_connect_string~python">
+<span class="nx">
+zookeeper_<wbr>connect_<wbr>string
+<a class="anchorjs-link " href="#zookeeper_connect_string~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1103,7 +1443,7 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#Cluster">Cluster</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#Cluster">Cluster</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1111,11 +1451,11 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.ClusterState.html">ClusterState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1223,7 +1563,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1232,7 +1577,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bootstrap<wbr>Brokers</span>
+        <span id="state_bootstrapbrokers~csharp">
+<span class="nx">
+Bootstrap<wbr>Brokers
+<a class="anchorjs-link " href="#state_bootstrapbrokers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1241,7 +1591,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bootstrap<wbr>Brokers<wbr>Tls</span>
+        <span id="state_bootstrapbrokerstls~csharp">
+<span class="nx">
+Bootstrap<wbr>Brokers<wbr>Tls
+<a class="anchorjs-link " href="#state_bootstrapbrokerstls~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1250,7 +1605,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Broker<wbr>Node<wbr>Group<wbr>Info</span>
+        <span id="state_brokernodegroupinfo~csharp">
+<span class="nx">
+Broker<wbr>Node<wbr>Group<wbr>Info
+<a class="anchorjs-link " href="#state_brokernodegroupinfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -1259,7 +1619,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Authentication</span>
+        <span id="state_clientauthentication~csharp">
+<span class="nx">
+Client<wbr>Authentication
+<a class="anchorjs-link " href="#state_clientauthentication~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication<wbr>Args</a></span>
     </dt>
@@ -1268,7 +1633,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Name</span>
+        <span id="state_clustername~csharp">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#state_clustername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1277,7 +1647,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Info</span>
+        <span id="state_configurationinfo~csharp">
+<span class="nx">
+Configuration<wbr>Info
+<a class="anchorjs-link " href="#state_configurationinfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -1286,7 +1661,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Current<wbr>Version</span>
+        <span id="state_currentversion~csharp">
+<span class="nx">
+Current<wbr>Version
+<a class="anchorjs-link " href="#state_currentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1296,7 +1676,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>Info</span>
+        <span id="state_encryptioninfo~csharp">
+<span class="nx">
+Encryption<wbr>Info
+<a class="anchorjs-link " href="#state_encryptioninfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -1305,7 +1690,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Monitoring</span>
+        <span id="state_enhancedmonitoring~csharp">
+<span class="nx">
+Enhanced<wbr>Monitoring
+<a class="anchorjs-link " href="#state_enhancedmonitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1314,7 +1704,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kafka<wbr>Version</span>
+        <span id="state_kafkaversion~csharp">
+<span class="nx">
+Kafka<wbr>Version
+<a class="anchorjs-link " href="#state_kafkaversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1323,7 +1718,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Info</span>
+        <span id="state_logginginfo~csharp">
+<span class="nx">
+Logging<wbr>Info
+<a class="anchorjs-link " href="#state_logginginfo~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info<wbr>Args</a></span>
     </dt>
@@ -1332,7 +1732,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Of<wbr>Broker<wbr>Nodes</span>
+        <span id="state_numberofbrokernodes~csharp">
+<span class="nx">
+Number<wbr>Of<wbr>Broker<wbr>Nodes
+<a class="anchorjs-link " href="#state_numberofbrokernodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1341,7 +1746,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Open<wbr>Monitoring</span>
+        <span id="state_openmonitoring~csharp">
+<span class="nx">
+Open<wbr>Monitoring
+<a class="anchorjs-link " href="#state_openmonitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring<wbr>Args</a></span>
     </dt>
@@ -1350,7 +1760,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1359,7 +1774,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zookeeper<wbr>Connect<wbr>String</span>
+        <span id="state_zookeeperconnectstring~csharp">
+<span class="nx">
+Zookeeper<wbr>Connect<wbr>String
+<a class="anchorjs-link " href="#state_zookeeperconnectstring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1375,7 +1795,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1384,7 +1809,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bootstrap<wbr>Brokers</span>
+        <span id="state_bootstrapbrokers~go">
+<span class="nx">
+Bootstrap<wbr>Brokers
+<a class="anchorjs-link " href="#state_bootstrapbrokers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1393,7 +1823,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bootstrap<wbr>Brokers<wbr>Tls</span>
+        <span id="state_bootstrapbrokerstls~go">
+<span class="nx">
+Bootstrap<wbr>Brokers<wbr>Tls
+<a class="anchorjs-link " href="#state_bootstrapbrokerstls~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1402,7 +1837,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Broker<wbr>Node<wbr>Group<wbr>Info</span>
+        <span id="state_brokernodegroupinfo~go">
+<span class="nx">
+Broker<wbr>Node<wbr>Group<wbr>Info
+<a class="anchorjs-link " href="#state_brokernodegroupinfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
@@ -1411,7 +1851,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Authentication</span>
+        <span id="state_clientauthentication~go">
+<span class="nx">
+Client<wbr>Authentication
+<a class="anchorjs-link " href="#state_clientauthentication~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
@@ -1420,7 +1865,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Name</span>
+        <span id="state_clustername~go">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#state_clustername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1429,7 +1879,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Info</span>
+        <span id="state_configurationinfo~go">
+<span class="nx">
+Configuration<wbr>Info
+<a class="anchorjs-link " href="#state_configurationinfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
@@ -1438,7 +1893,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Current<wbr>Version</span>
+        <span id="state_currentversion~go">
+<span class="nx">
+Current<wbr>Version
+<a class="anchorjs-link " href="#state_currentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1448,7 +1908,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>Info</span>
+        <span id="state_encryptioninfo~go">
+<span class="nx">
+Encryption<wbr>Info
+<a class="anchorjs-link " href="#state_encryptioninfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
@@ -1457,7 +1922,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Monitoring</span>
+        <span id="state_enhancedmonitoring~go">
+<span class="nx">
+Enhanced<wbr>Monitoring
+<a class="anchorjs-link " href="#state_enhancedmonitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1466,7 +1936,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kafka<wbr>Version</span>
+        <span id="state_kafkaversion~go">
+<span class="nx">
+Kafka<wbr>Version
+<a class="anchorjs-link " href="#state_kafkaversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1475,7 +1950,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Info</span>
+        <span id="state_logginginfo~go">
+<span class="nx">
+Logging<wbr>Info
+<a class="anchorjs-link " href="#state_logginginfo~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
@@ -1484,7 +1964,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Of<wbr>Broker<wbr>Nodes</span>
+        <span id="state_numberofbrokernodes~go">
+<span class="nx">
+Number<wbr>Of<wbr>Broker<wbr>Nodes
+<a class="anchorjs-link " href="#state_numberofbrokernodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1493,7 +1978,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Open<wbr>Monitoring</span>
+        <span id="state_openmonitoring~go">
+<span class="nx">
+Open<wbr>Monitoring
+<a class="anchorjs-link " href="#state_openmonitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
@@ -1502,7 +1992,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1511,7 +2006,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zookeeper<wbr>Connect<wbr>String</span>
+        <span id="state_zookeeperconnectstring~go">
+<span class="nx">
+Zookeeper<wbr>Connect<wbr>String
+<a class="anchorjs-link " href="#state_zookeeperconnectstring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1527,7 +2027,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1536,7 +2041,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bootstrap<wbr>Brokers</span>
+        <span id="state_bootstrapbrokers~nodejs">
+<span class="nx">
+bootstrap<wbr>Brokers
+<a class="anchorjs-link " href="#state_bootstrapbrokers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1545,7 +2055,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bootstrap<wbr>Brokers<wbr>Tls</span>
+        <span id="state_bootstrapbrokerstls~nodejs">
+<span class="nx">
+bootstrap<wbr>Brokers<wbr>Tls
+<a class="anchorjs-link " href="#state_bootstrapbrokerstls~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1554,7 +2069,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>broker<wbr>Node<wbr>Group<wbr>Info</span>
+        <span id="state_brokernodegroupinfo~nodejs">
+<span class="nx">
+broker<wbr>Node<wbr>Group<wbr>Info
+<a class="anchorjs-link " href="#state_brokernodegroupinfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
@@ -1563,7 +2083,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Authentication</span>
+        <span id="state_clientauthentication~nodejs">
+<span class="nx">
+client<wbr>Authentication
+<a class="anchorjs-link " href="#state_clientauthentication~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
@@ -1572,7 +2097,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Name</span>
+        <span id="state_clustername~nodejs">
+<span class="nx">
+cluster<wbr>Name
+<a class="anchorjs-link " href="#state_clustername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1581,7 +2111,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Info</span>
+        <span id="state_configurationinfo~nodejs">
+<span class="nx">
+configuration<wbr>Info
+<a class="anchorjs-link " href="#state_configurationinfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
@@ -1590,7 +2125,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>current<wbr>Version</span>
+        <span id="state_currentversion~nodejs">
+<span class="nx">
+current<wbr>Version
+<a class="anchorjs-link " href="#state_currentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1600,7 +2140,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption<wbr>Info</span>
+        <span id="state_encryptioninfo~nodejs">
+<span class="nx">
+encryption<wbr>Info
+<a class="anchorjs-link " href="#state_encryptioninfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
@@ -1609,7 +2154,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced<wbr>Monitoring</span>
+        <span id="state_enhancedmonitoring~nodejs">
+<span class="nx">
+enhanced<wbr>Monitoring
+<a class="anchorjs-link " href="#state_enhancedmonitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1618,7 +2168,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>kafka<wbr>Version</span>
+        <span id="state_kafkaversion~nodejs">
+<span class="nx">
+kafka<wbr>Version
+<a class="anchorjs-link " href="#state_kafkaversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1627,7 +2182,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Info</span>
+        <span id="state_logginginfo~nodejs">
+<span class="nx">
+logging<wbr>Info
+<a class="anchorjs-link " href="#state_logginginfo~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
@@ -1636,7 +2196,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Of<wbr>Broker<wbr>Nodes</span>
+        <span id="state_numberofbrokernodes~nodejs">
+<span class="nx">
+number<wbr>Of<wbr>Broker<wbr>Nodes
+<a class="anchorjs-link " href="#state_numberofbrokernodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1645,7 +2210,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>open<wbr>Monitoring</span>
+        <span id="state_openmonitoring~nodejs">
+<span class="nx">
+open<wbr>Monitoring
+<a class="anchorjs-link " href="#state_openmonitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
@@ -1654,7 +2224,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1663,7 +2238,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>zookeeper<wbr>Connect<wbr>String</span>
+        <span id="state_zookeeperconnectstring~nodejs">
+<span class="nx">
+zookeeper<wbr>Connect<wbr>String
+<a class="anchorjs-link " href="#state_zookeeperconnectstring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1679,7 +2259,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1688,7 +2273,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bootstrap_<wbr>brokers</span>
+        <span id="state_bootstrap_brokers~python">
+<span class="nx">
+bootstrap_<wbr>brokers
+<a class="anchorjs-link " href="#state_bootstrap_brokers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1697,7 +2287,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bootstrap_<wbr>brokers_<wbr>tls</span>
+        <span id="state_bootstrap_brokers_tls~python">
+<span class="nx">
+bootstrap_<wbr>brokers_<wbr>tls
+<a class="anchorjs-link " href="#state_bootstrap_brokers_tls~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1706,7 +2301,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>broker_<wbr>node_<wbr>group_<wbr>info</span>
+        <span id="state_broker_node_group_info~python">
+<span class="nx">
+broker_<wbr>node_<wbr>group_<wbr>info
+<a class="anchorjs-link " href="#state_broker_node_group_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Dict[Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info]</a></span>
     </dt>
@@ -1715,7 +2315,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>client_<wbr>authentication</span>
+        <span id="state_client_authentication~python">
+<span class="nx">
+client_<wbr>authentication
+<a class="anchorjs-link " href="#state_client_authentication~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Dict[Cluster<wbr>Client<wbr>Authentication]</a></span>
     </dt>
@@ -1724,7 +2329,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>name</span>
+        <span id="state_cluster_name~python">
+<span class="nx">
+cluster_<wbr>name
+<a class="anchorjs-link " href="#state_cluster_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1733,7 +2343,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>info</span>
+        <span id="state_configuration_info~python">
+<span class="nx">
+configuration_<wbr>info
+<a class="anchorjs-link " href="#state_configuration_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Dict[Cluster<wbr>Configuration<wbr>Info]</a></span>
     </dt>
@@ -1742,7 +2357,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>current_<wbr>version</span>
+        <span id="state_current_version~python">
+<span class="nx">
+current_<wbr>version
+<a class="anchorjs-link " href="#state_current_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1752,7 +2372,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption_<wbr>info</span>
+        <span id="state_encryption_info~python">
+<span class="nx">
+encryption_<wbr>info
+<a class="anchorjs-link " href="#state_encryption_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Dict[Cluster<wbr>Encryption<wbr>Info]</a></span>
     </dt>
@@ -1761,7 +2386,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced_<wbr>monitoring</span>
+        <span id="state_enhanced_monitoring~python">
+<span class="nx">
+enhanced_<wbr>monitoring
+<a class="anchorjs-link " href="#state_enhanced_monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1770,7 +2400,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>kafka_<wbr>version</span>
+        <span id="state_kafka_version~python">
+<span class="nx">
+kafka_<wbr>version
+<a class="anchorjs-link " href="#state_kafka_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1779,7 +2414,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging_<wbr>info</span>
+        <span id="state_logging_info~python">
+<span class="nx">
+logging_<wbr>info
+<a class="anchorjs-link " href="#state_logging_info~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Dict[Cluster<wbr>Logging<wbr>Info]</a></span>
     </dt>
@@ -1788,7 +2428,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number_<wbr>of_<wbr>broker_<wbr>nodes</span>
+        <span id="state_number_of_broker_nodes~python">
+<span class="nx">
+number_<wbr>of_<wbr>broker_<wbr>nodes
+<a class="anchorjs-link " href="#state_number_of_broker_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1797,7 +2442,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>open_<wbr>monitoring</span>
+        <span id="state_open_monitoring~python">
+<span class="nx">
+open_<wbr>monitoring
+<a class="anchorjs-link " href="#state_open_monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Dict[Cluster<wbr>Open<wbr>Monitoring]</a></span>
     </dt>
@@ -1806,7 +2456,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1815,7 +2470,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>zookeeper_<wbr>connect_<wbr>string</span>
+        <span id="state_zookeeper_connect_string~python">
+<span class="nx">
+zookeeper_<wbr>connect_<wbr>string
+<a class="anchorjs-link " href="#state_zookeeper_connect_string~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1857,7 +2517,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Client<wbr>Subnets</span>
+        <span id="clientsubnets~csharp">
+<span class="nx">
+Client<wbr>Subnets
+<a class="anchorjs-link " href="#clientsubnets~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1866,7 +2531,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Ebs<wbr>Volume<wbr>Size</span>
+        <span id="ebsvolumesize~csharp">
+<span class="nx">
+Ebs<wbr>Volume<wbr>Size
+<a class="anchorjs-link " href="#ebsvolumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1875,7 +2545,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1884,7 +2559,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~csharp">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1893,7 +2573,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Az<wbr>Distribution</span>
+        <span id="azdistribution~csharp">
+<span class="nx">
+Az<wbr>Distribution
+<a class="anchorjs-link " href="#azdistribution~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1909,7 +2594,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Client<wbr>Subnets</span>
+        <span id="clientsubnets~go">
+<span class="nx">
+Client<wbr>Subnets
+<a class="anchorjs-link " href="#clientsubnets~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1918,7 +2608,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Ebs<wbr>Volume<wbr>Size</span>
+        <span id="ebsvolumesize~go">
+<span class="nx">
+Ebs<wbr>Volume<wbr>Size
+<a class="anchorjs-link " href="#ebsvolumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1927,7 +2622,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1936,7 +2636,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~go">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1945,7 +2650,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Az<wbr>Distribution</span>
+        <span id="azdistribution~go">
+<span class="nx">
+Az<wbr>Distribution
+<a class="anchorjs-link " href="#azdistribution~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1961,7 +2671,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>client<wbr>Subnets</span>
+        <span id="clientsubnets~nodejs">
+<span class="nx">
+client<wbr>Subnets
+<a class="anchorjs-link " href="#clientsubnets~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1970,7 +2685,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>ebs<wbr>Volume<wbr>Size</span>
+        <span id="ebsvolumesize~nodejs">
+<span class="nx">
+ebs<wbr>Volume<wbr>Size
+<a class="anchorjs-link " href="#ebsvolumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1979,7 +2699,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1988,7 +2713,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>security<wbr>Groups</span>
+        <span id="securitygroups~nodejs">
+<span class="nx">
+security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1997,7 +2727,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>az<wbr>Distribution</span>
+        <span id="azdistribution~nodejs">
+<span class="nx">
+az<wbr>Distribution
+<a class="anchorjs-link " href="#azdistribution~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2013,7 +2748,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>client<wbr>Subnets</span>
+        <span id="clientsubnets~python">
+<span class="nx">
+client<wbr>Subnets
+<a class="anchorjs-link " href="#clientsubnets~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2022,7 +2762,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>ebs<wbr>Volume<wbr>Size</span>
+        <span id="ebsvolumesize~python">
+<span class="nx">
+ebs<wbr>Volume<wbr>Size
+<a class="anchorjs-link " href="#ebsvolumesize~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2031,7 +2776,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2040,7 +2790,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>security_<wbr>groups</span>
+        <span id="security_groups~python">
+<span class="nx">
+security_<wbr>groups
+<a class="anchorjs-link " href="#security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2049,7 +2804,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>az<wbr>Distribution</span>
+        <span id="azdistribution~python">
+<span class="nx">
+az<wbr>Distribution
+<a class="anchorjs-link " href="#azdistribution~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2083,7 +2843,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tls</span>
+        <span id="tls~csharp">
+<span class="nx">
+Tls
+<a class="anchorjs-link " href="#tls~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls<wbr>Args</a></span>
     </dt>
@@ -2099,7 +2864,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tls</span>
+        <span id="tls~go">
+<span class="nx">
+Tls
+<a class="anchorjs-link " href="#tls~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls</a></span>
     </dt>
@@ -2115,7 +2885,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tls</span>
+        <span id="tls~nodejs">
+<span class="nx">
+tls
+<a class="anchorjs-link " href="#tls~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls</a></span>
     </dt>
@@ -2131,7 +2906,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tls</span>
+        <span id="tls~python">
+<span class="nx">
+tls
+<a class="anchorjs-link " href="#tls~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Dict[Cluster<wbr>Client<wbr>Authentication<wbr>Tls]</a></span>
     </dt>
@@ -2165,7 +2945,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Authority<wbr>Arns</span>
+        <span id="certificateauthorityarns~csharp">
+<span class="nx">
+Certificate<wbr>Authority<wbr>Arns
+<a class="anchorjs-link " href="#certificateauthorityarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2181,7 +2966,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Authority<wbr>Arns</span>
+        <span id="certificateauthorityarns~go">
+<span class="nx">
+Certificate<wbr>Authority<wbr>Arns
+<a class="anchorjs-link " href="#certificateauthorityarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2197,7 +2987,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Authority<wbr>Arns</span>
+        <span id="certificateauthorityarns~nodejs">
+<span class="nx">
+certificate<wbr>Authority<wbr>Arns
+<a class="anchorjs-link " href="#certificateauthorityarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2213,7 +3008,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Authority<wbr>Arns</span>
+        <span id="certificateauthorityarns~python">
+<span class="nx">
+certificate<wbr>Authority<wbr>Arns
+<a class="anchorjs-link " href="#certificateauthorityarns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2247,7 +3047,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2256,7 +3061,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Revision</span>
+        <span id="revision~csharp">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#revision~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2272,7 +3082,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2281,7 +3096,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Revision</span>
+        <span id="revision~go">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#revision~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2297,7 +3117,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2306,7 +3131,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>revision</span>
+        <span id="revision~nodejs">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#revision~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2322,7 +3152,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2331,7 +3166,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>revision</span>
+        <span id="revision~python">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#revision~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2365,7 +3205,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn</span>
+        <span id="encryptionatrestkmskeyarn~csharp">
+<span class="nx">
+Encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#encryptionatrestkmskeyarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2374,7 +3219,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>In<wbr>Transit</span>
+        <span id="encryptionintransit~csharp">
+<span class="nx">
+Encryption<wbr>In<wbr>Transit
+<a class="anchorjs-link " href="#encryptionintransit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit<wbr>Args</a></span>
     </dt>
@@ -2390,7 +3240,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn</span>
+        <span id="encryptionatrestkmskeyarn~go">
+<span class="nx">
+Encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#encryptionatrestkmskeyarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2399,7 +3254,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encryption<wbr>In<wbr>Transit</span>
+        <span id="encryptionintransit~go">
+<span class="nx">
+Encryption<wbr>In<wbr>Transit
+<a class="anchorjs-link " href="#encryptionintransit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit</a></span>
     </dt>
@@ -2415,7 +3275,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn</span>
+        <span id="encryptionatrestkmskeyarn~nodejs">
+<span class="nx">
+encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#encryptionatrestkmskeyarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2424,7 +3289,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption<wbr>In<wbr>Transit</span>
+        <span id="encryptionintransit~nodejs">
+<span class="nx">
+encryption<wbr>In<wbr>Transit
+<a class="anchorjs-link " href="#encryptionintransit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit</a></span>
     </dt>
@@ -2440,7 +3310,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn</span>
+        <span id="encryptionatrestkmskeyarn~python">
+<span class="nx">
+encryption<wbr>At<wbr>Rest<wbr>Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#encryptionatrestkmskeyarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2449,7 +3324,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encryption<wbr>In<wbr>Transit</span>
+        <span id="encryptionintransit~python">
+<span class="nx">
+encryption<wbr>In<wbr>Transit
+<a class="anchorjs-link " href="#encryptionintransit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Dict[Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit]</a></span>
     </dt>
@@ -2483,7 +3363,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Broker</span>
+        <span id="clientbroker~csharp">
+<span class="nx">
+Client<wbr>Broker
+<a class="anchorjs-link " href="#clientbroker~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2492,7 +3377,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>In<wbr>Cluster</span>
+        <span id="incluster~csharp">
+<span class="nx">
+In<wbr>Cluster
+<a class="anchorjs-link " href="#incluster~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2508,7 +3398,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Broker</span>
+        <span id="clientbroker~go">
+<span class="nx">
+Client<wbr>Broker
+<a class="anchorjs-link " href="#clientbroker~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2517,7 +3412,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>In<wbr>Cluster</span>
+        <span id="incluster~go">
+<span class="nx">
+In<wbr>Cluster
+<a class="anchorjs-link " href="#incluster~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2533,7 +3433,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Broker</span>
+        <span id="clientbroker~nodejs">
+<span class="nx">
+client<wbr>Broker
+<a class="anchorjs-link " href="#clientbroker~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2542,7 +3447,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>in<wbr>Cluster</span>
+        <span id="incluster~nodejs">
+<span class="nx">
+in<wbr>Cluster
+<a class="anchorjs-link " href="#incluster~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2558,7 +3468,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Broker</span>
+        <span id="clientbroker~python">
+<span class="nx">
+client<wbr>Broker
+<a class="anchorjs-link " href="#clientbroker~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2567,7 +3482,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>in<wbr>Cluster</span>
+        <span id="incluster~python">
+<span class="nx">
+in<wbr>Cluster
+<a class="anchorjs-link " href="#incluster~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2601,7 +3521,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Broker<wbr>Logs</span>
+        <span id="brokerlogs~csharp">
+<span class="nx">
+Broker<wbr>Logs
+<a class="anchorjs-link " href="#brokerlogs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Args</a></span>
     </dt>
@@ -2617,7 +3542,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Broker<wbr>Logs</span>
+        <span id="brokerlogs~go">
+<span class="nx">
+Broker<wbr>Logs
+<a class="anchorjs-link " href="#brokerlogs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs</a></span>
     </dt>
@@ -2633,7 +3563,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>broker<wbr>Logs</span>
+        <span id="brokerlogs~nodejs">
+<span class="nx">
+broker<wbr>Logs
+<a class="anchorjs-link " href="#brokerlogs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs</a></span>
     </dt>
@@ -2649,7 +3584,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>broker<wbr>Logs</span>
+        <span id="brokerlogs~python">
+<span class="nx">
+broker<wbr>Logs
+<a class="anchorjs-link " href="#brokerlogs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs]</a></span>
     </dt>
@@ -2683,7 +3623,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logs</span>
+        <span id="cloudwatchlogs~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logs
+<a class="anchorjs-link " href="#cloudwatchlogs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs<wbr>Args</a></span>
     </dt>
@@ -2691,7 +3636,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Firehose</span>
+        <span id="firehose~csharp">
+<span class="nx">
+Firehose
+<a class="anchorjs-link " href="#firehose~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose<wbr>Args</a></span>
     </dt>
@@ -2699,7 +3649,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3</span>
+        <span id="s3~csharp">
+<span class="nx">
+S3
+<a class="anchorjs-link " href="#s3~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3Args</a></span>
     </dt>
@@ -2714,7 +3669,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logs</span>
+        <span id="cloudwatchlogs~go">
+<span class="nx">
+Cloudwatch<wbr>Logs
+<a class="anchorjs-link " href="#cloudwatchlogs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs</a></span>
     </dt>
@@ -2722,7 +3682,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Firehose</span>
+        <span id="firehose~go">
+<span class="nx">
+Firehose
+<a class="anchorjs-link " href="#firehose~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose</a></span>
     </dt>
@@ -2730,7 +3695,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3</span>
+        <span id="s3~go">
+<span class="nx">
+S3
+<a class="anchorjs-link " href="#s3~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3</a></span>
     </dt>
@@ -2745,7 +3715,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logs</span>
+        <span id="cloudwatchlogs~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logs
+<a class="anchorjs-link " href="#cloudwatchlogs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs</a></span>
     </dt>
@@ -2753,7 +3728,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>firehose</span>
+        <span id="firehose~nodejs">
+<span class="nx">
+firehose
+<a class="anchorjs-link " href="#firehose~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose</a></span>
     </dt>
@@ -2761,7 +3741,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3</span>
+        <span id="s3~nodejs">
+<span class="nx">
+s3
+<a class="anchorjs-link " href="#s3~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3</a></span>
     </dt>
@@ -2776,7 +3761,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logs</span>
+        <span id="cloudwatchlogs~python">
+<span class="nx">
+cloudwatch<wbr>Logs
+<a class="anchorjs-link " href="#cloudwatchlogs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs]</a></span>
     </dt>
@@ -2784,7 +3774,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>firehose</span>
+        <span id="firehose~python">
+<span class="nx">
+firehose
+<a class="anchorjs-link " href="#firehose~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose]</a></span>
     </dt>
@@ -2792,7 +3787,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3</span>
+        <span id="s3~python">
+<span class="nx">
+s3
+<a class="anchorjs-link " href="#s3~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3]</a></span>
     </dt>
@@ -2825,7 +3825,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2834,7 +3839,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group</span>
+        <span id="loggroup~csharp">
+<span class="nx">
+Log<wbr>Group
+<a class="anchorjs-link " href="#loggroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2850,7 +3860,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2859,7 +3874,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group</span>
+        <span id="loggroup~go">
+<span class="nx">
+Log<wbr>Group
+<a class="anchorjs-link " href="#loggroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2875,7 +3895,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2884,7 +3909,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group</span>
+        <span id="loggroup~nodejs">
+<span class="nx">
+log<wbr>Group
+<a class="anchorjs-link " href="#loggroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2900,7 +3930,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2909,7 +3944,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group</span>
+        <span id="log_group~python">
+<span class="nx">
+log_<wbr>group
+<a class="anchorjs-link " href="#log_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2943,7 +3983,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2952,7 +3997,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delivery<wbr>Stream</span>
+        <span id="deliverystream~csharp">
+<span class="nx">
+Delivery<wbr>Stream
+<a class="anchorjs-link " href="#deliverystream~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2968,7 +4018,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2977,7 +4032,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delivery<wbr>Stream</span>
+        <span id="deliverystream~go">
+<span class="nx">
+Delivery<wbr>Stream
+<a class="anchorjs-link " href="#deliverystream~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2993,7 +4053,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3002,7 +4067,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>delivery<wbr>Stream</span>
+        <span id="deliverystream~nodejs">
+<span class="nx">
+delivery<wbr>Stream
+<a class="anchorjs-link " href="#deliverystream~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3018,7 +4088,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3027,7 +4102,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>delivery<wbr>Stream</span>
+        <span id="deliverystream~python">
+<span class="nx">
+delivery<wbr>Stream
+<a class="anchorjs-link " href="#deliverystream~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3061,7 +4141,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3070,7 +4155,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket</span>
+        <span id="bucket~csharp">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#bucket~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3079,7 +4169,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3095,7 +4190,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3104,7 +4204,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket</span>
+        <span id="bucket~go">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#bucket~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3113,7 +4218,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3129,7 +4239,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3138,7 +4253,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket</span>
+        <span id="bucket~nodejs">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#bucket~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3147,7 +4267,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3163,7 +4288,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3172,7 +4302,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket</span>
+        <span id="bucket~python">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#bucket~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3181,7 +4316,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3215,7 +4355,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Prometheus</span>
+        <span id="prometheus~csharp">
+<span class="nx">
+Prometheus
+<a class="anchorjs-link " href="#prometheus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Args</a></span>
     </dt>
@@ -3231,7 +4376,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Prometheus</span>
+        <span id="prometheus~go">
+<span class="nx">
+Prometheus
+<a class="anchorjs-link " href="#prometheus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus</a></span>
     </dt>
@@ -3247,7 +4397,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>prometheus</span>
+        <span id="prometheus~nodejs">
+<span class="nx">
+prometheus
+<a class="anchorjs-link " href="#prometheus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus</a></span>
     </dt>
@@ -3263,7 +4418,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>prometheus</span>
+        <span id="prometheus~python">
+<span class="nx">
+prometheus
+<a class="anchorjs-link " href="#prometheus~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Dict[Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus]</a></span>
     </dt>
@@ -3297,7 +4457,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jmx<wbr>Exporter</span>
+        <span id="jmxexporter~csharp">
+<span class="nx">
+Jmx<wbr>Exporter
+<a class="anchorjs-link " href="#jmxexporter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter<wbr>Args</a></span>
     </dt>
@@ -3306,7 +4471,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Exporter</span>
+        <span id="nodeexporter~csharp">
+<span class="nx">
+Node<wbr>Exporter
+<a class="anchorjs-link " href="#nodeexporter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter<wbr>Args</a></span>
     </dt>
@@ -3322,7 +4492,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jmx<wbr>Exporter</span>
+        <span id="jmxexporter~go">
+<span class="nx">
+Jmx<wbr>Exporter
+<a class="anchorjs-link " href="#jmxexporter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter</a></span>
     </dt>
@@ -3331,7 +4506,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Exporter</span>
+        <span id="nodeexporter~go">
+<span class="nx">
+Node<wbr>Exporter
+<a class="anchorjs-link " href="#nodeexporter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter</a></span>
     </dt>
@@ -3347,7 +4527,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jmx<wbr>Exporter</span>
+        <span id="jmxexporter~nodejs">
+<span class="nx">
+jmx<wbr>Exporter
+<a class="anchorjs-link " href="#jmxexporter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter</a></span>
     </dt>
@@ -3356,7 +4541,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Exporter</span>
+        <span id="nodeexporter~nodejs">
+<span class="nx">
+node<wbr>Exporter
+<a class="anchorjs-link " href="#nodeexporter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter</a></span>
     </dt>
@@ -3372,7 +4562,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jmx<wbr>Exporter</span>
+        <span id="jmxexporter~python">
+<span class="nx">
+jmx<wbr>Exporter
+<a class="anchorjs-link " href="#jmxexporter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Dict[Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter]</a></span>
     </dt>
@@ -3381,7 +4576,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Exporter</span>
+        <span id="nodeexporter~python">
+<span class="nx">
+node<wbr>Exporter
+<a class="anchorjs-link " href="#nodeexporter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Dict[Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter]</a></span>
     </dt>
@@ -3415,7 +4615,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~csharp">
+<span class="nx">
+Enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3431,7 +4636,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~go">
+<span class="nx">
+Enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3447,7 +4657,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~nodejs">
+<span class="nx">
+enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3463,7 +4678,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~python">
+<span class="nx">
+enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3497,7 +4717,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~csharp">
+<span class="nx">
+Enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3513,7 +4738,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~go">
+<span class="nx">
+Enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3529,7 +4759,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~nodejs">
+<span class="nx">
+enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3545,7 +4780,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled<wbr>In<wbr>Broker</span>
+        <span id="enabledinbroker~python">
+<span class="nx">
+enabled<wbr>In<wbr>Broker
+<a class="anchorjs-link " href="#enabledinbroker~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>

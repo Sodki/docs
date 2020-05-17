@@ -327,19 +327,19 @@ const fooSpotFleetRequest = new aws.ec2.SpotFleetRequest("fooSpotFleetRequest", 
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequest">SpotFleetRequest</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequestArgs">SpotFleetRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequest">SpotFleetRequest</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequestArgs">SpotFleetRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SpotFleetRequest</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allocation_strategy=None<span class="p">, </span>excess_capacity_termination_policy=None<span class="p">, </span>fleet_type=None<span class="p">, </span>iam_fleet_role=None<span class="p">, </span>instance_interruption_behaviour=None<span class="p">, </span>instance_pools_to_use_count=None<span class="p">, </span>launch_specifications=None<span class="p">, </span>launch_template_configs=None<span class="p">, </span>load_balancers=None<span class="p">, </span>replace_unhealthy_instances=None<span class="p">, </span>spot_price=None<span class="p">, </span>tags=None<span class="p">, </span>target_capacity=None<span class="p">, </span>target_group_arns=None<span class="p">, </span>terminate_instances_with_expiration=None<span class="p">, </span>valid_from=None<span class="p">, </span>valid_until=None<span class="p">, </span>wait_for_fulfillment=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#SpotFleetRequest">SpotFleetRequest</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allocation_strategy=None<span class="p">, </span>excess_capacity_termination_policy=None<span class="p">, </span>fleet_type=None<span class="p">, </span>iam_fleet_role=None<span class="p">, </span>instance_interruption_behaviour=None<span class="p">, </span>instance_pools_to_use_count=None<span class="p">, </span>launch_specifications=None<span class="p">, </span>launch_template_configs=None<span class="p">, </span>load_balancers=None<span class="p">, </span>replace_unhealthy_instances=None<span class="p">, </span>spot_price=None<span class="p">, </span>tags=None<span class="p">, </span>target_capacity=None<span class="p">, </span>target_group_arns=None<span class="p">, </span>terminate_instances_with_expiration=None<span class="p">, </span>valid_from=None<span class="p">, </span>valid_until=None<span class="p">, </span>wait_for_fulfillment=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSpotFleetRequest<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequestArgs">SpotFleetRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequest">SpotFleetRequest</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequest">NewSpotFleetRequest</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequestArgs">SpotFleetRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequest">SpotFleetRequest</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequest.html">SpotFleetRequest</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequestArgs.html">SpotFleetRequestArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequest.html">SpotFleetRequest</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequestArgs.html">SpotFleetRequestArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -505,7 +505,12 @@ The SpotFleetRequest resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-required"
             title="Required">
-        <span>Iam<wbr>Fleet<wbr>Role</span>
+        <span id="iamfleetrole~csharp">
+<span class="nx">
+Iam<wbr>Fleet<wbr>Role
+<a class="anchorjs-link " href="#iamfleetrole~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -517,7 +522,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Capacity</span>
+        <span id="targetcapacity~csharp">
+<span class="nx">
+Target<wbr>Capacity
+<a class="anchorjs-link " href="#targetcapacity~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -528,7 +538,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allocation<wbr>Strategy</span>
+        <span id="allocationstrategy~csharp">
+<span class="nx">
+Allocation<wbr>Strategy
+<a class="anchorjs-link " href="#allocationstrategy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -539,7 +554,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Excess<wbr>Capacity<wbr>Termination<wbr>Policy</span>
+        <span id="excesscapacityterminationpolicy~csharp">
+<span class="nx">
+Excess<wbr>Capacity<wbr>Termination<wbr>Policy
+<a class="anchorjs-link " href="#excesscapacityterminationpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -550,7 +570,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fleet<wbr>Type</span>
+        <span id="fleettype~csharp">
+<span class="nx">
+Fleet<wbr>Type
+<a class="anchorjs-link " href="#fleettype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -560,7 +585,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="instanceinterruptionbehaviour~csharp">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#instanceinterruptionbehaviour~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -571,7 +601,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count</span>
+        <span id="instancepoolstousecount~csharp">
+<span class="nx">
+Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count
+<a class="anchorjs-link " href="#instancepoolstousecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -584,7 +619,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Specifications</span>
+        <span id="launchspecifications~csharp">
+<span class="nx">
+Launch<wbr>Specifications
+<a class="anchorjs-link " href="#launchspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -595,7 +635,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Template<wbr>Configs</span>
+        <span id="launchtemplateconfigs~csharp">
+<span class="nx">
+Launch<wbr>Template<wbr>Configs
+<a class="anchorjs-link " href="#launchtemplateconfigs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
@@ -604,7 +649,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Load<wbr>Balancers</span>
+        <span id="loadbalancers~csharp">
+<span class="nx">
+Load<wbr>Balancers
+<a class="anchorjs-link " href="#loadbalancers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -613,7 +663,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replace<wbr>Unhealthy<wbr>Instances</span>
+        <span id="replaceunhealthyinstances~csharp">
+<span class="nx">
+Replace<wbr>Unhealthy<wbr>Instances
+<a class="anchorjs-link " href="#replaceunhealthyinstances~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -622,7 +677,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~csharp">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -631,7 +691,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -640,7 +705,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Group<wbr>Arns</span>
+        <span id="targetgrouparns~csharp">
+<span class="nx">
+Target<wbr>Group<wbr>Arns
+<a class="anchorjs-link " href="#targetgrouparns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -649,7 +719,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Terminate<wbr>Instances<wbr>With<wbr>Expiration</span>
+        <span id="terminateinstanceswithexpiration~csharp">
+<span class="nx">
+Terminate<wbr>Instances<wbr>With<wbr>Expiration
+<a class="anchorjs-link " href="#terminateinstanceswithexpiration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -659,7 +734,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="validfrom~csharp">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#validfrom~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -668,7 +748,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="validuntil~csharp">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -677,7 +762,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="waitforfulfillment~csharp">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#waitforfulfillment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -695,7 +785,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Iam<wbr>Fleet<wbr>Role</span>
+        <span id="iamfleetrole~go">
+<span class="nx">
+Iam<wbr>Fleet<wbr>Role
+<a class="anchorjs-link " href="#iamfleetrole~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -707,7 +802,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Capacity</span>
+        <span id="targetcapacity~go">
+<span class="nx">
+Target<wbr>Capacity
+<a class="anchorjs-link " href="#targetcapacity~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -718,7 +818,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allocation<wbr>Strategy</span>
+        <span id="allocationstrategy~go">
+<span class="nx">
+Allocation<wbr>Strategy
+<a class="anchorjs-link " href="#allocationstrategy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -729,7 +834,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Excess<wbr>Capacity<wbr>Termination<wbr>Policy</span>
+        <span id="excesscapacityterminationpolicy~go">
+<span class="nx">
+Excess<wbr>Capacity<wbr>Termination<wbr>Policy
+<a class="anchorjs-link " href="#excesscapacityterminationpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -740,7 +850,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fleet<wbr>Type</span>
+        <span id="fleettype~go">
+<span class="nx">
+Fleet<wbr>Type
+<a class="anchorjs-link " href="#fleettype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -750,7 +865,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="instanceinterruptionbehaviour~go">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#instanceinterruptionbehaviour~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -761,7 +881,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count</span>
+        <span id="instancepoolstousecount~go">
+<span class="nx">
+Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count
+<a class="anchorjs-link " href="#instancepoolstousecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -774,7 +899,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Specifications</span>
+        <span id="launchspecifications~go">
+<span class="nx">
+Launch<wbr>Specifications
+<a class="anchorjs-link " href="#launchspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification</a></span>
     </dt>
@@ -785,7 +915,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Template<wbr>Configs</span>
+        <span id="launchtemplateconfigs~go">
+<span class="nx">
+Launch<wbr>Template<wbr>Configs
+<a class="anchorjs-link " href="#launchtemplateconfigs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config</a></span>
     </dt>
@@ -794,7 +929,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Load<wbr>Balancers</span>
+        <span id="loadbalancers~go">
+<span class="nx">
+Load<wbr>Balancers
+<a class="anchorjs-link " href="#loadbalancers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -803,7 +943,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replace<wbr>Unhealthy<wbr>Instances</span>
+        <span id="replaceunhealthyinstances~go">
+<span class="nx">
+Replace<wbr>Unhealthy<wbr>Instances
+<a class="anchorjs-link " href="#replaceunhealthyinstances~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -812,7 +957,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~go">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -821,7 +971,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -830,7 +985,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Group<wbr>Arns</span>
+        <span id="targetgrouparns~go">
+<span class="nx">
+Target<wbr>Group<wbr>Arns
+<a class="anchorjs-link " href="#targetgrouparns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -839,7 +999,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Terminate<wbr>Instances<wbr>With<wbr>Expiration</span>
+        <span id="terminateinstanceswithexpiration~go">
+<span class="nx">
+Terminate<wbr>Instances<wbr>With<wbr>Expiration
+<a class="anchorjs-link " href="#terminateinstanceswithexpiration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -849,7 +1014,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="validfrom~go">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#validfrom~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -858,7 +1028,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="validuntil~go">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -867,7 +1042,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="waitforfulfillment~go">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#waitforfulfillment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -885,7 +1065,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>iam<wbr>Fleet<wbr>Role</span>
+        <span id="iamfleetrole~nodejs">
+<span class="nx">
+iam<wbr>Fleet<wbr>Role
+<a class="anchorjs-link " href="#iamfleetrole~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -897,7 +1082,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Capacity</span>
+        <span id="targetcapacity~nodejs">
+<span class="nx">
+target<wbr>Capacity
+<a class="anchorjs-link " href="#targetcapacity~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -908,7 +1098,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allocation<wbr>Strategy</span>
+        <span id="allocationstrategy~nodejs">
+<span class="nx">
+allocation<wbr>Strategy
+<a class="anchorjs-link " href="#allocationstrategy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -919,7 +1114,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>excess<wbr>Capacity<wbr>Termination<wbr>Policy</span>
+        <span id="excesscapacityterminationpolicy~nodejs">
+<span class="nx">
+excess<wbr>Capacity<wbr>Termination<wbr>Policy
+<a class="anchorjs-link " href="#excesscapacityterminationpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -930,7 +1130,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>fleet<wbr>Type</span>
+        <span id="fleettype~nodejs">
+<span class="nx">
+fleet<wbr>Type
+<a class="anchorjs-link " href="#fleettype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -940,7 +1145,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="instanceinterruptionbehaviour~nodejs">
+<span class="nx">
+instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#instanceinterruptionbehaviour~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -951,7 +1161,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count</span>
+        <span id="instancepoolstousecount~nodejs">
+<span class="nx">
+instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count
+<a class="anchorjs-link " href="#instancepoolstousecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -964,7 +1179,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch<wbr>Specifications</span>
+        <span id="launchspecifications~nodejs">
+<span class="nx">
+launch<wbr>Specifications
+<a class="anchorjs-link " href="#launchspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification[]</a></span>
     </dt>
@@ -975,7 +1195,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch<wbr>Template<wbr>Configs</span>
+        <span id="launchtemplateconfigs~nodejs">
+<span class="nx">
+launch<wbr>Template<wbr>Configs
+<a class="anchorjs-link " href="#launchtemplateconfigs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config[]</a></span>
     </dt>
@@ -984,7 +1209,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>load<wbr>Balancers</span>
+        <span id="loadbalancers~nodejs">
+<span class="nx">
+load<wbr>Balancers
+<a class="anchorjs-link " href="#loadbalancers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -993,7 +1223,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>replace<wbr>Unhealthy<wbr>Instances</span>
+        <span id="replaceunhealthyinstances~nodejs">
+<span class="nx">
+replace<wbr>Unhealthy<wbr>Instances
+<a class="anchorjs-link " href="#replaceunhealthyinstances~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1002,7 +1237,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Price</span>
+        <span id="spotprice~nodejs">
+<span class="nx">
+spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1011,7 +1251,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1020,7 +1265,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Group<wbr>Arns</span>
+        <span id="targetgrouparns~nodejs">
+<span class="nx">
+target<wbr>Group<wbr>Arns
+<a class="anchorjs-link " href="#targetgrouparns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1029,7 +1279,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>terminate<wbr>Instances<wbr>With<wbr>Expiration</span>
+        <span id="terminateinstanceswithexpiration~nodejs">
+<span class="nx">
+terminate<wbr>Instances<wbr>With<wbr>Expiration
+<a class="anchorjs-link " href="#terminateinstanceswithexpiration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1039,7 +1294,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>From</span>
+        <span id="validfrom~nodejs">
+<span class="nx">
+valid<wbr>From
+<a class="anchorjs-link " href="#validfrom~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1048,7 +1308,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>Until</span>
+        <span id="validuntil~nodejs">
+<span class="nx">
+valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1057,7 +1322,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait<wbr>For<wbr>Fulfillment</span>
+        <span id="waitforfulfillment~nodejs">
+<span class="nx">
+wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#waitforfulfillment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1075,7 +1345,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>iam_<wbr>fleet_<wbr>role</span>
+        <span id="iam_fleet_role~python">
+<span class="nx">
+iam_<wbr>fleet_<wbr>role
+<a class="anchorjs-link " href="#iam_fleet_role~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1087,7 +1362,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-required"
             title="Required">
-        <span>target_<wbr>capacity</span>
+        <span id="target_capacity~python">
+<span class="nx">
+target_<wbr>capacity
+<a class="anchorjs-link " href="#target_capacity~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1098,7 +1378,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allocation_<wbr>strategy</span>
+        <span id="allocation_strategy~python">
+<span class="nx">
+allocation_<wbr>strategy
+<a class="anchorjs-link " href="#allocation_strategy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1109,7 +1394,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>excess_<wbr>capacity_<wbr>termination_<wbr>policy</span>
+        <span id="excess_capacity_termination_policy~python">
+<span class="nx">
+excess_<wbr>capacity_<wbr>termination_<wbr>policy
+<a class="anchorjs-link " href="#excess_capacity_termination_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1120,7 +1410,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>fleet_<wbr>type</span>
+        <span id="fleet_type~python">
+<span class="nx">
+fleet_<wbr>type
+<a class="anchorjs-link " href="#fleet_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1130,7 +1425,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>interruption_<wbr>behaviour</span>
+        <span id="instance_interruption_behaviour~python">
+<span class="nx">
+instance_<wbr>interruption_<wbr>behaviour
+<a class="anchorjs-link " href="#instance_interruption_behaviour~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1141,7 +1441,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>pools_<wbr>to_<wbr>use_<wbr>count</span>
+        <span id="instance_pools_to_use_count~python">
+<span class="nx">
+instance_<wbr>pools_<wbr>to_<wbr>use_<wbr>count
+<a class="anchorjs-link " href="#instance_pools_to_use_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1154,7 +1459,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch_<wbr>specifications</span>
+        <span id="launch_specifications~python">
+<span class="nx">
+launch_<wbr>specifications
+<a class="anchorjs-link " href="#launch_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification]</a></span>
     </dt>
@@ -1165,7 +1475,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch_<wbr>template_<wbr>configs</span>
+        <span id="launch_template_configs~python">
+<span class="nx">
+launch_<wbr>template_<wbr>configs
+<a class="anchorjs-link " href="#launch_template_configs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config]</a></span>
     </dt>
@@ -1174,7 +1489,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>load_<wbr>balancers</span>
+        <span id="load_balancers~python">
+<span class="nx">
+load_<wbr>balancers
+<a class="anchorjs-link " href="#load_balancers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1183,7 +1503,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>replace_<wbr>unhealthy_<wbr>instances</span>
+        <span id="replace_unhealthy_instances~python">
+<span class="nx">
+replace_<wbr>unhealthy_<wbr>instances
+<a class="anchorjs-link " href="#replace_unhealthy_instances~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1192,7 +1517,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>price</span>
+        <span id="spot_price~python">
+<span class="nx">
+spot_<wbr>price
+<a class="anchorjs-link " href="#spot_price~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1201,7 +1531,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1210,7 +1545,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>target_<wbr>group_<wbr>arns</span>
+        <span id="target_group_arns~python">
+<span class="nx">
+target_<wbr>group_<wbr>arns
+<a class="anchorjs-link " href="#target_group_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1219,7 +1559,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>terminate_<wbr>instances_<wbr>with_<wbr>expiration</span>
+        <span id="terminate_instances_with_expiration~python">
+<span class="nx">
+terminate_<wbr>instances_<wbr>with_<wbr>expiration
+<a class="anchorjs-link " href="#terminate_instances_with_expiration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1229,7 +1574,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>from</span>
+        <span id="valid_from~python">
+<span class="nx">
+valid_<wbr>from
+<a class="anchorjs-link " href="#valid_from~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1238,7 +1588,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>until</span>
+        <span id="valid_until~python">
+<span class="nx">
+valid_<wbr>until
+<a class="anchorjs-link " href="#valid_until~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1247,7 +1602,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait_<wbr>for_<wbr>fulfillment</span>
+        <span id="wait_for_fulfillment~python">
+<span class="nx">
+wait_<wbr>for_<wbr>fulfillment
+<a class="anchorjs-link " href="#wait_for_fulfillment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1276,7 +1636,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Client<wbr>Token</span>
+        <span id="clienttoken~csharp">
+<span class="nx">
+Client<wbr>Token
+<a class="anchorjs-link " href="#clienttoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1284,7 +1649,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1292,7 +1662,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="spotrequeststate~csharp">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#spotrequeststate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1308,7 +1683,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Client<wbr>Token</span>
+        <span id="clienttoken~go">
+<span class="nx">
+Client<wbr>Token
+<a class="anchorjs-link " href="#clienttoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1316,7 +1696,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1324,7 +1709,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="spotrequeststate~go">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#spotrequeststate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1340,7 +1730,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>client<wbr>Token</span>
+        <span id="clienttoken~nodejs">
+<span class="nx">
+client<wbr>Token
+<a class="anchorjs-link " href="#clienttoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1348,7 +1743,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1356,7 +1756,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>spot<wbr>Request<wbr>State</span>
+        <span id="spotrequeststate~nodejs">
+<span class="nx">
+spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#spotrequeststate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1372,7 +1777,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>client_<wbr>token</span>
+        <span id="client_token~python">
+<span class="nx">
+client_<wbr>token
+<a class="anchorjs-link " href="#client_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1380,7 +1790,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1388,7 +1803,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>spot_<wbr>request_<wbr>state</span>
+        <span id="spot_request_state~python">
+<span class="nx">
+spot_<wbr>request_<wbr>state
+<a class="anchorjs-link " href="#spot_request_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1410,7 +1830,7 @@ Get an existing SpotFleetRequest resource's state with the given name, ID, and o
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequestState">SpotFleetRequestState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequest">SpotFleetRequest</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequestState">SpotFleetRequestState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotFleetRequest">SpotFleetRequest</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1418,11 +1838,11 @@ Get an existing SpotFleetRequest resource's state with the given name, ID, and o
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSpotFleetRequest<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequestState">SpotFleetRequestState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequest">SpotFleetRequest</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSpotFleetRequest<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequestState">SpotFleetRequestState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotFleetRequest">SpotFleetRequest</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequest.html">SpotFleetRequest</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequestState.html">SpotFleetRequestState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequest.html">SpotFleetRequest</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotFleetRequestState.html">SpotFleetRequestState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1530,7 +1950,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allocation<wbr>Strategy</span>
+        <span id="state_allocationstrategy~csharp">
+<span class="nx">
+Allocation<wbr>Strategy
+<a class="anchorjs-link " href="#state_allocationstrategy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1541,7 +1966,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Token</span>
+        <span id="state_clienttoken~csharp">
+<span class="nx">
+Client<wbr>Token
+<a class="anchorjs-link " href="#state_clienttoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1549,7 +1979,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Excess<wbr>Capacity<wbr>Termination<wbr>Policy</span>
+        <span id="state_excesscapacityterminationpolicy~csharp">
+<span class="nx">
+Excess<wbr>Capacity<wbr>Termination<wbr>Policy
+<a class="anchorjs-link " href="#state_excesscapacityterminationpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1560,7 +1995,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fleet<wbr>Type</span>
+        <span id="state_fleettype~csharp">
+<span class="nx">
+Fleet<wbr>Type
+<a class="anchorjs-link " href="#state_fleettype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1570,7 +2010,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Fleet<wbr>Role</span>
+        <span id="state_iamfleetrole~csharp">
+<span class="nx">
+Iam<wbr>Fleet<wbr>Role
+<a class="anchorjs-link " href="#state_iamfleetrole~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1582,7 +2027,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="state_instanceinterruptionbehaviour~csharp">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#state_instanceinterruptionbehaviour~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1593,7 +2043,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count</span>
+        <span id="state_instancepoolstousecount~csharp">
+<span class="nx">
+Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count
+<a class="anchorjs-link " href="#state_instancepoolstousecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1606,7 +2061,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Specifications</span>
+        <span id="state_launchspecifications~csharp">
+<span class="nx">
+Launch<wbr>Specifications
+<a class="anchorjs-link " href="#state_launchspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -1617,7 +2077,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Template<wbr>Configs</span>
+        <span id="state_launchtemplateconfigs~csharp">
+<span class="nx">
+Launch<wbr>Template<wbr>Configs
+<a class="anchorjs-link " href="#state_launchtemplateconfigs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
@@ -1626,7 +2091,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Load<wbr>Balancers</span>
+        <span id="state_loadbalancers~csharp">
+<span class="nx">
+Load<wbr>Balancers
+<a class="anchorjs-link " href="#state_loadbalancers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1635,7 +2105,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replace<wbr>Unhealthy<wbr>Instances</span>
+        <span id="state_replaceunhealthyinstances~csharp">
+<span class="nx">
+Replace<wbr>Unhealthy<wbr>Instances
+<a class="anchorjs-link " href="#state_replaceunhealthyinstances~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1644,7 +2119,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="state_spotprice~csharp">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#state_spotprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1653,7 +2133,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="state_spotrequeststate~csharp">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#state_spotrequeststate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1662,7 +2147,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1671,7 +2161,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Capacity</span>
+        <span id="state_targetcapacity~csharp">
+<span class="nx">
+Target<wbr>Capacity
+<a class="anchorjs-link " href="#state_targetcapacity~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1682,7 +2177,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Group<wbr>Arns</span>
+        <span id="state_targetgrouparns~csharp">
+<span class="nx">
+Target<wbr>Group<wbr>Arns
+<a class="anchorjs-link " href="#state_targetgrouparns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1691,7 +2191,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Terminate<wbr>Instances<wbr>With<wbr>Expiration</span>
+        <span id="state_terminateinstanceswithexpiration~csharp">
+<span class="nx">
+Terminate<wbr>Instances<wbr>With<wbr>Expiration
+<a class="anchorjs-link " href="#state_terminateinstanceswithexpiration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1701,7 +2206,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="state_validfrom~csharp">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#state_validfrom~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1710,7 +2220,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="state_validuntil~csharp">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#state_validuntil~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1719,7 +2234,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="state_waitforfulfillment~csharp">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#state_waitforfulfillment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1737,7 +2257,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allocation<wbr>Strategy</span>
+        <span id="state_allocationstrategy~go">
+<span class="nx">
+Allocation<wbr>Strategy
+<a class="anchorjs-link " href="#state_allocationstrategy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1748,7 +2273,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Token</span>
+        <span id="state_clienttoken~go">
+<span class="nx">
+Client<wbr>Token
+<a class="anchorjs-link " href="#state_clienttoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1756,7 +2286,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Excess<wbr>Capacity<wbr>Termination<wbr>Policy</span>
+        <span id="state_excesscapacityterminationpolicy~go">
+<span class="nx">
+Excess<wbr>Capacity<wbr>Termination<wbr>Policy
+<a class="anchorjs-link " href="#state_excesscapacityterminationpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1767,7 +2302,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fleet<wbr>Type</span>
+        <span id="state_fleettype~go">
+<span class="nx">
+Fleet<wbr>Type
+<a class="anchorjs-link " href="#state_fleettype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1777,7 +2317,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Fleet<wbr>Role</span>
+        <span id="state_iamfleetrole~go">
+<span class="nx">
+Iam<wbr>Fleet<wbr>Role
+<a class="anchorjs-link " href="#state_iamfleetrole~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1789,7 +2334,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="state_instanceinterruptionbehaviour~go">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#state_instanceinterruptionbehaviour~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1800,7 +2350,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count</span>
+        <span id="state_instancepoolstousecount~go">
+<span class="nx">
+Instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count
+<a class="anchorjs-link " href="#state_instancepoolstousecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1813,7 +2368,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Specifications</span>
+        <span id="state_launchspecifications~go">
+<span class="nx">
+Launch<wbr>Specifications
+<a class="anchorjs-link " href="#state_launchspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification</a></span>
     </dt>
@@ -1824,7 +2384,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Template<wbr>Configs</span>
+        <span id="state_launchtemplateconfigs~go">
+<span class="nx">
+Launch<wbr>Template<wbr>Configs
+<a class="anchorjs-link " href="#state_launchtemplateconfigs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config</a></span>
     </dt>
@@ -1833,7 +2398,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Load<wbr>Balancers</span>
+        <span id="state_loadbalancers~go">
+<span class="nx">
+Load<wbr>Balancers
+<a class="anchorjs-link " href="#state_loadbalancers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1842,7 +2412,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replace<wbr>Unhealthy<wbr>Instances</span>
+        <span id="state_replaceunhealthyinstances~go">
+<span class="nx">
+Replace<wbr>Unhealthy<wbr>Instances
+<a class="anchorjs-link " href="#state_replaceunhealthyinstances~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1851,7 +2426,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="state_spotprice~go">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#state_spotprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1860,7 +2440,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="state_spotrequeststate~go">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#state_spotrequeststate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1869,7 +2454,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1878,7 +2468,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Capacity</span>
+        <span id="state_targetcapacity~go">
+<span class="nx">
+Target<wbr>Capacity
+<a class="anchorjs-link " href="#state_targetcapacity~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1889,7 +2484,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Group<wbr>Arns</span>
+        <span id="state_targetgrouparns~go">
+<span class="nx">
+Target<wbr>Group<wbr>Arns
+<a class="anchorjs-link " href="#state_targetgrouparns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1898,7 +2498,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Terminate<wbr>Instances<wbr>With<wbr>Expiration</span>
+        <span id="state_terminateinstanceswithexpiration~go">
+<span class="nx">
+Terminate<wbr>Instances<wbr>With<wbr>Expiration
+<a class="anchorjs-link " href="#state_terminateinstanceswithexpiration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1908,7 +2513,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="state_validfrom~go">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#state_validfrom~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1917,7 +2527,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="state_validuntil~go">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#state_validuntil~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1926,7 +2541,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="state_waitforfulfillment~go">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#state_waitforfulfillment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1944,7 +2564,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allocation<wbr>Strategy</span>
+        <span id="state_allocationstrategy~nodejs">
+<span class="nx">
+allocation<wbr>Strategy
+<a class="anchorjs-link " href="#state_allocationstrategy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1955,7 +2580,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Token</span>
+        <span id="state_clienttoken~nodejs">
+<span class="nx">
+client<wbr>Token
+<a class="anchorjs-link " href="#state_clienttoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1963,7 +2593,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>excess<wbr>Capacity<wbr>Termination<wbr>Policy</span>
+        <span id="state_excesscapacityterminationpolicy~nodejs">
+<span class="nx">
+excess<wbr>Capacity<wbr>Termination<wbr>Policy
+<a class="anchorjs-link " href="#state_excesscapacityterminationpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1974,7 +2609,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>fleet<wbr>Type</span>
+        <span id="state_fleettype~nodejs">
+<span class="nx">
+fleet<wbr>Type
+<a class="anchorjs-link " href="#state_fleettype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1984,7 +2624,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Fleet<wbr>Role</span>
+        <span id="state_iamfleetrole~nodejs">
+<span class="nx">
+iam<wbr>Fleet<wbr>Role
+<a class="anchorjs-link " href="#state_iamfleetrole~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1996,7 +2641,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="state_instanceinterruptionbehaviour~nodejs">
+<span class="nx">
+instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#state_instanceinterruptionbehaviour~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2007,7 +2657,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count</span>
+        <span id="state_instancepoolstousecount~nodejs">
+<span class="nx">
+instance<wbr>Pools<wbr>To<wbr>Use<wbr>Count
+<a class="anchorjs-link " href="#state_instancepoolstousecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2020,7 +2675,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch<wbr>Specifications</span>
+        <span id="state_launchspecifications~nodejs">
+<span class="nx">
+launch<wbr>Specifications
+<a class="anchorjs-link " href="#state_launchspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification[]</a></span>
     </dt>
@@ -2031,7 +2691,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch<wbr>Template<wbr>Configs</span>
+        <span id="state_launchtemplateconfigs~nodejs">
+<span class="nx">
+launch<wbr>Template<wbr>Configs
+<a class="anchorjs-link " href="#state_launchtemplateconfigs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config[]</a></span>
     </dt>
@@ -2040,7 +2705,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>load<wbr>Balancers</span>
+        <span id="state_loadbalancers~nodejs">
+<span class="nx">
+load<wbr>Balancers
+<a class="anchorjs-link " href="#state_loadbalancers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2049,7 +2719,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>replace<wbr>Unhealthy<wbr>Instances</span>
+        <span id="state_replaceunhealthyinstances~nodejs">
+<span class="nx">
+replace<wbr>Unhealthy<wbr>Instances
+<a class="anchorjs-link " href="#state_replaceunhealthyinstances~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2058,7 +2733,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Price</span>
+        <span id="state_spotprice~nodejs">
+<span class="nx">
+spot<wbr>Price
+<a class="anchorjs-link " href="#state_spotprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2067,7 +2747,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Request<wbr>State</span>
+        <span id="state_spotrequeststate~nodejs">
+<span class="nx">
+spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#state_spotrequeststate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2076,7 +2761,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2085,7 +2775,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Capacity</span>
+        <span id="state_targetcapacity~nodejs">
+<span class="nx">
+target<wbr>Capacity
+<a class="anchorjs-link " href="#state_targetcapacity~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2096,7 +2791,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Group<wbr>Arns</span>
+        <span id="state_targetgrouparns~nodejs">
+<span class="nx">
+target<wbr>Group<wbr>Arns
+<a class="anchorjs-link " href="#state_targetgrouparns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2105,7 +2805,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>terminate<wbr>Instances<wbr>With<wbr>Expiration</span>
+        <span id="state_terminateinstanceswithexpiration~nodejs">
+<span class="nx">
+terminate<wbr>Instances<wbr>With<wbr>Expiration
+<a class="anchorjs-link " href="#state_terminateinstanceswithexpiration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2115,7 +2820,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>From</span>
+        <span id="state_validfrom~nodejs">
+<span class="nx">
+valid<wbr>From
+<a class="anchorjs-link " href="#state_validfrom~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2124,7 +2834,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>Until</span>
+        <span id="state_validuntil~nodejs">
+<span class="nx">
+valid<wbr>Until
+<a class="anchorjs-link " href="#state_validuntil~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2133,7 +2848,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait<wbr>For<wbr>Fulfillment</span>
+        <span id="state_waitforfulfillment~nodejs">
+<span class="nx">
+wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#state_waitforfulfillment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2151,7 +2871,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allocation_<wbr>strategy</span>
+        <span id="state_allocation_strategy~python">
+<span class="nx">
+allocation_<wbr>strategy
+<a class="anchorjs-link " href="#state_allocation_strategy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2162,7 +2887,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>client_<wbr>token</span>
+        <span id="state_client_token~python">
+<span class="nx">
+client_<wbr>token
+<a class="anchorjs-link " href="#state_client_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2170,7 +2900,12 @@ the Spot pools specified by the Spot fleet request. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>excess_<wbr>capacity_<wbr>termination_<wbr>policy</span>
+        <span id="state_excess_capacity_termination_policy~python">
+<span class="nx">
+excess_<wbr>capacity_<wbr>termination_<wbr>policy
+<a class="anchorjs-link " href="#state_excess_capacity_termination_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2181,7 +2916,12 @@ request is decreased below the current size of the Spot fleet.
 
     <dt class="property-optional"
             title="Optional">
-        <span>fleet_<wbr>type</span>
+        <span id="state_fleet_type~python">
+<span class="nx">
+fleet_<wbr>type
+<a class="anchorjs-link " href="#state_fleet_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2191,7 +2931,12 @@ capacity or also attempts to maintain it. Default is `maintain`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>fleet_<wbr>role</span>
+        <span id="state_iam_fleet_role~python">
+<span class="nx">
+iam_<wbr>fleet_<wbr>role
+<a class="anchorjs-link " href="#state_iam_fleet_role~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2203,7 +2948,12 @@ terminateInstancesWithExpiration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>interruption_<wbr>behaviour</span>
+        <span id="state_instance_interruption_behaviour~python">
+<span class="nx">
+instance_<wbr>interruption_<wbr>behaviour
+<a class="anchorjs-link " href="#state_instance_interruption_behaviour~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2214,7 +2964,12 @@ instance stops or terminates when it is interrupted. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>pools_<wbr>to_<wbr>use_<wbr>count</span>
+        <span id="state_instance_pools_to_use_count~python">
+<span class="nx">
+instance_<wbr>pools_<wbr>to_<wbr>use_<wbr>count
+<a class="anchorjs-link " href="#state_instance_pools_to_use_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2227,7 +2982,12 @@ the number of Spot pools that you specify.
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch_<wbr>specifications</span>
+        <span id="state_launch_specifications~python">
+<span class="nx">
+launch_<wbr>specifications
+<a class="anchorjs-link " href="#state_launch_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecification">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification]</a></span>
     </dt>
@@ -2238,7 +2998,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch_<wbr>template_<wbr>configs</span>
+        <span id="state_launch_template_configs~python">
+<span class="nx">
+launch_<wbr>template_<wbr>configs
+<a class="anchorjs-link " href="#state_launch_template_configs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfig">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config]</a></span>
     </dt>
@@ -2247,7 +3012,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>load_<wbr>balancers</span>
+        <span id="state_load_balancers~python">
+<span class="nx">
+load_<wbr>balancers
+<a class="anchorjs-link " href="#state_load_balancers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2256,7 +3026,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>replace_<wbr>unhealthy_<wbr>instances</span>
+        <span id="state_replace_unhealthy_instances~python">
+<span class="nx">
+replace_<wbr>unhealthy_<wbr>instances
+<a class="anchorjs-link " href="#state_replace_unhealthy_instances~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2265,7 +3040,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>price</span>
+        <span id="state_spot_price~python">
+<span class="nx">
+spot_<wbr>price
+<a class="anchorjs-link " href="#state_spot_price~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2274,7 +3054,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>request_<wbr>state</span>
+        <span id="state_spot_request_state~python">
+<span class="nx">
+spot_<wbr>request_<wbr>state
+<a class="anchorjs-link " href="#state_spot_request_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2283,7 +3068,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2292,7 +3082,12 @@ across different markets and instance types. Conflicts with `launch_template_con
 
     <dt class="property-optional"
             title="Optional">
-        <span>target_<wbr>capacity</span>
+        <span id="state_target_capacity~python">
+<span class="nx">
+target_<wbr>capacity
+<a class="anchorjs-link " href="#state_target_capacity~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2303,7 +3098,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target_<wbr>group_<wbr>arns</span>
+        <span id="state_target_group_arns~python">
+<span class="nx">
+target_<wbr>group_<wbr>arns
+<a class="anchorjs-link " href="#state_target_group_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2312,7 +3112,12 @@ important to your application workload, such as vCPUs, memory, or I/O.
 
     <dt class="property-optional"
             title="Optional">
-        <span>terminate_<wbr>instances_<wbr>with_<wbr>expiration</span>
+        <span id="state_terminate_instances_with_expiration~python">
+<span class="nx">
+terminate_<wbr>instances_<wbr>with_<wbr>expiration
+<a class="anchorjs-link " href="#state_terminate_instances_with_expiration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2322,7 +3127,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>from</span>
+        <span id="state_valid_from~python">
+<span class="nx">
+valid_<wbr>from
+<a class="anchorjs-link " href="#state_valid_from~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2331,7 +3141,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>until</span>
+        <span id="state_valid_until~python">
+<span class="nx">
+valid_<wbr>until
+<a class="anchorjs-link " href="#state_valid_until~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2340,7 +3155,12 @@ instances should be terminated when the Spot fleet request expires.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait_<wbr>for_<wbr>fulfillment</span>
+        <span id="state_wait_for_fulfillment~python">
+<span class="nx">
+wait_<wbr>for_<wbr>fulfillment
+<a class="anchorjs-link " href="#state_wait_for_fulfillment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2384,7 +3204,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Ami</span>
+        <span id="ami~csharp">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#ami~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2392,7 +3217,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2401,7 +3231,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~csharp">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2409,7 +3244,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2418,7 +3258,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationebsblockdevice">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2426,7 +3271,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2434,7 +3284,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationephemeralblockdevice">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2442,7 +3297,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2450,7 +3310,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="iaminstanceprofilearn~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#iaminstanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2458,7 +3323,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~csharp">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2466,7 +3336,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="monitoring~csharp">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2474,7 +3349,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Group</span>
+        <span id="placementgroup~csharp">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2482,7 +3362,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Tenancy</span>
+        <span id="placementtenancy~csharp">
+<span class="nx">
+Placement<wbr>Tenancy
+<a class="anchorjs-link " href="#placementtenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2490,7 +3375,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~csharp">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationrootblockdevice">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Root<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2498,7 +3388,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~csharp">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2507,7 +3402,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2516,7 +3416,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -2525,7 +3430,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="userdata~csharp">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2533,7 +3443,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2541,7 +3456,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~csharp">
+<span class="nx">
+Weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2557,7 +3477,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Ami</span>
+        <span id="ami~go">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#ami~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2565,7 +3490,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2574,7 +3504,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~go">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2582,7 +3517,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2591,7 +3531,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationebsblockdevice">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -2599,7 +3544,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2607,7 +3557,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationephemeralblockdevice">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -2615,7 +3570,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2623,7 +3583,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="iaminstanceprofilearn~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#iaminstanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2631,7 +3596,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~go">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2639,7 +3609,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="monitoring~go">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2647,7 +3622,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Group</span>
+        <span id="placementgroup~go">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2655,7 +3635,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Tenancy</span>
+        <span id="placementtenancy~go">
+<span class="nx">
+Placement<wbr>Tenancy
+<a class="anchorjs-link " href="#placementtenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2663,7 +3648,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~go">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationrootblockdevice">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -2671,7 +3661,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~go">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2680,7 +3675,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2689,7 +3689,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2698,7 +3703,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="userdata~go">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2706,7 +3716,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2714,7 +3729,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~go">
+<span class="nx">
+Weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2730,7 +3750,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>ami</span>
+        <span id="ami~nodejs">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#ami~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2738,7 +3763,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2747,7 +3777,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~nodejs">
+<span class="nx">
+associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2755,7 +3790,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2764,7 +3804,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationebsblockdevice">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -2772,7 +3817,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2780,7 +3830,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationephemeralblockdevice">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -2788,7 +3843,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2796,7 +3856,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="iaminstanceprofilearn~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#iaminstanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2804,7 +3869,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>key<wbr>Name</span>
+        <span id="keyname~nodejs">
+<span class="nx">
+key<wbr>Name
+<a class="anchorjs-link " href="#keyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2812,7 +3882,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="monitoring~nodejs">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2820,7 +3895,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement<wbr>Group</span>
+        <span id="placementgroup~nodejs">
+<span class="nx">
+placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2828,7 +3908,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement<wbr>Tenancy</span>
+        <span id="placementtenancy~nodejs">
+<span class="nx">
+placement<wbr>Tenancy
+<a class="anchorjs-link " href="#placementtenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2836,7 +3921,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~nodejs">
+<span class="nx">
+root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationrootblockdevice">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -2844,7 +3934,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Price</span>
+        <span id="spotprice~nodejs">
+<span class="nx">
+spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2853,7 +3948,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2862,7 +3962,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2871,7 +3976,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data</span>
+        <span id="userdata~nodejs">
+<span class="nx">
+user<wbr>Data
+<a class="anchorjs-link " href="#userdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2879,7 +3989,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2887,7 +4002,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~nodejs">
+<span class="nx">
+weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2903,7 +4023,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>ami</span>
+        <span id="ami~python">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#ami~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2911,7 +4036,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2920,7 +4050,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate_<wbr>public_<wbr>ip_<wbr>address</span>
+        <span id="associate_public_ip_address~python">
+<span class="nx">
+associate_<wbr>public_<wbr>ip_<wbr>address
+<a class="anchorjs-link " href="#associate_public_ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2928,7 +4063,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2937,7 +4077,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationebsblockdevice">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -2945,7 +4090,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2953,7 +4103,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationephemeralblockdevice">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -2961,7 +4116,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="iaminstanceprofilearn~python">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#iaminstanceprofilearn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2969,7 +4129,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>instance_<wbr>profile</span>
+        <span id="iam_instance_profile~python">
+<span class="nx">
+iam_<wbr>instance_<wbr>profile
+<a class="anchorjs-link " href="#iam_instance_profile~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2977,7 +4142,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>key_<wbr>name</span>
+        <span id="key_name~python">
+<span class="nx">
+key_<wbr>name
+<a class="anchorjs-link " href="#key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2985,7 +4155,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="monitoring~python">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2993,7 +4168,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement_<wbr>group</span>
+        <span id="placement_group~python">
+<span class="nx">
+placement_<wbr>group
+<a class="anchorjs-link " href="#placement_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3001,7 +4181,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement_<wbr>tenancy</span>
+        <span id="placement_tenancy~python">
+<span class="nx">
+placement_<wbr>tenancy
+<a class="anchorjs-link " href="#placement_tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3009,7 +4194,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>block_<wbr>devices</span>
+        <span id="root_block_devices~python">
+<span class="nx">
+root_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#root_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchspecificationrootblockdevice">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Specification<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -3017,7 +4207,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>price</span>
+        <span id="spot_price~python">
+<span class="nx">
+spot_<wbr>price
+<a class="anchorjs-link " href="#spot_price~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3026,7 +4221,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3035,7 +4235,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -3044,7 +4249,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data</span>
+        <span id="user_data~python">
+<span class="nx">
+user_<wbr>data
+<a class="anchorjs-link " href="#user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3052,7 +4262,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3060,7 +4275,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~python">
+<span class="nx">
+weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3094,7 +4314,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3102,7 +4327,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3110,7 +4340,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3118,7 +4353,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3126,7 +4366,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3134,7 +4379,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~csharp">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3142,7 +4392,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3150,7 +4405,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3165,7 +4425,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3173,7 +4438,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3181,7 +4451,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3189,7 +4464,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3197,7 +4477,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3205,7 +4490,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~go">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3213,7 +4503,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3221,7 +4516,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3236,7 +4536,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3244,7 +4549,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3252,7 +4562,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3260,7 +4575,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3268,7 +4588,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3276,7 +4601,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Id</span>
+        <span id="snapshotid~nodejs">
+<span class="nx">
+snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3284,7 +4614,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3292,7 +4627,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3307,7 +4647,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3315,7 +4660,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3323,7 +4673,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3331,7 +4686,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3339,7 +4699,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3347,7 +4712,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>id</span>
+        <span id="snapshot_id~python">
+<span class="nx">
+snapshot_<wbr>id
+<a class="anchorjs-link " href="#snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3355,7 +4725,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3363,7 +4738,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3396,7 +4776,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3404,7 +4789,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3419,7 +4809,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3427,7 +4822,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3442,7 +4842,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3450,7 +4855,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3465,7 +4875,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3473,7 +4888,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3506,7 +4926,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3514,7 +4939,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3522,7 +4952,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3530,7 +4965,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3538,7 +4978,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3546,7 +4991,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3561,7 +5011,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3569,7 +5024,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3577,7 +5037,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3585,7 +5050,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3593,7 +5063,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3601,7 +5076,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3616,7 +5096,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3624,7 +5109,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3632,7 +5122,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3640,7 +5135,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3648,7 +5148,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3656,7 +5161,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3671,7 +5181,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3679,7 +5194,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3687,7 +5207,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3695,7 +5220,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3703,7 +5233,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3711,7 +5246,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3744,7 +5284,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Launch<wbr>Template<wbr>Specification</span>
+        <span id="launchtemplatespecification~csharp">
+<span class="nx">
+Launch<wbr>Template<wbr>Specification
+<a class="anchorjs-link " href="#launchtemplatespecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfiglaunchtemplatespecification">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -3753,7 +5298,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Overrides</span>
+        <span id="overrides~csharp">
+<span class="nx">
+Overrides
+<a class="anchorjs-link " href="#overrides~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfigoverride">List&lt;Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Override<wbr>Args&gt;</a></span>
     </dt>
@@ -3769,7 +5319,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Launch<wbr>Template<wbr>Specification</span>
+        <span id="launchtemplatespecification~go">
+<span class="nx">
+Launch<wbr>Template<wbr>Specification
+<a class="anchorjs-link " href="#launchtemplatespecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfiglaunchtemplatespecification">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification</a></span>
     </dt>
@@ -3778,7 +5333,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Overrides</span>
+        <span id="overrides~go">
+<span class="nx">
+Overrides
+<a class="anchorjs-link " href="#overrides~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfigoverride">[]Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Override</a></span>
     </dt>
@@ -3794,7 +5354,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>launch<wbr>Template<wbr>Specification</span>
+        <span id="launchtemplatespecification~nodejs">
+<span class="nx">
+launch<wbr>Template<wbr>Specification
+<a class="anchorjs-link " href="#launchtemplatespecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfiglaunchtemplatespecification">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification</a></span>
     </dt>
@@ -3803,7 +5368,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>overrides</span>
+        <span id="overrides~nodejs">
+<span class="nx">
+overrides
+<a class="anchorjs-link " href="#overrides~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfigoverride">Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Override[]</a></span>
     </dt>
@@ -3819,7 +5389,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>launch<wbr>Template<wbr>Specification</span>
+        <span id="launchtemplatespecification~python">
+<span class="nx">
+launch<wbr>Template<wbr>Specification
+<a class="anchorjs-link " href="#launchtemplatespecification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfiglaunchtemplatespecification">Dict[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Launch<wbr>Template<wbr>Specification]</a></span>
     </dt>
@@ -3828,7 +5403,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>overrides</span>
+        <span id="overrides~python">
+<span class="nx">
+overrides
+<a class="anchorjs-link " href="#overrides~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotfleetrequestlaunchtemplateconfigoverride">List[Spot<wbr>Fleet<wbr>Request<wbr>Launch<wbr>Template<wbr>Config<wbr>Override]</a></span>
     </dt>
@@ -3862,7 +5442,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3871,7 +5456,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3880,7 +5470,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3896,7 +5491,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3905,7 +5505,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3914,7 +5519,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3930,7 +5540,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3939,7 +5554,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3948,7 +5568,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3964,7 +5589,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3973,7 +5603,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3982,7 +5617,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4016,7 +5656,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4025,7 +5670,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4034,7 +5684,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Priority</span>
+        <span id="priority~csharp">
+<span class="nx">
+Priority
+<a class="anchorjs-link " href="#priority~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -4043,7 +5698,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~csharp">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4052,7 +5712,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4061,7 +5726,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~csharp">
+<span class="nx">
+Weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -4077,7 +5747,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4086,7 +5761,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4095,7 +5775,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Priority</span>
+        <span id="priority~go">
+<span class="nx">
+Priority
+<a class="anchorjs-link " href="#priority~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -4104,7 +5789,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~go">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4113,7 +5803,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4122,7 +5817,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~go">
+<span class="nx">
+Weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -4138,7 +5838,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4147,7 +5852,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4156,7 +5866,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>priority</span>
+        <span id="priority~nodejs">
+<span class="nx">
+priority
+<a class="anchorjs-link " href="#priority~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -4165,7 +5880,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Price</span>
+        <span id="spotprice~nodejs">
+<span class="nx">
+spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4174,7 +5894,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4183,7 +5908,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~nodejs">
+<span class="nx">
+weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -4199,7 +5929,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4208,7 +5943,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4217,7 +5957,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>priority</span>
+        <span id="priority~python">
+<span class="nx">
+priority
+<a class="anchorjs-link " href="#priority~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4226,7 +5971,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>price</span>
+        <span id="spot_price~python">
+<span class="nx">
+spot_<wbr>price
+<a class="anchorjs-link " href="#spot_price~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4235,7 +5985,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4244,7 +5999,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted<wbr>Capacity</span>
+        <span id="weightedcapacity~python">
+<span class="nx">
+weighted<wbr>Capacity
+<a class="anchorjs-link " href="#weightedcapacity~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

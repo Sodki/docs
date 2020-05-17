@@ -311,19 +311,19 @@ const s3Distribution = new aws.cloudfront.Distribution("s3_distribution", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#Distribution">Distribution</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#DistributionArgs">DistributionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#Distribution">Distribution</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#DistributionArgs">DistributionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Distribution</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>aliases=None<span class="p">, </span>comment=None<span class="p">, </span>custom_error_responses=None<span class="p">, </span>default_cache_behavior=None<span class="p">, </span>default_root_object=None<span class="p">, </span>enabled=None<span class="p">, </span>http_version=None<span class="p">, </span>is_ipv6_enabled=None<span class="p">, </span>logging_config=None<span class="p">, </span>ordered_cache_behaviors=None<span class="p">, </span>origin_groups=None<span class="p">, </span>origins=None<span class="p">, </span>price_class=None<span class="p">, </span>restrictions=None<span class="p">, </span>retain_on_delete=None<span class="p">, </span>tags=None<span class="p">, </span>viewer_certificate=None<span class="p">, </span>wait_for_deployment=None<span class="p">, </span>web_acl_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/cloudfront/#Distribution">Distribution</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>aliases=None<span class="p">, </span>comment=None<span class="p">, </span>custom_error_responses=None<span class="p">, </span>default_cache_behavior=None<span class="p">, </span>default_root_object=None<span class="p">, </span>enabled=None<span class="p">, </span>http_version=None<span class="p">, </span>is_ipv6_enabled=None<span class="p">, </span>logging_config=None<span class="p">, </span>ordered_cache_behaviors=None<span class="p">, </span>origin_groups=None<span class="p">, </span>origins=None<span class="p">, </span>price_class=None<span class="p">, </span>restrictions=None<span class="p">, </span>retain_on_delete=None<span class="p">, </span>tags=None<span class="p">, </span>viewer_certificate=None<span class="p">, </span>wait_for_deployment=None<span class="p">, </span>web_acl_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDistribution<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#DistributionArgs">DistributionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#Distribution">Distribution</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#Distribution">NewDistribution</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#DistributionArgs">DistributionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#Distribution">Distribution</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.Distribution.html">Distribution</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.DistributionArgs.html">DistributionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.Distribution.html">Distribution</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.DistributionArgs.html">DistributionArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -489,7 +489,12 @@ The Distribution resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>Default<wbr>Cache<wbr>Behavior</span>
+        <span id="defaultcachebehavior~csharp">
+<span class="nx">
+Default<wbr>Cache<wbr>Behavior
+<a class="anchorjs-link " href="#defaultcachebehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Args</a></span>
     </dt>
@@ -499,7 +504,12 @@ one).
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -509,7 +519,12 @@ user requests for content.
 
     <dt class="property-required"
             title="Required">
-        <span>Origins</span>
+        <span id="origins~csharp">
+<span class="nx">
+Origins
+<a class="anchorjs-link " href="#origins~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">List&lt;Distribution<wbr>Origin<wbr>Args&gt;</a></span>
     </dt>
@@ -519,7 +534,12 @@ distribution (multiples allowed).
 
     <dt class="property-required"
             title="Required">
-        <span>Restrictions</span>
+        <span id="restrictions~csharp">
+<span class="nx">
+Restrictions
+<a class="anchorjs-link " href="#restrictions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Distribution<wbr>Restrictions<wbr>Args</a></span>
     </dt>
@@ -529,7 +549,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Viewer<wbr>Certificate</span>
+        <span id="viewercertificate~csharp">
+<span class="nx">
+Viewer<wbr>Certificate
+<a class="anchorjs-link " href="#viewercertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Distribution<wbr>Viewer<wbr>Certificate<wbr>Args</a></span>
     </dt>
@@ -540,7 +565,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="aliases~csharp">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#aliases~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -550,7 +580,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Comment</span>
+        <span id="comment~csharp">
+<span class="nx">
+Comment
+<a class="anchorjs-link " href="#comment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -560,7 +595,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Error<wbr>Responses</span>
+        <span id="customerrorresponses~csharp">
+<span class="nx">
+Custom<wbr>Error<wbr>Responses
+<a class="anchorjs-link " href="#customerrorresponses~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">List&lt;Distribution<wbr>Custom<wbr>Error<wbr>Response<wbr>Args&gt;</a></span>
     </dt>
@@ -569,7 +609,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Object</span>
+        <span id="defaultrootobject~csharp">
+<span class="nx">
+Default<wbr>Root<wbr>Object
+<a class="anchorjs-link " href="#defaultrootobject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -579,7 +624,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Version</span>
+        <span id="httpversion~csharp">
+<span class="nx">
+Http<wbr>Version
+<a class="anchorjs-link " href="#httpversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -590,7 +640,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Ipv6Enabled</span>
+        <span id="isipv6enabled~csharp">
+<span class="nx">
+Is<wbr>Ipv6Enabled
+<a class="anchorjs-link " href="#isipv6enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -599,7 +654,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Config</span>
+        <span id="loggingconfig~csharp">
+<span class="nx">
+Logging<wbr>Config
+<a class="anchorjs-link " href="#loggingconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Distribution<wbr>Logging<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -610,7 +670,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ordered<wbr>Cache<wbr>Behaviors</span>
+        <span id="orderedcachebehaviors~csharp">
+<span class="nx">
+Ordered<wbr>Cache<wbr>Behaviors
+<a class="anchorjs-link " href="#orderedcachebehaviors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">List&lt;Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Args&gt;</a></span>
     </dt>
@@ -621,7 +686,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Groups</span>
+        <span id="origingroups~csharp">
+<span class="nx">
+Origin<wbr>Groups
+<a class="anchorjs-link " href="#origingroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">List&lt;Distribution<wbr>Origin<wbr>Group<wbr>Args&gt;</a></span>
     </dt>
@@ -631,7 +701,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Price<wbr>Class</span>
+        <span id="priceclass~csharp">
+<span class="nx">
+Price<wbr>Class
+<a class="anchorjs-link " href="#priceclass~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -641,7 +716,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retain<wbr>On<wbr>Delete</span>
+        <span id="retainondelete~csharp">
+<span class="nx">
+Retain<wbr>On<wbr>Delete
+<a class="anchorjs-link " href="#retainondelete~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -652,7 +732,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -661,7 +746,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Deployment</span>
+        <span id="waitfordeployment~csharp">
+<span class="nx">
+Wait<wbr>For<wbr>Deployment
+<a class="anchorjs-link " href="#waitfordeployment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -672,7 +762,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Web<wbr>Acl<wbr>Id</span>
+        <span id="webaclid~csharp">
+<span class="nx">
+Web<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#webaclid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -692,7 +787,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-required"
             title="Required">
-        <span>Default<wbr>Cache<wbr>Behavior</span>
+        <span id="defaultcachebehavior~go">
+<span class="nx">
+Default<wbr>Cache<wbr>Behavior
+<a class="anchorjs-link " href="#defaultcachebehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Distribution<wbr>Default<wbr>Cache<wbr>Behavior</a></span>
     </dt>
@@ -702,7 +802,12 @@ one).
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -712,7 +817,12 @@ user requests for content.
 
     <dt class="property-required"
             title="Required">
-        <span>Origins</span>
+        <span id="origins~go">
+<span class="nx">
+Origins
+<a class="anchorjs-link " href="#origins~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">[]Distribution<wbr>Origin</a></span>
     </dt>
@@ -722,7 +832,12 @@ distribution (multiples allowed).
 
     <dt class="property-required"
             title="Required">
-        <span>Restrictions</span>
+        <span id="restrictions~go">
+<span class="nx">
+Restrictions
+<a class="anchorjs-link " href="#restrictions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Distribution<wbr>Restrictions</a></span>
     </dt>
@@ -732,7 +847,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Viewer<wbr>Certificate</span>
+        <span id="viewercertificate~go">
+<span class="nx">
+Viewer<wbr>Certificate
+<a class="anchorjs-link " href="#viewercertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Distribution<wbr>Viewer<wbr>Certificate</a></span>
     </dt>
@@ -743,7 +863,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="aliases~go">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#aliases~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -753,7 +878,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Comment</span>
+        <span id="comment~go">
+<span class="nx">
+Comment
+<a class="anchorjs-link " href="#comment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -763,7 +893,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Error<wbr>Responses</span>
+        <span id="customerrorresponses~go">
+<span class="nx">
+Custom<wbr>Error<wbr>Responses
+<a class="anchorjs-link " href="#customerrorresponses~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">[]Distribution<wbr>Custom<wbr>Error<wbr>Response</a></span>
     </dt>
@@ -772,7 +907,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Object</span>
+        <span id="defaultrootobject~go">
+<span class="nx">
+Default<wbr>Root<wbr>Object
+<a class="anchorjs-link " href="#defaultrootobject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -782,7 +922,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Version</span>
+        <span id="httpversion~go">
+<span class="nx">
+Http<wbr>Version
+<a class="anchorjs-link " href="#httpversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -793,7 +938,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Ipv6Enabled</span>
+        <span id="isipv6enabled~go">
+<span class="nx">
+Is<wbr>Ipv6Enabled
+<a class="anchorjs-link " href="#isipv6enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -802,7 +952,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Config</span>
+        <span id="loggingconfig~go">
+<span class="nx">
+Logging<wbr>Config
+<a class="anchorjs-link " href="#loggingconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Distribution<wbr>Logging<wbr>Config</a></span>
     </dt>
@@ -813,7 +968,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ordered<wbr>Cache<wbr>Behaviors</span>
+        <span id="orderedcachebehaviors~go">
+<span class="nx">
+Ordered<wbr>Cache<wbr>Behaviors
+<a class="anchorjs-link " href="#orderedcachebehaviors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">[]Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior</a></span>
     </dt>
@@ -824,7 +984,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Groups</span>
+        <span id="origingroups~go">
+<span class="nx">
+Origin<wbr>Groups
+<a class="anchorjs-link " href="#origingroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">[]Distribution<wbr>Origin<wbr>Group</a></span>
     </dt>
@@ -834,7 +999,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Price<wbr>Class</span>
+        <span id="priceclass~go">
+<span class="nx">
+Price<wbr>Class
+<a class="anchorjs-link " href="#priceclass~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -844,7 +1014,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retain<wbr>On<wbr>Delete</span>
+        <span id="retainondelete~go">
+<span class="nx">
+Retain<wbr>On<wbr>Delete
+<a class="anchorjs-link " href="#retainondelete~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -855,7 +1030,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -864,7 +1044,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Deployment</span>
+        <span id="waitfordeployment~go">
+<span class="nx">
+Wait<wbr>For<wbr>Deployment
+<a class="anchorjs-link " href="#waitfordeployment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -875,7 +1060,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Web<wbr>Acl<wbr>Id</span>
+        <span id="webaclid~go">
+<span class="nx">
+Web<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#webaclid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -895,7 +1085,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-required"
             title="Required">
-        <span>default<wbr>Cache<wbr>Behavior</span>
+        <span id="defaultcachebehavior~nodejs">
+<span class="nx">
+default<wbr>Cache<wbr>Behavior
+<a class="anchorjs-link " href="#defaultcachebehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Distribution<wbr>Default<wbr>Cache<wbr>Behavior</a></span>
     </dt>
@@ -905,7 +1100,12 @@ one).
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -915,7 +1115,12 @@ user requests for content.
 
     <dt class="property-required"
             title="Required">
-        <span>origins</span>
+        <span id="origins~nodejs">
+<span class="nx">
+origins
+<a class="anchorjs-link " href="#origins~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">Distribution<wbr>Origin[]</a></span>
     </dt>
@@ -925,7 +1130,12 @@ distribution (multiples allowed).
 
     <dt class="property-required"
             title="Required">
-        <span>restrictions</span>
+        <span id="restrictions~nodejs">
+<span class="nx">
+restrictions
+<a class="anchorjs-link " href="#restrictions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Distribution<wbr>Restrictions</a></span>
     </dt>
@@ -935,7 +1145,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>viewer<wbr>Certificate</span>
+        <span id="viewercertificate~nodejs">
+<span class="nx">
+viewer<wbr>Certificate
+<a class="anchorjs-link " href="#viewercertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Distribution<wbr>Viewer<wbr>Certificate</a></span>
     </dt>
@@ -946,7 +1161,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="aliases~nodejs">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#aliases~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -956,7 +1176,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>comment</span>
+        <span id="comment~nodejs">
+<span class="nx">
+comment
+<a class="anchorjs-link " href="#comment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -966,7 +1191,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Error<wbr>Responses</span>
+        <span id="customerrorresponses~nodejs">
+<span class="nx">
+custom<wbr>Error<wbr>Responses
+<a class="anchorjs-link " href="#customerrorresponses~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">Distribution<wbr>Custom<wbr>Error<wbr>Response[]</a></span>
     </dt>
@@ -975,7 +1205,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Root<wbr>Object</span>
+        <span id="defaultrootobject~nodejs">
+<span class="nx">
+default<wbr>Root<wbr>Object
+<a class="anchorjs-link " href="#defaultrootobject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -985,7 +1220,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Version</span>
+        <span id="httpversion~nodejs">
+<span class="nx">
+http<wbr>Version
+<a class="anchorjs-link " href="#httpversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -996,7 +1236,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>is<wbr>Ipv6Enabled</span>
+        <span id="isipv6enabled~nodejs">
+<span class="nx">
+is<wbr>Ipv6Enabled
+<a class="anchorjs-link " href="#isipv6enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1005,7 +1250,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Config</span>
+        <span id="loggingconfig~nodejs">
+<span class="nx">
+logging<wbr>Config
+<a class="anchorjs-link " href="#loggingconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Distribution<wbr>Logging<wbr>Config</a></span>
     </dt>
@@ -1016,7 +1266,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ordered<wbr>Cache<wbr>Behaviors</span>
+        <span id="orderedcachebehaviors~nodejs">
+<span class="nx">
+ordered<wbr>Cache<wbr>Behaviors
+<a class="anchorjs-link " href="#orderedcachebehaviors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior[]</a></span>
     </dt>
@@ -1027,7 +1282,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Groups</span>
+        <span id="origingroups~nodejs">
+<span class="nx">
+origin<wbr>Groups
+<a class="anchorjs-link " href="#origingroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">Distribution<wbr>Origin<wbr>Group[]</a></span>
     </dt>
@@ -1037,7 +1297,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>price<wbr>Class</span>
+        <span id="priceclass~nodejs">
+<span class="nx">
+price<wbr>Class
+<a class="anchorjs-link " href="#priceclass~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1047,7 +1312,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>retain<wbr>On<wbr>Delete</span>
+        <span id="retainondelete~nodejs">
+<span class="nx">
+retain<wbr>On<wbr>Delete
+<a class="anchorjs-link " href="#retainondelete~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1058,7 +1328,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1067,7 +1342,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait<wbr>For<wbr>Deployment</span>
+        <span id="waitfordeployment~nodejs">
+<span class="nx">
+wait<wbr>For<wbr>Deployment
+<a class="anchorjs-link " href="#waitfordeployment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1078,7 +1358,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>web<wbr>Acl<wbr>Id</span>
+        <span id="webaclid~nodejs">
+<span class="nx">
+web<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#webaclid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1098,7 +1383,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-required"
             title="Required">
-        <span>default_<wbr>cache_<wbr>behavior</span>
+        <span id="default_cache_behavior~python">
+<span class="nx">
+default_<wbr>cache_<wbr>behavior
+<a class="anchorjs-link " href="#default_cache_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Dict[Distribution<wbr>Default<wbr>Cache<wbr>Behavior]</a></span>
     </dt>
@@ -1108,7 +1398,12 @@ one).
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1118,7 +1413,12 @@ user requests for content.
 
     <dt class="property-required"
             title="Required">
-        <span>origins</span>
+        <span id="origins~python">
+<span class="nx">
+origins
+<a class="anchorjs-link " href="#origins~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">List[Distribution<wbr>Origin]</a></span>
     </dt>
@@ -1128,7 +1428,12 @@ distribution (multiples allowed).
 
     <dt class="property-required"
             title="Required">
-        <span>restrictions</span>
+        <span id="restrictions~python">
+<span class="nx">
+restrictions
+<a class="anchorjs-link " href="#restrictions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Dict[Distribution<wbr>Restrictions]</a></span>
     </dt>
@@ -1138,7 +1443,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>viewer_<wbr>certificate</span>
+        <span id="viewer_certificate~python">
+<span class="nx">
+viewer_<wbr>certificate
+<a class="anchorjs-link " href="#viewer_certificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Dict[Distribution<wbr>Viewer<wbr>Certificate]</a></span>
     </dt>
@@ -1149,7 +1459,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="aliases~python">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#aliases~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1159,7 +1474,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>comment</span>
+        <span id="comment~python">
+<span class="nx">
+comment
+<a class="anchorjs-link " href="#comment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1169,7 +1489,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>error_<wbr>responses</span>
+        <span id="custom_error_responses~python">
+<span class="nx">
+custom_<wbr>error_<wbr>responses
+<a class="anchorjs-link " href="#custom_error_responses~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">List[Distribution<wbr>Custom<wbr>Error<wbr>Response]</a></span>
     </dt>
@@ -1178,7 +1503,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>root_<wbr>object</span>
+        <span id="default_root_object~python">
+<span class="nx">
+default_<wbr>root_<wbr>object
+<a class="anchorjs-link " href="#default_root_object~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1188,7 +1518,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http_<wbr>version</span>
+        <span id="http_version~python">
+<span class="nx">
+http_<wbr>version
+<a class="anchorjs-link " href="#http_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1199,7 +1534,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>is_<wbr>ipv6_<wbr>enabled</span>
+        <span id="is_ipv6_enabled~python">
+<span class="nx">
+is_<wbr>ipv6_<wbr>enabled
+<a class="anchorjs-link " href="#is_ipv6_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1208,7 +1548,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging_<wbr>config</span>
+        <span id="logging_config~python">
+<span class="nx">
+logging_<wbr>config
+<a class="anchorjs-link " href="#logging_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Dict[Distribution<wbr>Logging<wbr>Config]</a></span>
     </dt>
@@ -1219,7 +1564,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ordered_<wbr>cache_<wbr>behaviors</span>
+        <span id="ordered_cache_behaviors~python">
+<span class="nx">
+ordered_<wbr>cache_<wbr>behaviors
+<a class="anchorjs-link " href="#ordered_cache_behaviors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">List[Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior]</a></span>
     </dt>
@@ -1230,7 +1580,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin_<wbr>groups</span>
+        <span id="origin_groups~python">
+<span class="nx">
+origin_<wbr>groups
+<a class="anchorjs-link " href="#origin_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">List[Distribution<wbr>Origin<wbr>Group]</a></span>
     </dt>
@@ -1240,7 +1595,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>price_<wbr>class</span>
+        <span id="price_class~python">
+<span class="nx">
+price_<wbr>class
+<a class="anchorjs-link " href="#price_class~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1250,7 +1610,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>retain_<wbr>on_<wbr>delete</span>
+        <span id="retain_on_delete~python">
+<span class="nx">
+retain_<wbr>on_<wbr>delete
+<a class="anchorjs-link " href="#retain_on_delete~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1261,7 +1626,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1270,7 +1640,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait_<wbr>for_<wbr>deployment</span>
+        <span id="wait_for_deployment~python">
+<span class="nx">
+wait_<wbr>for_<wbr>deployment
+<a class="anchorjs-link " href="#wait_for_deployment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1281,7 +1656,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>web_<wbr>acl_<wbr>id</span>
+        <span id="web_acl_id~python">
+<span class="nx">
+web_<wbr>acl_<wbr>id
+<a class="anchorjs-link " href="#web_acl_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1312,7 +1692,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Active<wbr>Trusted<wbr>Signers</span>
+        <span id="activetrustedsigners~csharp">
+<span class="nx">
+Active<wbr>Trusted<wbr>Signers
+<a class="anchorjs-link " href="#activetrustedsigners~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1323,7 +1708,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1332,7 +1722,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>Caller<wbr>Reference</span>
+        <span id="callerreference~csharp">
+<span class="nx">
+Caller<wbr>Reference
+<a class="anchorjs-link " href="#callerreference~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1342,7 +1737,12 @@ updates to the distribution configuration.
 
     <dt class="property-"
             title="">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~csharp">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1352,7 +1752,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>Etag</span>
+        <span id="etag~csharp">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#etag~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1362,7 +1767,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>Hosted<wbr>Zone<wbr>Id</span>
+        <span id="hostedzoneid~csharp">
+<span class="nx">
+Hosted<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#hostedzoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1373,7 +1783,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1381,7 +1796,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>In<wbr>Progress<wbr>Validation<wbr>Batches</span>
+        <span id="inprogressvalidationbatches~csharp">
+<span class="nx">
+In<wbr>Progress<wbr>Validation<wbr>Batches
+<a class="anchorjs-link " href="#inprogressvalidationbatches~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1391,7 +1811,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>Last<wbr>Modified<wbr>Time</span>
+        <span id="lastmodifiedtime~csharp">
+<span class="nx">
+Last<wbr>Modified<wbr>Time
+<a class="anchorjs-link " href="#lastmodifiedtime~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1400,7 +1825,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1418,7 +1848,12 @@ CloudFront system.
 
     <dt class="property-"
             title="">
-        <span>Active<wbr>Trusted<wbr>Signers</span>
+        <span id="activetrustedsigners~go">
+<span class="nx">
+Active<wbr>Trusted<wbr>Signers
+<a class="anchorjs-link " href="#activetrustedsigners~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1429,7 +1864,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1438,7 +1878,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>Caller<wbr>Reference</span>
+        <span id="callerreference~go">
+<span class="nx">
+Caller<wbr>Reference
+<a class="anchorjs-link " href="#callerreference~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1448,7 +1893,12 @@ updates to the distribution configuration.
 
     <dt class="property-"
             title="">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1458,7 +1908,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>Etag</span>
+        <span id="etag~go">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#etag~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1468,7 +1923,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>Hosted<wbr>Zone<wbr>Id</span>
+        <span id="hostedzoneid~go">
+<span class="nx">
+Hosted<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#hostedzoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1479,7 +1939,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1487,7 +1952,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>In<wbr>Progress<wbr>Validation<wbr>Batches</span>
+        <span id="inprogressvalidationbatches~go">
+<span class="nx">
+In<wbr>Progress<wbr>Validation<wbr>Batches
+<a class="anchorjs-link " href="#inprogressvalidationbatches~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1497,7 +1967,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>Last<wbr>Modified<wbr>Time</span>
+        <span id="lastmodifiedtime~go">
+<span class="nx">
+Last<wbr>Modified<wbr>Time
+<a class="anchorjs-link " href="#lastmodifiedtime~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1506,7 +1981,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1524,7 +2004,12 @@ CloudFront system.
 
     <dt class="property-"
             title="">
-        <span>active<wbr>Trusted<wbr>Signers</span>
+        <span id="activetrustedsigners~nodejs">
+<span class="nx">
+active<wbr>Trusted<wbr>Signers
+<a class="anchorjs-link " href="#activetrustedsigners~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1535,7 +2020,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1544,7 +2034,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>caller<wbr>Reference</span>
+        <span id="callerreference~nodejs">
+<span class="nx">
+caller<wbr>Reference
+<a class="anchorjs-link " href="#callerreference~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1554,7 +2049,12 @@ updates to the distribution configuration.
 
     <dt class="property-"
             title="">
-        <span>domain<wbr>Name</span>
+        <span id="domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1564,7 +2064,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>etag</span>
+        <span id="etag~nodejs">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#etag~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1574,7 +2079,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>hosted<wbr>Zone<wbr>Id</span>
+        <span id="hostedzoneid~nodejs">
+<span class="nx">
+hosted<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#hostedzoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1585,7 +2095,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1593,7 +2108,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>in<wbr>Progress<wbr>Validation<wbr>Batches</span>
+        <span id="inprogressvalidationbatches~nodejs">
+<span class="nx">
+in<wbr>Progress<wbr>Validation<wbr>Batches
+<a class="anchorjs-link " href="#inprogressvalidationbatches~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1603,7 +2123,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>last<wbr>Modified<wbr>Time</span>
+        <span id="lastmodifiedtime~nodejs">
+<span class="nx">
+last<wbr>Modified<wbr>Time
+<a class="anchorjs-link " href="#lastmodifiedtime~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1612,7 +2137,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1630,7 +2160,12 @@ CloudFront system.
 
     <dt class="property-"
             title="">
-        <span>active_<wbr>trusted_<wbr>signers</span>
+        <span id="active_trusted_signers~python">
+<span class="nx">
+active_<wbr>trusted_<wbr>signers
+<a class="anchorjs-link " href="#active_trusted_signers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1641,7 +2176,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1650,7 +2190,12 @@ with signed URLs.
 
     <dt class="property-"
             title="">
-        <span>caller_<wbr>reference</span>
+        <span id="caller_reference~python">
+<span class="nx">
+caller_<wbr>reference
+<a class="anchorjs-link " href="#caller_reference~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1660,7 +2205,12 @@ updates to the distribution configuration.
 
     <dt class="property-"
             title="">
-        <span>domain_<wbr>name</span>
+        <span id="domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1670,7 +2220,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>etag</span>
+        <span id="etag~python">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#etag~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1680,7 +2235,12 @@ web site of your custom origin.
 
     <dt class="property-"
             title="">
-        <span>hosted_<wbr>zone_<wbr>id</span>
+        <span id="hosted_zone_id~python">
+<span class="nx">
+hosted_<wbr>zone_<wbr>id
+<a class="anchorjs-link " href="#hosted_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1691,7 +2251,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1699,7 +2264,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-"
             title="">
-        <span>in_<wbr>progress_<wbr>validation_<wbr>batches</span>
+        <span id="in_progress_validation_batches~python">
+<span class="nx">
+in_<wbr>progress_<wbr>validation_<wbr>batches
+<a class="anchorjs-link " href="#in_progress_validation_batches~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1709,7 +2279,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>last_<wbr>modified_<wbr>time</span>
+        <span id="last_modified_time~python">
+<span class="nx">
+last_<wbr>modified_<wbr>time
+<a class="anchorjs-link " href="#last_modified_time~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1718,7 +2293,12 @@ currently in progress.
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1742,7 +2322,7 @@ Get an existing Distribution resource's state with the given name, ID, and optio
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#DistributionState">DistributionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#Distribution">Distribution</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#DistributionState">DistributionState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudfront/#Distribution">Distribution</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1750,11 +2330,11 @@ Get an existing Distribution resource's state with the given name, ID, and optio
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDistribution<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#DistributionState">DistributionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#Distribution">Distribution</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDistribution<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#DistributionState">DistributionState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudfront?tab=doc#Distribution">Distribution</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.Distribution.html">Distribution</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.DistributionState.html">DistributionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.Distribution.html">Distribution</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudFront.DistributionState.html">DistributionState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1862,7 +2442,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Active<wbr>Trusted<wbr>Signers</span>
+        <span id="state_activetrustedsigners~csharp">
+<span class="nx">
+Active<wbr>Trusted<wbr>Signers
+<a class="anchorjs-link " href="#state_activetrustedsigners~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1873,7 +2458,12 @@ with signed URLs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="state_aliases~csharp">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#state_aliases~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1883,7 +2473,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1892,7 +2487,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Caller<wbr>Reference</span>
+        <span id="state_callerreference~csharp">
+<span class="nx">
+Caller<wbr>Reference
+<a class="anchorjs-link " href="#state_callerreference~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1902,7 +2502,12 @@ updates to the distribution configuration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Comment</span>
+        <span id="state_comment~csharp">
+<span class="nx">
+Comment
+<a class="anchorjs-link " href="#state_comment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1912,7 +2517,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Error<wbr>Responses</span>
+        <span id="state_customerrorresponses~csharp">
+<span class="nx">
+Custom<wbr>Error<wbr>Responses
+<a class="anchorjs-link " href="#state_customerrorresponses~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">List&lt;Distribution<wbr>Custom<wbr>Error<wbr>Response<wbr>Args&gt;</a></span>
     </dt>
@@ -1921,7 +2531,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Cache<wbr>Behavior</span>
+        <span id="state_defaultcachebehavior~csharp">
+<span class="nx">
+Default<wbr>Cache<wbr>Behavior
+<a class="anchorjs-link " href="#state_defaultcachebehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Args</a></span>
     </dt>
@@ -1931,7 +2546,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Object</span>
+        <span id="state_defaultrootobject~csharp">
+<span class="nx">
+Default<wbr>Root<wbr>Object
+<a class="anchorjs-link " href="#state_defaultrootobject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1941,7 +2561,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="state_domainname~csharp">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1951,7 +2576,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="state_enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#state_enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1961,7 +2591,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Etag</span>
+        <span id="state_etag~csharp">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#state_etag~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1971,7 +2606,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hosted<wbr>Zone<wbr>Id</span>
+        <span id="state_hostedzoneid~csharp">
+<span class="nx">
+Hosted<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_hostedzoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1982,7 +2622,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Version</span>
+        <span id="state_httpversion~csharp">
+<span class="nx">
+Http<wbr>Version
+<a class="anchorjs-link " href="#state_httpversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1993,7 +2638,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>In<wbr>Progress<wbr>Validation<wbr>Batches</span>
+        <span id="state_inprogressvalidationbatches~csharp">
+<span class="nx">
+In<wbr>Progress<wbr>Validation<wbr>Batches
+<a class="anchorjs-link " href="#state_inprogressvalidationbatches~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2003,7 +2653,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Ipv6Enabled</span>
+        <span id="state_isipv6enabled~csharp">
+<span class="nx">
+Is<wbr>Ipv6Enabled
+<a class="anchorjs-link " href="#state_isipv6enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2012,7 +2667,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Modified<wbr>Time</span>
+        <span id="state_lastmodifiedtime~csharp">
+<span class="nx">
+Last<wbr>Modified<wbr>Time
+<a class="anchorjs-link " href="#state_lastmodifiedtime~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2021,7 +2681,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Config</span>
+        <span id="state_loggingconfig~csharp">
+<span class="nx">
+Logging<wbr>Config
+<a class="anchorjs-link " href="#state_loggingconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Distribution<wbr>Logging<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -2032,7 +2697,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ordered<wbr>Cache<wbr>Behaviors</span>
+        <span id="state_orderedcachebehaviors~csharp">
+<span class="nx">
+Ordered<wbr>Cache<wbr>Behaviors
+<a class="anchorjs-link " href="#state_orderedcachebehaviors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">List&lt;Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Args&gt;</a></span>
     </dt>
@@ -2043,7 +2713,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Groups</span>
+        <span id="state_origingroups~csharp">
+<span class="nx">
+Origin<wbr>Groups
+<a class="anchorjs-link " href="#state_origingroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">List&lt;Distribution<wbr>Origin<wbr>Group<wbr>Args&gt;</a></span>
     </dt>
@@ -2053,7 +2728,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origins</span>
+        <span id="state_origins~csharp">
+<span class="nx">
+Origins
+<a class="anchorjs-link " href="#state_origins~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">List&lt;Distribution<wbr>Origin<wbr>Args&gt;</a></span>
     </dt>
@@ -2063,7 +2743,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Price<wbr>Class</span>
+        <span id="state_priceclass~csharp">
+<span class="nx">
+Price<wbr>Class
+<a class="anchorjs-link " href="#state_priceclass~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2073,7 +2758,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Restrictions</span>
+        <span id="state_restrictions~csharp">
+<span class="nx">
+Restrictions
+<a class="anchorjs-link " href="#state_restrictions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Distribution<wbr>Restrictions<wbr>Args</a></span>
     </dt>
@@ -2083,7 +2773,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retain<wbr>On<wbr>Delete</span>
+        <span id="state_retainondelete~csharp">
+<span class="nx">
+Retain<wbr>On<wbr>Delete
+<a class="anchorjs-link " href="#state_retainondelete~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2094,7 +2789,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="state_status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#state_status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2105,7 +2805,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -2114,7 +2819,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Viewer<wbr>Certificate</span>
+        <span id="state_viewercertificate~csharp">
+<span class="nx">
+Viewer<wbr>Certificate
+<a class="anchorjs-link " href="#state_viewercertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Distribution<wbr>Viewer<wbr>Certificate<wbr>Args</a></span>
     </dt>
@@ -2125,7 +2835,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Deployment</span>
+        <span id="state_waitfordeployment~csharp">
+<span class="nx">
+Wait<wbr>For<wbr>Deployment
+<a class="anchorjs-link " href="#state_waitfordeployment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2136,7 +2851,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Web<wbr>Acl<wbr>Id</span>
+        <span id="state_webaclid~csharp">
+<span class="nx">
+Web<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#state_webaclid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2156,7 +2876,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-optional"
             title="Optional">
-        <span>Active<wbr>Trusted<wbr>Signers</span>
+        <span id="state_activetrustedsigners~go">
+<span class="nx">
+Active<wbr>Trusted<wbr>Signers
+<a class="anchorjs-link " href="#state_activetrustedsigners~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2167,7 +2892,12 @@ with signed URLs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="state_aliases~go">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#state_aliases~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2177,7 +2907,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2186,7 +2921,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Caller<wbr>Reference</span>
+        <span id="state_callerreference~go">
+<span class="nx">
+Caller<wbr>Reference
+<a class="anchorjs-link " href="#state_callerreference~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2196,7 +2936,12 @@ updates to the distribution configuration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Comment</span>
+        <span id="state_comment~go">
+<span class="nx">
+Comment
+<a class="anchorjs-link " href="#state_comment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2206,7 +2951,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Error<wbr>Responses</span>
+        <span id="state_customerrorresponses~go">
+<span class="nx">
+Custom<wbr>Error<wbr>Responses
+<a class="anchorjs-link " href="#state_customerrorresponses~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">[]Distribution<wbr>Custom<wbr>Error<wbr>Response</a></span>
     </dt>
@@ -2215,7 +2965,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Cache<wbr>Behavior</span>
+        <span id="state_defaultcachebehavior~go">
+<span class="nx">
+Default<wbr>Cache<wbr>Behavior
+<a class="anchorjs-link " href="#state_defaultcachebehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Distribution<wbr>Default<wbr>Cache<wbr>Behavior</a></span>
     </dt>
@@ -2225,7 +2980,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Root<wbr>Object</span>
+        <span id="state_defaultrootobject~go">
+<span class="nx">
+Default<wbr>Root<wbr>Object
+<a class="anchorjs-link " href="#state_defaultrootobject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2235,7 +2995,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="state_domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2245,7 +3010,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="state_enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#state_enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2255,7 +3025,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Etag</span>
+        <span id="state_etag~go">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#state_etag~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2265,7 +3040,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hosted<wbr>Zone<wbr>Id</span>
+        <span id="state_hostedzoneid~go">
+<span class="nx">
+Hosted<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_hostedzoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2276,7 +3056,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Version</span>
+        <span id="state_httpversion~go">
+<span class="nx">
+Http<wbr>Version
+<a class="anchorjs-link " href="#state_httpversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2287,7 +3072,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>In<wbr>Progress<wbr>Validation<wbr>Batches</span>
+        <span id="state_inprogressvalidationbatches~go">
+<span class="nx">
+In<wbr>Progress<wbr>Validation<wbr>Batches
+<a class="anchorjs-link " href="#state_inprogressvalidationbatches~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2297,7 +3087,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Ipv6Enabled</span>
+        <span id="state_isipv6enabled~go">
+<span class="nx">
+Is<wbr>Ipv6Enabled
+<a class="anchorjs-link " href="#state_isipv6enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2306,7 +3101,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Modified<wbr>Time</span>
+        <span id="state_lastmodifiedtime~go">
+<span class="nx">
+Last<wbr>Modified<wbr>Time
+<a class="anchorjs-link " href="#state_lastmodifiedtime~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2315,7 +3115,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Config</span>
+        <span id="state_loggingconfig~go">
+<span class="nx">
+Logging<wbr>Config
+<a class="anchorjs-link " href="#state_loggingconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Distribution<wbr>Logging<wbr>Config</a></span>
     </dt>
@@ -2326,7 +3131,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ordered<wbr>Cache<wbr>Behaviors</span>
+        <span id="state_orderedcachebehaviors~go">
+<span class="nx">
+Ordered<wbr>Cache<wbr>Behaviors
+<a class="anchorjs-link " href="#state_orderedcachebehaviors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">[]Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior</a></span>
     </dt>
@@ -2337,7 +3147,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Groups</span>
+        <span id="state_origingroups~go">
+<span class="nx">
+Origin<wbr>Groups
+<a class="anchorjs-link " href="#state_origingroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">[]Distribution<wbr>Origin<wbr>Group</a></span>
     </dt>
@@ -2347,7 +3162,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origins</span>
+        <span id="state_origins~go">
+<span class="nx">
+Origins
+<a class="anchorjs-link " href="#state_origins~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">[]Distribution<wbr>Origin</a></span>
     </dt>
@@ -2357,7 +3177,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Price<wbr>Class</span>
+        <span id="state_priceclass~go">
+<span class="nx">
+Price<wbr>Class
+<a class="anchorjs-link " href="#state_priceclass~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2367,7 +3192,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Restrictions</span>
+        <span id="state_restrictions~go">
+<span class="nx">
+Restrictions
+<a class="anchorjs-link " href="#state_restrictions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Distribution<wbr>Restrictions</a></span>
     </dt>
@@ -2377,7 +3207,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retain<wbr>On<wbr>Delete</span>
+        <span id="state_retainondelete~go">
+<span class="nx">
+Retain<wbr>On<wbr>Delete
+<a class="anchorjs-link " href="#state_retainondelete~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2388,7 +3223,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="state_status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#state_status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2399,7 +3239,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2408,7 +3253,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Viewer<wbr>Certificate</span>
+        <span id="state_viewercertificate~go">
+<span class="nx">
+Viewer<wbr>Certificate
+<a class="anchorjs-link " href="#state_viewercertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Distribution<wbr>Viewer<wbr>Certificate</a></span>
     </dt>
@@ -2419,7 +3269,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Deployment</span>
+        <span id="state_waitfordeployment~go">
+<span class="nx">
+Wait<wbr>For<wbr>Deployment
+<a class="anchorjs-link " href="#state_waitfordeployment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2430,7 +3285,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Web<wbr>Acl<wbr>Id</span>
+        <span id="state_webaclid~go">
+<span class="nx">
+Web<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#state_webaclid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2450,7 +3310,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-optional"
             title="Optional">
-        <span>active<wbr>Trusted<wbr>Signers</span>
+        <span id="state_activetrustedsigners~nodejs">
+<span class="nx">
+active<wbr>Trusted<wbr>Signers
+<a class="anchorjs-link " href="#state_activetrustedsigners~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2461,7 +3326,12 @@ with signed URLs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="state_aliases~nodejs">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#state_aliases~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2471,7 +3341,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2480,7 +3355,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>caller<wbr>Reference</span>
+        <span id="state_callerreference~nodejs">
+<span class="nx">
+caller<wbr>Reference
+<a class="anchorjs-link " href="#state_callerreference~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2490,7 +3370,12 @@ updates to the distribution configuration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>comment</span>
+        <span id="state_comment~nodejs">
+<span class="nx">
+comment
+<a class="anchorjs-link " href="#state_comment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2500,7 +3385,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Error<wbr>Responses</span>
+        <span id="state_customerrorresponses~nodejs">
+<span class="nx">
+custom<wbr>Error<wbr>Responses
+<a class="anchorjs-link " href="#state_customerrorresponses~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">Distribution<wbr>Custom<wbr>Error<wbr>Response[]</a></span>
     </dt>
@@ -2509,7 +3399,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Cache<wbr>Behavior</span>
+        <span id="state_defaultcachebehavior~nodejs">
+<span class="nx">
+default<wbr>Cache<wbr>Behavior
+<a class="anchorjs-link " href="#state_defaultcachebehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Distribution<wbr>Default<wbr>Cache<wbr>Behavior</a></span>
     </dt>
@@ -2519,7 +3414,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Root<wbr>Object</span>
+        <span id="state_defaultrootobject~nodejs">
+<span class="nx">
+default<wbr>Root<wbr>Object
+<a class="anchorjs-link " href="#state_defaultrootobject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2529,7 +3429,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Name</span>
+        <span id="state_domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2539,7 +3444,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="state_enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#state_enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2549,7 +3459,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>etag</span>
+        <span id="state_etag~nodejs">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#state_etag~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2559,7 +3474,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hosted<wbr>Zone<wbr>Id</span>
+        <span id="state_hostedzoneid~nodejs">
+<span class="nx">
+hosted<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_hostedzoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2570,7 +3490,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Version</span>
+        <span id="state_httpversion~nodejs">
+<span class="nx">
+http<wbr>Version
+<a class="anchorjs-link " href="#state_httpversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2581,7 +3506,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>in<wbr>Progress<wbr>Validation<wbr>Batches</span>
+        <span id="state_inprogressvalidationbatches~nodejs">
+<span class="nx">
+in<wbr>Progress<wbr>Validation<wbr>Batches
+<a class="anchorjs-link " href="#state_inprogressvalidationbatches~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2591,7 +3521,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is<wbr>Ipv6Enabled</span>
+        <span id="state_isipv6enabled~nodejs">
+<span class="nx">
+is<wbr>Ipv6Enabled
+<a class="anchorjs-link " href="#state_isipv6enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2600,7 +3535,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Modified<wbr>Time</span>
+        <span id="state_lastmodifiedtime~nodejs">
+<span class="nx">
+last<wbr>Modified<wbr>Time
+<a class="anchorjs-link " href="#state_lastmodifiedtime~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2609,7 +3549,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Config</span>
+        <span id="state_loggingconfig~nodejs">
+<span class="nx">
+logging<wbr>Config
+<a class="anchorjs-link " href="#state_loggingconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Distribution<wbr>Logging<wbr>Config</a></span>
     </dt>
@@ -2620,7 +3565,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ordered<wbr>Cache<wbr>Behaviors</span>
+        <span id="state_orderedcachebehaviors~nodejs">
+<span class="nx">
+ordered<wbr>Cache<wbr>Behaviors
+<a class="anchorjs-link " href="#state_orderedcachebehaviors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior[]</a></span>
     </dt>
@@ -2631,7 +3581,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Groups</span>
+        <span id="state_origingroups~nodejs">
+<span class="nx">
+origin<wbr>Groups
+<a class="anchorjs-link " href="#state_origingroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">Distribution<wbr>Origin<wbr>Group[]</a></span>
     </dt>
@@ -2641,7 +3596,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>origins</span>
+        <span id="state_origins~nodejs">
+<span class="nx">
+origins
+<a class="anchorjs-link " href="#state_origins~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">Distribution<wbr>Origin[]</a></span>
     </dt>
@@ -2651,7 +3611,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>price<wbr>Class</span>
+        <span id="state_priceclass~nodejs">
+<span class="nx">
+price<wbr>Class
+<a class="anchorjs-link " href="#state_priceclass~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2661,7 +3626,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>restrictions</span>
+        <span id="state_restrictions~nodejs">
+<span class="nx">
+restrictions
+<a class="anchorjs-link " href="#state_restrictions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Distribution<wbr>Restrictions</a></span>
     </dt>
@@ -2671,7 +3641,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>retain<wbr>On<wbr>Delete</span>
+        <span id="state_retainondelete~nodejs">
+<span class="nx">
+retain<wbr>On<wbr>Delete
+<a class="anchorjs-link " href="#state_retainondelete~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2682,7 +3657,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="state_status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#state_status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2693,7 +3673,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2702,7 +3687,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>viewer<wbr>Certificate</span>
+        <span id="state_viewercertificate~nodejs">
+<span class="nx">
+viewer<wbr>Certificate
+<a class="anchorjs-link " href="#state_viewercertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Distribution<wbr>Viewer<wbr>Certificate</a></span>
     </dt>
@@ -2713,7 +3703,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait<wbr>For<wbr>Deployment</span>
+        <span id="state_waitfordeployment~nodejs">
+<span class="nx">
+wait<wbr>For<wbr>Deployment
+<a class="anchorjs-link " href="#state_waitfordeployment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2724,7 +3719,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>web<wbr>Acl<wbr>Id</span>
+        <span id="state_webaclid~nodejs">
+<span class="nx">
+web<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#state_webaclid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2744,7 +3744,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-optional"
             title="Optional">
-        <span>active_<wbr>trusted_<wbr>signers</span>
+        <span id="state_active_trusted_signers~python">
+<span class="nx">
+active_<wbr>trusted_<wbr>signers
+<a class="anchorjs-link " href="#state_active_trusted_signers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2755,7 +3760,12 @@ with signed URLs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="state_aliases~python">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#state_aliases~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2765,7 +3775,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2774,7 +3789,12 @@ this distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>caller_<wbr>reference</span>
+        <span id="state_caller_reference~python">
+<span class="nx">
+caller_<wbr>reference
+<a class="anchorjs-link " href="#state_caller_reference~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2784,7 +3804,12 @@ updates to the distribution configuration.
 
     <dt class="property-optional"
             title="Optional">
-        <span>comment</span>
+        <span id="state_comment~python">
+<span class="nx">
+comment
+<a class="anchorjs-link " href="#state_comment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2794,7 +3819,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>error_<wbr>responses</span>
+        <span id="state_custom_error_responses~python">
+<span class="nx">
+custom_<wbr>error_<wbr>responses
+<a class="anchorjs-link " href="#state_custom_error_responses~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributioncustomerrorresponse">List[Distribution<wbr>Custom<wbr>Error<wbr>Response]</a></span>
     </dt>
@@ -2803,7 +3833,12 @@ distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>cache_<wbr>behavior</span>
+        <span id="state_default_cache_behavior~python">
+<span class="nx">
+default_<wbr>cache_<wbr>behavior
+<a class="anchorjs-link " href="#state_default_cache_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehavior">Dict[Distribution<wbr>Default<wbr>Cache<wbr>Behavior]</a></span>
     </dt>
@@ -2813,7 +3848,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>root_<wbr>object</span>
+        <span id="state_default_root_object~python">
+<span class="nx">
+default_<wbr>root_<wbr>object
+<a class="anchorjs-link " href="#state_default_root_object~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2823,7 +3863,12 @@ return (for example, index.html) when an end user requests the root URL.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>name</span>
+        <span id="state_domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#state_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2833,7 +3878,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="state_enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#state_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2843,7 +3893,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>etag</span>
+        <span id="state_etag~python">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#state_etag~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2853,7 +3908,12 @@ user requests for content.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hosted_<wbr>zone_<wbr>id</span>
+        <span id="state_hosted_zone_id~python">
+<span class="nx">
+hosted_<wbr>zone_<wbr>id
+<a class="anchorjs-link " href="#state_hosted_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2864,7 +3924,12 @@ alias for the zone ID `Z2FDTNDATAQYW2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http_<wbr>version</span>
+        <span id="state_http_version~python">
+<span class="nx">
+http_<wbr>version
+<a class="anchorjs-link " href="#state_http_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2875,7 +3940,12 @@ distribution. Allowed values are `http1.1` and `http2`. The default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>in_<wbr>progress_<wbr>validation_<wbr>batches</span>
+        <span id="state_in_progress_validation_batches~python">
+<span class="nx">
+in_<wbr>progress_<wbr>validation_<wbr>batches
+<a class="anchorjs-link " href="#state_in_progress_validation_batches~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2885,7 +3955,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is_<wbr>ipv6_<wbr>enabled</span>
+        <span id="state_is_ipv6_enabled~python">
+<span class="nx">
+is_<wbr>ipv6_<wbr>enabled
+<a class="anchorjs-link " href="#state_is_ipv6_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2894,7 +3969,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>modified_<wbr>time</span>
+        <span id="state_last_modified_time~python">
+<span class="nx">
+last_<wbr>modified_<wbr>time
+<a class="anchorjs-link " href="#state_last_modified_time~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2903,7 +3983,12 @@ currently in progress.
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging_<wbr>config</span>
+        <span id="state_logging_config~python">
+<span class="nx">
+logging_<wbr>config
+<a class="anchorjs-link " href="#state_logging_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionloggingconfig">Dict[Distribution<wbr>Logging<wbr>Config]</a></span>
     </dt>
@@ -2914,7 +3999,12 @@ to your distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ordered_<wbr>cache_<wbr>behaviors</span>
+        <span id="state_ordered_cache_behaviors~python">
+<span class="nx">
+ordered_<wbr>cache_<wbr>behaviors
+<a class="anchorjs-link " href="#state_ordered_cache_behaviors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehavior">List[Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior]</a></span>
     </dt>
@@ -2925,7 +4015,12 @@ in order of precedence. The topmost cache behavior will have precedence 0.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin_<wbr>groups</span>
+        <span id="state_origin_groups~python">
+<span class="nx">
+origin_<wbr>groups
+<a class="anchorjs-link " href="#state_origin_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroup">List[Distribution<wbr>Origin<wbr>Group]</a></span>
     </dt>
@@ -2935,7 +4030,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>origins</span>
+        <span id="state_origins~python">
+<span class="nx">
+origins
+<a class="anchorjs-link " href="#state_origins~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigin">List[Distribution<wbr>Origin]</a></span>
     </dt>
@@ -2945,7 +4045,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>price_<wbr>class</span>
+        <span id="state_price_class~python">
+<span class="nx">
+price_<wbr>class
+<a class="anchorjs-link " href="#state_price_class~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2955,7 +4060,12 @@ distribution (multiples allowed).
 
     <dt class="property-optional"
             title="Optional">
-        <span>restrictions</span>
+        <span id="state_restrictions~python">
+<span class="nx">
+restrictions
+<a class="anchorjs-link " href="#state_restrictions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictions">Dict[Distribution<wbr>Restrictions]</a></span>
     </dt>
@@ -2965,7 +4075,12 @@ configuration for this distribution (maximum one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>retain_<wbr>on_<wbr>delete</span>
+        <span id="state_retain_on_delete~python">
+<span class="nx">
+retain_<wbr>on_<wbr>delete
+<a class="anchorjs-link " href="#state_retain_on_delete~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2976,7 +4091,12 @@ the distribution needs to be deleted manually afterwards. Default: `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="state_status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#state_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2987,7 +4107,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2996,7 +4121,12 @@ CloudFront system.
 
     <dt class="property-optional"
             title="Optional">
-        <span>viewer_<wbr>certificate</span>
+        <span id="state_viewer_certificate~python">
+<span class="nx">
+viewer_<wbr>certificate
+<a class="anchorjs-link " href="#state_viewer_certificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionviewercertificate">Dict[Distribution<wbr>Viewer<wbr>Certificate]</a></span>
     </dt>
@@ -3007,7 +4137,12 @@ one).
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait_<wbr>for_<wbr>deployment</span>
+        <span id="state_wait_for_deployment~python">
+<span class="nx">
+wait_<wbr>for_<wbr>deployment
+<a class="anchorjs-link " href="#state_wait_for_deployment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3018,7 +4153,12 @@ this to`false` will skip the process. Default: `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>web_<wbr>acl_<wbr>id</span>
+        <span id="state_web_acl_id~python">
+<span class="nx">
+web_<wbr>acl_<wbr>id
+<a class="anchorjs-link " href="#state_web_acl_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3064,7 +4204,12 @@ region and the credentials configuring this argument must have
 
     <dt class="property-required"
             title="Required">
-        <span>Error<wbr>Code</span>
+        <span id="errorcode~csharp">
+<span class="nx">
+Error<wbr>Code
+<a class="anchorjs-link " href="#errorcode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3074,7 +4219,12 @@ customize.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Error<wbr>Caching<wbr>Min<wbr>Ttl</span>
+        <span id="errorcachingminttl~csharp">
+<span class="nx">
+Error<wbr>Caching<wbr>Min<wbr>Ttl
+<a class="anchorjs-link " href="#errorcachingminttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3085,7 +4235,12 @@ origin to see whether the object has been updated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Response<wbr>Code</span>
+        <span id="responsecode~csharp">
+<span class="nx">
+Response<wbr>Code
+<a class="anchorjs-link " href="#responsecode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3095,7 +4250,12 @@ to return with the custom error page to the viewer.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Response<wbr>Page<wbr>Path</span>
+        <span id="responsepagepath~csharp">
+<span class="nx">
+Response<wbr>Page<wbr>Path
+<a class="anchorjs-link " href="#responsepagepath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3112,7 +4272,12 @@ example, `/custom_404.html`).
 
     <dt class="property-required"
             title="Required">
-        <span>Error<wbr>Code</span>
+        <span id="errorcode~go">
+<span class="nx">
+Error<wbr>Code
+<a class="anchorjs-link " href="#errorcode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3122,7 +4287,12 @@ customize.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Error<wbr>Caching<wbr>Min<wbr>Ttl</span>
+        <span id="errorcachingminttl~go">
+<span class="nx">
+Error<wbr>Caching<wbr>Min<wbr>Ttl
+<a class="anchorjs-link " href="#errorcachingminttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3133,7 +4303,12 @@ origin to see whether the object has been updated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Response<wbr>Code</span>
+        <span id="responsecode~go">
+<span class="nx">
+Response<wbr>Code
+<a class="anchorjs-link " href="#responsecode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3143,7 +4318,12 @@ to return with the custom error page to the viewer.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Response<wbr>Page<wbr>Path</span>
+        <span id="responsepagepath~go">
+<span class="nx">
+Response<wbr>Page<wbr>Path
+<a class="anchorjs-link " href="#responsepagepath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3160,7 +4340,12 @@ example, `/custom_404.html`).
 
     <dt class="property-required"
             title="Required">
-        <span>error<wbr>Code</span>
+        <span id="errorcode~nodejs">
+<span class="nx">
+error<wbr>Code
+<a class="anchorjs-link " href="#errorcode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3170,7 +4355,12 @@ customize.
 
     <dt class="property-optional"
             title="Optional">
-        <span>error<wbr>Caching<wbr>Min<wbr>Ttl</span>
+        <span id="errorcachingminttl~nodejs">
+<span class="nx">
+error<wbr>Caching<wbr>Min<wbr>Ttl
+<a class="anchorjs-link " href="#errorcachingminttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3181,7 +4371,12 @@ origin to see whether the object has been updated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>response<wbr>Code</span>
+        <span id="responsecode~nodejs">
+<span class="nx">
+response<wbr>Code
+<a class="anchorjs-link " href="#responsecode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3191,7 +4386,12 @@ to return with the custom error page to the viewer.
 
     <dt class="property-optional"
             title="Optional">
-        <span>response<wbr>Page<wbr>Path</span>
+        <span id="responsepagepath~nodejs">
+<span class="nx">
+response<wbr>Page<wbr>Path
+<a class="anchorjs-link " href="#responsepagepath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3208,7 +4408,12 @@ example, `/custom_404.html`).
 
     <dt class="property-required"
             title="Required">
-        <span>error<wbr>Code</span>
+        <span id="errorcode~python">
+<span class="nx">
+error<wbr>Code
+<a class="anchorjs-link " href="#errorcode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3218,7 +4423,12 @@ customize.
 
     <dt class="property-optional"
             title="Optional">
-        <span>error<wbr>Caching<wbr>Min<wbr>Ttl</span>
+        <span id="errorcachingminttl~python">
+<span class="nx">
+error<wbr>Caching<wbr>Min<wbr>Ttl
+<a class="anchorjs-link " href="#errorcachingminttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3229,7 +4439,12 @@ origin to see whether the object has been updated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>response<wbr>Code</span>
+        <span id="responsecode~python">
+<span class="nx">
+response<wbr>Code
+<a class="anchorjs-link " href="#responsecode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3239,7 +4454,12 @@ to return with the custom error page to the viewer.
 
     <dt class="property-optional"
             title="Optional">
-        <span>response<wbr>Page<wbr>Path</span>
+        <span id="responsepagepath~python">
+<span class="nx">
+response<wbr>Page<wbr>Path
+<a class="anchorjs-link " href="#responsepagepath~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3274,7 +4494,12 @@ example, `/custom_404.html`).
 
     <dt class="property-required"
             title="Required">
-        <span>Allowed<wbr>Methods</span>
+        <span id="allowedmethods~csharp">
+<span class="nx">
+Allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3284,7 +4509,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Cached<wbr>Methods</span>
+        <span id="cachedmethods~csharp">
+<span class="nx">
+Cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3294,7 +4524,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>Forwarded<wbr>Values</span>
+        <span id="forwardedvalues~csharp">
+<span class="nx">
+Forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvalues">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Args</a></span>
     </dt>
@@ -3304,7 +4539,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~csharp">
+<span class="nx">
+Target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3315,7 +4555,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>Viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~csharp">
+<span class="nx">
+Viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3327,7 +4572,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compress</span>
+        <span id="compress~csharp">
+<span class="nx">
+Compress
+<a class="anchorjs-link " href="#compress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3338,7 +4588,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ttl</span>
+        <span id="defaultttl~csharp">
+<span class="nx">
+Default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3350,7 +4605,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~csharp">
+<span class="nx">
+Field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3359,7 +4619,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~csharp">
+<span class="nx">
+Lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorlambdafunctionassociation">List&lt;Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association<wbr>Args&gt;</a></span>
     </dt>
@@ -3369,7 +4634,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Ttl</span>
+        <span id="maxttl~csharp">
+<span class="nx">
+Max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3382,7 +4652,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Ttl</span>
+        <span id="minttl~csharp">
+<span class="nx">
+Min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3393,7 +4668,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~csharp">
+<span class="nx">
+Smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3404,7 +4684,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Trusted<wbr>Signers</span>
+        <span id="trustedsigners~csharp">
+<span class="nx">
+Trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3421,7 +4706,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>Allowed<wbr>Methods</span>
+        <span id="allowedmethods~go">
+<span class="nx">
+Allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3431,7 +4721,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Cached<wbr>Methods</span>
+        <span id="cachedmethods~go">
+<span class="nx">
+Cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3441,7 +4736,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>Forwarded<wbr>Values</span>
+        <span id="forwardedvalues~go">
+<span class="nx">
+Forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvalues">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values</a></span>
     </dt>
@@ -3451,7 +4751,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~go">
+<span class="nx">
+Target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3462,7 +4767,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>Viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~go">
+<span class="nx">
+Viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3474,7 +4784,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compress</span>
+        <span id="compress~go">
+<span class="nx">
+Compress
+<a class="anchorjs-link " href="#compress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3485,7 +4800,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ttl</span>
+        <span id="defaultttl~go">
+<span class="nx">
+Default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3497,7 +4817,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~go">
+<span class="nx">
+Field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3506,7 +4831,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~go">
+<span class="nx">
+Lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorlambdafunctionassociation">[]Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association</a></span>
     </dt>
@@ -3516,7 +4846,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Ttl</span>
+        <span id="maxttl~go">
+<span class="nx">
+Max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3529,7 +4864,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Ttl</span>
+        <span id="minttl~go">
+<span class="nx">
+Min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3540,7 +4880,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~go">
+<span class="nx">
+Smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3551,7 +4896,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Trusted<wbr>Signers</span>
+        <span id="trustedsigners~go">
+<span class="nx">
+Trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3568,7 +4918,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>allowed<wbr>Methods</span>
+        <span id="allowedmethods~nodejs">
+<span class="nx">
+allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3578,7 +4933,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>cached<wbr>Methods</span>
+        <span id="cachedmethods~nodejs">
+<span class="nx">
+cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3588,7 +4948,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>forwarded<wbr>Values</span>
+        <span id="forwardedvalues~nodejs">
+<span class="nx">
+forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvalues">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values</a></span>
     </dt>
@@ -3598,7 +4963,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~nodejs">
+<span class="nx">
+target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3609,7 +4979,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~nodejs">
+<span class="nx">
+viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3621,7 +4996,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compress</span>
+        <span id="compress~nodejs">
+<span class="nx">
+compress
+<a class="anchorjs-link " href="#compress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3632,7 +5012,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Ttl</span>
+        <span id="defaultttl~nodejs">
+<span class="nx">
+default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3644,7 +5029,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~nodejs">
+<span class="nx">
+field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3653,7 +5043,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~nodejs">
+<span class="nx">
+lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorlambdafunctionassociation">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association[]</a></span>
     </dt>
@@ -3663,7 +5058,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Ttl</span>
+        <span id="maxttl~nodejs">
+<span class="nx">
+max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3676,7 +5076,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Ttl</span>
+        <span id="minttl~nodejs">
+<span class="nx">
+min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3687,7 +5092,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~nodejs">
+<span class="nx">
+smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3698,7 +5108,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>trusted<wbr>Signers</span>
+        <span id="trustedsigners~nodejs">
+<span class="nx">
+trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3715,7 +5130,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>allowed<wbr>Methods</span>
+        <span id="allowedmethods~python">
+<span class="nx">
+allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3725,7 +5145,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>cached<wbr>Methods</span>
+        <span id="cachedmethods~python">
+<span class="nx">
+cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3735,7 +5160,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>forwarded<wbr>Values</span>
+        <span id="forwardedvalues~python">
+<span class="nx">
+forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvalues">Dict[Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values]</a></span>
     </dt>
@@ -3745,7 +5175,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~python">
+<span class="nx">
+target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3756,7 +5191,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~python">
+<span class="nx">
+viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3768,7 +5208,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compress</span>
+        <span id="compress~python">
+<span class="nx">
+compress
+<a class="anchorjs-link " href="#compress~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3779,7 +5224,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Ttl</span>
+        <span id="defaultttl~python">
+<span class="nx">
+default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3791,7 +5241,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~python">
+<span class="nx">
+field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3800,7 +5255,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~python">
+<span class="nx">
+lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorlambdafunctionassociation">List[Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association]</a></span>
     </dt>
@@ -3810,7 +5270,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Ttl</span>
+        <span id="maxttl~python">
+<span class="nx">
+max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3823,7 +5288,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Ttl</span>
+        <span id="minttl~python">
+<span class="nx">
+min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3834,7 +5304,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~python">
+<span class="nx">
+smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3845,7 +5320,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>trusted<wbr>Signers</span>
+        <span id="trustedsigners~python">
+<span class="nx">
+trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3880,7 +5360,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>Cookies</span>
+        <span id="cookies~csharp">
+<span class="nx">
+Cookies
+<a class="anchorjs-link " href="#cookies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvaluescookies">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies<wbr>Args</a></span>
     </dt>
@@ -3890,7 +5375,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Query<wbr>String</span>
+        <span id="querystring~csharp">
+<span class="nx">
+Query<wbr>String
+<a class="anchorjs-link " href="#querystring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3900,7 +5390,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Headers</span>
+        <span id="headers~csharp">
+<span class="nx">
+Headers
+<a class="anchorjs-link " href="#headers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3911,7 +5406,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~csharp">
+<span class="nx">
+Query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3930,7 +5430,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>Cookies</span>
+        <span id="cookies~go">
+<span class="nx">
+Cookies
+<a class="anchorjs-link " href="#cookies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvaluescookies">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies</a></span>
     </dt>
@@ -3940,7 +5445,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Query<wbr>String</span>
+        <span id="querystring~go">
+<span class="nx">
+Query<wbr>String
+<a class="anchorjs-link " href="#querystring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3950,7 +5460,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Headers</span>
+        <span id="headers~go">
+<span class="nx">
+Headers
+<a class="anchorjs-link " href="#headers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3961,7 +5476,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~go">
+<span class="nx">
+Query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3980,7 +5500,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>cookies</span>
+        <span id="cookies~nodejs">
+<span class="nx">
+cookies
+<a class="anchorjs-link " href="#cookies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvaluescookies">Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies</a></span>
     </dt>
@@ -3990,7 +5515,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>query<wbr>String</span>
+        <span id="querystring~nodejs">
+<span class="nx">
+query<wbr>String
+<a class="anchorjs-link " href="#querystring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4000,7 +5530,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>headers</span>
+        <span id="headers~nodejs">
+<span class="nx">
+headers
+<a class="anchorjs-link " href="#headers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4011,7 +5546,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~nodejs">
+<span class="nx">
+query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4030,7 +5570,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>cookies</span>
+        <span id="cookies~python">
+<span class="nx">
+cookies
+<a class="anchorjs-link " href="#cookies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributiondefaultcachebehaviorforwardedvaluescookies">Dict[Distribution<wbr>Default<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies]</a></span>
     </dt>
@@ -4040,7 +5585,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>query<wbr>String</span>
+        <span id="querystring~python">
+<span class="nx">
+query<wbr>String
+<a class="anchorjs-link " href="#querystring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4050,7 +5600,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>headers</span>
+        <span id="headers~python">
+<span class="nx">
+headers
+<a class="anchorjs-link " href="#headers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4061,7 +5616,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~python">
+<span class="nx">
+query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4098,7 +5658,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>Forward</span>
+        <span id="forward~csharp">
+<span class="nx">
+Forward
+<a class="anchorjs-link " href="#forward~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4110,7 +5675,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Whitelisted<wbr>Names</span>
+        <span id="whitelistednames~csharp">
+<span class="nx">
+Whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4128,7 +5698,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Forward</span>
+        <span id="forward~go">
+<span class="nx">
+Forward
+<a class="anchorjs-link " href="#forward~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4140,7 +5715,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Whitelisted<wbr>Names</span>
+        <span id="whitelistednames~go">
+<span class="nx">
+Whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -4158,7 +5738,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>forward</span>
+        <span id="forward~nodejs">
+<span class="nx">
+forward
+<a class="anchorjs-link " href="#forward~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4170,7 +5755,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>whitelisted<wbr>Names</span>
+        <span id="whitelistednames~nodejs">
+<span class="nx">
+whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4188,7 +5778,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>forward</span>
+        <span id="forward~python">
+<span class="nx">
+forward
+<a class="anchorjs-link " href="#forward~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4200,7 +5795,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>whitelisted<wbr>Names</span>
+        <span id="whitelistednames~python">
+<span class="nx">
+whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4236,7 +5836,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Event<wbr>Type</span>
+        <span id="eventtype~csharp">
+<span class="nx">
+Event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4247,7 +5852,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Lambda<wbr>Arn</span>
+        <span id="lambdaarn~csharp">
+<span class="nx">
+Lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4256,7 +5866,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Body</span>
+        <span id="includebody~csharp">
+<span class="nx">
+Include<wbr>Body
+<a class="anchorjs-link " href="#includebody~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4272,7 +5887,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Event<wbr>Type</span>
+        <span id="eventtype~go">
+<span class="nx">
+Event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4283,7 +5903,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Lambda<wbr>Arn</span>
+        <span id="lambdaarn~go">
+<span class="nx">
+Lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4292,7 +5917,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Body</span>
+        <span id="includebody~go">
+<span class="nx">
+Include<wbr>Body
+<a class="anchorjs-link " href="#includebody~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4308,7 +5938,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>event<wbr>Type</span>
+        <span id="eventtype~nodejs">
+<span class="nx">
+event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4319,7 +5954,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>lambda<wbr>Arn</span>
+        <span id="lambdaarn~nodejs">
+<span class="nx">
+lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4328,7 +5968,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Body</span>
+        <span id="includebody~nodejs">
+<span class="nx">
+include<wbr>Body
+<a class="anchorjs-link " href="#includebody~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4344,7 +5989,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>event<wbr>Type</span>
+        <span id="eventtype~python">
+<span class="nx">
+event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4355,7 +6005,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>lambda<wbr>Arn</span>
+        <span id="lambdaarn~python">
+<span class="nx">
+lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4364,7 +6019,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Body</span>
+        <span id="includebody~python">
+<span class="nx">
+include<wbr>Body
+<a class="anchorjs-link " href="#includebody~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4398,7 +6058,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket</span>
+        <span id="bucket~csharp">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#bucket~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4408,7 +6073,12 @@ example, `myawslogbucket.s3.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Cookies</span>
+        <span id="includecookies~csharp">
+<span class="nx">
+Include<wbr>Cookies
+<a class="anchorjs-link " href="#includecookies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4418,7 +6088,12 @@ include cookies in access logs (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4435,7 +6110,12 @@ to the access log filenames for this distribution, for example, `myprefix/`.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket</span>
+        <span id="bucket~go">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#bucket~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4445,7 +6125,12 @@ example, `myawslogbucket.s3.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Cookies</span>
+        <span id="includecookies~go">
+<span class="nx">
+Include<wbr>Cookies
+<a class="anchorjs-link " href="#includecookies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4455,7 +6140,12 @@ include cookies in access logs (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4472,7 +6162,12 @@ to the access log filenames for this distribution, for example, `myprefix/`.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket</span>
+        <span id="bucket~nodejs">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#bucket~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4482,7 +6177,12 @@ example, `myawslogbucket.s3.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Cookies</span>
+        <span id="includecookies~nodejs">
+<span class="nx">
+include<wbr>Cookies
+<a class="anchorjs-link " href="#includecookies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4492,7 +6192,12 @@ include cookies in access logs (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4509,7 +6214,12 @@ to the access log filenames for this distribution, for example, `myprefix/`.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket</span>
+        <span id="bucket~python">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#bucket~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4519,7 +6229,12 @@ example, `myawslogbucket.s3.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Cookies</span>
+        <span id="includecookies~python">
+<span class="nx">
+include<wbr>Cookies
+<a class="anchorjs-link " href="#includecookies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4529,7 +6244,12 @@ include cookies in access logs (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4564,7 +6284,12 @@ to the access log filenames for this distribution, for example, `myprefix/`.
 
     <dt class="property-required"
             title="Required">
-        <span>Allowed<wbr>Methods</span>
+        <span id="allowedmethods~csharp">
+<span class="nx">
+Allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4574,7 +6299,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Cached<wbr>Methods</span>
+        <span id="cachedmethods~csharp">
+<span class="nx">
+Cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4584,7 +6314,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>Forwarded<wbr>Values</span>
+        <span id="forwardedvalues~csharp">
+<span class="nx">
+Forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvalues">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Args</a></span>
     </dt>
@@ -4594,7 +6329,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Path<wbr>Pattern</span>
+        <span id="pathpattern~csharp">
+<span class="nx">
+Path<wbr>Pattern
+<a class="anchorjs-link " href="#pathpattern~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4604,7 +6344,12 @@ specifies which requests you want this cache behavior to apply to.
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~csharp">
+<span class="nx">
+Target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4615,7 +6360,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>Viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~csharp">
+<span class="nx">
+Viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4627,7 +6377,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compress</span>
+        <span id="compress~csharp">
+<span class="nx">
+Compress
+<a class="anchorjs-link " href="#compress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4638,7 +6393,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ttl</span>
+        <span id="defaultttl~csharp">
+<span class="nx">
+Default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4650,7 +6410,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~csharp">
+<span class="nx">
+Field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4659,7 +6424,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~csharp">
+<span class="nx">
+Lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorlambdafunctionassociation">List&lt;Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association<wbr>Args&gt;</a></span>
     </dt>
@@ -4669,7 +6439,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Ttl</span>
+        <span id="maxttl~csharp">
+<span class="nx">
+Max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4682,7 +6457,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Ttl</span>
+        <span id="minttl~csharp">
+<span class="nx">
+Min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4693,7 +6473,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~csharp">
+<span class="nx">
+Smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4704,7 +6489,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Trusted<wbr>Signers</span>
+        <span id="trustedsigners~csharp">
+<span class="nx">
+Trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4721,7 +6511,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>Allowed<wbr>Methods</span>
+        <span id="allowedmethods~go">
+<span class="nx">
+Allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -4731,7 +6526,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Cached<wbr>Methods</span>
+        <span id="cachedmethods~go">
+<span class="nx">
+Cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -4741,7 +6541,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>Forwarded<wbr>Values</span>
+        <span id="forwardedvalues~go">
+<span class="nx">
+Forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvalues">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values</a></span>
     </dt>
@@ -4751,7 +6556,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Path<wbr>Pattern</span>
+        <span id="pathpattern~go">
+<span class="nx">
+Path<wbr>Pattern
+<a class="anchorjs-link " href="#pathpattern~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4761,7 +6571,12 @@ specifies which requests you want this cache behavior to apply to.
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~go">
+<span class="nx">
+Target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4772,7 +6587,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>Viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~go">
+<span class="nx">
+Viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4784,7 +6604,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compress</span>
+        <span id="compress~go">
+<span class="nx">
+Compress
+<a class="anchorjs-link " href="#compress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4795,7 +6620,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Ttl</span>
+        <span id="defaultttl~go">
+<span class="nx">
+Default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4807,7 +6637,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~go">
+<span class="nx">
+Field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4816,7 +6651,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~go">
+<span class="nx">
+Lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorlambdafunctionassociation">[]Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association</a></span>
     </dt>
@@ -4826,7 +6666,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Ttl</span>
+        <span id="maxttl~go">
+<span class="nx">
+Max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4839,7 +6684,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Ttl</span>
+        <span id="minttl~go">
+<span class="nx">
+Min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4850,7 +6700,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~go">
+<span class="nx">
+Smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4861,7 +6716,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Trusted<wbr>Signers</span>
+        <span id="trustedsigners~go">
+<span class="nx">
+Trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -4878,7 +6738,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>allowed<wbr>Methods</span>
+        <span id="allowedmethods~nodejs">
+<span class="nx">
+allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4888,7 +6753,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>cached<wbr>Methods</span>
+        <span id="cachedmethods~nodejs">
+<span class="nx">
+cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4898,7 +6768,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>forwarded<wbr>Values</span>
+        <span id="forwardedvalues~nodejs">
+<span class="nx">
+forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvalues">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values</a></span>
     </dt>
@@ -4908,7 +6783,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>path<wbr>Pattern</span>
+        <span id="pathpattern~nodejs">
+<span class="nx">
+path<wbr>Pattern
+<a class="anchorjs-link " href="#pathpattern~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4918,7 +6798,12 @@ specifies which requests you want this cache behavior to apply to.
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~nodejs">
+<span class="nx">
+target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4929,7 +6814,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~nodejs">
+<span class="nx">
+viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4941,7 +6831,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compress</span>
+        <span id="compress~nodejs">
+<span class="nx">
+compress
+<a class="anchorjs-link " href="#compress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4952,7 +6847,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Ttl</span>
+        <span id="defaultttl~nodejs">
+<span class="nx">
+default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4964,7 +6864,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~nodejs">
+<span class="nx">
+field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4973,7 +6878,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~nodejs">
+<span class="nx">
+lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorlambdafunctionassociation">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association[]</a></span>
     </dt>
@@ -4983,7 +6893,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Ttl</span>
+        <span id="maxttl~nodejs">
+<span class="nx">
+max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4996,7 +6911,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Ttl</span>
+        <span id="minttl~nodejs">
+<span class="nx">
+min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5007,7 +6927,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~nodejs">
+<span class="nx">
+smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5018,7 +6943,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>trusted<wbr>Signers</span>
+        <span id="trustedsigners~nodejs">
+<span class="nx">
+trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5035,7 +6965,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>allowed<wbr>Methods</span>
+        <span id="allowedmethods~python">
+<span class="nx">
+allowed<wbr>Methods
+<a class="anchorjs-link " href="#allowedmethods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5045,7 +6980,12 @@ processes and forwards to your Amazon S3 bucket or your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>cached<wbr>Methods</span>
+        <span id="cachedmethods~python">
+<span class="nx">
+cached<wbr>Methods
+<a class="anchorjs-link " href="#cachedmethods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5055,7 +6995,12 @@ response to requests using the specified HTTP methods.
 
     <dt class="property-required"
             title="Required">
-        <span>forwarded<wbr>Values</span>
+        <span id="forwardedvalues~python">
+<span class="nx">
+forwarded<wbr>Values
+<a class="anchorjs-link " href="#forwardedvalues~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvalues">Dict[Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values]</a></span>
     </dt>
@@ -5065,7 +7010,12 @@ handles query strings, cookies and headers (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>path<wbr>Pattern</span>
+        <span id="pathpattern~python">
+<span class="nx">
+path<wbr>Pattern
+<a class="anchorjs-link " href="#pathpattern~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5075,7 +7025,12 @@ specifies which requests you want this cache behavior to apply to.
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Origin<wbr>Id</span>
+        <span id="targetoriginid~python">
+<span class="nx">
+target<wbr>Origin<wbr>Id
+<a class="anchorjs-link " href="#targetoriginid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5086,7 +7041,12 @@ either for a cache behavior or for the default cache behavior.
 
     <dt class="property-required"
             title="Required">
-        <span>viewer<wbr>Protocol<wbr>Policy</span>
+        <span id="viewerprotocolpolicy~python">
+<span class="nx">
+viewer<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#viewerprotocolpolicy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5098,7 +7058,12 @@ of `allow-all`, `https-only`, or `redirect-to-https`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compress</span>
+        <span id="compress~python">
+<span class="nx">
+compress
+<a class="anchorjs-link " href="#compress~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5109,7 +7074,12 @@ the request header (default: `false`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Ttl</span>
+        <span id="defaultttl~python">
+<span class="nx">
+default<wbr>Ttl
+<a class="anchorjs-link " href="#defaultttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5121,7 +7091,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>field<wbr>Level<wbr>Encryption<wbr>Id</span>
+        <span id="fieldlevelencryptionid~python">
+<span class="nx">
+field<wbr>Level<wbr>Encryption<wbr>Id
+<a class="anchorjs-link " href="#fieldlevelencryptionid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5130,7 +7105,12 @@ in the absence of an `Cache-Control max-age` or `Expires` header. Defaults to
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda<wbr>Function<wbr>Associations</span>
+        <span id="lambdafunctionassociations~python">
+<span class="nx">
+lambda<wbr>Function<wbr>Associations
+<a class="anchorjs-link " href="#lambdafunctionassociations~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorlambdafunctionassociation">List[Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Lambda<wbr>Function<wbr>Association]</a></span>
     </dt>
@@ -5140,7 +7120,12 @@ specific actions. Defined below, maximum 4.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Ttl</span>
+        <span id="maxttl~python">
+<span class="nx">
+max<wbr>Ttl
+<a class="anchorjs-link " href="#maxttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5153,7 +7138,12 @@ s-maxage`, and `Expires` headers. Defaults to 365 days.
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Ttl</span>
+        <span id="minttl~python">
+<span class="nx">
+min<wbr>Ttl
+<a class="anchorjs-link " href="#minttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5164,7 +7154,12 @@ whether the object has been updated. Defaults to 0 seconds.
 
     <dt class="property-optional"
             title="Optional">
-        <span>smooth<wbr>Streaming</span>
+        <span id="smoothstreaming~python">
+<span class="nx">
+smooth<wbr>Streaming
+<a class="anchorjs-link " href="#smoothstreaming~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5175,7 +7170,12 @@ associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>trusted<wbr>Signers</span>
+        <span id="trustedsigners~python">
+<span class="nx">
+trusted<wbr>Signers
+<a class="anchorjs-link " href="#trustedsigners~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5210,7 +7210,12 @@ allow to create signed URLs for private content.
 
     <dt class="property-required"
             title="Required">
-        <span>Cookies</span>
+        <span id="cookies~csharp">
+<span class="nx">
+Cookies
+<a class="anchorjs-link " href="#cookies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvaluescookies">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies<wbr>Args</a></span>
     </dt>
@@ -5220,7 +7225,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Query<wbr>String</span>
+        <span id="querystring~csharp">
+<span class="nx">
+Query<wbr>String
+<a class="anchorjs-link " href="#querystring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5230,7 +7240,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Headers</span>
+        <span id="headers~csharp">
+<span class="nx">
+Headers
+<a class="anchorjs-link " href="#headers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -5241,7 +7256,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~csharp">
+<span class="nx">
+Query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -5260,7 +7280,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>Cookies</span>
+        <span id="cookies~go">
+<span class="nx">
+Cookies
+<a class="anchorjs-link " href="#cookies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvaluescookies">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies</a></span>
     </dt>
@@ -5270,7 +7295,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>Query<wbr>String</span>
+        <span id="querystring~go">
+<span class="nx">
+Query<wbr>String
+<a class="anchorjs-link " href="#querystring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5280,7 +7310,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Headers</span>
+        <span id="headers~go">
+<span class="nx">
+Headers
+<a class="anchorjs-link " href="#headers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -5291,7 +7326,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~go">
+<span class="nx">
+Query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -5310,7 +7350,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>cookies</span>
+        <span id="cookies~nodejs">
+<span class="nx">
+cookies
+<a class="anchorjs-link " href="#cookies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvaluescookies">Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies</a></span>
     </dt>
@@ -5320,7 +7365,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>query<wbr>String</span>
+        <span id="querystring~nodejs">
+<span class="nx">
+query<wbr>String
+<a class="anchorjs-link " href="#querystring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5330,7 +7380,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>headers</span>
+        <span id="headers~nodejs">
+<span class="nx">
+headers
+<a class="anchorjs-link " href="#headers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5341,7 +7396,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~nodejs">
+<span class="nx">
+query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5360,7 +7420,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>cookies</span>
+        <span id="cookies~python">
+<span class="nx">
+cookies
+<a class="anchorjs-link " href="#cookies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorderedcachebehaviorforwardedvaluescookies">Dict[Distribution<wbr>Ordered<wbr>Cache<wbr>Behavior<wbr>Forwarded<wbr>Values<wbr>Cookies]</a></span>
     </dt>
@@ -5370,7 +7435,12 @@ that specifies how CloudFront handles cookies (maximum one).
 
     <dt class="property-required"
             title="Required">
-        <span>query<wbr>String</span>
+        <span id="querystring~python">
+<span class="nx">
+query<wbr>String
+<a class="anchorjs-link " href="#querystring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5380,7 +7450,12 @@ query strings to the origin that is associated with this cache behavior.
 
     <dt class="property-optional"
             title="Optional">
-        <span>headers</span>
+        <span id="headers~python">
+<span class="nx">
+headers
+<a class="anchorjs-link " href="#headers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5391,7 +7466,12 @@ headers.
 
     <dt class="property-optional"
             title="Optional">
-        <span>query<wbr>String<wbr>Cache<wbr>Keys</span>
+        <span id="querystringcachekeys~python">
+<span class="nx">
+query<wbr>String<wbr>Cache<wbr>Keys
+<a class="anchorjs-link " href="#querystringcachekeys~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5428,7 +7508,12 @@ value of `true` for `query_string`, all query string keys are cached.
 
     <dt class="property-required"
             title="Required">
-        <span>Forward</span>
+        <span id="forward~csharp">
+<span class="nx">
+Forward
+<a class="anchorjs-link " href="#forward~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5440,7 +7525,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Whitelisted<wbr>Names</span>
+        <span id="whitelistednames~csharp">
+<span class="nx">
+Whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -5458,7 +7548,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Forward</span>
+        <span id="forward~go">
+<span class="nx">
+Forward
+<a class="anchorjs-link " href="#forward~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5470,7 +7565,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Whitelisted<wbr>Names</span>
+        <span id="whitelistednames~go">
+<span class="nx">
+Whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -5488,7 +7588,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>forward</span>
+        <span id="forward~nodejs">
+<span class="nx">
+forward
+<a class="anchorjs-link " href="#forward~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5500,7 +7605,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>whitelisted<wbr>Names</span>
+        <span id="whitelistednames~nodejs">
+<span class="nx">
+whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5518,7 +7628,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>forward</span>
+        <span id="forward~python">
+<span class="nx">
+forward
+<a class="anchorjs-link " href="#forward~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5530,7 +7645,12 @@ subsequent `whitelisted_names`
 
     <dt class="property-optional"
             title="Optional">
-        <span>whitelisted<wbr>Names</span>
+        <span id="whitelistednames~python">
+<span class="nx">
+whitelisted<wbr>Names
+<a class="anchorjs-link " href="#whitelistednames~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5566,7 +7686,12 @@ your origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Event<wbr>Type</span>
+        <span id="eventtype~csharp">
+<span class="nx">
+Event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5577,7 +7702,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Lambda<wbr>Arn</span>
+        <span id="lambdaarn~csharp">
+<span class="nx">
+Lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5586,7 +7716,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Body</span>
+        <span id="includebody~csharp">
+<span class="nx">
+Include<wbr>Body
+<a class="anchorjs-link " href="#includebody~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5602,7 +7737,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Event<wbr>Type</span>
+        <span id="eventtype~go">
+<span class="nx">
+Event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5613,7 +7753,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Lambda<wbr>Arn</span>
+        <span id="lambdaarn~go">
+<span class="nx">
+Lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5622,7 +7767,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Body</span>
+        <span id="includebody~go">
+<span class="nx">
+Include<wbr>Body
+<a class="anchorjs-link " href="#includebody~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5638,7 +7788,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>event<wbr>Type</span>
+        <span id="eventtype~nodejs">
+<span class="nx">
+event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5649,7 +7804,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>lambda<wbr>Arn</span>
+        <span id="lambdaarn~nodejs">
+<span class="nx">
+lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5658,7 +7818,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Body</span>
+        <span id="includebody~nodejs">
+<span class="nx">
+include<wbr>Body
+<a class="anchorjs-link " href="#includebody~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5674,7 +7839,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>event<wbr>Type</span>
+        <span id="eventtype~python">
+<span class="nx">
+event<wbr>Type
+<a class="anchorjs-link " href="#eventtype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5685,7 +7855,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>lambda<wbr>Arn</span>
+        <span id="lambdaarn~python">
+<span class="nx">
+lambda<wbr>Arn
+<a class="anchorjs-link " href="#lambdaarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5694,7 +7869,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Body</span>
+        <span id="includebody~python">
+<span class="nx">
+include<wbr>Body
+<a class="anchorjs-link " href="#includebody~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5728,7 +7908,12 @@ Valid values: `viewer-request`, `origin-request`, `viewer-response`,
 
     <dt class="property-required"
             title="Required">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~csharp">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5738,7 +7923,12 @@ web site of your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Id</span>
+        <span id="originid~csharp">
+<span class="nx">
+Origin<wbr>Id
+<a class="anchorjs-link " href="#originid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5747,7 +7937,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Headers</span>
+        <span id="customheaders~csharp">
+<span class="nx">
+Custom<wbr>Headers
+<a class="anchorjs-link " href="#customheaders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomheader">List&lt;Distribution<wbr>Origin<wbr>Custom<wbr>Header<wbr>Args&gt;</a></span>
     </dt>
@@ -5758,7 +7953,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Origin<wbr>Config</span>
+        <span id="customoriginconfig~csharp">
+<span class="nx">
+Custom<wbr>Origin<wbr>Config
+<a class="anchorjs-link " href="#customoriginconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomoriginconfig">Distribution<wbr>Origin<wbr>Custom<wbr>Origin<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -5769,7 +7969,12 @@ origin is required, use `s3_origin_config` instead.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Path</span>
+        <span id="originpath~csharp">
+<span class="nx">
+Origin<wbr>Path
+<a class="anchorjs-link " href="#originpath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5780,7 +7985,12 @@ custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Origin<wbr>Config</span>
+        <span id="s3originconfig~csharp">
+<span class="nx">
+S3Origin<wbr>Config
+<a class="anchorjs-link " href="#s3originconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigins3originconfig">Distribution<wbr>Origin<wbr>S3Origin<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -5798,7 +8008,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5808,7 +8023,12 @@ web site of your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Id</span>
+        <span id="originid~go">
+<span class="nx">
+Origin<wbr>Id
+<a class="anchorjs-link " href="#originid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5817,7 +8037,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Headers</span>
+        <span id="customheaders~go">
+<span class="nx">
+Custom<wbr>Headers
+<a class="anchorjs-link " href="#customheaders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomheader">[]Distribution<wbr>Origin<wbr>Custom<wbr>Header</a></span>
     </dt>
@@ -5828,7 +8053,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Origin<wbr>Config</span>
+        <span id="customoriginconfig~go">
+<span class="nx">
+Custom<wbr>Origin<wbr>Config
+<a class="anchorjs-link " href="#customoriginconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomoriginconfig">Distribution<wbr>Origin<wbr>Custom<wbr>Origin<wbr>Config</a></span>
     </dt>
@@ -5839,7 +8069,12 @@ origin is required, use `s3_origin_config` instead.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Path</span>
+        <span id="originpath~go">
+<span class="nx">
+Origin<wbr>Path
+<a class="anchorjs-link " href="#originpath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5850,7 +8085,12 @@ custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Origin<wbr>Config</span>
+        <span id="s3originconfig~go">
+<span class="nx">
+S3Origin<wbr>Config
+<a class="anchorjs-link " href="#s3originconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigins3originconfig">Distribution<wbr>Origin<wbr>S3Origin<wbr>Config</a></span>
     </dt>
@@ -5868,7 +8108,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>domain<wbr>Name</span>
+        <span id="domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5878,7 +8123,12 @@ web site of your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Id</span>
+        <span id="originid~nodejs">
+<span class="nx">
+origin<wbr>Id
+<a class="anchorjs-link " href="#originid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5887,7 +8137,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Headers</span>
+        <span id="customheaders~nodejs">
+<span class="nx">
+custom<wbr>Headers
+<a class="anchorjs-link " href="#customheaders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomheader">Distribution<wbr>Origin<wbr>Custom<wbr>Header[]</a></span>
     </dt>
@@ -5898,7 +8153,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Origin<wbr>Config</span>
+        <span id="customoriginconfig~nodejs">
+<span class="nx">
+custom<wbr>Origin<wbr>Config
+<a class="anchorjs-link " href="#customoriginconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomoriginconfig">Distribution<wbr>Origin<wbr>Custom<wbr>Origin<wbr>Config</a></span>
     </dt>
@@ -5909,7 +8169,12 @@ origin is required, use `s3_origin_config` instead.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Path</span>
+        <span id="originpath~nodejs">
+<span class="nx">
+origin<wbr>Path
+<a class="anchorjs-link " href="#originpath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5920,7 +8185,12 @@ custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Origin<wbr>Config</span>
+        <span id="s3originconfig~nodejs">
+<span class="nx">
+s3Origin<wbr>Config
+<a class="anchorjs-link " href="#s3originconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigins3originconfig">Distribution<wbr>Origin<wbr>S3Origin<wbr>Config</a></span>
     </dt>
@@ -5938,7 +8208,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>domain_<wbr>name</span>
+        <span id="domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5948,7 +8223,12 @@ web site of your custom origin.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Id</span>
+        <span id="originid~python">
+<span class="nx">
+origin<wbr>Id
+<a class="anchorjs-link " href="#originid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5957,7 +8237,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Headers</span>
+        <span id="customheaders~python">
+<span class="nx">
+custom<wbr>Headers
+<a class="anchorjs-link " href="#customheaders~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomheader">List[Distribution<wbr>Origin<wbr>Custom<wbr>Header]</a></span>
     </dt>
@@ -5968,7 +8253,12 @@ web site of your custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Origin<wbr>Config</span>
+        <span id="customoriginconfig~python">
+<span class="nx">
+custom<wbr>Origin<wbr>Config
+<a class="anchorjs-link " href="#customoriginconfig~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigincustomoriginconfig">Dict[Distribution<wbr>Origin<wbr>Custom<wbr>Origin<wbr>Config]</a></span>
     </dt>
@@ -5979,7 +8269,12 @@ origin is required, use `s3_origin_config` instead.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Path</span>
+        <span id="originpath~python">
+<span class="nx">
+origin<wbr>Path
+<a class="anchorjs-link " href="#originpath~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5990,7 +8285,12 @@ custom origin.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Origin<wbr>Config</span>
+        <span id="s3originconfig~python">
+<span class="nx">
+s3Origin<wbr>Config
+<a class="anchorjs-link " href="#s3originconfig~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigins3originconfig">Dict[Distribution<wbr>Origin<wbr>S3Origin<wbr>Config]</a></span>
     </dt>
@@ -6026,7 +8326,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6034,7 +8339,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~csharp">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6049,7 +8359,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6057,7 +8372,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~go">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6072,7 +8392,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6080,7 +8405,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~nodejs">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6095,7 +8425,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6103,7 +8438,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~python">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6136,7 +8476,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Port</span>
+        <span id="httpport~csharp">
+<span class="nx">
+Http<wbr>Port
+<a class="anchorjs-link " href="#httpport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -6145,7 +8490,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Https<wbr>Port</span>
+        <span id="httpsport~csharp">
+<span class="nx">
+Https<wbr>Port
+<a class="anchorjs-link " href="#httpsport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -6154,7 +8504,12 @@ configuration information. If a custom origin is required, use
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Protocol<wbr>Policy</span>
+        <span id="originprotocolpolicy~csharp">
+<span class="nx">
+Origin<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#originprotocolpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6164,7 +8519,12 @@ your origin. One of `http-only`, `https-only`, or `match-viewer`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Ssl<wbr>Protocols</span>
+        <span id="originsslprotocols~csharp">
+<span class="nx">
+Origin<wbr>Ssl<wbr>Protocols
+<a class="anchorjs-link " href="#originsslprotocols~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -6175,7 +8535,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Keepalive<wbr>Timeout</span>
+        <span id="originkeepalivetimeout~csharp">
+<span class="nx">
+Origin<wbr>Keepalive<wbr>Timeout
+<a class="anchorjs-link " href="#originkeepalivetimeout~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -6184,7 +8549,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Read<wbr>Timeout</span>
+        <span id="originreadtimeout~csharp">
+<span class="nx">
+Origin<wbr>Read<wbr>Timeout
+<a class="anchorjs-link " href="#originreadtimeout~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -6200,7 +8570,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Port</span>
+        <span id="httpport~go">
+<span class="nx">
+Http<wbr>Port
+<a class="anchorjs-link " href="#httpport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -6209,7 +8584,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Https<wbr>Port</span>
+        <span id="httpsport~go">
+<span class="nx">
+Https<wbr>Port
+<a class="anchorjs-link " href="#httpsport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -6218,7 +8598,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Protocol<wbr>Policy</span>
+        <span id="originprotocolpolicy~go">
+<span class="nx">
+Origin<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#originprotocolpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6228,7 +8613,12 @@ your origin. One of `http-only`, `https-only`, or `match-viewer`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Ssl<wbr>Protocols</span>
+        <span id="originsslprotocols~go">
+<span class="nx">
+Origin<wbr>Ssl<wbr>Protocols
+<a class="anchorjs-link " href="#originsslprotocols~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -6239,7 +8629,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Keepalive<wbr>Timeout</span>
+        <span id="originkeepalivetimeout~go">
+<span class="nx">
+Origin<wbr>Keepalive<wbr>Timeout
+<a class="anchorjs-link " href="#originkeepalivetimeout~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -6248,7 +8643,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Origin<wbr>Read<wbr>Timeout</span>
+        <span id="originreadtimeout~go">
+<span class="nx">
+Origin<wbr>Read<wbr>Timeout
+<a class="anchorjs-link " href="#originreadtimeout~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -6264,7 +8664,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Port</span>
+        <span id="httpport~nodejs">
+<span class="nx">
+http<wbr>Port
+<a class="anchorjs-link " href="#httpport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -6273,7 +8678,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>https<wbr>Port</span>
+        <span id="httpsport~nodejs">
+<span class="nx">
+https<wbr>Port
+<a class="anchorjs-link " href="#httpsport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -6282,7 +8692,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Protocol<wbr>Policy</span>
+        <span id="originprotocolpolicy~nodejs">
+<span class="nx">
+origin<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#originprotocolpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6292,7 +8707,12 @@ your origin. One of `http-only`, `https-only`, or `match-viewer`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Ssl<wbr>Protocols</span>
+        <span id="originsslprotocols~nodejs">
+<span class="nx">
+origin<wbr>Ssl<wbr>Protocols
+<a class="anchorjs-link " href="#originsslprotocols~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -6303,7 +8723,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Keepalive<wbr>Timeout</span>
+        <span id="originkeepalivetimeout~nodejs">
+<span class="nx">
+origin<wbr>Keepalive<wbr>Timeout
+<a class="anchorjs-link " href="#originkeepalivetimeout~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -6312,7 +8737,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Read<wbr>Timeout</span>
+        <span id="originreadtimeout~nodejs">
+<span class="nx">
+origin<wbr>Read<wbr>Timeout
+<a class="anchorjs-link " href="#originreadtimeout~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -6328,7 +8758,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Port</span>
+        <span id="httpport~python">
+<span class="nx">
+http<wbr>Port
+<a class="anchorjs-link " href="#httpport~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -6337,7 +8772,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>https<wbr>Port</span>
+        <span id="httpsport~python">
+<span class="nx">
+https<wbr>Port
+<a class="anchorjs-link " href="#httpsport~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -6346,7 +8786,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Protocol<wbr>Policy</span>
+        <span id="originprotocolpolicy~python">
+<span class="nx">
+origin<wbr>Protocol<wbr>Policy
+<a class="anchorjs-link " href="#originprotocolpolicy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6356,7 +8801,12 @@ your origin. One of `http-only`, `https-only`, or `match-viewer`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Ssl<wbr>Protocols</span>
+        <span id="originsslprotocols~python">
+<span class="nx">
+origin<wbr>Ssl<wbr>Protocols
+<a class="anchorjs-link " href="#originsslprotocols~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -6367,7 +8817,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Keepalive<wbr>Timeout</span>
+        <span id="originkeepalivetimeout~python">
+<span class="nx">
+origin<wbr>Keepalive<wbr>Timeout
+<a class="anchorjs-link " href="#originkeepalivetimeout~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -6376,7 +8831,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>origin<wbr>Read<wbr>Timeout</span>
+        <span id="originreadtimeout~python">
+<span class="nx">
+origin<wbr>Read<wbr>Timeout
+<a class="anchorjs-link " href="#originreadtimeout~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -6410,7 +8870,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Failover<wbr>Criteria</span>
+        <span id="failovercriteria~csharp">
+<span class="nx">
+Failover<wbr>Criteria
+<a class="anchorjs-link " href="#failovercriteria~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupfailovercriteria">Distribution<wbr>Origin<wbr>Group<wbr>Failover<wbr>Criteria<wbr>Args</a></span>
     </dt>
@@ -6419,7 +8884,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Members</span>
+        <span id="members~csharp">
+<span class="nx">
+Members
+<a class="anchorjs-link " href="#members~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupmember">List&lt;Distribution<wbr>Origin<wbr>Group<wbr>Member<wbr>Args&gt;</a></span>
     </dt>
@@ -6428,7 +8898,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Id</span>
+        <span id="originid~csharp">
+<span class="nx">
+Origin<wbr>Id
+<a class="anchorjs-link " href="#originid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6444,7 +8919,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Failover<wbr>Criteria</span>
+        <span id="failovercriteria~go">
+<span class="nx">
+Failover<wbr>Criteria
+<a class="anchorjs-link " href="#failovercriteria~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupfailovercriteria">Distribution<wbr>Origin<wbr>Group<wbr>Failover<wbr>Criteria</a></span>
     </dt>
@@ -6453,7 +8933,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Members</span>
+        <span id="members~go">
+<span class="nx">
+Members
+<a class="anchorjs-link " href="#members~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupmember">[]Distribution<wbr>Origin<wbr>Group<wbr>Member</a></span>
     </dt>
@@ -6462,7 +8947,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Id</span>
+        <span id="originid~go">
+<span class="nx">
+Origin<wbr>Id
+<a class="anchorjs-link " href="#originid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6478,7 +8968,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>failover<wbr>Criteria</span>
+        <span id="failovercriteria~nodejs">
+<span class="nx">
+failover<wbr>Criteria
+<a class="anchorjs-link " href="#failovercriteria~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupfailovercriteria">Distribution<wbr>Origin<wbr>Group<wbr>Failover<wbr>Criteria</a></span>
     </dt>
@@ -6487,7 +8982,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>members</span>
+        <span id="members~nodejs">
+<span class="nx">
+members
+<a class="anchorjs-link " href="#members~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupmember">Distribution<wbr>Origin<wbr>Group<wbr>Member[]</a></span>
     </dt>
@@ -6496,7 +8996,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Id</span>
+        <span id="originid~nodejs">
+<span class="nx">
+origin<wbr>Id
+<a class="anchorjs-link " href="#originid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6512,7 +9017,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>failover<wbr>Criteria</span>
+        <span id="failovercriteria~python">
+<span class="nx">
+failover<wbr>Criteria
+<a class="anchorjs-link " href="#failovercriteria~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupfailovercriteria">Dict[Distribution<wbr>Origin<wbr>Group<wbr>Failover<wbr>Criteria]</a></span>
     </dt>
@@ -6521,7 +9031,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>members</span>
+        <span id="members~python">
+<span class="nx">
+members
+<a class="anchorjs-link " href="#members~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionorigingroupmember">List[Distribution<wbr>Origin<wbr>Group<wbr>Member]</a></span>
     </dt>
@@ -6530,7 +9045,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Id</span>
+        <span id="originid~python">
+<span class="nx">
+origin<wbr>Id
+<a class="anchorjs-link " href="#originid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6564,7 +9084,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Status<wbr>Codes</span>
+        <span id="statuscodes~csharp">
+<span class="nx">
+Status<wbr>Codes
+<a class="anchorjs-link " href="#statuscodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;int&gt;</a></span>
     </dt>
@@ -6580,7 +9105,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Status<wbr>Codes</span>
+        <span id="statuscodes~go">
+<span class="nx">
+Status<wbr>Codes
+<a class="anchorjs-link " href="#statuscodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">[]int</a></span>
     </dt>
@@ -6596,7 +9126,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>status<wbr>Codes</span>
+        <span id="statuscodes~nodejs">
+<span class="nx">
+status<wbr>Codes
+<a class="anchorjs-link " href="#statuscodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number[]</a></span>
     </dt>
@@ -6612,7 +9147,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>status<wbr>Codes</span>
+        <span id="statuscodes~python">
+<span class="nx">
+status<wbr>Codes
+<a class="anchorjs-link " href="#statuscodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[Integer]</a></span>
     </dt>
@@ -6646,7 +9186,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Id</span>
+        <span id="originid~csharp">
+<span class="nx">
+Origin<wbr>Id
+<a class="anchorjs-link " href="#originid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6662,7 +9207,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Id</span>
+        <span id="originid~go">
+<span class="nx">
+Origin<wbr>Id
+<a class="anchorjs-link " href="#originid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6678,7 +9228,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Id</span>
+        <span id="originid~nodejs">
+<span class="nx">
+origin<wbr>Id
+<a class="anchorjs-link " href="#originid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6694,7 +9249,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Id</span>
+        <span id="originid~python">
+<span class="nx">
+origin<wbr>Id
+<a class="anchorjs-link " href="#originid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6728,7 +9288,12 @@ one or more of `SSLv3`, `TLSv1`, `TLSv1.1`, and `TLSv1.2`.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Access<wbr>Identity</span>
+        <span id="originaccessidentity~csharp">
+<span class="nx">
+Origin<wbr>Access<wbr>Identity
+<a class="anchorjs-link " href="#originaccessidentity~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6745,7 +9310,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Origin<wbr>Access<wbr>Identity</span>
+        <span id="originaccessidentity~go">
+<span class="nx">
+Origin<wbr>Access<wbr>Identity
+<a class="anchorjs-link " href="#originaccessidentity~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6762,7 +9332,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Access<wbr>Identity</span>
+        <span id="originaccessidentity~nodejs">
+<span class="nx">
+origin<wbr>Access<wbr>Identity
+<a class="anchorjs-link " href="#originaccessidentity~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6779,7 +9354,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>origin<wbr>Access<wbr>Identity</span>
+        <span id="originaccessidentity~python">
+<span class="nx">
+origin<wbr>Access<wbr>Identity
+<a class="anchorjs-link " href="#originaccessidentity~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6814,7 +9394,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Geo<wbr>Restriction</span>
+        <span id="georestriction~csharp">
+<span class="nx">
+Geo<wbr>Restriction
+<a class="anchorjs-link " href="#georestriction~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictionsgeorestriction">Distribution<wbr>Restrictions<wbr>Geo<wbr>Restriction<wbr>Args</a></span>
     </dt>
@@ -6829,7 +9414,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Geo<wbr>Restriction</span>
+        <span id="georestriction~go">
+<span class="nx">
+Geo<wbr>Restriction
+<a class="anchorjs-link " href="#georestriction~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictionsgeorestriction">Distribution<wbr>Restrictions<wbr>Geo<wbr>Restriction</a></span>
     </dt>
@@ -6844,7 +9434,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>geo<wbr>Restriction</span>
+        <span id="georestriction~nodejs">
+<span class="nx">
+geo<wbr>Restriction
+<a class="anchorjs-link " href="#georestriction~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictionsgeorestriction">Distribution<wbr>Restrictions<wbr>Geo<wbr>Restriction</a></span>
     </dt>
@@ -6859,7 +9454,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>geo<wbr>Restriction</span>
+        <span id="georestriction~python">
+<span class="nx">
+geo<wbr>Restriction
+<a class="anchorjs-link " href="#georestriction~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#distributionrestrictionsgeorestriction">Dict[Distribution<wbr>Restrictions<wbr>Geo<wbr>Restriction]</a></span>
     </dt>
@@ -6892,7 +9492,12 @@ identity][5] to associate with the origin.
 
     <dt class="property-required"
             title="Required">
-        <span>Restriction<wbr>Type</span>
+        <span id="restrictiontype~csharp">
+<span class="nx">
+Restriction<wbr>Type
+<a class="anchorjs-link " href="#restrictiontype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6903,7 +9508,12 @@ distribution of your content by country: `none`, `whitelist`, or
 
     <dt class="property-optional"
             title="Optional">
-        <span>Locations</span>
+        <span id="locations~csharp">
+<span class="nx">
+Locations
+<a class="anchorjs-link " href="#locations~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -6921,7 +9531,12 @@ distribute your content (`blacklist`).
 
     <dt class="property-required"
             title="Required">
-        <span>Restriction<wbr>Type</span>
+        <span id="restrictiontype~go">
+<span class="nx">
+Restriction<wbr>Type
+<a class="anchorjs-link " href="#restrictiontype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6932,7 +9547,12 @@ distribution of your content by country: `none`, `whitelist`, or
 
     <dt class="property-optional"
             title="Optional">
-        <span>Locations</span>
+        <span id="locations~go">
+<span class="nx">
+Locations
+<a class="anchorjs-link " href="#locations~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -6950,7 +9570,12 @@ distribute your content (`blacklist`).
 
     <dt class="property-required"
             title="Required">
-        <span>restriction<wbr>Type</span>
+        <span id="restrictiontype~nodejs">
+<span class="nx">
+restriction<wbr>Type
+<a class="anchorjs-link " href="#restrictiontype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6961,7 +9586,12 @@ distribution of your content by country: `none`, `whitelist`, or
 
     <dt class="property-optional"
             title="Optional">
-        <span>locations</span>
+        <span id="locations~nodejs">
+<span class="nx">
+locations
+<a class="anchorjs-link " href="#locations~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -6979,7 +9609,12 @@ distribute your content (`blacklist`).
 
     <dt class="property-required"
             title="Required">
-        <span>restriction<wbr>Type</span>
+        <span id="restrictiontype~python">
+<span class="nx">
+restriction<wbr>Type
+<a class="anchorjs-link " href="#restrictiontype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6990,7 +9625,12 @@ distribution of your content by country: `none`, `whitelist`, or
 
     <dt class="property-optional"
             title="Optional">
-        <span>locations</span>
+        <span id="locations~python">
+<span class="nx">
+locations
+<a class="anchorjs-link " href="#locations~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -7026,7 +9666,12 @@ distribute your content (`blacklist`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Acm<wbr>Certificate<wbr>Arn</span>
+        <span id="acmcertificatearn~csharp">
+<span class="nx">
+Acm<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#acmcertificatearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7038,7 +9683,12 @@ certificate must be in  US-EAST-1.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudfront<wbr>Default<wbr>Certificate</span>
+        <span id="cloudfrontdefaultcertificate~csharp">
+<span class="nx">
+Cloudfront<wbr>Default<wbr>Certificate
+<a class="anchorjs-link " href="#cloudfrontdefaultcertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -7049,7 +9699,12 @@ distribution. Specify this, `acm_certificate_arn`, or `iam_certificate_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Certificate<wbr>Id</span>
+        <span id="iamcertificateid~csharp">
+<span class="nx">
+Iam<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#iamcertificateid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7060,7 +9715,12 @@ this, `acm_certificate_arn`, or `cloudfront_default_certificate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Protocol<wbr>Version</span>
+        <span id="minimumprotocolversion~csharp">
+<span class="nx">
+Minimum<wbr>Protocol<wbr>Version
+<a class="anchorjs-link " href="#minimumprotocolversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7078,7 +9738,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssl<wbr>Support<wbr>Method</span>
+        <span id="sslsupportmethod~csharp">
+<span class="nx">
+Ssl<wbr>Support<wbr>Method
+<a class="anchorjs-link " href="#sslsupportmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7093,7 +9758,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Acm<wbr>Certificate<wbr>Arn</span>
+        <span id="acmcertificatearn~go">
+<span class="nx">
+Acm<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#acmcertificatearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7105,7 +9775,12 @@ certificate must be in  US-EAST-1.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudfront<wbr>Default<wbr>Certificate</span>
+        <span id="cloudfrontdefaultcertificate~go">
+<span class="nx">
+Cloudfront<wbr>Default<wbr>Certificate
+<a class="anchorjs-link " href="#cloudfrontdefaultcertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -7116,7 +9791,12 @@ distribution. Specify this, `acm_certificate_arn`, or `iam_certificate_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Certificate<wbr>Id</span>
+        <span id="iamcertificateid~go">
+<span class="nx">
+Iam<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#iamcertificateid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7127,7 +9807,12 @@ this, `acm_certificate_arn`, or `cloudfront_default_certificate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Protocol<wbr>Version</span>
+        <span id="minimumprotocolversion~go">
+<span class="nx">
+Minimum<wbr>Protocol<wbr>Version
+<a class="anchorjs-link " href="#minimumprotocolversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7145,7 +9830,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssl<wbr>Support<wbr>Method</span>
+        <span id="sslsupportmethod~go">
+<span class="nx">
+Ssl<wbr>Support<wbr>Method
+<a class="anchorjs-link " href="#sslsupportmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7160,7 +9850,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>acm<wbr>Certificate<wbr>Arn</span>
+        <span id="acmcertificatearn~nodejs">
+<span class="nx">
+acm<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#acmcertificatearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7172,7 +9867,12 @@ certificate must be in  US-EAST-1.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudfront<wbr>Default<wbr>Certificate</span>
+        <span id="cloudfrontdefaultcertificate~nodejs">
+<span class="nx">
+cloudfront<wbr>Default<wbr>Certificate
+<a class="anchorjs-link " href="#cloudfrontdefaultcertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -7183,7 +9883,12 @@ distribution. Specify this, `acm_certificate_arn`, or `iam_certificate_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Certificate<wbr>Id</span>
+        <span id="iamcertificateid~nodejs">
+<span class="nx">
+iam<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#iamcertificateid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7194,7 +9899,12 @@ this, `acm_certificate_arn`, or `cloudfront_default_certificate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum<wbr>Protocol<wbr>Version</span>
+        <span id="minimumprotocolversion~nodejs">
+<span class="nx">
+minimum<wbr>Protocol<wbr>Version
+<a class="anchorjs-link " href="#minimumprotocolversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7212,7 +9922,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssl<wbr>Support<wbr>Method</span>
+        <span id="sslsupportmethod~nodejs">
+<span class="nx">
+ssl<wbr>Support<wbr>Method
+<a class="anchorjs-link " href="#sslsupportmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7227,7 +9942,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>acm<wbr>Certificate<wbr>Arn</span>
+        <span id="acmcertificatearn~python">
+<span class="nx">
+acm<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#acmcertificatearn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7239,7 +9959,12 @@ certificate must be in  US-EAST-1.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudfront<wbr>Default<wbr>Certificate</span>
+        <span id="cloudfrontdefaultcertificate~python">
+<span class="nx">
+cloudfront<wbr>Default<wbr>Certificate
+<a class="anchorjs-link " href="#cloudfrontdefaultcertificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -7250,7 +9975,12 @@ distribution. Specify this, `acm_certificate_arn`, or `iam_certificate_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Certificate<wbr>Id</span>
+        <span id="iamcertificateid~python">
+<span class="nx">
+iam<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#iamcertificateid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7261,7 +9991,12 @@ this, `acm_certificate_arn`, or `cloudfront_default_certificate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum<wbr>Protocol<wbr>Version</span>
+        <span id="minimumprotocolversion~python">
+<span class="nx">
+minimum<wbr>Protocol<wbr>Version
+<a class="anchorjs-link " href="#minimumprotocolversion~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7279,7 +10014,12 @@ must be specified.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssl<wbr>Support<wbr>Method</span>
+        <span id="sslsupportmethod~python">
+<span class="nx">
+ssl<wbr>Support<wbr>Method
+<a class="anchorjs-link " href="#sslsupportmethod~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

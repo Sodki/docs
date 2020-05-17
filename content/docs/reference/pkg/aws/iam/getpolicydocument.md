@@ -346,7 +346,7 @@ import pulumi
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getPolicyDocument<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#GetPolicyDocumentArgs">GetPolicyDocumentArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#GetPolicyDocumentResult">GetPolicyDocumentResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getPolicyDocument<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#GetPolicyDocumentArgs">GetPolicyDocumentArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#GetPolicyDocumentResult">GetPolicyDocumentResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -356,13 +356,14 @@ import pulumi
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPolicyDocument<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#GetPolicyDocumentArgs">GetPolicyDocumentArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#GetPolicyDocumentResult">GetPolicyDocumentResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPolicyDocument<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#GetPolicyDocumentArgs">GetPolicyDocumentArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#GetPolicyDocumentResult">GetPolicyDocumentResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetPolicyDocument </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.GetPolicyDocumentResult.html">GetPolicyDocumentResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.GetPolicyDocumentArgs.html">GetPolicyDocumentArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.GetPolicyDocumentResult.html">GetPolicyDocumentResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.GetPolicyDocumentArgs.html">GetPolicyDocumentArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -377,7 +378,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Override<wbr>Json</span>
+        <span id="overridejson~csharp">
+<span class="nx">
+Override<wbr>Json
+<a class="anchorjs-link " href="#overridejson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -389,7 +395,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policy<wbr>Id</span>
+        <span id="policyid~csharp">
+<span class="nx">
+Policy<wbr>Id
+<a class="anchorjs-link " href="#policyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -398,7 +409,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Json</span>
+        <span id="sourcejson~csharp">
+<span class="nx">
+Source<wbr>Json
+<a class="anchorjs-link " href="#sourcejson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -410,7 +426,12 @@ json.  Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statements</span>
+        <span id="statements~csharp">
+<span class="nx">
+Statements
+<a class="anchorjs-link " href="#statements~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">List&lt;Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Args&gt;</a></span>
     </dt>
@@ -420,7 +441,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -436,7 +462,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Override<wbr>Json</span>
+        <span id="overridejson~go">
+<span class="nx">
+Override<wbr>Json
+<a class="anchorjs-link " href="#overridejson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -448,7 +479,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policy<wbr>Id</span>
+        <span id="policyid~go">
+<span class="nx">
+Policy<wbr>Id
+<a class="anchorjs-link " href="#policyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -457,7 +493,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Json</span>
+        <span id="sourcejson~go">
+<span class="nx">
+Source<wbr>Json
+<a class="anchorjs-link " href="#sourcejson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -469,7 +510,12 @@ json.  Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statements</span>
+        <span id="statements~go">
+<span class="nx">
+Statements
+<a class="anchorjs-link " href="#statements~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">[]Get<wbr>Policy<wbr>Document<wbr>Statement</a></span>
     </dt>
@@ -479,7 +525,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -495,7 +546,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>override<wbr>Json</span>
+        <span id="overridejson~nodejs">
+<span class="nx">
+override<wbr>Json
+<a class="anchorjs-link " href="#overridejson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -507,7 +563,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>policy<wbr>Id</span>
+        <span id="policyid~nodejs">
+<span class="nx">
+policy<wbr>Id
+<a class="anchorjs-link " href="#policyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -516,7 +577,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Json</span>
+        <span id="sourcejson~nodejs">
+<span class="nx">
+source<wbr>Json
+<a class="anchorjs-link " href="#sourcejson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -528,7 +594,12 @@ json.  Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>statements</span>
+        <span id="statements~nodejs">
+<span class="nx">
+statements
+<a class="anchorjs-link " href="#statements~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">Get<wbr>Policy<wbr>Document<wbr>Statement[]</a></span>
     </dt>
@@ -538,7 +609,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -554,7 +630,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>override_<wbr>json</span>
+        <span id="override_json~python">
+<span class="nx">
+override_<wbr>json
+<a class="anchorjs-link " href="#override_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -566,7 +647,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>policy_<wbr>id</span>
+        <span id="policy_id~python">
+<span class="nx">
+policy_<wbr>id
+<a class="anchorjs-link " href="#policy_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -575,7 +661,12 @@ Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>json</span>
+        <span id="source_json~python">
+<span class="nx">
+source_<wbr>json
+<a class="anchorjs-link " href="#source_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -587,7 +678,12 @@ json.  Statements without an `sid` cannot be overwritten.
 
     <dt class="property-optional"
             title="Optional">
-        <span>statements</span>
+        <span id="statements~python">
+<span class="nx">
+statements
+<a class="anchorjs-link " href="#statements~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">List[Get<wbr>Policy<wbr>Document<wbr>Statement]</a></span>
     </dt>
@@ -597,7 +693,12 @@ configuring one *statement* to be included in the policy document.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -626,7 +727,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -635,7 +741,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Json</span>
+        <span id="json~csharp">
+<span class="nx">
+Json
+<a class="anchorjs-link " href="#json~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -644,7 +755,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Override<wbr>Json</span>
+        <span id="overridejson~csharp">
+<span class="nx">
+Override<wbr>Json
+<a class="anchorjs-link " href="#overridejson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -652,7 +768,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Policy<wbr>Id</span>
+        <span id="policyid~csharp">
+<span class="nx">
+Policy<wbr>Id
+<a class="anchorjs-link " href="#policyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -660,7 +781,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Source<wbr>Json</span>
+        <span id="sourcejson~csharp">
+<span class="nx">
+Source<wbr>Json
+<a class="anchorjs-link " href="#sourcejson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -668,7 +794,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Statements</span>
+        <span id="statements~csharp">
+<span class="nx">
+Statements
+<a class="anchorjs-link " href="#statements~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">List&lt;Get<wbr>Policy<wbr>Document<wbr>Statement&gt;</a></span>
     </dt>
@@ -676,7 +807,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Version</span>
+        <span id="version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -691,7 +827,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -700,7 +841,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Json</span>
+        <span id="json~go">
+<span class="nx">
+Json
+<a class="anchorjs-link " href="#json~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -709,7 +855,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Override<wbr>Json</span>
+        <span id="overridejson~go">
+<span class="nx">
+Override<wbr>Json
+<a class="anchorjs-link " href="#overridejson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -717,7 +868,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Policy<wbr>Id</span>
+        <span id="policyid~go">
+<span class="nx">
+Policy<wbr>Id
+<a class="anchorjs-link " href="#policyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -725,7 +881,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Source<wbr>Json</span>
+        <span id="sourcejson~go">
+<span class="nx">
+Source<wbr>Json
+<a class="anchorjs-link " href="#sourcejson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -733,7 +894,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Statements</span>
+        <span id="statements~go">
+<span class="nx">
+Statements
+<a class="anchorjs-link " href="#statements~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">[]Get<wbr>Policy<wbr>Document<wbr>Statement</a></span>
     </dt>
@@ -741,7 +907,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Version</span>
+        <span id="version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -756,7 +927,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -765,7 +941,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>json</span>
+        <span id="json~nodejs">
+<span class="nx">
+json
+<a class="anchorjs-link " href="#json~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -774,7 +955,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>override<wbr>Json</span>
+        <span id="overridejson~nodejs">
+<span class="nx">
+override<wbr>Json
+<a class="anchorjs-link " href="#overridejson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -782,7 +968,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>policy<wbr>Id</span>
+        <span id="policyid~nodejs">
+<span class="nx">
+policy<wbr>Id
+<a class="anchorjs-link " href="#policyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -790,7 +981,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>source<wbr>Json</span>
+        <span id="sourcejson~nodejs">
+<span class="nx">
+source<wbr>Json
+<a class="anchorjs-link " href="#sourcejson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -798,7 +994,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>statements</span>
+        <span id="statements~nodejs">
+<span class="nx">
+statements
+<a class="anchorjs-link " href="#statements~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">Get<wbr>Policy<wbr>Document<wbr>Statement[]</a></span>
     </dt>
@@ -806,7 +1007,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>version</span>
+        <span id="version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -821,7 +1027,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -830,7 +1041,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>json</span>
+        <span id="json~python">
+<span class="nx">
+json
+<a class="anchorjs-link " href="#json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -839,7 +1055,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>override_<wbr>json</span>
+        <span id="override_json~python">
+<span class="nx">
+override_<wbr>json
+<a class="anchorjs-link " href="#override_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -847,7 +1068,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>policy_<wbr>id</span>
+        <span id="policy_id~python">
+<span class="nx">
+policy_<wbr>id
+<a class="anchorjs-link " href="#policy_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -855,7 +1081,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>source_<wbr>json</span>
+        <span id="source_json~python">
+<span class="nx">
+source_<wbr>json
+<a class="anchorjs-link " href="#source_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -863,7 +1094,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>statements</span>
+        <span id="statements~python">
+<span class="nx">
+statements
+<a class="anchorjs-link " href="#statements~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatement">List[Get<wbr>Policy<wbr>Document<wbr>Statement]</a></span>
     </dt>
@@ -871,7 +1107,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>version</span>
+        <span id="version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -910,7 +1151,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Actions</span>
+        <span id="actions~csharp">
+<span class="nx">
+Actions
+<a class="anchorjs-link " href="#actions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -920,7 +1166,12 @@ or denies. For example, ``["ec2:RunInstances", "s3:*"]``.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Conditions</span>
+        <span id="conditions~csharp">
+<span class="nx">
+Conditions
+<a class="anchorjs-link " href="#conditions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementcondition">List&lt;Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
@@ -931,7 +1182,12 @@ whether this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Effect</span>
+        <span id="effect~csharp">
+<span class="nx">
+Effect
+<a class="anchorjs-link " href="#effect~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -941,7 +1197,12 @@ statement allows or denies the given actions. The default is "Allow".
 
     <dt class="property-optional"
             title="Optional">
-        <span>Not<wbr>Actions</span>
+        <span id="notactions~csharp">
+<span class="nx">
+Not<wbr>Actions
+<a class="anchorjs-link " href="#notactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -952,7 +1213,12 @@ listed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Not<wbr>Principals</span>
+        <span id="notprincipals~csharp">
+<span class="nx">
+Not<wbr>Principals
+<a class="anchorjs-link " href="#notprincipals~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementnotprincipal">List&lt;Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Not<wbr>Principal<wbr>Args&gt;</a></span>
     </dt>
@@ -962,7 +1228,12 @@ the statement does *not* apply to.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Not<wbr>Resources</span>
+        <span id="notresources~csharp">
+<span class="nx">
+Not<wbr>Resources
+<a class="anchorjs-link " href="#notresources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -973,7 +1244,12 @@ does *not* apply to. Used to apply a policy statement to all resources
 
     <dt class="property-optional"
             title="Optional">
-        <span>Principals</span>
+        <span id="principals~csharp">
+<span class="nx">
+Principals
+<a class="anchorjs-link " href="#principals~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementprincipal">List&lt;Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Principal<wbr>Args&gt;</a></span>
     </dt>
@@ -983,7 +1259,12 @@ specifying a resource (or resource pattern) to which this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resources</span>
+        <span id="resources~csharp">
+<span class="nx">
+Resources
+<a class="anchorjs-link " href="#resources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -993,7 +1274,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sid</span>
+        <span id="sid~csharp">
+<span class="nx">
+Sid
+<a class="anchorjs-link " href="#sid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1009,7 +1295,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Actions</span>
+        <span id="actions~go">
+<span class="nx">
+Actions
+<a class="anchorjs-link " href="#actions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1019,7 +1310,12 @@ or denies. For example, ``["ec2:RunInstances", "s3:*"]``.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Conditions</span>
+        <span id="conditions~go">
+<span class="nx">
+Conditions
+<a class="anchorjs-link " href="#conditions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementcondition">[]Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Condition</a></span>
     </dt>
@@ -1030,7 +1326,12 @@ whether this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Effect</span>
+        <span id="effect~go">
+<span class="nx">
+Effect
+<a class="anchorjs-link " href="#effect~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1040,7 +1341,12 @@ statement allows or denies the given actions. The default is "Allow".
 
     <dt class="property-optional"
             title="Optional">
-        <span>Not<wbr>Actions</span>
+        <span id="notactions~go">
+<span class="nx">
+Not<wbr>Actions
+<a class="anchorjs-link " href="#notactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1051,7 +1357,12 @@ listed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Not<wbr>Principals</span>
+        <span id="notprincipals~go">
+<span class="nx">
+Not<wbr>Principals
+<a class="anchorjs-link " href="#notprincipals~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementnotprincipal">[]Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Not<wbr>Principal</a></span>
     </dt>
@@ -1061,7 +1372,12 @@ the statement does *not* apply to.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Not<wbr>Resources</span>
+        <span id="notresources~go">
+<span class="nx">
+Not<wbr>Resources
+<a class="anchorjs-link " href="#notresources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1072,7 +1388,12 @@ does *not* apply to. Used to apply a policy statement to all resources
 
     <dt class="property-optional"
             title="Optional">
-        <span>Principals</span>
+        <span id="principals~go">
+<span class="nx">
+Principals
+<a class="anchorjs-link " href="#principals~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementprincipal">[]Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Principal</a></span>
     </dt>
@@ -1082,7 +1403,12 @@ specifying a resource (or resource pattern) to which this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resources</span>
+        <span id="resources~go">
+<span class="nx">
+Resources
+<a class="anchorjs-link " href="#resources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1092,7 +1418,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sid</span>
+        <span id="sid~go">
+<span class="nx">
+Sid
+<a class="anchorjs-link " href="#sid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1108,7 +1439,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>actions</span>
+        <span id="actions~nodejs">
+<span class="nx">
+actions
+<a class="anchorjs-link " href="#actions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1118,7 +1454,12 @@ or denies. For example, ``["ec2:RunInstances", "s3:*"]``.
 
     <dt class="property-optional"
             title="Optional">
-        <span>conditions</span>
+        <span id="conditions~nodejs">
+<span class="nx">
+conditions
+<a class="anchorjs-link " href="#conditions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementcondition">Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Condition[]</a></span>
     </dt>
@@ -1129,7 +1470,12 @@ whether this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>effect</span>
+        <span id="effect~nodejs">
+<span class="nx">
+effect
+<a class="anchorjs-link " href="#effect~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1139,7 +1485,12 @@ statement allows or denies the given actions. The default is "Allow".
 
     <dt class="property-optional"
             title="Optional">
-        <span>not<wbr>Actions</span>
+        <span id="notactions~nodejs">
+<span class="nx">
+not<wbr>Actions
+<a class="anchorjs-link " href="#notactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1150,7 +1501,12 @@ listed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>not<wbr>Principals</span>
+        <span id="notprincipals~nodejs">
+<span class="nx">
+not<wbr>Principals
+<a class="anchorjs-link " href="#notprincipals~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementnotprincipal">Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Not<wbr>Principal[]</a></span>
     </dt>
@@ -1160,7 +1516,12 @@ the statement does *not* apply to.
 
     <dt class="property-optional"
             title="Optional">
-        <span>not<wbr>Resources</span>
+        <span id="notresources~nodejs">
+<span class="nx">
+not<wbr>Resources
+<a class="anchorjs-link " href="#notresources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1171,7 +1532,12 @@ does *not* apply to. Used to apply a policy statement to all resources
 
     <dt class="property-optional"
             title="Optional">
-        <span>principals</span>
+        <span id="principals~nodejs">
+<span class="nx">
+principals
+<a class="anchorjs-link " href="#principals~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementprincipal">Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Principal[]</a></span>
     </dt>
@@ -1181,7 +1547,12 @@ specifying a resource (or resource pattern) to which this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>resources</span>
+        <span id="resources~nodejs">
+<span class="nx">
+resources
+<a class="anchorjs-link " href="#resources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1191,7 +1562,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sid</span>
+        <span id="sid~nodejs">
+<span class="nx">
+sid
+<a class="anchorjs-link " href="#sid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1207,7 +1583,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>actions</span>
+        <span id="actions~python">
+<span class="nx">
+actions
+<a class="anchorjs-link " href="#actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1217,7 +1598,12 @@ or denies. For example, ``["ec2:RunInstances", "s3:*"]``.
 
     <dt class="property-optional"
             title="Optional">
-        <span>conditions</span>
+        <span id="conditions~python">
+<span class="nx">
+conditions
+<a class="anchorjs-link " href="#conditions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementcondition">List[Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Condition]</a></span>
     </dt>
@@ -1228,7 +1614,12 @@ whether this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>effect</span>
+        <span id="effect~python">
+<span class="nx">
+effect
+<a class="anchorjs-link " href="#effect~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1238,7 +1629,12 @@ statement allows or denies the given actions. The default is "Allow".
 
     <dt class="property-optional"
             title="Optional">
-        <span>not<wbr>Actions</span>
+        <span id="notactions~python">
+<span class="nx">
+not<wbr>Actions
+<a class="anchorjs-link " href="#notactions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1249,7 +1645,12 @@ listed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>not<wbr>Principals</span>
+        <span id="notprincipals~python">
+<span class="nx">
+not<wbr>Principals
+<a class="anchorjs-link " href="#notprincipals~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementnotprincipal">List[Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Not<wbr>Principal]</a></span>
     </dt>
@@ -1259,7 +1660,12 @@ the statement does *not* apply to.
 
     <dt class="property-optional"
             title="Optional">
-        <span>not<wbr>Resources</span>
+        <span id="notresources~python">
+<span class="nx">
+not<wbr>Resources
+<a class="anchorjs-link " href="#notresources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1270,7 +1676,12 @@ does *not* apply to. Used to apply a policy statement to all resources
 
     <dt class="property-optional"
             title="Optional">
-        <span>principals</span>
+        <span id="principals~python">
+<span class="nx">
+principals
+<a class="anchorjs-link " href="#principals~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getpolicydocumentstatementprincipal">List[Get<wbr>Policy<wbr>Document<wbr>Statement<wbr>Principal]</a></span>
     </dt>
@@ -1280,7 +1691,12 @@ specifying a resource (or resource pattern) to which this statement applies.
 
     <dt class="property-optional"
             title="Optional">
-        <span>resources</span>
+        <span id="resources~python">
+<span class="nx">
+resources
+<a class="anchorjs-link " href="#resources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1290,7 +1706,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sid</span>
+        <span id="sid~python">
+<span class="nx">
+sid
+<a class="anchorjs-link " href="#sid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1324,7 +1745,12 @@ to. This is required by AWS if used for an IAM policy.
 
     <dt class="property-required"
             title="Required">
-        <span>Test</span>
+        <span id="test~csharp">
+<span class="nx">
+Test
+<a class="anchorjs-link " href="#test~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1335,7 +1761,12 @@ to evaluate.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1346,7 +1777,12 @@ values are provided, the condition matches if at least one of them applies.
 
     <dt class="property-required"
             title="Required">
-        <span>Variable</span>
+        <span id="variable~csharp">
+<span class="nx">
+Variable
+<a class="anchorjs-link " href="#variable~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1366,7 +1802,12 @@ the service name.
 
     <dt class="property-required"
             title="Required">
-        <span>Test</span>
+        <span id="test~go">
+<span class="nx">
+Test
+<a class="anchorjs-link " href="#test~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1377,7 +1818,12 @@ to evaluate.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1388,7 +1834,12 @@ values are provided, the condition matches if at least one of them applies.
 
     <dt class="property-required"
             title="Required">
-        <span>Variable</span>
+        <span id="variable~go">
+<span class="nx">
+Variable
+<a class="anchorjs-link " href="#variable~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1408,7 +1859,12 @@ the service name.
 
     <dt class="property-required"
             title="Required">
-        <span>test</span>
+        <span id="test~nodejs">
+<span class="nx">
+test
+<a class="anchorjs-link " href="#test~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1419,7 +1875,12 @@ to evaluate.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1430,7 +1891,12 @@ values are provided, the condition matches if at least one of them applies.
 
     <dt class="property-required"
             title="Required">
-        <span>variable</span>
+        <span id="variable~nodejs">
+<span class="nx">
+variable
+<a class="anchorjs-link " href="#variable~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1450,7 +1916,12 @@ the service name.
 
     <dt class="property-required"
             title="Required">
-        <span>test</span>
+        <span id="test~python">
+<span class="nx">
+test
+<a class="anchorjs-link " href="#test~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1461,7 +1932,12 @@ to evaluate.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1472,7 +1948,12 @@ values are provided, the condition matches if at least one of them applies.
 
     <dt class="property-required"
             title="Required">
-        <span>variable</span>
+        <span id="variable~python">
+<span class="nx">
+variable
+<a class="anchorjs-link " href="#variable~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1510,7 +1991,12 @@ the service name.
 
     <dt class="property-required"
             title="Required">
-        <span>Identifiers</span>
+        <span id="identifiers~csharp">
+<span class="nx">
+Identifiers
+<a class="anchorjs-link " href="#identifiers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1520,7 +2006,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1536,7 +2027,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Identifiers</span>
+        <span id="identifiers~go">
+<span class="nx">
+Identifiers
+<a class="anchorjs-link " href="#identifiers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1546,7 +2042,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1562,7 +2063,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>identifiers</span>
+        <span id="identifiers~nodejs">
+<span class="nx">
+identifiers
+<a class="anchorjs-link " href="#identifiers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1572,7 +2078,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1588,7 +2099,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>identifiers</span>
+        <span id="identifiers~python">
+<span class="nx">
+identifiers
+<a class="anchorjs-link " href="#identifiers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1598,7 +2114,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1632,7 +2153,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Identifiers</span>
+        <span id="identifiers~csharp">
+<span class="nx">
+Identifiers
+<a class="anchorjs-link " href="#identifiers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1642,7 +2168,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1658,7 +2189,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Identifiers</span>
+        <span id="identifiers~go">
+<span class="nx">
+Identifiers
+<a class="anchorjs-link " href="#identifiers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1668,7 +2204,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1684,7 +2225,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>identifiers</span>
+        <span id="identifiers~nodejs">
+<span class="nx">
+identifiers
+<a class="anchorjs-link " href="#identifiers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1694,7 +2240,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1710,7 +2261,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>identifiers</span>
+        <span id="identifiers~python">
+<span class="nx">
+identifiers
+<a class="anchorjs-link " href="#identifiers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1720,7 +2276,12 @@ is "AWS", these are IAM user or role ARNs.  When `type` is "Service", these are 
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

@@ -81,19 +81,19 @@ const example = new aws.ec2.Ami("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Ami">Ami</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiArgs">AmiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Ami">Ami</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiArgs">AmiArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Ami</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>architecture=None<span class="p">, </span>description=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ena_support=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>image_location=None<span class="p">, </span>kernel_id=None<span class="p">, </span>name=None<span class="p">, </span>ramdisk_id=None<span class="p">, </span>root_device_name=None<span class="p">, </span>sriov_net_support=None<span class="p">, </span>tags=None<span class="p">, </span>virtualization_type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#Ami">Ami</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>architecture=None<span class="p">, </span>description=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ena_support=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>image_location=None<span class="p">, </span>kernel_id=None<span class="p">, </span>name=None<span class="p">, </span>ramdisk_id=None<span class="p">, </span>root_device_name=None<span class="p">, </span>sriov_net_support=None<span class="p">, </span>tags=None<span class="p">, </span>virtualization_type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAmi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiArgs">AmiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Ami">Ami</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Ami">NewAmi</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiArgs">AmiArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Ami">Ami</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Ami.html">Ami</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiArgs.html">AmiArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Ami.html">Ami</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiArgs.html">AmiArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -259,7 +259,12 @@ The Ami resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="architecture~csharp">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#architecture~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -268,7 +273,12 @@ The Ami resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -277,7 +287,12 @@ The Ami resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">List&lt;Ami<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -287,7 +302,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ena<wbr>Support</span>
+        <span id="enasupport~csharp">
+<span class="nx">
+Ena<wbr>Support
+<a class="anchorjs-link " href="#enasupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -296,7 +316,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">List&lt;Ami<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -306,7 +331,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Location</span>
+        <span id="imagelocation~csharp">
+<span class="nx">
+Image<wbr>Location
+<a class="anchorjs-link " href="#imagelocation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -316,7 +346,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="kernelid~csharp">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -326,7 +361,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -335,7 +375,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ramdisk<wbr>Id</span>
+        <span id="ramdiskid~csharp">
+<span class="nx">
+Ramdisk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -345,7 +390,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Name</span>
+        <span id="rootdevicename~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#rootdevicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -354,7 +404,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sriov<wbr>Net<wbr>Support</span>
+        <span id="sriovnetsupport~csharp">
+<span class="nx">
+Sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#sriovnetsupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -364,7 +419,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -373,7 +433,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="virtualizationtype~csharp">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -391,7 +456,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="architecture~go">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#architecture~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -400,7 +470,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -409,7 +484,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">[]Ami<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -419,7 +499,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ena<wbr>Support</span>
+        <span id="enasupport~go">
+<span class="nx">
+Ena<wbr>Support
+<a class="anchorjs-link " href="#enasupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -428,7 +513,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">[]Ami<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -438,7 +528,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Location</span>
+        <span id="imagelocation~go">
+<span class="nx">
+Image<wbr>Location
+<a class="anchorjs-link " href="#imagelocation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -448,7 +543,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="kernelid~go">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -458,7 +558,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -467,7 +572,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ramdisk<wbr>Id</span>
+        <span id="ramdiskid~go">
+<span class="nx">
+Ramdisk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -477,7 +587,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Name</span>
+        <span id="rootdevicename~go">
+<span class="nx">
+Root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#rootdevicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -486,7 +601,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sriov<wbr>Net<wbr>Support</span>
+        <span id="sriovnetsupport~go">
+<span class="nx">
+Sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#sriovnetsupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -496,7 +616,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -505,7 +630,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="virtualizationtype~go">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -523,7 +653,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="architecture~nodejs">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#architecture~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -532,7 +667,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -541,7 +681,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">Ami<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -551,7 +696,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ena<wbr>Support</span>
+        <span id="enasupport~nodejs">
+<span class="nx">
+ena<wbr>Support
+<a class="anchorjs-link " href="#enasupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -560,7 +710,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">Ami<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -570,7 +725,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>image<wbr>Location</span>
+        <span id="imagelocation~nodejs">
+<span class="nx">
+image<wbr>Location
+<a class="anchorjs-link " href="#imagelocation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -580,7 +740,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel<wbr>Id</span>
+        <span id="kernelid~nodejs">
+<span class="nx">
+kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -590,7 +755,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -599,7 +769,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ramdisk<wbr>Id</span>
+        <span id="ramdiskid~nodejs">
+<span class="nx">
+ramdisk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -609,7 +784,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Device<wbr>Name</span>
+        <span id="rootdevicename~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#rootdevicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -618,7 +798,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sriov<wbr>Net<wbr>Support</span>
+        <span id="sriovnetsupport~nodejs">
+<span class="nx">
+sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#sriovnetsupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -628,7 +813,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -637,7 +827,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization<wbr>Type</span>
+        <span id="virtualizationtype~nodejs">
+<span class="nx">
+virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -655,7 +850,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="architecture~python">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#architecture~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -664,7 +864,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -673,7 +878,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">List[Ami<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -683,7 +893,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ena_<wbr>support</span>
+        <span id="ena_support~python">
+<span class="nx">
+ena_<wbr>support
+<a class="anchorjs-link " href="#ena_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -692,7 +907,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">List[Ami<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -702,7 +922,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>image_<wbr>location</span>
+        <span id="image_location~python">
+<span class="nx">
+image_<wbr>location
+<a class="anchorjs-link " href="#image_location~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -712,7 +937,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel_<wbr>id</span>
+        <span id="kernel_id~python">
+<span class="nx">
+kernel_<wbr>id
+<a class="anchorjs-link " href="#kernel_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -722,7 +952,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -731,7 +966,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ramdisk_<wbr>id</span>
+        <span id="ramdisk_id~python">
+<span class="nx">
+ramdisk_<wbr>id
+<a class="anchorjs-link " href="#ramdisk_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -741,7 +981,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>device_<wbr>name</span>
+        <span id="root_device_name~python">
+<span class="nx">
+root_<wbr>device_<wbr>name
+<a class="anchorjs-link " href="#root_device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -750,7 +995,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sriov_<wbr>net_<wbr>support</span>
+        <span id="sriov_net_support~python">
+<span class="nx">
+sriov_<wbr>net_<wbr>support
+<a class="anchorjs-link " href="#sriov_net_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -760,7 +1010,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -769,7 +1024,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization_<wbr>type</span>
+        <span id="virtualization_type~python">
+<span class="nx">
+virtualization_<wbr>type
+<a class="anchorjs-link " href="#virtualization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -798,7 +1058,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -806,7 +1071,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Manage<wbr>Ebs<wbr>Snapshots</span>
+        <span id="manageebssnapshots~csharp">
+<span class="nx">
+Manage<wbr>Ebs<wbr>Snapshots
+<a class="anchorjs-link " href="#manageebssnapshots~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -814,7 +1084,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Snapshot<wbr>Id</span>
+        <span id="rootsnapshotid~csharp">
+<span class="nx">
+Root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#rootsnapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -830,7 +1105,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -838,7 +1118,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Manage<wbr>Ebs<wbr>Snapshots</span>
+        <span id="manageebssnapshots~go">
+<span class="nx">
+Manage<wbr>Ebs<wbr>Snapshots
+<a class="anchorjs-link " href="#manageebssnapshots~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -846,7 +1131,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Snapshot<wbr>Id</span>
+        <span id="rootsnapshotid~go">
+<span class="nx">
+Root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#rootsnapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -862,7 +1152,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -870,7 +1165,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>manage<wbr>Ebs<wbr>Snapshots</span>
+        <span id="manageebssnapshots~nodejs">
+<span class="nx">
+manage<wbr>Ebs<wbr>Snapshots
+<a class="anchorjs-link " href="#manageebssnapshots~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -878,7 +1178,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>root<wbr>Snapshot<wbr>Id</span>
+        <span id="rootsnapshotid~nodejs">
+<span class="nx">
+root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#rootsnapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -894,7 +1199,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -902,7 +1212,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>manage_<wbr>ebs_<wbr>snapshots</span>
+        <span id="manage_ebs_snapshots~python">
+<span class="nx">
+manage_<wbr>ebs_<wbr>snapshots
+<a class="anchorjs-link " href="#manage_ebs_snapshots~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -910,7 +1225,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>root_<wbr>snapshot_<wbr>id</span>
+        <span id="root_snapshot_id~python">
+<span class="nx">
+root_<wbr>snapshot_<wbr>id
+<a class="anchorjs-link " href="#root_snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -932,7 +1252,7 @@ Get an existing Ami resource's state with the given name, ID, and optional extra
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiState">AmiState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Ami">Ami</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#AmiState">AmiState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Ami">Ami</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -940,11 +1260,11 @@ Get an existing Ami resource's state with the given name, ID, and optional extra
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAmi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiState">AmiState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Ami">Ami</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAmi<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#AmiState">AmiState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Ami">Ami</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Ami.html">Ami</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiState.html">AmiState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Ami.html">Ami</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.AmiState.html">AmiState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1052,7 +1372,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="state_architecture~csharp">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#state_architecture~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1061,7 +1386,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1070,7 +1400,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">List&lt;Ami<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -1080,7 +1415,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ena<wbr>Support</span>
+        <span id="state_enasupport~csharp">
+<span class="nx">
+Ena<wbr>Support
+<a class="anchorjs-link " href="#state_enasupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1089,7 +1429,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">List&lt;Ami<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -1099,7 +1444,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Location</span>
+        <span id="state_imagelocation~csharp">
+<span class="nx">
+Image<wbr>Location
+<a class="anchorjs-link " href="#state_imagelocation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1109,7 +1459,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="state_kernelid~csharp">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#state_kernelid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1119,7 +1474,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manage<wbr>Ebs<wbr>Snapshots</span>
+        <span id="state_manageebssnapshots~csharp">
+<span class="nx">
+Manage<wbr>Ebs<wbr>Snapshots
+<a class="anchorjs-link " href="#state_manageebssnapshots~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1127,7 +1487,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1136,7 +1501,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ramdisk<wbr>Id</span>
+        <span id="state_ramdiskid~csharp">
+<span class="nx">
+Ramdisk<wbr>Id
+<a class="anchorjs-link " href="#state_ramdiskid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1146,7 +1516,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Name</span>
+        <span id="state_rootdevicename~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#state_rootdevicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1155,7 +1530,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Snapshot<wbr>Id</span>
+        <span id="state_rootsnapshotid~csharp">
+<span class="nx">
+Root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#state_rootsnapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1164,7 +1544,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sriov<wbr>Net<wbr>Support</span>
+        <span id="state_sriovnetsupport~csharp">
+<span class="nx">
+Sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#state_sriovnetsupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1174,7 +1559,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1183,7 +1573,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="state_virtualizationtype~csharp">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#state_virtualizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1201,7 +1596,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="state_architecture~go">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#state_architecture~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1210,7 +1610,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1219,7 +1624,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">[]Ami<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -1229,7 +1639,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ena<wbr>Support</span>
+        <span id="state_enasupport~go">
+<span class="nx">
+Ena<wbr>Support
+<a class="anchorjs-link " href="#state_enasupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1238,7 +1653,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">[]Ami<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -1248,7 +1668,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Location</span>
+        <span id="state_imagelocation~go">
+<span class="nx">
+Image<wbr>Location
+<a class="anchorjs-link " href="#state_imagelocation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1258,7 +1683,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="state_kernelid~go">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#state_kernelid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1268,7 +1698,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manage<wbr>Ebs<wbr>Snapshots</span>
+        <span id="state_manageebssnapshots~go">
+<span class="nx">
+Manage<wbr>Ebs<wbr>Snapshots
+<a class="anchorjs-link " href="#state_manageebssnapshots~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1276,7 +1711,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1285,7 +1725,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ramdisk<wbr>Id</span>
+        <span id="state_ramdiskid~go">
+<span class="nx">
+Ramdisk<wbr>Id
+<a class="anchorjs-link " href="#state_ramdiskid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1295,7 +1740,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Name</span>
+        <span id="state_rootdevicename~go">
+<span class="nx">
+Root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#state_rootdevicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1304,7 +1754,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Snapshot<wbr>Id</span>
+        <span id="state_rootsnapshotid~go">
+<span class="nx">
+Root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#state_rootsnapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1313,7 +1768,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sriov<wbr>Net<wbr>Support</span>
+        <span id="state_sriovnetsupport~go">
+<span class="nx">
+Sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#state_sriovnetsupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1323,7 +1783,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1332,7 +1797,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="state_virtualizationtype~go">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#state_virtualizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1350,7 +1820,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="state_architecture~nodejs">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#state_architecture~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1359,7 +1834,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1368,7 +1848,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">Ami<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1378,7 +1863,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ena<wbr>Support</span>
+        <span id="state_enasupport~nodejs">
+<span class="nx">
+ena<wbr>Support
+<a class="anchorjs-link " href="#state_enasupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1387,7 +1877,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">Ami<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1397,7 +1892,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>image<wbr>Location</span>
+        <span id="state_imagelocation~nodejs">
+<span class="nx">
+image<wbr>Location
+<a class="anchorjs-link " href="#state_imagelocation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1407,7 +1907,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel<wbr>Id</span>
+        <span id="state_kernelid~nodejs">
+<span class="nx">
+kernel<wbr>Id
+<a class="anchorjs-link " href="#state_kernelid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1417,7 +1922,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>manage<wbr>Ebs<wbr>Snapshots</span>
+        <span id="state_manageebssnapshots~nodejs">
+<span class="nx">
+manage<wbr>Ebs<wbr>Snapshots
+<a class="anchorjs-link " href="#state_manageebssnapshots~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1425,7 +1935,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1434,7 +1949,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ramdisk<wbr>Id</span>
+        <span id="state_ramdiskid~nodejs">
+<span class="nx">
+ramdisk<wbr>Id
+<a class="anchorjs-link " href="#state_ramdiskid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1444,7 +1964,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Device<wbr>Name</span>
+        <span id="state_rootdevicename~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#state_rootdevicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1453,7 +1978,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Snapshot<wbr>Id</span>
+        <span id="state_rootsnapshotid~nodejs">
+<span class="nx">
+root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#state_rootsnapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1462,7 +1992,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sriov<wbr>Net<wbr>Support</span>
+        <span id="state_sriovnetsupport~nodejs">
+<span class="nx">
+sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#state_sriovnetsupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1472,7 +2007,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1481,7 +2021,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization<wbr>Type</span>
+        <span id="state_virtualizationtype~nodejs">
+<span class="nx">
+virtualization<wbr>Type
+<a class="anchorjs-link " href="#state_virtualizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1499,7 +2044,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="state_architecture~python">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#state_architecture~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1508,7 +2058,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1517,7 +2072,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="state_ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiebsblockdevice">List[Ami<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1527,7 +2087,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ena_<wbr>support</span>
+        <span id="state_ena_support~python">
+<span class="nx">
+ena_<wbr>support
+<a class="anchorjs-link " href="#state_ena_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1536,7 +2101,12 @@ attached to created instances. The structure of this block is described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="state_ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#amiephemeralblockdevice">List[Ami<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1546,7 +2116,12 @@ should be attached to created instances. The structure of this block is describe
 
     <dt class="property-optional"
             title="Optional">
-        <span>image_<wbr>location</span>
+        <span id="state_image_location~python">
+<span class="nx">
+image_<wbr>location
+<a class="anchorjs-link " href="#state_image_location~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1556,7 +2131,12 @@ by the `ec2-upload-bundle` command in the EC2 command line tools.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel_<wbr>id</span>
+        <span id="state_kernel_id~python">
+<span class="nx">
+kernel_<wbr>id
+<a class="anchorjs-link " href="#state_kernel_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1566,7 +2146,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>manage_<wbr>ebs_<wbr>snapshots</span>
+        <span id="state_manage_ebs_snapshots~python">
+<span class="nx">
+manage_<wbr>ebs_<wbr>snapshots
+<a class="anchorjs-link " href="#state_manage_ebs_snapshots~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1574,7 +2159,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1583,7 +2173,12 @@ kernel in created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ramdisk_<wbr>id</span>
+        <span id="state_ramdisk_id~python">
+<span class="nx">
+ramdisk_<wbr>id
+<a class="anchorjs-link " href="#state_ramdisk_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1593,7 +2188,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>device_<wbr>name</span>
+        <span id="state_root_device_name~python">
+<span class="nx">
+root_<wbr>device_<wbr>name
+<a class="anchorjs-link " href="#state_root_device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1602,7 +2202,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>snapshot_<wbr>id</span>
+        <span id="state_root_snapshot_id~python">
+<span class="nx">
+root_<wbr>snapshot_<wbr>id
+<a class="anchorjs-link " href="#state_root_snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1611,7 +2216,12 @@ created instances.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sriov_<wbr>net_<wbr>support</span>
+        <span id="state_sriov_net_support~python">
+<span class="nx">
+sriov_<wbr>net_<wbr>support
+<a class="anchorjs-link " href="#state_sriov_net_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1621,7 +2231,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1630,7 +2245,12 @@ for created instances. No other value is supported at this time.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization_<wbr>type</span>
+        <span id="state_virtualization_type~python">
+<span class="nx">
+virtualization_<wbr>type
+<a class="anchorjs-link " href="#state_virtualization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1674,7 +2294,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1683,7 +2308,12 @@ changes the set of further arguments that are required, as described below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1693,7 +2323,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1702,7 +2337,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1712,7 +2352,12 @@ created volumes will support.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~csharp">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1723,7 +2368,12 @@ snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1734,7 +2384,12 @@ as the selected snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1751,7 +2406,12 @@ default), "io1" or "gp2".
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1760,7 +2420,12 @@ default), "io1" or "gp2".
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1770,7 +2435,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1779,7 +2449,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1789,7 +2464,12 @@ created volumes will support.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~go">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1800,7 +2480,12 @@ snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1811,7 +2496,12 @@ as the selected snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1828,7 +2518,12 @@ default), "io1" or "gp2".
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1837,7 +2532,12 @@ default), "io1" or "gp2".
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1847,7 +2547,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1856,7 +2561,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1866,7 +2576,12 @@ created volumes will support.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Id</span>
+        <span id="snapshotid~nodejs">
+<span class="nx">
+snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1877,7 +2592,12 @@ snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1888,7 +2608,12 @@ as the selected snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1905,7 +2630,12 @@ default), "io1" or "gp2".
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1914,7 +2644,12 @@ default), "io1" or "gp2".
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1924,7 +2659,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1933,7 +2673,12 @@ support each created instance will be deleted once that instance is terminated.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1943,7 +2688,12 @@ created volumes will support.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>id</span>
+        <span id="snapshot_id~python">
+<span class="nx">
+snapshot_<wbr>id
+<a class="anchorjs-link " href="#snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1954,7 +2704,12 @@ snapshot.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1964,7 +2719,12 @@ default), "io1" or "gp2".
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2000,7 +2760,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2009,7 +2774,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2026,7 +2796,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2035,7 +2810,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2052,7 +2832,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2061,7 +2846,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2078,7 +2868,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2087,7 +2882,12 @@ as the selected snapshot.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

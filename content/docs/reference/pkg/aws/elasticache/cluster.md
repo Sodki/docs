@@ -142,19 +142,19 @@ const replica = new aws.elasticache.Cluster("replica", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>availability_zone=None<span class="p">, </span>az_mode=None<span class="p">, </span>cluster_id=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>num_cache_nodes=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>preferred_availability_zones=None<span class="p">, </span>replication_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>security_group_names=None<span class="p">, </span>snapshot_arns=None<span class="p">, </span>snapshot_name=None<span class="p">, </span>snapshot_retention_limit=None<span class="p">, </span>snapshot_window=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/elasticache/#Cluster">Cluster</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>availability_zone=None<span class="p">, </span>az_mode=None<span class="p">, </span>cluster_id=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>num_cache_nodes=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>preferred_availability_zones=None<span class="p">, </span>replication_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>security_group_names=None<span class="p">, </span>snapshot_arns=None<span class="p">, </span>snapshot_name=None<span class="p">, </span>snapshot_retention_limit=None<span class="p">, </span>snapshot_window=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#Cluster">NewCluster</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ClusterArgs.html">ClusterArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ClusterArgs.html">ClusterArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -320,7 +320,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="applyimmediately~csharp">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#applyimmediately~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -332,7 +337,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -341,7 +351,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Az<wbr>Mode</span>
+        <span id="azmode~csharp">
+<span class="nx">
+Az<wbr>Mode
+<a class="anchorjs-link " href="#azmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -350,7 +365,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Id</span>
+        <span id="clusterid~csharp">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -360,7 +380,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="engine~csharp">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#engine~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -370,7 +395,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="engineversion~csharp">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#engineversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -381,7 +411,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="maintenancewindow~csharp">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -392,7 +427,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -403,7 +443,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~csharp">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -414,7 +459,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Num<wbr>Cache<wbr>Nodes</span>
+        <span id="numcachenodes~csharp">
+<span class="nx">
+Num<wbr>Cache<wbr>Nodes
+<a class="anchorjs-link " href="#numcachenodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -426,7 +476,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~csharp">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -436,7 +491,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -445,7 +505,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Availability<wbr>Zones</span>
+        <span id="preferredavailabilityzones~csharp">
+<span class="nx">
+Preferred<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#preferredavailabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -454,7 +519,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -463,7 +533,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -473,7 +548,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -483,7 +563,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="snapshotarns~csharp">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#snapshotarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -494,7 +579,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="snapshotname~csharp">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#snapshotname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -503,7 +593,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~csharp">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -516,7 +611,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="snapshotwindow~csharp">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -526,7 +626,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~csharp">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -536,7 +641,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -552,7 +662,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="applyimmediately~go">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#applyimmediately~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -564,7 +679,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -573,7 +693,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Az<wbr>Mode</span>
+        <span id="azmode~go">
+<span class="nx">
+Az<wbr>Mode
+<a class="anchorjs-link " href="#azmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -582,7 +707,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Id</span>
+        <span id="clusterid~go">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -592,7 +722,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="engine~go">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#engine~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -602,7 +737,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="engineversion~go">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#engineversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -613,7 +753,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="maintenancewindow~go">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -624,7 +769,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -635,7 +785,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~go">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -646,7 +801,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Num<wbr>Cache<wbr>Nodes</span>
+        <span id="numcachenodes~go">
+<span class="nx">
+Num<wbr>Cache<wbr>Nodes
+<a class="anchorjs-link " href="#numcachenodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -658,7 +818,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~go">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -668,7 +833,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -677,7 +847,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Availability<wbr>Zones</span>
+        <span id="preferredavailabilityzones~go">
+<span class="nx">
+Preferred<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#preferredavailabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -686,7 +861,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -695,7 +875,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -705,7 +890,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~go">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -715,7 +905,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="snapshotarns~go">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#snapshotarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -726,7 +921,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="snapshotname~go">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#snapshotname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -735,7 +935,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~go">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -748,7 +953,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="snapshotwindow~go">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -758,7 +968,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~go">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -768,7 +983,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -784,7 +1004,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply<wbr>Immediately</span>
+        <span id="applyimmediately~nodejs">
+<span class="nx">
+apply<wbr>Immediately
+<a class="anchorjs-link " href="#applyimmediately~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -796,7 +1021,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -805,7 +1035,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>az<wbr>Mode</span>
+        <span id="azmode~nodejs">
+<span class="nx">
+az<wbr>Mode
+<a class="anchorjs-link " href="#azmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -814,7 +1049,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Id</span>
+        <span id="clusterid~nodejs">
+<span class="nx">
+cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -824,7 +1064,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="engine~nodejs">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#engine~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -834,7 +1079,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine<wbr>Version</span>
+        <span id="engineversion~nodejs">
+<span class="nx">
+engine<wbr>Version
+<a class="anchorjs-link " href="#engineversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -845,7 +1095,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance<wbr>Window</span>
+        <span id="maintenancewindow~nodejs">
+<span class="nx">
+maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -856,7 +1111,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Type</span>
+        <span id="nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -867,7 +1127,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~nodejs">
+<span class="nx">
+notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -878,7 +1143,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>num<wbr>Cache<wbr>Nodes</span>
+        <span id="numcachenodes~nodejs">
+<span class="nx">
+num<wbr>Cache<wbr>Nodes
+<a class="anchorjs-link " href="#numcachenodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -890,7 +1160,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~nodejs">
+<span class="nx">
+parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -900,7 +1175,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -909,7 +1189,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred<wbr>Availability<wbr>Zones</span>
+        <span id="preferredavailabilityzones~nodejs">
+<span class="nx">
+preferred<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#preferredavailabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -918,7 +1203,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -927,7 +1217,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -937,7 +1232,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -947,7 +1247,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Arns</span>
+        <span id="snapshotarns~nodejs">
+<span class="nx">
+snapshot<wbr>Arns
+<a class="anchorjs-link " href="#snapshotarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -958,7 +1263,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Name</span>
+        <span id="snapshotname~nodejs">
+<span class="nx">
+snapshot<wbr>Name
+<a class="anchorjs-link " href="#snapshotname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -967,7 +1277,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~nodejs">
+<span class="nx">
+snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -980,7 +1295,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Window</span>
+        <span id="snapshotwindow~nodejs">
+<span class="nx">
+snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -990,7 +1310,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~nodejs">
+<span class="nx">
+subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1000,7 +1325,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1016,7 +1346,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply_<wbr>immediately</span>
+        <span id="apply_immediately~python">
+<span class="nx">
+apply_<wbr>immediately
+<a class="anchorjs-link " href="#apply_immediately~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1028,7 +1363,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1037,7 +1377,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>az_<wbr>mode</span>
+        <span id="az_mode~python">
+<span class="nx">
+az_<wbr>mode
+<a class="anchorjs-link " href="#az_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1046,7 +1391,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>id</span>
+        <span id="cluster_id~python">
+<span class="nx">
+cluster_<wbr>id
+<a class="anchorjs-link " href="#cluster_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1056,7 +1406,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="engine~python">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#engine~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1066,7 +1421,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine_<wbr>version</span>
+        <span id="engine_version~python">
+<span class="nx">
+engine_<wbr>version
+<a class="anchorjs-link " href="#engine_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1077,7 +1437,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance_<wbr>window</span>
+        <span id="maintenance_window~python">
+<span class="nx">
+maintenance_<wbr>window
+<a class="anchorjs-link " href="#maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1088,7 +1453,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>type</span>
+        <span id="node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1099,7 +1469,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification_<wbr>topic_<wbr>arn</span>
+        <span id="notification_topic_arn~python">
+<span class="nx">
+notification_<wbr>topic_<wbr>arn
+<a class="anchorjs-link " href="#notification_topic_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1110,7 +1485,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>num_<wbr>cache_<wbr>nodes</span>
+        <span id="num_cache_nodes~python">
+<span class="nx">
+num_<wbr>cache_<wbr>nodes
+<a class="anchorjs-link " href="#num_cache_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1122,7 +1502,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter_<wbr>group_<wbr>name</span>
+        <span id="parameter_group_name~python">
+<span class="nx">
+parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1132,7 +1517,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1141,7 +1531,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred_<wbr>availability_<wbr>zones</span>
+        <span id="preferred_availability_zones~python">
+<span class="nx">
+preferred_<wbr>availability_<wbr>zones
+<a class="anchorjs-link " href="#preferred_availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1150,7 +1545,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication_<wbr>group_<wbr>id</span>
+        <span id="replication_group_id~python">
+<span class="nx">
+replication_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#replication_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1159,7 +1559,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1169,7 +1574,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>names</span>
+        <span id="security_group_names~python">
+<span class="nx">
+security_<wbr>group_<wbr>names
+<a class="anchorjs-link " href="#security_group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1179,7 +1589,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>arns</span>
+        <span id="snapshot_arns~python">
+<span class="nx">
+snapshot_<wbr>arns
+<a class="anchorjs-link " href="#snapshot_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1190,7 +1605,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>name</span>
+        <span id="snapshot_name~python">
+<span class="nx">
+snapshot_<wbr>name
+<a class="anchorjs-link " href="#snapshot_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1199,7 +1619,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>retention_<wbr>limit</span>
+        <span id="snapshot_retention_limit~python">
+<span class="nx">
+snapshot_<wbr>retention_<wbr>limit
+<a class="anchorjs-link " href="#snapshot_retention_limit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1212,7 +1637,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>window</span>
+        <span id="snapshot_window~python">
+<span class="nx">
+snapshot_<wbr>window
+<a class="anchorjs-link " href="#snapshot_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1222,7 +1652,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>group_<wbr>name</span>
+        <span id="subnet_group_name~python">
+<span class="nx">
+subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1232,7 +1667,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1259,7 +1699,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1267,7 +1712,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Cache<wbr>Nodes</span>
+        <span id="cachenodes~csharp">
+<span class="nx">
+Cache<wbr>Nodes
+<a class="anchorjs-link " href="#cachenodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">List&lt;Cluster<wbr>Cache<wbr>Node&gt;</a></span>
     </dt>
@@ -1277,7 +1727,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Address</span>
+        <span id="clusteraddress~csharp">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#clusteraddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1286,7 +1741,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="configurationendpoint~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#configurationendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1295,7 +1755,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1310,7 +1775,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1318,7 +1788,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Cache<wbr>Nodes</span>
+        <span id="cachenodes~go">
+<span class="nx">
+Cache<wbr>Nodes
+<a class="anchorjs-link " href="#cachenodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">[]Cluster<wbr>Cache<wbr>Node</a></span>
     </dt>
@@ -1328,7 +1803,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Address</span>
+        <span id="clusteraddress~go">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#clusteraddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1337,7 +1817,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="configurationendpoint~go">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#configurationendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1346,7 +1831,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1361,7 +1851,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1369,7 +1864,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>cache<wbr>Nodes</span>
+        <span id="cachenodes~nodejs">
+<span class="nx">
+cache<wbr>Nodes
+<a class="anchorjs-link " href="#cachenodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">Cluster<wbr>Cache<wbr>Node[]</a></span>
     </dt>
@@ -1379,7 +1879,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>cluster<wbr>Address</span>
+        <span id="clusteraddress~nodejs">
+<span class="nx">
+cluster<wbr>Address
+<a class="anchorjs-link " href="#clusteraddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1388,7 +1893,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>configuration<wbr>Endpoint</span>
+        <span id="configurationendpoint~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#configurationendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1397,7 +1907,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1412,7 +1927,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1420,7 +1940,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>cache_<wbr>nodes</span>
+        <span id="cache_nodes~python">
+<span class="nx">
+cache_<wbr>nodes
+<a class="anchorjs-link " href="#cache_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">List[Cluster<wbr>Cache<wbr>Node]</a></span>
     </dt>
@@ -1430,7 +1955,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>cluster_<wbr>address</span>
+        <span id="cluster_address~python">
+<span class="nx">
+cluster_<wbr>address
+<a class="anchorjs-link " href="#cluster_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1439,7 +1969,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>configuration_<wbr>endpoint</span>
+        <span id="configuration_endpoint~python">
+<span class="nx">
+configuration_<wbr>endpoint
+<a class="anchorjs-link " href="#configuration_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1448,7 +1983,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1469,7 +2009,7 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#Cluster">Cluster</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#Cluster">Cluster</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1477,11 +2017,11 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ClusterState.html">ClusterState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1589,7 +2129,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="state_applyimmediately~csharp">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#state_applyimmediately~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1601,7 +2146,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1609,7 +2159,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1618,7 +2173,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Az<wbr>Mode</span>
+        <span id="state_azmode~csharp">
+<span class="nx">
+Az<wbr>Mode
+<a class="anchorjs-link " href="#state_azmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1627,7 +2187,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Nodes</span>
+        <span id="state_cachenodes~csharp">
+<span class="nx">
+Cache<wbr>Nodes
+<a class="anchorjs-link " href="#state_cachenodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">List&lt;Cluster<wbr>Cache<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
@@ -1637,7 +2202,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Address</span>
+        <span id="state_clusteraddress~csharp">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#state_clusteraddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1646,7 +2216,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Id</span>
+        <span id="state_clusterid~csharp">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#state_clusterid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1656,7 +2231,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="state_configurationendpoint~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#state_configurationendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1665,7 +2245,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="state_engine~csharp">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#state_engine~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1675,7 +2260,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="state_engineversion~csharp">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#state_engineversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1686,7 +2276,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~csharp">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1697,7 +2292,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1708,7 +2308,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~csharp">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1719,7 +2324,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Num<wbr>Cache<wbr>Nodes</span>
+        <span id="state_numcachenodes~csharp">
+<span class="nx">
+Num<wbr>Cache<wbr>Nodes
+<a class="anchorjs-link " href="#state_numcachenodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1731,7 +2341,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~csharp">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1741,7 +2356,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1750,7 +2370,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Availability<wbr>Zones</span>
+        <span id="state_preferredavailabilityzones~csharp">
+<span class="nx">
+Preferred<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_preferredavailabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1759,7 +2384,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="state_replicationgroupid~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_replicationgroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1768,7 +2398,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1778,7 +2413,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1788,7 +2428,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="state_snapshotarns~csharp">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#state_snapshotarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1799,7 +2444,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="state_snapshotname~csharp">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#state_snapshotname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1808,7 +2458,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="state_snapshotretentionlimit~csharp">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#state_snapshotretentionlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1821,7 +2476,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="state_snapshotwindow~csharp">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#state_snapshotwindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1831,7 +2491,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~csharp">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1841,7 +2506,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1857,7 +2527,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="state_applyimmediately~go">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#state_applyimmediately~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1869,7 +2544,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1877,7 +2557,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1886,7 +2571,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Az<wbr>Mode</span>
+        <span id="state_azmode~go">
+<span class="nx">
+Az<wbr>Mode
+<a class="anchorjs-link " href="#state_azmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1895,7 +2585,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Nodes</span>
+        <span id="state_cachenodes~go">
+<span class="nx">
+Cache<wbr>Nodes
+<a class="anchorjs-link " href="#state_cachenodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">[]Cluster<wbr>Cache<wbr>Node</a></span>
     </dt>
@@ -1905,7 +2600,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Address</span>
+        <span id="state_clusteraddress~go">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#state_clusteraddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1914,7 +2614,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Id</span>
+        <span id="state_clusterid~go">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#state_clusterid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1924,7 +2629,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="state_configurationendpoint~go">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#state_configurationendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1933,7 +2643,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="state_engine~go">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#state_engine~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1943,7 +2658,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="state_engineversion~go">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#state_engineversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1954,7 +2674,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~go">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1965,7 +2690,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1976,7 +2706,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~go">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1987,7 +2722,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Num<wbr>Cache<wbr>Nodes</span>
+        <span id="state_numcachenodes~go">
+<span class="nx">
+Num<wbr>Cache<wbr>Nodes
+<a class="anchorjs-link " href="#state_numcachenodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1999,7 +2739,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~go">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2009,7 +2754,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2018,7 +2768,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Availability<wbr>Zones</span>
+        <span id="state_preferredavailabilityzones~go">
+<span class="nx">
+Preferred<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_preferredavailabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2027,7 +2782,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="state_replicationgroupid~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_replicationgroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2036,7 +2796,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2046,7 +2811,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~go">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2056,7 +2826,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="state_snapshotarns~go">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#state_snapshotarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2067,7 +2842,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="state_snapshotname~go">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#state_snapshotname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2076,7 +2856,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="state_snapshotretentionlimit~go">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#state_snapshotretentionlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2089,7 +2874,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="state_snapshotwindow~go">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#state_snapshotwindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2099,7 +2889,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~go">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2109,7 +2904,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2125,7 +2925,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply<wbr>Immediately</span>
+        <span id="state_applyimmediately~nodejs">
+<span class="nx">
+apply<wbr>Immediately
+<a class="anchorjs-link " href="#state_applyimmediately~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2137,7 +2942,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2145,7 +2955,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="state_availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2154,7 +2969,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>az<wbr>Mode</span>
+        <span id="state_azmode~nodejs">
+<span class="nx">
+az<wbr>Mode
+<a class="anchorjs-link " href="#state_azmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2163,7 +2983,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Nodes</span>
+        <span id="state_cachenodes~nodejs">
+<span class="nx">
+cache<wbr>Nodes
+<a class="anchorjs-link " href="#state_cachenodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">Cluster<wbr>Cache<wbr>Node[]</a></span>
     </dt>
@@ -2173,7 +2998,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Address</span>
+        <span id="state_clusteraddress~nodejs">
+<span class="nx">
+cluster<wbr>Address
+<a class="anchorjs-link " href="#state_clusteraddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2182,7 +3012,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Id</span>
+        <span id="state_clusterid~nodejs">
+<span class="nx">
+cluster<wbr>Id
+<a class="anchorjs-link " href="#state_clusterid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2192,7 +3027,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Endpoint</span>
+        <span id="state_configurationendpoint~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#state_configurationendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2201,7 +3041,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="state_engine~nodejs">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#state_engine~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2211,7 +3056,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine<wbr>Version</span>
+        <span id="state_engineversion~nodejs">
+<span class="nx">
+engine<wbr>Version
+<a class="anchorjs-link " href="#state_engineversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2222,7 +3072,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~nodejs">
+<span class="nx">
+maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2233,7 +3088,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Type</span>
+        <span id="state_nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2244,7 +3104,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~nodejs">
+<span class="nx">
+notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2255,7 +3120,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>num<wbr>Cache<wbr>Nodes</span>
+        <span id="state_numcachenodes~nodejs">
+<span class="nx">
+num<wbr>Cache<wbr>Nodes
+<a class="anchorjs-link " href="#state_numcachenodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2267,7 +3137,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~nodejs">
+<span class="nx">
+parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2277,7 +3152,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2286,7 +3166,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred<wbr>Availability<wbr>Zones</span>
+        <span id="state_preferredavailabilityzones~nodejs">
+<span class="nx">
+preferred<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_preferredavailabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2295,7 +3180,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication<wbr>Group<wbr>Id</span>
+        <span id="state_replicationgroupid~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_replicationgroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2304,7 +3194,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2314,7 +3209,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2324,7 +3224,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Arns</span>
+        <span id="state_snapshotarns~nodejs">
+<span class="nx">
+snapshot<wbr>Arns
+<a class="anchorjs-link " href="#state_snapshotarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2335,7 +3240,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Name</span>
+        <span id="state_snapshotname~nodejs">
+<span class="nx">
+snapshot<wbr>Name
+<a class="anchorjs-link " href="#state_snapshotname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2344,7 +3254,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="state_snapshotretentionlimit~nodejs">
+<span class="nx">
+snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#state_snapshotretentionlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2357,7 +3272,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Window</span>
+        <span id="state_snapshotwindow~nodejs">
+<span class="nx">
+snapshot<wbr>Window
+<a class="anchorjs-link " href="#state_snapshotwindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2367,7 +3287,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~nodejs">
+<span class="nx">
+subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2377,7 +3302,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2393,7 +3323,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply_<wbr>immediately</span>
+        <span id="state_apply_immediately~python">
+<span class="nx">
+apply_<wbr>immediately
+<a class="anchorjs-link " href="#state_apply_immediately~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2405,7 +3340,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2413,7 +3353,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="state_availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#state_availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2422,7 +3367,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>az_<wbr>mode</span>
+        <span id="state_az_mode~python">
+<span class="nx">
+az_<wbr>mode
+<a class="anchorjs-link " href="#state_az_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2431,7 +3381,12 @@ are applied immediately, or during the next maintenance window. Default is
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>nodes</span>
+        <span id="state_cache_nodes~python">
+<span class="nx">
+cache_<wbr>nodes
+<a class="anchorjs-link " href="#state_cache_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustercachenode">List[Cluster<wbr>Cache<wbr>Node]</a></span>
     </dt>
@@ -2441,7 +3396,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>address</span>
+        <span id="state_cluster_address~python">
+<span class="nx">
+cluster_<wbr>address
+<a class="anchorjs-link " href="#state_cluster_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2450,7 +3410,12 @@ Referenceable e.g. as `${aws_elasticache_cluster.bar.cache_nodes.0.address}`
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>id</span>
+        <span id="state_cluster_id~python">
+<span class="nx">
+cluster_<wbr>id
+<a class="anchorjs-link " href="#state_cluster_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2460,7 +3425,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>endpoint</span>
+        <span id="state_configuration_endpoint~python">
+<span class="nx">
+configuration_<wbr>endpoint
+<a class="anchorjs-link " href="#state_configuration_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2469,7 +3439,12 @@ this name to lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="state_engine~python">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#state_engine~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2479,7 +3454,12 @@ Valid values for this parameter are `memcached` or `redis`
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine_<wbr>version</span>
+        <span id="state_engine_version~python">
+<span class="nx">
+engine_<wbr>version
+<a class="anchorjs-link " href="#state_engine_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2490,7 +3470,12 @@ in the AWS Documentation center for supported versions
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance_<wbr>window</span>
+        <span id="state_maintenance_window~python">
+<span class="nx">
+maintenance_<wbr>window
+<a class="anchorjs-link " href="#state_maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2501,7 +3486,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>type</span>
+        <span id="state_node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#state_node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2512,7 +3502,12 @@ supported node types
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification_<wbr>topic_<wbr>arn</span>
+        <span id="state_notification_topic_arn~python">
+<span class="nx">
+notification_<wbr>topic_<wbr>arn
+<a class="anchorjs-link " href="#state_notification_topic_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2523,7 +3518,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>num_<wbr>cache_<wbr>nodes</span>
+        <span id="state_num_cache_nodes~python">
+<span class="nx">
+num_<wbr>cache_<wbr>nodes
+<a class="anchorjs-link " href="#state_num_cache_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2535,7 +3535,12 @@ the highest numbered nodes will be removed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter_<wbr>group_<wbr>name</span>
+        <span id="state_parameter_group_name~python">
+<span class="nx">
+parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2545,7 +3550,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2554,7 +3564,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred_<wbr>availability_<wbr>zones</span>
+        <span id="state_preferred_availability_zones~python">
+<span class="nx">
+preferred_<wbr>availability_<wbr>zones
+<a class="anchorjs-link " href="#state_preferred_availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2563,7 +3578,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication_<wbr>group_<wbr>id</span>
+        <span id="state_replication_group_id~python">
+<span class="nx">
+replication_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#state_replication_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2572,7 +3592,12 @@ with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="state_security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2582,7 +3607,12 @@ with the cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>names</span>
+        <span id="state_security_group_names~python">
+<span class="nx">
+security_<wbr>group_<wbr>names
+<a class="anchorjs-link " href="#state_security_group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2592,7 +3622,12 @@ names to associate with this cache cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>arns</span>
+        <span id="state_snapshot_arns~python">
+<span class="nx">
+snapshot_<wbr>arns
+<a class="anchorjs-link " href="#state_snapshot_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2603,7 +3638,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>name</span>
+        <span id="state_snapshot_name~python">
+<span class="nx">
+snapshot_<wbr>name
+<a class="anchorjs-link " href="#state_snapshot_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2612,7 +3652,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>retention_<wbr>limit</span>
+        <span id="state_snapshot_retention_limit~python">
+<span class="nx">
+snapshot_<wbr>retention_<wbr>limit
+<a class="anchorjs-link " href="#state_snapshot_retention_limit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2625,7 +3670,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>window</span>
+        <span id="state_snapshot_window~python">
+<span class="nx">
+snapshot_<wbr>window
+<a class="anchorjs-link " href="#state_snapshot_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2635,7 +3685,12 @@ begin taking a daily snapshot of your cache cluster. Example: 05:00-09:00
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>group_<wbr>name</span>
+        <span id="state_subnet_group_name~python">
+<span class="nx">
+subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2645,7 +3700,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2687,7 +3747,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Address</span>
+        <span id="address~csharp">
+<span class="nx">
+Address
+<a class="anchorjs-link " href="#address~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2695,7 +3760,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2704,7 +3774,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2712,7 +3787,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2728,7 +3808,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Address</span>
+        <span id="address~go">
+<span class="nx">
+Address
+<a class="anchorjs-link " href="#address~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2736,7 +3821,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2745,7 +3835,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2753,7 +3848,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2769,7 +3869,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>address</span>
+        <span id="address~nodejs">
+<span class="nx">
+address
+<a class="anchorjs-link " href="#address~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2777,7 +3882,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2786,7 +3896,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2794,7 +3909,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2810,7 +3930,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>address</span>
+        <span id="address~python">
+<span class="nx">
+address
+<a class="anchorjs-link " href="#address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2818,7 +3943,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2827,7 +3957,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2835,7 +3970,12 @@ for the cache cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

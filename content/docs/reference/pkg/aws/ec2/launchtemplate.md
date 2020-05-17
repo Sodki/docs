@@ -22,19 +22,19 @@ Provides an EC2 launch template resource. Can be used to create instances or aut
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplate">LaunchTemplate</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplateArgs">LaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplate">LaunchTemplate</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplateArgs">LaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LaunchTemplate</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>block_device_mappings=None<span class="p">, </span>capacity_reservation_specification=None<span class="p">, </span>cpu_options=None<span class="p">, </span>credit_specification=None<span class="p">, </span>description=None<span class="p">, </span>disable_api_termination=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>elastic_gpu_specifications=None<span class="p">, </span>elastic_inference_accelerator=None<span class="p">, </span>hibernation_options=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_initiated_shutdown_behavior=None<span class="p">, </span>instance_market_options=None<span class="p">, </span>instance_type=None<span class="p">, </span>kernel_id=None<span class="p">, </span>key_name=None<span class="p">, </span>license_specifications=None<span class="p">, </span>metadata_options=None<span class="p">, </span>monitoring=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>placement=None<span class="p">, </span>ram_disk_id=None<span class="p">, </span>security_group_names=None<span class="p">, </span>tag_specifications=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#LaunchTemplate">LaunchTemplate</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>block_device_mappings=None<span class="p">, </span>capacity_reservation_specification=None<span class="p">, </span>cpu_options=None<span class="p">, </span>credit_specification=None<span class="p">, </span>description=None<span class="p">, </span>disable_api_termination=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>elastic_gpu_specifications=None<span class="p">, </span>elastic_inference_accelerator=None<span class="p">, </span>hibernation_options=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_initiated_shutdown_behavior=None<span class="p">, </span>instance_market_options=None<span class="p">, </span>instance_type=None<span class="p">, </span>kernel_id=None<span class="p">, </span>key_name=None<span class="p">, </span>license_specifications=None<span class="p">, </span>metadata_options=None<span class="p">, </span>monitoring=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>placement=None<span class="p">, </span>ram_disk_id=None<span class="p">, </span>security_group_names=None<span class="p">, </span>tag_specifications=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLaunchTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateArgs">LaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">LaunchTemplate</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">NewLaunchTemplate</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateArgs">LaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">LaunchTemplate</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplate.html">LaunchTemplate</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplateArgs.html">LaunchTemplateArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplate.html">LaunchTemplate</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplateArgs.html">LaunchTemplateArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -200,7 +200,12 @@ The LaunchTemplate resource accepts the following [input]({{< relref "/docs/intr
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Device<wbr>Mappings</span>
+        <span id="blockdevicemappings~csharp">
+<span class="nx">
+Block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#blockdevicemappings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List&lt;Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Args&gt;</a></span>
     </dt>
@@ -210,7 +215,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Specification</span>
+        <span id="capacityreservationspecification~csharp">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Specification
+<a class="anchorjs-link " href="#capacityreservationspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -219,7 +229,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Options</span>
+        <span id="cpuoptions~csharp">
+<span class="nx">
+Cpu<wbr>Options
+<a class="anchorjs-link " href="#cpuoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -228,7 +243,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="creditspecification~csharp">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#creditspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -238,7 +258,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -247,7 +272,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~csharp">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -257,7 +287,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -266,7 +301,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Gpu<wbr>Specifications</span>
+        <span id="elasticgpuspecifications~csharp">
+<span class="nx">
+Elastic<wbr>Gpu<wbr>Specifications
+<a class="anchorjs-link " href="#elasticgpuspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List&lt;Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -276,7 +316,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Inference<wbr>Accelerator</span>
+        <span id="elasticinferenceaccelerator~csharp">
+<span class="nx">
+Elastic<wbr>Inference<wbr>Accelerator
+<a class="anchorjs-link " href="#elasticinferenceaccelerator~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator<wbr>Args</a></span>
     </dt>
@@ -285,7 +330,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation<wbr>Options</span>
+        <span id="hibernationoptions~csharp">
+<span class="nx">
+Hibernation<wbr>Options
+<a class="anchorjs-link " href="#hibernationoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -294,7 +344,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile<wbr>Args</a></span>
     </dt>
@@ -304,7 +359,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Id</span>
+        <span id="imageid~csharp">
+<span class="nx">
+Image<wbr>Id
+<a class="anchorjs-link " href="#imageid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -313,7 +373,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="instanceinitiatedshutdownbehavior~csharp">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinitiatedshutdownbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -323,7 +388,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Market<wbr>Options</span>
+        <span id="instancemarketoptions~csharp">
+<span class="nx">
+Instance<wbr>Market<wbr>Options
+<a class="anchorjs-link " href="#instancemarketoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -333,7 +403,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -342,7 +417,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="kernelid~csharp">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -351,7 +431,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~csharp">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -360,7 +445,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>License<wbr>Specifications</span>
+        <span id="licensespecifications~csharp">
+<span class="nx">
+License<wbr>Specifications
+<a class="anchorjs-link " href="#licensespecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List&lt;Launch<wbr>Template<wbr>License<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -369,7 +459,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="metadataoptions~csharp">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -378,7 +473,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="monitoring~csharp">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring<wbr>Args</a></span>
     </dt>
@@ -387,7 +487,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -396,7 +501,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name<wbr>Prefix</span>
+        <span id="nameprefix~csharp">
+<span class="nx">
+Name<wbr>Prefix
+<a class="anchorjs-link " href="#nameprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -405,7 +515,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="networkinterfaces~csharp">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#networkinterfaces~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List&lt;Launch<wbr>Template<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
@@ -415,7 +530,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement</span>
+        <span id="placement~csharp">
+<span class="nx">
+Placement
+<a class="anchorjs-link " href="#placement~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement<wbr>Args</a></span>
     </dt>
@@ -424,7 +544,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ram<wbr>Disk<wbr>Id</span>
+        <span id="ramdiskid~csharp">
+<span class="nx">
+Ram<wbr>Disk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -433,7 +558,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -443,7 +573,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Specifications</span>
+        <span id="tagspecifications~csharp">
+<span class="nx">
+Tag<wbr>Specifications
+<a class="anchorjs-link " href="#tagspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List&lt;Launch<wbr>Template<wbr>Tag<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -452,7 +587,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -461,7 +601,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="userdata~csharp">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -470,7 +615,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -486,7 +636,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Device<wbr>Mappings</span>
+        <span id="blockdevicemappings~go">
+<span class="nx">
+Block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#blockdevicemappings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">[]Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
@@ -496,7 +651,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Specification</span>
+        <span id="capacityreservationspecification~go">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Specification
+<a class="anchorjs-link " href="#capacityreservationspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
@@ -505,7 +665,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Options</span>
+        <span id="cpuoptions~go">
+<span class="nx">
+Cpu<wbr>Options
+<a class="anchorjs-link " href="#cpuoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
@@ -514,7 +679,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="creditspecification~go">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#creditspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -524,7 +694,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -533,7 +708,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~go">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -543,7 +723,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -552,7 +737,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Gpu<wbr>Specifications</span>
+        <span id="elasticgpuspecifications~go">
+<span class="nx">
+Elastic<wbr>Gpu<wbr>Specifications
+<a class="anchorjs-link " href="#elasticgpuspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">[]Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</a></span>
     </dt>
@@ -562,7 +752,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Inference<wbr>Accelerator</span>
+        <span id="elasticinferenceaccelerator~go">
+<span class="nx">
+Elastic<wbr>Inference<wbr>Accelerator
+<a class="anchorjs-link " href="#elasticinferenceaccelerator~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
@@ -571,7 +766,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation<wbr>Options</span>
+        <span id="hibernationoptions~go">
+<span class="nx">
+Hibernation<wbr>Options
+<a class="anchorjs-link " href="#hibernationoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
@@ -580,7 +780,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
@@ -590,7 +795,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Id</span>
+        <span id="imageid~go">
+<span class="nx">
+Image<wbr>Id
+<a class="anchorjs-link " href="#imageid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -599,7 +809,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="instanceinitiatedshutdownbehavior~go">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinitiatedshutdownbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -609,7 +824,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Market<wbr>Options</span>
+        <span id="instancemarketoptions~go">
+<span class="nx">
+Instance<wbr>Market<wbr>Options
+<a class="anchorjs-link " href="#instancemarketoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
@@ -619,7 +839,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -628,7 +853,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="kernelid~go">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -637,7 +867,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~go">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -646,7 +881,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>License<wbr>Specifications</span>
+        <span id="licensespecifications~go">
+<span class="nx">
+License<wbr>Specifications
+<a class="anchorjs-link " href="#licensespecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">[]Launch<wbr>Template<wbr>License<wbr>Specification</a></span>
     </dt>
@@ -655,7 +895,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="metadataoptions~go">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -664,7 +909,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="monitoring~go">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
@@ -673,7 +923,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -682,7 +937,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name<wbr>Prefix</span>
+        <span id="nameprefix~go">
+<span class="nx">
+Name<wbr>Prefix
+<a class="anchorjs-link " href="#nameprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -691,7 +951,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="networkinterfaces~go">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#networkinterfaces~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">[]Launch<wbr>Template<wbr>Network<wbr>Interface</a></span>
     </dt>
@@ -701,7 +966,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement</span>
+        <span id="placement~go">
+<span class="nx">
+Placement
+<a class="anchorjs-link " href="#placement~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
@@ -710,7 +980,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ram<wbr>Disk<wbr>Id</span>
+        <span id="ramdiskid~go">
+<span class="nx">
+Ram<wbr>Disk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -719,7 +994,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~go">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -729,7 +1009,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Specifications</span>
+        <span id="tagspecifications~go">
+<span class="nx">
+Tag<wbr>Specifications
+<a class="anchorjs-link " href="#tagspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">[]Launch<wbr>Template<wbr>Tag<wbr>Specification</a></span>
     </dt>
@@ -738,7 +1023,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -747,7 +1037,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="userdata~go">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -756,7 +1051,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -772,7 +1072,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Device<wbr>Mappings</span>
+        <span id="blockdevicemappings~nodejs">
+<span class="nx">
+block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#blockdevicemappings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
@@ -782,7 +1087,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Specification</span>
+        <span id="capacityreservationspecification~nodejs">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Specification
+<a class="anchorjs-link " href="#capacityreservationspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
@@ -791,7 +1101,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Options</span>
+        <span id="cpuoptions~nodejs">
+<span class="nx">
+cpu<wbr>Options
+<a class="anchorjs-link " href="#cpuoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
@@ -800,7 +1115,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit<wbr>Specification</span>
+        <span id="creditspecification~nodejs">
+<span class="nx">
+credit<wbr>Specification
+<a class="anchorjs-link " href="#creditspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -810,7 +1130,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -819,7 +1144,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~nodejs">
+<span class="nx">
+disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -829,7 +1159,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -838,7 +1173,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Gpu<wbr>Specifications</span>
+        <span id="elasticgpuspecifications~nodejs">
+<span class="nx">
+elastic<wbr>Gpu<wbr>Specifications
+<a class="anchorjs-link " href="#elasticgpuspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification[]</a></span>
     </dt>
@@ -848,7 +1188,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Inference<wbr>Accelerator</span>
+        <span id="elasticinferenceaccelerator~nodejs">
+<span class="nx">
+elastic<wbr>Inference<wbr>Accelerator
+<a class="anchorjs-link " href="#elasticinferenceaccelerator~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
@@ -857,7 +1202,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation<wbr>Options</span>
+        <span id="hibernationoptions~nodejs">
+<span class="nx">
+hibernation<wbr>Options
+<a class="anchorjs-link " href="#hibernationoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
@@ -866,7 +1216,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
@@ -876,7 +1231,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>image<wbr>Id</span>
+        <span id="imageid~nodejs">
+<span class="nx">
+image<wbr>Id
+<a class="anchorjs-link " href="#imageid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -885,7 +1245,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="instanceinitiatedshutdownbehavior~nodejs">
+<span class="nx">
+instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinitiatedshutdownbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -895,7 +1260,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Market<wbr>Options</span>
+        <span id="instancemarketoptions~nodejs">
+<span class="nx">
+instance<wbr>Market<wbr>Options
+<a class="anchorjs-link " href="#instancemarketoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
@@ -905,7 +1275,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -914,7 +1289,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel<wbr>Id</span>
+        <span id="kernelid~nodejs">
+<span class="nx">
+kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -923,7 +1303,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>key<wbr>Name</span>
+        <span id="keyname~nodejs">
+<span class="nx">
+key<wbr>Name
+<a class="anchorjs-link " href="#keyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -932,7 +1317,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>license<wbr>Specifications</span>
+        <span id="licensespecifications~nodejs">
+<span class="nx">
+license<wbr>Specifications
+<a class="anchorjs-link " href="#licensespecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">Launch<wbr>Template<wbr>License<wbr>Specification[]</a></span>
     </dt>
@@ -941,7 +1331,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata<wbr>Options</span>
+        <span id="metadataoptions~nodejs">
+<span class="nx">
+metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -950,7 +1345,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="monitoring~nodejs">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
@@ -959,7 +1359,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -968,7 +1373,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name<wbr>Prefix</span>
+        <span id="nameprefix~nodejs">
+<span class="nx">
+name<wbr>Prefix
+<a class="anchorjs-link " href="#nameprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -977,7 +1387,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interfaces</span>
+        <span id="networkinterfaces~nodejs">
+<span class="nx">
+network<wbr>Interfaces
+<a class="anchorjs-link " href="#networkinterfaces~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">Launch<wbr>Template<wbr>Network<wbr>Interface[]</a></span>
     </dt>
@@ -987,7 +1402,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement</span>
+        <span id="placement~nodejs">
+<span class="nx">
+placement
+<a class="anchorjs-link " href="#placement~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
@@ -996,7 +1416,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ram<wbr>Disk<wbr>Id</span>
+        <span id="ramdiskid~nodejs">
+<span class="nx">
+ram<wbr>Disk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1005,7 +1430,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1015,7 +1445,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag<wbr>Specifications</span>
+        <span id="tagspecifications~nodejs">
+<span class="nx">
+tag<wbr>Specifications
+<a class="anchorjs-link " href="#tagspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">Launch<wbr>Template<wbr>Tag<wbr>Specification[]</a></span>
     </dt>
@@ -1024,7 +1459,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1033,7 +1473,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data</span>
+        <span id="userdata~nodejs">
+<span class="nx">
+user<wbr>Data
+<a class="anchorjs-link " href="#userdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1042,7 +1487,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1058,7 +1508,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block_<wbr>device_<wbr>mappings</span>
+        <span id="block_device_mappings~python">
+<span class="nx">
+block_<wbr>device_<wbr>mappings
+<a class="anchorjs-link " href="#block_device_mappings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List[Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
@@ -1068,7 +1523,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity_<wbr>reservation_<wbr>specification</span>
+        <span id="capacity_reservation_specification~python">
+<span class="nx">
+capacity_<wbr>reservation_<wbr>specification
+<a class="anchorjs-link " href="#capacity_reservation_specification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Dict[Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification]</a></span>
     </dt>
@@ -1077,7 +1537,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu_<wbr>options</span>
+        <span id="cpu_options~python">
+<span class="nx">
+cpu_<wbr>options
+<a class="anchorjs-link " href="#cpu_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Dict[Launch<wbr>Template<wbr>Cpu<wbr>Options]</a></span>
     </dt>
@@ -1086,7 +1551,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit_<wbr>specification</span>
+        <span id="credit_specification~python">
+<span class="nx">
+credit_<wbr>specification
+<a class="anchorjs-link " href="#credit_specification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Dict[Launch<wbr>Template<wbr>Credit<wbr>Specification]</a></span>
     </dt>
@@ -1096,7 +1566,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1105,7 +1580,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable_<wbr>api_<wbr>termination</span>
+        <span id="disable_api_termination~python">
+<span class="nx">
+disable_<wbr>api_<wbr>termination
+<a class="anchorjs-link " href="#disable_api_termination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1115,7 +1595,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1124,7 +1609,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>gpu_<wbr>specifications</span>
+        <span id="elastic_gpu_specifications~python">
+<span class="nx">
+elastic_<wbr>gpu_<wbr>specifications
+<a class="anchorjs-link " href="#elastic_gpu_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List[Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification]</a></span>
     </dt>
@@ -1134,7 +1624,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>inference_<wbr>accelerator</span>
+        <span id="elastic_inference_accelerator~python">
+<span class="nx">
+elastic_<wbr>inference_<wbr>accelerator
+<a class="anchorjs-link " href="#elastic_inference_accelerator~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Dict[Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
@@ -1143,7 +1638,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation_<wbr>options</span>
+        <span id="hibernation_options~python">
+<span class="nx">
+hibernation_<wbr>options
+<a class="anchorjs-link " href="#hibernation_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Dict[Launch<wbr>Template<wbr>Hibernation<wbr>Options]</a></span>
     </dt>
@@ -1152,7 +1652,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>instance_<wbr>profile</span>
+        <span id="iam_instance_profile~python">
+<span class="nx">
+iam_<wbr>instance_<wbr>profile
+<a class="anchorjs-link " href="#iam_instance_profile~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Dict[Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile]</a></span>
     </dt>
@@ -1162,7 +1667,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>image_<wbr>id</span>
+        <span id="image_id~python">
+<span class="nx">
+image_<wbr>id
+<a class="anchorjs-link " href="#image_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1171,7 +1681,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior</span>
+        <span id="instance_initiated_shutdown_behavior~python">
+<span class="nx">
+instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior
+<a class="anchorjs-link " href="#instance_initiated_shutdown_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1181,7 +1696,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>market_<wbr>options</span>
+        <span id="instance_market_options~python">
+<span class="nx">
+instance_<wbr>market_<wbr>options
+<a class="anchorjs-link " href="#instance_market_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Dict[Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options]</a></span>
     </dt>
@@ -1191,7 +1711,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1200,7 +1725,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel_<wbr>id</span>
+        <span id="kernel_id~python">
+<span class="nx">
+kernel_<wbr>id
+<a class="anchorjs-link " href="#kernel_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1209,7 +1739,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>key_<wbr>name</span>
+        <span id="key_name~python">
+<span class="nx">
+key_<wbr>name
+<a class="anchorjs-link " href="#key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1218,7 +1753,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>license_<wbr>specifications</span>
+        <span id="license_specifications~python">
+<span class="nx">
+license_<wbr>specifications
+<a class="anchorjs-link " href="#license_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List[Launch<wbr>Template<wbr>License<wbr>Specification]</a></span>
     </dt>
@@ -1227,7 +1767,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata_<wbr>options</span>
+        <span id="metadata_options~python">
+<span class="nx">
+metadata_<wbr>options
+<a class="anchorjs-link " href="#metadata_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Dict[Launch<wbr>Template<wbr>Metadata<wbr>Options]</a></span>
     </dt>
@@ -1236,7 +1781,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="monitoring~python">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Dict[Launch<wbr>Template<wbr>Monitoring]</a></span>
     </dt>
@@ -1245,7 +1795,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1254,7 +1809,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name_<wbr>prefix</span>
+        <span id="name_prefix~python">
+<span class="nx">
+name_<wbr>prefix
+<a class="anchorjs-link " href="#name_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1263,7 +1823,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interfaces</span>
+        <span id="network_interfaces~python">
+<span class="nx">
+network_<wbr>interfaces
+<a class="anchorjs-link " href="#network_interfaces~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List[Launch<wbr>Template<wbr>Network<wbr>Interface]</a></span>
     </dt>
@@ -1273,7 +1838,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement</span>
+        <span id="placement~python">
+<span class="nx">
+placement
+<a class="anchorjs-link " href="#placement~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Dict[Launch<wbr>Template<wbr>Placement]</a></span>
     </dt>
@@ -1282,7 +1852,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ram_<wbr>disk_<wbr>id</span>
+        <span id="ram_disk_id~python">
+<span class="nx">
+ram_<wbr>disk_<wbr>id
+<a class="anchorjs-link " href="#ram_disk_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1291,7 +1866,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>names</span>
+        <span id="security_group_names~python">
+<span class="nx">
+security_<wbr>group_<wbr>names
+<a class="anchorjs-link " href="#security_group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1301,7 +1881,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag_<wbr>specifications</span>
+        <span id="tag_specifications~python">
+<span class="nx">
+tag_<wbr>specifications
+<a class="anchorjs-link " href="#tag_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List[Launch<wbr>Template<wbr>Tag<wbr>Specification]</a></span>
     </dt>
@@ -1310,7 +1895,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1319,7 +1909,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data</span>
+        <span id="user_data~python">
+<span class="nx">
+user_<wbr>data
+<a class="anchorjs-link " href="#user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1328,7 +1923,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1355,7 +1955,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1364,7 +1969,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Version</span>
+        <span id="defaultversion~csharp">
+<span class="nx">
+Default<wbr>Version
+<a class="anchorjs-link " href="#defaultversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1373,7 +1983,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1381,7 +1996,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Latest<wbr>Version</span>
+        <span id="latestversion~csharp">
+<span class="nx">
+Latest<wbr>Version
+<a class="anchorjs-link " href="#latestversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1397,7 +2017,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1406,7 +2031,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Version</span>
+        <span id="defaultversion~go">
+<span class="nx">
+Default<wbr>Version
+<a class="anchorjs-link " href="#defaultversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1415,7 +2045,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1423,7 +2058,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Latest<wbr>Version</span>
+        <span id="latestversion~go">
+<span class="nx">
+Latest<wbr>Version
+<a class="anchorjs-link " href="#latestversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1439,7 +2079,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1448,7 +2093,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>default<wbr>Version</span>
+        <span id="defaultversion~nodejs">
+<span class="nx">
+default<wbr>Version
+<a class="anchorjs-link " href="#defaultversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1457,7 +2107,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1465,7 +2120,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>latest<wbr>Version</span>
+        <span id="latestversion~nodejs">
+<span class="nx">
+latest<wbr>Version
+<a class="anchorjs-link " href="#latestversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1481,7 +2141,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1490,7 +2155,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>default_<wbr>version</span>
+        <span id="default_version~python">
+<span class="nx">
+default_<wbr>version
+<a class="anchorjs-link " href="#default_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1499,7 +2169,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1507,7 +2182,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>latest_<wbr>version</span>
+        <span id="latest_version~python">
+<span class="nx">
+latest_<wbr>version
+<a class="anchorjs-link " href="#latest_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1529,7 +2209,7 @@ Get an existing LaunchTemplate resource's state with the given name, ID, and opt
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplateState">LaunchTemplateState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplate">LaunchTemplate</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplateState">LaunchTemplateState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplate">LaunchTemplate</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1537,11 +2217,11 @@ Get an existing LaunchTemplate resource's state with the given name, ID, and opt
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLaunchTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateState">LaunchTemplateState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">LaunchTemplate</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLaunchTemplate<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateState">LaunchTemplateState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">LaunchTemplate</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplate.html">LaunchTemplate</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplateState.html">LaunchTemplateState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplate.html">LaunchTemplate</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplateState.html">LaunchTemplateState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1649,7 +2329,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1658,7 +2343,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Device<wbr>Mappings</span>
+        <span id="state_blockdevicemappings~csharp">
+<span class="nx">
+Block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#state_blockdevicemappings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List&lt;Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Args&gt;</a></span>
     </dt>
@@ -1668,7 +2358,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Specification</span>
+        <span id="state_capacityreservationspecification~csharp">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Specification
+<a class="anchorjs-link " href="#state_capacityreservationspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -1677,7 +2372,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Options</span>
+        <span id="state_cpuoptions~csharp">
+<span class="nx">
+Cpu<wbr>Options
+<a class="anchorjs-link " href="#state_cpuoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1686,7 +2386,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="state_creditspecification~csharp">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#state_creditspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -1696,7 +2401,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Version</span>
+        <span id="state_defaultversion~csharp">
+<span class="nx">
+Default<wbr>Version
+<a class="anchorjs-link " href="#state_defaultversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1705,7 +2415,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1714,7 +2429,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="state_disableapitermination~csharp">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#state_disableapitermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1724,7 +2444,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1733,7 +2458,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Gpu<wbr>Specifications</span>
+        <span id="state_elasticgpuspecifications~csharp">
+<span class="nx">
+Elastic<wbr>Gpu<wbr>Specifications
+<a class="anchorjs-link " href="#state_elasticgpuspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List&lt;Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -1743,7 +2473,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Inference<wbr>Accelerator</span>
+        <span id="state_elasticinferenceaccelerator~csharp">
+<span class="nx">
+Elastic<wbr>Inference<wbr>Accelerator
+<a class="anchorjs-link " href="#state_elasticinferenceaccelerator~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator<wbr>Args</a></span>
     </dt>
@@ -1752,7 +2487,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation<wbr>Options</span>
+        <span id="state_hibernationoptions~csharp">
+<span class="nx">
+Hibernation<wbr>Options
+<a class="anchorjs-link " href="#state_hibernationoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1761,7 +2501,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="state_iaminstanceprofile~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#state_iaminstanceprofile~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile<wbr>Args</a></span>
     </dt>
@@ -1771,7 +2516,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Id</span>
+        <span id="state_imageid~csharp">
+<span class="nx">
+Image<wbr>Id
+<a class="anchorjs-link " href="#state_imageid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1780,7 +2530,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="state_instanceinitiatedshutdownbehavior~csharp">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#state_instanceinitiatedshutdownbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1790,7 +2545,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Market<wbr>Options</span>
+        <span id="state_instancemarketoptions~csharp">
+<span class="nx">
+Instance<wbr>Market<wbr>Options
+<a class="anchorjs-link " href="#state_instancemarketoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1800,7 +2560,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="state_instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1809,7 +2574,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="state_kernelid~csharp">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#state_kernelid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1818,7 +2588,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="state_keyname~csharp">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#state_keyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1827,7 +2602,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Latest<wbr>Version</span>
+        <span id="state_latestversion~csharp">
+<span class="nx">
+Latest<wbr>Version
+<a class="anchorjs-link " href="#state_latestversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1836,7 +2616,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>License<wbr>Specifications</span>
+        <span id="state_licensespecifications~csharp">
+<span class="nx">
+License<wbr>Specifications
+<a class="anchorjs-link " href="#state_licensespecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List&lt;Launch<wbr>Template<wbr>License<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -1845,7 +2630,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="state_metadataoptions~csharp">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#state_metadataoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1854,7 +2644,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="state_monitoring~csharp">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#state_monitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring<wbr>Args</a></span>
     </dt>
@@ -1863,7 +2658,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1872,7 +2672,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name<wbr>Prefix</span>
+        <span id="state_nameprefix~csharp">
+<span class="nx">
+Name<wbr>Prefix
+<a class="anchorjs-link " href="#state_nameprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1881,7 +2686,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="state_networkinterfaces~csharp">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#state_networkinterfaces~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List&lt;Launch<wbr>Template<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
@@ -1891,7 +2701,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement</span>
+        <span id="state_placement~csharp">
+<span class="nx">
+Placement
+<a class="anchorjs-link " href="#state_placement~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement<wbr>Args</a></span>
     </dt>
@@ -1900,7 +2715,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ram<wbr>Disk<wbr>Id</span>
+        <span id="state_ramdiskid~csharp">
+<span class="nx">
+Ram<wbr>Disk<wbr>Id
+<a class="anchorjs-link " href="#state_ramdiskid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1909,7 +2729,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1919,7 +2744,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Specifications</span>
+        <span id="state_tagspecifications~csharp">
+<span class="nx">
+Tag<wbr>Specifications
+<a class="anchorjs-link " href="#state_tagspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List&lt;Launch<wbr>Template<wbr>Tag<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
@@ -1928,7 +2758,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1937,7 +2772,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="state_userdata~csharp">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#state_userdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1946,7 +2786,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1962,7 +2807,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1971,7 +2821,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Device<wbr>Mappings</span>
+        <span id="state_blockdevicemappings~go">
+<span class="nx">
+Block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#state_blockdevicemappings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">[]Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
@@ -1981,7 +2836,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Specification</span>
+        <span id="state_capacityreservationspecification~go">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Specification
+<a class="anchorjs-link " href="#state_capacityreservationspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
@@ -1990,7 +2850,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Options</span>
+        <span id="state_cpuoptions~go">
+<span class="nx">
+Cpu<wbr>Options
+<a class="anchorjs-link " href="#state_cpuoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
@@ -1999,7 +2864,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="state_creditspecification~go">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#state_creditspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -2009,7 +2879,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Version</span>
+        <span id="state_defaultversion~go">
+<span class="nx">
+Default<wbr>Version
+<a class="anchorjs-link " href="#state_defaultversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2018,7 +2893,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2027,7 +2907,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="state_disableapitermination~go">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#state_disableapitermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2037,7 +2922,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2046,7 +2936,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Gpu<wbr>Specifications</span>
+        <span id="state_elasticgpuspecifications~go">
+<span class="nx">
+Elastic<wbr>Gpu<wbr>Specifications
+<a class="anchorjs-link " href="#state_elasticgpuspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">[]Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</a></span>
     </dt>
@@ -2056,7 +2951,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Inference<wbr>Accelerator</span>
+        <span id="state_elasticinferenceaccelerator~go">
+<span class="nx">
+Elastic<wbr>Inference<wbr>Accelerator
+<a class="anchorjs-link " href="#state_elasticinferenceaccelerator~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
@@ -2065,7 +2965,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation<wbr>Options</span>
+        <span id="state_hibernationoptions~go">
+<span class="nx">
+Hibernation<wbr>Options
+<a class="anchorjs-link " href="#state_hibernationoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
@@ -2074,7 +2979,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="state_iaminstanceprofile~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#state_iaminstanceprofile~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
@@ -2084,7 +2994,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Id</span>
+        <span id="state_imageid~go">
+<span class="nx">
+Image<wbr>Id
+<a class="anchorjs-link " href="#state_imageid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2093,7 +3008,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="state_instanceinitiatedshutdownbehavior~go">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#state_instanceinitiatedshutdownbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2103,7 +3023,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Market<wbr>Options</span>
+        <span id="state_instancemarketoptions~go">
+<span class="nx">
+Instance<wbr>Market<wbr>Options
+<a class="anchorjs-link " href="#state_instancemarketoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
@@ -2113,7 +3038,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="state_instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2122,7 +3052,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kernel<wbr>Id</span>
+        <span id="state_kernelid~go">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#state_kernelid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2131,7 +3066,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="state_keyname~go">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#state_keyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2140,7 +3080,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Latest<wbr>Version</span>
+        <span id="state_latestversion~go">
+<span class="nx">
+Latest<wbr>Version
+<a class="anchorjs-link " href="#state_latestversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2149,7 +3094,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>License<wbr>Specifications</span>
+        <span id="state_licensespecifications~go">
+<span class="nx">
+License<wbr>Specifications
+<a class="anchorjs-link " href="#state_licensespecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">[]Launch<wbr>Template<wbr>License<wbr>Specification</a></span>
     </dt>
@@ -2158,7 +3108,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="state_metadataoptions~go">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#state_metadataoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -2167,7 +3122,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="state_monitoring~go">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#state_monitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
@@ -2176,7 +3136,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2185,7 +3150,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name<wbr>Prefix</span>
+        <span id="state_nameprefix~go">
+<span class="nx">
+Name<wbr>Prefix
+<a class="anchorjs-link " href="#state_nameprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2194,7 +3164,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="state_networkinterfaces~go">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#state_networkinterfaces~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">[]Launch<wbr>Template<wbr>Network<wbr>Interface</a></span>
     </dt>
@@ -2204,7 +3179,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement</span>
+        <span id="state_placement~go">
+<span class="nx">
+Placement
+<a class="anchorjs-link " href="#state_placement~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
@@ -2213,7 +3193,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ram<wbr>Disk<wbr>Id</span>
+        <span id="state_ramdiskid~go">
+<span class="nx">
+Ram<wbr>Disk<wbr>Id
+<a class="anchorjs-link " href="#state_ramdiskid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2222,7 +3207,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~go">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2232,7 +3222,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tag<wbr>Specifications</span>
+        <span id="state_tagspecifications~go">
+<span class="nx">
+Tag<wbr>Specifications
+<a class="anchorjs-link " href="#state_tagspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">[]Launch<wbr>Template<wbr>Tag<wbr>Specification</a></span>
     </dt>
@@ -2241,7 +3236,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2250,7 +3250,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="state_userdata~go">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#state_userdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2259,7 +3264,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2275,7 +3285,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2284,7 +3299,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Device<wbr>Mappings</span>
+        <span id="state_blockdevicemappings~nodejs">
+<span class="nx">
+block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#state_blockdevicemappings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
@@ -2294,7 +3314,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Specification</span>
+        <span id="state_capacityreservationspecification~nodejs">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Specification
+<a class="anchorjs-link " href="#state_capacityreservationspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
@@ -2303,7 +3328,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Options</span>
+        <span id="state_cpuoptions~nodejs">
+<span class="nx">
+cpu<wbr>Options
+<a class="anchorjs-link " href="#state_cpuoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
@@ -2312,7 +3342,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit<wbr>Specification</span>
+        <span id="state_creditspecification~nodejs">
+<span class="nx">
+credit<wbr>Specification
+<a class="anchorjs-link " href="#state_creditspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -2322,7 +3357,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Version</span>
+        <span id="state_defaultversion~nodejs">
+<span class="nx">
+default<wbr>Version
+<a class="anchorjs-link " href="#state_defaultversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2331,7 +3371,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2340,7 +3385,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable<wbr>Api<wbr>Termination</span>
+        <span id="state_disableapitermination~nodejs">
+<span class="nx">
+disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#state_disableapitermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2350,7 +3400,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2359,7 +3414,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Gpu<wbr>Specifications</span>
+        <span id="state_elasticgpuspecifications~nodejs">
+<span class="nx">
+elastic<wbr>Gpu<wbr>Specifications
+<a class="anchorjs-link " href="#state_elasticgpuspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification[]</a></span>
     </dt>
@@ -2369,7 +3429,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Inference<wbr>Accelerator</span>
+        <span id="state_elasticinferenceaccelerator~nodejs">
+<span class="nx">
+elastic<wbr>Inference<wbr>Accelerator
+<a class="anchorjs-link " href="#state_elasticinferenceaccelerator~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
@@ -2378,7 +3443,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation<wbr>Options</span>
+        <span id="state_hibernationoptions~nodejs">
+<span class="nx">
+hibernation<wbr>Options
+<a class="anchorjs-link " href="#state_hibernationoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
@@ -2387,7 +3457,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile</span>
+        <span id="state_iaminstanceprofile~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#state_iaminstanceprofile~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
@@ -2397,7 +3472,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>image<wbr>Id</span>
+        <span id="state_imageid~nodejs">
+<span class="nx">
+image<wbr>Id
+<a class="anchorjs-link " href="#state_imageid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2406,7 +3486,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="state_instanceinitiatedshutdownbehavior~nodejs">
+<span class="nx">
+instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#state_instanceinitiatedshutdownbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2416,7 +3501,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Market<wbr>Options</span>
+        <span id="state_instancemarketoptions~nodejs">
+<span class="nx">
+instance<wbr>Market<wbr>Options
+<a class="anchorjs-link " href="#state_instancemarketoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
@@ -2426,7 +3516,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="state_instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2435,7 +3530,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel<wbr>Id</span>
+        <span id="state_kernelid~nodejs">
+<span class="nx">
+kernel<wbr>Id
+<a class="anchorjs-link " href="#state_kernelid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2444,7 +3544,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>key<wbr>Name</span>
+        <span id="state_keyname~nodejs">
+<span class="nx">
+key<wbr>Name
+<a class="anchorjs-link " href="#state_keyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2453,7 +3558,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>latest<wbr>Version</span>
+        <span id="state_latestversion~nodejs">
+<span class="nx">
+latest<wbr>Version
+<a class="anchorjs-link " href="#state_latestversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2462,7 +3572,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>license<wbr>Specifications</span>
+        <span id="state_licensespecifications~nodejs">
+<span class="nx">
+license<wbr>Specifications
+<a class="anchorjs-link " href="#state_licensespecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">Launch<wbr>Template<wbr>License<wbr>Specification[]</a></span>
     </dt>
@@ -2471,7 +3586,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata<wbr>Options</span>
+        <span id="state_metadataoptions~nodejs">
+<span class="nx">
+metadata<wbr>Options
+<a class="anchorjs-link " href="#state_metadataoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -2480,7 +3600,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="state_monitoring~nodejs">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#state_monitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
@@ -2489,7 +3614,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2498,7 +3628,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name<wbr>Prefix</span>
+        <span id="state_nameprefix~nodejs">
+<span class="nx">
+name<wbr>Prefix
+<a class="anchorjs-link " href="#state_nameprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2507,7 +3642,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interfaces</span>
+        <span id="state_networkinterfaces~nodejs">
+<span class="nx">
+network<wbr>Interfaces
+<a class="anchorjs-link " href="#state_networkinterfaces~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">Launch<wbr>Template<wbr>Network<wbr>Interface[]</a></span>
     </dt>
@@ -2517,7 +3657,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement</span>
+        <span id="state_placement~nodejs">
+<span class="nx">
+placement
+<a class="anchorjs-link " href="#state_placement~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
@@ -2526,7 +3671,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ram<wbr>Disk<wbr>Id</span>
+        <span id="state_ramdiskid~nodejs">
+<span class="nx">
+ram<wbr>Disk<wbr>Id
+<a class="anchorjs-link " href="#state_ramdiskid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2535,7 +3685,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2545,7 +3700,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag<wbr>Specifications</span>
+        <span id="state_tagspecifications~nodejs">
+<span class="nx">
+tag<wbr>Specifications
+<a class="anchorjs-link " href="#state_tagspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">Launch<wbr>Template<wbr>Tag<wbr>Specification[]</a></span>
     </dt>
@@ -2554,7 +3714,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2563,7 +3728,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data</span>
+        <span id="state_userdata~nodejs">
+<span class="nx">
+user<wbr>Data
+<a class="anchorjs-link " href="#state_userdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2572,7 +3742,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2588,7 +3763,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2597,7 +3777,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block_<wbr>device_<wbr>mappings</span>
+        <span id="state_block_device_mappings~python">
+<span class="nx">
+block_<wbr>device_<wbr>mappings
+<a class="anchorjs-link " href="#state_block_device_mappings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List[Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
@@ -2607,7 +3792,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity_<wbr>reservation_<wbr>specification</span>
+        <span id="state_capacity_reservation_specification~python">
+<span class="nx">
+capacity_<wbr>reservation_<wbr>specification
+<a class="anchorjs-link " href="#state_capacity_reservation_specification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Dict[Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification]</a></span>
     </dt>
@@ -2616,7 +3806,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu_<wbr>options</span>
+        <span id="state_cpu_options~python">
+<span class="nx">
+cpu_<wbr>options
+<a class="anchorjs-link " href="#state_cpu_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Dict[Launch<wbr>Template<wbr>Cpu<wbr>Options]</a></span>
     </dt>
@@ -2625,7 +3820,12 @@ See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit_<wbr>specification</span>
+        <span id="state_credit_specification~python">
+<span class="nx">
+credit_<wbr>specification
+<a class="anchorjs-link " href="#state_credit_specification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Dict[Launch<wbr>Template<wbr>Credit<wbr>Specification]</a></span>
     </dt>
@@ -2635,7 +3835,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>version</span>
+        <span id="state_default_version~python">
+<span class="nx">
+default_<wbr>version
+<a class="anchorjs-link " href="#state_default_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2644,7 +3849,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2653,7 +3863,12 @@ Specification below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable_<wbr>api_<wbr>termination</span>
+        <span id="state_disable_api_termination~python">
+<span class="nx">
+disable_<wbr>api_<wbr>termination
+<a class="anchorjs-link " href="#state_disable_api_termination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2663,7 +3878,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="state_ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#state_ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2672,7 +3892,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>gpu_<wbr>specifications</span>
+        <span id="state_elastic_gpu_specifications~python">
+<span class="nx">
+elastic_<wbr>gpu_<wbr>specifications
+<a class="anchorjs-link " href="#state_elastic_gpu_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List[Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification]</a></span>
     </dt>
@@ -2682,7 +3907,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>inference_<wbr>accelerator</span>
+        <span id="state_elastic_inference_accelerator~python">
+<span class="nx">
+elastic_<wbr>inference_<wbr>accelerator
+<a class="anchorjs-link " href="#state_elastic_inference_accelerator~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Dict[Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
@@ -2691,7 +3921,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation_<wbr>options</span>
+        <span id="state_hibernation_options~python">
+<span class="nx">
+hibernation_<wbr>options
+<a class="anchorjs-link " href="#state_hibernation_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Dict[Launch<wbr>Template<wbr>Hibernation<wbr>Options]</a></span>
     </dt>
@@ -2700,7 +3935,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>instance_<wbr>profile</span>
+        <span id="state_iam_instance_profile~python">
+<span class="nx">
+iam_<wbr>instance_<wbr>profile
+<a class="anchorjs-link " href="#state_iam_instance_profile~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Dict[Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile]</a></span>
     </dt>
@@ -2710,7 +3950,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>image_<wbr>id</span>
+        <span id="state_image_id~python">
+<span class="nx">
+image_<wbr>id
+<a class="anchorjs-link " href="#state_image_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2719,7 +3964,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior</span>
+        <span id="state_instance_initiated_shutdown_behavior~python">
+<span class="nx">
+instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior
+<a class="anchorjs-link " href="#state_instance_initiated_shutdown_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2729,7 +3979,12 @@ below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>market_<wbr>options</span>
+        <span id="state_instance_market_options~python">
+<span class="nx">
+instance_<wbr>market_<wbr>options
+<a class="anchorjs-link " href="#state_instance_market_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Dict[Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options]</a></span>
     </dt>
@@ -2739,7 +3994,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="state_instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#state_instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2748,7 +4008,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kernel_<wbr>id</span>
+        <span id="state_kernel_id~python">
+<span class="nx">
+kernel_<wbr>id
+<a class="anchorjs-link " href="#state_kernel_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2757,7 +4022,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>key_<wbr>name</span>
+        <span id="state_key_name~python">
+<span class="nx">
+key_<wbr>name
+<a class="anchorjs-link " href="#state_key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2766,7 +4036,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>latest_<wbr>version</span>
+        <span id="state_latest_version~python">
+<span class="nx">
+latest_<wbr>version
+<a class="anchorjs-link " href="#state_latest_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2775,7 +4050,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>license_<wbr>specifications</span>
+        <span id="state_license_specifications~python">
+<span class="nx">
+license_<wbr>specifications
+<a class="anchorjs-link " href="#state_license_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List[Launch<wbr>Template<wbr>License<wbr>Specification]</a></span>
     </dt>
@@ -2784,7 +4064,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata_<wbr>options</span>
+        <span id="state_metadata_options~python">
+<span class="nx">
+metadata_<wbr>options
+<a class="anchorjs-link " href="#state_metadata_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Dict[Launch<wbr>Template<wbr>Metadata<wbr>Options]</a></span>
     </dt>
@@ -2793,7 +4078,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="state_monitoring~python">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#state_monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Dict[Launch<wbr>Template<wbr>Monitoring]</a></span>
     </dt>
@@ -2802,7 +4092,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2811,7 +4106,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name_<wbr>prefix</span>
+        <span id="state_name_prefix~python">
+<span class="nx">
+name_<wbr>prefix
+<a class="anchorjs-link " href="#state_name_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2820,7 +4120,12 @@ below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interfaces</span>
+        <span id="state_network_interfaces~python">
+<span class="nx">
+network_<wbr>interfaces
+<a class="anchorjs-link " href="#state_network_interfaces~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List[Launch<wbr>Template<wbr>Network<wbr>Interface]</a></span>
     </dt>
@@ -2830,7 +4135,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement</span>
+        <span id="state_placement~python">
+<span class="nx">
+placement
+<a class="anchorjs-link " href="#state_placement~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Dict[Launch<wbr>Template<wbr>Placement]</a></span>
     </dt>
@@ -2839,7 +4149,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ram_<wbr>disk_<wbr>id</span>
+        <span id="state_ram_disk_id~python">
+<span class="nx">
+ram_<wbr>disk_<wbr>id
+<a class="anchorjs-link " href="#state_ram_disk_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2848,7 +4163,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>names</span>
+        <span id="state_security_group_names~python">
+<span class="nx">
+security_<wbr>group_<wbr>names
+<a class="anchorjs-link " href="#state_security_group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2858,7 +4178,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tag_<wbr>specifications</span>
+        <span id="state_tag_specifications~python">
+<span class="nx">
+tag_<wbr>specifications
+<a class="anchorjs-link " href="#state_tag_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List[Launch<wbr>Template<wbr>Tag<wbr>Specification]</a></span>
     </dt>
@@ -2867,7 +4192,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2876,7 +4206,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data</span>
+        <span id="state_user_data~python">
+<span class="nx">
+user_<wbr>data
+<a class="anchorjs-link " href="#state_user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2885,7 +4220,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="state_vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2927,7 +4267,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2936,7 +4281,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs</span>
+        <span id="ebs~csharp">
+<span class="nx">
+Ebs
+<a class="anchorjs-link " href="#ebs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs<wbr>Args</a></span>
     </dt>
@@ -2945,7 +4295,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~csharp">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2954,7 +4309,12 @@ Interfaces below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2972,7 +4332,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2981,7 +4346,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs</span>
+        <span id="ebs~go">
+<span class="nx">
+Ebs
+<a class="anchorjs-link " href="#ebs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs</a></span>
     </dt>
@@ -2990,7 +4360,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~go">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2999,7 +4374,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3017,7 +4397,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3026,7 +4411,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs</span>
+        <span id="ebs~nodejs">
+<span class="nx">
+ebs
+<a class="anchorjs-link " href="#ebs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs</a></span>
     </dt>
@@ -3035,7 +4425,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~nodejs">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3044,7 +4439,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3062,7 +4462,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3071,7 +4476,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs</span>
+        <span id="ebs~python">
+<span class="nx">
+ebs
+<a class="anchorjs-link " href="#ebs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Dict[Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs]</a></span>
     </dt>
@@ -3080,7 +4490,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~python">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3089,7 +4504,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3125,7 +4545,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3134,7 +4559,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3144,7 +4574,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3155,7 +4590,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3165,7 +4605,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~csharp">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3174,7 +4619,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3183,7 +4633,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3199,7 +4654,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3208,7 +4668,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3218,7 +4683,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3229,7 +4699,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3239,7 +4714,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~go">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3248,7 +4728,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3257,7 +4742,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3273,7 +4763,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3282,7 +4777,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3292,7 +4792,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3303,7 +4808,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3313,7 +4823,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Id</span>
+        <span id="snapshotid~nodejs">
+<span class="nx">
+snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3322,7 +4837,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3331,7 +4851,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3347,7 +4872,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3356,7 +4886,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3366,7 +4901,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3377,7 +4917,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3387,7 +4932,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>id</span>
+        <span id="snapshot_id~python">
+<span class="nx">
+snapshot_<wbr>id
+<a class="anchorjs-link " href="#snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3396,7 +4946,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3405,7 +4960,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3439,7 +4999,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Preference</span>
+        <span id="capacityreservationpreference~csharp">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Preference
+<a class="anchorjs-link " href="#capacityreservationpreference~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3448,7 +5013,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Target</span>
+        <span id="capacityreservationtarget~csharp">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Target
+<a class="anchorjs-link " href="#capacityreservationtarget~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target<wbr>Args</a></span>
     </dt>
@@ -3464,7 +5034,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Preference</span>
+        <span id="capacityreservationpreference~go">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Preference
+<a class="anchorjs-link " href="#capacityreservationpreference~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3473,7 +5048,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Target</span>
+        <span id="capacityreservationtarget~go">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Target
+<a class="anchorjs-link " href="#capacityreservationtarget~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target</a></span>
     </dt>
@@ -3489,7 +5069,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Preference</span>
+        <span id="capacityreservationpreference~nodejs">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Preference
+<a class="anchorjs-link " href="#capacityreservationpreference~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3498,7 +5083,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Target</span>
+        <span id="capacityreservationtarget~nodejs">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Target
+<a class="anchorjs-link " href="#capacityreservationtarget~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target</a></span>
     </dt>
@@ -3514,7 +5104,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Preference</span>
+        <span id="capacityreservationpreference~python">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Preference
+<a class="anchorjs-link " href="#capacityreservationpreference~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3523,7 +5118,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Target</span>
+        <span id="capacityreservationtarget~python">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Target
+<a class="anchorjs-link " href="#capacityreservationtarget~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Dict[Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target]</a></span>
     </dt>
@@ -3557,7 +5157,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Id</span>
+        <span id="capacityreservationid~csharp">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Id
+<a class="anchorjs-link " href="#capacityreservationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3573,7 +5178,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Capacity<wbr>Reservation<wbr>Id</span>
+        <span id="capacityreservationid~go">
+<span class="nx">
+Capacity<wbr>Reservation<wbr>Id
+<a class="anchorjs-link " href="#capacityreservationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3589,7 +5199,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Id</span>
+        <span id="capacityreservationid~nodejs">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Id
+<a class="anchorjs-link " href="#capacityreservationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3605,7 +5220,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>capacity<wbr>Reservation<wbr>Id</span>
+        <span id="capacityreservationid~python">
+<span class="nx">
+capacity<wbr>Reservation<wbr>Id
+<a class="anchorjs-link " href="#capacityreservationid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3639,7 +5259,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Core<wbr>Count</span>
+        <span id="corecount~csharp">
+<span class="nx">
+Core<wbr>Count
+<a class="anchorjs-link " href="#corecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3648,7 +5273,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threads<wbr>Per<wbr>Core</span>
+        <span id="threadspercore~csharp">
+<span class="nx">
+Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#threadspercore~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3665,7 +5295,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Core<wbr>Count</span>
+        <span id="corecount~go">
+<span class="nx">
+Core<wbr>Count
+<a class="anchorjs-link " href="#corecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3674,7 +5309,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threads<wbr>Per<wbr>Core</span>
+        <span id="threadspercore~go">
+<span class="nx">
+Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#threadspercore~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3691,7 +5331,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>core<wbr>Count</span>
+        <span id="corecount~nodejs">
+<span class="nx">
+core<wbr>Count
+<a class="anchorjs-link " href="#corecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3700,7 +5345,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>threads<wbr>Per<wbr>Core</span>
+        <span id="threadspercore~nodejs">
+<span class="nx">
+threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#threadspercore~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3717,7 +5367,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>core<wbr>Count</span>
+        <span id="corecount~python">
+<span class="nx">
+core<wbr>Count
+<a class="anchorjs-link " href="#corecount~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3726,7 +5381,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>threads<wbr>Per<wbr>Core</span>
+        <span id="threadspercore~python">
+<span class="nx">
+threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#threadspercore~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3761,7 +5421,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Credits</span>
+        <span id="cpucredits~csharp">
+<span class="nx">
+Cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3777,7 +5442,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Credits</span>
+        <span id="cpucredits~go">
+<span class="nx">
+Cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3793,7 +5463,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Credits</span>
+        <span id="cpucredits~nodejs">
+<span class="nx">
+cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3809,7 +5484,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Credits</span>
+        <span id="cpucredits~python">
+<span class="nx">
+cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3843,7 +5523,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3859,7 +5544,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3875,7 +5565,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3891,7 +5586,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3925,7 +5625,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3941,7 +5646,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3957,7 +5667,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3973,7 +5688,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4007,7 +5727,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>Configured</span>
+        <span id="configured~csharp">
+<span class="nx">
+Configured
+<a class="anchorjs-link " href="#configured~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4023,7 +5748,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>Configured</span>
+        <span id="configured~go">
+<span class="nx">
+Configured
+<a class="anchorjs-link " href="#configured~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4039,7 +5769,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>configured</span>
+        <span id="configured~nodejs">
+<span class="nx">
+configured
+<a class="anchorjs-link " href="#configured~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4055,7 +5790,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>configured</span>
+        <span id="configured~python">
+<span class="nx">
+configured
+<a class="anchorjs-link " href="#configured~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4089,7 +5829,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4098,7 +5843,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4114,7 +5864,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4123,7 +5878,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4139,7 +5899,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4148,7 +5913,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4164,7 +5934,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4173,7 +5948,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4207,7 +5987,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Market<wbr>Type</span>
+        <span id="markettype~csharp">
+<span class="nx">
+Market<wbr>Type
+<a class="anchorjs-link " href="#markettype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4216,7 +6001,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Options</span>
+        <span id="spotoptions~csharp">
+<span class="nx">
+Spot<wbr>Options
+<a class="anchorjs-link " href="#spotoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -4232,7 +6022,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Market<wbr>Type</span>
+        <span id="markettype~go">
+<span class="nx">
+Market<wbr>Type
+<a class="anchorjs-link " href="#markettype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4241,7 +6036,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Options</span>
+        <span id="spotoptions~go">
+<span class="nx">
+Spot<wbr>Options
+<a class="anchorjs-link " href="#spotoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options</a></span>
     </dt>
@@ -4257,7 +6057,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>market<wbr>Type</span>
+        <span id="markettype~nodejs">
+<span class="nx">
+market<wbr>Type
+<a class="anchorjs-link " href="#markettype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4266,7 +6071,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Options</span>
+        <span id="spotoptions~nodejs">
+<span class="nx">
+spot<wbr>Options
+<a class="anchorjs-link " href="#spotoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options</a></span>
     </dt>
@@ -4282,7 +6092,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>market<wbr>Type</span>
+        <span id="markettype~python">
+<span class="nx">
+market<wbr>Type
+<a class="anchorjs-link " href="#markettype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4291,7 +6106,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>options</span>
+        <span id="spot_options~python">
+<span class="nx">
+spot_<wbr>options
+<a class="anchorjs-link " href="#spot_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Dict[Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options]</a></span>
     </dt>
@@ -4325,7 +6145,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Duration<wbr>Minutes</span>
+        <span id="blockdurationminutes~csharp">
+<span class="nx">
+Block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#blockdurationminutes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4334,7 +6159,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behavior</span>
+        <span id="instanceinterruptionbehavior~csharp">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinterruptionbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4344,7 +6174,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Price</span>
+        <span id="maxprice~csharp">
+<span class="nx">
+Max<wbr>Price
+<a class="anchorjs-link " href="#maxprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4353,7 +6188,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Instance<wbr>Type</span>
+        <span id="spotinstancetype~csharp">
+<span class="nx">
+Spot<wbr>Instance<wbr>Type
+<a class="anchorjs-link " href="#spotinstancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4362,7 +6202,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="validuntil~csharp">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4378,7 +6223,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Duration<wbr>Minutes</span>
+        <span id="blockdurationminutes~go">
+<span class="nx">
+Block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#blockdurationminutes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4387,7 +6237,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behavior</span>
+        <span id="instanceinterruptionbehavior~go">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinterruptionbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4397,7 +6252,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Price</span>
+        <span id="maxprice~go">
+<span class="nx">
+Max<wbr>Price
+<a class="anchorjs-link " href="#maxprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4406,7 +6266,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Instance<wbr>Type</span>
+        <span id="spotinstancetype~go">
+<span class="nx">
+Spot<wbr>Instance<wbr>Type
+<a class="anchorjs-link " href="#spotinstancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4415,7 +6280,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="validuntil~go">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4431,7 +6301,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Duration<wbr>Minutes</span>
+        <span id="blockdurationminutes~nodejs">
+<span class="nx">
+block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#blockdurationminutes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4440,7 +6315,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Interruption<wbr>Behavior</span>
+        <span id="instanceinterruptionbehavior~nodejs">
+<span class="nx">
+instance<wbr>Interruption<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinterruptionbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4450,7 +6330,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Price</span>
+        <span id="maxprice~nodejs">
+<span class="nx">
+max<wbr>Price
+<a class="anchorjs-link " href="#maxprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4459,7 +6344,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Instance<wbr>Type</span>
+        <span id="spotinstancetype~nodejs">
+<span class="nx">
+spot<wbr>Instance<wbr>Type
+<a class="anchorjs-link " href="#spotinstancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4468,7 +6358,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>Until</span>
+        <span id="validuntil~nodejs">
+<span class="nx">
+valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4484,7 +6379,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block_<wbr>duration_<wbr>minutes</span>
+        <span id="block_duration_minutes~python">
+<span class="nx">
+block_<wbr>duration_<wbr>minutes
+<a class="anchorjs-link " href="#block_duration_minutes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4493,7 +6393,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Interruption<wbr>Behavior</span>
+        <span id="instanceinterruptionbehavior~python">
+<span class="nx">
+instance<wbr>Interruption<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinterruptionbehavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4503,7 +6408,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Price</span>
+        <span id="maxprice~python">
+<span class="nx">
+max<wbr>Price
+<a class="anchorjs-link " href="#maxprice~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4512,7 +6422,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Instance<wbr>Type</span>
+        <span id="spotinstancetype~python">
+<span class="nx">
+spot<wbr>Instance<wbr>Type
+<a class="anchorjs-link " href="#spotinstancetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4521,7 +6436,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>until</span>
+        <span id="valid_until~python">
+<span class="nx">
+valid_<wbr>until
+<a class="anchorjs-link " href="#valid_until~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4555,7 +6475,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>License<wbr>Configuration<wbr>Arn</span>
+        <span id="licenseconfigurationarn~csharp">
+<span class="nx">
+License<wbr>Configuration<wbr>Arn
+<a class="anchorjs-link " href="#licenseconfigurationarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4571,7 +6496,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>License<wbr>Configuration<wbr>Arn</span>
+        <span id="licenseconfigurationarn~go">
+<span class="nx">
+License<wbr>Configuration<wbr>Arn
+<a class="anchorjs-link " href="#licenseconfigurationarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4587,7 +6517,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>license<wbr>Configuration<wbr>Arn</span>
+        <span id="licenseconfigurationarn~nodejs">
+<span class="nx">
+license<wbr>Configuration<wbr>Arn
+<a class="anchorjs-link " href="#licenseconfigurationarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4603,7 +6538,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-required"
             title="Required">
-        <span>license_<wbr>configuration_<wbr>arn</span>
+        <span id="license_configuration_arn~python">
+<span class="nx">
+license_<wbr>configuration_<wbr>arn
+<a class="anchorjs-link " href="#license_configuration_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4637,7 +6577,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Endpoint</span>
+        <span id="httpendpoint~csharp">
+<span class="nx">
+Http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4646,7 +6591,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~csharp">
+<span class="nx">
+Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4655,7 +6605,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Tokens</span>
+        <span id="httptokens~csharp">
+<span class="nx">
+Http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4671,7 +6626,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Endpoint</span>
+        <span id="httpendpoint~go">
+<span class="nx">
+Http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4680,7 +6640,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~go">
+<span class="nx">
+Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4689,7 +6654,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Tokens</span>
+        <span id="httptokens~go">
+<span class="nx">
+Http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4705,7 +6675,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Endpoint</span>
+        <span id="httpendpoint~nodejs">
+<span class="nx">
+http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4714,7 +6689,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~nodejs">
+<span class="nx">
+http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4723,7 +6703,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Tokens</span>
+        <span id="httptokens~nodejs">
+<span class="nx">
+http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4739,7 +6724,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Endpoint</span>
+        <span id="httpendpoint~python">
+<span class="nx">
+http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4748,7 +6738,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~python">
+<span class="nx">
+http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4757,7 +6752,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Tokens</span>
+        <span id="httptokens~python">
+<span class="nx">
+http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4791,7 +6791,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4807,7 +6812,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4823,7 +6833,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4839,7 +6854,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4873,7 +6893,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~csharp">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4882,7 +6907,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4891,7 +6921,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4900,7 +6935,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Index</span>
+        <span id="deviceindex~csharp">
+<span class="nx">
+Device<wbr>Index
+<a class="anchorjs-link " href="#deviceindex~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4909,7 +6949,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv4Address<wbr>Count</span>
+        <span id="ipv4addresscount~csharp">
+<span class="nx">
+Ipv4Address<wbr>Count
+<a class="anchorjs-link " href="#ipv4addresscount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4918,7 +6963,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv4Addresses</span>
+        <span id="ipv4addresses~csharp">
+<span class="nx">
+Ipv4Addresses
+<a class="anchorjs-link " href="#ipv4addresses~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4927,7 +6977,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Address<wbr>Count</span>
+        <span id="ipv6addresscount~csharp">
+<span class="nx">
+Ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#ipv6addresscount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4936,7 +6991,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Addresses</span>
+        <span id="ipv6addresses~csharp">
+<span class="nx">
+Ipv6Addresses
+<a class="anchorjs-link " href="#ipv6addresses~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4945,7 +7005,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~csharp">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4954,7 +7019,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip<wbr>Address</span>
+        <span id="privateipaddress~csharp">
+<span class="nx">
+Private<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#privateipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4963,7 +7033,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~csharp">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4972,7 +7047,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4988,7 +7068,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~go">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4997,7 +7082,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5006,7 +7096,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5015,7 +7110,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Index</span>
+        <span id="deviceindex~go">
+<span class="nx">
+Device<wbr>Index
+<a class="anchorjs-link " href="#deviceindex~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5024,7 +7124,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv4Address<wbr>Count</span>
+        <span id="ipv4addresscount~go">
+<span class="nx">
+Ipv4Address<wbr>Count
+<a class="anchorjs-link " href="#ipv4addresscount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5033,7 +7138,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv4Addresses</span>
+        <span id="ipv4addresses~go">
+<span class="nx">
+Ipv4Addresses
+<a class="anchorjs-link " href="#ipv4addresses~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -5042,7 +7152,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Address<wbr>Count</span>
+        <span id="ipv6addresscount~go">
+<span class="nx">
+Ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#ipv6addresscount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5051,7 +7166,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Addresses</span>
+        <span id="ipv6addresses~go">
+<span class="nx">
+Ipv6Addresses
+<a class="anchorjs-link " href="#ipv6addresses~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -5060,7 +7180,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~go">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5069,7 +7194,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip<wbr>Address</span>
+        <span id="privateipaddress~go">
+<span class="nx">
+Private<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#privateipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5078,7 +7208,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~go">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -5087,7 +7222,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5103,7 +7243,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~nodejs">
+<span class="nx">
+associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5112,7 +7257,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5121,7 +7271,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5130,7 +7285,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Index</span>
+        <span id="deviceindex~nodejs">
+<span class="nx">
+device<wbr>Index
+<a class="anchorjs-link " href="#deviceindex~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5139,7 +7299,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv4Address<wbr>Count</span>
+        <span id="ipv4addresscount~nodejs">
+<span class="nx">
+ipv4Address<wbr>Count
+<a class="anchorjs-link " href="#ipv4addresscount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5148,7 +7313,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv4Addresses</span>
+        <span id="ipv4addresses~nodejs">
+<span class="nx">
+ipv4Addresses
+<a class="anchorjs-link " href="#ipv4addresses~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5157,7 +7327,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Address<wbr>Count</span>
+        <span id="ipv6addresscount~nodejs">
+<span class="nx">
+ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#ipv6addresscount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5166,7 +7341,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Addresses</span>
+        <span id="ipv6addresses~nodejs">
+<span class="nx">
+ipv6Addresses
+<a class="anchorjs-link " href="#ipv6addresses~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5175,7 +7355,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~nodejs">
+<span class="nx">
+network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5184,7 +7369,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Ip<wbr>Address</span>
+        <span id="privateipaddress~nodejs">
+<span class="nx">
+private<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#privateipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5193,7 +7383,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Groups</span>
+        <span id="securitygroups~nodejs">
+<span class="nx">
+security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -5202,7 +7397,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5218,7 +7418,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate_<wbr>public_<wbr>ip_<wbr>address</span>
+        <span id="associate_public_ip_address~python">
+<span class="nx">
+associate_<wbr>public_<wbr>ip_<wbr>address
+<a class="anchorjs-link " href="#associate_public_ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5227,7 +7432,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5236,7 +7446,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5245,7 +7460,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>device_<wbr>index</span>
+        <span id="device_index~python">
+<span class="nx">
+device_<wbr>index
+<a class="anchorjs-link " href="#device_index~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5254,7 +7474,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv4Address<wbr>Count</span>
+        <span id="ipv4addresscount~python">
+<span class="nx">
+ipv4Address<wbr>Count
+<a class="anchorjs-link " href="#ipv4addresscount~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5263,7 +7488,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv4Addresses</span>
+        <span id="ipv4addresses~python">
+<span class="nx">
+ipv4Addresses
+<a class="anchorjs-link " href="#ipv4addresses~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5272,7 +7502,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>address_<wbr>count</span>
+        <span id="ipv6_address_count~python">
+<span class="nx">
+ipv6_<wbr>address_<wbr>count
+<a class="anchorjs-link " href="#ipv6_address_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5281,7 +7516,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>addresses</span>
+        <span id="ipv6_addresses~python">
+<span class="nx">
+ipv6_<wbr>addresses
+<a class="anchorjs-link " href="#ipv6_addresses~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5290,7 +7530,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interface_<wbr>id</span>
+        <span id="network_interface_id~python">
+<span class="nx">
+network_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#network_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5299,7 +7544,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>ip_<wbr>address</span>
+        <span id="private_ip_address~python">
+<span class="nx">
+private_<wbr>ip_<wbr>address
+<a class="anchorjs-link " href="#private_ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5308,7 +7558,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>groups</span>
+        <span id="security_groups~python">
+<span class="nx">
+security_<wbr>groups
+<a class="anchorjs-link " href="#security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -5317,7 +7572,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5351,7 +7611,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Affinity</span>
+        <span id="affinity~csharp">
+<span class="nx">
+Affinity
+<a class="anchorjs-link " href="#affinity~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5360,7 +7625,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5369,7 +7639,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Group<wbr>Name</span>
+        <span id="groupname~csharp">
+<span class="nx">
+Group<wbr>Name
+<a class="anchorjs-link " href="#groupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5378,7 +7653,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Id</span>
+        <span id="hostid~csharp">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#hostid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5387,7 +7667,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Partition<wbr>Number</span>
+        <span id="partitionnumber~csharp">
+<span class="nx">
+Partition<wbr>Number
+<a class="anchorjs-link " href="#partitionnumber~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5396,7 +7681,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spread<wbr>Domain</span>
+        <span id="spreaddomain~csharp">
+<span class="nx">
+Spread<wbr>Domain
+<a class="anchorjs-link " href="#spreaddomain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5405,7 +7695,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="tenancy~csharp">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5421,7 +7716,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Affinity</span>
+        <span id="affinity~go">
+<span class="nx">
+Affinity
+<a class="anchorjs-link " href="#affinity~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5430,7 +7730,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5439,7 +7744,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Group<wbr>Name</span>
+        <span id="groupname~go">
+<span class="nx">
+Group<wbr>Name
+<a class="anchorjs-link " href="#groupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5448,7 +7758,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Id</span>
+        <span id="hostid~go">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#hostid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5457,7 +7772,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Partition<wbr>Number</span>
+        <span id="partitionnumber~go">
+<span class="nx">
+Partition<wbr>Number
+<a class="anchorjs-link " href="#partitionnumber~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5466,7 +7786,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spread<wbr>Domain</span>
+        <span id="spreaddomain~go">
+<span class="nx">
+Spread<wbr>Domain
+<a class="anchorjs-link " href="#spreaddomain~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5475,7 +7800,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="tenancy~go">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5491,7 +7821,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>affinity</span>
+        <span id="affinity~nodejs">
+<span class="nx">
+affinity
+<a class="anchorjs-link " href="#affinity~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5500,7 +7835,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5509,7 +7849,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>group<wbr>Name</span>
+        <span id="groupname~nodejs">
+<span class="nx">
+group<wbr>Name
+<a class="anchorjs-link " href="#groupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5518,7 +7863,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>host<wbr>Id</span>
+        <span id="hostid~nodejs">
+<span class="nx">
+host<wbr>Id
+<a class="anchorjs-link " href="#hostid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5527,7 +7877,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>partition<wbr>Number</span>
+        <span id="partitionnumber~nodejs">
+<span class="nx">
+partition<wbr>Number
+<a class="anchorjs-link " href="#partitionnumber~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5536,7 +7891,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spread<wbr>Domain</span>
+        <span id="spreaddomain~nodejs">
+<span class="nx">
+spread<wbr>Domain
+<a class="anchorjs-link " href="#spreaddomain~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5545,7 +7905,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="tenancy~nodejs">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5561,7 +7926,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>affinity</span>
+        <span id="affinity~python">
+<span class="nx">
+affinity
+<a class="anchorjs-link " href="#affinity~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5570,7 +7940,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5579,7 +7954,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>group_<wbr>name</span>
+        <span id="group_name~python">
+<span class="nx">
+group_<wbr>name
+<a class="anchorjs-link " href="#group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5588,7 +7968,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>host_<wbr>id</span>
+        <span id="host_id~python">
+<span class="nx">
+host_<wbr>id
+<a class="anchorjs-link " href="#host_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5597,7 +7982,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>partition<wbr>Number</span>
+        <span id="partitionnumber~python">
+<span class="nx">
+partition<wbr>Number
+<a class="anchorjs-link " href="#partitionnumber~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5606,7 +7996,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spread<wbr>Domain</span>
+        <span id="spreaddomain~python">
+<span class="nx">
+spread<wbr>Domain
+<a class="anchorjs-link " href="#spreaddomain~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5615,7 +8010,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="tenancy~python">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5649,7 +8049,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Type</span>
+        <span id="resourcetype~csharp">
+<span class="nx">
+Resource<wbr>Type
+<a class="anchorjs-link " href="#resourcetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5658,7 +8063,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -5674,7 +8084,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Type</span>
+        <span id="resourcetype~go">
+<span class="nx">
+Resource<wbr>Type
+<a class="anchorjs-link " href="#resourcetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5683,7 +8098,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -5699,7 +8119,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource<wbr>Type</span>
+        <span id="resourcetype~nodejs">
+<span class="nx">
+resource<wbr>Type
+<a class="anchorjs-link " href="#resourcetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5708,7 +8133,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -5724,7 +8154,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource_<wbr>type</span>
+        <span id="resource_type~python">
+<span class="nx">
+resource_<wbr>type
+<a class="anchorjs-link " href="#resource_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5733,7 +8168,12 @@ Otherwise, specify the default value of 2.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>

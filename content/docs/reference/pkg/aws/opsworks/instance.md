@@ -117,19 +117,19 @@ const my_instance = new aws.opsworks.Instance("my-instance", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Instance">Instance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Instance">Instance</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Instance</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>agent_version=None<span class="p">, </span>ami_id=None<span class="p">, </span>architecture=None<span class="p">, </span>auto_scaling_type=None<span class="p">, </span>availability_zone=None<span class="p">, </span>created_at=None<span class="p">, </span>delete_ebs=None<span class="p">, </span>delete_eip=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>ecs_cluster_arn=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>hostname=None<span class="p">, </span>infrastructure_class=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_profile_arn=None<span class="p">, </span>instance_type=None<span class="p">, </span>last_service_error_id=None<span class="p">, </span>layer_ids=None<span class="p">, </span>os=None<span class="p">, </span>platform=None<span class="p">, </span>private_dns=None<span class="p">, </span>private_ip=None<span class="p">, </span>public_dns=None<span class="p">, </span>public_ip=None<span class="p">, </span>registered_by=None<span class="p">, </span>reported_agent_version=None<span class="p">, </span>reported_os_family=None<span class="p">, </span>reported_os_name=None<span class="p">, </span>reported_os_version=None<span class="p">, </span>root_block_devices=None<span class="p">, </span>root_device_type=None<span class="p">, </span>root_device_volume_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>ssh_host_dsa_key_fingerprint=None<span class="p">, </span>ssh_host_rsa_key_fingerprint=None<span class="p">, </span>ssh_key_name=None<span class="p">, </span>stack_id=None<span class="p">, </span>state=None<span class="p">, </span>status=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tenancy=None<span class="p">, </span>virtualization_type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/opsworks/#Instance">Instance</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>agent_version=None<span class="p">, </span>ami_id=None<span class="p">, </span>architecture=None<span class="p">, </span>auto_scaling_type=None<span class="p">, </span>availability_zone=None<span class="p">, </span>created_at=None<span class="p">, </span>delete_ebs=None<span class="p">, </span>delete_eip=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>ecs_cluster_arn=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>hostname=None<span class="p">, </span>infrastructure_class=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_profile_arn=None<span class="p">, </span>instance_type=None<span class="p">, </span>last_service_error_id=None<span class="p">, </span>layer_ids=None<span class="p">, </span>os=None<span class="p">, </span>platform=None<span class="p">, </span>private_dns=None<span class="p">, </span>private_ip=None<span class="p">, </span>public_dns=None<span class="p">, </span>public_ip=None<span class="p">, </span>registered_by=None<span class="p">, </span>reported_agent_version=None<span class="p">, </span>reported_os_family=None<span class="p">, </span>reported_os_name=None<span class="p">, </span>reported_os_version=None<span class="p">, </span>root_block_devices=None<span class="p">, </span>root_device_type=None<span class="p">, </span>root_device_volume_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>ssh_host_dsa_key_fingerprint=None<span class="p">, </span>ssh_host_rsa_key_fingerprint=None<span class="p">, </span>ssh_key_name=None<span class="p">, </span>stack_id=None<span class="p">, </span>state=None<span class="p">, </span>status=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tenancy=None<span class="p">, </span>virtualization_type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">NewInstance</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Instance.html">Instance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.InstanceArgs.html">InstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Instance.html">Instance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.InstanceArgs.html">InstanceArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -295,7 +295,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-required"
             title="Required">
-        <span>Layer<wbr>Ids</span>
+        <span id="layerids~csharp">
+<span class="nx">
+Layer<wbr>Ids
+<a class="anchorjs-link " href="#layerids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -304,7 +309,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-required"
             title="Required">
-        <span>Stack<wbr>Id</span>
+        <span id="stackid~csharp">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#stackid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -313,7 +323,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="agentversion~csharp">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#agentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -322,7 +337,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ami<wbr>Id</span>
+        <span id="amiid~csharp">
+<span class="nx">
+Ami<wbr>Id
+<a class="anchorjs-link " href="#amiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -331,7 +351,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="architecture~csharp">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#architecture~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -340,7 +365,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Scaling<wbr>Type</span>
+        <span id="autoscalingtype~csharp">
+<span class="nx">
+Auto<wbr>Scaling<wbr>Type
+<a class="anchorjs-link " href="#autoscalingtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -349,7 +379,12 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -359,7 +394,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Created<wbr>At</span>
+        <span id="createdat~csharp">
+<span class="nx">
+Created<wbr>At
+<a class="anchorjs-link " href="#createdat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -367,7 +407,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Ebs</span>
+        <span id="deleteebs~csharp">
+<span class="nx">
+Delete<wbr>Ebs
+<a class="anchorjs-link " href="#deleteebs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -375,7 +420,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Eip</span>
+        <span id="deleteeip~csharp">
+<span class="nx">
+Delete<wbr>Eip
+<a class="anchorjs-link " href="#deleteeip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -383,7 +433,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List&lt;Instance<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -393,7 +448,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -402,7 +462,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ecs<wbr>Cluster<wbr>Arn</span>
+        <span id="ecsclusterarn~csharp">
+<span class="nx">
+Ecs<wbr>Cluster<wbr>Arn
+<a class="anchorjs-link " href="#ecsclusterarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -410,7 +475,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="elasticip~csharp">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#elasticip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -418,7 +488,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List&lt;Instance<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -428,7 +503,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname</span>
+        <span id="hostname~csharp">
+<span class="nx">
+Hostname
+<a class="anchorjs-link " href="#hostname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -437,7 +517,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Infrastructure<wbr>Class</span>
+        <span id="infrastructureclass~csharp">
+<span class="nx">
+Infrastructure<wbr>Class
+<a class="anchorjs-link " href="#infrastructureclass~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -445,7 +530,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="installupdatesonboot~csharp">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#installupdatesonboot~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -454,7 +544,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="instanceprofilearn~csharp">
+<span class="nx">
+Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#instanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -462,7 +557,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -471,7 +571,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Service<wbr>Error<wbr>Id</span>
+        <span id="lastserviceerrorid~csharp">
+<span class="nx">
+Last<wbr>Service<wbr>Error<wbr>Id
+<a class="anchorjs-link " href="#lastserviceerrorid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -479,7 +584,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Os</span>
+        <span id="os~csharp">
+<span class="nx">
+Os
+<a class="anchorjs-link " href="#os~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -488,7 +598,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Platform</span>
+        <span id="platform~csharp">
+<span class="nx">
+Platform
+<a class="anchorjs-link " href="#platform~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -496,7 +611,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -507,7 +627,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -516,7 +641,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -526,7 +656,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -535,7 +670,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Registered<wbr>By</span>
+        <span id="registeredby~csharp">
+<span class="nx">
+Registered<wbr>By
+<a class="anchorjs-link " href="#registeredby~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -543,7 +683,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Agent<wbr>Version</span>
+        <span id="reportedagentversion~csharp">
+<span class="nx">
+Reported<wbr>Agent<wbr>Version
+<a class="anchorjs-link " href="#reportedagentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -551,7 +696,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Family</span>
+        <span id="reportedosfamily~csharp">
+<span class="nx">
+Reported<wbr>Os<wbr>Family
+<a class="anchorjs-link " href="#reportedosfamily~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -559,7 +709,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Name</span>
+        <span id="reportedosname~csharp">
+<span class="nx">
+Reported<wbr>Os<wbr>Name
+<a class="anchorjs-link " href="#reportedosname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -567,7 +722,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Version</span>
+        <span id="reportedosversion~csharp">
+<span class="nx">
+Reported<wbr>Os<wbr>Version
+<a class="anchorjs-link " href="#reportedosversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -575,7 +735,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~csharp">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List&lt;Instance<wbr>Root<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -585,7 +750,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Type</span>
+        <span id="rootdevicetype~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#rootdevicetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -594,7 +764,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Volume<wbr>Id</span>
+        <span id="rootdevicevolumeid~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Volume<wbr>Id
+<a class="anchorjs-link " href="#rootdevicevolumeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -602,7 +777,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -611,7 +791,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="sshhostdsakeyfingerprint~csharp">
+<span class="nx">
+Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#sshhostdsakeyfingerprint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -619,7 +804,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="sshhostrsakeyfingerprint~csharp">
+<span class="nx">
+Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#sshhostrsakeyfingerprint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -627,7 +817,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Key<wbr>Name</span>
+        <span id="sshkeyname~csharp">
+<span class="nx">
+Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#sshkeyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -636,7 +831,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -645,7 +845,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -653,7 +858,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -662,7 +872,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="tenancy~csharp">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -671,7 +886,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="virtualizationtype~csharp">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -688,7 +908,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Layer<wbr>Ids</span>
+        <span id="layerids~go">
+<span class="nx">
+Layer<wbr>Ids
+<a class="anchorjs-link " href="#layerids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -697,7 +922,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Stack<wbr>Id</span>
+        <span id="stackid~go">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#stackid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -706,7 +936,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="agentversion~go">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#agentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -715,7 +950,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ami<wbr>Id</span>
+        <span id="amiid~go">
+<span class="nx">
+Ami<wbr>Id
+<a class="anchorjs-link " href="#amiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -724,7 +964,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="architecture~go">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#architecture~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -733,7 +978,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Scaling<wbr>Type</span>
+        <span id="autoscalingtype~go">
+<span class="nx">
+Auto<wbr>Scaling<wbr>Type
+<a class="anchorjs-link " href="#autoscalingtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -742,7 +992,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -752,7 +1007,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Created<wbr>At</span>
+        <span id="createdat~go">
+<span class="nx">
+Created<wbr>At
+<a class="anchorjs-link " href="#createdat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -760,7 +1020,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Ebs</span>
+        <span id="deleteebs~go">
+<span class="nx">
+Delete<wbr>Ebs
+<a class="anchorjs-link " href="#deleteebs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -768,7 +1033,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Eip</span>
+        <span id="deleteeip~go">
+<span class="nx">
+Delete<wbr>Eip
+<a class="anchorjs-link " href="#deleteeip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -776,7 +1046,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">[]Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -786,7 +1061,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -795,7 +1075,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ecs<wbr>Cluster<wbr>Arn</span>
+        <span id="ecsclusterarn~go">
+<span class="nx">
+Ecs<wbr>Cluster<wbr>Arn
+<a class="anchorjs-link " href="#ecsclusterarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -803,7 +1088,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="elasticip~go">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#elasticip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -811,7 +1101,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">[]Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -821,7 +1116,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname</span>
+        <span id="hostname~go">
+<span class="nx">
+Hostname
+<a class="anchorjs-link " href="#hostname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -830,7 +1130,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Infrastructure<wbr>Class</span>
+        <span id="infrastructureclass~go">
+<span class="nx">
+Infrastructure<wbr>Class
+<a class="anchorjs-link " href="#infrastructureclass~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -838,7 +1143,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="installupdatesonboot~go">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#installupdatesonboot~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -847,7 +1157,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="instanceprofilearn~go">
+<span class="nx">
+Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#instanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -855,7 +1170,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -864,7 +1184,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Service<wbr>Error<wbr>Id</span>
+        <span id="lastserviceerrorid~go">
+<span class="nx">
+Last<wbr>Service<wbr>Error<wbr>Id
+<a class="anchorjs-link " href="#lastserviceerrorid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -872,7 +1197,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Os</span>
+        <span id="os~go">
+<span class="nx">
+Os
+<a class="anchorjs-link " href="#os~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -881,7 +1211,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Platform</span>
+        <span id="platform~go">
+<span class="nx">
+Platform
+<a class="anchorjs-link " href="#platform~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -889,7 +1224,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -900,7 +1240,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -909,7 +1254,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -919,7 +1269,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -928,7 +1283,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Registered<wbr>By</span>
+        <span id="registeredby~go">
+<span class="nx">
+Registered<wbr>By
+<a class="anchorjs-link " href="#registeredby~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -936,7 +1296,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Agent<wbr>Version</span>
+        <span id="reportedagentversion~go">
+<span class="nx">
+Reported<wbr>Agent<wbr>Version
+<a class="anchorjs-link " href="#reportedagentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -944,7 +1309,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Family</span>
+        <span id="reportedosfamily~go">
+<span class="nx">
+Reported<wbr>Os<wbr>Family
+<a class="anchorjs-link " href="#reportedosfamily~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -952,7 +1322,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Name</span>
+        <span id="reportedosname~go">
+<span class="nx">
+Reported<wbr>Os<wbr>Name
+<a class="anchorjs-link " href="#reportedosname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -960,7 +1335,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Version</span>
+        <span id="reportedosversion~go">
+<span class="nx">
+Reported<wbr>Os<wbr>Version
+<a class="anchorjs-link " href="#reportedosversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -968,7 +1348,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~go">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">[]Instance<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -978,7 +1363,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Type</span>
+        <span id="rootdevicetype~go">
+<span class="nx">
+Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#rootdevicetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -987,7 +1377,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Volume<wbr>Id</span>
+        <span id="rootdevicevolumeid~go">
+<span class="nx">
+Root<wbr>Device<wbr>Volume<wbr>Id
+<a class="anchorjs-link " href="#rootdevicevolumeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -995,7 +1390,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1004,7 +1404,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="sshhostdsakeyfingerprint~go">
+<span class="nx">
+Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#sshhostdsakeyfingerprint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1012,7 +1417,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="sshhostrsakeyfingerprint~go">
+<span class="nx">
+Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#sshhostrsakeyfingerprint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1020,7 +1430,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Key<wbr>Name</span>
+        <span id="sshkeyname~go">
+<span class="nx">
+Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#sshkeyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1029,7 +1444,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1038,7 +1458,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1046,7 +1471,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1055,7 +1485,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="tenancy~go">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1064,7 +1499,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="virtualizationtype~go">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1081,7 +1521,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>layer<wbr>Ids</span>
+        <span id="layerids~nodejs">
+<span class="nx">
+layer<wbr>Ids
+<a class="anchorjs-link " href="#layerids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1090,7 +1535,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>stack<wbr>Id</span>
+        <span id="stackid~nodejs">
+<span class="nx">
+stack<wbr>Id
+<a class="anchorjs-link " href="#stackid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1099,7 +1549,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent<wbr>Version</span>
+        <span id="agentversion~nodejs">
+<span class="nx">
+agent<wbr>Version
+<a class="anchorjs-link " href="#agentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1108,7 +1563,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ami<wbr>Id</span>
+        <span id="amiid~nodejs">
+<span class="nx">
+ami<wbr>Id
+<a class="anchorjs-link " href="#amiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1117,7 +1577,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="architecture~nodejs">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#architecture~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1126,7 +1591,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Scaling<wbr>Type</span>
+        <span id="autoscalingtype~nodejs">
+<span class="nx">
+auto<wbr>Scaling<wbr>Type
+<a class="anchorjs-link " href="#autoscalingtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1135,7 +1605,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1145,7 +1620,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>created<wbr>At</span>
+        <span id="createdat~nodejs">
+<span class="nx">
+created<wbr>At
+<a class="anchorjs-link " href="#createdat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1153,7 +1633,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>Ebs</span>
+        <span id="deleteebs~nodejs">
+<span class="nx">
+delete<wbr>Ebs
+<a class="anchorjs-link " href="#deleteebs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1161,7 +1646,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>Eip</span>
+        <span id="deleteeip~nodejs">
+<span class="nx">
+delete<wbr>Eip
+<a class="anchorjs-link " href="#deleteeip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1169,7 +1659,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1179,7 +1674,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1188,7 +1688,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ecs<wbr>Cluster<wbr>Arn</span>
+        <span id="ecsclusterarn~nodejs">
+<span class="nx">
+ecs<wbr>Cluster<wbr>Arn
+<a class="anchorjs-link " href="#ecsclusterarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1196,7 +1701,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Ip</span>
+        <span id="elasticip~nodejs">
+<span class="nx">
+elastic<wbr>Ip
+<a class="anchorjs-link " href="#elasticip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1204,7 +1714,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1214,7 +1729,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname</span>
+        <span id="hostname~nodejs">
+<span class="nx">
+hostname
+<a class="anchorjs-link " href="#hostname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1223,7 +1743,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>infrastructure<wbr>Class</span>
+        <span id="infrastructureclass~nodejs">
+<span class="nx">
+infrastructure<wbr>Class
+<a class="anchorjs-link " href="#infrastructureclass~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1231,7 +1756,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="installupdatesonboot~nodejs">
+<span class="nx">
+install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#installupdatesonboot~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1240,7 +1770,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Profile<wbr>Arn</span>
+        <span id="instanceprofilearn~nodejs">
+<span class="nx">
+instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#instanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1248,7 +1783,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1257,7 +1797,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Service<wbr>Error<wbr>Id</span>
+        <span id="lastserviceerrorid~nodejs">
+<span class="nx">
+last<wbr>Service<wbr>Error<wbr>Id
+<a class="anchorjs-link " href="#lastserviceerrorid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1265,7 +1810,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>os</span>
+        <span id="os~nodejs">
+<span class="nx">
+os
+<a class="anchorjs-link " href="#os~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1274,7 +1824,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>platform</span>
+        <span id="platform~nodejs">
+<span class="nx">
+platform
+<a class="anchorjs-link " href="#platform~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1282,7 +1837,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Dns</span>
+        <span id="privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1293,7 +1853,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Ip</span>
+        <span id="privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1302,7 +1867,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Dns</span>
+        <span id="publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1312,7 +1882,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Ip</span>
+        <span id="publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1321,7 +1896,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>registered<wbr>By</span>
+        <span id="registeredby~nodejs">
+<span class="nx">
+registered<wbr>By
+<a class="anchorjs-link " href="#registeredby~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1329,7 +1909,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Agent<wbr>Version</span>
+        <span id="reportedagentversion~nodejs">
+<span class="nx">
+reported<wbr>Agent<wbr>Version
+<a class="anchorjs-link " href="#reportedagentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1337,7 +1922,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Os<wbr>Family</span>
+        <span id="reportedosfamily~nodejs">
+<span class="nx">
+reported<wbr>Os<wbr>Family
+<a class="anchorjs-link " href="#reportedosfamily~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1345,7 +1935,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Os<wbr>Name</span>
+        <span id="reportedosname~nodejs">
+<span class="nx">
+reported<wbr>Os<wbr>Name
+<a class="anchorjs-link " href="#reportedosname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1353,7 +1948,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Os<wbr>Version</span>
+        <span id="reportedosversion~nodejs">
+<span class="nx">
+reported<wbr>Os<wbr>Version
+<a class="anchorjs-link " href="#reportedosversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1361,7 +1961,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~nodejs">
+<span class="nx">
+root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">Instance<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1371,7 +1976,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Device<wbr>Type</span>
+        <span id="rootdevicetype~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#rootdevicetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1380,7 +1990,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Device<wbr>Volume<wbr>Id</span>
+        <span id="rootdevicevolumeid~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Volume<wbr>Id
+<a class="anchorjs-link " href="#rootdevicevolumeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1388,7 +2003,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1397,7 +2017,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="sshhostdsakeyfingerprint~nodejs">
+<span class="nx">
+ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#sshhostdsakeyfingerprint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1405,7 +2030,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="sshhostrsakeyfingerprint~nodejs">
+<span class="nx">
+ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#sshhostrsakeyfingerprint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1413,7 +2043,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Key<wbr>Name</span>
+        <span id="sshkeyname~nodejs">
+<span class="nx">
+ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#sshkeyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1422,7 +2057,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1431,7 +2071,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1439,7 +2084,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1448,7 +2098,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="tenancy~nodejs">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1457,7 +2112,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization<wbr>Type</span>
+        <span id="virtualizationtype~nodejs">
+<span class="nx">
+virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1474,7 +2134,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>layer_<wbr>ids</span>
+        <span id="layer_ids~python">
+<span class="nx">
+layer_<wbr>ids
+<a class="anchorjs-link " href="#layer_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1483,7 +2148,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>stack_<wbr>id</span>
+        <span id="stack_id~python">
+<span class="nx">
+stack_<wbr>id
+<a class="anchorjs-link " href="#stack_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1492,7 +2162,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent_<wbr>version</span>
+        <span id="agent_version~python">
+<span class="nx">
+agent_<wbr>version
+<a class="anchorjs-link " href="#agent_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1501,7 +2176,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ami_<wbr>id</span>
+        <span id="ami_id~python">
+<span class="nx">
+ami_<wbr>id
+<a class="anchorjs-link " href="#ami_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1510,7 +2190,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="architecture~python">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#architecture~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1519,7 +2204,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>scaling_<wbr>type</span>
+        <span id="auto_scaling_type~python">
+<span class="nx">
+auto_<wbr>scaling_<wbr>type
+<a class="anchorjs-link " href="#auto_scaling_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1528,7 +2218,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1538,7 +2233,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>created_<wbr>at</span>
+        <span id="created_at~python">
+<span class="nx">
+created_<wbr>at
+<a class="anchorjs-link " href="#created_at~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1546,7 +2246,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete_<wbr>ebs</span>
+        <span id="delete_ebs~python">
+<span class="nx">
+delete_<wbr>ebs
+<a class="anchorjs-link " href="#delete_ebs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1554,7 +2259,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete_<wbr>eip</span>
+        <span id="delete_eip~python">
+<span class="nx">
+delete_<wbr>eip
+<a class="anchorjs-link " href="#delete_eip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1562,7 +2272,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List[Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1572,7 +2287,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1581,7 +2301,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ecs_<wbr>cluster_<wbr>arn</span>
+        <span id="ecs_cluster_arn~python">
+<span class="nx">
+ecs_<wbr>cluster_<wbr>arn
+<a class="anchorjs-link " href="#ecs_cluster_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1589,7 +2314,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>ip</span>
+        <span id="elastic_ip~python">
+<span class="nx">
+elastic_<wbr>ip
+<a class="anchorjs-link " href="#elastic_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1597,7 +2327,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List[Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1607,7 +2342,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname</span>
+        <span id="hostname~python">
+<span class="nx">
+hostname
+<a class="anchorjs-link " href="#hostname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1616,7 +2356,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>infrastructure_<wbr>class</span>
+        <span id="infrastructure_class~python">
+<span class="nx">
+infrastructure_<wbr>class
+<a class="anchorjs-link " href="#infrastructure_class~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1624,7 +2369,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>install_<wbr>updates_<wbr>on_<wbr>boot</span>
+        <span id="install_updates_on_boot~python">
+<span class="nx">
+install_<wbr>updates_<wbr>on_<wbr>boot
+<a class="anchorjs-link " href="#install_updates_on_boot~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1633,7 +2383,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>profile_<wbr>arn</span>
+        <span id="instance_profile_arn~python">
+<span class="nx">
+instance_<wbr>profile_<wbr>arn
+<a class="anchorjs-link " href="#instance_profile_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1641,7 +2396,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1650,7 +2410,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>service_<wbr>error_<wbr>id</span>
+        <span id="last_service_error_id~python">
+<span class="nx">
+last_<wbr>service_<wbr>error_<wbr>id
+<a class="anchorjs-link " href="#last_service_error_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1658,7 +2423,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>os</span>
+        <span id="os~python">
+<span class="nx">
+os
+<a class="anchorjs-link " href="#os~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1667,7 +2437,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>platform</span>
+        <span id="platform~python">
+<span class="nx">
+platform
+<a class="anchorjs-link " href="#platform~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1675,7 +2450,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>dns</span>
+        <span id="private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1686,7 +2466,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>ip</span>
+        <span id="private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1695,7 +2480,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>dns</span>
+        <span id="public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1705,7 +2495,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>ip</span>
+        <span id="public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1714,7 +2509,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>registered_<wbr>by</span>
+        <span id="registered_by~python">
+<span class="nx">
+registered_<wbr>by
+<a class="anchorjs-link " href="#registered_by~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1722,7 +2522,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>agent_<wbr>version</span>
+        <span id="reported_agent_version~python">
+<span class="nx">
+reported_<wbr>agent_<wbr>version
+<a class="anchorjs-link " href="#reported_agent_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1730,7 +2535,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>os_<wbr>family</span>
+        <span id="reported_os_family~python">
+<span class="nx">
+reported_<wbr>os_<wbr>family
+<a class="anchorjs-link " href="#reported_os_family~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1738,7 +2548,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>os_<wbr>name</span>
+        <span id="reported_os_name~python">
+<span class="nx">
+reported_<wbr>os_<wbr>name
+<a class="anchorjs-link " href="#reported_os_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1746,7 +2561,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>os_<wbr>version</span>
+        <span id="reported_os_version~python">
+<span class="nx">
+reported_<wbr>os_<wbr>version
+<a class="anchorjs-link " href="#reported_os_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1754,7 +2574,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>block_<wbr>devices</span>
+        <span id="root_block_devices~python">
+<span class="nx">
+root_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#root_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List[Instance<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1764,7 +2589,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>device_<wbr>type</span>
+        <span id="root_device_type~python">
+<span class="nx">
+root_<wbr>device_<wbr>type
+<a class="anchorjs-link " href="#root_device_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1773,7 +2603,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>device_<wbr>volume_<wbr>id</span>
+        <span id="root_device_volume_id~python">
+<span class="nx">
+root_<wbr>device_<wbr>volume_<wbr>id
+<a class="anchorjs-link " href="#root_device_volume_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1781,7 +2616,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1790,7 +2630,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh_<wbr>host_<wbr>dsa_<wbr>key_<wbr>fingerprint</span>
+        <span id="ssh_host_dsa_key_fingerprint~python">
+<span class="nx">
+ssh_<wbr>host_<wbr>dsa_<wbr>key_<wbr>fingerprint
+<a class="anchorjs-link " href="#ssh_host_dsa_key_fingerprint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1798,7 +2643,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh_<wbr>host_<wbr>rsa_<wbr>key_<wbr>fingerprint</span>
+        <span id="ssh_host_rsa_key_fingerprint~python">
+<span class="nx">
+ssh_<wbr>host_<wbr>rsa_<wbr>key_<wbr>fingerprint
+<a class="anchorjs-link " href="#ssh_host_rsa_key_fingerprint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1806,7 +2656,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh_<wbr>key_<wbr>name</span>
+        <span id="ssh_key_name~python">
+<span class="nx">
+ssh_<wbr>key_<wbr>name
+<a class="anchorjs-link " href="#ssh_key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1815,7 +2670,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1824,7 +2684,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1832,7 +2697,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1841,7 +2711,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="tenancy~python">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1850,7 +2725,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization_<wbr>type</span>
+        <span id="virtualization_type~python">
+<span class="nx">
+virtualization_<wbr>type
+<a class="anchorjs-link " href="#virtualization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1878,7 +2758,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Ec2Instance<wbr>Id</span>
+        <span id="ec2instanceid~csharp">
+<span class="nx">
+Ec2Instance<wbr>Id
+<a class="anchorjs-link " href="#ec2instanceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1887,7 +2772,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1902,7 +2792,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Ec2Instance<wbr>Id</span>
+        <span id="ec2instanceid~go">
+<span class="nx">
+Ec2Instance<wbr>Id
+<a class="anchorjs-link " href="#ec2instanceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1911,7 +2806,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1926,7 +2826,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>ec2Instance<wbr>Id</span>
+        <span id="ec2instanceid~nodejs">
+<span class="nx">
+ec2Instance<wbr>Id
+<a class="anchorjs-link " href="#ec2instanceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1935,7 +2840,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1950,7 +2860,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>ec2_<wbr>instance_<wbr>id</span>
+        <span id="ec2_instance_id~python">
+<span class="nx">
+ec2_<wbr>instance_<wbr>id
+<a class="anchorjs-link " href="#ec2_instance_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1959,7 +2874,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1980,7 +2900,7 @@ Get an existing Instance resource's state with the given name, ID, and optional 
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Instance">Instance</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#Instance">Instance</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1988,11 +2908,11 @@ Get an existing Instance resource's state with the given name, ID, and optional 
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstance<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Instance.html">Instance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.InstanceState.html">InstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.Instance.html">Instance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.InstanceState.html">InstanceState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -2100,7 +3020,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="state_agentversion~csharp">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#state_agentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2109,7 +3034,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ami<wbr>Id</span>
+        <span id="state_amiid~csharp">
+<span class="nx">
+Ami<wbr>Id
+<a class="anchorjs-link " href="#state_amiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2118,7 +3048,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="state_architecture~csharp">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#state_architecture~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2127,7 +3062,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Scaling<wbr>Type</span>
+        <span id="state_autoscalingtype~csharp">
+<span class="nx">
+Auto<wbr>Scaling<wbr>Type
+<a class="anchorjs-link " href="#state_autoscalingtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2136,7 +3076,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2146,7 +3091,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Created<wbr>At</span>
+        <span id="state_createdat~csharp">
+<span class="nx">
+Created<wbr>At
+<a class="anchorjs-link " href="#state_createdat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2154,7 +3104,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Ebs</span>
+        <span id="state_deleteebs~csharp">
+<span class="nx">
+Delete<wbr>Ebs
+<a class="anchorjs-link " href="#state_deleteebs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2162,7 +3117,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Eip</span>
+        <span id="state_deleteeip~csharp">
+<span class="nx">
+Delete<wbr>Eip
+<a class="anchorjs-link " href="#state_deleteeip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2170,7 +3130,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List&lt;Instance<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2180,7 +3145,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2189,7 +3159,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ec2Instance<wbr>Id</span>
+        <span id="state_ec2instanceid~csharp">
+<span class="nx">
+Ec2Instance<wbr>Id
+<a class="anchorjs-link " href="#state_ec2instanceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2198,7 +3173,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ecs<wbr>Cluster<wbr>Arn</span>
+        <span id="state_ecsclusterarn~csharp">
+<span class="nx">
+Ecs<wbr>Cluster<wbr>Arn
+<a class="anchorjs-link " href="#state_ecsclusterarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2206,7 +3186,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="state_elasticip~csharp">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#state_elasticip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2214,7 +3199,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List&lt;Instance<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2224,7 +3214,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname</span>
+        <span id="state_hostname~csharp">
+<span class="nx">
+Hostname
+<a class="anchorjs-link " href="#state_hostname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2233,7 +3228,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Infrastructure<wbr>Class</span>
+        <span id="state_infrastructureclass~csharp">
+<span class="nx">
+Infrastructure<wbr>Class
+<a class="anchorjs-link " href="#state_infrastructureclass~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2241,7 +3241,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="state_installupdatesonboot~csharp">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#state_installupdatesonboot~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2250,7 +3255,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_instanceprofilearn~csharp">
+<span class="nx">
+Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_instanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2258,7 +3268,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="state_instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2267,7 +3282,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Service<wbr>Error<wbr>Id</span>
+        <span id="state_lastserviceerrorid~csharp">
+<span class="nx">
+Last<wbr>Service<wbr>Error<wbr>Id
+<a class="anchorjs-link " href="#state_lastserviceerrorid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2275,7 +3295,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Layer<wbr>Ids</span>
+        <span id="state_layerids~csharp">
+<span class="nx">
+Layer<wbr>Ids
+<a class="anchorjs-link " href="#state_layerids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2284,7 +3309,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Os</span>
+        <span id="state_os~csharp">
+<span class="nx">
+Os
+<a class="anchorjs-link " href="#state_os~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2293,7 +3323,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Platform</span>
+        <span id="state_platform~csharp">
+<span class="nx">
+Platform
+<a class="anchorjs-link " href="#state_platform~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2301,7 +3336,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="state_privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2312,7 +3352,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="state_privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2321,7 +3366,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="state_publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2331,7 +3381,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="state_publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2340,7 +3395,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Registered<wbr>By</span>
+        <span id="state_registeredby~csharp">
+<span class="nx">
+Registered<wbr>By
+<a class="anchorjs-link " href="#state_registeredby~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2348,7 +3408,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Agent<wbr>Version</span>
+        <span id="state_reportedagentversion~csharp">
+<span class="nx">
+Reported<wbr>Agent<wbr>Version
+<a class="anchorjs-link " href="#state_reportedagentversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2356,7 +3421,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Family</span>
+        <span id="state_reportedosfamily~csharp">
+<span class="nx">
+Reported<wbr>Os<wbr>Family
+<a class="anchorjs-link " href="#state_reportedosfamily~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2364,7 +3434,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Name</span>
+        <span id="state_reportedosname~csharp">
+<span class="nx">
+Reported<wbr>Os<wbr>Name
+<a class="anchorjs-link " href="#state_reportedosname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2372,7 +3447,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Version</span>
+        <span id="state_reportedosversion~csharp">
+<span class="nx">
+Reported<wbr>Os<wbr>Version
+<a class="anchorjs-link " href="#state_reportedosversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2380,7 +3460,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="state_rootblockdevices~csharp">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_rootblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List&lt;Instance<wbr>Root<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2390,7 +3475,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Type</span>
+        <span id="state_rootdevicetype~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#state_rootdevicetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2399,7 +3489,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Volume<wbr>Id</span>
+        <span id="state_rootdevicevolumeid~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Volume<wbr>Id
+<a class="anchorjs-link " href="#state_rootdevicevolumeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2407,7 +3502,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2416,7 +3516,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="state_sshhostdsakeyfingerprint~csharp">
+<span class="nx">
+Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#state_sshhostdsakeyfingerprint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2424,7 +3529,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="state_sshhostrsakeyfingerprint~csharp">
+<span class="nx">
+Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#state_sshhostrsakeyfingerprint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2432,7 +3542,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Key<wbr>Name</span>
+        <span id="state_sshkeyname~csharp">
+<span class="nx">
+Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#state_sshkeyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2441,7 +3556,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stack<wbr>Id</span>
+        <span id="state_stackid~csharp">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#state_stackid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2450,7 +3570,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state_state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state_state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2459,7 +3584,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="state_status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#state_status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2467,7 +3597,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="state_subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2476,7 +3611,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="state_tenancy~csharp">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#state_tenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2485,7 +3625,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="state_virtualizationtype~csharp">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#state_virtualizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2502,7 +3647,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Agent<wbr>Version</span>
+        <span id="state_agentversion~go">
+<span class="nx">
+Agent<wbr>Version
+<a class="anchorjs-link " href="#state_agentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2511,7 +3661,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ami<wbr>Id</span>
+        <span id="state_amiid~go">
+<span class="nx">
+Ami<wbr>Id
+<a class="anchorjs-link " href="#state_amiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2520,7 +3675,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Architecture</span>
+        <span id="state_architecture~go">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#state_architecture~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2529,7 +3689,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Scaling<wbr>Type</span>
+        <span id="state_autoscalingtype~go">
+<span class="nx">
+Auto<wbr>Scaling<wbr>Type
+<a class="anchorjs-link " href="#state_autoscalingtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2538,7 +3703,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2548,7 +3718,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Created<wbr>At</span>
+        <span id="state_createdat~go">
+<span class="nx">
+Created<wbr>At
+<a class="anchorjs-link " href="#state_createdat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2556,7 +3731,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Ebs</span>
+        <span id="state_deleteebs~go">
+<span class="nx">
+Delete<wbr>Ebs
+<a class="anchorjs-link " href="#state_deleteebs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2564,7 +3744,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>Eip</span>
+        <span id="state_deleteeip~go">
+<span class="nx">
+Delete<wbr>Eip
+<a class="anchorjs-link " href="#state_deleteeip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2572,7 +3757,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">[]Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -2582,7 +3772,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2591,7 +3786,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ec2Instance<wbr>Id</span>
+        <span id="state_ec2instanceid~go">
+<span class="nx">
+Ec2Instance<wbr>Id
+<a class="anchorjs-link " href="#state_ec2instanceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2600,7 +3800,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ecs<wbr>Cluster<wbr>Arn</span>
+        <span id="state_ecsclusterarn~go">
+<span class="nx">
+Ecs<wbr>Cluster<wbr>Arn
+<a class="anchorjs-link " href="#state_ecsclusterarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2608,7 +3813,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="state_elasticip~go">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#state_elasticip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2616,7 +3826,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">[]Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -2626,7 +3841,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hostname</span>
+        <span id="state_hostname~go">
+<span class="nx">
+Hostname
+<a class="anchorjs-link " href="#state_hostname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2635,7 +3855,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Infrastructure<wbr>Class</span>
+        <span id="state_infrastructureclass~go">
+<span class="nx">
+Infrastructure<wbr>Class
+<a class="anchorjs-link " href="#state_infrastructureclass~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2643,7 +3868,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="state_installupdatesonboot~go">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#state_installupdatesonboot~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2652,7 +3882,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_instanceprofilearn~go">
+<span class="nx">
+Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_instanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2660,7 +3895,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="state_instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2669,7 +3909,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Service<wbr>Error<wbr>Id</span>
+        <span id="state_lastserviceerrorid~go">
+<span class="nx">
+Last<wbr>Service<wbr>Error<wbr>Id
+<a class="anchorjs-link " href="#state_lastserviceerrorid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2677,7 +3922,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Layer<wbr>Ids</span>
+        <span id="state_layerids~go">
+<span class="nx">
+Layer<wbr>Ids
+<a class="anchorjs-link " href="#state_layerids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2686,7 +3936,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Os</span>
+        <span id="state_os~go">
+<span class="nx">
+Os
+<a class="anchorjs-link " href="#state_os~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2695,7 +3950,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Platform</span>
+        <span id="state_platform~go">
+<span class="nx">
+Platform
+<a class="anchorjs-link " href="#state_platform~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2703,7 +3963,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="state_privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2714,7 +3979,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="state_privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2723,7 +3993,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="state_publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2733,7 +4008,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="state_publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2742,7 +4022,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Registered<wbr>By</span>
+        <span id="state_registeredby~go">
+<span class="nx">
+Registered<wbr>By
+<a class="anchorjs-link " href="#state_registeredby~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2750,7 +4035,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Agent<wbr>Version</span>
+        <span id="state_reportedagentversion~go">
+<span class="nx">
+Reported<wbr>Agent<wbr>Version
+<a class="anchorjs-link " href="#state_reportedagentversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2758,7 +4048,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Family</span>
+        <span id="state_reportedosfamily~go">
+<span class="nx">
+Reported<wbr>Os<wbr>Family
+<a class="anchorjs-link " href="#state_reportedosfamily~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2766,7 +4061,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Name</span>
+        <span id="state_reportedosname~go">
+<span class="nx">
+Reported<wbr>Os<wbr>Name
+<a class="anchorjs-link " href="#state_reportedosname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2774,7 +4074,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reported<wbr>Os<wbr>Version</span>
+        <span id="state_reportedosversion~go">
+<span class="nx">
+Reported<wbr>Os<wbr>Version
+<a class="anchorjs-link " href="#state_reportedosversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2782,7 +4087,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="state_rootblockdevices~go">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_rootblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">[]Instance<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -2792,7 +4102,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Type</span>
+        <span id="state_rootdevicetype~go">
+<span class="nx">
+Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#state_rootdevicetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2801,7 +4116,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Device<wbr>Volume<wbr>Id</span>
+        <span id="state_rootdevicevolumeid~go">
+<span class="nx">
+Root<wbr>Device<wbr>Volume<wbr>Id
+<a class="anchorjs-link " href="#state_rootdevicevolumeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2809,7 +4129,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2818,7 +4143,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="state_sshhostdsakeyfingerprint~go">
+<span class="nx">
+Ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#state_sshhostdsakeyfingerprint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2826,7 +4156,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="state_sshhostrsakeyfingerprint~go">
+<span class="nx">
+Ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#state_sshhostrsakeyfingerprint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2834,7 +4169,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ssh<wbr>Key<wbr>Name</span>
+        <span id="state_sshkeyname~go">
+<span class="nx">
+Ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#state_sshkeyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2843,7 +4183,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stack<wbr>Id</span>
+        <span id="state_stackid~go">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#state_stackid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2852,7 +4197,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state_state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state_state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2861,7 +4211,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="state_status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#state_status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2869,7 +4224,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="state_subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2878,7 +4238,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="state_tenancy~go">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#state_tenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2887,7 +4252,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtualization<wbr>Type</span>
+        <span id="state_virtualizationtype~go">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#state_virtualizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2904,7 +4274,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent<wbr>Version</span>
+        <span id="state_agentversion~nodejs">
+<span class="nx">
+agent<wbr>Version
+<a class="anchorjs-link " href="#state_agentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2913,7 +4288,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ami<wbr>Id</span>
+        <span id="state_amiid~nodejs">
+<span class="nx">
+ami<wbr>Id
+<a class="anchorjs-link " href="#state_amiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2922,7 +4302,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="state_architecture~nodejs">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#state_architecture~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2931,7 +4316,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Scaling<wbr>Type</span>
+        <span id="state_autoscalingtype~nodejs">
+<span class="nx">
+auto<wbr>Scaling<wbr>Type
+<a class="anchorjs-link " href="#state_autoscalingtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2940,7 +4330,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="state_availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2950,7 +4345,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>created<wbr>At</span>
+        <span id="state_createdat~nodejs">
+<span class="nx">
+created<wbr>At
+<a class="anchorjs-link " href="#state_createdat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2958,7 +4358,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>Ebs</span>
+        <span id="state_deleteebs~nodejs">
+<span class="nx">
+delete<wbr>Ebs
+<a class="anchorjs-link " href="#state_deleteebs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2966,7 +4371,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>Eip</span>
+        <span id="state_deleteeip~nodejs">
+<span class="nx">
+delete<wbr>Eip
+<a class="anchorjs-link " href="#state_deleteeip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2974,7 +4384,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -2984,7 +4399,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2993,7 +4413,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ec2Instance<wbr>Id</span>
+        <span id="state_ec2instanceid~nodejs">
+<span class="nx">
+ec2Instance<wbr>Id
+<a class="anchorjs-link " href="#state_ec2instanceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3002,7 +4427,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ecs<wbr>Cluster<wbr>Arn</span>
+        <span id="state_ecsclusterarn~nodejs">
+<span class="nx">
+ecs<wbr>Cluster<wbr>Arn
+<a class="anchorjs-link " href="#state_ecsclusterarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3010,7 +4440,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Ip</span>
+        <span id="state_elasticip~nodejs">
+<span class="nx">
+elastic<wbr>Ip
+<a class="anchorjs-link " href="#state_elasticip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3018,7 +4453,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -3028,7 +4468,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname</span>
+        <span id="state_hostname~nodejs">
+<span class="nx">
+hostname
+<a class="anchorjs-link " href="#state_hostname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3037,7 +4482,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>infrastructure<wbr>Class</span>
+        <span id="state_infrastructureclass~nodejs">
+<span class="nx">
+infrastructure<wbr>Class
+<a class="anchorjs-link " href="#state_infrastructureclass~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3045,7 +4495,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="state_installupdatesonboot~nodejs">
+<span class="nx">
+install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#state_installupdatesonboot~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3054,7 +4509,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_instanceprofilearn~nodejs">
+<span class="nx">
+instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_instanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3062,7 +4522,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="state_instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3071,7 +4536,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Service<wbr>Error<wbr>Id</span>
+        <span id="state_lastserviceerrorid~nodejs">
+<span class="nx">
+last<wbr>Service<wbr>Error<wbr>Id
+<a class="anchorjs-link " href="#state_lastserviceerrorid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3079,7 +4549,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>layer<wbr>Ids</span>
+        <span id="state_layerids~nodejs">
+<span class="nx">
+layer<wbr>Ids
+<a class="anchorjs-link " href="#state_layerids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3088,7 +4563,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>os</span>
+        <span id="state_os~nodejs">
+<span class="nx">
+os
+<a class="anchorjs-link " href="#state_os~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3097,7 +4577,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>platform</span>
+        <span id="state_platform~nodejs">
+<span class="nx">
+platform
+<a class="anchorjs-link " href="#state_platform~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3105,7 +4590,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Dns</span>
+        <span id="state_privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3116,7 +4606,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Ip</span>
+        <span id="state_privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3125,7 +4620,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Dns</span>
+        <span id="state_publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3135,7 +4635,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Ip</span>
+        <span id="state_publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3144,7 +4649,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>registered<wbr>By</span>
+        <span id="state_registeredby~nodejs">
+<span class="nx">
+registered<wbr>By
+<a class="anchorjs-link " href="#state_registeredby~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3152,7 +4662,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Agent<wbr>Version</span>
+        <span id="state_reportedagentversion~nodejs">
+<span class="nx">
+reported<wbr>Agent<wbr>Version
+<a class="anchorjs-link " href="#state_reportedagentversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3160,7 +4675,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Os<wbr>Family</span>
+        <span id="state_reportedosfamily~nodejs">
+<span class="nx">
+reported<wbr>Os<wbr>Family
+<a class="anchorjs-link " href="#state_reportedosfamily~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3168,7 +4688,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Os<wbr>Name</span>
+        <span id="state_reportedosname~nodejs">
+<span class="nx">
+reported<wbr>Os<wbr>Name
+<a class="anchorjs-link " href="#state_reportedosname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3176,7 +4701,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported<wbr>Os<wbr>Version</span>
+        <span id="state_reportedosversion~nodejs">
+<span class="nx">
+reported<wbr>Os<wbr>Version
+<a class="anchorjs-link " href="#state_reportedosversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3184,7 +4714,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Block<wbr>Devices</span>
+        <span id="state_rootblockdevices~nodejs">
+<span class="nx">
+root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_rootblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">Instance<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -3194,7 +4729,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Device<wbr>Type</span>
+        <span id="state_rootdevicetype~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#state_rootdevicetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3203,7 +4743,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Device<wbr>Volume<wbr>Id</span>
+        <span id="state_rootdevicevolumeid~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Volume<wbr>Id
+<a class="anchorjs-link " href="#state_rootdevicevolumeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3211,7 +4756,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3220,7 +4770,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="state_sshhostdsakeyfingerprint~nodejs">
+<span class="nx">
+ssh<wbr>Host<wbr>Dsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#state_sshhostdsakeyfingerprint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3228,7 +4783,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint</span>
+        <span id="state_sshhostrsakeyfingerprint~nodejs">
+<span class="nx">
+ssh<wbr>Host<wbr>Rsa<wbr>Key<wbr>Fingerprint
+<a class="anchorjs-link " href="#state_sshhostrsakeyfingerprint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3236,7 +4796,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh<wbr>Key<wbr>Name</span>
+        <span id="state_sshkeyname~nodejs">
+<span class="nx">
+ssh<wbr>Key<wbr>Name
+<a class="anchorjs-link " href="#state_sshkeyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3245,7 +4810,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stack<wbr>Id</span>
+        <span id="state_stackid~nodejs">
+<span class="nx">
+stack<wbr>Id
+<a class="anchorjs-link " href="#state_stackid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3254,7 +4824,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state_state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state_state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3263,7 +4838,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="state_status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#state_status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3271,7 +4851,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="state_subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#state_subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3280,7 +4865,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="state_tenancy~nodejs">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#state_tenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3289,7 +4879,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization<wbr>Type</span>
+        <span id="state_virtualizationtype~nodejs">
+<span class="nx">
+virtualization<wbr>Type
+<a class="anchorjs-link " href="#state_virtualizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3306,7 +4901,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>agent_<wbr>version</span>
+        <span id="state_agent_version~python">
+<span class="nx">
+agent_<wbr>version
+<a class="anchorjs-link " href="#state_agent_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3315,7 +4915,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ami_<wbr>id</span>
+        <span id="state_ami_id~python">
+<span class="nx">
+ami_<wbr>id
+<a class="anchorjs-link " href="#state_ami_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3324,7 +4929,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>architecture</span>
+        <span id="state_architecture~python">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#state_architecture~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3333,7 +4943,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>scaling_<wbr>type</span>
+        <span id="state_auto_scaling_type~python">
+<span class="nx">
+auto_<wbr>scaling_<wbr>type
+<a class="anchorjs-link " href="#state_auto_scaling_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3342,7 +4957,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="state_availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#state_availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3352,7 +4972,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>created_<wbr>at</span>
+        <span id="state_created_at~python">
+<span class="nx">
+created_<wbr>at
+<a class="anchorjs-link " href="#state_created_at~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3360,7 +4985,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete_<wbr>ebs</span>
+        <span id="state_delete_ebs~python">
+<span class="nx">
+delete_<wbr>ebs
+<a class="anchorjs-link " href="#state_delete_ebs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3368,7 +4998,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete_<wbr>eip</span>
+        <span id="state_delete_eip~python">
+<span class="nx">
+delete_<wbr>eip
+<a class="anchorjs-link " href="#state_delete_eip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3376,7 +5011,12 @@ by default.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="state_ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceebsblockdevice">List[Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -3386,7 +5026,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="state_ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#state_ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3395,7 +5040,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ec2_<wbr>instance_<wbr>id</span>
+        <span id="state_ec2_instance_id~python">
+<span class="nx">
+ec2_<wbr>instance_<wbr>id
+<a class="anchorjs-link " href="#state_ec2_instance_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3404,7 +5054,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ecs_<wbr>cluster_<wbr>arn</span>
+        <span id="state_ecs_cluster_arn~python">
+<span class="nx">
+ecs_<wbr>cluster_<wbr>arn
+<a class="anchorjs-link " href="#state_ecs_cluster_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3412,7 +5067,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>ip</span>
+        <span id="state_elastic_ip~python">
+<span class="nx">
+elastic_<wbr>ip
+<a class="anchorjs-link " href="#state_elastic_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3420,7 +5080,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="state_ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instanceephemeralblockdevice">List[Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -3430,7 +5095,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hostname</span>
+        <span id="state_hostname~python">
+<span class="nx">
+hostname
+<a class="anchorjs-link " href="#state_hostname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3439,7 +5109,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>infrastructure_<wbr>class</span>
+        <span id="state_infrastructure_class~python">
+<span class="nx">
+infrastructure_<wbr>class
+<a class="anchorjs-link " href="#state_infrastructure_class~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3447,7 +5122,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>install_<wbr>updates_<wbr>on_<wbr>boot</span>
+        <span id="state_install_updates_on_boot~python">
+<span class="nx">
+install_<wbr>updates_<wbr>on_<wbr>boot
+<a class="anchorjs-link " href="#state_install_updates_on_boot~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3456,7 +5136,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>profile_<wbr>arn</span>
+        <span id="state_instance_profile_arn~python">
+<span class="nx">
+instance_<wbr>profile_<wbr>arn
+<a class="anchorjs-link " href="#state_instance_profile_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3464,7 +5149,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="state_instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#state_instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3473,7 +5163,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>service_<wbr>error_<wbr>id</span>
+        <span id="state_last_service_error_id~python">
+<span class="nx">
+last_<wbr>service_<wbr>error_<wbr>id
+<a class="anchorjs-link " href="#state_last_service_error_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3481,7 +5176,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>layer_<wbr>ids</span>
+        <span id="state_layer_ids~python">
+<span class="nx">
+layer_<wbr>ids
+<a class="anchorjs-link " href="#state_layer_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3490,7 +5190,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>os</span>
+        <span id="state_os~python">
+<span class="nx">
+os
+<a class="anchorjs-link " href="#state_os~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3499,7 +5204,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>platform</span>
+        <span id="state_platform~python">
+<span class="nx">
+platform
+<a class="anchorjs-link " href="#state_platform~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3507,7 +5217,12 @@ instance.  See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>dns</span>
+        <span id="state_private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#state_private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3518,7 +5233,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>ip</span>
+        <span id="state_private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#state_private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3527,7 +5247,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>dns</span>
+        <span id="state_public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#state_public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3537,7 +5262,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>ip</span>
+        <span id="state_public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#state_public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3546,7 +5276,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>registered_<wbr>by</span>
+        <span id="state_registered_by~python">
+<span class="nx">
+registered_<wbr>by
+<a class="anchorjs-link " href="#state_registered_by~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3554,7 +5289,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>agent_<wbr>version</span>
+        <span id="state_reported_agent_version~python">
+<span class="nx">
+reported_<wbr>agent_<wbr>version
+<a class="anchorjs-link " href="#state_reported_agent_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3562,7 +5302,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>os_<wbr>family</span>
+        <span id="state_reported_os_family~python">
+<span class="nx">
+reported_<wbr>os_<wbr>family
+<a class="anchorjs-link " href="#state_reported_os_family~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3570,7 +5315,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>os_<wbr>name</span>
+        <span id="state_reported_os_name~python">
+<span class="nx">
+reported_<wbr>os_<wbr>name
+<a class="anchorjs-link " href="#state_reported_os_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3578,7 +5328,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>reported_<wbr>os_<wbr>version</span>
+        <span id="state_reported_os_version~python">
+<span class="nx">
+reported_<wbr>os_<wbr>version
+<a class="anchorjs-link " href="#state_reported_os_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3586,7 +5341,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>block_<wbr>devices</span>
+        <span id="state_root_block_devices~python">
+<span class="nx">
+root_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_root_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#instancerootblockdevice">List[Instance<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -3596,7 +5356,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>device_<wbr>type</span>
+        <span id="state_root_device_type~python">
+<span class="nx">
+root_<wbr>device_<wbr>type
+<a class="anchorjs-link " href="#state_root_device_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3605,7 +5370,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>device_<wbr>volume_<wbr>id</span>
+        <span id="state_root_device_volume_id~python">
+<span class="nx">
+root_<wbr>device_<wbr>volume_<wbr>id
+<a class="anchorjs-link " href="#state_root_device_volume_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3613,7 +5383,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="state_security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3622,7 +5397,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh_<wbr>host_<wbr>dsa_<wbr>key_<wbr>fingerprint</span>
+        <span id="state_ssh_host_dsa_key_fingerprint~python">
+<span class="nx">
+ssh_<wbr>host_<wbr>dsa_<wbr>key_<wbr>fingerprint
+<a class="anchorjs-link " href="#state_ssh_host_dsa_key_fingerprint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3630,7 +5410,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh_<wbr>host_<wbr>rsa_<wbr>key_<wbr>fingerprint</span>
+        <span id="state_ssh_host_rsa_key_fingerprint~python">
+<span class="nx">
+ssh_<wbr>host_<wbr>rsa_<wbr>key_<wbr>fingerprint
+<a class="anchorjs-link " href="#state_ssh_host_rsa_key_fingerprint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3638,7 +5423,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ssh_<wbr>key_<wbr>name</span>
+        <span id="state_ssh_key_name~python">
+<span class="nx">
+ssh_<wbr>key_<wbr>name
+<a class="anchorjs-link " href="#state_ssh_key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3647,7 +5437,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stack_<wbr>id</span>
+        <span id="state_stack_id~python">
+<span class="nx">
+stack_<wbr>id
+<a class="anchorjs-link " href="#state_stack_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3656,7 +5451,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state_state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3665,7 +5465,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="state_status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#state_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3673,7 +5478,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="state_subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#state_subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3682,7 +5492,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="state_tenancy~python">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#state_tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3691,7 +5506,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtualization_<wbr>type</span>
+        <span id="state_virtualization_type~python">
+<span class="nx">
+virtualization_<wbr>type
+<a class="anchorjs-link " href="#state_virtualization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3734,7 +5554,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3742,7 +5567,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3750,7 +5580,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3758,7 +5593,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~csharp">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3766,7 +5606,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3774,7 +5619,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3789,7 +5639,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3797,7 +5652,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3805,7 +5665,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3813,7 +5678,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~go">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3821,7 +5691,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3829,7 +5704,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3844,7 +5724,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3852,7 +5737,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3860,7 +5750,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3868,7 +5763,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Id</span>
+        <span id="snapshotid~nodejs">
+<span class="nx">
+snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3876,7 +5776,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3884,7 +5789,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3899,7 +5809,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3907,7 +5822,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3915,7 +5835,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3923,7 +5848,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>id</span>
+        <span id="snapshot_id~python">
+<span class="nx">
+snapshot_<wbr>id
+<a class="anchorjs-link " href="#snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3931,7 +5861,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3939,7 +5874,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3972,7 +5912,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3980,7 +5925,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3995,7 +5945,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4003,7 +5958,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4018,7 +5978,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4026,7 +5991,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4041,7 +6011,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4049,7 +6024,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4082,7 +6062,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4090,7 +6075,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4098,7 +6088,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4106,7 +6101,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4121,7 +6121,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4129,7 +6134,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4137,7 +6147,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4145,7 +6160,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4160,7 +6180,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4168,7 +6193,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4176,7 +6206,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4184,7 +6219,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4199,7 +6239,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4207,7 +6252,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4215,7 +6265,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4223,7 +6278,12 @@ will use. Can be either `"paravirtual"` or `"hvm"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

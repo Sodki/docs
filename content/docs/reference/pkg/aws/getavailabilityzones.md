@@ -114,7 +114,7 @@ const example = pulumi.output(aws.getAvailabilityZones({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAvailabilityZones<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAvailabilityZonesArgs">GetAvailabilityZonesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAvailabilityZonesResult">GetAvailabilityZonesResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAvailabilityZones<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAvailabilityZonesArgs">GetAvailabilityZonesArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAvailabilityZonesResult">GetAvailabilityZonesResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -124,13 +124,14 @@ const example = pulumi.output(aws.getAvailabilityZones({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAvailabilityZones<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesArgs">GetAvailabilityZonesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesResult">GetAvailabilityZonesResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAvailabilityZones<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesArgs">GetAvailabilityZonesArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAvailabilityZonesResult">GetAvailabilityZonesResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAvailabilityZones </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAvailabilityZonesResult.html">GetAvailabilityZonesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAvailabilityZonesArgs.html">GetAvailabilityZonesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAvailabilityZonesResult.html">GetAvailabilityZonesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAvailabilityZonesArgs.html">GetAvailabilityZonesArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -145,7 +146,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>All<wbr>Availability<wbr>Zones</span>
+        <span id="allavailabilityzones~csharp">
+<span class="nx">
+All<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#allavailabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -154,7 +160,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Blacklisted<wbr>Names</span>
+        <span id="blacklistednames~csharp">
+<span class="nx">
+Blacklisted<wbr>Names
+<a class="anchorjs-link " href="#blacklistednames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -163,7 +174,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Blacklisted<wbr>Zone<wbr>Ids</span>
+        <span id="blacklistedzoneids~csharp">
+<span class="nx">
+Blacklisted<wbr>Zone<wbr>Ids
+<a class="anchorjs-link " href="#blacklistedzoneids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -172,7 +188,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List&lt;Get<wbr>Availability<wbr>Zones<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
@@ -181,7 +202,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Group<wbr>Names</span>
+        <span id="groupnames~csharp">
+<span class="nx">
+Group<wbr>Names
+<a class="anchorjs-link " href="#groupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -189,7 +215,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -208,7 +239,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>All<wbr>Availability<wbr>Zones</span>
+        <span id="allavailabilityzones~go">
+<span class="nx">
+All<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#allavailabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -217,7 +253,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Blacklisted<wbr>Names</span>
+        <span id="blacklistednames~go">
+<span class="nx">
+Blacklisted<wbr>Names
+<a class="anchorjs-link " href="#blacklistednames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -226,7 +267,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Blacklisted<wbr>Zone<wbr>Ids</span>
+        <span id="blacklistedzoneids~go">
+<span class="nx">
+Blacklisted<wbr>Zone<wbr>Ids
+<a class="anchorjs-link " href="#blacklistedzoneids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -235,7 +281,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">[]Get<wbr>Availability<wbr>Zones<wbr>Filter</a></span>
     </dt>
@@ -244,7 +295,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Group<wbr>Names</span>
+        <span id="groupnames~go">
+<span class="nx">
+Group<wbr>Names
+<a class="anchorjs-link " href="#groupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -252,7 +308,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -271,7 +332,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>all<wbr>Availability<wbr>Zones</span>
+        <span id="allavailabilityzones~nodejs">
+<span class="nx">
+all<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#allavailabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -280,7 +346,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>blacklisted<wbr>Names</span>
+        <span id="blacklistednames~nodejs">
+<span class="nx">
+blacklisted<wbr>Names
+<a class="anchorjs-link " href="#blacklistednames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -289,7 +360,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>blacklisted<wbr>Zone<wbr>Ids</span>
+        <span id="blacklistedzoneids~nodejs">
+<span class="nx">
+blacklisted<wbr>Zone<wbr>Ids
+<a class="anchorjs-link " href="#blacklistedzoneids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -298,7 +374,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">Get<wbr>Availability<wbr>Zones<wbr>Filter[]</a></span>
     </dt>
@@ -307,7 +388,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>group<wbr>Names</span>
+        <span id="groupnames~nodejs">
+<span class="nx">
+group<wbr>Names
+<a class="anchorjs-link " href="#groupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -315,7 +401,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -334,7 +425,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>all_<wbr>availability_<wbr>zones</span>
+        <span id="all_availability_zones~python">
+<span class="nx">
+all_<wbr>availability_<wbr>zones
+<a class="anchorjs-link " href="#all_availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -343,7 +439,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>blacklisted_<wbr>names</span>
+        <span id="blacklisted_names~python">
+<span class="nx">
+blacklisted_<wbr>names
+<a class="anchorjs-link " href="#blacklisted_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -352,7 +453,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>blacklisted_<wbr>zone_<wbr>ids</span>
+        <span id="blacklisted_zone_ids~python">
+<span class="nx">
+blacklisted_<wbr>zone_<wbr>ids
+<a class="anchorjs-link " href="#blacklisted_zone_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -361,7 +467,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List[Get<wbr>Availability<wbr>Zones<wbr>Filter]</a></span>
     </dt>
@@ -370,7 +481,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>group_<wbr>names</span>
+        <span id="group_names~python">
+<span class="nx">
+group_<wbr>names
+<a class="anchorjs-link " href="#group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -378,7 +494,12 @@ to which the underlying AWS account has access, regardless of their state.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -410,7 +531,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -419,7 +545,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Names</span>
+        <span id="names~csharp">
+<span class="nx">
+Names
+<a class="anchorjs-link " href="#names~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -428,7 +559,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Zone<wbr>Ids</span>
+        <span id="zoneids~csharp">
+<span class="nx">
+Zone<wbr>Ids
+<a class="anchorjs-link " href="#zoneids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -437,7 +573,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>All<wbr>Availability<wbr>Zones</span>
+        <span id="allavailabilityzones~csharp">
+<span class="nx">
+All<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#allavailabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -445,7 +586,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Blacklisted<wbr>Names</span>
+        <span id="blacklistednames~csharp">
+<span class="nx">
+Blacklisted<wbr>Names
+<a class="anchorjs-link " href="#blacklistednames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -453,7 +599,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Blacklisted<wbr>Zone<wbr>Ids</span>
+        <span id="blacklistedzoneids~csharp">
+<span class="nx">
+Blacklisted<wbr>Zone<wbr>Ids
+<a class="anchorjs-link " href="#blacklistedzoneids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -461,7 +612,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List&lt;Get<wbr>Availability<wbr>Zones<wbr>Filter&gt;</a></span>
     </dt>
@@ -469,7 +625,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Group<wbr>Names</span>
+        <span id="groupnames~csharp">
+<span class="nx">
+Group<wbr>Names
+<a class="anchorjs-link " href="#groupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -477,7 +638,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -492,7 +658,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -501,7 +672,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Names</span>
+        <span id="names~go">
+<span class="nx">
+Names
+<a class="anchorjs-link " href="#names~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -510,7 +686,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Zone<wbr>Ids</span>
+        <span id="zoneids~go">
+<span class="nx">
+Zone<wbr>Ids
+<a class="anchorjs-link " href="#zoneids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -519,7 +700,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>All<wbr>Availability<wbr>Zones</span>
+        <span id="allavailabilityzones~go">
+<span class="nx">
+All<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#allavailabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -527,7 +713,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Blacklisted<wbr>Names</span>
+        <span id="blacklistednames~go">
+<span class="nx">
+Blacklisted<wbr>Names
+<a class="anchorjs-link " href="#blacklistednames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -535,7 +726,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Blacklisted<wbr>Zone<wbr>Ids</span>
+        <span id="blacklistedzoneids~go">
+<span class="nx">
+Blacklisted<wbr>Zone<wbr>Ids
+<a class="anchorjs-link " href="#blacklistedzoneids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -543,7 +739,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">[]Get<wbr>Availability<wbr>Zones<wbr>Filter</a></span>
     </dt>
@@ -551,7 +752,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Group<wbr>Names</span>
+        <span id="groupnames~go">
+<span class="nx">
+Group<wbr>Names
+<a class="anchorjs-link " href="#groupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -559,7 +765,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -574,7 +785,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -583,7 +799,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>names</span>
+        <span id="names~nodejs">
+<span class="nx">
+names
+<a class="anchorjs-link " href="#names~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -592,7 +813,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>zone<wbr>Ids</span>
+        <span id="zoneids~nodejs">
+<span class="nx">
+zone<wbr>Ids
+<a class="anchorjs-link " href="#zoneids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -601,7 +827,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>all<wbr>Availability<wbr>Zones</span>
+        <span id="allavailabilityzones~nodejs">
+<span class="nx">
+all<wbr>Availability<wbr>Zones
+<a class="anchorjs-link " href="#allavailabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -609,7 +840,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>blacklisted<wbr>Names</span>
+        <span id="blacklistednames~nodejs">
+<span class="nx">
+blacklisted<wbr>Names
+<a class="anchorjs-link " href="#blacklistednames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -617,7 +853,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>blacklisted<wbr>Zone<wbr>Ids</span>
+        <span id="blacklistedzoneids~nodejs">
+<span class="nx">
+blacklisted<wbr>Zone<wbr>Ids
+<a class="anchorjs-link " href="#blacklistedzoneids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -625,7 +866,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">Get<wbr>Availability<wbr>Zones<wbr>Filter[]</a></span>
     </dt>
@@ -633,7 +879,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>group<wbr>Names</span>
+        <span id="groupnames~nodejs">
+<span class="nx">
+group<wbr>Names
+<a class="anchorjs-link " href="#groupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -641,7 +892,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -656,7 +912,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -665,7 +926,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>names</span>
+        <span id="names~python">
+<span class="nx">
+names
+<a class="anchorjs-link " href="#names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -674,7 +940,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>zone_<wbr>ids</span>
+        <span id="zone_ids~python">
+<span class="nx">
+zone_<wbr>ids
+<a class="anchorjs-link " href="#zone_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -683,7 +954,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>all_<wbr>availability_<wbr>zones</span>
+        <span id="all_availability_zones~python">
+<span class="nx">
+all_<wbr>availability_<wbr>zones
+<a class="anchorjs-link " href="#all_availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -691,7 +967,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>blacklisted_<wbr>names</span>
+        <span id="blacklisted_names~python">
+<span class="nx">
+blacklisted_<wbr>names
+<a class="anchorjs-link " href="#blacklisted_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -699,7 +980,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>blacklisted_<wbr>zone_<wbr>ids</span>
+        <span id="blacklisted_zone_ids~python">
+<span class="nx">
+blacklisted_<wbr>zone_<wbr>ids
+<a class="anchorjs-link " href="#blacklisted_zone_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -707,7 +993,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getavailabilityzonesfilter">List[Get<wbr>Availability<wbr>Zones<wbr>Filter]</a></span>
     </dt>
@@ -715,7 +1006,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>group_<wbr>names</span>
+        <span id="group_names~python">
+<span class="nx">
+group_<wbr>names
+<a class="anchorjs-link " href="#group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -723,7 +1019,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -762,7 +1063,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -771,7 +1077,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -787,7 +1098,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -796,7 +1112,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -812,7 +1133,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -821,7 +1147,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -837,7 +1168,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -846,7 +1182,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>

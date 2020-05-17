@@ -101,19 +101,19 @@ const example = new aws.cognito.UserPool("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPool">UserPool</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolArgs">UserPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPool">UserPool</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolArgs">UserPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">UserPool</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>admin_create_user_config=None<span class="p">, </span>alias_attributes=None<span class="p">, </span>auto_verified_attributes=None<span class="p">, </span>device_configuration=None<span class="p">, </span>email_configuration=None<span class="p">, </span>email_verification_message=None<span class="p">, </span>email_verification_subject=None<span class="p">, </span>lambda_config=None<span class="p">, </span>mfa_configuration=None<span class="p">, </span>name=None<span class="p">, </span>password_policy=None<span class="p">, </span>schemas=None<span class="p">, </span>sms_authentication_message=None<span class="p">, </span>sms_configuration=None<span class="p">, </span>sms_verification_message=None<span class="p">, </span>software_token_mfa_configuration=None<span class="p">, </span>tags=None<span class="p">, </span>user_pool_add_ons=None<span class="p">, </span>username_attributes=None<span class="p">, </span>username_configuration=None<span class="p">, </span>verification_message_template=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/cognito/#UserPool">UserPool</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>admin_create_user_config=None<span class="p">, </span>alias_attributes=None<span class="p">, </span>auto_verified_attributes=None<span class="p">, </span>device_configuration=None<span class="p">, </span>email_configuration=None<span class="p">, </span>email_verification_message=None<span class="p">, </span>email_verification_subject=None<span class="p">, </span>lambda_config=None<span class="p">, </span>mfa_configuration=None<span class="p">, </span>name=None<span class="p">, </span>password_policy=None<span class="p">, </span>schemas=None<span class="p">, </span>sms_authentication_message=None<span class="p">, </span>sms_configuration=None<span class="p">, </span>sms_verification_message=None<span class="p">, </span>software_token_mfa_configuration=None<span class="p">, </span>tags=None<span class="p">, </span>user_pool_add_ons=None<span class="p">, </span>username_attributes=None<span class="p">, </span>username_configuration=None<span class="p">, </span>verification_message_template=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewUserPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolArgs">UserPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPool">UserPool</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPool">NewUserPool</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolArgs">UserPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPool">UserPool</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPool.html">UserPool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolArgs.html">UserPoolArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPool.html">UserPool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolArgs.html">UserPoolArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -279,7 +279,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Admin<wbr>Create<wbr>User<wbr>Config</span>
+        <span id="admincreateuserconfig~csharp">
+<span class="nx">
+Admin<wbr>Create<wbr>User<wbr>Config
+<a class="anchorjs-link " href="#admincreateuserconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -288,7 +293,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alias<wbr>Attributes</span>
+        <span id="aliasattributes~csharp">
+<span class="nx">
+Alias<wbr>Attributes
+<a class="anchorjs-link " href="#aliasattributes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -297,7 +307,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Verified<wbr>Attributes</span>
+        <span id="autoverifiedattributes~csharp">
+<span class="nx">
+Auto<wbr>Verified<wbr>Attributes
+<a class="anchorjs-link " href="#autoverifiedattributes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -306,7 +321,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Configuration</span>
+        <span id="deviceconfiguration~csharp">
+<span class="nx">
+Device<wbr>Configuration
+<a class="anchorjs-link " href="#deviceconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">User<wbr>Pool<wbr>Device<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -315,7 +335,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Configuration</span>
+        <span id="emailconfiguration~csharp">
+<span class="nx">
+Email<wbr>Configuration
+<a class="anchorjs-link " href="#emailconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">User<wbr>Pool<wbr>Email<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -324,7 +349,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Message</span>
+        <span id="emailverificationmessage~csharp">
+<span class="nx">
+Email<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#emailverificationmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -333,7 +363,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Subject</span>
+        <span id="emailverificationsubject~csharp">
+<span class="nx">
+Email<wbr>Verification<wbr>Subject
+<a class="anchorjs-link " href="#emailverificationsubject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -342,7 +377,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Config</span>
+        <span id="lambdaconfig~csharp">
+<span class="nx">
+Lambda<wbr>Config
+<a class="anchorjs-link " href="#lambdaconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">User<wbr>Pool<wbr>Lambda<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -351,7 +391,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mfa<wbr>Configuration</span>
+        <span id="mfaconfiguration~csharp">
+<span class="nx">
+Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#mfaconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -360,7 +405,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -369,7 +419,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Policy</span>
+        <span id="passwordpolicy~csharp">
+<span class="nx">
+Password<wbr>Policy
+<a class="anchorjs-link " href="#passwordpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">User<wbr>Pool<wbr>Password<wbr>Policy<wbr>Args</a></span>
     </dt>
@@ -378,7 +433,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Schemas</span>
+        <span id="schemas~csharp">
+<span class="nx">
+Schemas
+<a class="anchorjs-link " href="#schemas~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">List&lt;User<wbr>Pool<wbr>Schema<wbr>Args&gt;</a></span>
     </dt>
@@ -387,7 +447,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Authentication<wbr>Message</span>
+        <span id="smsauthenticationmessage~csharp">
+<span class="nx">
+Sms<wbr>Authentication<wbr>Message
+<a class="anchorjs-link " href="#smsauthenticationmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -396,7 +461,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Configuration</span>
+        <span id="smsconfiguration~csharp">
+<span class="nx">
+Sms<wbr>Configuration
+<a class="anchorjs-link " href="#smsconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">User<wbr>Pool<wbr>Sms<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -405,7 +475,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Verification<wbr>Message</span>
+        <span id="smsverificationmessage~csharp">
+<span class="nx">
+Sms<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#smsverificationmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -414,7 +489,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Software<wbr>Token<wbr>Mfa<wbr>Configuration</span>
+        <span id="softwaretokenmfaconfiguration~csharp">
+<span class="nx">
+Software<wbr>Token<wbr>Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#softwaretokenmfaconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -423,7 +503,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -432,7 +517,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Pool<wbr>Add<wbr>Ons</span>
+        <span id="userpooladdons~csharp">
+<span class="nx">
+User<wbr>Pool<wbr>Add<wbr>Ons
+<a class="anchorjs-link " href="#userpooladdons~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons<wbr>Args</a></span>
     </dt>
@@ -441,7 +531,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Attributes</span>
+        <span id="usernameattributes~csharp">
+<span class="nx">
+Username<wbr>Attributes
+<a class="anchorjs-link " href="#usernameattributes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -450,7 +545,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Configuration</span>
+        <span id="usernameconfiguration~csharp">
+<span class="nx">
+Username<wbr>Configuration
+<a class="anchorjs-link " href="#usernameconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">User<wbr>Pool<wbr>Username<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -459,7 +559,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Verification<wbr>Message<wbr>Template</span>
+        <span id="verificationmessagetemplate~csharp">
+<span class="nx">
+Verification<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#verificationmessagetemplate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template<wbr>Args</a></span>
     </dt>
@@ -475,7 +580,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Admin<wbr>Create<wbr>User<wbr>Config</span>
+        <span id="admincreateuserconfig~go">
+<span class="nx">
+Admin<wbr>Create<wbr>User<wbr>Config
+<a class="anchorjs-link " href="#admincreateuserconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config</a></span>
     </dt>
@@ -484,7 +594,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alias<wbr>Attributes</span>
+        <span id="aliasattributes~go">
+<span class="nx">
+Alias<wbr>Attributes
+<a class="anchorjs-link " href="#aliasattributes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -493,7 +608,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Verified<wbr>Attributes</span>
+        <span id="autoverifiedattributes~go">
+<span class="nx">
+Auto<wbr>Verified<wbr>Attributes
+<a class="anchorjs-link " href="#autoverifiedattributes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -502,7 +622,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Configuration</span>
+        <span id="deviceconfiguration~go">
+<span class="nx">
+Device<wbr>Configuration
+<a class="anchorjs-link " href="#deviceconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">User<wbr>Pool<wbr>Device<wbr>Configuration</a></span>
     </dt>
@@ -511,7 +636,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Configuration</span>
+        <span id="emailconfiguration~go">
+<span class="nx">
+Email<wbr>Configuration
+<a class="anchorjs-link " href="#emailconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">User<wbr>Pool<wbr>Email<wbr>Configuration</a></span>
     </dt>
@@ -520,7 +650,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Message</span>
+        <span id="emailverificationmessage~go">
+<span class="nx">
+Email<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#emailverificationmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -529,7 +664,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Subject</span>
+        <span id="emailverificationsubject~go">
+<span class="nx">
+Email<wbr>Verification<wbr>Subject
+<a class="anchorjs-link " href="#emailverificationsubject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -538,7 +678,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Config</span>
+        <span id="lambdaconfig~go">
+<span class="nx">
+Lambda<wbr>Config
+<a class="anchorjs-link " href="#lambdaconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">User<wbr>Pool<wbr>Lambda<wbr>Config</a></span>
     </dt>
@@ -547,7 +692,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mfa<wbr>Configuration</span>
+        <span id="mfaconfiguration~go">
+<span class="nx">
+Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#mfaconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -556,7 +706,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -565,7 +720,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Policy</span>
+        <span id="passwordpolicy~go">
+<span class="nx">
+Password<wbr>Policy
+<a class="anchorjs-link " href="#passwordpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">User<wbr>Pool<wbr>Password<wbr>Policy</a></span>
     </dt>
@@ -574,7 +734,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Schemas</span>
+        <span id="schemas~go">
+<span class="nx">
+Schemas
+<a class="anchorjs-link " href="#schemas~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">[]User<wbr>Pool<wbr>Schema</a></span>
     </dt>
@@ -583,7 +748,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Authentication<wbr>Message</span>
+        <span id="smsauthenticationmessage~go">
+<span class="nx">
+Sms<wbr>Authentication<wbr>Message
+<a class="anchorjs-link " href="#smsauthenticationmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -592,7 +762,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Configuration</span>
+        <span id="smsconfiguration~go">
+<span class="nx">
+Sms<wbr>Configuration
+<a class="anchorjs-link " href="#smsconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">User<wbr>Pool<wbr>Sms<wbr>Configuration</a></span>
     </dt>
@@ -601,7 +776,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Verification<wbr>Message</span>
+        <span id="smsverificationmessage~go">
+<span class="nx">
+Sms<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#smsverificationmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -610,7 +790,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Software<wbr>Token<wbr>Mfa<wbr>Configuration</span>
+        <span id="softwaretokenmfaconfiguration~go">
+<span class="nx">
+Software<wbr>Token<wbr>Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#softwaretokenmfaconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration</a></span>
     </dt>
@@ -619,7 +804,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -628,7 +818,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Pool<wbr>Add<wbr>Ons</span>
+        <span id="userpooladdons~go">
+<span class="nx">
+User<wbr>Pool<wbr>Add<wbr>Ons
+<a class="anchorjs-link " href="#userpooladdons~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons</a></span>
     </dt>
@@ -637,7 +832,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Attributes</span>
+        <span id="usernameattributes~go">
+<span class="nx">
+Username<wbr>Attributes
+<a class="anchorjs-link " href="#usernameattributes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -646,7 +846,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Configuration</span>
+        <span id="usernameconfiguration~go">
+<span class="nx">
+Username<wbr>Configuration
+<a class="anchorjs-link " href="#usernameconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">User<wbr>Pool<wbr>Username<wbr>Configuration</a></span>
     </dt>
@@ -655,7 +860,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Verification<wbr>Message<wbr>Template</span>
+        <span id="verificationmessagetemplate~go">
+<span class="nx">
+Verification<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#verificationmessagetemplate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template</a></span>
     </dt>
@@ -671,7 +881,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>admin<wbr>Create<wbr>User<wbr>Config</span>
+        <span id="admincreateuserconfig~nodejs">
+<span class="nx">
+admin<wbr>Create<wbr>User<wbr>Config
+<a class="anchorjs-link " href="#admincreateuserconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config</a></span>
     </dt>
@@ -680,7 +895,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>alias<wbr>Attributes</span>
+        <span id="aliasattributes~nodejs">
+<span class="nx">
+alias<wbr>Attributes
+<a class="anchorjs-link " href="#aliasattributes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -689,7 +909,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Verified<wbr>Attributes</span>
+        <span id="autoverifiedattributes~nodejs">
+<span class="nx">
+auto<wbr>Verified<wbr>Attributes
+<a class="anchorjs-link " href="#autoverifiedattributes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -698,7 +923,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Configuration</span>
+        <span id="deviceconfiguration~nodejs">
+<span class="nx">
+device<wbr>Configuration
+<a class="anchorjs-link " href="#deviceconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">User<wbr>Pool<wbr>Device<wbr>Configuration</a></span>
     </dt>
@@ -707,7 +937,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Configuration</span>
+        <span id="emailconfiguration~nodejs">
+<span class="nx">
+email<wbr>Configuration
+<a class="anchorjs-link " href="#emailconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">User<wbr>Pool<wbr>Email<wbr>Configuration</a></span>
     </dt>
@@ -716,7 +951,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Verification<wbr>Message</span>
+        <span id="emailverificationmessage~nodejs">
+<span class="nx">
+email<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#emailverificationmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -725,7 +965,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Verification<wbr>Subject</span>
+        <span id="emailverificationsubject~nodejs">
+<span class="nx">
+email<wbr>Verification<wbr>Subject
+<a class="anchorjs-link " href="#emailverificationsubject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -734,7 +979,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda<wbr>Config</span>
+        <span id="lambdaconfig~nodejs">
+<span class="nx">
+lambda<wbr>Config
+<a class="anchorjs-link " href="#lambdaconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">User<wbr>Pool<wbr>Lambda<wbr>Config</a></span>
     </dt>
@@ -743,7 +993,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>mfa<wbr>Configuration</span>
+        <span id="mfaconfiguration~nodejs">
+<span class="nx">
+mfa<wbr>Configuration
+<a class="anchorjs-link " href="#mfaconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -752,7 +1007,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -761,7 +1021,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>password<wbr>Policy</span>
+        <span id="passwordpolicy~nodejs">
+<span class="nx">
+password<wbr>Policy
+<a class="anchorjs-link " href="#passwordpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">User<wbr>Pool<wbr>Password<wbr>Policy</a></span>
     </dt>
@@ -770,7 +1035,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>schemas</span>
+        <span id="schemas~nodejs">
+<span class="nx">
+schemas
+<a class="anchorjs-link " href="#schemas~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">User<wbr>Pool<wbr>Schema[]</a></span>
     </dt>
@@ -779,7 +1049,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Authentication<wbr>Message</span>
+        <span id="smsauthenticationmessage~nodejs">
+<span class="nx">
+sms<wbr>Authentication<wbr>Message
+<a class="anchorjs-link " href="#smsauthenticationmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -788,7 +1063,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Configuration</span>
+        <span id="smsconfiguration~nodejs">
+<span class="nx">
+sms<wbr>Configuration
+<a class="anchorjs-link " href="#smsconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">User<wbr>Pool<wbr>Sms<wbr>Configuration</a></span>
     </dt>
@@ -797,7 +1077,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Verification<wbr>Message</span>
+        <span id="smsverificationmessage~nodejs">
+<span class="nx">
+sms<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#smsverificationmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -806,7 +1091,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>software<wbr>Token<wbr>Mfa<wbr>Configuration</span>
+        <span id="softwaretokenmfaconfiguration~nodejs">
+<span class="nx">
+software<wbr>Token<wbr>Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#softwaretokenmfaconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration</a></span>
     </dt>
@@ -815,7 +1105,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -824,7 +1119,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Pool<wbr>Add<wbr>Ons</span>
+        <span id="userpooladdons~nodejs">
+<span class="nx">
+user<wbr>Pool<wbr>Add<wbr>Ons
+<a class="anchorjs-link " href="#userpooladdons~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons</a></span>
     </dt>
@@ -833,7 +1133,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>username<wbr>Attributes</span>
+        <span id="usernameattributes~nodejs">
+<span class="nx">
+username<wbr>Attributes
+<a class="anchorjs-link " href="#usernameattributes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -842,7 +1147,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>username<wbr>Configuration</span>
+        <span id="usernameconfiguration~nodejs">
+<span class="nx">
+username<wbr>Configuration
+<a class="anchorjs-link " href="#usernameconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">User<wbr>Pool<wbr>Username<wbr>Configuration</a></span>
     </dt>
@@ -851,7 +1161,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>verification<wbr>Message<wbr>Template</span>
+        <span id="verificationmessagetemplate~nodejs">
+<span class="nx">
+verification<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#verificationmessagetemplate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template</a></span>
     </dt>
@@ -867,7 +1182,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>admin_<wbr>create_<wbr>user_<wbr>config</span>
+        <span id="admin_create_user_config~python">
+<span class="nx">
+admin_<wbr>create_<wbr>user_<wbr>config
+<a class="anchorjs-link " href="#admin_create_user_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">Dict[User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config]</a></span>
     </dt>
@@ -876,7 +1196,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>alias_<wbr>attributes</span>
+        <span id="alias_attributes~python">
+<span class="nx">
+alias_<wbr>attributes
+<a class="anchorjs-link " href="#alias_attributes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -885,7 +1210,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>verified_<wbr>attributes</span>
+        <span id="auto_verified_attributes~python">
+<span class="nx">
+auto_<wbr>verified_<wbr>attributes
+<a class="anchorjs-link " href="#auto_verified_attributes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -894,7 +1224,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>device_<wbr>configuration</span>
+        <span id="device_configuration~python">
+<span class="nx">
+device_<wbr>configuration
+<a class="anchorjs-link " href="#device_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">Dict[User<wbr>Pool<wbr>Device<wbr>Configuration]</a></span>
     </dt>
@@ -903,7 +1238,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>email_<wbr>configuration</span>
+        <span id="email_configuration~python">
+<span class="nx">
+email_<wbr>configuration
+<a class="anchorjs-link " href="#email_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">Dict[User<wbr>Pool<wbr>Email<wbr>Configuration]</a></span>
     </dt>
@@ -912,7 +1252,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>email_<wbr>verification_<wbr>message</span>
+        <span id="email_verification_message~python">
+<span class="nx">
+email_<wbr>verification_<wbr>message
+<a class="anchorjs-link " href="#email_verification_message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -921,7 +1266,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>email_<wbr>verification_<wbr>subject</span>
+        <span id="email_verification_subject~python">
+<span class="nx">
+email_<wbr>verification_<wbr>subject
+<a class="anchorjs-link " href="#email_verification_subject~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -930,7 +1280,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda_<wbr>config</span>
+        <span id="lambda_config~python">
+<span class="nx">
+lambda_<wbr>config
+<a class="anchorjs-link " href="#lambda_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">Dict[User<wbr>Pool<wbr>Lambda<wbr>Config]</a></span>
     </dt>
@@ -939,7 +1294,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>mfa_<wbr>configuration</span>
+        <span id="mfa_configuration~python">
+<span class="nx">
+mfa_<wbr>configuration
+<a class="anchorjs-link " href="#mfa_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -948,7 +1308,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -957,7 +1322,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>password_<wbr>policy</span>
+        <span id="password_policy~python">
+<span class="nx">
+password_<wbr>policy
+<a class="anchorjs-link " href="#password_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">Dict[User<wbr>Pool<wbr>Password<wbr>Policy]</a></span>
     </dt>
@@ -966,7 +1336,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>schemas</span>
+        <span id="schemas~python">
+<span class="nx">
+schemas
+<a class="anchorjs-link " href="#schemas~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">List[User<wbr>Pool<wbr>Schema]</a></span>
     </dt>
@@ -975,7 +1350,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms_<wbr>authentication_<wbr>message</span>
+        <span id="sms_authentication_message~python">
+<span class="nx">
+sms_<wbr>authentication_<wbr>message
+<a class="anchorjs-link " href="#sms_authentication_message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -984,7 +1364,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms_<wbr>configuration</span>
+        <span id="sms_configuration~python">
+<span class="nx">
+sms_<wbr>configuration
+<a class="anchorjs-link " href="#sms_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">Dict[User<wbr>Pool<wbr>Sms<wbr>Configuration]</a></span>
     </dt>
@@ -993,7 +1378,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms_<wbr>verification_<wbr>message</span>
+        <span id="sms_verification_message~python">
+<span class="nx">
+sms_<wbr>verification_<wbr>message
+<a class="anchorjs-link " href="#sms_verification_message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1002,7 +1392,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>software_<wbr>token_<wbr>mfa_<wbr>configuration</span>
+        <span id="software_token_mfa_configuration~python">
+<span class="nx">
+software_<wbr>token_<wbr>mfa_<wbr>configuration
+<a class="anchorjs-link " href="#software_token_mfa_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">Dict[User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration]</a></span>
     </dt>
@@ -1011,7 +1406,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1020,7 +1420,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>pool_<wbr>add_<wbr>ons</span>
+        <span id="user_pool_add_ons~python">
+<span class="nx">
+user_<wbr>pool_<wbr>add_<wbr>ons
+<a class="anchorjs-link " href="#user_pool_add_ons~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">Dict[User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons]</a></span>
     </dt>
@@ -1029,7 +1434,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>username_<wbr>attributes</span>
+        <span id="username_attributes~python">
+<span class="nx">
+username_<wbr>attributes
+<a class="anchorjs-link " href="#username_attributes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1038,7 +1448,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>username_<wbr>configuration</span>
+        <span id="username_configuration~python">
+<span class="nx">
+username_<wbr>configuration
+<a class="anchorjs-link " href="#username_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">Dict[User<wbr>Pool<wbr>Username<wbr>Configuration]</a></span>
     </dt>
@@ -1047,7 +1462,12 @@ The UserPool resource accepts the following [input]({{< relref "/docs/intro/conc
 
     <dt class="property-optional"
             title="Optional">
-        <span>verification_<wbr>message_<wbr>template</span>
+        <span id="verification_message_template~python">
+<span class="nx">
+verification_<wbr>message_<wbr>template
+<a class="anchorjs-link " href="#verification_message_template~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">Dict[User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template]</a></span>
     </dt>
@@ -1074,7 +1494,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1083,7 +1508,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Creation<wbr>Date</span>
+        <span id="creationdate~csharp">
+<span class="nx">
+Creation<wbr>Date
+<a class="anchorjs-link " href="#creationdate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1092,7 +1522,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Endpoint</span>
+        <span id="endpoint~csharp">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#endpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1101,7 +1536,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1109,7 +1549,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Last<wbr>Modified<wbr>Date</span>
+        <span id="lastmodifieddate~csharp">
+<span class="nx">
+Last<wbr>Modified<wbr>Date
+<a class="anchorjs-link " href="#lastmodifieddate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1125,7 +1570,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1134,7 +1584,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Creation<wbr>Date</span>
+        <span id="creationdate~go">
+<span class="nx">
+Creation<wbr>Date
+<a class="anchorjs-link " href="#creationdate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1143,7 +1598,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Endpoint</span>
+        <span id="endpoint~go">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#endpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1152,7 +1612,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1160,7 +1625,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Last<wbr>Modified<wbr>Date</span>
+        <span id="lastmodifieddate~go">
+<span class="nx">
+Last<wbr>Modified<wbr>Date
+<a class="anchorjs-link " href="#lastmodifieddate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1176,7 +1646,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1185,7 +1660,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>creation<wbr>Date</span>
+        <span id="creationdate~nodejs">
+<span class="nx">
+creation<wbr>Date
+<a class="anchorjs-link " href="#creationdate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1194,7 +1674,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>endpoint</span>
+        <span id="endpoint~nodejs">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#endpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1203,7 +1688,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1211,7 +1701,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>last<wbr>Modified<wbr>Date</span>
+        <span id="lastmodifieddate~nodejs">
+<span class="nx">
+last<wbr>Modified<wbr>Date
+<a class="anchorjs-link " href="#lastmodifieddate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1227,7 +1722,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1236,7 +1736,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>creation_<wbr>date</span>
+        <span id="creation_date~python">
+<span class="nx">
+creation_<wbr>date
+<a class="anchorjs-link " href="#creation_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1245,7 +1750,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>endpoint</span>
+        <span id="endpoint~python">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1254,7 +1764,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1262,7 +1777,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>last_<wbr>modified_<wbr>date</span>
+        <span id="last_modified_date~python">
+<span class="nx">
+last_<wbr>modified_<wbr>date
+<a class="anchorjs-link " href="#last_modified_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1284,7 +1804,7 @@ Get an existing UserPool resource's state with the given name, ID, and optional 
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolState">UserPoolState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPool">UserPool</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPoolState">UserPoolState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#UserPool">UserPool</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1292,11 +1812,11 @@ Get an existing UserPool resource's state with the given name, ID, and optional 
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetUserPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolState">UserPoolState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPool">UserPool</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetUserPool<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPoolState">UserPoolState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#UserPool">UserPool</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPool.html">UserPool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolState.html">UserPoolState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPool.html">UserPool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.UserPoolState.html">UserPoolState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1404,7 +1924,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Admin<wbr>Create<wbr>User<wbr>Config</span>
+        <span id="state_admincreateuserconfig~csharp">
+<span class="nx">
+Admin<wbr>Create<wbr>User<wbr>Config
+<a class="anchorjs-link " href="#state_admincreateuserconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -1413,7 +1938,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alias<wbr>Attributes</span>
+        <span id="state_aliasattributes~csharp">
+<span class="nx">
+Alias<wbr>Attributes
+<a class="anchorjs-link " href="#state_aliasattributes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1422,7 +1952,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1431,7 +1966,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Verified<wbr>Attributes</span>
+        <span id="state_autoverifiedattributes~csharp">
+<span class="nx">
+Auto<wbr>Verified<wbr>Attributes
+<a class="anchorjs-link " href="#state_autoverifiedattributes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1440,7 +1980,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Creation<wbr>Date</span>
+        <span id="state_creationdate~csharp">
+<span class="nx">
+Creation<wbr>Date
+<a class="anchorjs-link " href="#state_creationdate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1449,7 +1994,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Configuration</span>
+        <span id="state_deviceconfiguration~csharp">
+<span class="nx">
+Device<wbr>Configuration
+<a class="anchorjs-link " href="#state_deviceconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">User<wbr>Pool<wbr>Device<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1458,7 +2008,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Configuration</span>
+        <span id="state_emailconfiguration~csharp">
+<span class="nx">
+Email<wbr>Configuration
+<a class="anchorjs-link " href="#state_emailconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">User<wbr>Pool<wbr>Email<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1467,7 +2022,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Message</span>
+        <span id="state_emailverificationmessage~csharp">
+<span class="nx">
+Email<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#state_emailverificationmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1476,7 +2036,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Subject</span>
+        <span id="state_emailverificationsubject~csharp">
+<span class="nx">
+Email<wbr>Verification<wbr>Subject
+<a class="anchorjs-link " href="#state_emailverificationsubject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1485,7 +2050,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="state_endpoint~csharp">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#state_endpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1494,7 +2064,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Config</span>
+        <span id="state_lambdaconfig~csharp">
+<span class="nx">
+Lambda<wbr>Config
+<a class="anchorjs-link " href="#state_lambdaconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">User<wbr>Pool<wbr>Lambda<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -1503,7 +2078,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Modified<wbr>Date</span>
+        <span id="state_lastmodifieddate~csharp">
+<span class="nx">
+Last<wbr>Modified<wbr>Date
+<a class="anchorjs-link " href="#state_lastmodifieddate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1512,7 +2092,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mfa<wbr>Configuration</span>
+        <span id="state_mfaconfiguration~csharp">
+<span class="nx">
+Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#state_mfaconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1521,7 +2106,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1530,7 +2120,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Policy</span>
+        <span id="state_passwordpolicy~csharp">
+<span class="nx">
+Password<wbr>Policy
+<a class="anchorjs-link " href="#state_passwordpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">User<wbr>Pool<wbr>Password<wbr>Policy<wbr>Args</a></span>
     </dt>
@@ -1539,7 +2134,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Schemas</span>
+        <span id="state_schemas~csharp">
+<span class="nx">
+Schemas
+<a class="anchorjs-link " href="#state_schemas~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">List&lt;User<wbr>Pool<wbr>Schema<wbr>Args&gt;</a></span>
     </dt>
@@ -1548,7 +2148,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Authentication<wbr>Message</span>
+        <span id="state_smsauthenticationmessage~csharp">
+<span class="nx">
+Sms<wbr>Authentication<wbr>Message
+<a class="anchorjs-link " href="#state_smsauthenticationmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1557,7 +2162,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Configuration</span>
+        <span id="state_smsconfiguration~csharp">
+<span class="nx">
+Sms<wbr>Configuration
+<a class="anchorjs-link " href="#state_smsconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">User<wbr>Pool<wbr>Sms<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1566,7 +2176,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Verification<wbr>Message</span>
+        <span id="state_smsverificationmessage~csharp">
+<span class="nx">
+Sms<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#state_smsverificationmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1575,7 +2190,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Software<wbr>Token<wbr>Mfa<wbr>Configuration</span>
+        <span id="state_softwaretokenmfaconfiguration~csharp">
+<span class="nx">
+Software<wbr>Token<wbr>Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#state_softwaretokenmfaconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1584,7 +2204,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1593,7 +2218,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Pool<wbr>Add<wbr>Ons</span>
+        <span id="state_userpooladdons~csharp">
+<span class="nx">
+User<wbr>Pool<wbr>Add<wbr>Ons
+<a class="anchorjs-link " href="#state_userpooladdons~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons<wbr>Args</a></span>
     </dt>
@@ -1602,7 +2232,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Attributes</span>
+        <span id="state_usernameattributes~csharp">
+<span class="nx">
+Username<wbr>Attributes
+<a class="anchorjs-link " href="#state_usernameattributes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1611,7 +2246,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Configuration</span>
+        <span id="state_usernameconfiguration~csharp">
+<span class="nx">
+Username<wbr>Configuration
+<a class="anchorjs-link " href="#state_usernameconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">User<wbr>Pool<wbr>Username<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1620,7 +2260,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Verification<wbr>Message<wbr>Template</span>
+        <span id="state_verificationmessagetemplate~csharp">
+<span class="nx">
+Verification<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#state_verificationmessagetemplate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template<wbr>Args</a></span>
     </dt>
@@ -1636,7 +2281,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Admin<wbr>Create<wbr>User<wbr>Config</span>
+        <span id="state_admincreateuserconfig~go">
+<span class="nx">
+Admin<wbr>Create<wbr>User<wbr>Config
+<a class="anchorjs-link " href="#state_admincreateuserconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config</a></span>
     </dt>
@@ -1645,7 +2295,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alias<wbr>Attributes</span>
+        <span id="state_aliasattributes~go">
+<span class="nx">
+Alias<wbr>Attributes
+<a class="anchorjs-link " href="#state_aliasattributes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1654,7 +2309,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1663,7 +2323,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Verified<wbr>Attributes</span>
+        <span id="state_autoverifiedattributes~go">
+<span class="nx">
+Auto<wbr>Verified<wbr>Attributes
+<a class="anchorjs-link " href="#state_autoverifiedattributes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1672,7 +2337,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Creation<wbr>Date</span>
+        <span id="state_creationdate~go">
+<span class="nx">
+Creation<wbr>Date
+<a class="anchorjs-link " href="#state_creationdate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1681,7 +2351,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Configuration</span>
+        <span id="state_deviceconfiguration~go">
+<span class="nx">
+Device<wbr>Configuration
+<a class="anchorjs-link " href="#state_deviceconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">User<wbr>Pool<wbr>Device<wbr>Configuration</a></span>
     </dt>
@@ -1690,7 +2365,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Configuration</span>
+        <span id="state_emailconfiguration~go">
+<span class="nx">
+Email<wbr>Configuration
+<a class="anchorjs-link " href="#state_emailconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">User<wbr>Pool<wbr>Email<wbr>Configuration</a></span>
     </dt>
@@ -1699,7 +2379,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Message</span>
+        <span id="state_emailverificationmessage~go">
+<span class="nx">
+Email<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#state_emailverificationmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1708,7 +2393,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Verification<wbr>Subject</span>
+        <span id="state_emailverificationsubject~go">
+<span class="nx">
+Email<wbr>Verification<wbr>Subject
+<a class="anchorjs-link " href="#state_emailverificationsubject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1717,7 +2407,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="state_endpoint~go">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#state_endpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1726,7 +2421,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda<wbr>Config</span>
+        <span id="state_lambdaconfig~go">
+<span class="nx">
+Lambda<wbr>Config
+<a class="anchorjs-link " href="#state_lambdaconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">User<wbr>Pool<wbr>Lambda<wbr>Config</a></span>
     </dt>
@@ -1735,7 +2435,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Modified<wbr>Date</span>
+        <span id="state_lastmodifieddate~go">
+<span class="nx">
+Last<wbr>Modified<wbr>Date
+<a class="anchorjs-link " href="#state_lastmodifieddate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1744,7 +2449,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mfa<wbr>Configuration</span>
+        <span id="state_mfaconfiguration~go">
+<span class="nx">
+Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#state_mfaconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1753,7 +2463,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1762,7 +2477,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Policy</span>
+        <span id="state_passwordpolicy~go">
+<span class="nx">
+Password<wbr>Policy
+<a class="anchorjs-link " href="#state_passwordpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">User<wbr>Pool<wbr>Password<wbr>Policy</a></span>
     </dt>
@@ -1771,7 +2491,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Schemas</span>
+        <span id="state_schemas~go">
+<span class="nx">
+Schemas
+<a class="anchorjs-link " href="#state_schemas~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">[]User<wbr>Pool<wbr>Schema</a></span>
     </dt>
@@ -1780,7 +2505,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Authentication<wbr>Message</span>
+        <span id="state_smsauthenticationmessage~go">
+<span class="nx">
+Sms<wbr>Authentication<wbr>Message
+<a class="anchorjs-link " href="#state_smsauthenticationmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1789,7 +2519,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Configuration</span>
+        <span id="state_smsconfiguration~go">
+<span class="nx">
+Sms<wbr>Configuration
+<a class="anchorjs-link " href="#state_smsconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">User<wbr>Pool<wbr>Sms<wbr>Configuration</a></span>
     </dt>
@@ -1798,7 +2533,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Verification<wbr>Message</span>
+        <span id="state_smsverificationmessage~go">
+<span class="nx">
+Sms<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#state_smsverificationmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1807,7 +2547,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Software<wbr>Token<wbr>Mfa<wbr>Configuration</span>
+        <span id="state_softwaretokenmfaconfiguration~go">
+<span class="nx">
+Software<wbr>Token<wbr>Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#state_softwaretokenmfaconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration</a></span>
     </dt>
@@ -1816,7 +2561,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1825,7 +2575,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Pool<wbr>Add<wbr>Ons</span>
+        <span id="state_userpooladdons~go">
+<span class="nx">
+User<wbr>Pool<wbr>Add<wbr>Ons
+<a class="anchorjs-link " href="#state_userpooladdons~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons</a></span>
     </dt>
@@ -1834,7 +2589,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Attributes</span>
+        <span id="state_usernameattributes~go">
+<span class="nx">
+Username<wbr>Attributes
+<a class="anchorjs-link " href="#state_usernameattributes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1843,7 +2603,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Username<wbr>Configuration</span>
+        <span id="state_usernameconfiguration~go">
+<span class="nx">
+Username<wbr>Configuration
+<a class="anchorjs-link " href="#state_usernameconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">User<wbr>Pool<wbr>Username<wbr>Configuration</a></span>
     </dt>
@@ -1852,7 +2617,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Verification<wbr>Message<wbr>Template</span>
+        <span id="state_verificationmessagetemplate~go">
+<span class="nx">
+Verification<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#state_verificationmessagetemplate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template</a></span>
     </dt>
@@ -1868,7 +2638,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>admin<wbr>Create<wbr>User<wbr>Config</span>
+        <span id="state_admincreateuserconfig~nodejs">
+<span class="nx">
+admin<wbr>Create<wbr>User<wbr>Config
+<a class="anchorjs-link " href="#state_admincreateuserconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config</a></span>
     </dt>
@@ -1877,7 +2652,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>alias<wbr>Attributes</span>
+        <span id="state_aliasattributes~nodejs">
+<span class="nx">
+alias<wbr>Attributes
+<a class="anchorjs-link " href="#state_aliasattributes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1886,7 +2666,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1895,7 +2680,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Verified<wbr>Attributes</span>
+        <span id="state_autoverifiedattributes~nodejs">
+<span class="nx">
+auto<wbr>Verified<wbr>Attributes
+<a class="anchorjs-link " href="#state_autoverifiedattributes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1904,7 +2694,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>creation<wbr>Date</span>
+        <span id="state_creationdate~nodejs">
+<span class="nx">
+creation<wbr>Date
+<a class="anchorjs-link " href="#state_creationdate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1913,7 +2708,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Configuration</span>
+        <span id="state_deviceconfiguration~nodejs">
+<span class="nx">
+device<wbr>Configuration
+<a class="anchorjs-link " href="#state_deviceconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">User<wbr>Pool<wbr>Device<wbr>Configuration</a></span>
     </dt>
@@ -1922,7 +2722,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Configuration</span>
+        <span id="state_emailconfiguration~nodejs">
+<span class="nx">
+email<wbr>Configuration
+<a class="anchorjs-link " href="#state_emailconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">User<wbr>Pool<wbr>Email<wbr>Configuration</a></span>
     </dt>
@@ -1931,7 +2736,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Verification<wbr>Message</span>
+        <span id="state_emailverificationmessage~nodejs">
+<span class="nx">
+email<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#state_emailverificationmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1940,7 +2750,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Verification<wbr>Subject</span>
+        <span id="state_emailverificationsubject~nodejs">
+<span class="nx">
+email<wbr>Verification<wbr>Subject
+<a class="anchorjs-link " href="#state_emailverificationsubject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1949,7 +2764,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="state_endpoint~nodejs">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#state_endpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1958,7 +2778,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda<wbr>Config</span>
+        <span id="state_lambdaconfig~nodejs">
+<span class="nx">
+lambda<wbr>Config
+<a class="anchorjs-link " href="#state_lambdaconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">User<wbr>Pool<wbr>Lambda<wbr>Config</a></span>
     </dt>
@@ -1967,7 +2792,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Modified<wbr>Date</span>
+        <span id="state_lastmodifieddate~nodejs">
+<span class="nx">
+last<wbr>Modified<wbr>Date
+<a class="anchorjs-link " href="#state_lastmodifieddate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1976,7 +2806,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>mfa<wbr>Configuration</span>
+        <span id="state_mfaconfiguration~nodejs">
+<span class="nx">
+mfa<wbr>Configuration
+<a class="anchorjs-link " href="#state_mfaconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1985,7 +2820,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1994,7 +2834,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>password<wbr>Policy</span>
+        <span id="state_passwordpolicy~nodejs">
+<span class="nx">
+password<wbr>Policy
+<a class="anchorjs-link " href="#state_passwordpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">User<wbr>Pool<wbr>Password<wbr>Policy</a></span>
     </dt>
@@ -2003,7 +2848,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>schemas</span>
+        <span id="state_schemas~nodejs">
+<span class="nx">
+schemas
+<a class="anchorjs-link " href="#state_schemas~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">User<wbr>Pool<wbr>Schema[]</a></span>
     </dt>
@@ -2012,7 +2862,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Authentication<wbr>Message</span>
+        <span id="state_smsauthenticationmessage~nodejs">
+<span class="nx">
+sms<wbr>Authentication<wbr>Message
+<a class="anchorjs-link " href="#state_smsauthenticationmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2021,7 +2876,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Configuration</span>
+        <span id="state_smsconfiguration~nodejs">
+<span class="nx">
+sms<wbr>Configuration
+<a class="anchorjs-link " href="#state_smsconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">User<wbr>Pool<wbr>Sms<wbr>Configuration</a></span>
     </dt>
@@ -2030,7 +2890,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Verification<wbr>Message</span>
+        <span id="state_smsverificationmessage~nodejs">
+<span class="nx">
+sms<wbr>Verification<wbr>Message
+<a class="anchorjs-link " href="#state_smsverificationmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2039,7 +2904,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>software<wbr>Token<wbr>Mfa<wbr>Configuration</span>
+        <span id="state_softwaretokenmfaconfiguration~nodejs">
+<span class="nx">
+software<wbr>Token<wbr>Mfa<wbr>Configuration
+<a class="anchorjs-link " href="#state_softwaretokenmfaconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration</a></span>
     </dt>
@@ -2048,7 +2918,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2057,7 +2932,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Pool<wbr>Add<wbr>Ons</span>
+        <span id="state_userpooladdons~nodejs">
+<span class="nx">
+user<wbr>Pool<wbr>Add<wbr>Ons
+<a class="anchorjs-link " href="#state_userpooladdons~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons</a></span>
     </dt>
@@ -2066,7 +2946,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>username<wbr>Attributes</span>
+        <span id="state_usernameattributes~nodejs">
+<span class="nx">
+username<wbr>Attributes
+<a class="anchorjs-link " href="#state_usernameattributes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2075,7 +2960,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>username<wbr>Configuration</span>
+        <span id="state_usernameconfiguration~nodejs">
+<span class="nx">
+username<wbr>Configuration
+<a class="anchorjs-link " href="#state_usernameconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">User<wbr>Pool<wbr>Username<wbr>Configuration</a></span>
     </dt>
@@ -2084,7 +2974,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>verification<wbr>Message<wbr>Template</span>
+        <span id="state_verificationmessagetemplate~nodejs">
+<span class="nx">
+verification<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#state_verificationmessagetemplate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template</a></span>
     </dt>
@@ -2100,7 +2995,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>admin_<wbr>create_<wbr>user_<wbr>config</span>
+        <span id="state_admin_create_user_config~python">
+<span class="nx">
+admin_<wbr>create_<wbr>user_<wbr>config
+<a class="anchorjs-link " href="#state_admin_create_user_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfig">Dict[User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config]</a></span>
     </dt>
@@ -2109,7 +3009,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>alias_<wbr>attributes</span>
+        <span id="state_alias_attributes~python">
+<span class="nx">
+alias_<wbr>attributes
+<a class="anchorjs-link " href="#state_alias_attributes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2118,7 +3023,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2127,7 +3037,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>verified_<wbr>attributes</span>
+        <span id="state_auto_verified_attributes~python">
+<span class="nx">
+auto_<wbr>verified_<wbr>attributes
+<a class="anchorjs-link " href="#state_auto_verified_attributes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2136,7 +3051,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>creation_<wbr>date</span>
+        <span id="state_creation_date~python">
+<span class="nx">
+creation_<wbr>date
+<a class="anchorjs-link " href="#state_creation_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2145,7 +3065,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>device_<wbr>configuration</span>
+        <span id="state_device_configuration~python">
+<span class="nx">
+device_<wbr>configuration
+<a class="anchorjs-link " href="#state_device_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooldeviceconfiguration">Dict[User<wbr>Pool<wbr>Device<wbr>Configuration]</a></span>
     </dt>
@@ -2154,7 +3079,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email_<wbr>configuration</span>
+        <span id="state_email_configuration~python">
+<span class="nx">
+email_<wbr>configuration
+<a class="anchorjs-link " href="#state_email_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolemailconfiguration">Dict[User<wbr>Pool<wbr>Email<wbr>Configuration]</a></span>
     </dt>
@@ -2163,7 +3093,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email_<wbr>verification_<wbr>message</span>
+        <span id="state_email_verification_message~python">
+<span class="nx">
+email_<wbr>verification_<wbr>message
+<a class="anchorjs-link " href="#state_email_verification_message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2172,7 +3107,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email_<wbr>verification_<wbr>subject</span>
+        <span id="state_email_verification_subject~python">
+<span class="nx">
+email_<wbr>verification_<wbr>subject
+<a class="anchorjs-link " href="#state_email_verification_subject~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2181,7 +3121,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="state_endpoint~python">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#state_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2190,7 +3135,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda_<wbr>config</span>
+        <span id="state_lambda_config~python">
+<span class="nx">
+lambda_<wbr>config
+<a class="anchorjs-link " href="#state_lambda_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoollambdaconfig">Dict[User<wbr>Pool<wbr>Lambda<wbr>Config]</a></span>
     </dt>
@@ -2199,7 +3149,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>modified_<wbr>date</span>
+        <span id="state_last_modified_date~python">
+<span class="nx">
+last_<wbr>modified_<wbr>date
+<a class="anchorjs-link " href="#state_last_modified_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2208,7 +3163,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>mfa_<wbr>configuration</span>
+        <span id="state_mfa_configuration~python">
+<span class="nx">
+mfa_<wbr>configuration
+<a class="anchorjs-link " href="#state_mfa_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2217,7 +3177,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2226,7 +3191,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>password_<wbr>policy</span>
+        <span id="state_password_policy~python">
+<span class="nx">
+password_<wbr>policy
+<a class="anchorjs-link " href="#state_password_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolpasswordpolicy">Dict[User<wbr>Pool<wbr>Password<wbr>Policy]</a></span>
     </dt>
@@ -2235,7 +3205,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>schemas</span>
+        <span id="state_schemas~python">
+<span class="nx">
+schemas
+<a class="anchorjs-link " href="#state_schemas~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschema">List[User<wbr>Pool<wbr>Schema]</a></span>
     </dt>
@@ -2244,7 +3219,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms_<wbr>authentication_<wbr>message</span>
+        <span id="state_sms_authentication_message~python">
+<span class="nx">
+sms_<wbr>authentication_<wbr>message
+<a class="anchorjs-link " href="#state_sms_authentication_message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2253,7 +3233,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms_<wbr>configuration</span>
+        <span id="state_sms_configuration~python">
+<span class="nx">
+sms_<wbr>configuration
+<a class="anchorjs-link " href="#state_sms_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsmsconfiguration">Dict[User<wbr>Pool<wbr>Sms<wbr>Configuration]</a></span>
     </dt>
@@ -2262,7 +3247,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms_<wbr>verification_<wbr>message</span>
+        <span id="state_sms_verification_message~python">
+<span class="nx">
+sms_<wbr>verification_<wbr>message
+<a class="anchorjs-link " href="#state_sms_verification_message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2271,7 +3261,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>software_<wbr>token_<wbr>mfa_<wbr>configuration</span>
+        <span id="state_software_token_mfa_configuration~python">
+<span class="nx">
+software_<wbr>token_<wbr>mfa_<wbr>configuration
+<a class="anchorjs-link " href="#state_software_token_mfa_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolsoftwaretokenmfaconfiguration">Dict[User<wbr>Pool<wbr>Software<wbr>Token<wbr>Mfa<wbr>Configuration]</a></span>
     </dt>
@@ -2280,7 +3275,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2289,7 +3289,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>pool_<wbr>add_<wbr>ons</span>
+        <span id="state_user_pool_add_ons~python">
+<span class="nx">
+user_<wbr>pool_<wbr>add_<wbr>ons
+<a class="anchorjs-link " href="#state_user_pool_add_ons~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooluserpooladdons">Dict[User<wbr>Pool<wbr>User<wbr>Pool<wbr>Add<wbr>Ons]</a></span>
     </dt>
@@ -2298,7 +3303,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>username_<wbr>attributes</span>
+        <span id="state_username_attributes~python">
+<span class="nx">
+username_<wbr>attributes
+<a class="anchorjs-link " href="#state_username_attributes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2307,7 +3317,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>username_<wbr>configuration</span>
+        <span id="state_username_configuration~python">
+<span class="nx">
+username_<wbr>configuration
+<a class="anchorjs-link " href="#state_username_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolusernameconfiguration">Dict[User<wbr>Pool<wbr>Username<wbr>Configuration]</a></span>
     </dt>
@@ -2316,7 +3331,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>verification_<wbr>message_<wbr>template</span>
+        <span id="state_verification_message_template~python">
+<span class="nx">
+verification_<wbr>message_<wbr>template
+<a class="anchorjs-link " href="#state_verification_message_template~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolverificationmessagetemplate">Dict[User<wbr>Pool<wbr>Verification<wbr>Message<wbr>Template]</a></span>
     </dt>
@@ -2358,7 +3378,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only</span>
+        <span id="allowadmincreateuseronly~csharp">
+<span class="nx">
+Allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only
+<a class="anchorjs-link " href="#allowadmincreateuseronly~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2367,7 +3392,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Invite<wbr>Message<wbr>Template</span>
+        <span id="invitemessagetemplate~csharp">
+<span class="nx">
+Invite<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#invitemessagetemplate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfiginvitemessagetemplate">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config<wbr>Invite<wbr>Message<wbr>Template<wbr>Args</a></span>
     </dt>
@@ -2376,7 +3406,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>Unused<wbr>Account<wbr>Validity<wbr>Days</span>
+        <span id="unusedaccountvaliditydays~csharp">
+<span class="nx">
+Unused<wbr>Account<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#unusedaccountvaliditydays~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2392,7 +3427,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only</span>
+        <span id="allowadmincreateuseronly~go">
+<span class="nx">
+Allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only
+<a class="anchorjs-link " href="#allowadmincreateuseronly~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2401,7 +3441,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Invite<wbr>Message<wbr>Template</span>
+        <span id="invitemessagetemplate~go">
+<span class="nx">
+Invite<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#invitemessagetemplate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfiginvitemessagetemplate">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config<wbr>Invite<wbr>Message<wbr>Template</a></span>
     </dt>
@@ -2410,7 +3455,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>Unused<wbr>Account<wbr>Validity<wbr>Days</span>
+        <span id="unusedaccountvaliditydays~go">
+<span class="nx">
+Unused<wbr>Account<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#unusedaccountvaliditydays~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2426,7 +3476,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only</span>
+        <span id="allowadmincreateuseronly~nodejs">
+<span class="nx">
+allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only
+<a class="anchorjs-link " href="#allowadmincreateuseronly~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2435,7 +3490,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>invite<wbr>Message<wbr>Template</span>
+        <span id="invitemessagetemplate~nodejs">
+<span class="nx">
+invite<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#invitemessagetemplate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfiginvitemessagetemplate">User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config<wbr>Invite<wbr>Message<wbr>Template</a></span>
     </dt>
@@ -2444,7 +3504,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>unused<wbr>Account<wbr>Validity<wbr>Days</span>
+        <span id="unusedaccountvaliditydays~nodejs">
+<span class="nx">
+unused<wbr>Account<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#unusedaccountvaliditydays~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2460,7 +3525,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only</span>
+        <span id="allowadmincreateuseronly~python">
+<span class="nx">
+allow<wbr>Admin<wbr>Create<wbr>User<wbr>Only
+<a class="anchorjs-link " href="#allowadmincreateuseronly~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2469,7 +3539,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>invite<wbr>Message<wbr>Template</span>
+        <span id="invitemessagetemplate~python">
+<span class="nx">
+invite<wbr>Message<wbr>Template
+<a class="anchorjs-link " href="#invitemessagetemplate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpooladmincreateuserconfiginvitemessagetemplate">Dict[User<wbr>Pool<wbr>Admin<wbr>Create<wbr>User<wbr>Config<wbr>Invite<wbr>Message<wbr>Template]</a></span>
     </dt>
@@ -2478,7 +3553,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>unused<wbr>Account<wbr>Validity<wbr>Days</span>
+        <span id="unusedaccountvaliditydays~python">
+<span class="nx">
+unused<wbr>Account<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#unusedaccountvaliditydays~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2512,7 +3592,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Message</span>
+        <span id="emailmessage~csharp">
+<span class="nx">
+Email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2521,7 +3606,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Subject</span>
+        <span id="emailsubject~csharp">
+<span class="nx">
+Email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2530,7 +3620,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Message</span>
+        <span id="smsmessage~csharp">
+<span class="nx">
+Sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2546,7 +3641,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Message</span>
+        <span id="emailmessage~go">
+<span class="nx">
+Email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2555,7 +3655,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Subject</span>
+        <span id="emailsubject~go">
+<span class="nx">
+Email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2564,7 +3669,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Message</span>
+        <span id="smsmessage~go">
+<span class="nx">
+Sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2580,7 +3690,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Message</span>
+        <span id="emailmessage~nodejs">
+<span class="nx">
+email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2589,7 +3704,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Subject</span>
+        <span id="emailsubject~nodejs">
+<span class="nx">
+email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2598,7 +3718,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Message</span>
+        <span id="smsmessage~nodejs">
+<span class="nx">
+sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2614,7 +3739,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Message</span>
+        <span id="emailmessage~python">
+<span class="nx">
+email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2623,7 +3753,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Subject</span>
+        <span id="emailsubject~python">
+<span class="nx">
+email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2632,7 +3767,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Message</span>
+        <span id="smsmessage~python">
+<span class="nx">
+sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2666,7 +3806,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Challenge<wbr>Required<wbr>On<wbr>New<wbr>Device</span>
+        <span id="challengerequiredonnewdevice~csharp">
+<span class="nx">
+Challenge<wbr>Required<wbr>On<wbr>New<wbr>Device
+<a class="anchorjs-link " href="#challengerequiredonnewdevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2675,7 +3820,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt</span>
+        <span id="deviceonlyrememberedonuserprompt~csharp">
+<span class="nx">
+Device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt
+<a class="anchorjs-link " href="#deviceonlyrememberedonuserprompt~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2691,7 +3841,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Challenge<wbr>Required<wbr>On<wbr>New<wbr>Device</span>
+        <span id="challengerequiredonnewdevice~go">
+<span class="nx">
+Challenge<wbr>Required<wbr>On<wbr>New<wbr>Device
+<a class="anchorjs-link " href="#challengerequiredonnewdevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2700,7 +3855,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt</span>
+        <span id="deviceonlyrememberedonuserprompt~go">
+<span class="nx">
+Device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt
+<a class="anchorjs-link " href="#deviceonlyrememberedonuserprompt~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2716,7 +3876,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>challenge<wbr>Required<wbr>On<wbr>New<wbr>Device</span>
+        <span id="challengerequiredonnewdevice~nodejs">
+<span class="nx">
+challenge<wbr>Required<wbr>On<wbr>New<wbr>Device
+<a class="anchorjs-link " href="#challengerequiredonnewdevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2725,7 +3890,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt</span>
+        <span id="deviceonlyrememberedonuserprompt~nodejs">
+<span class="nx">
+device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt
+<a class="anchorjs-link " href="#deviceonlyrememberedonuserprompt~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2741,7 +3911,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>challenge<wbr>Required<wbr>On<wbr>New<wbr>Device</span>
+        <span id="challengerequiredonnewdevice~python">
+<span class="nx">
+challenge<wbr>Required<wbr>On<wbr>New<wbr>Device
+<a class="anchorjs-link " href="#challengerequiredonnewdevice~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2750,7 +3925,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt</span>
+        <span id="deviceonlyrememberedonuserprompt~python">
+<span class="nx">
+device<wbr>Only<wbr>Remembered<wbr>On<wbr>User<wbr>Prompt
+<a class="anchorjs-link " href="#deviceonlyrememberedonuserprompt~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2784,7 +3964,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Sending<wbr>Account</span>
+        <span id="emailsendingaccount~csharp">
+<span class="nx">
+Email<wbr>Sending<wbr>Account
+<a class="anchorjs-link " href="#emailsendingaccount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2793,7 +3978,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>From<wbr>Email<wbr>Address</span>
+        <span id="fromemailaddress~csharp">
+<span class="nx">
+From<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#fromemailaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2802,7 +3992,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reply<wbr>To<wbr>Email<wbr>Address</span>
+        <span id="replytoemailaddress~csharp">
+<span class="nx">
+Reply<wbr>To<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#replytoemailaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2811,7 +4006,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Arn</span>
+        <span id="sourcearn~csharp">
+<span class="nx">
+Source<wbr>Arn
+<a class="anchorjs-link " href="#sourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2827,7 +4027,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Sending<wbr>Account</span>
+        <span id="emailsendingaccount~go">
+<span class="nx">
+Email<wbr>Sending<wbr>Account
+<a class="anchorjs-link " href="#emailsendingaccount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2836,7 +4041,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>From<wbr>Email<wbr>Address</span>
+        <span id="fromemailaddress~go">
+<span class="nx">
+From<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#fromemailaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2845,7 +4055,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reply<wbr>To<wbr>Email<wbr>Address</span>
+        <span id="replytoemailaddress~go">
+<span class="nx">
+Reply<wbr>To<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#replytoemailaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2854,7 +4069,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Arn</span>
+        <span id="sourcearn~go">
+<span class="nx">
+Source<wbr>Arn
+<a class="anchorjs-link " href="#sourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2870,7 +4090,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Sending<wbr>Account</span>
+        <span id="emailsendingaccount~nodejs">
+<span class="nx">
+email<wbr>Sending<wbr>Account
+<a class="anchorjs-link " href="#emailsendingaccount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2879,7 +4104,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>from<wbr>Email<wbr>Address</span>
+        <span id="fromemailaddress~nodejs">
+<span class="nx">
+from<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#fromemailaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2888,7 +4118,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>reply<wbr>To<wbr>Email<wbr>Address</span>
+        <span id="replytoemailaddress~nodejs">
+<span class="nx">
+reply<wbr>To<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#replytoemailaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2897,7 +4132,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Arn</span>
+        <span id="sourcearn~nodejs">
+<span class="nx">
+source<wbr>Arn
+<a class="anchorjs-link " href="#sourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2913,7 +4153,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Sending<wbr>Account</span>
+        <span id="emailsendingaccount~python">
+<span class="nx">
+email<wbr>Sending<wbr>Account
+<a class="anchorjs-link " href="#emailsendingaccount~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2922,7 +4167,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>from<wbr>Email<wbr>Address</span>
+        <span id="fromemailaddress~python">
+<span class="nx">
+from<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#fromemailaddress~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2931,7 +4181,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>reply<wbr>To<wbr>Email<wbr>Address</span>
+        <span id="replytoemailaddress~python">
+<span class="nx">
+reply<wbr>To<wbr>Email<wbr>Address
+<a class="anchorjs-link " href="#replytoemailaddress~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2940,7 +4195,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>arn</span>
+        <span id="source_arn~python">
+<span class="nx">
+source_<wbr>arn
+<a class="anchorjs-link " href="#source_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2974,7 +4234,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Create<wbr>Auth<wbr>Challenge</span>
+        <span id="createauthchallenge~csharp">
+<span class="nx">
+Create<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#createauthchallenge~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2983,7 +4248,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Message</span>
+        <span id="custommessage~csharp">
+<span class="nx">
+Custom<wbr>Message
+<a class="anchorjs-link " href="#custommessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2992,7 +4262,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Define<wbr>Auth<wbr>Challenge</span>
+        <span id="defineauthchallenge~csharp">
+<span class="nx">
+Define<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#defineauthchallenge~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3001,7 +4276,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Post<wbr>Authentication</span>
+        <span id="postauthentication~csharp">
+<span class="nx">
+Post<wbr>Authentication
+<a class="anchorjs-link " href="#postauthentication~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3010,7 +4290,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Post<wbr>Confirmation</span>
+        <span id="postconfirmation~csharp">
+<span class="nx">
+Post<wbr>Confirmation
+<a class="anchorjs-link " href="#postconfirmation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3019,7 +4304,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pre<wbr>Authentication</span>
+        <span id="preauthentication~csharp">
+<span class="nx">
+Pre<wbr>Authentication
+<a class="anchorjs-link " href="#preauthentication~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3028,7 +4318,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pre<wbr>Sign<wbr>Up</span>
+        <span id="presignup~csharp">
+<span class="nx">
+Pre<wbr>Sign<wbr>Up
+<a class="anchorjs-link " href="#presignup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3037,7 +4332,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pre<wbr>Token<wbr>Generation</span>
+        <span id="pretokengeneration~csharp">
+<span class="nx">
+Pre<wbr>Token<wbr>Generation
+<a class="anchorjs-link " href="#pretokengeneration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3046,7 +4346,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Migration</span>
+        <span id="usermigration~csharp">
+<span class="nx">
+User<wbr>Migration
+<a class="anchorjs-link " href="#usermigration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3055,7 +4360,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Verify<wbr>Auth<wbr>Challenge<wbr>Response</span>
+        <span id="verifyauthchallengeresponse~csharp">
+<span class="nx">
+Verify<wbr>Auth<wbr>Challenge<wbr>Response
+<a class="anchorjs-link " href="#verifyauthchallengeresponse~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3071,7 +4381,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Create<wbr>Auth<wbr>Challenge</span>
+        <span id="createauthchallenge~go">
+<span class="nx">
+Create<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#createauthchallenge~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3080,7 +4395,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Message</span>
+        <span id="custommessage~go">
+<span class="nx">
+Custom<wbr>Message
+<a class="anchorjs-link " href="#custommessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3089,7 +4409,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Define<wbr>Auth<wbr>Challenge</span>
+        <span id="defineauthchallenge~go">
+<span class="nx">
+Define<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#defineauthchallenge~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3098,7 +4423,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Post<wbr>Authentication</span>
+        <span id="postauthentication~go">
+<span class="nx">
+Post<wbr>Authentication
+<a class="anchorjs-link " href="#postauthentication~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3107,7 +4437,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Post<wbr>Confirmation</span>
+        <span id="postconfirmation~go">
+<span class="nx">
+Post<wbr>Confirmation
+<a class="anchorjs-link " href="#postconfirmation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3116,7 +4451,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pre<wbr>Authentication</span>
+        <span id="preauthentication~go">
+<span class="nx">
+Pre<wbr>Authentication
+<a class="anchorjs-link " href="#preauthentication~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3125,7 +4465,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pre<wbr>Sign<wbr>Up</span>
+        <span id="presignup~go">
+<span class="nx">
+Pre<wbr>Sign<wbr>Up
+<a class="anchorjs-link " href="#presignup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3134,7 +4479,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pre<wbr>Token<wbr>Generation</span>
+        <span id="pretokengeneration~go">
+<span class="nx">
+Pre<wbr>Token<wbr>Generation
+<a class="anchorjs-link " href="#pretokengeneration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3143,7 +4493,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Migration</span>
+        <span id="usermigration~go">
+<span class="nx">
+User<wbr>Migration
+<a class="anchorjs-link " href="#usermigration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3152,7 +4507,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Verify<wbr>Auth<wbr>Challenge<wbr>Response</span>
+        <span id="verifyauthchallengeresponse~go">
+<span class="nx">
+Verify<wbr>Auth<wbr>Challenge<wbr>Response
+<a class="anchorjs-link " href="#verifyauthchallengeresponse~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3168,7 +4528,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>create<wbr>Auth<wbr>Challenge</span>
+        <span id="createauthchallenge~nodejs">
+<span class="nx">
+create<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#createauthchallenge~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3177,7 +4542,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Message</span>
+        <span id="custommessage~nodejs">
+<span class="nx">
+custom<wbr>Message
+<a class="anchorjs-link " href="#custommessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3186,7 +4556,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>define<wbr>Auth<wbr>Challenge</span>
+        <span id="defineauthchallenge~nodejs">
+<span class="nx">
+define<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#defineauthchallenge~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3195,7 +4570,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>post<wbr>Authentication</span>
+        <span id="postauthentication~nodejs">
+<span class="nx">
+post<wbr>Authentication
+<a class="anchorjs-link " href="#postauthentication~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3204,7 +4584,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>post<wbr>Confirmation</span>
+        <span id="postconfirmation~nodejs">
+<span class="nx">
+post<wbr>Confirmation
+<a class="anchorjs-link " href="#postconfirmation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3213,7 +4598,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>pre<wbr>Authentication</span>
+        <span id="preauthentication~nodejs">
+<span class="nx">
+pre<wbr>Authentication
+<a class="anchorjs-link " href="#preauthentication~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3222,7 +4612,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>pre<wbr>Sign<wbr>Up</span>
+        <span id="presignup~nodejs">
+<span class="nx">
+pre<wbr>Sign<wbr>Up
+<a class="anchorjs-link " href="#presignup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3231,7 +4626,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>pre<wbr>Token<wbr>Generation</span>
+        <span id="pretokengeneration~nodejs">
+<span class="nx">
+pre<wbr>Token<wbr>Generation
+<a class="anchorjs-link " href="#pretokengeneration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3240,7 +4640,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Migration</span>
+        <span id="usermigration~nodejs">
+<span class="nx">
+user<wbr>Migration
+<a class="anchorjs-link " href="#usermigration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3249,7 +4654,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>verify<wbr>Auth<wbr>Challenge<wbr>Response</span>
+        <span id="verifyauthchallengeresponse~nodejs">
+<span class="nx">
+verify<wbr>Auth<wbr>Challenge<wbr>Response
+<a class="anchorjs-link " href="#verifyauthchallengeresponse~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3265,7 +4675,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>create<wbr>Auth<wbr>Challenge</span>
+        <span id="createauthchallenge~python">
+<span class="nx">
+create<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#createauthchallenge~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3274,7 +4689,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Message</span>
+        <span id="custommessage~python">
+<span class="nx">
+custom<wbr>Message
+<a class="anchorjs-link " href="#custommessage~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3283,7 +4703,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>define<wbr>Auth<wbr>Challenge</span>
+        <span id="defineauthchallenge~python">
+<span class="nx">
+define<wbr>Auth<wbr>Challenge
+<a class="anchorjs-link " href="#defineauthchallenge~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3292,7 +4717,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>post<wbr>Authentication</span>
+        <span id="postauthentication~python">
+<span class="nx">
+post<wbr>Authentication
+<a class="anchorjs-link " href="#postauthentication~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3301,7 +4731,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>post<wbr>Confirmation</span>
+        <span id="postconfirmation~python">
+<span class="nx">
+post<wbr>Confirmation
+<a class="anchorjs-link " href="#postconfirmation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3310,7 +4745,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>pre<wbr>Authentication</span>
+        <span id="preauthentication~python">
+<span class="nx">
+pre<wbr>Authentication
+<a class="anchorjs-link " href="#preauthentication~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3319,7 +4759,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>pre<wbr>Sign<wbr>Up</span>
+        <span id="presignup~python">
+<span class="nx">
+pre<wbr>Sign<wbr>Up
+<a class="anchorjs-link " href="#presignup~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3328,7 +4773,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>pre<wbr>Token<wbr>Generation</span>
+        <span id="pretokengeneration~python">
+<span class="nx">
+pre<wbr>Token<wbr>Generation
+<a class="anchorjs-link " href="#pretokengeneration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3337,7 +4787,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Migration</span>
+        <span id="usermigration~python">
+<span class="nx">
+user<wbr>Migration
+<a class="anchorjs-link " href="#usermigration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3346,7 +4801,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>verify<wbr>Auth<wbr>Challenge<wbr>Response</span>
+        <span id="verifyauthchallengeresponse~python">
+<span class="nx">
+verify<wbr>Auth<wbr>Challenge<wbr>Response
+<a class="anchorjs-link " href="#verifyauthchallengeresponse~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3380,7 +4840,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Length</span>
+        <span id="minimumlength~csharp">
+<span class="nx">
+Minimum<wbr>Length
+<a class="anchorjs-link " href="#minimumlength~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3389,7 +4854,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Lowercase</span>
+        <span id="requirelowercase~csharp">
+<span class="nx">
+Require<wbr>Lowercase
+<a class="anchorjs-link " href="#requirelowercase~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3398,7 +4868,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Numbers</span>
+        <span id="requirenumbers~csharp">
+<span class="nx">
+Require<wbr>Numbers
+<a class="anchorjs-link " href="#requirenumbers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3407,7 +4882,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Symbols</span>
+        <span id="requiresymbols~csharp">
+<span class="nx">
+Require<wbr>Symbols
+<a class="anchorjs-link " href="#requiresymbols~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3416,7 +4896,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Uppercase</span>
+        <span id="requireuppercase~csharp">
+<span class="nx">
+Require<wbr>Uppercase
+<a class="anchorjs-link " href="#requireuppercase~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3425,7 +4910,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Temporary<wbr>Password<wbr>Validity<wbr>Days</span>
+        <span id="temporarypasswordvaliditydays~csharp">
+<span class="nx">
+Temporary<wbr>Password<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#temporarypasswordvaliditydays~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3441,7 +4931,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Length</span>
+        <span id="minimumlength~go">
+<span class="nx">
+Minimum<wbr>Length
+<a class="anchorjs-link " href="#minimumlength~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3450,7 +4945,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Lowercase</span>
+        <span id="requirelowercase~go">
+<span class="nx">
+Require<wbr>Lowercase
+<a class="anchorjs-link " href="#requirelowercase~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3459,7 +4959,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Numbers</span>
+        <span id="requirenumbers~go">
+<span class="nx">
+Require<wbr>Numbers
+<a class="anchorjs-link " href="#requirenumbers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3468,7 +4973,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Symbols</span>
+        <span id="requiresymbols~go">
+<span class="nx">
+Require<wbr>Symbols
+<a class="anchorjs-link " href="#requiresymbols~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3477,7 +4987,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Uppercase</span>
+        <span id="requireuppercase~go">
+<span class="nx">
+Require<wbr>Uppercase
+<a class="anchorjs-link " href="#requireuppercase~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3486,7 +5001,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Temporary<wbr>Password<wbr>Validity<wbr>Days</span>
+        <span id="temporarypasswordvaliditydays~go">
+<span class="nx">
+Temporary<wbr>Password<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#temporarypasswordvaliditydays~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3502,7 +5022,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum<wbr>Length</span>
+        <span id="minimumlength~nodejs">
+<span class="nx">
+minimum<wbr>Length
+<a class="anchorjs-link " href="#minimumlength~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3511,7 +5036,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Lowercase</span>
+        <span id="requirelowercase~nodejs">
+<span class="nx">
+require<wbr>Lowercase
+<a class="anchorjs-link " href="#requirelowercase~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3520,7 +5050,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Numbers</span>
+        <span id="requirenumbers~nodejs">
+<span class="nx">
+require<wbr>Numbers
+<a class="anchorjs-link " href="#requirenumbers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3529,7 +5064,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Symbols</span>
+        <span id="requiresymbols~nodejs">
+<span class="nx">
+require<wbr>Symbols
+<a class="anchorjs-link " href="#requiresymbols~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3538,7 +5078,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Uppercase</span>
+        <span id="requireuppercase~nodejs">
+<span class="nx">
+require<wbr>Uppercase
+<a class="anchorjs-link " href="#requireuppercase~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3547,7 +5092,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>temporary<wbr>Password<wbr>Validity<wbr>Days</span>
+        <span id="temporarypasswordvaliditydays~nodejs">
+<span class="nx">
+temporary<wbr>Password<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#temporarypasswordvaliditydays~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3563,7 +5113,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum<wbr>Length</span>
+        <span id="minimumlength~python">
+<span class="nx">
+minimum<wbr>Length
+<a class="anchorjs-link " href="#minimumlength~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3572,7 +5127,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Lowercase</span>
+        <span id="requirelowercase~python">
+<span class="nx">
+require<wbr>Lowercase
+<a class="anchorjs-link " href="#requirelowercase~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3581,7 +5141,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Uppercase</span>
+        <span id="requireuppercase~python">
+<span class="nx">
+require<wbr>Uppercase
+<a class="anchorjs-link " href="#requireuppercase~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3590,7 +5155,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>numbers</span>
+        <span id="require_numbers~python">
+<span class="nx">
+require_<wbr>numbers
+<a class="anchorjs-link " href="#require_numbers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3599,7 +5169,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>symbols</span>
+        <span id="require_symbols~python">
+<span class="nx">
+require_<wbr>symbols
+<a class="anchorjs-link " href="#require_symbols~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3608,7 +5183,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>temporary<wbr>Password<wbr>Validity<wbr>Days</span>
+        <span id="temporarypasswordvaliditydays~python">
+<span class="nx">
+temporary<wbr>Password<wbr>Validity<wbr>Days
+<a class="anchorjs-link " href="#temporarypasswordvaliditydays~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3642,7 +5222,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Attribute<wbr>Data<wbr>Type</span>
+        <span id="attributedatatype~csharp">
+<span class="nx">
+Attribute<wbr>Data<wbr>Type
+<a class="anchorjs-link " href="#attributedatatype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3651,7 +5236,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3660,7 +5250,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Developer<wbr>Only<wbr>Attribute</span>
+        <span id="developeronlyattribute~csharp">
+<span class="nx">
+Developer<wbr>Only<wbr>Attribute
+<a class="anchorjs-link " href="#developeronlyattribute~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3669,7 +5264,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mutable</span>
+        <span id="mutable~csharp">
+<span class="nx">
+Mutable
+<a class="anchorjs-link " href="#mutable~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3678,7 +5278,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Attribute<wbr>Constraints</span>
+        <span id="numberattributeconstraints~csharp">
+<span class="nx">
+Number<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#numberattributeconstraints~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemanumberattributeconstraints">User<wbr>Pool<wbr>Schema<wbr>Number<wbr>Attribute<wbr>Constraints<wbr>Args</a></span>
     </dt>
@@ -3687,7 +5292,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Required</span>
+        <span id="required~csharp">
+<span class="nx">
+Required
+<a class="anchorjs-link " href="#required~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3696,7 +5306,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>String<wbr>Attribute<wbr>Constraints</span>
+        <span id="stringattributeconstraints~csharp">
+<span class="nx">
+String<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#stringattributeconstraints~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemastringattributeconstraints">User<wbr>Pool<wbr>Schema<wbr>String<wbr>Attribute<wbr>Constraints<wbr>Args</a></span>
     </dt>
@@ -3712,7 +5327,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Attribute<wbr>Data<wbr>Type</span>
+        <span id="attributedatatype~go">
+<span class="nx">
+Attribute<wbr>Data<wbr>Type
+<a class="anchorjs-link " href="#attributedatatype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3721,7 +5341,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3730,7 +5355,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Developer<wbr>Only<wbr>Attribute</span>
+        <span id="developeronlyattribute~go">
+<span class="nx">
+Developer<wbr>Only<wbr>Attribute
+<a class="anchorjs-link " href="#developeronlyattribute~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3739,7 +5369,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mutable</span>
+        <span id="mutable~go">
+<span class="nx">
+Mutable
+<a class="anchorjs-link " href="#mutable~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3748,7 +5383,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Attribute<wbr>Constraints</span>
+        <span id="numberattributeconstraints~go">
+<span class="nx">
+Number<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#numberattributeconstraints~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemanumberattributeconstraints">User<wbr>Pool<wbr>Schema<wbr>Number<wbr>Attribute<wbr>Constraints</a></span>
     </dt>
@@ -3757,7 +5397,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Required</span>
+        <span id="required~go">
+<span class="nx">
+Required
+<a class="anchorjs-link " href="#required~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3766,7 +5411,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>String<wbr>Attribute<wbr>Constraints</span>
+        <span id="stringattributeconstraints~go">
+<span class="nx">
+String<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#stringattributeconstraints~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemastringattributeconstraints">User<wbr>Pool<wbr>Schema<wbr>String<wbr>Attribute<wbr>Constraints</a></span>
     </dt>
@@ -3782,7 +5432,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>attribute<wbr>Data<wbr>Type</span>
+        <span id="attributedatatype~nodejs">
+<span class="nx">
+attribute<wbr>Data<wbr>Type
+<a class="anchorjs-link " href="#attributedatatype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3791,7 +5446,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3800,7 +5460,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>developer<wbr>Only<wbr>Attribute</span>
+        <span id="developeronlyattribute~nodejs">
+<span class="nx">
+developer<wbr>Only<wbr>Attribute
+<a class="anchorjs-link " href="#developeronlyattribute~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3809,7 +5474,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>mutable</span>
+        <span id="mutable~nodejs">
+<span class="nx">
+mutable
+<a class="anchorjs-link " href="#mutable~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3818,7 +5488,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Attribute<wbr>Constraints</span>
+        <span id="numberattributeconstraints~nodejs">
+<span class="nx">
+number<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#numberattributeconstraints~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemanumberattributeconstraints">User<wbr>Pool<wbr>Schema<wbr>Number<wbr>Attribute<wbr>Constraints</a></span>
     </dt>
@@ -3827,7 +5502,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>required</span>
+        <span id="required~nodejs">
+<span class="nx">
+required
+<a class="anchorjs-link " href="#required~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3836,7 +5516,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>string<wbr>Attribute<wbr>Constraints</span>
+        <span id="stringattributeconstraints~nodejs">
+<span class="nx">
+string<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#stringattributeconstraints~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemastringattributeconstraints">User<wbr>Pool<wbr>Schema<wbr>String<wbr>Attribute<wbr>Constraints</a></span>
     </dt>
@@ -3852,7 +5537,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>attribute<wbr>Data<wbr>Type</span>
+        <span id="attributedatatype~python">
+<span class="nx">
+attribute<wbr>Data<wbr>Type
+<a class="anchorjs-link " href="#attributedatatype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3861,7 +5551,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3870,7 +5565,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>developer<wbr>Only<wbr>Attribute</span>
+        <span id="developeronlyattribute~python">
+<span class="nx">
+developer<wbr>Only<wbr>Attribute
+<a class="anchorjs-link " href="#developeronlyattribute~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3879,7 +5579,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>mutable</span>
+        <span id="mutable~python">
+<span class="nx">
+mutable
+<a class="anchorjs-link " href="#mutable~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3888,7 +5593,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Attribute<wbr>Constraints</span>
+        <span id="numberattributeconstraints~python">
+<span class="nx">
+number<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#numberattributeconstraints~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemanumberattributeconstraints">Dict[User<wbr>Pool<wbr>Schema<wbr>Number<wbr>Attribute<wbr>Constraints]</a></span>
     </dt>
@@ -3897,7 +5607,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>required</span>
+        <span id="required~python">
+<span class="nx">
+required
+<a class="anchorjs-link " href="#required~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3906,7 +5621,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>string<wbr>Attribute<wbr>Constraints</span>
+        <span id="stringattributeconstraints~python">
+<span class="nx">
+string<wbr>Attribute<wbr>Constraints
+<a class="anchorjs-link " href="#stringattributeconstraints~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#userpoolschemastringattributeconstraints">Dict[User<wbr>Pool<wbr>Schema<wbr>String<wbr>Attribute<wbr>Constraints]</a></span>
     </dt>
@@ -3940,7 +5660,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Value</span>
+        <span id="maxvalue~csharp">
+<span class="nx">
+Max<wbr>Value
+<a class="anchorjs-link " href="#maxvalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3949,7 +5674,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Value</span>
+        <span id="minvalue~csharp">
+<span class="nx">
+Min<wbr>Value
+<a class="anchorjs-link " href="#minvalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3965,7 +5695,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Value</span>
+        <span id="maxvalue~go">
+<span class="nx">
+Max<wbr>Value
+<a class="anchorjs-link " href="#maxvalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3974,7 +5709,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Value</span>
+        <span id="minvalue~go">
+<span class="nx">
+Min<wbr>Value
+<a class="anchorjs-link " href="#minvalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3990,7 +5730,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Value</span>
+        <span id="maxvalue~nodejs">
+<span class="nx">
+max<wbr>Value
+<a class="anchorjs-link " href="#maxvalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3999,7 +5744,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Value</span>
+        <span id="minvalue~nodejs">
+<span class="nx">
+min<wbr>Value
+<a class="anchorjs-link " href="#minvalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4015,7 +5765,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Value</span>
+        <span id="maxvalue~python">
+<span class="nx">
+max<wbr>Value
+<a class="anchorjs-link " href="#maxvalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4024,7 +5779,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Value</span>
+        <span id="minvalue~python">
+<span class="nx">
+min<wbr>Value
+<a class="anchorjs-link " href="#minvalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4058,7 +5818,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Length</span>
+        <span id="maxlength~csharp">
+<span class="nx">
+Max<wbr>Length
+<a class="anchorjs-link " href="#maxlength~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4067,7 +5832,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Length</span>
+        <span id="minlength~csharp">
+<span class="nx">
+Min<wbr>Length
+<a class="anchorjs-link " href="#minlength~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4083,7 +5853,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Length</span>
+        <span id="maxlength~go">
+<span class="nx">
+Max<wbr>Length
+<a class="anchorjs-link " href="#maxlength~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4092,7 +5867,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Length</span>
+        <span id="minlength~go">
+<span class="nx">
+Min<wbr>Length
+<a class="anchorjs-link " href="#minlength~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4108,7 +5888,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Length</span>
+        <span id="maxlength~nodejs">
+<span class="nx">
+max<wbr>Length
+<a class="anchorjs-link " href="#maxlength~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4117,7 +5902,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Length</span>
+        <span id="minlength~nodejs">
+<span class="nx">
+min<wbr>Length
+<a class="anchorjs-link " href="#minlength~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4133,7 +5923,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Length</span>
+        <span id="maxlength~python">
+<span class="nx">
+max<wbr>Length
+<a class="anchorjs-link " href="#maxlength~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4142,7 +5937,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Length</span>
+        <span id="minlength~python">
+<span class="nx">
+min<wbr>Length
+<a class="anchorjs-link " href="#minlength~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4176,7 +5976,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>External<wbr>Id</span>
+        <span id="externalid~csharp">
+<span class="nx">
+External<wbr>Id
+<a class="anchorjs-link " href="#externalid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4185,7 +5990,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Sns<wbr>Caller<wbr>Arn</span>
+        <span id="snscallerarn~csharp">
+<span class="nx">
+Sns<wbr>Caller<wbr>Arn
+<a class="anchorjs-link " href="#snscallerarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4201,7 +6011,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>External<wbr>Id</span>
+        <span id="externalid~go">
+<span class="nx">
+External<wbr>Id
+<a class="anchorjs-link " href="#externalid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4210,7 +6025,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Sns<wbr>Caller<wbr>Arn</span>
+        <span id="snscallerarn~go">
+<span class="nx">
+Sns<wbr>Caller<wbr>Arn
+<a class="anchorjs-link " href="#snscallerarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4226,7 +6046,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>external<wbr>Id</span>
+        <span id="externalid~nodejs">
+<span class="nx">
+external<wbr>Id
+<a class="anchorjs-link " href="#externalid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4235,7 +6060,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>sns<wbr>Caller<wbr>Arn</span>
+        <span id="snscallerarn~nodejs">
+<span class="nx">
+sns<wbr>Caller<wbr>Arn
+<a class="anchorjs-link " href="#snscallerarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4251,7 +6081,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>external<wbr>Id</span>
+        <span id="externalid~python">
+<span class="nx">
+external<wbr>Id
+<a class="anchorjs-link " href="#externalid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4260,7 +6095,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>sns<wbr>Caller<wbr>Arn</span>
+        <span id="snscallerarn~python">
+<span class="nx">
+sns<wbr>Caller<wbr>Arn
+<a class="anchorjs-link " href="#snscallerarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4294,7 +6134,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4310,7 +6155,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4326,7 +6176,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4342,7 +6197,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4376,7 +6236,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Advanced<wbr>Security<wbr>Mode</span>
+        <span id="advancedsecuritymode~csharp">
+<span class="nx">
+Advanced<wbr>Security<wbr>Mode
+<a class="anchorjs-link " href="#advancedsecuritymode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4392,7 +6257,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Advanced<wbr>Security<wbr>Mode</span>
+        <span id="advancedsecuritymode~go">
+<span class="nx">
+Advanced<wbr>Security<wbr>Mode
+<a class="anchorjs-link " href="#advancedsecuritymode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4408,7 +6278,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>advanced<wbr>Security<wbr>Mode</span>
+        <span id="advancedsecuritymode~nodejs">
+<span class="nx">
+advanced<wbr>Security<wbr>Mode
+<a class="anchorjs-link " href="#advancedsecuritymode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4424,7 +6299,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>advanced<wbr>Security<wbr>Mode</span>
+        <span id="advancedsecuritymode~python">
+<span class="nx">
+advanced<wbr>Security<wbr>Mode
+<a class="anchorjs-link " href="#advancedsecuritymode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4458,7 +6338,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Case<wbr>Sensitive</span>
+        <span id="casesensitive~csharp">
+<span class="nx">
+Case<wbr>Sensitive
+<a class="anchorjs-link " href="#casesensitive~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4474,7 +6359,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Case<wbr>Sensitive</span>
+        <span id="casesensitive~go">
+<span class="nx">
+Case<wbr>Sensitive
+<a class="anchorjs-link " href="#casesensitive~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4490,7 +6380,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>case<wbr>Sensitive</span>
+        <span id="casesensitive~nodejs">
+<span class="nx">
+case<wbr>Sensitive
+<a class="anchorjs-link " href="#casesensitive~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4506,7 +6401,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>case<wbr>Sensitive</span>
+        <span id="casesensitive~python">
+<span class="nx">
+case<wbr>Sensitive
+<a class="anchorjs-link " href="#casesensitive~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4540,7 +6440,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Email<wbr>Option</span>
+        <span id="defaultemailoption~csharp">
+<span class="nx">
+Default<wbr>Email<wbr>Option
+<a class="anchorjs-link " href="#defaultemailoption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4549,7 +6454,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Message</span>
+        <span id="emailmessage~csharp">
+<span class="nx">
+Email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4558,7 +6468,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Message<wbr>By<wbr>Link</span>
+        <span id="emailmessagebylink~csharp">
+<span class="nx">
+Email<wbr>Message<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailmessagebylink~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4567,7 +6482,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Subject</span>
+        <span id="emailsubject~csharp">
+<span class="nx">
+Email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4576,7 +6496,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Subject<wbr>By<wbr>Link</span>
+        <span id="emailsubjectbylink~csharp">
+<span class="nx">
+Email<wbr>Subject<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailsubjectbylink~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4585,7 +6510,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Message</span>
+        <span id="smsmessage~csharp">
+<span class="nx">
+Sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4601,7 +6531,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Email<wbr>Option</span>
+        <span id="defaultemailoption~go">
+<span class="nx">
+Default<wbr>Email<wbr>Option
+<a class="anchorjs-link " href="#defaultemailoption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4610,7 +6545,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Message</span>
+        <span id="emailmessage~go">
+<span class="nx">
+Email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4619,7 +6559,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Message<wbr>By<wbr>Link</span>
+        <span id="emailmessagebylink~go">
+<span class="nx">
+Email<wbr>Message<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailmessagebylink~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4628,7 +6573,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Subject</span>
+        <span id="emailsubject~go">
+<span class="nx">
+Email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4637,7 +6587,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Email<wbr>Subject<wbr>By<wbr>Link</span>
+        <span id="emailsubjectbylink~go">
+<span class="nx">
+Email<wbr>Subject<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailsubjectbylink~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4646,7 +6601,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sms<wbr>Message</span>
+        <span id="smsmessage~go">
+<span class="nx">
+Sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4662,7 +6622,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Email<wbr>Option</span>
+        <span id="defaultemailoption~nodejs">
+<span class="nx">
+default<wbr>Email<wbr>Option
+<a class="anchorjs-link " href="#defaultemailoption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4671,7 +6636,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Message</span>
+        <span id="emailmessage~nodejs">
+<span class="nx">
+email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4680,7 +6650,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Message<wbr>By<wbr>Link</span>
+        <span id="emailmessagebylink~nodejs">
+<span class="nx">
+email<wbr>Message<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailmessagebylink~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4689,7 +6664,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Subject</span>
+        <span id="emailsubject~nodejs">
+<span class="nx">
+email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4698,7 +6678,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Subject<wbr>By<wbr>Link</span>
+        <span id="emailsubjectbylink~nodejs">
+<span class="nx">
+email<wbr>Subject<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailsubjectbylink~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4707,7 +6692,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Message</span>
+        <span id="smsmessage~nodejs">
+<span class="nx">
+sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4723,7 +6713,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Email<wbr>Option</span>
+        <span id="defaultemailoption~python">
+<span class="nx">
+default<wbr>Email<wbr>Option
+<a class="anchorjs-link " href="#defaultemailoption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4732,7 +6727,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Message</span>
+        <span id="emailmessage~python">
+<span class="nx">
+email<wbr>Message
+<a class="anchorjs-link " href="#emailmessage~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4741,7 +6741,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Message<wbr>By<wbr>Link</span>
+        <span id="emailmessagebylink~python">
+<span class="nx">
+email<wbr>Message<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailmessagebylink~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4750,7 +6755,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Subject</span>
+        <span id="emailsubject~python">
+<span class="nx">
+email<wbr>Subject
+<a class="anchorjs-link " href="#emailsubject~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4759,7 +6769,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>email<wbr>Subject<wbr>By<wbr>Link</span>
+        <span id="emailsubjectbylink~python">
+<span class="nx">
+email<wbr>Subject<wbr>By<wbr>Link
+<a class="anchorjs-link " href="#emailsubjectbylink~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4768,7 +6783,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>sms<wbr>Message</span>
+        <span id="smsmessage~python">
+<span class="nx">
+sms<wbr>Message
+<a class="anchorjs-link " href="#smsmessage~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

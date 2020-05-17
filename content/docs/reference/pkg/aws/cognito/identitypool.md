@@ -99,19 +99,19 @@ const main = new aws.cognito.IdentityPool("main", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPool">IdentityPool</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPoolArgs">IdentityPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPool">IdentityPool</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPoolArgs">IdentityPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">IdentityPool</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allow_unauthenticated_identities=None<span class="p">, </span>cognito_identity_providers=None<span class="p">, </span>developer_provider_name=None<span class="p">, </span>identity_pool_name=None<span class="p">, </span>openid_connect_provider_arns=None<span class="p">, </span>saml_provider_arns=None<span class="p">, </span>supported_login_providers=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/cognito/#IdentityPool">IdentityPool</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allow_unauthenticated_identities=None<span class="p">, </span>cognito_identity_providers=None<span class="p">, </span>developer_provider_name=None<span class="p">, </span>identity_pool_name=None<span class="p">, </span>openid_connect_provider_arns=None<span class="p">, </span>saml_provider_arns=None<span class="p">, </span>supported_login_providers=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIdentityPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPoolArgs">IdentityPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPool">IdentityPool</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPool">NewIdentityPool</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPoolArgs">IdentityPoolArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPool">IdentityPool</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPool.html">IdentityPool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPoolArgs.html">IdentityPoolArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPool.html">IdentityPool</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPoolArgs.html">IdentityPoolArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -277,7 +277,12 @@ The IdentityPool resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>Identity<wbr>Pool<wbr>Name</span>
+        <span id="identitypoolname~csharp">
+<span class="nx">
+Identity<wbr>Pool<wbr>Name
+<a class="anchorjs-link " href="#identitypoolname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -286,7 +291,12 @@ The IdentityPool resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Unauthenticated<wbr>Identities</span>
+        <span id="allowunauthenticatedidentities~csharp">
+<span class="nx">
+Allow<wbr>Unauthenticated<wbr>Identities
+<a class="anchorjs-link " href="#allowunauthenticatedidentities~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -295,7 +305,12 @@ The IdentityPool resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Identity<wbr>Providers</span>
+        <span id="cognitoidentityproviders~csharp">
+<span class="nx">
+Cognito<wbr>Identity<wbr>Providers
+<a class="anchorjs-link " href="#cognitoidentityproviders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">List&lt;Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider<wbr>Args&gt;</a></span>
     </dt>
@@ -304,7 +319,12 @@ The IdentityPool resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Developer<wbr>Provider<wbr>Name</span>
+        <span id="developerprovidername~csharp">
+<span class="nx">
+Developer<wbr>Provider<wbr>Name
+<a class="anchorjs-link " href="#developerprovidername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -314,7 +334,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Openid<wbr>Connect<wbr>Provider<wbr>Arns</span>
+        <span id="openidconnectproviderarns~csharp">
+<span class="nx">
+Openid<wbr>Connect<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#openidconnectproviderarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -323,7 +348,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Saml<wbr>Provider<wbr>Arns</span>
+        <span id="samlproviderarns~csharp">
+<span class="nx">
+Saml<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#samlproviderarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -332,7 +362,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Supported<wbr>Login<wbr>Providers</span>
+        <span id="supportedloginproviders~csharp">
+<span class="nx">
+Supported<wbr>Login<wbr>Providers
+<a class="anchorjs-link " href="#supportedloginproviders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -341,7 +376,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -357,7 +397,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-required"
             title="Required">
-        <span>Identity<wbr>Pool<wbr>Name</span>
+        <span id="identitypoolname~go">
+<span class="nx">
+Identity<wbr>Pool<wbr>Name
+<a class="anchorjs-link " href="#identitypoolname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -366,7 +411,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Unauthenticated<wbr>Identities</span>
+        <span id="allowunauthenticatedidentities~go">
+<span class="nx">
+Allow<wbr>Unauthenticated<wbr>Identities
+<a class="anchorjs-link " href="#allowunauthenticatedidentities~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -375,7 +425,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Identity<wbr>Providers</span>
+        <span id="cognitoidentityproviders~go">
+<span class="nx">
+Cognito<wbr>Identity<wbr>Providers
+<a class="anchorjs-link " href="#cognitoidentityproviders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">[]Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider</a></span>
     </dt>
@@ -384,7 +439,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Developer<wbr>Provider<wbr>Name</span>
+        <span id="developerprovidername~go">
+<span class="nx">
+Developer<wbr>Provider<wbr>Name
+<a class="anchorjs-link " href="#developerprovidername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -394,7 +454,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Openid<wbr>Connect<wbr>Provider<wbr>Arns</span>
+        <span id="openidconnectproviderarns~go">
+<span class="nx">
+Openid<wbr>Connect<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#openidconnectproviderarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -403,7 +468,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Saml<wbr>Provider<wbr>Arns</span>
+        <span id="samlproviderarns~go">
+<span class="nx">
+Saml<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#samlproviderarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -412,7 +482,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Supported<wbr>Login<wbr>Providers</span>
+        <span id="supportedloginproviders~go">
+<span class="nx">
+Supported<wbr>Login<wbr>Providers
+<a class="anchorjs-link " href="#supportedloginproviders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -421,7 +496,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -437,7 +517,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-required"
             title="Required">
-        <span>identity<wbr>Pool<wbr>Name</span>
+        <span id="identitypoolname~nodejs">
+<span class="nx">
+identity<wbr>Pool<wbr>Name
+<a class="anchorjs-link " href="#identitypoolname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -446,7 +531,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Unauthenticated<wbr>Identities</span>
+        <span id="allowunauthenticatedidentities~nodejs">
+<span class="nx">
+allow<wbr>Unauthenticated<wbr>Identities
+<a class="anchorjs-link " href="#allowunauthenticatedidentities~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -455,7 +545,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito<wbr>Identity<wbr>Providers</span>
+        <span id="cognitoidentityproviders~nodejs">
+<span class="nx">
+cognito<wbr>Identity<wbr>Providers
+<a class="anchorjs-link " href="#cognitoidentityproviders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider[]</a></span>
     </dt>
@@ -464,7 +559,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>developer<wbr>Provider<wbr>Name</span>
+        <span id="developerprovidername~nodejs">
+<span class="nx">
+developer<wbr>Provider<wbr>Name
+<a class="anchorjs-link " href="#developerprovidername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -474,7 +574,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>openid<wbr>Connect<wbr>Provider<wbr>Arns</span>
+        <span id="openidconnectproviderarns~nodejs">
+<span class="nx">
+openid<wbr>Connect<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#openidconnectproviderarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -483,7 +588,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>saml<wbr>Provider<wbr>Arns</span>
+        <span id="samlproviderarns~nodejs">
+<span class="nx">
+saml<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#samlproviderarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -492,7 +602,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>supported<wbr>Login<wbr>Providers</span>
+        <span id="supportedloginproviders~nodejs">
+<span class="nx">
+supported<wbr>Login<wbr>Providers
+<a class="anchorjs-link " href="#supportedloginproviders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -501,7 +616,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -517,7 +637,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-required"
             title="Required">
-        <span>identity_<wbr>pool_<wbr>name</span>
+        <span id="identity_pool_name~python">
+<span class="nx">
+identity_<wbr>pool_<wbr>name
+<a class="anchorjs-link " href="#identity_pool_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -526,7 +651,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>unauthenticated_<wbr>identities</span>
+        <span id="allow_unauthenticated_identities~python">
+<span class="nx">
+allow_<wbr>unauthenticated_<wbr>identities
+<a class="anchorjs-link " href="#allow_unauthenticated_identities~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -535,7 +665,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito_<wbr>identity_<wbr>providers</span>
+        <span id="cognito_identity_providers~python">
+<span class="nx">
+cognito_<wbr>identity_<wbr>providers
+<a class="anchorjs-link " href="#cognito_identity_providers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">List[Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider]</a></span>
     </dt>
@@ -544,7 +679,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>developer_<wbr>provider_<wbr>name</span>
+        <span id="developer_provider_name~python">
+<span class="nx">
+developer_<wbr>provider_<wbr>name
+<a class="anchorjs-link " href="#developer_provider_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -554,7 +694,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>openid_<wbr>connect_<wbr>provider_<wbr>arns</span>
+        <span id="openid_connect_provider_arns~python">
+<span class="nx">
+openid_<wbr>connect_<wbr>provider_<wbr>arns
+<a class="anchorjs-link " href="#openid_connect_provider_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -563,7 +708,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>saml_<wbr>provider_<wbr>arns</span>
+        <span id="saml_provider_arns~python">
+<span class="nx">
+saml_<wbr>provider_<wbr>arns
+<a class="anchorjs-link " href="#saml_provider_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -572,7 +722,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>supported_<wbr>login_<wbr>providers</span>
+        <span id="supported_login_providers~python">
+<span class="nx">
+supported_<wbr>login_<wbr>providers
+<a class="anchorjs-link " href="#supported_login_providers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -581,7 +736,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -608,7 +768,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -617,7 +782,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -632,7 +802,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -641,7 +816,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -656,7 +836,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -665,7 +850,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -680,7 +870,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -689,7 +884,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -710,7 +910,7 @@ Get an existing IdentityPool resource's state with the given name, ID, and optio
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPoolState">IdentityPoolState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPool">IdentityPool</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPoolState">IdentityPoolState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cognito/#IdentityPool">IdentityPool</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -718,11 +918,11 @@ Get an existing IdentityPool resource's state with the given name, ID, and optio
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIdentityPool<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPoolState">IdentityPoolState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPool">IdentityPool</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIdentityPool<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPoolState">IdentityPoolState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cognito?tab=doc#IdentityPool">IdentityPool</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPool.html">IdentityPool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPoolState.html">IdentityPoolState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPool.html">IdentityPool</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cognito.IdentityPoolState.html">IdentityPoolState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -830,7 +1030,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Unauthenticated<wbr>Identities</span>
+        <span id="state_allowunauthenticatedidentities~csharp">
+<span class="nx">
+Allow<wbr>Unauthenticated<wbr>Identities
+<a class="anchorjs-link " href="#state_allowunauthenticatedidentities~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -839,7 +1044,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -848,7 +1058,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Identity<wbr>Providers</span>
+        <span id="state_cognitoidentityproviders~csharp">
+<span class="nx">
+Cognito<wbr>Identity<wbr>Providers
+<a class="anchorjs-link " href="#state_cognitoidentityproviders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">List&lt;Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider<wbr>Args&gt;</a></span>
     </dt>
@@ -857,7 +1072,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Developer<wbr>Provider<wbr>Name</span>
+        <span id="state_developerprovidername~csharp">
+<span class="nx">
+Developer<wbr>Provider<wbr>Name
+<a class="anchorjs-link " href="#state_developerprovidername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -867,7 +1087,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Identity<wbr>Pool<wbr>Name</span>
+        <span id="state_identitypoolname~csharp">
+<span class="nx">
+Identity<wbr>Pool<wbr>Name
+<a class="anchorjs-link " href="#state_identitypoolname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -876,7 +1101,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Openid<wbr>Connect<wbr>Provider<wbr>Arns</span>
+        <span id="state_openidconnectproviderarns~csharp">
+<span class="nx">
+Openid<wbr>Connect<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#state_openidconnectproviderarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -885,7 +1115,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Saml<wbr>Provider<wbr>Arns</span>
+        <span id="state_samlproviderarns~csharp">
+<span class="nx">
+Saml<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#state_samlproviderarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -894,7 +1129,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Supported<wbr>Login<wbr>Providers</span>
+        <span id="state_supportedloginproviders~csharp">
+<span class="nx">
+Supported<wbr>Login<wbr>Providers
+<a class="anchorjs-link " href="#state_supportedloginproviders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -903,7 +1143,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -919,7 +1164,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Unauthenticated<wbr>Identities</span>
+        <span id="state_allowunauthenticatedidentities~go">
+<span class="nx">
+Allow<wbr>Unauthenticated<wbr>Identities
+<a class="anchorjs-link " href="#state_allowunauthenticatedidentities~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -928,7 +1178,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -937,7 +1192,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Identity<wbr>Providers</span>
+        <span id="state_cognitoidentityproviders~go">
+<span class="nx">
+Cognito<wbr>Identity<wbr>Providers
+<a class="anchorjs-link " href="#state_cognitoidentityproviders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">[]Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider</a></span>
     </dt>
@@ -946,7 +1206,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Developer<wbr>Provider<wbr>Name</span>
+        <span id="state_developerprovidername~go">
+<span class="nx">
+Developer<wbr>Provider<wbr>Name
+<a class="anchorjs-link " href="#state_developerprovidername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -956,7 +1221,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Identity<wbr>Pool<wbr>Name</span>
+        <span id="state_identitypoolname~go">
+<span class="nx">
+Identity<wbr>Pool<wbr>Name
+<a class="anchorjs-link " href="#state_identitypoolname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -965,7 +1235,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Openid<wbr>Connect<wbr>Provider<wbr>Arns</span>
+        <span id="state_openidconnectproviderarns~go">
+<span class="nx">
+Openid<wbr>Connect<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#state_openidconnectproviderarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -974,7 +1249,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Saml<wbr>Provider<wbr>Arns</span>
+        <span id="state_samlproviderarns~go">
+<span class="nx">
+Saml<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#state_samlproviderarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -983,7 +1263,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Supported<wbr>Login<wbr>Providers</span>
+        <span id="state_supportedloginproviders~go">
+<span class="nx">
+Supported<wbr>Login<wbr>Providers
+<a class="anchorjs-link " href="#state_supportedloginproviders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -992,7 +1277,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1008,7 +1298,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Unauthenticated<wbr>Identities</span>
+        <span id="state_allowunauthenticatedidentities~nodejs">
+<span class="nx">
+allow<wbr>Unauthenticated<wbr>Identities
+<a class="anchorjs-link " href="#state_allowunauthenticatedidentities~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1017,7 +1312,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1026,7 +1326,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito<wbr>Identity<wbr>Providers</span>
+        <span id="state_cognitoidentityproviders~nodejs">
+<span class="nx">
+cognito<wbr>Identity<wbr>Providers
+<a class="anchorjs-link " href="#state_cognitoidentityproviders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider[]</a></span>
     </dt>
@@ -1035,7 +1340,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>developer<wbr>Provider<wbr>Name</span>
+        <span id="state_developerprovidername~nodejs">
+<span class="nx">
+developer<wbr>Provider<wbr>Name
+<a class="anchorjs-link " href="#state_developerprovidername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1045,7 +1355,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>identity<wbr>Pool<wbr>Name</span>
+        <span id="state_identitypoolname~nodejs">
+<span class="nx">
+identity<wbr>Pool<wbr>Name
+<a class="anchorjs-link " href="#state_identitypoolname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1054,7 +1369,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>openid<wbr>Connect<wbr>Provider<wbr>Arns</span>
+        <span id="state_openidconnectproviderarns~nodejs">
+<span class="nx">
+openid<wbr>Connect<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#state_openidconnectproviderarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1063,7 +1383,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>saml<wbr>Provider<wbr>Arns</span>
+        <span id="state_samlproviderarns~nodejs">
+<span class="nx">
+saml<wbr>Provider<wbr>Arns
+<a class="anchorjs-link " href="#state_samlproviderarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1072,7 +1397,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>supported<wbr>Login<wbr>Providers</span>
+        <span id="state_supportedloginproviders~nodejs">
+<span class="nx">
+supported<wbr>Login<wbr>Providers
+<a class="anchorjs-link " href="#state_supportedloginproviders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1081,7 +1411,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1097,7 +1432,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>unauthenticated_<wbr>identities</span>
+        <span id="state_allow_unauthenticated_identities~python">
+<span class="nx">
+allow_<wbr>unauthenticated_<wbr>identities
+<a class="anchorjs-link " href="#state_allow_unauthenticated_identities~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1106,7 +1446,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1115,7 +1460,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito_<wbr>identity_<wbr>providers</span>
+        <span id="state_cognito_identity_providers~python">
+<span class="nx">
+cognito_<wbr>identity_<wbr>providers
+<a class="anchorjs-link " href="#state_cognito_identity_providers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#identitypoolcognitoidentityprovider">List[Identity<wbr>Pool<wbr>Cognito<wbr>Identity<wbr>Provider]</a></span>
     </dt>
@@ -1124,7 +1474,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>developer_<wbr>provider_<wbr>name</span>
+        <span id="state_developer_provider_name~python">
+<span class="nx">
+developer_<wbr>provider_<wbr>name
+<a class="anchorjs-link " href="#state_developer_provider_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1134,7 +1489,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>identity_<wbr>pool_<wbr>name</span>
+        <span id="state_identity_pool_name~python">
+<span class="nx">
+identity_<wbr>pool_<wbr>name
+<a class="anchorjs-link " href="#state_identity_pool_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1143,7 +1503,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>openid_<wbr>connect_<wbr>provider_<wbr>arns</span>
+        <span id="state_openid_connect_provider_arns~python">
+<span class="nx">
+openid_<wbr>connect_<wbr>provider_<wbr>arns
+<a class="anchorjs-link " href="#state_openid_connect_provider_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1152,7 +1517,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>saml_<wbr>provider_<wbr>arns</span>
+        <span id="state_saml_provider_arns~python">
+<span class="nx">
+saml_<wbr>provider_<wbr>arns
+<a class="anchorjs-link " href="#state_saml_provider_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1161,7 +1531,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>supported_<wbr>login_<wbr>providers</span>
+        <span id="state_supported_login_providers~python">
+<span class="nx">
+supported_<wbr>login_<wbr>providers
+<a class="anchorjs-link " href="#state_supported_login_providers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1170,7 +1545,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1212,7 +1592,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Id</span>
+        <span id="clientid~csharp">
+<span class="nx">
+Client<wbr>Id
+<a class="anchorjs-link " href="#clientid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1221,7 +1606,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Provider<wbr>Name</span>
+        <span id="providername~csharp">
+<span class="nx">
+Provider<wbr>Name
+<a class="anchorjs-link " href="#providername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1230,7 +1620,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Token<wbr>Check</span>
+        <span id="serversidetokencheck~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Token<wbr>Check
+<a class="anchorjs-link " href="#serversidetokencheck~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1246,7 +1641,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Id</span>
+        <span id="clientid~go">
+<span class="nx">
+Client<wbr>Id
+<a class="anchorjs-link " href="#clientid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1255,7 +1655,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Provider<wbr>Name</span>
+        <span id="providername~go">
+<span class="nx">
+Provider<wbr>Name
+<a class="anchorjs-link " href="#providername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1264,7 +1669,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Token<wbr>Check</span>
+        <span id="serversidetokencheck~go">
+<span class="nx">
+Server<wbr>Side<wbr>Token<wbr>Check
+<a class="anchorjs-link " href="#serversidetokencheck~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1280,7 +1690,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Id</span>
+        <span id="clientid~nodejs">
+<span class="nx">
+client<wbr>Id
+<a class="anchorjs-link " href="#clientid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1289,7 +1704,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>provider<wbr>Name</span>
+        <span id="providername~nodejs">
+<span class="nx">
+provider<wbr>Name
+<a class="anchorjs-link " href="#providername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1298,7 +1718,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Token<wbr>Check</span>
+        <span id="serversidetokencheck~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Token<wbr>Check
+<a class="anchorjs-link " href="#serversidetokencheck~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1314,7 +1739,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>client_<wbr>id</span>
+        <span id="client_id~python">
+<span class="nx">
+client_<wbr>id
+<a class="anchorjs-link " href="#client_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1323,7 +1753,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>provider_<wbr>name</span>
+        <span id="provider_name~python">
+<span class="nx">
+provider_<wbr>name
+<a class="anchorjs-link " href="#provider_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1332,7 +1767,12 @@ backend and the Cognito service to communicate about the developer provider.
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Token<wbr>Check</span>
+        <span id="serversidetokencheck~python">
+<span class="nx">
+server<wbr>Side<wbr>Token<wbr>Check
+<a class="anchorjs-link " href="#serversidetokencheck~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>

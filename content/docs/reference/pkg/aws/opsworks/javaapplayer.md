@@ -55,19 +55,19 @@ const app = new aws.opsworks.JavaAppLayer("app", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayerArgs">JavaAppLayerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayerArgs">JavaAppLayerArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">JavaAppLayer</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>app_server=None<span class="p">, </span>app_server_version=None<span class="p">, </span>auto_assign_elastic_ips=None<span class="p">, </span>auto_assign_public_ips=None<span class="p">, </span>auto_healing=None<span class="p">, </span>custom_configure_recipes=None<span class="p">, </span>custom_deploy_recipes=None<span class="p">, </span>custom_instance_profile_arn=None<span class="p">, </span>custom_json=None<span class="p">, </span>custom_security_group_ids=None<span class="p">, </span>custom_setup_recipes=None<span class="p">, </span>custom_shutdown_recipes=None<span class="p">, </span>custom_undeploy_recipes=None<span class="p">, </span>drain_elb_on_shutdown=None<span class="p">, </span>ebs_volumes=None<span class="p">, </span>elastic_load_balancer=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_shutdown_timeout=None<span class="p">, </span>jvm_options=None<span class="p">, </span>jvm_type=None<span class="p">, </span>jvm_version=None<span class="p">, </span>name=None<span class="p">, </span>stack_id=None<span class="p">, </span>system_packages=None<span class="p">, </span>tags=None<span class="p">, </span>use_ebs_optimized_instances=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>app_server=None<span class="p">, </span>app_server_version=None<span class="p">, </span>auto_assign_elastic_ips=None<span class="p">, </span>auto_assign_public_ips=None<span class="p">, </span>auto_healing=None<span class="p">, </span>custom_configure_recipes=None<span class="p">, </span>custom_deploy_recipes=None<span class="p">, </span>custom_instance_profile_arn=None<span class="p">, </span>custom_json=None<span class="p">, </span>custom_security_group_ids=None<span class="p">, </span>custom_setup_recipes=None<span class="p">, </span>custom_shutdown_recipes=None<span class="p">, </span>custom_undeploy_recipes=None<span class="p">, </span>drain_elb_on_shutdown=None<span class="p">, </span>ebs_volumes=None<span class="p">, </span>elastic_load_balancer=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_shutdown_timeout=None<span class="p">, </span>jvm_options=None<span class="p">, </span>jvm_type=None<span class="p">, </span>jvm_version=None<span class="p">, </span>name=None<span class="p">, </span>stack_id=None<span class="p">, </span>system_packages=None<span class="p">, </span>tags=None<span class="p">, </span>use_ebs_optimized_instances=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewJavaAppLayer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerArgs">JavaAppLayerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">JavaAppLayer</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">NewJavaAppLayer</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerArgs">JavaAppLayerArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">JavaAppLayer</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayer.html">JavaAppLayer</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayerArgs.html">JavaAppLayerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayer.html">JavaAppLayer</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayerArgs.html">JavaAppLayerArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -233,7 +233,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>Stack<wbr>Id</span>
+        <span id="stackid~csharp">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#stackid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -242,7 +247,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server</span>
+        <span id="appserver~csharp">
+<span class="nx">
+App<wbr>Server
+<a class="anchorjs-link " href="#appserver~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -251,7 +261,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server<wbr>Version</span>
+        <span id="appserverversion~csharp">
+<span class="nx">
+App<wbr>Server<wbr>Version
+<a class="anchorjs-link " href="#appserverversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -260,7 +275,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Elastic<wbr>Ips</span>
+        <span id="autoassignelasticips~csharp">
+<span class="nx">
+Auto<wbr>Assign<wbr>Elastic<wbr>Ips
+<a class="anchorjs-link " href="#autoassignelasticips~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -269,7 +289,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Public<wbr>Ips</span>
+        <span id="autoassignpublicips~csharp">
+<span class="nx">
+Auto<wbr>Assign<wbr>Public<wbr>Ips
+<a class="anchorjs-link " href="#autoassignpublicips~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -278,7 +303,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Healing</span>
+        <span id="autohealing~csharp">
+<span class="nx">
+Auto<wbr>Healing
+<a class="anchorjs-link " href="#autohealing~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -287,7 +317,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Configure<wbr>Recipes</span>
+        <span id="customconfigurerecipes~csharp">
+<span class="nx">
+Custom<wbr>Configure<wbr>Recipes
+<a class="anchorjs-link " href="#customconfigurerecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -295,7 +330,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Deploy<wbr>Recipes</span>
+        <span id="customdeployrecipes~csharp">
+<span class="nx">
+Custom<wbr>Deploy<wbr>Recipes
+<a class="anchorjs-link " href="#customdeployrecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -303,7 +343,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="custominstanceprofilearn~csharp">
+<span class="nx">
+Custom<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#custominstanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -312,7 +357,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="customjson~csharp">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#customjson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -321,7 +371,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="customsecuritygroupids~csharp">
+<span class="nx">
+Custom<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#customsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -330,7 +385,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Setup<wbr>Recipes</span>
+        <span id="customsetuprecipes~csharp">
+<span class="nx">
+Custom<wbr>Setup<wbr>Recipes
+<a class="anchorjs-link " href="#customsetuprecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -338,7 +398,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Shutdown<wbr>Recipes</span>
+        <span id="customshutdownrecipes~csharp">
+<span class="nx">
+Custom<wbr>Shutdown<wbr>Recipes
+<a class="anchorjs-link " href="#customshutdownrecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -346,7 +411,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Undeploy<wbr>Recipes</span>
+        <span id="customundeployrecipes~csharp">
+<span class="nx">
+Custom<wbr>Undeploy<wbr>Recipes
+<a class="anchorjs-link " href="#customundeployrecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -354,7 +424,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Drain<wbr>Elb<wbr>On<wbr>Shutdown</span>
+        <span id="drainelbonshutdown~csharp">
+<span class="nx">
+Drain<wbr>Elb<wbr>On<wbr>Shutdown
+<a class="anchorjs-link " href="#drainelbonshutdown~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -363,7 +438,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Volumes</span>
+        <span id="ebsvolumes~csharp">
+<span class="nx">
+Ebs<wbr>Volumes
+<a class="anchorjs-link " href="#ebsvolumes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List&lt;Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
@@ -372,7 +452,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Load<wbr>Balancer</span>
+        <span id="elasticloadbalancer~csharp">
+<span class="nx">
+Elastic<wbr>Load<wbr>Balancer
+<a class="anchorjs-link " href="#elasticloadbalancer~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -381,7 +466,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="installupdatesonboot~csharp">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#installupdatesonboot~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -390,7 +480,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Shutdown<wbr>Timeout</span>
+        <span id="instanceshutdowntimeout~csharp">
+<span class="nx">
+Instance<wbr>Shutdown<wbr>Timeout
+<a class="anchorjs-link " href="#instanceshutdowntimeout~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -399,7 +494,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Options</span>
+        <span id="jvmoptions~csharp">
+<span class="nx">
+Jvm<wbr>Options
+<a class="anchorjs-link " href="#jvmoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -408,7 +508,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Type</span>
+        <span id="jvmtype~csharp">
+<span class="nx">
+Jvm<wbr>Type
+<a class="anchorjs-link " href="#jvmtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -417,7 +522,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Version</span>
+        <span id="jvmversion~csharp">
+<span class="nx">
+Jvm<wbr>Version
+<a class="anchorjs-link " href="#jvmversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -426,7 +536,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -435,7 +550,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>System<wbr>Packages</span>
+        <span id="systempackages~csharp">
+<span class="nx">
+System<wbr>Packages
+<a class="anchorjs-link " href="#systempackages~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -444,7 +564,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -453,7 +578,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Ebs<wbr>Optimized<wbr>Instances</span>
+        <span id="useebsoptimizedinstances~csharp">
+<span class="nx">
+Use<wbr>Ebs<wbr>Optimized<wbr>Instances
+<a class="anchorjs-link " href="#useebsoptimizedinstances~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -469,7 +599,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>Stack<wbr>Id</span>
+        <span id="stackid~go">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#stackid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -478,7 +613,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server</span>
+        <span id="appserver~go">
+<span class="nx">
+App<wbr>Server
+<a class="anchorjs-link " href="#appserver~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -487,7 +627,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server<wbr>Version</span>
+        <span id="appserverversion~go">
+<span class="nx">
+App<wbr>Server<wbr>Version
+<a class="anchorjs-link " href="#appserverversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -496,7 +641,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Elastic<wbr>Ips</span>
+        <span id="autoassignelasticips~go">
+<span class="nx">
+Auto<wbr>Assign<wbr>Elastic<wbr>Ips
+<a class="anchorjs-link " href="#autoassignelasticips~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -505,7 +655,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Public<wbr>Ips</span>
+        <span id="autoassignpublicips~go">
+<span class="nx">
+Auto<wbr>Assign<wbr>Public<wbr>Ips
+<a class="anchorjs-link " href="#autoassignpublicips~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -514,7 +669,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Healing</span>
+        <span id="autohealing~go">
+<span class="nx">
+Auto<wbr>Healing
+<a class="anchorjs-link " href="#autohealing~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -523,7 +683,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Configure<wbr>Recipes</span>
+        <span id="customconfigurerecipes~go">
+<span class="nx">
+Custom<wbr>Configure<wbr>Recipes
+<a class="anchorjs-link " href="#customconfigurerecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -531,7 +696,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Deploy<wbr>Recipes</span>
+        <span id="customdeployrecipes~go">
+<span class="nx">
+Custom<wbr>Deploy<wbr>Recipes
+<a class="anchorjs-link " href="#customdeployrecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -539,7 +709,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="custominstanceprofilearn~go">
+<span class="nx">
+Custom<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#custominstanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -548,7 +723,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="customjson~go">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#customjson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -557,7 +737,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="customsecuritygroupids~go">
+<span class="nx">
+Custom<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#customsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -566,7 +751,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Setup<wbr>Recipes</span>
+        <span id="customsetuprecipes~go">
+<span class="nx">
+Custom<wbr>Setup<wbr>Recipes
+<a class="anchorjs-link " href="#customsetuprecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -574,7 +764,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Shutdown<wbr>Recipes</span>
+        <span id="customshutdownrecipes~go">
+<span class="nx">
+Custom<wbr>Shutdown<wbr>Recipes
+<a class="anchorjs-link " href="#customshutdownrecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -582,7 +777,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Undeploy<wbr>Recipes</span>
+        <span id="customundeployrecipes~go">
+<span class="nx">
+Custom<wbr>Undeploy<wbr>Recipes
+<a class="anchorjs-link " href="#customundeployrecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -590,7 +790,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Drain<wbr>Elb<wbr>On<wbr>Shutdown</span>
+        <span id="drainelbonshutdown~go">
+<span class="nx">
+Drain<wbr>Elb<wbr>On<wbr>Shutdown
+<a class="anchorjs-link " href="#drainelbonshutdown~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -599,7 +804,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Volumes</span>
+        <span id="ebsvolumes~go">
+<span class="nx">
+Ebs<wbr>Volumes
+<a class="anchorjs-link " href="#ebsvolumes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">[]Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume</a></span>
     </dt>
@@ -608,7 +818,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Load<wbr>Balancer</span>
+        <span id="elasticloadbalancer~go">
+<span class="nx">
+Elastic<wbr>Load<wbr>Balancer
+<a class="anchorjs-link " href="#elasticloadbalancer~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -617,7 +832,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="installupdatesonboot~go">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#installupdatesonboot~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -626,7 +846,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Shutdown<wbr>Timeout</span>
+        <span id="instanceshutdowntimeout~go">
+<span class="nx">
+Instance<wbr>Shutdown<wbr>Timeout
+<a class="anchorjs-link " href="#instanceshutdowntimeout~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -635,7 +860,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Options</span>
+        <span id="jvmoptions~go">
+<span class="nx">
+Jvm<wbr>Options
+<a class="anchorjs-link " href="#jvmoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -644,7 +874,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Type</span>
+        <span id="jvmtype~go">
+<span class="nx">
+Jvm<wbr>Type
+<a class="anchorjs-link " href="#jvmtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -653,7 +888,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Version</span>
+        <span id="jvmversion~go">
+<span class="nx">
+Jvm<wbr>Version
+<a class="anchorjs-link " href="#jvmversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -662,7 +902,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -671,7 +916,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>System<wbr>Packages</span>
+        <span id="systempackages~go">
+<span class="nx">
+System<wbr>Packages
+<a class="anchorjs-link " href="#systempackages~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -680,7 +930,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -689,7 +944,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Ebs<wbr>Optimized<wbr>Instances</span>
+        <span id="useebsoptimizedinstances~go">
+<span class="nx">
+Use<wbr>Ebs<wbr>Optimized<wbr>Instances
+<a class="anchorjs-link " href="#useebsoptimizedinstances~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -705,7 +965,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>stack<wbr>Id</span>
+        <span id="stackid~nodejs">
+<span class="nx">
+stack<wbr>Id
+<a class="anchorjs-link " href="#stackid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -714,7 +979,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>app<wbr>Server</span>
+        <span id="appserver~nodejs">
+<span class="nx">
+app<wbr>Server
+<a class="anchorjs-link " href="#appserver~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -723,7 +993,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>app<wbr>Server<wbr>Version</span>
+        <span id="appserverversion~nodejs">
+<span class="nx">
+app<wbr>Server<wbr>Version
+<a class="anchorjs-link " href="#appserverversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -732,7 +1007,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Assign<wbr>Elastic<wbr>Ips</span>
+        <span id="autoassignelasticips~nodejs">
+<span class="nx">
+auto<wbr>Assign<wbr>Elastic<wbr>Ips
+<a class="anchorjs-link " href="#autoassignelasticips~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -741,7 +1021,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Assign<wbr>Public<wbr>Ips</span>
+        <span id="autoassignpublicips~nodejs">
+<span class="nx">
+auto<wbr>Assign<wbr>Public<wbr>Ips
+<a class="anchorjs-link " href="#autoassignpublicips~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -750,7 +1035,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Healing</span>
+        <span id="autohealing~nodejs">
+<span class="nx">
+auto<wbr>Healing
+<a class="anchorjs-link " href="#autohealing~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -759,7 +1049,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Configure<wbr>Recipes</span>
+        <span id="customconfigurerecipes~nodejs">
+<span class="nx">
+custom<wbr>Configure<wbr>Recipes
+<a class="anchorjs-link " href="#customconfigurerecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -767,7 +1062,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Deploy<wbr>Recipes</span>
+        <span id="customdeployrecipes~nodejs">
+<span class="nx">
+custom<wbr>Deploy<wbr>Recipes
+<a class="anchorjs-link " href="#customdeployrecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -775,7 +1075,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="custominstanceprofilearn~nodejs">
+<span class="nx">
+custom<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#custominstanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -784,7 +1089,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Json</span>
+        <span id="customjson~nodejs">
+<span class="nx">
+custom<wbr>Json
+<a class="anchorjs-link " href="#customjson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -793,7 +1103,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="customsecuritygroupids~nodejs">
+<span class="nx">
+custom<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#customsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -802,7 +1117,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Setup<wbr>Recipes</span>
+        <span id="customsetuprecipes~nodejs">
+<span class="nx">
+custom<wbr>Setup<wbr>Recipes
+<a class="anchorjs-link " href="#customsetuprecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -810,7 +1130,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Shutdown<wbr>Recipes</span>
+        <span id="customshutdownrecipes~nodejs">
+<span class="nx">
+custom<wbr>Shutdown<wbr>Recipes
+<a class="anchorjs-link " href="#customshutdownrecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -818,7 +1143,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Undeploy<wbr>Recipes</span>
+        <span id="customundeployrecipes~nodejs">
+<span class="nx">
+custom<wbr>Undeploy<wbr>Recipes
+<a class="anchorjs-link " href="#customundeployrecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -826,7 +1156,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>drain<wbr>Elb<wbr>On<wbr>Shutdown</span>
+        <span id="drainelbonshutdown~nodejs">
+<span class="nx">
+drain<wbr>Elb<wbr>On<wbr>Shutdown
+<a class="anchorjs-link " href="#drainelbonshutdown~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -835,7 +1170,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Volumes</span>
+        <span id="ebsvolumes~nodejs">
+<span class="nx">
+ebs<wbr>Volumes
+<a class="anchorjs-link " href="#ebsvolumes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume[]</a></span>
     </dt>
@@ -844,7 +1184,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Load<wbr>Balancer</span>
+        <span id="elasticloadbalancer~nodejs">
+<span class="nx">
+elastic<wbr>Load<wbr>Balancer
+<a class="anchorjs-link " href="#elasticloadbalancer~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -853,7 +1198,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="installupdatesonboot~nodejs">
+<span class="nx">
+install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#installupdatesonboot~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -862,7 +1212,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Shutdown<wbr>Timeout</span>
+        <span id="instanceshutdowntimeout~nodejs">
+<span class="nx">
+instance<wbr>Shutdown<wbr>Timeout
+<a class="anchorjs-link " href="#instanceshutdowntimeout~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -871,7 +1226,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm<wbr>Options</span>
+        <span id="jvmoptions~nodejs">
+<span class="nx">
+jvm<wbr>Options
+<a class="anchorjs-link " href="#jvmoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -880,7 +1240,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm<wbr>Type</span>
+        <span id="jvmtype~nodejs">
+<span class="nx">
+jvm<wbr>Type
+<a class="anchorjs-link " href="#jvmtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -889,7 +1254,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm<wbr>Version</span>
+        <span id="jvmversion~nodejs">
+<span class="nx">
+jvm<wbr>Version
+<a class="anchorjs-link " href="#jvmversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -898,7 +1268,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -907,7 +1282,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>system<wbr>Packages</span>
+        <span id="systempackages~nodejs">
+<span class="nx">
+system<wbr>Packages
+<a class="anchorjs-link " href="#systempackages~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -916,7 +1296,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -925,7 +1310,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>use<wbr>Ebs<wbr>Optimized<wbr>Instances</span>
+        <span id="useebsoptimizedinstances~nodejs">
+<span class="nx">
+use<wbr>Ebs<wbr>Optimized<wbr>Instances
+<a class="anchorjs-link " href="#useebsoptimizedinstances~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -941,7 +1331,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>stack_<wbr>id</span>
+        <span id="stack_id~python">
+<span class="nx">
+stack_<wbr>id
+<a class="anchorjs-link " href="#stack_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -950,7 +1345,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>app_<wbr>server</span>
+        <span id="app_server~python">
+<span class="nx">
+app_<wbr>server
+<a class="anchorjs-link " href="#app_server~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -959,7 +1359,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>app_<wbr>server_<wbr>version</span>
+        <span id="app_server_version~python">
+<span class="nx">
+app_<wbr>server_<wbr>version
+<a class="anchorjs-link " href="#app_server_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -968,7 +1373,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>assign_<wbr>elastic_<wbr>ips</span>
+        <span id="auto_assign_elastic_ips~python">
+<span class="nx">
+auto_<wbr>assign_<wbr>elastic_<wbr>ips
+<a class="anchorjs-link " href="#auto_assign_elastic_ips~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -977,7 +1387,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>assign_<wbr>public_<wbr>ips</span>
+        <span id="auto_assign_public_ips~python">
+<span class="nx">
+auto_<wbr>assign_<wbr>public_<wbr>ips
+<a class="anchorjs-link " href="#auto_assign_public_ips~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -986,7 +1401,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>healing</span>
+        <span id="auto_healing~python">
+<span class="nx">
+auto_<wbr>healing
+<a class="anchorjs-link " href="#auto_healing~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -995,7 +1415,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>configure_<wbr>recipes</span>
+        <span id="custom_configure_recipes~python">
+<span class="nx">
+custom_<wbr>configure_<wbr>recipes
+<a class="anchorjs-link " href="#custom_configure_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1003,7 +1428,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>deploy_<wbr>recipes</span>
+        <span id="custom_deploy_recipes~python">
+<span class="nx">
+custom_<wbr>deploy_<wbr>recipes
+<a class="anchorjs-link " href="#custom_deploy_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1011,7 +1441,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>instance_<wbr>profile_<wbr>arn</span>
+        <span id="custom_instance_profile_arn~python">
+<span class="nx">
+custom_<wbr>instance_<wbr>profile_<wbr>arn
+<a class="anchorjs-link " href="#custom_instance_profile_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1020,7 +1455,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>json</span>
+        <span id="custom_json~python">
+<span class="nx">
+custom_<wbr>json
+<a class="anchorjs-link " href="#custom_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1029,7 +1469,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="custom_security_group_ids~python">
+<span class="nx">
+custom_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#custom_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1038,7 +1483,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>setup_<wbr>recipes</span>
+        <span id="custom_setup_recipes~python">
+<span class="nx">
+custom_<wbr>setup_<wbr>recipes
+<a class="anchorjs-link " href="#custom_setup_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1046,7 +1496,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>shutdown_<wbr>recipes</span>
+        <span id="custom_shutdown_recipes~python">
+<span class="nx">
+custom_<wbr>shutdown_<wbr>recipes
+<a class="anchorjs-link " href="#custom_shutdown_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1054,7 +1509,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>undeploy_<wbr>recipes</span>
+        <span id="custom_undeploy_recipes~python">
+<span class="nx">
+custom_<wbr>undeploy_<wbr>recipes
+<a class="anchorjs-link " href="#custom_undeploy_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1062,7 +1522,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>drain_<wbr>elb_<wbr>on_<wbr>shutdown</span>
+        <span id="drain_elb_on_shutdown~python">
+<span class="nx">
+drain_<wbr>elb_<wbr>on_<wbr>shutdown
+<a class="anchorjs-link " href="#drain_elb_on_shutdown~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1071,7 +1536,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>volumes</span>
+        <span id="ebs_volumes~python">
+<span class="nx">
+ebs_<wbr>volumes
+<a class="anchorjs-link " href="#ebs_volumes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List[Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume]</a></span>
     </dt>
@@ -1080,7 +1550,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>load_<wbr>balancer</span>
+        <span id="elastic_load_balancer~python">
+<span class="nx">
+elastic_<wbr>load_<wbr>balancer
+<a class="anchorjs-link " href="#elastic_load_balancer~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1089,7 +1564,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>install_<wbr>updates_<wbr>on_<wbr>boot</span>
+        <span id="install_updates_on_boot~python">
+<span class="nx">
+install_<wbr>updates_<wbr>on_<wbr>boot
+<a class="anchorjs-link " href="#install_updates_on_boot~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1098,7 +1578,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>shutdown_<wbr>timeout</span>
+        <span id="instance_shutdown_timeout~python">
+<span class="nx">
+instance_<wbr>shutdown_<wbr>timeout
+<a class="anchorjs-link " href="#instance_shutdown_timeout~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1107,7 +1592,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm_<wbr>options</span>
+        <span id="jvm_options~python">
+<span class="nx">
+jvm_<wbr>options
+<a class="anchorjs-link " href="#jvm_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1116,7 +1606,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm_<wbr>type</span>
+        <span id="jvm_type~python">
+<span class="nx">
+jvm_<wbr>type
+<a class="anchorjs-link " href="#jvm_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1125,7 +1620,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm_<wbr>version</span>
+        <span id="jvm_version~python">
+<span class="nx">
+jvm_<wbr>version
+<a class="anchorjs-link " href="#jvm_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1134,7 +1634,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1143,7 +1648,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>system_<wbr>packages</span>
+        <span id="system_packages~python">
+<span class="nx">
+system_<wbr>packages
+<a class="anchorjs-link " href="#system_packages~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1152,7 +1662,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1161,7 +1676,12 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>use_<wbr>ebs_<wbr>optimized_<wbr>instances</span>
+        <span id="use_ebs_optimized_instances~python">
+<span class="nx">
+use_<wbr>ebs_<wbr>optimized_<wbr>instances
+<a class="anchorjs-link " href="#use_ebs_optimized_instances~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1188,7 +1708,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1197,7 +1722,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1212,7 +1742,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1221,7 +1756,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1236,7 +1776,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1245,7 +1790,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1260,7 +1810,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1269,7 +1824,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1290,7 +1850,7 @@ Get an existing JavaAppLayer resource's state with the given name, ID, and optio
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayerState">JavaAppLayerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayerState">JavaAppLayerState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1298,11 +1858,11 @@ Get an existing JavaAppLayer resource's state with the given name, ID, and optio
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetJavaAppLayer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerState">JavaAppLayerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">JavaAppLayer</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetJavaAppLayer<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerState">JavaAppLayerState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">JavaAppLayer</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayer.html">JavaAppLayer</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayerState.html">JavaAppLayerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayer.html">JavaAppLayer</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayerState.html">JavaAppLayerState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1410,7 +1970,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server</span>
+        <span id="state_appserver~csharp">
+<span class="nx">
+App<wbr>Server
+<a class="anchorjs-link " href="#state_appserver~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1419,7 +1984,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server<wbr>Version</span>
+        <span id="state_appserverversion~csharp">
+<span class="nx">
+App<wbr>Server<wbr>Version
+<a class="anchorjs-link " href="#state_appserverversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1428,7 +1998,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1437,7 +2012,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Elastic<wbr>Ips</span>
+        <span id="state_autoassignelasticips~csharp">
+<span class="nx">
+Auto<wbr>Assign<wbr>Elastic<wbr>Ips
+<a class="anchorjs-link " href="#state_autoassignelasticips~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1446,7 +2026,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Public<wbr>Ips</span>
+        <span id="state_autoassignpublicips~csharp">
+<span class="nx">
+Auto<wbr>Assign<wbr>Public<wbr>Ips
+<a class="anchorjs-link " href="#state_autoassignpublicips~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1455,7 +2040,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Healing</span>
+        <span id="state_autohealing~csharp">
+<span class="nx">
+Auto<wbr>Healing
+<a class="anchorjs-link " href="#state_autohealing~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1464,7 +2054,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Configure<wbr>Recipes</span>
+        <span id="state_customconfigurerecipes~csharp">
+<span class="nx">
+Custom<wbr>Configure<wbr>Recipes
+<a class="anchorjs-link " href="#state_customconfigurerecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1472,7 +2067,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Deploy<wbr>Recipes</span>
+        <span id="state_customdeployrecipes~csharp">
+<span class="nx">
+Custom<wbr>Deploy<wbr>Recipes
+<a class="anchorjs-link " href="#state_customdeployrecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1480,7 +2080,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_custominstanceprofilearn~csharp">
+<span class="nx">
+Custom<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_custominstanceprofilearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1489,7 +2094,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="state_customjson~csharp">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#state_customjson~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1498,7 +2108,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_customsecuritygroupids~csharp">
+<span class="nx">
+Custom<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_customsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1507,7 +2122,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Setup<wbr>Recipes</span>
+        <span id="state_customsetuprecipes~csharp">
+<span class="nx">
+Custom<wbr>Setup<wbr>Recipes
+<a class="anchorjs-link " href="#state_customsetuprecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1515,7 +2135,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Shutdown<wbr>Recipes</span>
+        <span id="state_customshutdownrecipes~csharp">
+<span class="nx">
+Custom<wbr>Shutdown<wbr>Recipes
+<a class="anchorjs-link " href="#state_customshutdownrecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1523,7 +2148,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Undeploy<wbr>Recipes</span>
+        <span id="state_customundeployrecipes~csharp">
+<span class="nx">
+Custom<wbr>Undeploy<wbr>Recipes
+<a class="anchorjs-link " href="#state_customundeployrecipes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1531,7 +2161,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Drain<wbr>Elb<wbr>On<wbr>Shutdown</span>
+        <span id="state_drainelbonshutdown~csharp">
+<span class="nx">
+Drain<wbr>Elb<wbr>On<wbr>Shutdown
+<a class="anchorjs-link " href="#state_drainelbonshutdown~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1540,7 +2175,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Volumes</span>
+        <span id="state_ebsvolumes~csharp">
+<span class="nx">
+Ebs<wbr>Volumes
+<a class="anchorjs-link " href="#state_ebsvolumes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List&lt;Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
@@ -1549,7 +2189,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Load<wbr>Balancer</span>
+        <span id="state_elasticloadbalancer~csharp">
+<span class="nx">
+Elastic<wbr>Load<wbr>Balancer
+<a class="anchorjs-link " href="#state_elasticloadbalancer~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1558,7 +2203,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="state_installupdatesonboot~csharp">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#state_installupdatesonboot~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1567,7 +2217,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Shutdown<wbr>Timeout</span>
+        <span id="state_instanceshutdowntimeout~csharp">
+<span class="nx">
+Instance<wbr>Shutdown<wbr>Timeout
+<a class="anchorjs-link " href="#state_instanceshutdowntimeout~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1576,7 +2231,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Options</span>
+        <span id="state_jvmoptions~csharp">
+<span class="nx">
+Jvm<wbr>Options
+<a class="anchorjs-link " href="#state_jvmoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1585,7 +2245,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Type</span>
+        <span id="state_jvmtype~csharp">
+<span class="nx">
+Jvm<wbr>Type
+<a class="anchorjs-link " href="#state_jvmtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1594,7 +2259,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Version</span>
+        <span id="state_jvmversion~csharp">
+<span class="nx">
+Jvm<wbr>Version
+<a class="anchorjs-link " href="#state_jvmversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1603,7 +2273,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1612,7 +2287,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stack<wbr>Id</span>
+        <span id="state_stackid~csharp">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#state_stackid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1621,7 +2301,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>System<wbr>Packages</span>
+        <span id="state_systempackages~csharp">
+<span class="nx">
+System<wbr>Packages
+<a class="anchorjs-link " href="#state_systempackages~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1630,7 +2315,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1639,7 +2329,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Ebs<wbr>Optimized<wbr>Instances</span>
+        <span id="state_useebsoptimizedinstances~csharp">
+<span class="nx">
+Use<wbr>Ebs<wbr>Optimized<wbr>Instances
+<a class="anchorjs-link " href="#state_useebsoptimizedinstances~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1655,7 +2350,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server</span>
+        <span id="state_appserver~go">
+<span class="nx">
+App<wbr>Server
+<a class="anchorjs-link " href="#state_appserver~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1664,7 +2364,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>App<wbr>Server<wbr>Version</span>
+        <span id="state_appserverversion~go">
+<span class="nx">
+App<wbr>Server<wbr>Version
+<a class="anchorjs-link " href="#state_appserverversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1673,7 +2378,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1682,7 +2392,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Elastic<wbr>Ips</span>
+        <span id="state_autoassignelasticips~go">
+<span class="nx">
+Auto<wbr>Assign<wbr>Elastic<wbr>Ips
+<a class="anchorjs-link " href="#state_autoassignelasticips~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1691,7 +2406,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Assign<wbr>Public<wbr>Ips</span>
+        <span id="state_autoassignpublicips~go">
+<span class="nx">
+Auto<wbr>Assign<wbr>Public<wbr>Ips
+<a class="anchorjs-link " href="#state_autoassignpublicips~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1700,7 +2420,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Healing</span>
+        <span id="state_autohealing~go">
+<span class="nx">
+Auto<wbr>Healing
+<a class="anchorjs-link " href="#state_autohealing~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1709,7 +2434,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Configure<wbr>Recipes</span>
+        <span id="state_customconfigurerecipes~go">
+<span class="nx">
+Custom<wbr>Configure<wbr>Recipes
+<a class="anchorjs-link " href="#state_customconfigurerecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1717,7 +2447,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Deploy<wbr>Recipes</span>
+        <span id="state_customdeployrecipes~go">
+<span class="nx">
+Custom<wbr>Deploy<wbr>Recipes
+<a class="anchorjs-link " href="#state_customdeployrecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1725,7 +2460,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_custominstanceprofilearn~go">
+<span class="nx">
+Custom<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_custominstanceprofilearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1734,7 +2474,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Json</span>
+        <span id="state_customjson~go">
+<span class="nx">
+Custom<wbr>Json
+<a class="anchorjs-link " href="#state_customjson~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1743,7 +2488,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_customsecuritygroupids~go">
+<span class="nx">
+Custom<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_customsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1752,7 +2502,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Setup<wbr>Recipes</span>
+        <span id="state_customsetuprecipes~go">
+<span class="nx">
+Custom<wbr>Setup<wbr>Recipes
+<a class="anchorjs-link " href="#state_customsetuprecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1760,7 +2515,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Shutdown<wbr>Recipes</span>
+        <span id="state_customshutdownrecipes~go">
+<span class="nx">
+Custom<wbr>Shutdown<wbr>Recipes
+<a class="anchorjs-link " href="#state_customshutdownrecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1768,7 +2528,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Custom<wbr>Undeploy<wbr>Recipes</span>
+        <span id="state_customundeployrecipes~go">
+<span class="nx">
+Custom<wbr>Undeploy<wbr>Recipes
+<a class="anchorjs-link " href="#state_customundeployrecipes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1776,7 +2541,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Drain<wbr>Elb<wbr>On<wbr>Shutdown</span>
+        <span id="state_drainelbonshutdown~go">
+<span class="nx">
+Drain<wbr>Elb<wbr>On<wbr>Shutdown
+<a class="anchorjs-link " href="#state_drainelbonshutdown~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1785,7 +2555,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Volumes</span>
+        <span id="state_ebsvolumes~go">
+<span class="nx">
+Ebs<wbr>Volumes
+<a class="anchorjs-link " href="#state_ebsvolumes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">[]Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume</a></span>
     </dt>
@@ -1794,7 +2569,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Load<wbr>Balancer</span>
+        <span id="state_elasticloadbalancer~go">
+<span class="nx">
+Elastic<wbr>Load<wbr>Balancer
+<a class="anchorjs-link " href="#state_elasticloadbalancer~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1803,7 +2583,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="state_installupdatesonboot~go">
+<span class="nx">
+Install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#state_installupdatesonboot~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1812,7 +2597,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Shutdown<wbr>Timeout</span>
+        <span id="state_instanceshutdowntimeout~go">
+<span class="nx">
+Instance<wbr>Shutdown<wbr>Timeout
+<a class="anchorjs-link " href="#state_instanceshutdowntimeout~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1821,7 +2611,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Options</span>
+        <span id="state_jvmoptions~go">
+<span class="nx">
+Jvm<wbr>Options
+<a class="anchorjs-link " href="#state_jvmoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1830,7 +2625,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Type</span>
+        <span id="state_jvmtype~go">
+<span class="nx">
+Jvm<wbr>Type
+<a class="anchorjs-link " href="#state_jvmtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1839,7 +2639,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Jvm<wbr>Version</span>
+        <span id="state_jvmversion~go">
+<span class="nx">
+Jvm<wbr>Version
+<a class="anchorjs-link " href="#state_jvmversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1848,7 +2653,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1857,7 +2667,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stack<wbr>Id</span>
+        <span id="state_stackid~go">
+<span class="nx">
+Stack<wbr>Id
+<a class="anchorjs-link " href="#state_stackid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1866,7 +2681,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>System<wbr>Packages</span>
+        <span id="state_systempackages~go">
+<span class="nx">
+System<wbr>Packages
+<a class="anchorjs-link " href="#state_systempackages~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1875,7 +2695,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1884,7 +2709,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Use<wbr>Ebs<wbr>Optimized<wbr>Instances</span>
+        <span id="state_useebsoptimizedinstances~go">
+<span class="nx">
+Use<wbr>Ebs<wbr>Optimized<wbr>Instances
+<a class="anchorjs-link " href="#state_useebsoptimizedinstances~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1900,7 +2730,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>app<wbr>Server</span>
+        <span id="state_appserver~nodejs">
+<span class="nx">
+app<wbr>Server
+<a class="anchorjs-link " href="#state_appserver~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1909,7 +2744,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>app<wbr>Server<wbr>Version</span>
+        <span id="state_appserverversion~nodejs">
+<span class="nx">
+app<wbr>Server<wbr>Version
+<a class="anchorjs-link " href="#state_appserverversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1918,7 +2758,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1927,7 +2772,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Assign<wbr>Elastic<wbr>Ips</span>
+        <span id="state_autoassignelasticips~nodejs">
+<span class="nx">
+auto<wbr>Assign<wbr>Elastic<wbr>Ips
+<a class="anchorjs-link " href="#state_autoassignelasticips~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1936,7 +2786,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Assign<wbr>Public<wbr>Ips</span>
+        <span id="state_autoassignpublicips~nodejs">
+<span class="nx">
+auto<wbr>Assign<wbr>Public<wbr>Ips
+<a class="anchorjs-link " href="#state_autoassignpublicips~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1945,7 +2800,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Healing</span>
+        <span id="state_autohealing~nodejs">
+<span class="nx">
+auto<wbr>Healing
+<a class="anchorjs-link " href="#state_autohealing~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1954,7 +2814,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Configure<wbr>Recipes</span>
+        <span id="state_customconfigurerecipes~nodejs">
+<span class="nx">
+custom<wbr>Configure<wbr>Recipes
+<a class="anchorjs-link " href="#state_customconfigurerecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1962,7 +2827,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Deploy<wbr>Recipes</span>
+        <span id="state_customdeployrecipes~nodejs">
+<span class="nx">
+custom<wbr>Deploy<wbr>Recipes
+<a class="anchorjs-link " href="#state_customdeployrecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1970,7 +2840,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Instance<wbr>Profile<wbr>Arn</span>
+        <span id="state_custominstanceprofilearn~nodejs">
+<span class="nx">
+custom<wbr>Instance<wbr>Profile<wbr>Arn
+<a class="anchorjs-link " href="#state_custominstanceprofilearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1979,7 +2854,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Json</span>
+        <span id="state_customjson~nodejs">
+<span class="nx">
+custom<wbr>Json
+<a class="anchorjs-link " href="#state_customjson~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1988,7 +2868,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_customsecuritygroupids~nodejs">
+<span class="nx">
+custom<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_customsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1997,7 +2882,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Setup<wbr>Recipes</span>
+        <span id="state_customsetuprecipes~nodejs">
+<span class="nx">
+custom<wbr>Setup<wbr>Recipes
+<a class="anchorjs-link " href="#state_customsetuprecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2005,7 +2895,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Shutdown<wbr>Recipes</span>
+        <span id="state_customshutdownrecipes~nodejs">
+<span class="nx">
+custom<wbr>Shutdown<wbr>Recipes
+<a class="anchorjs-link " href="#state_customshutdownrecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2013,7 +2908,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom<wbr>Undeploy<wbr>Recipes</span>
+        <span id="state_customundeployrecipes~nodejs">
+<span class="nx">
+custom<wbr>Undeploy<wbr>Recipes
+<a class="anchorjs-link " href="#state_customundeployrecipes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2021,7 +2921,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>drain<wbr>Elb<wbr>On<wbr>Shutdown</span>
+        <span id="state_drainelbonshutdown~nodejs">
+<span class="nx">
+drain<wbr>Elb<wbr>On<wbr>Shutdown
+<a class="anchorjs-link " href="#state_drainelbonshutdown~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2030,7 +2935,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Volumes</span>
+        <span id="state_ebsvolumes~nodejs">
+<span class="nx">
+ebs<wbr>Volumes
+<a class="anchorjs-link " href="#state_ebsvolumes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume[]</a></span>
     </dt>
@@ -2039,7 +2949,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Load<wbr>Balancer</span>
+        <span id="state_elasticloadbalancer~nodejs">
+<span class="nx">
+elastic<wbr>Load<wbr>Balancer
+<a class="anchorjs-link " href="#state_elasticloadbalancer~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2048,7 +2963,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>install<wbr>Updates<wbr>On<wbr>Boot</span>
+        <span id="state_installupdatesonboot~nodejs">
+<span class="nx">
+install<wbr>Updates<wbr>On<wbr>Boot
+<a class="anchorjs-link " href="#state_installupdatesonboot~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2057,7 +2977,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Shutdown<wbr>Timeout</span>
+        <span id="state_instanceshutdowntimeout~nodejs">
+<span class="nx">
+instance<wbr>Shutdown<wbr>Timeout
+<a class="anchorjs-link " href="#state_instanceshutdowntimeout~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2066,7 +2991,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm<wbr>Options</span>
+        <span id="state_jvmoptions~nodejs">
+<span class="nx">
+jvm<wbr>Options
+<a class="anchorjs-link " href="#state_jvmoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2075,7 +3005,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm<wbr>Type</span>
+        <span id="state_jvmtype~nodejs">
+<span class="nx">
+jvm<wbr>Type
+<a class="anchorjs-link " href="#state_jvmtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2084,7 +3019,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm<wbr>Version</span>
+        <span id="state_jvmversion~nodejs">
+<span class="nx">
+jvm<wbr>Version
+<a class="anchorjs-link " href="#state_jvmversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2093,7 +3033,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2102,7 +3047,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>stack<wbr>Id</span>
+        <span id="state_stackid~nodejs">
+<span class="nx">
+stack<wbr>Id
+<a class="anchorjs-link " href="#state_stackid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2111,7 +3061,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>system<wbr>Packages</span>
+        <span id="state_systempackages~nodejs">
+<span class="nx">
+system<wbr>Packages
+<a class="anchorjs-link " href="#state_systempackages~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2120,7 +3075,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2129,7 +3089,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>use<wbr>Ebs<wbr>Optimized<wbr>Instances</span>
+        <span id="state_useebsoptimizedinstances~nodejs">
+<span class="nx">
+use<wbr>Ebs<wbr>Optimized<wbr>Instances
+<a class="anchorjs-link " href="#state_useebsoptimizedinstances~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2145,7 +3110,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>app_<wbr>server</span>
+        <span id="state_app_server~python">
+<span class="nx">
+app_<wbr>server
+<a class="anchorjs-link " href="#state_app_server~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2154,7 +3124,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>app_<wbr>server_<wbr>version</span>
+        <span id="state_app_server_version~python">
+<span class="nx">
+app_<wbr>server_<wbr>version
+<a class="anchorjs-link " href="#state_app_server_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2163,7 +3138,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2172,7 +3152,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>assign_<wbr>elastic_<wbr>ips</span>
+        <span id="state_auto_assign_elastic_ips~python">
+<span class="nx">
+auto_<wbr>assign_<wbr>elastic_<wbr>ips
+<a class="anchorjs-link " href="#state_auto_assign_elastic_ips~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2181,7 +3166,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>assign_<wbr>public_<wbr>ips</span>
+        <span id="state_auto_assign_public_ips~python">
+<span class="nx">
+auto_<wbr>assign_<wbr>public_<wbr>ips
+<a class="anchorjs-link " href="#state_auto_assign_public_ips~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2190,7 +3180,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>healing</span>
+        <span id="state_auto_healing~python">
+<span class="nx">
+auto_<wbr>healing
+<a class="anchorjs-link " href="#state_auto_healing~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2199,7 +3194,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>configure_<wbr>recipes</span>
+        <span id="state_custom_configure_recipes~python">
+<span class="nx">
+custom_<wbr>configure_<wbr>recipes
+<a class="anchorjs-link " href="#state_custom_configure_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2207,7 +3207,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>deploy_<wbr>recipes</span>
+        <span id="state_custom_deploy_recipes~python">
+<span class="nx">
+custom_<wbr>deploy_<wbr>recipes
+<a class="anchorjs-link " href="#state_custom_deploy_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2215,7 +3220,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>instance_<wbr>profile_<wbr>arn</span>
+        <span id="state_custom_instance_profile_arn~python">
+<span class="nx">
+custom_<wbr>instance_<wbr>profile_<wbr>arn
+<a class="anchorjs-link " href="#state_custom_instance_profile_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2224,7 +3234,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>json</span>
+        <span id="state_custom_json~python">
+<span class="nx">
+custom_<wbr>json
+<a class="anchorjs-link " href="#state_custom_json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2233,7 +3248,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="state_custom_security_group_ids~python">
+<span class="nx">
+custom_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_custom_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2242,7 +3262,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>setup_<wbr>recipes</span>
+        <span id="state_custom_setup_recipes~python">
+<span class="nx">
+custom_<wbr>setup_<wbr>recipes
+<a class="anchorjs-link " href="#state_custom_setup_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2250,7 +3275,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>shutdown_<wbr>recipes</span>
+        <span id="state_custom_shutdown_recipes~python">
+<span class="nx">
+custom_<wbr>shutdown_<wbr>recipes
+<a class="anchorjs-link " href="#state_custom_shutdown_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2258,7 +3288,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>custom_<wbr>undeploy_<wbr>recipes</span>
+        <span id="state_custom_undeploy_recipes~python">
+<span class="nx">
+custom_<wbr>undeploy_<wbr>recipes
+<a class="anchorjs-link " href="#state_custom_undeploy_recipes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2266,7 +3301,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>drain_<wbr>elb_<wbr>on_<wbr>shutdown</span>
+        <span id="state_drain_elb_on_shutdown~python">
+<span class="nx">
+drain_<wbr>elb_<wbr>on_<wbr>shutdown
+<a class="anchorjs-link " href="#state_drain_elb_on_shutdown~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2275,7 +3315,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>volumes</span>
+        <span id="state_ebs_volumes~python">
+<span class="nx">
+ebs_<wbr>volumes
+<a class="anchorjs-link " href="#state_ebs_volumes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List[Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume]</a></span>
     </dt>
@@ -2284,7 +3329,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>load_<wbr>balancer</span>
+        <span id="state_elastic_load_balancer~python">
+<span class="nx">
+elastic_<wbr>load_<wbr>balancer
+<a class="anchorjs-link " href="#state_elastic_load_balancer~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2293,7 +3343,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>install_<wbr>updates_<wbr>on_<wbr>boot</span>
+        <span id="state_install_updates_on_boot~python">
+<span class="nx">
+install_<wbr>updates_<wbr>on_<wbr>boot
+<a class="anchorjs-link " href="#state_install_updates_on_boot~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2302,7 +3357,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>shutdown_<wbr>timeout</span>
+        <span id="state_instance_shutdown_timeout~python">
+<span class="nx">
+instance_<wbr>shutdown_<wbr>timeout
+<a class="anchorjs-link " href="#state_instance_shutdown_timeout~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2311,7 +3371,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm_<wbr>options</span>
+        <span id="state_jvm_options~python">
+<span class="nx">
+jvm_<wbr>options
+<a class="anchorjs-link " href="#state_jvm_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2320,7 +3385,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm_<wbr>type</span>
+        <span id="state_jvm_type~python">
+<span class="nx">
+jvm_<wbr>type
+<a class="anchorjs-link " href="#state_jvm_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2329,7 +3399,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>jvm_<wbr>version</span>
+        <span id="state_jvm_version~python">
+<span class="nx">
+jvm_<wbr>version
+<a class="anchorjs-link " href="#state_jvm_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2338,7 +3413,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2347,7 +3427,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>stack_<wbr>id</span>
+        <span id="state_stack_id~python">
+<span class="nx">
+stack_<wbr>id
+<a class="anchorjs-link " href="#state_stack_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2356,7 +3441,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>system_<wbr>packages</span>
+        <span id="state_system_packages~python">
+<span class="nx">
+system_<wbr>packages
+<a class="anchorjs-link " href="#state_system_packages~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2365,7 +3455,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2374,7 +3469,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>use_<wbr>ebs_<wbr>optimized_<wbr>instances</span>
+        <span id="state_use_ebs_optimized_instances~python">
+<span class="nx">
+use_<wbr>ebs_<wbr>optimized_<wbr>instances
+<a class="anchorjs-link " href="#state_use_ebs_optimized_instances~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2416,7 +3516,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Mount<wbr>Point</span>
+        <span id="mountpoint~csharp">
+<span class="nx">
+Mount<wbr>Point
+<a class="anchorjs-link " href="#mountpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2425,7 +3530,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Number<wbr>Of<wbr>Disks</span>
+        <span id="numberofdisks~csharp">
+<span class="nx">
+Number<wbr>Of<wbr>Disks
+<a class="anchorjs-link " href="#numberofdisks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2434,7 +3544,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Size</span>
+        <span id="size~csharp">
+<span class="nx">
+Size
+<a class="anchorjs-link " href="#size~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2443,7 +3558,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2451,7 +3571,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2460,7 +3585,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Raid<wbr>Level</span>
+        <span id="raidlevel~csharp">
+<span class="nx">
+Raid<wbr>Level
+<a class="anchorjs-link " href="#raidlevel~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2469,7 +3599,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2485,7 +3620,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Mount<wbr>Point</span>
+        <span id="mountpoint~go">
+<span class="nx">
+Mount<wbr>Point
+<a class="anchorjs-link " href="#mountpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2494,7 +3634,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Number<wbr>Of<wbr>Disks</span>
+        <span id="numberofdisks~go">
+<span class="nx">
+Number<wbr>Of<wbr>Disks
+<a class="anchorjs-link " href="#numberofdisks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2503,7 +3648,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Size</span>
+        <span id="size~go">
+<span class="nx">
+Size
+<a class="anchorjs-link " href="#size~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2512,7 +3662,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2520,7 +3675,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2529,7 +3689,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Raid<wbr>Level</span>
+        <span id="raidlevel~go">
+<span class="nx">
+Raid<wbr>Level
+<a class="anchorjs-link " href="#raidlevel~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2538,7 +3703,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2554,7 +3724,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>mount<wbr>Point</span>
+        <span id="mountpoint~nodejs">
+<span class="nx">
+mount<wbr>Point
+<a class="anchorjs-link " href="#mountpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2563,7 +3738,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>number<wbr>Of<wbr>Disks</span>
+        <span id="numberofdisks~nodejs">
+<span class="nx">
+number<wbr>Of<wbr>Disks
+<a class="anchorjs-link " href="#numberofdisks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2572,7 +3752,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>size</span>
+        <span id="size~nodejs">
+<span class="nx">
+size
+<a class="anchorjs-link " href="#size~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2581,7 +3766,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2589,7 +3779,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2598,7 +3793,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>raid<wbr>Level</span>
+        <span id="raidlevel~nodejs">
+<span class="nx">
+raid<wbr>Level
+<a class="anchorjs-link " href="#raidlevel~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2607,7 +3807,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2623,7 +3828,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>mount<wbr>Point</span>
+        <span id="mountpoint~python">
+<span class="nx">
+mount<wbr>Point
+<a class="anchorjs-link " href="#mountpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2632,7 +3842,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>number<wbr>Of<wbr>Disks</span>
+        <span id="numberofdisks~python">
+<span class="nx">
+number<wbr>Of<wbr>Disks
+<a class="anchorjs-link " href="#numberofdisks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2641,7 +3856,12 @@ The following state arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>size</span>
+        <span id="size~python">
+<span class="nx">
+size
+<a class="anchorjs-link " href="#size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2650,7 +3870,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2658,7 +3883,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2667,7 +3897,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>raid<wbr>Level</span>
+        <span id="raidlevel~python">
+<span class="nx">
+raid<wbr>Level
+<a class="anchorjs-link " href="#raidlevel~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2676,7 +3911,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

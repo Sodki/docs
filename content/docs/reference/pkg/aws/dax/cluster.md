@@ -62,19 +62,19 @@ const bar = new aws.dax.Cluster("bar", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_name=None<span class="p">, </span>description=None<span class="p">, </span>iam_role_arn=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>replication_factor=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/dax/#Cluster">Cluster</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_name=None<span class="p">, </span>description=None<span class="p">, </span>iam_role_arn=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>replication_factor=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">NewCluster</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.ClusterArgs.html">ClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.ClusterArgs.html">ClusterArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -240,7 +240,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Name</span>
+        <span id="clustername~csharp">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -250,7 +255,12 @@ lowercase
 
     <dt class="property-required"
             title="Required">
-        <span>Iam<wbr>Role<wbr>Arn</span>
+        <span id="iamrolearn~csharp">
+<span class="nx">
+Iam<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#iamrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -261,7 +271,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -271,7 +286,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>Replication<wbr>Factor</span>
+        <span id="replicationfactor~csharp">
+<span class="nx">
+Replication<wbr>Factor
+<a class="anchorjs-link " href="#replicationfactor~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -282,7 +302,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="availabilityzones~csharp">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -292,7 +317,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -301,7 +331,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="maintenancewindow~csharp">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -313,7 +348,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~csharp">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -324,7 +364,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~csharp">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -334,7 +379,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -344,7 +394,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
@@ -353,7 +408,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~csharp">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -363,7 +423,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -379,7 +444,12 @@ cluster
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Name</span>
+        <span id="clustername~go">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -389,7 +459,12 @@ lowercase
 
     <dt class="property-required"
             title="Required">
-        <span>Iam<wbr>Role<wbr>Arn</span>
+        <span id="iamrolearn~go">
+<span class="nx">
+Iam<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#iamrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -400,7 +475,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -410,7 +490,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>Replication<wbr>Factor</span>
+        <span id="replicationfactor~go">
+<span class="nx">
+Replication<wbr>Factor
+<a class="anchorjs-link " href="#replicationfactor~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -421,7 +506,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="availabilityzones~go">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -431,7 +521,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -440,7 +535,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="maintenancewindow~go">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -452,7 +552,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~go">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -463,7 +568,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~go">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -473,7 +583,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -483,7 +598,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~go">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -492,7 +612,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~go">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -502,7 +627,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -518,7 +648,12 @@ cluster
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Name</span>
+        <span id="clustername~nodejs">
+<span class="nx">
+cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -528,7 +663,12 @@ lowercase
 
     <dt class="property-required"
             title="Required">
-        <span>iam<wbr>Role<wbr>Arn</span>
+        <span id="iamrolearn~nodejs">
+<span class="nx">
+iam<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#iamrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -539,7 +679,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>node<wbr>Type</span>
+        <span id="nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -549,7 +694,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>replication<wbr>Factor</span>
+        <span id="replicationfactor~nodejs">
+<span class="nx">
+replication<wbr>Factor
+<a class="anchorjs-link " href="#replicationfactor~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -560,7 +710,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zones</span>
+        <span id="availabilityzones~nodejs">
+<span class="nx">
+availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -570,7 +725,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -579,7 +739,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance<wbr>Window</span>
+        <span id="maintenancewindow~nodejs">
+<span class="nx">
+maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -591,7 +756,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~nodejs">
+<span class="nx">
+notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -602,7 +772,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~nodejs">
+<span class="nx">
+parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -612,7 +787,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -622,7 +802,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -631,7 +816,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~nodejs">
+<span class="nx">
+subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -641,7 +831,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -657,7 +852,12 @@ cluster
 
     <dt class="property-required"
             title="Required">
-        <span>cluster_<wbr>name</span>
+        <span id="cluster_name~python">
+<span class="nx">
+cluster_<wbr>name
+<a class="anchorjs-link " href="#cluster_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -667,7 +867,12 @@ lowercase
 
     <dt class="property-required"
             title="Required">
-        <span>iam_<wbr>role_<wbr>arn</span>
+        <span id="iam_role_arn~python">
+<span class="nx">
+iam_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#iam_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -678,7 +883,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>node_<wbr>type</span>
+        <span id="node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -688,7 +898,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-required"
             title="Required">
-        <span>replication_<wbr>factor</span>
+        <span id="replication_factor~python">
+<span class="nx">
+replication_<wbr>factor
+<a class="anchorjs-link " href="#replication_factor~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -699,7 +914,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zones</span>
+        <span id="availability_zones~python">
+<span class="nx">
+availability_<wbr>zones
+<a class="anchorjs-link " href="#availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -709,7 +929,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -718,7 +943,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance_<wbr>window</span>
+        <span id="maintenance_window~python">
+<span class="nx">
+maintenance_<wbr>window
+<a class="anchorjs-link " href="#maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -730,7 +960,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification_<wbr>topic_<wbr>arn</span>
+        <span id="notification_topic_arn~python">
+<span class="nx">
+notification_<wbr>topic_<wbr>arn
+<a class="anchorjs-link " href="#notification_topic_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -741,7 +976,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter_<wbr>group_<wbr>name</span>
+        <span id="parameter_group_name~python">
+<span class="nx">
+parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -751,7 +991,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -761,7 +1006,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>server_<wbr>side_<wbr>encryption</span>
+        <span id="server_side_encryption~python">
+<span class="nx">
+server_<wbr>side_<wbr>encryption
+<a class="anchorjs-link " href="#server_side_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Dict[Cluster<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
@@ -770,7 +1020,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>group_<wbr>name</span>
+        <span id="subnet_group_name~python">
+<span class="nx">
+subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -780,7 +1035,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -807,7 +1067,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -816,7 +1081,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Address</span>
+        <span id="clusteraddress~csharp">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#clusteraddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -825,7 +1095,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="configurationendpoint~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#configurationendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -835,7 +1110,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -843,7 +1123,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Nodes</span>
+        <span id="nodes~csharp">
+<span class="nx">
+Nodes
+<a class="anchorjs-link " href="#nodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List&lt;Cluster<wbr>Node&gt;</a></span>
     </dt>
@@ -854,7 +1139,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -870,7 +1160,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -879,7 +1174,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Address</span>
+        <span id="clusteraddress~go">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#clusteraddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -888,7 +1188,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="configurationendpoint~go">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#configurationendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -898,7 +1203,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -906,7 +1216,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Nodes</span>
+        <span id="nodes~go">
+<span class="nx">
+Nodes
+<a class="anchorjs-link " href="#nodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">[]Cluster<wbr>Node</a></span>
     </dt>
@@ -917,7 +1232,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -933,7 +1253,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -942,7 +1267,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>cluster<wbr>Address</span>
+        <span id="clusteraddress~nodejs">
+<span class="nx">
+cluster<wbr>Address
+<a class="anchorjs-link " href="#clusteraddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -951,7 +1281,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>configuration<wbr>Endpoint</span>
+        <span id="configurationendpoint~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#configurationendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -961,7 +1296,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -969,7 +1309,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>nodes</span>
+        <span id="nodes~nodejs">
+<span class="nx">
+nodes
+<a class="anchorjs-link " href="#nodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">Cluster<wbr>Node[]</a></span>
     </dt>
@@ -980,7 +1325,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -996,7 +1346,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1005,7 +1360,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>cluster_<wbr>address</span>
+        <span id="cluster_address~python">
+<span class="nx">
+cluster_<wbr>address
+<a class="anchorjs-link " href="#cluster_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1014,7 +1374,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>configuration_<wbr>endpoint</span>
+        <span id="configuration_endpoint~python">
+<span class="nx">
+configuration_<wbr>endpoint
+<a class="anchorjs-link " href="#configuration_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1024,7 +1389,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1032,7 +1402,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>nodes</span>
+        <span id="nodes~python">
+<span class="nx">
+nodes
+<a class="anchorjs-link " href="#nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List[Cluster<wbr>Node]</a></span>
     </dt>
@@ -1043,7 +1418,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-"
             title="">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1065,7 +1445,7 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#Cluster">Cluster</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#Cluster">Cluster</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1073,11 +1453,11 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.ClusterState.html">ClusterState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1185,7 +1565,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1194,7 +1579,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="state_availabilityzones~csharp">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_availabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1204,7 +1594,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Address</span>
+        <span id="state_clusteraddress~csharp">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#state_clusteraddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1213,7 +1608,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Name</span>
+        <span id="state_clustername~csharp">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#state_clustername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1223,7 +1623,12 @@ lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="state_configurationendpoint~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#state_configurationendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1233,7 +1638,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1242,7 +1652,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Role<wbr>Arn</span>
+        <span id="state_iamrolearn~csharp">
+<span class="nx">
+Iam<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_iamrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1253,7 +1668,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~csharp">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1265,7 +1685,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1275,7 +1700,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Nodes</span>
+        <span id="state_nodes~csharp">
+<span class="nx">
+Nodes
+<a class="anchorjs-link " href="#state_nodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List&lt;Cluster<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
@@ -1286,7 +1716,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~csharp">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1297,7 +1732,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~csharp">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1307,7 +1747,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1316,7 +1761,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Factor</span>
+        <span id="state_replicationfactor~csharp">
+<span class="nx">
+Replication<wbr>Factor
+<a class="anchorjs-link " href="#state_replicationfactor~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1327,7 +1777,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1337,7 +1792,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
@@ -1346,7 +1806,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~csharp">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1356,7 +1821,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1372,7 +1842,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1381,7 +1856,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="state_availabilityzones~go">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_availabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1391,7 +1871,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Address</span>
+        <span id="state_clusteraddress~go">
+<span class="nx">
+Cluster<wbr>Address
+<a class="anchorjs-link " href="#state_clusteraddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1400,7 +1885,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Name</span>
+        <span id="state_clustername~go">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#state_clustername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1410,7 +1900,12 @@ lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Endpoint</span>
+        <span id="state_configurationendpoint~go">
+<span class="nx">
+Configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#state_configurationendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1420,7 +1915,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1429,7 +1929,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Role<wbr>Arn</span>
+        <span id="state_iamrolearn~go">
+<span class="nx">
+Iam<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_iamrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1440,7 +1945,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~go">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1452,7 +1962,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1462,7 +1977,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Nodes</span>
+        <span id="state_nodes~go">
+<span class="nx">
+Nodes
+<a class="anchorjs-link " href="#state_nodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">[]Cluster<wbr>Node</a></span>
     </dt>
@@ -1473,7 +1993,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~go">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1484,7 +2009,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~go">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1494,7 +2024,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1503,7 +2038,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Factor</span>
+        <span id="state_replicationfactor~go">
+<span class="nx">
+Replication<wbr>Factor
+<a class="anchorjs-link " href="#state_replicationfactor~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1514,7 +2054,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1524,7 +2069,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~go">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -1533,7 +2083,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~go">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1543,7 +2098,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1559,7 +2119,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1568,7 +2133,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zones</span>
+        <span id="state_availabilityzones~nodejs">
+<span class="nx">
+availability<wbr>Zones
+<a class="anchorjs-link " href="#state_availabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1578,7 +2148,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Address</span>
+        <span id="state_clusteraddress~nodejs">
+<span class="nx">
+cluster<wbr>Address
+<a class="anchorjs-link " href="#state_clusteraddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1587,7 +2162,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Name</span>
+        <span id="state_clustername~nodejs">
+<span class="nx">
+cluster<wbr>Name
+<a class="anchorjs-link " href="#state_clustername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1597,7 +2177,12 @@ lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Endpoint</span>
+        <span id="state_configurationendpoint~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint
+<a class="anchorjs-link " href="#state_configurationendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1607,7 +2192,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1616,7 +2206,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Role<wbr>Arn</span>
+        <span id="state_iamrolearn~nodejs">
+<span class="nx">
+iam<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_iamrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1627,7 +2222,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~nodejs">
+<span class="nx">
+maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1639,7 +2239,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Type</span>
+        <span id="state_nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1649,7 +2254,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>nodes</span>
+        <span id="state_nodes~nodejs">
+<span class="nx">
+nodes
+<a class="anchorjs-link " href="#state_nodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">Cluster<wbr>Node[]</a></span>
     </dt>
@@ -1660,7 +2270,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~nodejs">
+<span class="nx">
+notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1671,7 +2286,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~nodejs">
+<span class="nx">
+parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1681,7 +2301,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1690,7 +2315,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication<wbr>Factor</span>
+        <span id="state_replicationfactor~nodejs">
+<span class="nx">
+replication<wbr>Factor
+<a class="anchorjs-link " href="#state_replicationfactor~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1701,7 +2331,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1711,7 +2346,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -1720,7 +2360,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~nodejs">
+<span class="nx">
+subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1730,7 +2375,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1746,7 +2396,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1755,7 +2410,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zones</span>
+        <span id="state_availability_zones~python">
+<span class="nx">
+availability_<wbr>zones
+<a class="anchorjs-link " href="#state_availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1765,7 +2425,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>address</span>
+        <span id="state_cluster_address~python">
+<span class="nx">
+cluster_<wbr>address
+<a class="anchorjs-link " href="#state_cluster_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1774,7 +2439,12 @@ nodes will be created
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>name</span>
+        <span id="state_cluster_name~python">
+<span class="nx">
+cluster_<wbr>name
+<a class="anchorjs-link " href="#state_cluster_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1784,7 +2454,12 @@ lowercase
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>endpoint</span>
+        <span id="state_configuration_endpoint~python">
+<span class="nx">
+configuration_<wbr>endpoint
+<a class="anchorjs-link " href="#state_configuration_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1794,7 +2469,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1803,7 +2483,12 @@ consisting of a DNS name and a port number
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>role_<wbr>arn</span>
+        <span id="state_iam_role_arn~python">
+<span class="nx">
+iam_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#state_iam_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1814,7 +2499,12 @@ permissions to access DynamoDB on your behalf
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance_<wbr>window</span>
+        <span id="state_maintenance_window~python">
+<span class="nx">
+maintenance_<wbr>window
+<a class="anchorjs-link " href="#state_maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1826,7 +2516,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>type</span>
+        <span id="state_node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#state_node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1836,7 +2531,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>nodes</span>
+        <span id="state_nodes~python">
+<span class="nx">
+nodes
+<a class="anchorjs-link " href="#state_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List[Cluster<wbr>Node]</a></span>
     </dt>
@@ -1847,7 +2547,12 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification_<wbr>topic_<wbr>arn</span>
+        <span id="state_notification_topic_arn~python">
+<span class="nx">
+notification_<wbr>topic_<wbr>arn
+<a class="anchorjs-link " href="#state_notification_topic_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1858,7 +2563,12 @@ SNS topic to send DAX notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter_<wbr>group_<wbr>name</span>
+        <span id="state_parameter_group_name~python">
+<span class="nx">
+parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1868,7 +2578,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1877,7 +2592,12 @@ with this DAX cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication_<wbr>factor</span>
+        <span id="state_replication_factor~python">
+<span class="nx">
+replication_<wbr>factor
+<a class="anchorjs-link " href="#state_replication_factor~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1888,7 +2608,12 @@ replicas
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="state_security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1898,7 +2623,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>server_<wbr>side_<wbr>encryption</span>
+        <span id="state_server_side_encryption~python">
+<span class="nx">
+server_<wbr>side_<wbr>encryption
+<a class="anchorjs-link " href="#state_server_side_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Dict[Cluster<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
@@ -1907,7 +2637,12 @@ with the cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>group_<wbr>name</span>
+        <span id="state_subnet_group_name~python">
+<span class="nx">
+subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1917,7 +2652,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1959,7 +2699,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Address</span>
+        <span id="address~csharp">
+<span class="nx">
+Address
+<a class="anchorjs-link " href="#address~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1967,7 +2712,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1975,7 +2725,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1983,7 +2738,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1999,7 +2759,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Address</span>
+        <span id="address~go">
+<span class="nx">
+Address
+<a class="anchorjs-link " href="#address~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2007,7 +2772,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2015,7 +2785,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2023,7 +2798,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2039,7 +2819,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>address</span>
+        <span id="address~nodejs">
+<span class="nx">
+address
+<a class="anchorjs-link " href="#address~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2047,7 +2832,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2055,7 +2845,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2063,7 +2858,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2079,7 +2879,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>address</span>
+        <span id="address~python">
+<span class="nx">
+address
+<a class="anchorjs-link " href="#address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2087,7 +2892,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2095,7 +2905,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2103,7 +2918,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2137,7 +2957,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2153,7 +2978,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2169,7 +2999,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2185,7 +3020,12 @@ cluster
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>

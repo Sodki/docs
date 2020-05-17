@@ -58,7 +58,7 @@ const serviceImage = pulumi.output(aws.ecr.getImage({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getImage<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecr/#GetImageArgs">GetImageArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecr/#GetImageResult">GetImageResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getImage<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecr/#GetImageArgs">GetImageArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecr/#GetImageResult">GetImageResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -68,13 +68,14 @@ const serviceImage = pulumi.output(aws.ecr.getImage({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetImage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecr?tab=doc#GetImageArgs">GetImageArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecr?tab=doc#GetImageResult">GetImageResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetImage<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecr?tab=doc#GetImageArgs">GetImageArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecr?tab=doc#GetImageResult">GetImageResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetImage </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecr.GetImageResult.html">GetImageResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecr.GetImageArgs.html">GetImageArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecr.GetImageResult.html">GetImageResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecr.GetImageArgs.html">GetImageArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -89,7 +90,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Repository<wbr>Name</span>
+        <span id="repositoryname~csharp">
+<span class="nx">
+Repository<wbr>Name
+<a class="anchorjs-link " href="#repositoryname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -98,7 +104,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Digest</span>
+        <span id="imagedigest~csharp">
+<span class="nx">
+Image<wbr>Digest
+<a class="anchorjs-link " href="#imagedigest~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -107,7 +118,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Tag</span>
+        <span id="imagetag~csharp">
+<span class="nx">
+Image<wbr>Tag
+<a class="anchorjs-link " href="#imagetag~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -116,7 +132,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Registry<wbr>Id</span>
+        <span id="registryid~csharp">
+<span class="nx">
+Registry<wbr>Id
+<a class="anchorjs-link " href="#registryid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -132,7 +153,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Repository<wbr>Name</span>
+        <span id="repositoryname~go">
+<span class="nx">
+Repository<wbr>Name
+<a class="anchorjs-link " href="#repositoryname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -141,7 +167,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Digest</span>
+        <span id="imagedigest~go">
+<span class="nx">
+Image<wbr>Digest
+<a class="anchorjs-link " href="#imagedigest~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -150,7 +181,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Image<wbr>Tag</span>
+        <span id="imagetag~go">
+<span class="nx">
+Image<wbr>Tag
+<a class="anchorjs-link " href="#imagetag~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -159,7 +195,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Registry<wbr>Id</span>
+        <span id="registryid~go">
+<span class="nx">
+Registry<wbr>Id
+<a class="anchorjs-link " href="#registryid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -175,7 +216,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>repository<wbr>Name</span>
+        <span id="repositoryname~nodejs">
+<span class="nx">
+repository<wbr>Name
+<a class="anchorjs-link " href="#repositoryname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -184,7 +230,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>image<wbr>Digest</span>
+        <span id="imagedigest~nodejs">
+<span class="nx">
+image<wbr>Digest
+<a class="anchorjs-link " href="#imagedigest~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -193,7 +244,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>image<wbr>Tag</span>
+        <span id="imagetag~nodejs">
+<span class="nx">
+image<wbr>Tag
+<a class="anchorjs-link " href="#imagetag~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -202,7 +258,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>registry<wbr>Id</span>
+        <span id="registryid~nodejs">
+<span class="nx">
+registry<wbr>Id
+<a class="anchorjs-link " href="#registryid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -218,7 +279,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>repository_<wbr>name</span>
+        <span id="repository_name~python">
+<span class="nx">
+repository_<wbr>name
+<a class="anchorjs-link " href="#repository_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -227,7 +293,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>image_<wbr>digest</span>
+        <span id="image_digest~python">
+<span class="nx">
+image_<wbr>digest
+<a class="anchorjs-link " href="#image_digest~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -236,7 +307,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>image_<wbr>tag</span>
+        <span id="image_tag~python">
+<span class="nx">
+image_<wbr>tag
+<a class="anchorjs-link " href="#image_tag~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -245,7 +321,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>registry_<wbr>id</span>
+        <span id="registry_id~python">
+<span class="nx">
+registry_<wbr>id
+<a class="anchorjs-link " href="#registry_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -274,7 +355,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -283,7 +369,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Digest</span>
+        <span id="imagedigest~csharp">
+<span class="nx">
+Image<wbr>Digest
+<a class="anchorjs-link " href="#imagedigest~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -291,7 +382,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Pushed<wbr>At</span>
+        <span id="imagepushedat~csharp">
+<span class="nx">
+Image<wbr>Pushed<wbr>At
+<a class="anchorjs-link " href="#imagepushedat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -300,7 +396,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Size<wbr>In<wbr>Bytes</span>
+        <span id="imagesizeinbytes~csharp">
+<span class="nx">
+Image<wbr>Size<wbr>In<wbr>Bytes
+<a class="anchorjs-link " href="#imagesizeinbytes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -309,7 +410,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Tags</span>
+        <span id="imagetags~csharp">
+<span class="nx">
+Image<wbr>Tags
+<a class="anchorjs-link " href="#imagetags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -318,7 +424,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Registry<wbr>Id</span>
+        <span id="registryid~csharp">
+<span class="nx">
+Registry<wbr>Id
+<a class="anchorjs-link " href="#registryid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -326,7 +437,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Repository<wbr>Name</span>
+        <span id="repositoryname~csharp">
+<span class="nx">
+Repository<wbr>Name
+<a class="anchorjs-link " href="#repositoryname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -334,7 +450,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Tag</span>
+        <span id="imagetag~csharp">
+<span class="nx">
+Image<wbr>Tag
+<a class="anchorjs-link " href="#imagetag~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -349,7 +470,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -358,7 +484,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Digest</span>
+        <span id="imagedigest~go">
+<span class="nx">
+Image<wbr>Digest
+<a class="anchorjs-link " href="#imagedigest~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -366,7 +497,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Pushed<wbr>At</span>
+        <span id="imagepushedat~go">
+<span class="nx">
+Image<wbr>Pushed<wbr>At
+<a class="anchorjs-link " href="#imagepushedat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -375,7 +511,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Size<wbr>In<wbr>Bytes</span>
+        <span id="imagesizeinbytes~go">
+<span class="nx">
+Image<wbr>Size<wbr>In<wbr>Bytes
+<a class="anchorjs-link " href="#imagesizeinbytes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -384,7 +525,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Tags</span>
+        <span id="imagetags~go">
+<span class="nx">
+Image<wbr>Tags
+<a class="anchorjs-link " href="#imagetags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -393,7 +539,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Registry<wbr>Id</span>
+        <span id="registryid~go">
+<span class="nx">
+Registry<wbr>Id
+<a class="anchorjs-link " href="#registryid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -401,7 +552,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Repository<wbr>Name</span>
+        <span id="repositoryname~go">
+<span class="nx">
+Repository<wbr>Name
+<a class="anchorjs-link " href="#repositoryname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -409,7 +565,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Tag</span>
+        <span id="imagetag~go">
+<span class="nx">
+Image<wbr>Tag
+<a class="anchorjs-link " href="#imagetag~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -424,7 +585,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -433,7 +599,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Digest</span>
+        <span id="imagedigest~nodejs">
+<span class="nx">
+image<wbr>Digest
+<a class="anchorjs-link " href="#imagedigest~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -441,7 +612,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Pushed<wbr>At</span>
+        <span id="imagepushedat~nodejs">
+<span class="nx">
+image<wbr>Pushed<wbr>At
+<a class="anchorjs-link " href="#imagepushedat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -450,7 +626,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Size<wbr>In<wbr>Bytes</span>
+        <span id="imagesizeinbytes~nodejs">
+<span class="nx">
+image<wbr>Size<wbr>In<wbr>Bytes
+<a class="anchorjs-link " href="#imagesizeinbytes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -459,7 +640,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Tags</span>
+        <span id="imagetags~nodejs">
+<span class="nx">
+image<wbr>Tags
+<a class="anchorjs-link " href="#imagetags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -468,7 +654,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>registry<wbr>Id</span>
+        <span id="registryid~nodejs">
+<span class="nx">
+registry<wbr>Id
+<a class="anchorjs-link " href="#registryid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -476,7 +667,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>repository<wbr>Name</span>
+        <span id="repositoryname~nodejs">
+<span class="nx">
+repository<wbr>Name
+<a class="anchorjs-link " href="#repositoryname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -484,7 +680,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Tag</span>
+        <span id="imagetag~nodejs">
+<span class="nx">
+image<wbr>Tag
+<a class="anchorjs-link " href="#imagetag~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -499,7 +700,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -508,7 +714,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>digest</span>
+        <span id="image_digest~python">
+<span class="nx">
+image_<wbr>digest
+<a class="anchorjs-link " href="#image_digest~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -516,7 +727,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>pushed_<wbr>at</span>
+        <span id="image_pushed_at~python">
+<span class="nx">
+image_<wbr>pushed_<wbr>at
+<a class="anchorjs-link " href="#image_pushed_at~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -525,7 +741,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>size_<wbr>in_<wbr>bytes</span>
+        <span id="image_size_in_bytes~python">
+<span class="nx">
+image_<wbr>size_<wbr>in_<wbr>bytes
+<a class="anchorjs-link " href="#image_size_in_bytes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -534,7 +755,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>tags</span>
+        <span id="image_tags~python">
+<span class="nx">
+image_<wbr>tags
+<a class="anchorjs-link " href="#image_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -543,7 +769,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>registry_<wbr>id</span>
+        <span id="registry_id~python">
+<span class="nx">
+registry_<wbr>id
+<a class="anchorjs-link " href="#registry_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -551,7 +782,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>repository_<wbr>name</span>
+        <span id="repository_name~python">
+<span class="nx">
+repository_<wbr>name
+<a class="anchorjs-link " href="#repository_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -559,7 +795,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>tag</span>
+        <span id="image_tag~python">
+<span class="nx">
+image_<wbr>tag
+<a class="anchorjs-link " href="#image_tag~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

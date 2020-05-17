@@ -130,19 +130,19 @@ const baz = new aws.elasticache.ReplicationGroup("baz", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroupArgs">ReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroupArgs">ReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ReplicationGroup</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>at_rest_encryption_enabled=None<span class="p">, </span>auth_token=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>automatic_failover_enabled=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_mode=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>number_cache_clusters=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>replication_group_description=None<span class="p">, </span>replication_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>security_group_names=None<span class="p">, </span>snapshot_arns=None<span class="p">, </span>snapshot_name=None<span class="p">, </span>snapshot_retention_limit=None<span class="p">, </span>snapshot_window=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>transit_encryption_enabled=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>apply_immediately=None<span class="p">, </span>at_rest_encryption_enabled=None<span class="p">, </span>auth_token=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>automatic_failover_enabled=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_mode=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>number_cache_clusters=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>replication_group_description=None<span class="p">, </span>replication_group_id=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>security_group_names=None<span class="p">, </span>snapshot_arns=None<span class="p">, </span>snapshot_name=None<span class="p">, </span>snapshot_retention_limit=None<span class="p">, </span>snapshot_window=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, </span>transit_encryption_enabled=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewReplicationGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupArgs">ReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">ReplicationGroup</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">NewReplicationGroup</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupArgs">ReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">ReplicationGroup</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroup.html">ReplicationGroup</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroupArgs.html">ReplicationGroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroup.html">ReplicationGroup</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroupArgs.html">ReplicationGroupArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -308,7 +308,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-required"
             title="Required">
-        <span>Replication<wbr>Group<wbr>Description</span>
+        <span id="replicationgroupdescription~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#replicationgroupdescription~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -317,7 +322,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="applyimmediately~csharp">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#applyimmediately~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -326,7 +336,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>At<wbr>Rest<wbr>Encryption<wbr>Enabled</span>
+        <span id="atrestencryptionenabled~csharp">
+<span class="nx">
+At<wbr>Rest<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#atrestencryptionenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -335,7 +350,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auth<wbr>Token</span>
+        <span id="authtoken~csharp">
+<span class="nx">
+Auth<wbr>Token
+<a class="anchorjs-link " href="#authtoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -344,7 +364,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Minor<wbr>Version<wbr>Upgrade</span>
+        <span id="autominorversionupgrade~csharp">
+<span class="nx">
+Auto<wbr>Minor<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#autominorversionupgrade~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -353,7 +378,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="automaticfailoverenabled~csharp">
+<span class="nx">
+Automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#automaticfailoverenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -362,7 +392,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="availabilityzones~csharp">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -371,7 +406,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Mode</span>
+        <span id="clustermode~csharp">
+<span class="nx">
+Cluster<wbr>Mode
+<a class="anchorjs-link " href="#clustermode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode<wbr>Args</a></span>
     </dt>
@@ -380,7 +420,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="engine~csharp">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#engine~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -389,7 +434,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="engineversion~csharp">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#engineversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -398,7 +448,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -407,7 +462,12 @@ The ReplicationGroup resource accepts the following [input]({{< relref "/docs/in
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="maintenancewindow~csharp">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -418,7 +478,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -427,7 +492,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~csharp">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -438,7 +508,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Cache<wbr>Clusters</span>
+        <span id="numbercacheclusters~csharp">
+<span class="nx">
+Number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#numbercacheclusters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -447,7 +522,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~csharp">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -456,7 +536,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -465,7 +550,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -474,7 +564,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -483,7 +578,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -492,7 +592,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="snapshotarns~csharp">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#snapshotarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -503,7 +608,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="snapshotname~csharp">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#snapshotname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -512,7 +622,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~csharp">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -525,7 +640,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="snapshotwindow~csharp">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -535,7 +655,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~csharp">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -544,7 +669,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -553,7 +683,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Transit<wbr>Encryption<wbr>Enabled</span>
+        <span id="transitencryptionenabled~csharp">
+<span class="nx">
+Transit<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#transitencryptionenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -569,7 +704,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>Replication<wbr>Group<wbr>Description</span>
+        <span id="replicationgroupdescription~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#replicationgroupdescription~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -578,7 +718,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="applyimmediately~go">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#applyimmediately~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -587,7 +732,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>At<wbr>Rest<wbr>Encryption<wbr>Enabled</span>
+        <span id="atrestencryptionenabled~go">
+<span class="nx">
+At<wbr>Rest<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#atrestencryptionenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -596,7 +746,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auth<wbr>Token</span>
+        <span id="authtoken~go">
+<span class="nx">
+Auth<wbr>Token
+<a class="anchorjs-link " href="#authtoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -605,7 +760,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Minor<wbr>Version<wbr>Upgrade</span>
+        <span id="autominorversionupgrade~go">
+<span class="nx">
+Auto<wbr>Minor<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#autominorversionupgrade~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -614,7 +774,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="automaticfailoverenabled~go">
+<span class="nx">
+Automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#automaticfailoverenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -623,7 +788,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="availabilityzones~go">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -632,7 +802,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Mode</span>
+        <span id="clustermode~go">
+<span class="nx">
+Cluster<wbr>Mode
+<a class="anchorjs-link " href="#clustermode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
@@ -641,7 +816,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="engine~go">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#engine~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -650,7 +830,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="engineversion~go">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#engineversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -659,7 +844,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -668,7 +858,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="maintenancewindow~go">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -679,7 +874,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -688,7 +888,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~go">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -699,7 +904,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Cache<wbr>Clusters</span>
+        <span id="numbercacheclusters~go">
+<span class="nx">
+Number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#numbercacheclusters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -708,7 +918,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~go">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -717,7 +932,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -726,7 +946,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -735,7 +960,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -744,7 +974,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~go">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -753,7 +988,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="snapshotarns~go">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#snapshotarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -764,7 +1004,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="snapshotname~go">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#snapshotname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -773,7 +1018,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~go">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -786,7 +1036,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="snapshotwindow~go">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -796,7 +1051,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~go">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -805,7 +1065,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -814,7 +1079,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Transit<wbr>Encryption<wbr>Enabled</span>
+        <span id="transitencryptionenabled~go">
+<span class="nx">
+Transit<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#transitencryptionenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -830,7 +1100,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>replication<wbr>Group<wbr>Description</span>
+        <span id="replicationgroupdescription~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#replicationgroupdescription~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -839,7 +1114,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply<wbr>Immediately</span>
+        <span id="applyimmediately~nodejs">
+<span class="nx">
+apply<wbr>Immediately
+<a class="anchorjs-link " href="#applyimmediately~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -848,7 +1128,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>at<wbr>Rest<wbr>Encryption<wbr>Enabled</span>
+        <span id="atrestencryptionenabled~nodejs">
+<span class="nx">
+at<wbr>Rest<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#atrestencryptionenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -857,7 +1142,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auth<wbr>Token</span>
+        <span id="authtoken~nodejs">
+<span class="nx">
+auth<wbr>Token
+<a class="anchorjs-link " href="#authtoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -866,7 +1156,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Minor<wbr>Version<wbr>Upgrade</span>
+        <span id="autominorversionupgrade~nodejs">
+<span class="nx">
+auto<wbr>Minor<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#autominorversionupgrade~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -875,7 +1170,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="automaticfailoverenabled~nodejs">
+<span class="nx">
+automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#automaticfailoverenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -884,7 +1184,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zones</span>
+        <span id="availabilityzones~nodejs">
+<span class="nx">
+availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -893,7 +1198,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Mode</span>
+        <span id="clustermode~nodejs">
+<span class="nx">
+cluster<wbr>Mode
+<a class="anchorjs-link " href="#clustermode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
@@ -902,7 +1212,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="engine~nodejs">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#engine~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -911,7 +1226,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine<wbr>Version</span>
+        <span id="engineversion~nodejs">
+<span class="nx">
+engine<wbr>Version
+<a class="anchorjs-link " href="#engineversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -920,7 +1240,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -929,7 +1254,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance<wbr>Window</span>
+        <span id="maintenancewindow~nodejs">
+<span class="nx">
+maintenance<wbr>Window
+<a class="anchorjs-link " href="#maintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -940,7 +1270,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Type</span>
+        <span id="nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -949,7 +1284,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification<wbr>Topic<wbr>Arn</span>
+        <span id="notificationtopicarn~nodejs">
+<span class="nx">
+notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#notificationtopicarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -960,7 +1300,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Cache<wbr>Clusters</span>
+        <span id="numbercacheclusters~nodejs">
+<span class="nx">
+number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#numbercacheclusters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -969,7 +1314,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter<wbr>Group<wbr>Name</span>
+        <span id="parametergroupname~nodejs">
+<span class="nx">
+parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#parametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -978,7 +1328,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -987,7 +1342,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -996,7 +1356,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1005,7 +1370,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Names</span>
+        <span id="securitygroupnames~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#securitygroupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1014,7 +1384,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Arns</span>
+        <span id="snapshotarns~nodejs">
+<span class="nx">
+snapshot<wbr>Arns
+<a class="anchorjs-link " href="#snapshotarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1025,7 +1400,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Name</span>
+        <span id="snapshotname~nodejs">
+<span class="nx">
+snapshot<wbr>Name
+<a class="anchorjs-link " href="#snapshotname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1034,7 +1414,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~nodejs">
+<span class="nx">
+snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1047,7 +1432,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Window</span>
+        <span id="snapshotwindow~nodejs">
+<span class="nx">
+snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1057,7 +1447,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Group<wbr>Name</span>
+        <span id="subnetgroupname~nodejs">
+<span class="nx">
+subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#subnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1066,7 +1461,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1075,7 +1475,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>transit<wbr>Encryption<wbr>Enabled</span>
+        <span id="transitencryptionenabled~nodejs">
+<span class="nx">
+transit<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#transitencryptionenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1091,7 +1496,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>replication_<wbr>group_<wbr>description</span>
+        <span id="replication_group_description~python">
+<span class="nx">
+replication_<wbr>group_<wbr>description
+<a class="anchorjs-link " href="#replication_group_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1100,7 +1510,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply_<wbr>immediately</span>
+        <span id="apply_immediately~python">
+<span class="nx">
+apply_<wbr>immediately
+<a class="anchorjs-link " href="#apply_immediately~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1109,7 +1524,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>at_<wbr>rest_<wbr>encryption_<wbr>enabled</span>
+        <span id="at_rest_encryption_enabled~python">
+<span class="nx">
+at_<wbr>rest_<wbr>encryption_<wbr>enabled
+<a class="anchorjs-link " href="#at_rest_encryption_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1118,7 +1538,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auth_<wbr>token</span>
+        <span id="auth_token~python">
+<span class="nx">
+auth_<wbr>token
+<a class="anchorjs-link " href="#auth_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1127,7 +1552,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>minor_<wbr>version_<wbr>upgrade</span>
+        <span id="auto_minor_version_upgrade~python">
+<span class="nx">
+auto_<wbr>minor_<wbr>version_<wbr>upgrade
+<a class="anchorjs-link " href="#auto_minor_version_upgrade~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1136,7 +1566,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>automatic_<wbr>failover_<wbr>enabled</span>
+        <span id="automatic_failover_enabled~python">
+<span class="nx">
+automatic_<wbr>failover_<wbr>enabled
+<a class="anchorjs-link " href="#automatic_failover_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1145,7 +1580,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zones</span>
+        <span id="availability_zones~python">
+<span class="nx">
+availability_<wbr>zones
+<a class="anchorjs-link " href="#availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1154,7 +1594,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>mode</span>
+        <span id="cluster_mode~python">
+<span class="nx">
+cluster_<wbr>mode
+<a class="anchorjs-link " href="#cluster_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Dict[Replication<wbr>Group<wbr>Cluster<wbr>Mode]</a></span>
     </dt>
@@ -1163,7 +1608,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="engine~python">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#engine~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1172,7 +1622,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine_<wbr>version</span>
+        <span id="engine_version~python">
+<span class="nx">
+engine_<wbr>version
+<a class="anchorjs-link " href="#engine_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1181,7 +1636,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1190,7 +1650,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance_<wbr>window</span>
+        <span id="maintenance_window~python">
+<span class="nx">
+maintenance_<wbr>window
+<a class="anchorjs-link " href="#maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1201,7 +1666,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>type</span>
+        <span id="node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1210,7 +1680,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification_<wbr>topic_<wbr>arn</span>
+        <span id="notification_topic_arn~python">
+<span class="nx">
+notification_<wbr>topic_<wbr>arn
+<a class="anchorjs-link " href="#notification_topic_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1221,7 +1696,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number_<wbr>cache_<wbr>clusters</span>
+        <span id="number_cache_clusters~python">
+<span class="nx">
+number_<wbr>cache_<wbr>clusters
+<a class="anchorjs-link " href="#number_cache_clusters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1230,7 +1710,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter_<wbr>group_<wbr>name</span>
+        <span id="parameter_group_name~python">
+<span class="nx">
+parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1239,7 +1724,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1248,7 +1738,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication_<wbr>group_<wbr>id</span>
+        <span id="replication_group_id~python">
+<span class="nx">
+replication_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#replication_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1257,7 +1752,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1266,7 +1766,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>names</span>
+        <span id="security_group_names~python">
+<span class="nx">
+security_<wbr>group_<wbr>names
+<a class="anchorjs-link " href="#security_group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1275,7 +1780,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>arns</span>
+        <span id="snapshot_arns~python">
+<span class="nx">
+snapshot_<wbr>arns
+<a class="anchorjs-link " href="#snapshot_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1286,7 +1796,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>name</span>
+        <span id="snapshot_name~python">
+<span class="nx">
+snapshot_<wbr>name
+<a class="anchorjs-link " href="#snapshot_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1295,7 +1810,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>retention_<wbr>limit</span>
+        <span id="snapshot_retention_limit~python">
+<span class="nx">
+snapshot_<wbr>retention_<wbr>limit
+<a class="anchorjs-link " href="#snapshot_retention_limit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1308,7 +1828,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>window</span>
+        <span id="snapshot_window~python">
+<span class="nx">
+snapshot_<wbr>window
+<a class="anchorjs-link " href="#snapshot_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1318,7 +1843,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>group_<wbr>name</span>
+        <span id="subnet_group_name~python">
+<span class="nx">
+subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1327,7 +1857,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1336,7 +1871,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>transit_<wbr>encryption_<wbr>enabled</span>
+        <span id="transit_encryption_enabled~python">
+<span class="nx">
+transit_<wbr>encryption_<wbr>enabled
+<a class="anchorjs-link " href="#transit_encryption_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1363,7 +1903,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="configurationendpointaddress~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#configurationendpointaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1372,7 +1917,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1380,7 +1930,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Member<wbr>Clusters</span>
+        <span id="memberclusters~csharp">
+<span class="nx">
+Member<wbr>Clusters
+<a class="anchorjs-link " href="#memberclusters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1389,7 +1944,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Primary<wbr>Endpoint<wbr>Address</span>
+        <span id="primaryendpointaddress~csharp">
+<span class="nx">
+Primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#primaryendpointaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1405,7 +1965,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="configurationendpointaddress~go">
+<span class="nx">
+Configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#configurationendpointaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1414,7 +1979,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1422,7 +1992,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Member<wbr>Clusters</span>
+        <span id="memberclusters~go">
+<span class="nx">
+Member<wbr>Clusters
+<a class="anchorjs-link " href="#memberclusters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1431,7 +2006,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Primary<wbr>Endpoint<wbr>Address</span>
+        <span id="primaryendpointaddress~go">
+<span class="nx">
+Primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#primaryendpointaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1447,7 +2027,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="configurationendpointaddress~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#configurationendpointaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1456,7 +2041,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1464,7 +2054,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>member<wbr>Clusters</span>
+        <span id="memberclusters~nodejs">
+<span class="nx">
+member<wbr>Clusters
+<a class="anchorjs-link " href="#memberclusters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1473,7 +2068,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>primary<wbr>Endpoint<wbr>Address</span>
+        <span id="primaryendpointaddress~nodejs">
+<span class="nx">
+primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#primaryendpointaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1489,7 +2089,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>configuration_<wbr>endpoint_<wbr>address</span>
+        <span id="configuration_endpoint_address~python">
+<span class="nx">
+configuration_<wbr>endpoint_<wbr>address
+<a class="anchorjs-link " href="#configuration_endpoint_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1498,7 +2103,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1506,7 +2116,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>member_<wbr>clusters</span>
+        <span id="member_clusters~python">
+<span class="nx">
+member_<wbr>clusters
+<a class="anchorjs-link " href="#member_clusters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1515,7 +2130,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>primary_<wbr>endpoint_<wbr>address</span>
+        <span id="primary_endpoint_address~python">
+<span class="nx">
+primary_<wbr>endpoint_<wbr>address
+<a class="anchorjs-link " href="#primary_endpoint_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1537,7 +2157,7 @@ Get an existing ReplicationGroup resource's state with the given name, ID, and o
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroupState">ReplicationGroupState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroupState">ReplicationGroupState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#ReplicationGroup">ReplicationGroup</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1545,11 +2165,11 @@ Get an existing ReplicationGroup resource's state with the given name, ID, and o
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetReplicationGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupState">ReplicationGroupState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">ReplicationGroup</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetReplicationGroup<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroupState">ReplicationGroupState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#ReplicationGroup">ReplicationGroup</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroup.html">ReplicationGroup</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroupState.html">ReplicationGroupState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroup.html">ReplicationGroup</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.ReplicationGroupState.html">ReplicationGroupState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1657,7 +2277,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="state_applyimmediately~csharp">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#state_applyimmediately~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1666,7 +2291,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>At<wbr>Rest<wbr>Encryption<wbr>Enabled</span>
+        <span id="state_atrestencryptionenabled~csharp">
+<span class="nx">
+At<wbr>Rest<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#state_atrestencryptionenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1675,7 +2305,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auth<wbr>Token</span>
+        <span id="state_authtoken~csharp">
+<span class="nx">
+Auth<wbr>Token
+<a class="anchorjs-link " href="#state_authtoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1684,7 +2319,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Minor<wbr>Version<wbr>Upgrade</span>
+        <span id="state_autominorversionupgrade~csharp">
+<span class="nx">
+Auto<wbr>Minor<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#state_autominorversionupgrade~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1693,7 +2333,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="state_automaticfailoverenabled~csharp">
+<span class="nx">
+Automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#state_automaticfailoverenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1702,7 +2347,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="state_availabilityzones~csharp">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_availabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1711,7 +2361,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Mode</span>
+        <span id="state_clustermode~csharp">
+<span class="nx">
+Cluster<wbr>Mode
+<a class="anchorjs-link " href="#state_clustermode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode<wbr>Args</a></span>
     </dt>
@@ -1720,7 +2375,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="state_configurationendpointaddress~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#state_configurationendpointaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1729,7 +2389,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="state_engine~csharp">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#state_engine~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1738,7 +2403,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="state_engineversion~csharp">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#state_engineversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1747,7 +2417,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1756,7 +2431,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~csharp">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1767,7 +2447,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Member<wbr>Clusters</span>
+        <span id="state_memberclusters~csharp">
+<span class="nx">
+Member<wbr>Clusters
+<a class="anchorjs-link " href="#state_memberclusters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1776,7 +2461,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1785,7 +2475,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~csharp">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1796,7 +2491,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Cache<wbr>Clusters</span>
+        <span id="state_numbercacheclusters~csharp">
+<span class="nx">
+Number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#state_numbercacheclusters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1805,7 +2505,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~csharp">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1814,7 +2519,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1823,7 +2533,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Primary<wbr>Endpoint<wbr>Address</span>
+        <span id="state_primaryendpointaddress~csharp">
+<span class="nx">
+Primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#state_primaryendpointaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1832,7 +2547,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Description</span>
+        <span id="state_replicationgroupdescription~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#state_replicationgroupdescription~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1841,7 +2561,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="state_replicationgroupid~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_replicationgroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1850,7 +2575,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1859,7 +2589,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1868,7 +2603,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="state_snapshotarns~csharp">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#state_snapshotarns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1879,7 +2619,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="state_snapshotname~csharp">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#state_snapshotname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1888,7 +2633,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="state_snapshotretentionlimit~csharp">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#state_snapshotretentionlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1901,7 +2651,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="state_snapshotwindow~csharp">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#state_snapshotwindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1911,7 +2666,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~csharp">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1920,7 +2680,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1929,7 +2694,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Transit<wbr>Encryption<wbr>Enabled</span>
+        <span id="state_transitencryptionenabled~csharp">
+<span class="nx">
+Transit<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#state_transitencryptionenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1945,7 +2715,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Apply<wbr>Immediately</span>
+        <span id="state_applyimmediately~go">
+<span class="nx">
+Apply<wbr>Immediately
+<a class="anchorjs-link " href="#state_applyimmediately~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1954,7 +2729,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>At<wbr>Rest<wbr>Encryption<wbr>Enabled</span>
+        <span id="state_atrestencryptionenabled~go">
+<span class="nx">
+At<wbr>Rest<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#state_atrestencryptionenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1963,7 +2743,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auth<wbr>Token</span>
+        <span id="state_authtoken~go">
+<span class="nx">
+Auth<wbr>Token
+<a class="anchorjs-link " href="#state_authtoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1972,7 +2757,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Minor<wbr>Version<wbr>Upgrade</span>
+        <span id="state_autominorversionupgrade~go">
+<span class="nx">
+Auto<wbr>Minor<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#state_autominorversionupgrade~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1981,7 +2771,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="state_automaticfailoverenabled~go">
+<span class="nx">
+Automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#state_automaticfailoverenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1990,7 +2785,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="state_availabilityzones~go">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#state_availabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1999,7 +2799,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Mode</span>
+        <span id="state_clustermode~go">
+<span class="nx">
+Cluster<wbr>Mode
+<a class="anchorjs-link " href="#state_clustermode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
@@ -2008,7 +2813,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="state_configurationendpointaddress~go">
+<span class="nx">
+Configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#state_configurationendpointaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2017,7 +2827,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine</span>
+        <span id="state_engine~go">
+<span class="nx">
+Engine
+<a class="anchorjs-link " href="#state_engine~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2026,7 +2841,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Engine<wbr>Version</span>
+        <span id="state_engineversion~go">
+<span class="nx">
+Engine<wbr>Version
+<a class="anchorjs-link " href="#state_engineversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2035,7 +2855,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2044,7 +2869,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~go">
+<span class="nx">
+Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2055,7 +2885,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Member<wbr>Clusters</span>
+        <span id="state_memberclusters~go">
+<span class="nx">
+Member<wbr>Clusters
+<a class="anchorjs-link " href="#state_memberclusters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2064,7 +2899,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2073,7 +2913,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>Notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~go">
+<span class="nx">
+Notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2084,7 +2929,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Cache<wbr>Clusters</span>
+        <span id="state_numbercacheclusters~go">
+<span class="nx">
+Number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#state_numbercacheclusters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2093,7 +2943,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~go">
+<span class="nx">
+Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2102,7 +2957,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2111,7 +2971,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Primary<wbr>Endpoint<wbr>Address</span>
+        <span id="state_primaryendpointaddress~go">
+<span class="nx">
+Primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#state_primaryendpointaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2120,7 +2985,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Description</span>
+        <span id="state_replicationgroupdescription~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#state_replicationgroupdescription~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2129,7 +2999,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="state_replicationgroupid~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_replicationgroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2138,7 +3013,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2147,7 +3027,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~go">
+<span class="nx">
+Security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2156,7 +3041,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Arns</span>
+        <span id="state_snapshotarns~go">
+<span class="nx">
+Snapshot<wbr>Arns
+<a class="anchorjs-link " href="#state_snapshotarns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2167,7 +3057,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Name</span>
+        <span id="state_snapshotname~go">
+<span class="nx">
+Snapshot<wbr>Name
+<a class="anchorjs-link " href="#state_snapshotname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2176,7 +3071,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="state_snapshotretentionlimit~go">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#state_snapshotretentionlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2189,7 +3089,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Window</span>
+        <span id="state_snapshotwindow~go">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#state_snapshotwindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2199,7 +3104,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~go">
+<span class="nx">
+Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2208,7 +3118,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2217,7 +3132,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>Transit<wbr>Encryption<wbr>Enabled</span>
+        <span id="state_transitencryptionenabled~go">
+<span class="nx">
+Transit<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#state_transitencryptionenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2233,7 +3153,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply<wbr>Immediately</span>
+        <span id="state_applyimmediately~nodejs">
+<span class="nx">
+apply<wbr>Immediately
+<a class="anchorjs-link " href="#state_applyimmediately~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2242,7 +3167,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>at<wbr>Rest<wbr>Encryption<wbr>Enabled</span>
+        <span id="state_atrestencryptionenabled~nodejs">
+<span class="nx">
+at<wbr>Rest<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#state_atrestencryptionenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2251,7 +3181,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auth<wbr>Token</span>
+        <span id="state_authtoken~nodejs">
+<span class="nx">
+auth<wbr>Token
+<a class="anchorjs-link " href="#state_authtoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2260,7 +3195,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Minor<wbr>Version<wbr>Upgrade</span>
+        <span id="state_autominorversionupgrade~nodejs">
+<span class="nx">
+auto<wbr>Minor<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#state_autominorversionupgrade~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2269,7 +3209,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="state_automaticfailoverenabled~nodejs">
+<span class="nx">
+automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#state_automaticfailoverenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2278,7 +3223,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zones</span>
+        <span id="state_availabilityzones~nodejs">
+<span class="nx">
+availability<wbr>Zones
+<a class="anchorjs-link " href="#state_availabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2287,7 +3237,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Mode</span>
+        <span id="state_clustermode~nodejs">
+<span class="nx">
+cluster<wbr>Mode
+<a class="anchorjs-link " href="#state_clustermode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Replication<wbr>Group<wbr>Cluster<wbr>Mode</a></span>
     </dt>
@@ -2296,7 +3251,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="state_configurationendpointaddress~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#state_configurationendpointaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2305,7 +3265,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="state_engine~nodejs">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#state_engine~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2314,7 +3279,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine<wbr>Version</span>
+        <span id="state_engineversion~nodejs">
+<span class="nx">
+engine<wbr>Version
+<a class="anchorjs-link " href="#state_engineversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2323,7 +3293,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2332,7 +3307,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance<wbr>Window</span>
+        <span id="state_maintenancewindow~nodejs">
+<span class="nx">
+maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_maintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2343,7 +3323,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>member<wbr>Clusters</span>
+        <span id="state_memberclusters~nodejs">
+<span class="nx">
+member<wbr>Clusters
+<a class="anchorjs-link " href="#state_memberclusters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2352,7 +3337,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Type</span>
+        <span id="state_nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2361,7 +3351,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification<wbr>Topic<wbr>Arn</span>
+        <span id="state_notificationtopicarn~nodejs">
+<span class="nx">
+notification<wbr>Topic<wbr>Arn
+<a class="anchorjs-link " href="#state_notificationtopicarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2372,7 +3367,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Cache<wbr>Clusters</span>
+        <span id="state_numbercacheclusters~nodejs">
+<span class="nx">
+number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#state_numbercacheclusters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2381,7 +3381,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter<wbr>Group<wbr>Name</span>
+        <span id="state_parametergroupname~nodejs">
+<span class="nx">
+parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_parametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2390,7 +3395,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2399,7 +3409,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>primary<wbr>Endpoint<wbr>Address</span>
+        <span id="state_primaryendpointaddress~nodejs">
+<span class="nx">
+primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#state_primaryendpointaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2408,7 +3423,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication<wbr>Group<wbr>Description</span>
+        <span id="state_replicationgroupdescription~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#state_replicationgroupdescription~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2417,7 +3437,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication<wbr>Group<wbr>Id</span>
+        <span id="state_replicationgroupid~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_replicationgroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2426,7 +3451,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="state_securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2435,7 +3465,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Names</span>
+        <span id="state_securitygroupnames~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Names
+<a class="anchorjs-link " href="#state_securitygroupnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2444,7 +3479,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Arns</span>
+        <span id="state_snapshotarns~nodejs">
+<span class="nx">
+snapshot<wbr>Arns
+<a class="anchorjs-link " href="#state_snapshotarns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2455,7 +3495,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Name</span>
+        <span id="state_snapshotname~nodejs">
+<span class="nx">
+snapshot<wbr>Name
+<a class="anchorjs-link " href="#state_snapshotname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2464,7 +3509,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="state_snapshotretentionlimit~nodejs">
+<span class="nx">
+snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#state_snapshotretentionlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2477,7 +3527,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Window</span>
+        <span id="state_snapshotwindow~nodejs">
+<span class="nx">
+snapshot<wbr>Window
+<a class="anchorjs-link " href="#state_snapshotwindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2487,7 +3542,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Group<wbr>Name</span>
+        <span id="state_subnetgroupname~nodejs">
+<span class="nx">
+subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_subnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2496,7 +3556,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2505,7 +3570,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>transit<wbr>Encryption<wbr>Enabled</span>
+        <span id="state_transitencryptionenabled~nodejs">
+<span class="nx">
+transit<wbr>Encryption<wbr>Enabled
+<a class="anchorjs-link " href="#state_transitencryptionenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2521,7 +3591,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>apply_<wbr>immediately</span>
+        <span id="state_apply_immediately~python">
+<span class="nx">
+apply_<wbr>immediately
+<a class="anchorjs-link " href="#state_apply_immediately~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2530,7 +3605,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>at_<wbr>rest_<wbr>encryption_<wbr>enabled</span>
+        <span id="state_at_rest_encryption_enabled~python">
+<span class="nx">
+at_<wbr>rest_<wbr>encryption_<wbr>enabled
+<a class="anchorjs-link " href="#state_at_rest_encryption_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2539,7 +3619,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auth_<wbr>token</span>
+        <span id="state_auth_token~python">
+<span class="nx">
+auth_<wbr>token
+<a class="anchorjs-link " href="#state_auth_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2548,7 +3633,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>minor_<wbr>version_<wbr>upgrade</span>
+        <span id="state_auto_minor_version_upgrade~python">
+<span class="nx">
+auto_<wbr>minor_<wbr>version_<wbr>upgrade
+<a class="anchorjs-link " href="#state_auto_minor_version_upgrade~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2557,7 +3647,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>automatic_<wbr>failover_<wbr>enabled</span>
+        <span id="state_automatic_failover_enabled~python">
+<span class="nx">
+automatic_<wbr>failover_<wbr>enabled
+<a class="anchorjs-link " href="#state_automatic_failover_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2566,7 +3661,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zones</span>
+        <span id="state_availability_zones~python">
+<span class="nx">
+availability_<wbr>zones
+<a class="anchorjs-link " href="#state_availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2575,7 +3675,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>mode</span>
+        <span id="state_cluster_mode~python">
+<span class="nx">
+cluster_<wbr>mode
+<a class="anchorjs-link " href="#state_cluster_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#replicationgroupclustermode">Dict[Replication<wbr>Group<wbr>Cluster<wbr>Mode]</a></span>
     </dt>
@@ -2584,7 +3689,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>configuration_<wbr>endpoint_<wbr>address</span>
+        <span id="state_configuration_endpoint_address~python">
+<span class="nx">
+configuration_<wbr>endpoint_<wbr>address
+<a class="anchorjs-link " href="#state_configuration_endpoint_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2593,7 +3703,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine</span>
+        <span id="state_engine~python">
+<span class="nx">
+engine
+<a class="anchorjs-link " href="#state_engine~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2602,7 +3717,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>engine_<wbr>version</span>
+        <span id="state_engine_version~python">
+<span class="nx">
+engine_<wbr>version
+<a class="anchorjs-link " href="#state_engine_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2611,7 +3731,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="state_kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#state_kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2620,7 +3745,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>maintenance_<wbr>window</span>
+        <span id="state_maintenance_window~python">
+<span class="nx">
+maintenance_<wbr>window
+<a class="anchorjs-link " href="#state_maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2631,7 +3761,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>member_<wbr>clusters</span>
+        <span id="state_member_clusters~python">
+<span class="nx">
+member_<wbr>clusters
+<a class="anchorjs-link " href="#state_member_clusters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2640,7 +3775,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>type</span>
+        <span id="state_node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#state_node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2649,7 +3789,12 @@ The minimum maintenance window is a 60 minute period. Example: `sun:05:00-sun:09
 
     <dt class="property-optional"
             title="Optional">
-        <span>notification_<wbr>topic_<wbr>arn</span>
+        <span id="state_notification_topic_arn~python">
+<span class="nx">
+notification_<wbr>topic_<wbr>arn
+<a class="anchorjs-link " href="#state_notification_topic_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2660,7 +3805,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>number_<wbr>cache_<wbr>clusters</span>
+        <span id="state_number_cache_clusters~python">
+<span class="nx">
+number_<wbr>cache_<wbr>clusters
+<a class="anchorjs-link " href="#state_number_cache_clusters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2669,7 +3819,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameter_<wbr>group_<wbr>name</span>
+        <span id="state_parameter_group_name~python">
+<span class="nx">
+parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2678,7 +3833,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2687,7 +3847,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>primary_<wbr>endpoint_<wbr>address</span>
+        <span id="state_primary_endpoint_address~python">
+<span class="nx">
+primary_<wbr>endpoint_<wbr>address
+<a class="anchorjs-link " href="#state_primary_endpoint_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2696,7 +3861,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication_<wbr>group_<wbr>description</span>
+        <span id="state_replication_group_description~python">
+<span class="nx">
+replication_<wbr>group_<wbr>description
+<a class="anchorjs-link " href="#state_replication_group_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2705,7 +3875,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>replication_<wbr>group_<wbr>id</span>
+        <span id="state_replication_group_id~python">
+<span class="nx">
+replication_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#state_replication_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2714,7 +3889,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="state_security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2723,7 +3903,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>names</span>
+        <span id="state_security_group_names~python">
+<span class="nx">
+security_<wbr>group_<wbr>names
+<a class="anchorjs-link " href="#state_security_group_names~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2732,7 +3917,12 @@ SNS topic to send ElastiCache notifications to. Example:
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>arns</span>
+        <span id="state_snapshot_arns~python">
+<span class="nx">
+snapshot_<wbr>arns
+<a class="anchorjs-link " href="#state_snapshot_arns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2743,7 +3933,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>name</span>
+        <span id="state_snapshot_name~python">
+<span class="nx">
+snapshot_<wbr>name
+<a class="anchorjs-link " href="#state_snapshot_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2752,7 +3947,12 @@ Example: `arn:aws:s3:::my_bucket/snapshot1.rdb`
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>retention_<wbr>limit</span>
+        <span id="state_snapshot_retention_limit~python">
+<span class="nx">
+snapshot_<wbr>retention_<wbr>limit
+<a class="anchorjs-link " href="#state_snapshot_retention_limit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2765,7 +3965,12 @@ Please note that setting a `snapshot_retention_limit` is not supported on cache.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>window</span>
+        <span id="state_snapshot_window~python">
+<span class="nx">
+snapshot_<wbr>window
+<a class="anchorjs-link " href="#state_snapshot_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2775,7 +3980,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>group_<wbr>name</span>
+        <span id="state_subnet_group_name~python">
+<span class="nx">
+subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2784,7 +3994,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2793,7 +4008,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-optional"
             title="Optional">
-        <span>transit_<wbr>encryption_<wbr>enabled</span>
+        <span id="state_transit_encryption_enabled~python">
+<span class="nx">
+transit_<wbr>encryption_<wbr>enabled
+<a class="anchorjs-link " href="#state_transit_encryption_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2835,7 +4055,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>Num<wbr>Node<wbr>Groups</span>
+        <span id="numnodegroups~csharp">
+<span class="nx">
+Num<wbr>Node<wbr>Groups
+<a class="anchorjs-link " href="#numnodegroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2844,7 +4069,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>Replicas<wbr>Per<wbr>Node<wbr>Group</span>
+        <span id="replicaspernodegroup~csharp">
+<span class="nx">
+Replicas<wbr>Per<wbr>Node<wbr>Group
+<a class="anchorjs-link " href="#replicaspernodegroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2860,7 +4090,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>Num<wbr>Node<wbr>Groups</span>
+        <span id="numnodegroups~go">
+<span class="nx">
+Num<wbr>Node<wbr>Groups
+<a class="anchorjs-link " href="#numnodegroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2869,7 +4104,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>Replicas<wbr>Per<wbr>Node<wbr>Group</span>
+        <span id="replicaspernodegroup~go">
+<span class="nx">
+Replicas<wbr>Per<wbr>Node<wbr>Group
+<a class="anchorjs-link " href="#replicaspernodegroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2885,7 +4125,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>num<wbr>Node<wbr>Groups</span>
+        <span id="numnodegroups~nodejs">
+<span class="nx">
+num<wbr>Node<wbr>Groups
+<a class="anchorjs-link " href="#numnodegroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2894,7 +4139,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>replicas<wbr>Per<wbr>Node<wbr>Group</span>
+        <span id="replicaspernodegroup~nodejs">
+<span class="nx">
+replicas<wbr>Per<wbr>Node<wbr>Group
+<a class="anchorjs-link " href="#replicaspernodegroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2910,7 +4160,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>num<wbr>Node<wbr>Groups</span>
+        <span id="numnodegroups~python">
+<span class="nx">
+num<wbr>Node<wbr>Groups
+<a class="anchorjs-link " href="#numnodegroups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2919,7 +4174,12 @@ begin taking a daily snapshot of your cache cluster. The minimum snapshot window
 
     <dt class="property-required"
             title="Required">
-        <span>replicas<wbr>Per<wbr>Node<wbr>Group</span>
+        <span id="replicaspernodegroup~python">
+<span class="nx">
+replicas<wbr>Per<wbr>Node<wbr>Group
+<a class="anchorjs-link " href="#replicaspernodegroup~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

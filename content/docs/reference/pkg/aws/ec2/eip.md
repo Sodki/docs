@@ -62,19 +62,19 @@ const lb = new aws.ec2.Eip("lb", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Eip">Eip</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipArgs">EipArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Eip">Eip</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipArgs">EipArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Eip</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>associate_with_private_ip=None<span class="p">, </span>customer_owned_ipv4_pool=None<span class="p">, </span>instance=None<span class="p">, </span>network_interface=None<span class="p">, </span>public_ipv4_pool=None<span class="p">, </span>tags=None<span class="p">, </span>vpc=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#Eip">Eip</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>associate_with_private_ip=None<span class="p">, </span>customer_owned_ipv4_pool=None<span class="p">, </span>instance=None<span class="p">, </span>network_interface=None<span class="p">, </span>public_ipv4_pool=None<span class="p">, </span>tags=None<span class="p">, </span>vpc=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewEip<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipArgs">EipArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Eip">Eip</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Eip">NewEip</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipArgs">EipArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Eip">Eip</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Eip.html">Eip</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipArgs.html">EipArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Eip.html">Eip</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipArgs.html">EipArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -240,7 +240,12 @@ The Eip resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>With<wbr>Private<wbr>Ip</span>
+        <span id="associatewithprivateip~csharp">
+<span class="nx">
+Associate<wbr>With<wbr>Private<wbr>Ip
+<a class="anchorjs-link " href="#associatewithprivateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -251,7 +256,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Owned<wbr>Ipv4Pool</span>
+        <span id="customerownedipv4pool~csharp">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#customerownedipv4pool~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -260,7 +270,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance</span>
+        <span id="instance~csharp">
+<span class="nx">
+Instance
+<a class="anchorjs-link " href="#instance~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -269,7 +284,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interface</span>
+        <span id="networkinterface~csharp">
+<span class="nx">
+Network<wbr>Interface
+<a class="anchorjs-link " href="#networkinterface~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -278,7 +298,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ipv4Pool</span>
+        <span id="publicipv4pool~csharp">
+<span class="nx">
+Public<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#publicipv4pool~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -287,7 +312,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -296,7 +326,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc</span>
+        <span id="vpc~csharp">
+<span class="nx">
+Vpc
+<a class="anchorjs-link " href="#vpc~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -312,7 +347,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>With<wbr>Private<wbr>Ip</span>
+        <span id="associatewithprivateip~go">
+<span class="nx">
+Associate<wbr>With<wbr>Private<wbr>Ip
+<a class="anchorjs-link " href="#associatewithprivateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -323,7 +363,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Owned<wbr>Ipv4Pool</span>
+        <span id="customerownedipv4pool~go">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#customerownedipv4pool~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -332,7 +377,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance</span>
+        <span id="instance~go">
+<span class="nx">
+Instance
+<a class="anchorjs-link " href="#instance~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -341,7 +391,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interface</span>
+        <span id="networkinterface~go">
+<span class="nx">
+Network<wbr>Interface
+<a class="anchorjs-link " href="#networkinterface~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -350,7 +405,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ipv4Pool</span>
+        <span id="publicipv4pool~go">
+<span class="nx">
+Public<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#publicipv4pool~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -359,7 +419,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -368,7 +433,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc</span>
+        <span id="vpc~go">
+<span class="nx">
+Vpc
+<a class="anchorjs-link " href="#vpc~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -384,7 +454,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate<wbr>With<wbr>Private<wbr>Ip</span>
+        <span id="associatewithprivateip~nodejs">
+<span class="nx">
+associate<wbr>With<wbr>Private<wbr>Ip
+<a class="anchorjs-link " href="#associatewithprivateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -395,7 +470,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer<wbr>Owned<wbr>Ipv4Pool</span>
+        <span id="customerownedipv4pool~nodejs">
+<span class="nx">
+customer<wbr>Owned<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#customerownedipv4pool~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -404,7 +484,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance</span>
+        <span id="instance~nodejs">
+<span class="nx">
+instance
+<a class="anchorjs-link " href="#instance~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -413,7 +498,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interface</span>
+        <span id="networkinterface~nodejs">
+<span class="nx">
+network<wbr>Interface
+<a class="anchorjs-link " href="#networkinterface~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -422,7 +512,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Ipv4Pool</span>
+        <span id="publicipv4pool~nodejs">
+<span class="nx">
+public<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#publicipv4pool~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -431,7 +526,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -440,7 +540,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc</span>
+        <span id="vpc~nodejs">
+<span class="nx">
+vpc
+<a class="anchorjs-link " href="#vpc~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -456,7 +561,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate_<wbr>with_<wbr>private_<wbr>ip</span>
+        <span id="associate_with_private_ip~python">
+<span class="nx">
+associate_<wbr>with_<wbr>private_<wbr>ip
+<a class="anchorjs-link " href="#associate_with_private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -467,7 +577,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer_<wbr>owned_<wbr>ipv4_<wbr>pool</span>
+        <span id="customer_owned_ipv4_pool~python">
+<span class="nx">
+customer_<wbr>owned_<wbr>ipv4_<wbr>pool
+<a class="anchorjs-link " href="#customer_owned_ipv4_pool~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -476,7 +591,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance</span>
+        <span id="instance~python">
+<span class="nx">
+instance
+<a class="anchorjs-link " href="#instance~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -485,7 +605,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interface</span>
+        <span id="network_interface~python">
+<span class="nx">
+network_<wbr>interface
+<a class="anchorjs-link " href="#network_interface~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -494,7 +619,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>ipv4_<wbr>pool</span>
+        <span id="public_ipv4_pool~python">
+<span class="nx">
+public_<wbr>ipv4_<wbr>pool
+<a class="anchorjs-link " href="#public_ipv4_pool~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -503,7 +633,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -512,7 +647,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc</span>
+        <span id="vpc~python">
+<span class="nx">
+vpc
+<a class="anchorjs-link " href="#vpc~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -539,7 +679,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Allocation<wbr>Id</span>
+        <span id="allocationid~csharp">
+<span class="nx">
+Allocation<wbr>Id
+<a class="anchorjs-link " href="#allocationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -547,7 +692,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Association<wbr>Id</span>
+        <span id="associationid~csharp">
+<span class="nx">
+Association<wbr>Id
+<a class="anchorjs-link " href="#associationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -555,7 +705,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Customer<wbr>Owned<wbr>Ip</span>
+        <span id="customerownedip~csharp">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ip
+<a class="anchorjs-link " href="#customerownedip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -564,7 +719,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Domain</span>
+        <span id="domain~csharp">
+<span class="nx">
+Domain
+<a class="anchorjs-link " href="#domain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -572,7 +732,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -580,7 +745,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -589,7 +759,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -598,7 +773,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -607,7 +787,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -623,7 +808,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Allocation<wbr>Id</span>
+        <span id="allocationid~go">
+<span class="nx">
+Allocation<wbr>Id
+<a class="anchorjs-link " href="#allocationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -631,7 +821,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Association<wbr>Id</span>
+        <span id="associationid~go">
+<span class="nx">
+Association<wbr>Id
+<a class="anchorjs-link " href="#associationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -639,7 +834,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Customer<wbr>Owned<wbr>Ip</span>
+        <span id="customerownedip~go">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ip
+<a class="anchorjs-link " href="#customerownedip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -648,7 +848,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Domain</span>
+        <span id="domain~go">
+<span class="nx">
+Domain
+<a class="anchorjs-link " href="#domain~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -656,7 +861,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -664,7 +874,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -673,7 +888,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -682,7 +902,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -691,7 +916,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -707,7 +937,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>allocation<wbr>Id</span>
+        <span id="allocationid~nodejs">
+<span class="nx">
+allocation<wbr>Id
+<a class="anchorjs-link " href="#allocationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -715,7 +950,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>association<wbr>Id</span>
+        <span id="associationid~nodejs">
+<span class="nx">
+association<wbr>Id
+<a class="anchorjs-link " href="#associationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -723,7 +963,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>customer<wbr>Owned<wbr>Ip</span>
+        <span id="customerownedip~nodejs">
+<span class="nx">
+customer<wbr>Owned<wbr>Ip
+<a class="anchorjs-link " href="#customerownedip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -732,7 +977,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>domain</span>
+        <span id="domain~nodejs">
+<span class="nx">
+domain
+<a class="anchorjs-link " href="#domain~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -740,7 +990,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -748,7 +1003,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>private<wbr>Dns</span>
+        <span id="privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -757,7 +1017,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>private<wbr>Ip</span>
+        <span id="privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -766,7 +1031,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>public<wbr>Dns</span>
+        <span id="publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -775,7 +1045,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>public<wbr>Ip</span>
+        <span id="publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -791,7 +1066,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>allocation_<wbr>id</span>
+        <span id="allocation_id~python">
+<span class="nx">
+allocation_<wbr>id
+<a class="anchorjs-link " href="#allocation_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -799,7 +1079,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>association_<wbr>id</span>
+        <span id="association_id~python">
+<span class="nx">
+association_<wbr>id
+<a class="anchorjs-link " href="#association_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -807,7 +1092,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>customer_<wbr>owned_<wbr>ip</span>
+        <span id="customer_owned_ip~python">
+<span class="nx">
+customer_<wbr>owned_<wbr>ip
+<a class="anchorjs-link " href="#customer_owned_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -816,7 +1106,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>domain</span>
+        <span id="domain~python">
+<span class="nx">
+domain
+<a class="anchorjs-link " href="#domain~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -824,7 +1119,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -832,7 +1132,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>private_<wbr>dns</span>
+        <span id="private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -841,7 +1146,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>private_<wbr>ip</span>
+        <span id="private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -850,7 +1160,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>public_<wbr>dns</span>
+        <span id="public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -859,7 +1174,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>public_<wbr>ip</span>
+        <span id="public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -881,7 +1201,7 @@ Get an existing Eip resource's state with the given name, ID, and optional extra
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipState">EipState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Eip">Eip</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#EipState">EipState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#Eip">Eip</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -889,11 +1209,11 @@ Get an existing Eip resource's state with the given name, ID, and optional extra
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetEip<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipState">EipState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Eip">Eip</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetEip<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#EipState">EipState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#Eip">Eip</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Eip.html">Eip</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipState.html">EipState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.Eip.html">Eip</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.EipState.html">EipState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1001,7 +1321,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allocation<wbr>Id</span>
+        <span id="state_allocationid~csharp">
+<span class="nx">
+Allocation<wbr>Id
+<a class="anchorjs-link " href="#state_allocationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1009,7 +1334,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>With<wbr>Private<wbr>Ip</span>
+        <span id="state_associatewithprivateip~csharp">
+<span class="nx">
+Associate<wbr>With<wbr>Private<wbr>Ip
+<a class="anchorjs-link " href="#state_associatewithprivateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1020,7 +1350,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Association<wbr>Id</span>
+        <span id="state_associationid~csharp">
+<span class="nx">
+Association<wbr>Id
+<a class="anchorjs-link " href="#state_associationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1028,7 +1363,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Owned<wbr>Ip</span>
+        <span id="state_customerownedip~csharp">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ip
+<a class="anchorjs-link " href="#state_customerownedip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1037,7 +1377,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Owned<wbr>Ipv4Pool</span>
+        <span id="state_customerownedipv4pool~csharp">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#state_customerownedipv4pool~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1046,7 +1391,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain</span>
+        <span id="state_domain~csharp">
+<span class="nx">
+Domain
+<a class="anchorjs-link " href="#state_domain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1054,7 +1404,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance</span>
+        <span id="state_instance~csharp">
+<span class="nx">
+Instance
+<a class="anchorjs-link " href="#state_instance~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1063,7 +1418,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interface</span>
+        <span id="state_networkinterface~csharp">
+<span class="nx">
+Network<wbr>Interface
+<a class="anchorjs-link " href="#state_networkinterface~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1072,7 +1432,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="state_privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1081,7 +1446,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="state_privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1090,7 +1460,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="state_publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1099,7 +1474,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="state_publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1108,7 +1488,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ipv4Pool</span>
+        <span id="state_publicipv4pool~csharp">
+<span class="nx">
+Public<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#state_publicipv4pool~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1117,7 +1502,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1126,7 +1516,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc</span>
+        <span id="state_vpc~csharp">
+<span class="nx">
+Vpc
+<a class="anchorjs-link " href="#state_vpc~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1142,7 +1537,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allocation<wbr>Id</span>
+        <span id="state_allocationid~go">
+<span class="nx">
+Allocation<wbr>Id
+<a class="anchorjs-link " href="#state_allocationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1150,7 +1550,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>With<wbr>Private<wbr>Ip</span>
+        <span id="state_associatewithprivateip~go">
+<span class="nx">
+Associate<wbr>With<wbr>Private<wbr>Ip
+<a class="anchorjs-link " href="#state_associatewithprivateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1161,7 +1566,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Association<wbr>Id</span>
+        <span id="state_associationid~go">
+<span class="nx">
+Association<wbr>Id
+<a class="anchorjs-link " href="#state_associationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1169,7 +1579,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Owned<wbr>Ip</span>
+        <span id="state_customerownedip~go">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ip
+<a class="anchorjs-link " href="#state_customerownedip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1178,7 +1593,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customer<wbr>Owned<wbr>Ipv4Pool</span>
+        <span id="state_customerownedipv4pool~go">
+<span class="nx">
+Customer<wbr>Owned<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#state_customerownedipv4pool~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1187,7 +1607,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain</span>
+        <span id="state_domain~go">
+<span class="nx">
+Domain
+<a class="anchorjs-link " href="#state_domain~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1195,7 +1620,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance</span>
+        <span id="state_instance~go">
+<span class="nx">
+Instance
+<a class="anchorjs-link " href="#state_instance~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1204,7 +1634,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interface</span>
+        <span id="state_networkinterface~go">
+<span class="nx">
+Network<wbr>Interface
+<a class="anchorjs-link " href="#state_networkinterface~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1213,7 +1648,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="state_privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1222,7 +1662,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="state_privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1231,7 +1676,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="state_publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1240,7 +1690,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="state_publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1249,7 +1704,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ipv4Pool</span>
+        <span id="state_publicipv4pool~go">
+<span class="nx">
+Public<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#state_publicipv4pool~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1258,7 +1718,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1267,7 +1732,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc</span>
+        <span id="state_vpc~go">
+<span class="nx">
+Vpc
+<a class="anchorjs-link " href="#state_vpc~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1283,7 +1753,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allocation<wbr>Id</span>
+        <span id="state_allocationid~nodejs">
+<span class="nx">
+allocation<wbr>Id
+<a class="anchorjs-link " href="#state_allocationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1291,7 +1766,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate<wbr>With<wbr>Private<wbr>Ip</span>
+        <span id="state_associatewithprivateip~nodejs">
+<span class="nx">
+associate<wbr>With<wbr>Private<wbr>Ip
+<a class="anchorjs-link " href="#state_associatewithprivateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1302,7 +1782,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>association<wbr>Id</span>
+        <span id="state_associationid~nodejs">
+<span class="nx">
+association<wbr>Id
+<a class="anchorjs-link " href="#state_associationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1310,7 +1795,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer<wbr>Owned<wbr>Ip</span>
+        <span id="state_customerownedip~nodejs">
+<span class="nx">
+customer<wbr>Owned<wbr>Ip
+<a class="anchorjs-link " href="#state_customerownedip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1319,7 +1809,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer<wbr>Owned<wbr>Ipv4Pool</span>
+        <span id="state_customerownedipv4pool~nodejs">
+<span class="nx">
+customer<wbr>Owned<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#state_customerownedipv4pool~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1328,7 +1823,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain</span>
+        <span id="state_domain~nodejs">
+<span class="nx">
+domain
+<a class="anchorjs-link " href="#state_domain~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1336,7 +1836,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance</span>
+        <span id="state_instance~nodejs">
+<span class="nx">
+instance
+<a class="anchorjs-link " href="#state_instance~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1345,7 +1850,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interface</span>
+        <span id="state_networkinterface~nodejs">
+<span class="nx">
+network<wbr>Interface
+<a class="anchorjs-link " href="#state_networkinterface~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1354,7 +1864,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Dns</span>
+        <span id="state_privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1363,7 +1878,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Ip</span>
+        <span id="state_privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1372,7 +1892,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Dns</span>
+        <span id="state_publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1381,7 +1906,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Ip</span>
+        <span id="state_publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1390,7 +1920,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Ipv4Pool</span>
+        <span id="state_publicipv4pool~nodejs">
+<span class="nx">
+public<wbr>Ipv4Pool
+<a class="anchorjs-link " href="#state_publicipv4pool~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1399,7 +1934,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1408,7 +1948,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc</span>
+        <span id="state_vpc~nodejs">
+<span class="nx">
+vpc
+<a class="anchorjs-link " href="#state_vpc~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1424,7 +1969,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allocation_<wbr>id</span>
+        <span id="state_allocation_id~python">
+<span class="nx">
+allocation_<wbr>id
+<a class="anchorjs-link " href="#state_allocation_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1432,7 +1982,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate_<wbr>with_<wbr>private_<wbr>ip</span>
+        <span id="state_associate_with_private_ip~python">
+<span class="nx">
+associate_<wbr>with_<wbr>private_<wbr>ip
+<a class="anchorjs-link " href="#state_associate_with_private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1443,7 +1998,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>association_<wbr>id</span>
+        <span id="state_association_id~python">
+<span class="nx">
+association_<wbr>id
+<a class="anchorjs-link " href="#state_association_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1451,7 +2011,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer_<wbr>owned_<wbr>ip</span>
+        <span id="state_customer_owned_ip~python">
+<span class="nx">
+customer_<wbr>owned_<wbr>ip
+<a class="anchorjs-link " href="#state_customer_owned_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1460,7 +2025,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customer_<wbr>owned_<wbr>ipv4_<wbr>pool</span>
+        <span id="state_customer_owned_ipv4_pool~python">
+<span class="nx">
+customer_<wbr>owned_<wbr>ipv4_<wbr>pool
+<a class="anchorjs-link " href="#state_customer_owned_ipv4_pool~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1469,7 +2039,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain</span>
+        <span id="state_domain~python">
+<span class="nx">
+domain
+<a class="anchorjs-link " href="#state_domain~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1477,7 +2052,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance</span>
+        <span id="state_instance~python">
+<span class="nx">
+instance
+<a class="anchorjs-link " href="#state_instance~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1486,7 +2066,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interface</span>
+        <span id="state_network_interface~python">
+<span class="nx">
+network_<wbr>interface
+<a class="anchorjs-link " href="#state_network_interface~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1495,7 +2080,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>dns</span>
+        <span id="state_private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#state_private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1504,7 +2094,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>ip</span>
+        <span id="state_private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#state_private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1513,7 +2108,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>dns</span>
+        <span id="state_public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#state_public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1522,7 +2122,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>ip</span>
+        <span id="state_public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#state_public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1531,7 +2136,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>ipv4_<wbr>pool</span>
+        <span id="state_public_ipv4_pool~python">
+<span class="nx">
+public_<wbr>ipv4_<wbr>pool
+<a class="anchorjs-link " href="#state_public_ipv4_pool~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1540,7 +2150,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1549,7 +2164,12 @@ the Elastic IP address is associated with the primary private IP address.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc</span>
+        <span id="state_vpc~python">
+<span class="nx">
+vpc
+<a class="anchorjs-link " href="#state_vpc~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>

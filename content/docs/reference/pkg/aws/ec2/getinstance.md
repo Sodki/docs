@@ -77,7 +77,7 @@ const foo = pulumi.output(aws.ec2.getInstance({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstance<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetInstanceArgs">GetInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetInstanceResult">GetInstanceResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstance<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetInstanceArgs">GetInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetInstanceResult">GetInstanceResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -87,13 +87,16 @@ const foo = pulumi.output(aws.ec2.getInstance({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupInstanceArgs">LookupInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupInstanceResult">LookupInstanceResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstance<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupInstanceArgs">LookupInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupInstanceResult">LookupInstanceResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupInstance` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstance </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetInstanceResult.html">GetInstanceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetInstanceArgs.html">GetInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetInstanceResult.html">GetInstanceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetInstanceArgs.html">GetInstanceArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -108,7 +111,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List&lt;Get<wbr>Instance<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
@@ -119,7 +127,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~csharp">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -128,7 +141,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>User<wbr>Data</span>
+        <span id="getuserdata~csharp">
+<span class="nx">
+Get<wbr>User<wbr>Data
+<a class="anchorjs-link " href="#getuserdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -137,7 +155,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Id</span>
+        <span id="instanceid~csharp">
+<span class="nx">
+Instance<wbr>Id
+<a class="anchorjs-link " href="#instanceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -146,7 +169,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Tags</span>
+        <span id="instancetags~csharp">
+<span class="nx">
+Instance<wbr>Tags
+<a class="anchorjs-link " href="#instancetags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -156,7 +184,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -172,7 +205,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">[]Get<wbr>Instance<wbr>Filter</a></span>
     </dt>
@@ -183,7 +221,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~go">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -192,7 +235,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>User<wbr>Data</span>
+        <span id="getuserdata~go">
+<span class="nx">
+Get<wbr>User<wbr>Data
+<a class="anchorjs-link " href="#getuserdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -201,7 +249,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Id</span>
+        <span id="instanceid~go">
+<span class="nx">
+Instance<wbr>Id
+<a class="anchorjs-link " href="#instanceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -210,7 +263,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Tags</span>
+        <span id="instancetags~go">
+<span class="nx">
+Instance<wbr>Tags
+<a class="anchorjs-link " href="#instancetags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -220,7 +278,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -236,7 +299,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">Get<wbr>Instance<wbr>Filter[]</a></span>
     </dt>
@@ -247,7 +315,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~nodejs">
+<span class="nx">
+get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -256,7 +329,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>get<wbr>User<wbr>Data</span>
+        <span id="getuserdata~nodejs">
+<span class="nx">
+get<wbr>User<wbr>Data
+<a class="anchorjs-link " href="#getuserdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -265,7 +343,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Id</span>
+        <span id="instanceid~nodejs">
+<span class="nx">
+instance<wbr>Id
+<a class="anchorjs-link " href="#instanceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -274,7 +357,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Tags</span>
+        <span id="instancetags~nodejs">
+<span class="nx">
+instance<wbr>Tags
+<a class="anchorjs-link " href="#instancetags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -284,7 +372,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -300,7 +393,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List[Get<wbr>Instance<wbr>Filter]</a></span>
     </dt>
@@ -311,7 +409,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>get_<wbr>password_<wbr>data</span>
+        <span id="get_password_data~python">
+<span class="nx">
+get_<wbr>password_<wbr>data
+<a class="anchorjs-link " href="#get_password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -320,7 +423,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>get_<wbr>user_<wbr>data</span>
+        <span id="get_user_data~python">
+<span class="nx">
+get_<wbr>user_<wbr>data
+<a class="anchorjs-link " href="#get_user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -329,7 +437,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>id</span>
+        <span id="instance_id~python">
+<span class="nx">
+instance_<wbr>id
+<a class="anchorjs-link " href="#instance_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -338,7 +451,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>tags</span>
+        <span id="instance_tags~python">
+<span class="nx">
+instance_<wbr>tags
+<a class="anchorjs-link " href="#instance_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -348,7 +466,12 @@ exactly match a pair on the desired Instance.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -377,7 +500,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ami</span>
+        <span id="ami~csharp">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#ami~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -386,7 +514,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -395,7 +528,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~csharp">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -404,7 +542,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -413,7 +556,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Credit<wbr>Specifications</span>
+        <span id="creditspecifications~csharp">
+<span class="nx">
+Credit<wbr>Specifications
+<a class="anchorjs-link " href="#creditspecifications~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">List&lt;Get<wbr>Instance<wbr>Credit<wbr>Specification&gt;</a></span>
     </dt>
@@ -422,7 +570,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~csharp">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -430,7 +583,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">List&lt;Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device&gt;</a></span>
     </dt>
@@ -439,7 +597,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -448,7 +611,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">List&lt;Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device&gt;</a></span>
     </dt>
@@ -457,7 +625,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Host<wbr>Id</span>
+        <span id="hostid~csharp">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#hostid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -466,7 +639,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -475,7 +653,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -484,7 +667,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>State</span>
+        <span id="instancestate~csharp">
+<span class="nx">
+Instance<wbr>State
+<a class="anchorjs-link " href="#instancestate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -493,7 +681,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Tags</span>
+        <span id="instancetags~csharp">
+<span class="nx">
+Instance<wbr>Tags
+<a class="anchorjs-link " href="#instancetags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -501,7 +694,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -510,7 +708,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~csharp">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -519,7 +722,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Metadata<wbr>Options</span>
+        <span id="metadataoptions~csharp">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">List&lt;Get<wbr>Instance<wbr>Metadata<wbr>Option&gt;</a></span>
     </dt>
@@ -528,7 +736,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Monitoring</span>
+        <span id="monitoring~csharp">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -537,7 +750,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~csharp">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -546,7 +764,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Outpost<wbr>Arn</span>
+        <span id="outpostarn~csharp">
+<span class="nx">
+Outpost<wbr>Arn
+<a class="anchorjs-link " href="#outpostarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -555,7 +778,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Password<wbr>Data</span>
+        <span id="passworddata~csharp">
+<span class="nx">
+Password<wbr>Data
+<a class="anchorjs-link " href="#passworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -567,7 +795,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>Placement<wbr>Group</span>
+        <span id="placementgroup~csharp">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -576,7 +809,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -587,7 +825,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -596,7 +839,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -606,7 +854,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -615,7 +868,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~csharp">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">List&lt;Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device&gt;</a></span>
     </dt>
@@ -624,7 +882,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~csharp">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -633,7 +896,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Source<wbr>Dest<wbr>Check</span>
+        <span id="sourcedestcheck~csharp">
+<span class="nx">
+Source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#sourcedestcheck~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -642,7 +910,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -651,7 +924,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -660,7 +938,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Tenancy</span>
+        <span id="tenancy~csharp">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -669,7 +952,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>User<wbr>Data</span>
+        <span id="userdata~csharp">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -678,7 +966,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>User<wbr>Data<wbr>Base64</span>
+        <span id="userdatabase64~csharp">
+<span class="nx">
+User<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#userdatabase64~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -687,7 +980,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -696,7 +994,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List&lt;Get<wbr>Instance<wbr>Filter&gt;</a></span>
     </dt>
@@ -704,7 +1007,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~csharp">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -712,7 +1020,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Get<wbr>User<wbr>Data</span>
+        <span id="getuserdata~csharp">
+<span class="nx">
+Get<wbr>User<wbr>Data
+<a class="anchorjs-link " href="#getuserdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -720,7 +1033,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Id</span>
+        <span id="instanceid~csharp">
+<span class="nx">
+Instance<wbr>Id
+<a class="anchorjs-link " href="#instanceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -735,7 +1053,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Ami</span>
+        <span id="ami~go">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#ami~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -744,7 +1067,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -753,7 +1081,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~go">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -762,7 +1095,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -771,7 +1109,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Credit<wbr>Specifications</span>
+        <span id="creditspecifications~go">
+<span class="nx">
+Credit<wbr>Specifications
+<a class="anchorjs-link " href="#creditspecifications~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">[]Get<wbr>Instance<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -780,7 +1123,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~go">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -788,7 +1136,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">[]Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -797,7 +1150,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -806,7 +1164,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">[]Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -815,7 +1178,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Host<wbr>Id</span>
+        <span id="hostid~go">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#hostid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -824,7 +1192,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -833,7 +1206,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -842,7 +1220,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>State</span>
+        <span id="instancestate~go">
+<span class="nx">
+Instance<wbr>State
+<a class="anchorjs-link " href="#instancestate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -851,7 +1234,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Tags</span>
+        <span id="instancetags~go">
+<span class="nx">
+Instance<wbr>Tags
+<a class="anchorjs-link " href="#instancetags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -859,7 +1247,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -868,7 +1261,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~go">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -877,7 +1275,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Metadata<wbr>Options</span>
+        <span id="metadataoptions~go">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">[]Get<wbr>Instance<wbr>Metadata<wbr>Option</a></span>
     </dt>
@@ -886,7 +1289,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Monitoring</span>
+        <span id="monitoring~go">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -895,7 +1303,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~go">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -904,7 +1317,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Outpost<wbr>Arn</span>
+        <span id="outpostarn~go">
+<span class="nx">
+Outpost<wbr>Arn
+<a class="anchorjs-link " href="#outpostarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -913,7 +1331,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Password<wbr>Data</span>
+        <span id="passworddata~go">
+<span class="nx">
+Password<wbr>Data
+<a class="anchorjs-link " href="#passworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -925,7 +1348,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>Placement<wbr>Group</span>
+        <span id="placementgroup~go">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -934,7 +1362,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -945,7 +1378,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -954,7 +1392,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -964,7 +1407,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -973,7 +1421,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~go">
+<span class="nx">
+Root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">[]Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -982,7 +1435,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~go">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -991,7 +1449,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Source<wbr>Dest<wbr>Check</span>
+        <span id="sourcedestcheck~go">
+<span class="nx">
+Source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#sourcedestcheck~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1000,7 +1463,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1009,7 +1477,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1018,7 +1491,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Tenancy</span>
+        <span id="tenancy~go">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1027,7 +1505,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>User<wbr>Data</span>
+        <span id="userdata~go">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1036,7 +1519,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>User<wbr>Data<wbr>Base64</span>
+        <span id="userdatabase64~go">
+<span class="nx">
+User<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#userdatabase64~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1045,7 +1533,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1054,7 +1547,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">[]Get<wbr>Instance<wbr>Filter</a></span>
     </dt>
@@ -1062,7 +1560,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~go">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1070,7 +1573,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Get<wbr>User<wbr>Data</span>
+        <span id="getuserdata~go">
+<span class="nx">
+Get<wbr>User<wbr>Data
+<a class="anchorjs-link " href="#getuserdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1078,7 +1586,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Id</span>
+        <span id="instanceid~go">
+<span class="nx">
+Instance<wbr>Id
+<a class="anchorjs-link " href="#instanceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1093,7 +1606,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ami</span>
+        <span id="ami~nodejs">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#ami~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1102,7 +1620,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1111,7 +1634,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~nodejs">
+<span class="nx">
+associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1120,7 +1648,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1129,7 +1662,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>credit<wbr>Specifications</span>
+        <span id="creditspecifications~nodejs">
+<span class="nx">
+credit<wbr>Specifications
+<a class="anchorjs-link " href="#creditspecifications~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">Get<wbr>Instance<wbr>Credit<wbr>Specification[]</a></span>
     </dt>
@@ -1138,7 +1676,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~nodejs">
+<span class="nx">
+disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1146,7 +1689,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1155,7 +1703,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1164,7 +1717,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1173,7 +1731,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>host<wbr>Id</span>
+        <span id="hostid~nodejs">
+<span class="nx">
+host<wbr>Id
+<a class="anchorjs-link " href="#hostid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1182,7 +1745,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1191,7 +1759,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1200,7 +1773,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>State</span>
+        <span id="instancestate~nodejs">
+<span class="nx">
+instance<wbr>State
+<a class="anchorjs-link " href="#instancestate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1209,7 +1787,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>Tags</span>
+        <span id="instancetags~nodejs">
+<span class="nx">
+instance<wbr>Tags
+<a class="anchorjs-link " href="#instancetags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1217,7 +1800,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1226,7 +1814,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>key<wbr>Name</span>
+        <span id="keyname~nodejs">
+<span class="nx">
+key<wbr>Name
+<a class="anchorjs-link " href="#keyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1235,7 +1828,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>metadata<wbr>Options</span>
+        <span id="metadataoptions~nodejs">
+<span class="nx">
+metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">Get<wbr>Instance<wbr>Metadata<wbr>Option[]</a></span>
     </dt>
@@ -1244,7 +1842,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>monitoring</span>
+        <span id="monitoring~nodejs">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1253,7 +1856,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~nodejs">
+<span class="nx">
+network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1262,7 +1870,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>outpost<wbr>Arn</span>
+        <span id="outpostarn~nodejs">
+<span class="nx">
+outpost<wbr>Arn
+<a class="anchorjs-link " href="#outpostarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1271,7 +1884,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>password<wbr>Data</span>
+        <span id="passworddata~nodejs">
+<span class="nx">
+password<wbr>Data
+<a class="anchorjs-link " href="#passworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1283,7 +1901,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>placement<wbr>Group</span>
+        <span id="placementgroup~nodejs">
+<span class="nx">
+placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1292,7 +1915,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>private<wbr>Dns</span>
+        <span id="privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1303,7 +1931,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>private<wbr>Ip</span>
+        <span id="privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1312,7 +1945,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>public<wbr>Dns</span>
+        <span id="publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1322,7 +1960,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>public<wbr>Ip</span>
+        <span id="publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1331,7 +1974,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>root<wbr>Block<wbr>Devices</span>
+        <span id="rootblockdevices~nodejs">
+<span class="nx">
+root<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#rootblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1340,7 +1988,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>security<wbr>Groups</span>
+        <span id="securitygroups~nodejs">
+<span class="nx">
+security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1349,7 +2002,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>source<wbr>Dest<wbr>Check</span>
+        <span id="sourcedestcheck~nodejs">
+<span class="nx">
+source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#sourcedestcheck~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1358,7 +2016,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1367,7 +2030,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1376,7 +2044,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>tenancy</span>
+        <span id="tenancy~nodejs">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1385,7 +2058,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>user<wbr>Data</span>
+        <span id="userdata~nodejs">
+<span class="nx">
+user<wbr>Data
+<a class="anchorjs-link " href="#userdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1394,7 +2072,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>user<wbr>Data<wbr>Base64</span>
+        <span id="userdatabase64~nodejs">
+<span class="nx">
+user<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#userdatabase64~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1403,7 +2086,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1412,7 +2100,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">Get<wbr>Instance<wbr>Filter[]</a></span>
     </dt>
@@ -1420,7 +2113,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~nodejs">
+<span class="nx">
+get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1428,7 +2126,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>get<wbr>User<wbr>Data</span>
+        <span id="getuserdata~nodejs">
+<span class="nx">
+get<wbr>User<wbr>Data
+<a class="anchorjs-link " href="#getuserdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1436,7 +2139,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>Id</span>
+        <span id="instanceid~nodejs">
+<span class="nx">
+instance<wbr>Id
+<a class="anchorjs-link " href="#instanceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1451,7 +2159,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ami</span>
+        <span id="ami~python">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#ami~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1460,7 +2173,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1469,7 +2187,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>associate_<wbr>public_<wbr>ip_<wbr>address</span>
+        <span id="associate_public_ip_address~python">
+<span class="nx">
+associate_<wbr>public_<wbr>ip_<wbr>address
+<a class="anchorjs-link " href="#associate_public_ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1478,7 +2201,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1487,7 +2215,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>credit_<wbr>specifications</span>
+        <span id="credit_specifications~python">
+<span class="nx">
+credit_<wbr>specifications
+<a class="anchorjs-link " href="#credit_specifications~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancecreditspecification">List[Get<wbr>Instance<wbr>Credit<wbr>Specification]</a></span>
     </dt>
@@ -1496,7 +2229,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>disable_<wbr>api_<wbr>termination</span>
+        <span id="disable_api_termination~python">
+<span class="nx">
+disable_<wbr>api_<wbr>termination
+<a class="anchorjs-link " href="#disable_api_termination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1504,7 +2242,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceebsblockdevice">List[Get<wbr>Instance<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1513,7 +2256,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ebs_<wbr>optimized</span>
+        <span id="ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1522,7 +2270,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceephemeralblockdevice">List[Get<wbr>Instance<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1531,7 +2284,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>host_<wbr>id</span>
+        <span id="host_id~python">
+<span class="nx">
+host_<wbr>id
+<a class="anchorjs-link " href="#host_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1540,7 +2298,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>iam_<wbr>instance_<wbr>profile</span>
+        <span id="iam_instance_profile~python">
+<span class="nx">
+iam_<wbr>instance_<wbr>profile
+<a class="anchorjs-link " href="#iam_instance_profile~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1549,7 +2312,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1558,7 +2326,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>state</span>
+        <span id="instance_state~python">
+<span class="nx">
+instance_<wbr>state
+<a class="anchorjs-link " href="#instance_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1567,7 +2340,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>tags</span>
+        <span id="instance_tags~python">
+<span class="nx">
+instance_<wbr>tags
+<a class="anchorjs-link " href="#instance_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1575,7 +2353,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1584,7 +2367,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>key_<wbr>name</span>
+        <span id="key_name~python">
+<span class="nx">
+key_<wbr>name
+<a class="anchorjs-link " href="#key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1593,7 +2381,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>metadata_<wbr>options</span>
+        <span id="metadata_options~python">
+<span class="nx">
+metadata_<wbr>options
+<a class="anchorjs-link " href="#metadata_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancemetadataoption">List[Get<wbr>Instance<wbr>Metadata<wbr>Option]</a></span>
     </dt>
@@ -1602,7 +2395,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>monitoring</span>
+        <span id="monitoring~python">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1611,7 +2409,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>network_<wbr>interface_<wbr>id</span>
+        <span id="network_interface_id~python">
+<span class="nx">
+network_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#network_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1620,7 +2423,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>outpost_<wbr>arn</span>
+        <span id="outpost_arn~python">
+<span class="nx">
+outpost_<wbr>arn
+<a class="anchorjs-link " href="#outpost_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1629,7 +2437,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>password_<wbr>data</span>
+        <span id="password_data~python">
+<span class="nx">
+password_<wbr>data
+<a class="anchorjs-link " href="#password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1641,7 +2454,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>placement_<wbr>group</span>
+        <span id="placement_group~python">
+<span class="nx">
+placement_<wbr>group
+<a class="anchorjs-link " href="#placement_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1650,7 +2468,12 @@ See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API
 
     <dt class="property-"
             title="">
-        <span>private_<wbr>dns</span>
+        <span id="private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1661,7 +2484,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>private_<wbr>ip</span>
+        <span id="private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1670,7 +2498,12 @@ for your VPC.
 
     <dt class="property-"
             title="">
-        <span>public_<wbr>dns</span>
+        <span id="public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1680,7 +2513,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>public_<wbr>ip</span>
+        <span id="public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1689,7 +2527,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>root_<wbr>block_<wbr>devices</span>
+        <span id="root_block_devices~python">
+<span class="nx">
+root_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#root_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancerootblockdevice">List[Get<wbr>Instance<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1698,7 +2541,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>security_<wbr>groups</span>
+        <span id="security_groups~python">
+<span class="nx">
+security_<wbr>groups
+<a class="anchorjs-link " href="#security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1707,7 +2555,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>source_<wbr>dest_<wbr>check</span>
+        <span id="source_dest_check~python">
+<span class="nx">
+source_<wbr>dest_<wbr>check
+<a class="anchorjs-link " href="#source_dest_check~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1716,7 +2569,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1725,7 +2583,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1734,7 +2597,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>tenancy</span>
+        <span id="tenancy~python">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1743,7 +2611,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>user_<wbr>data</span>
+        <span id="user_data~python">
+<span class="nx">
+user_<wbr>data
+<a class="anchorjs-link " href="#user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1752,7 +2625,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>user_<wbr>data_<wbr>base64</span>
+        <span id="user_data_base64~python">
+<span class="nx">
+user_<wbr>data_<wbr>base64
+<a class="anchorjs-link " href="#user_data_base64~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1761,7 +2639,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1770,7 +2653,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancefilter">List[Get<wbr>Instance<wbr>Filter]</a></span>
     </dt>
@@ -1778,7 +2666,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>get_<wbr>password_<wbr>data</span>
+        <span id="get_password_data~python">
+<span class="nx">
+get_<wbr>password_<wbr>data
+<a class="anchorjs-link " href="#get_password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1786,7 +2679,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>get_<wbr>user_<wbr>data</span>
+        <span id="get_user_data~python">
+<span class="nx">
+get_<wbr>user_<wbr>data
+<a class="anchorjs-link " href="#get_user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1794,7 +2692,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>id</span>
+        <span id="instance_id~python">
+<span class="nx">
+instance_<wbr>id
+<a class="anchorjs-link " href="#instance_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1833,7 +2736,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Cpu<wbr>Credits</span>
+        <span id="cpucredits~csharp">
+<span class="nx">
+Cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1848,7 +2756,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Cpu<wbr>Credits</span>
+        <span id="cpucredits~go">
+<span class="nx">
+Cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1863,7 +2776,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>cpu<wbr>Credits</span>
+        <span id="cpucredits~nodejs">
+<span class="nx">
+cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1878,7 +2796,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>cpu<wbr>Credits</span>
+        <span id="cpucredits~python">
+<span class="nx">
+cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1911,7 +2834,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1920,7 +2848,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1929,7 +2862,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1938,7 +2876,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1947,7 +2890,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1955,7 +2903,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~csharp">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1964,7 +2917,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~csharp">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1972,7 +2930,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1981,7 +2944,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1997,7 +2965,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2006,7 +2979,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2015,7 +2993,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2024,7 +3007,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2033,7 +3021,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2041,7 +3034,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~go">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2050,7 +3048,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~go">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2058,7 +3061,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2067,7 +3075,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2083,7 +3096,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2092,7 +3110,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2101,7 +3124,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2110,7 +3138,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2119,7 +3152,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2127,7 +3165,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>snapshot<wbr>Id</span>
+        <span id="snapshotid~nodejs">
+<span class="nx">
+snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2136,7 +3179,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Id</span>
+        <span id="volumeid~nodejs">
+<span class="nx">
+volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2144,7 +3192,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2153,7 +3206,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2169,7 +3227,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2178,7 +3241,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2187,7 +3255,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2196,7 +3269,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2205,7 +3283,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2213,7 +3296,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>snapshot_<wbr>id</span>
+        <span id="snapshot_id~python">
+<span class="nx">
+snapshot_<wbr>id
+<a class="anchorjs-link " href="#snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2222,7 +3310,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2231,7 +3324,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume_<wbr>id</span>
+        <span id="volume_id~python">
+<span class="nx">
+volume_<wbr>id
+<a class="anchorjs-link " href="#volume_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2239,7 +3337,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2273,7 +3376,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2282,7 +3390,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~csharp">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2291,7 +3404,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2307,7 +3425,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2316,7 +3439,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~go">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2325,7 +3453,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2341,7 +3474,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2350,7 +3488,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~nodejs">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2359,7 +3502,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2375,7 +3523,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2384,7 +3537,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~python">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2393,7 +3551,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2427,7 +3590,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2435,7 +3603,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2450,7 +3623,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2458,7 +3636,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2473,7 +3656,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2481,7 +3669,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2496,7 +3689,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2504,7 +3702,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2537,7 +3740,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Endpoint</span>
+        <span id="httpendpoint~csharp">
+<span class="nx">
+Http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2546,7 +3754,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~csharp">
+<span class="nx">
+Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2555,7 +3768,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Tokens</span>
+        <span id="httptokens~csharp">
+<span class="nx">
+Http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2571,7 +3789,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Endpoint</span>
+        <span id="httpendpoint~go">
+<span class="nx">
+Http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2580,7 +3803,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~go">
+<span class="nx">
+Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2589,7 +3817,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Tokens</span>
+        <span id="httptokens~go">
+<span class="nx">
+Http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2605,7 +3838,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Endpoint</span>
+        <span id="httpendpoint~nodejs">
+<span class="nx">
+http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2614,7 +3852,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~nodejs">
+<span class="nx">
+http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2623,7 +3866,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Tokens</span>
+        <span id="httptokens~nodejs">
+<span class="nx">
+http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2639,7 +3887,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Endpoint</span>
+        <span id="httpendpoint~python">
+<span class="nx">
+http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2648,7 +3901,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~python">
+<span class="nx">
+http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2657,7 +3915,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Tokens</span>
+        <span id="httptokens~python">
+<span class="nx">
+http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2691,7 +3954,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2700,7 +3968,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2709,7 +3982,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2718,7 +3996,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2727,7 +4010,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2735,7 +4023,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~csharp">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2743,7 +4036,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2752,7 +4050,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2768,7 +4071,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2777,7 +4085,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2786,7 +4099,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2795,7 +4113,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2804,7 +4127,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2812,7 +4140,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~go">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2820,7 +4153,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2829,7 +4167,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2845,7 +4188,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2854,7 +4202,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2863,7 +4216,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2872,7 +4230,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2881,7 +4244,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2889,7 +4257,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Id</span>
+        <span id="volumeid~nodejs">
+<span class="nx">
+volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2897,7 +4270,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2906,7 +4284,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2922,7 +4305,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2931,7 +4319,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2940,7 +4333,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2949,7 +4347,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2958,7 +4361,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2966,7 +4374,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2975,7 +4388,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume_<wbr>id</span>
+        <span id="volume_id~python">
+<span class="nx">
+volume_<wbr>id
+<a class="anchorjs-link " href="#volume_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2983,7 +4401,12 @@ is only available if you've enabled DNS hostnames for your VPC.
 
     <dt class="property-required"
             title="Required">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

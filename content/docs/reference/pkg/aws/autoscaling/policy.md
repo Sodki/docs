@@ -85,19 +85,19 @@ const bat = new aws.autoscaling.Policy("bat", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Policy">Policy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Policy">Policy</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Policy</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>adjustment_type=None<span class="p">, </span>autoscaling_group_name=None<span class="p">, </span>cooldown=None<span class="p">, </span>estimated_instance_warmup=None<span class="p">, </span>metric_aggregation_type=None<span class="p">, </span>min_adjustment_magnitude=None<span class="p">, </span>name=None<span class="p">, </span>policy_type=None<span class="p">, </span>scaling_adjustment=None<span class="p">, </span>step_adjustments=None<span class="p">, </span>target_tracking_configuration=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/autoscaling/#Policy">Policy</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>adjustment_type=None<span class="p">, </span>autoscaling_group_name=None<span class="p">, </span>cooldown=None<span class="p">, </span>estimated_instance_warmup=None<span class="p">, </span>metric_aggregation_type=None<span class="p">, </span>min_adjustment_magnitude=None<span class="p">, </span>name=None<span class="p">, </span>policy_type=None<span class="p">, </span>scaling_adjustment=None<span class="p">, </span>step_adjustments=None<span class="p">, </span>target_tracking_configuration=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">NewPolicy</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyArgs">PolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Policy.html">Policy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.PolicyArgs.html">PolicyArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Policy.html">Policy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.PolicyArgs.html">PolicyArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -263,7 +263,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Autoscaling<wbr>Group<wbr>Name</span>
+        <span id="autoscalinggroupname~csharp">
+<span class="nx">
+Autoscaling<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#autoscalinggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -272,7 +277,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Adjustment<wbr>Type</span>
+        <span id="adjustmenttype~csharp">
+<span class="nx">
+Adjustment<wbr>Type
+<a class="anchorjs-link " href="#adjustmenttype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -281,7 +291,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cooldown</span>
+        <span id="cooldown~csharp">
+<span class="nx">
+Cooldown
+<a class="anchorjs-link " href="#cooldown~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -290,7 +305,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Estimated<wbr>Instance<wbr>Warmup</span>
+        <span id="estimatedinstancewarmup~csharp">
+<span class="nx">
+Estimated<wbr>Instance<wbr>Warmup
+<a class="anchorjs-link " href="#estimatedinstancewarmup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -299,7 +319,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Aggregation<wbr>Type</span>
+        <span id="metricaggregationtype~csharp">
+<span class="nx">
+Metric<wbr>Aggregation<wbr>Type
+<a class="anchorjs-link " href="#metricaggregationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -308,7 +333,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Adjustment<wbr>Magnitude</span>
+        <span id="minadjustmentmagnitude~csharp">
+<span class="nx">
+Min<wbr>Adjustment<wbr>Magnitude
+<a class="anchorjs-link " href="#minadjustmentmagnitude~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -316,7 +346,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -325,7 +360,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policy<wbr>Type</span>
+        <span id="policytype~csharp">
+<span class="nx">
+Policy<wbr>Type
+<a class="anchorjs-link " href="#policytype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -334,7 +374,12 @@ The Policy resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scaling<wbr>Adjustment</span>
+        <span id="scalingadjustment~csharp">
+<span class="nx">
+Scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#scalingadjustment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -345,7 +390,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Step<wbr>Adjustments</span>
+        <span id="stepadjustments~csharp">
+<span class="nx">
+Step<wbr>Adjustments
+<a class="anchorjs-link " href="#stepadjustments~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List&lt;Policy<wbr>Step<wbr>Adjustment<wbr>Args&gt;</a></span>
     </dt>
@@ -355,7 +405,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Tracking<wbr>Configuration</span>
+        <span id="targettrackingconfiguration~csharp">
+<span class="nx">
+Target<wbr>Tracking<wbr>Configuration
+<a class="anchorjs-link " href="#targettrackingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -371,7 +426,12 @@ group scaling. These have the following structure:
 
     <dt class="property-required"
             title="Required">
-        <span>Autoscaling<wbr>Group<wbr>Name</span>
+        <span id="autoscalinggroupname~go">
+<span class="nx">
+Autoscaling<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#autoscalinggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -380,7 +440,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Adjustment<wbr>Type</span>
+        <span id="adjustmenttype~go">
+<span class="nx">
+Adjustment<wbr>Type
+<a class="anchorjs-link " href="#adjustmenttype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -389,7 +454,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cooldown</span>
+        <span id="cooldown~go">
+<span class="nx">
+Cooldown
+<a class="anchorjs-link " href="#cooldown~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -398,7 +468,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Estimated<wbr>Instance<wbr>Warmup</span>
+        <span id="estimatedinstancewarmup~go">
+<span class="nx">
+Estimated<wbr>Instance<wbr>Warmup
+<a class="anchorjs-link " href="#estimatedinstancewarmup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -407,7 +482,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Aggregation<wbr>Type</span>
+        <span id="metricaggregationtype~go">
+<span class="nx">
+Metric<wbr>Aggregation<wbr>Type
+<a class="anchorjs-link " href="#metricaggregationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -416,7 +496,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Adjustment<wbr>Magnitude</span>
+        <span id="minadjustmentmagnitude~go">
+<span class="nx">
+Min<wbr>Adjustment<wbr>Magnitude
+<a class="anchorjs-link " href="#minadjustmentmagnitude~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -424,7 +509,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -433,7 +523,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policy<wbr>Type</span>
+        <span id="policytype~go">
+<span class="nx">
+Policy<wbr>Type
+<a class="anchorjs-link " href="#policytype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -442,7 +537,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scaling<wbr>Adjustment</span>
+        <span id="scalingadjustment~go">
+<span class="nx">
+Scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#scalingadjustment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -453,7 +553,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Step<wbr>Adjustments</span>
+        <span id="stepadjustments~go">
+<span class="nx">
+Step<wbr>Adjustments
+<a class="anchorjs-link " href="#stepadjustments~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">[]Policy<wbr>Step<wbr>Adjustment</a></span>
     </dt>
@@ -463,7 +568,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Tracking<wbr>Configuration</span>
+        <span id="targettrackingconfiguration~go">
+<span class="nx">
+Target<wbr>Tracking<wbr>Configuration
+<a class="anchorjs-link " href="#targettrackingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
@@ -479,7 +589,12 @@ group scaling. These have the following structure:
 
     <dt class="property-required"
             title="Required">
-        <span>autoscaling<wbr>Group<wbr>Name</span>
+        <span id="autoscalinggroupname~nodejs">
+<span class="nx">
+autoscaling<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#autoscalinggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -488,7 +603,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>adjustment<wbr>Type</span>
+        <span id="adjustmenttype~nodejs">
+<span class="nx">
+adjustment<wbr>Type
+<a class="anchorjs-link " href="#adjustmenttype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -497,7 +617,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cooldown</span>
+        <span id="cooldown~nodejs">
+<span class="nx">
+cooldown
+<a class="anchorjs-link " href="#cooldown~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -506,7 +631,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>estimated<wbr>Instance<wbr>Warmup</span>
+        <span id="estimatedinstancewarmup~nodejs">
+<span class="nx">
+estimated<wbr>Instance<wbr>Warmup
+<a class="anchorjs-link " href="#estimatedinstancewarmup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -515,7 +645,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Aggregation<wbr>Type</span>
+        <span id="metricaggregationtype~nodejs">
+<span class="nx">
+metric<wbr>Aggregation<wbr>Type
+<a class="anchorjs-link " href="#metricaggregationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -524,7 +659,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Adjustment<wbr>Magnitude</span>
+        <span id="minadjustmentmagnitude~nodejs">
+<span class="nx">
+min<wbr>Adjustment<wbr>Magnitude
+<a class="anchorjs-link " href="#minadjustmentmagnitude~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -532,7 +672,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -541,7 +686,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>policy<wbr>Type</span>
+        <span id="policytype~nodejs">
+<span class="nx">
+policy<wbr>Type
+<a class="anchorjs-link " href="#policytype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -550,7 +700,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>scaling<wbr>Adjustment</span>
+        <span id="scalingadjustment~nodejs">
+<span class="nx">
+scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#scalingadjustment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -561,7 +716,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>step<wbr>Adjustments</span>
+        <span id="stepadjustments~nodejs">
+<span class="nx">
+step<wbr>Adjustments
+<a class="anchorjs-link " href="#stepadjustments~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">Policy<wbr>Step<wbr>Adjustment[]</a></span>
     </dt>
@@ -571,7 +731,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Tracking<wbr>Configuration</span>
+        <span id="targettrackingconfiguration~nodejs">
+<span class="nx">
+target<wbr>Tracking<wbr>Configuration
+<a class="anchorjs-link " href="#targettrackingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
@@ -587,7 +752,12 @@ group scaling. These have the following structure:
 
     <dt class="property-required"
             title="Required">
-        <span>autoscaling_<wbr>group_<wbr>name</span>
+        <span id="autoscaling_group_name~python">
+<span class="nx">
+autoscaling_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#autoscaling_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -596,7 +766,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>adjustment_<wbr>type</span>
+        <span id="adjustment_type~python">
+<span class="nx">
+adjustment_<wbr>type
+<a class="anchorjs-link " href="#adjustment_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -605,7 +780,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cooldown</span>
+        <span id="cooldown~python">
+<span class="nx">
+cooldown
+<a class="anchorjs-link " href="#cooldown~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -614,7 +794,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>estimated_<wbr>instance_<wbr>warmup</span>
+        <span id="estimated_instance_warmup~python">
+<span class="nx">
+estimated_<wbr>instance_<wbr>warmup
+<a class="anchorjs-link " href="#estimated_instance_warmup~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -623,7 +808,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric_<wbr>aggregation_<wbr>type</span>
+        <span id="metric_aggregation_type~python">
+<span class="nx">
+metric_<wbr>aggregation_<wbr>type
+<a class="anchorjs-link " href="#metric_aggregation_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -632,7 +822,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min_<wbr>adjustment_<wbr>magnitude</span>
+        <span id="min_adjustment_magnitude~python">
+<span class="nx">
+min_<wbr>adjustment_<wbr>magnitude
+<a class="anchorjs-link " href="#min_adjustment_magnitude~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -640,7 +835,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -649,7 +849,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>policy_<wbr>type</span>
+        <span id="policy_type~python">
+<span class="nx">
+policy_<wbr>type
+<a class="anchorjs-link " href="#policy_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -658,7 +863,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>scaling_<wbr>adjustment</span>
+        <span id="scaling_adjustment~python">
+<span class="nx">
+scaling_<wbr>adjustment
+<a class="anchorjs-link " href="#scaling_adjustment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -669,7 +879,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>step_<wbr>adjustments</span>
+        <span id="step_adjustments~python">
+<span class="nx">
+step_<wbr>adjustments
+<a class="anchorjs-link " href="#step_adjustments~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List[Policy<wbr>Step<wbr>Adjustment]</a></span>
     </dt>
@@ -679,7 +894,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>target_<wbr>tracking_<wbr>configuration</span>
+        <span id="target_tracking_configuration~python">
+<span class="nx">
+target_<wbr>tracking_<wbr>configuration
+<a class="anchorjs-link " href="#target_tracking_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration]</a></span>
     </dt>
@@ -706,7 +926,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -715,7 +940,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -730,7 +960,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -739,7 +974,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -754,7 +994,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -763,7 +1008,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -778,7 +1028,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -787,7 +1042,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -808,7 +1068,7 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Policy">Policy</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/autoscaling/#Policy">Policy</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -816,11 +1076,11 @@ Get an existing Policy resource's state with the given name, ID, and optional ex
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPolicy<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#PolicyState">PolicyState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/autoscaling?tab=doc#Policy">Policy</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Policy.html">Policy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.PolicyState.html">PolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.Policy.html">Policy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AutoScaling.PolicyState.html">PolicyState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -928,7 +1188,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Adjustment<wbr>Type</span>
+        <span id="state_adjustmenttype~csharp">
+<span class="nx">
+Adjustment<wbr>Type
+<a class="anchorjs-link " href="#state_adjustmenttype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -937,7 +1202,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -946,7 +1216,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Autoscaling<wbr>Group<wbr>Name</span>
+        <span id="state_autoscalinggroupname~csharp">
+<span class="nx">
+Autoscaling<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_autoscalinggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -955,7 +1230,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cooldown</span>
+        <span id="state_cooldown~csharp">
+<span class="nx">
+Cooldown
+<a class="anchorjs-link " href="#state_cooldown~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -964,7 +1244,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Estimated<wbr>Instance<wbr>Warmup</span>
+        <span id="state_estimatedinstancewarmup~csharp">
+<span class="nx">
+Estimated<wbr>Instance<wbr>Warmup
+<a class="anchorjs-link " href="#state_estimatedinstancewarmup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -973,7 +1258,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Aggregation<wbr>Type</span>
+        <span id="state_metricaggregationtype~csharp">
+<span class="nx">
+Metric<wbr>Aggregation<wbr>Type
+<a class="anchorjs-link " href="#state_metricaggregationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -982,7 +1272,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Adjustment<wbr>Magnitude</span>
+        <span id="state_minadjustmentmagnitude~csharp">
+<span class="nx">
+Min<wbr>Adjustment<wbr>Magnitude
+<a class="anchorjs-link " href="#state_minadjustmentmagnitude~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -990,7 +1285,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -999,7 +1299,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policy<wbr>Type</span>
+        <span id="state_policytype~csharp">
+<span class="nx">
+Policy<wbr>Type
+<a class="anchorjs-link " href="#state_policytype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1008,7 +1313,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scaling<wbr>Adjustment</span>
+        <span id="state_scalingadjustment~csharp">
+<span class="nx">
+Scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#state_scalingadjustment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1019,7 +1329,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Step<wbr>Adjustments</span>
+        <span id="state_stepadjustments~csharp">
+<span class="nx">
+Step<wbr>Adjustments
+<a class="anchorjs-link " href="#state_stepadjustments~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List&lt;Policy<wbr>Step<wbr>Adjustment<wbr>Args&gt;</a></span>
     </dt>
@@ -1029,7 +1344,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Tracking<wbr>Configuration</span>
+        <span id="state_targettrackingconfiguration~csharp">
+<span class="nx">
+Target<wbr>Tracking<wbr>Configuration
+<a class="anchorjs-link " href="#state_targettrackingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1045,7 +1365,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Adjustment<wbr>Type</span>
+        <span id="state_adjustmenttype~go">
+<span class="nx">
+Adjustment<wbr>Type
+<a class="anchorjs-link " href="#state_adjustmenttype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1054,7 +1379,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1063,7 +1393,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Autoscaling<wbr>Group<wbr>Name</span>
+        <span id="state_autoscalinggroupname~go">
+<span class="nx">
+Autoscaling<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_autoscalinggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1072,7 +1407,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cooldown</span>
+        <span id="state_cooldown~go">
+<span class="nx">
+Cooldown
+<a class="anchorjs-link " href="#state_cooldown~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1081,7 +1421,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Estimated<wbr>Instance<wbr>Warmup</span>
+        <span id="state_estimatedinstancewarmup~go">
+<span class="nx">
+Estimated<wbr>Instance<wbr>Warmup
+<a class="anchorjs-link " href="#state_estimatedinstancewarmup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1090,7 +1435,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Aggregation<wbr>Type</span>
+        <span id="state_metricaggregationtype~go">
+<span class="nx">
+Metric<wbr>Aggregation<wbr>Type
+<a class="anchorjs-link " href="#state_metricaggregationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1099,7 +1449,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Adjustment<wbr>Magnitude</span>
+        <span id="state_minadjustmentmagnitude~go">
+<span class="nx">
+Min<wbr>Adjustment<wbr>Magnitude
+<a class="anchorjs-link " href="#state_minadjustmentmagnitude~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1107,7 +1462,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1116,7 +1476,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policy<wbr>Type</span>
+        <span id="state_policytype~go">
+<span class="nx">
+Policy<wbr>Type
+<a class="anchorjs-link " href="#state_policytype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1125,7 +1490,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scaling<wbr>Adjustment</span>
+        <span id="state_scalingadjustment~go">
+<span class="nx">
+Scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#state_scalingadjustment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1136,7 +1506,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Step<wbr>Adjustments</span>
+        <span id="state_stepadjustments~go">
+<span class="nx">
+Step<wbr>Adjustments
+<a class="anchorjs-link " href="#state_stepadjustments~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">[]Policy<wbr>Step<wbr>Adjustment</a></span>
     </dt>
@@ -1146,7 +1521,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Tracking<wbr>Configuration</span>
+        <span id="state_targettrackingconfiguration~go">
+<span class="nx">
+Target<wbr>Tracking<wbr>Configuration
+<a class="anchorjs-link " href="#state_targettrackingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
@@ -1162,7 +1542,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>adjustment<wbr>Type</span>
+        <span id="state_adjustmenttype~nodejs">
+<span class="nx">
+adjustment<wbr>Type
+<a class="anchorjs-link " href="#state_adjustmenttype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1171,7 +1556,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1180,7 +1570,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>autoscaling<wbr>Group<wbr>Name</span>
+        <span id="state_autoscalinggroupname~nodejs">
+<span class="nx">
+autoscaling<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_autoscalinggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1189,7 +1584,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cooldown</span>
+        <span id="state_cooldown~nodejs">
+<span class="nx">
+cooldown
+<a class="anchorjs-link " href="#state_cooldown~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1198,7 +1598,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>estimated<wbr>Instance<wbr>Warmup</span>
+        <span id="state_estimatedinstancewarmup~nodejs">
+<span class="nx">
+estimated<wbr>Instance<wbr>Warmup
+<a class="anchorjs-link " href="#state_estimatedinstancewarmup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1207,7 +1612,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Aggregation<wbr>Type</span>
+        <span id="state_metricaggregationtype~nodejs">
+<span class="nx">
+metric<wbr>Aggregation<wbr>Type
+<a class="anchorjs-link " href="#state_metricaggregationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1216,7 +1626,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Adjustment<wbr>Magnitude</span>
+        <span id="state_minadjustmentmagnitude~nodejs">
+<span class="nx">
+min<wbr>Adjustment<wbr>Magnitude
+<a class="anchorjs-link " href="#state_minadjustmentmagnitude~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1224,7 +1639,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1233,7 +1653,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>policy<wbr>Type</span>
+        <span id="state_policytype~nodejs">
+<span class="nx">
+policy<wbr>Type
+<a class="anchorjs-link " href="#state_policytype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1242,7 +1667,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>scaling<wbr>Adjustment</span>
+        <span id="state_scalingadjustment~nodejs">
+<span class="nx">
+scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#state_scalingadjustment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1253,7 +1683,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>step<wbr>Adjustments</span>
+        <span id="state_stepadjustments~nodejs">
+<span class="nx">
+step<wbr>Adjustments
+<a class="anchorjs-link " href="#state_stepadjustments~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">Policy<wbr>Step<wbr>Adjustment[]</a></span>
     </dt>
@@ -1263,7 +1698,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Tracking<wbr>Configuration</span>
+        <span id="state_targettrackingconfiguration~nodejs">
+<span class="nx">
+target<wbr>Tracking<wbr>Configuration
+<a class="anchorjs-link " href="#state_targettrackingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Policy<wbr>Target<wbr>Tracking<wbr>Configuration</a></span>
     </dt>
@@ -1279,7 +1719,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>adjustment_<wbr>type</span>
+        <span id="state_adjustment_type~python">
+<span class="nx">
+adjustment_<wbr>type
+<a class="anchorjs-link " href="#state_adjustment_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1288,7 +1733,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1297,7 +1747,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>autoscaling_<wbr>group_<wbr>name</span>
+        <span id="state_autoscaling_group_name~python">
+<span class="nx">
+autoscaling_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_autoscaling_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1306,7 +1761,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cooldown</span>
+        <span id="state_cooldown~python">
+<span class="nx">
+cooldown
+<a class="anchorjs-link " href="#state_cooldown~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1315,7 +1775,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>estimated_<wbr>instance_<wbr>warmup</span>
+        <span id="state_estimated_instance_warmup~python">
+<span class="nx">
+estimated_<wbr>instance_<wbr>warmup
+<a class="anchorjs-link " href="#state_estimated_instance_warmup~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1324,7 +1789,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric_<wbr>aggregation_<wbr>type</span>
+        <span id="state_metric_aggregation_type~python">
+<span class="nx">
+metric_<wbr>aggregation_<wbr>type
+<a class="anchorjs-link " href="#state_metric_aggregation_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1333,7 +1803,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>min_<wbr>adjustment_<wbr>magnitude</span>
+        <span id="state_min_adjustment_magnitude~python">
+<span class="nx">
+min_<wbr>adjustment_<wbr>magnitude
+<a class="anchorjs-link " href="#state_min_adjustment_magnitude~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1341,7 +1816,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1350,7 +1830,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>policy_<wbr>type</span>
+        <span id="state_policy_type~python">
+<span class="nx">
+policy_<wbr>type
+<a class="anchorjs-link " href="#state_policy_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1359,7 +1844,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>scaling_<wbr>adjustment</span>
+        <span id="state_scaling_adjustment~python">
+<span class="nx">
+scaling_<wbr>adjustment
+<a class="anchorjs-link " href="#state_scaling_adjustment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1370,7 +1860,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>step_<wbr>adjustments</span>
+        <span id="state_step_adjustments~python">
+<span class="nx">
+step_<wbr>adjustments
+<a class="anchorjs-link " href="#state_step_adjustments~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policystepadjustment">List[Policy<wbr>Step<wbr>Adjustment]</a></span>
     </dt>
@@ -1380,7 +1875,12 @@ group scaling. These have the following structure:
 
     <dt class="property-optional"
             title="Optional">
-        <span>target_<wbr>tracking_<wbr>configuration</span>
+        <span id="state_target_tracking_configuration~python">
+<span class="nx">
+target_<wbr>tracking_<wbr>configuration
+<a class="anchorjs-link " href="#state_target_tracking_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfiguration">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration]</a></span>
     </dt>
@@ -1422,7 +1922,12 @@ group scaling. These have the following structure:
 
     <dt class="property-required"
             title="Required">
-        <span>Scaling<wbr>Adjustment</span>
+        <span id="scalingadjustment~csharp">
+<span class="nx">
+Scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#scalingadjustment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1433,7 +1938,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Interval<wbr>Lower<wbr>Bound</span>
+        <span id="metricintervallowerbound~csharp">
+<span class="nx">
+Metric<wbr>Interval<wbr>Lower<wbr>Bound
+<a class="anchorjs-link " href="#metricintervallowerbound~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1444,7 +1954,12 @@ Without a value, AWS will treat this bound as infinity.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Interval<wbr>Upper<wbr>Bound</span>
+        <span id="metricintervalupperbound~csharp">
+<span class="nx">
+Metric<wbr>Interval<wbr>Upper<wbr>Bound
+<a class="anchorjs-link " href="#metricintervalupperbound~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1463,7 +1978,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Scaling<wbr>Adjustment</span>
+        <span id="scalingadjustment~go">
+<span class="nx">
+Scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#scalingadjustment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1474,7 +1994,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Interval<wbr>Lower<wbr>Bound</span>
+        <span id="metricintervallowerbound~go">
+<span class="nx">
+Metric<wbr>Interval<wbr>Lower<wbr>Bound
+<a class="anchorjs-link " href="#metricintervallowerbound~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1485,7 +2010,12 @@ Without a value, AWS will treat this bound as infinity.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Interval<wbr>Upper<wbr>Bound</span>
+        <span id="metricintervalupperbound~go">
+<span class="nx">
+Metric<wbr>Interval<wbr>Upper<wbr>Bound
+<a class="anchorjs-link " href="#metricintervalupperbound~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1504,7 +2034,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>scaling<wbr>Adjustment</span>
+        <span id="scalingadjustment~nodejs">
+<span class="nx">
+scaling<wbr>Adjustment
+<a class="anchorjs-link " href="#scalingadjustment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1515,7 +2050,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Interval<wbr>Lower<wbr>Bound</span>
+        <span id="metricintervallowerbound~nodejs">
+<span class="nx">
+metric<wbr>Interval<wbr>Lower<wbr>Bound
+<a class="anchorjs-link " href="#metricintervallowerbound~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1526,7 +2066,12 @@ Without a value, AWS will treat this bound as infinity.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Interval<wbr>Upper<wbr>Bound</span>
+        <span id="metricintervalupperbound~nodejs">
+<span class="nx">
+metric<wbr>Interval<wbr>Upper<wbr>Bound
+<a class="anchorjs-link " href="#metricintervalupperbound~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1545,7 +2090,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>scaling_<wbr>adjustment</span>
+        <span id="scaling_adjustment~python">
+<span class="nx">
+scaling_<wbr>adjustment
+<a class="anchorjs-link " href="#scaling_adjustment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1556,7 +2106,12 @@ up. A negative value scales down.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Interval<wbr>Lower<wbr>Bound</span>
+        <span id="metricintervallowerbound~python">
+<span class="nx">
+metric<wbr>Interval<wbr>Lower<wbr>Bound
+<a class="anchorjs-link " href="#metricintervallowerbound~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1567,7 +2122,12 @@ Without a value, AWS will treat this bound as infinity.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Interval<wbr>Upper<wbr>Bound</span>
+        <span id="metricintervalupperbound~python">
+<span class="nx">
+metric<wbr>Interval<wbr>Upper<wbr>Bound
+<a class="anchorjs-link " href="#metricintervalupperbound~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1604,7 +2164,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Value</span>
+        <span id="targetvalue~csharp">
+<span class="nx">
+Target<wbr>Value
+<a class="anchorjs-link " href="#targetvalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -1613,7 +2178,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customized<wbr>Metric<wbr>Specification</span>
+        <span id="customizedmetricspecification~csharp">
+<span class="nx">
+Customized<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#customizedmetricspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -1622,7 +2192,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Scale<wbr>In</span>
+        <span id="disablescalein~csharp">
+<span class="nx">
+Disable<wbr>Scale<wbr>In
+<a class="anchorjs-link " href="#disablescalein~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1631,7 +2206,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Predefined<wbr>Metric<wbr>Specification</span>
+        <span id="predefinedmetricspecification~csharp">
+<span class="nx">
+Predefined<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#predefinedmetricspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -1647,7 +2227,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Target<wbr>Value</span>
+        <span id="targetvalue~go">
+<span class="nx">
+Target<wbr>Value
+<a class="anchorjs-link " href="#targetvalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -1656,7 +2241,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Customized<wbr>Metric<wbr>Specification</span>
+        <span id="customizedmetricspecification~go">
+<span class="nx">
+Customized<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#customizedmetricspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification</a></span>
     </dt>
@@ -1665,7 +2255,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Scale<wbr>In</span>
+        <span id="disablescalein~go">
+<span class="nx">
+Disable<wbr>Scale<wbr>In
+<a class="anchorjs-link " href="#disablescalein~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1674,7 +2269,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Predefined<wbr>Metric<wbr>Specification</span>
+        <span id="predefinedmetricspecification~go">
+<span class="nx">
+Predefined<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#predefinedmetricspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification</a></span>
     </dt>
@@ -1690,7 +2290,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Value</span>
+        <span id="targetvalue~nodejs">
+<span class="nx">
+target<wbr>Value
+<a class="anchorjs-link " href="#targetvalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -1699,7 +2304,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customized<wbr>Metric<wbr>Specification</span>
+        <span id="customizedmetricspecification~nodejs">
+<span class="nx">
+customized<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#customizedmetricspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification</a></span>
     </dt>
@@ -1708,7 +2318,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable<wbr>Scale<wbr>In</span>
+        <span id="disablescalein~nodejs">
+<span class="nx">
+disable<wbr>Scale<wbr>In
+<a class="anchorjs-link " href="#disablescalein~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1717,7 +2332,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>predefined<wbr>Metric<wbr>Specification</span>
+        <span id="predefinedmetricspecification~nodejs">
+<span class="nx">
+predefined<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#predefinedmetricspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification</a></span>
     </dt>
@@ -1733,7 +2353,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>target<wbr>Value</span>
+        <span id="targetvalue~python">
+<span class="nx">
+target<wbr>Value
+<a class="anchorjs-link " href="#targetvalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1742,7 +2367,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>customized<wbr>Metric<wbr>Specification</span>
+        <span id="customizedmetricspecification~python">
+<span class="nx">
+customized<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#customizedmetricspecification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecification">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification]</a></span>
     </dt>
@@ -1751,7 +2381,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable<wbr>Scale<wbr>In</span>
+        <span id="disablescalein~python">
+<span class="nx">
+disable<wbr>Scale<wbr>In
+<a class="anchorjs-link " href="#disablescalein~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1760,7 +2395,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>predefined<wbr>Metric<wbr>Specification</span>
+        <span id="predefinedmetricspecification~python">
+<span class="nx">
+predefined<wbr>Metric<wbr>Specification
+<a class="anchorjs-link " href="#predefinedmetricspecification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationpredefinedmetricspecification">Dict[Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Predefined<wbr>Metric<wbr>Specification]</a></span>
     </dt>
@@ -1794,7 +2434,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Metric<wbr>Name</span>
+        <span id="metricname~csharp">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1803,7 +2448,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Namespace</span>
+        <span id="namespace~csharp">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1812,7 +2462,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Statistic</span>
+        <span id="statistic~csharp">
+<span class="nx">
+Statistic
+<a class="anchorjs-link " href="#statistic~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1821,7 +2476,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Dimensions</span>
+        <span id="metricdimensions~csharp">
+<span class="nx">
+Metric<wbr>Dimensions
+<a class="anchorjs-link " href="#metricdimensions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">List&lt;Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension<wbr>Args&gt;</a></span>
     </dt>
@@ -1830,7 +2490,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="unit~csharp">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#unit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1846,7 +2511,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Metric<wbr>Name</span>
+        <span id="metricname~go">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1855,7 +2525,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Namespace</span>
+        <span id="namespace~go">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1864,7 +2539,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Statistic</span>
+        <span id="statistic~go">
+<span class="nx">
+Statistic
+<a class="anchorjs-link " href="#statistic~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1873,7 +2553,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Dimensions</span>
+        <span id="metricdimensions~go">
+<span class="nx">
+Metric<wbr>Dimensions
+<a class="anchorjs-link " href="#metricdimensions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">[]Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension</a></span>
     </dt>
@@ -1882,7 +2567,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="unit~go">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#unit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1898,7 +2588,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>metric<wbr>Name</span>
+        <span id="metricname~nodejs">
+<span class="nx">
+metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1907,7 +2602,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>namespace</span>
+        <span id="namespace~nodejs">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1916,7 +2616,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>statistic</span>
+        <span id="statistic~nodejs">
+<span class="nx">
+statistic
+<a class="anchorjs-link " href="#statistic~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1925,7 +2630,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Dimensions</span>
+        <span id="metricdimensions~nodejs">
+<span class="nx">
+metric<wbr>Dimensions
+<a class="anchorjs-link " href="#metricdimensions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension[]</a></span>
     </dt>
@@ -1934,7 +2644,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="unit~nodejs">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#unit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1950,7 +2665,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>metric_<wbr>name</span>
+        <span id="metric_name~python">
+<span class="nx">
+metric_<wbr>name
+<a class="anchorjs-link " href="#metric_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1959,7 +2679,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>namespace</span>
+        <span id="namespace~python">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1968,7 +2693,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>statistic</span>
+        <span id="statistic~python">
+<span class="nx">
+statistic
+<a class="anchorjs-link " href="#statistic~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1977,7 +2707,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Dimensions</span>
+        <span id="metricdimensions~python">
+<span class="nx">
+metric<wbr>Dimensions
+<a class="anchorjs-link " href="#metricdimensions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#policytargettrackingconfigurationcustomizedmetricspecificationmetricdimension">List[Policy<wbr>Target<wbr>Tracking<wbr>Configuration<wbr>Customized<wbr>Metric<wbr>Specification<wbr>Metric<wbr>Dimension]</a></span>
     </dt>
@@ -1986,7 +2721,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="unit~python">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#unit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2020,7 +2760,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2029,7 +2774,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~csharp">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2045,7 +2795,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2054,7 +2809,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~go">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2070,7 +2830,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2079,7 +2844,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~nodejs">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2095,7 +2865,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2104,7 +2879,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~python">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2138,7 +2918,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Predefined<wbr>Metric<wbr>Type</span>
+        <span id="predefinedmetrictype~csharp">
+<span class="nx">
+Predefined<wbr>Metric<wbr>Type
+<a class="anchorjs-link " href="#predefinedmetrictype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2147,7 +2932,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Label</span>
+        <span id="resourcelabel~csharp">
+<span class="nx">
+Resource<wbr>Label
+<a class="anchorjs-link " href="#resourcelabel~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2163,7 +2953,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>Predefined<wbr>Metric<wbr>Type</span>
+        <span id="predefinedmetrictype~go">
+<span class="nx">
+Predefined<wbr>Metric<wbr>Type
+<a class="anchorjs-link " href="#predefinedmetrictype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2172,7 +2967,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Label</span>
+        <span id="resourcelabel~go">
+<span class="nx">
+Resource<wbr>Label
+<a class="anchorjs-link " href="#resourcelabel~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2188,7 +2988,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>predefined<wbr>Metric<wbr>Type</span>
+        <span id="predefinedmetrictype~nodejs">
+<span class="nx">
+predefined<wbr>Metric<wbr>Type
+<a class="anchorjs-link " href="#predefinedmetrictype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2197,7 +3002,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource<wbr>Label</span>
+        <span id="resourcelabel~nodejs">
+<span class="nx">
+resource<wbr>Label
+<a class="anchorjs-link " href="#resourcelabel~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2213,7 +3023,12 @@ must be greater than the lower bound.
 
     <dt class="property-required"
             title="Required">
-        <span>predefined<wbr>Metric<wbr>Type</span>
+        <span id="predefinedmetrictype~python">
+<span class="nx">
+predefined<wbr>Metric<wbr>Type
+<a class="anchorjs-link " href="#predefinedmetrictype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2222,7 +3037,12 @@ must be greater than the lower bound.
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource<wbr>Label</span>
+        <span id="resourcelabel~python">
+<span class="nx">
+resource<wbr>Label
+<a class="anchorjs-link " href="#resourcelabel~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

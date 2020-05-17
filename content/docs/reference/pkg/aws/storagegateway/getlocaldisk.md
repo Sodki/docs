@@ -58,7 +58,7 @@ const test = pulumi.all([aws_volume_attachment_test.deviceName, aws_storagegatew
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getLocalDisk<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#GetLocalDiskArgs">GetLocalDiskArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#GetLocalDiskResult">GetLocalDiskResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getLocalDisk<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#GetLocalDiskArgs">GetLocalDiskArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/storagegateway/#GetLocalDiskResult">GetLocalDiskResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -68,13 +68,14 @@ const test = pulumi.all([aws_volume_attachment_test.deviceName, aws_storagegatew
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLocalDisk<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#GetLocalDiskArgs">GetLocalDiskArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#GetLocalDiskResult">GetLocalDiskResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLocalDisk<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#GetLocalDiskArgs">GetLocalDiskArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/storagegateway?tab=doc#GetLocalDiskResult">GetLocalDiskResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetLocalDisk </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Storagegateway.GetLocalDiskResult.html">GetLocalDiskResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.StorageGateway.GetLocalDiskArgs.html">GetLocalDiskArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Storagegateway.GetLocalDiskResult.html">GetLocalDiskResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.StorageGateway.GetLocalDiskArgs.html">GetLocalDiskArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -89,7 +90,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Gateway<wbr>Arn</span>
+        <span id="gatewayarn~csharp">
+<span class="nx">
+Gateway<wbr>Arn
+<a class="anchorjs-link " href="#gatewayarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -98,7 +104,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disk<wbr>Node</span>
+        <span id="disknode~csharp">
+<span class="nx">
+Disk<wbr>Node
+<a class="anchorjs-link " href="#disknode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -107,7 +118,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disk<wbr>Path</span>
+        <span id="diskpath~csharp">
+<span class="nx">
+Disk<wbr>Path
+<a class="anchorjs-link " href="#diskpath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -123,7 +139,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Gateway<wbr>Arn</span>
+        <span id="gatewayarn~go">
+<span class="nx">
+Gateway<wbr>Arn
+<a class="anchorjs-link " href="#gatewayarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -132,7 +153,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disk<wbr>Node</span>
+        <span id="disknode~go">
+<span class="nx">
+Disk<wbr>Node
+<a class="anchorjs-link " href="#disknode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -141,7 +167,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disk<wbr>Path</span>
+        <span id="diskpath~go">
+<span class="nx">
+Disk<wbr>Path
+<a class="anchorjs-link " href="#diskpath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -157,7 +188,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>gateway<wbr>Arn</span>
+        <span id="gatewayarn~nodejs">
+<span class="nx">
+gateway<wbr>Arn
+<a class="anchorjs-link " href="#gatewayarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -166,7 +202,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>disk<wbr>Node</span>
+        <span id="disknode~nodejs">
+<span class="nx">
+disk<wbr>Node
+<a class="anchorjs-link " href="#disknode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -175,7 +216,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>disk<wbr>Path</span>
+        <span id="diskpath~nodejs">
+<span class="nx">
+disk<wbr>Path
+<a class="anchorjs-link " href="#diskpath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -191,7 +237,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>gateway_<wbr>arn</span>
+        <span id="gateway_arn~python">
+<span class="nx">
+gateway_<wbr>arn
+<a class="anchorjs-link " href="#gateway_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -200,7 +251,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>disk_<wbr>node</span>
+        <span id="disk_node~python">
+<span class="nx">
+disk_<wbr>node
+<a class="anchorjs-link " href="#disk_node~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -209,7 +265,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>disk_<wbr>path</span>
+        <span id="disk_path~python">
+<span class="nx">
+disk_<wbr>path
+<a class="anchorjs-link " href="#disk_path~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -238,7 +299,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disk<wbr>Id</span>
+        <span id="diskid~csharp">
+<span class="nx">
+Disk<wbr>Id
+<a class="anchorjs-link " href="#diskid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -247,7 +313,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Gateway<wbr>Arn</span>
+        <span id="gatewayarn~csharp">
+<span class="nx">
+Gateway<wbr>Arn
+<a class="anchorjs-link " href="#gatewayarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -255,7 +326,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -264,7 +340,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disk<wbr>Node</span>
+        <span id="disknode~csharp">
+<span class="nx">
+Disk<wbr>Node
+<a class="anchorjs-link " href="#disknode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -272,7 +353,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disk<wbr>Path</span>
+        <span id="diskpath~csharp">
+<span class="nx">
+Disk<wbr>Path
+<a class="anchorjs-link " href="#diskpath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -287,7 +373,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disk<wbr>Id</span>
+        <span id="diskid~go">
+<span class="nx">
+Disk<wbr>Id
+<a class="anchorjs-link " href="#diskid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -296,7 +387,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Gateway<wbr>Arn</span>
+        <span id="gatewayarn~go">
+<span class="nx">
+Gateway<wbr>Arn
+<a class="anchorjs-link " href="#gatewayarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -304,7 +400,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -313,7 +414,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disk<wbr>Node</span>
+        <span id="disknode~go">
+<span class="nx">
+Disk<wbr>Node
+<a class="anchorjs-link " href="#disknode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -321,7 +427,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Disk<wbr>Path</span>
+        <span id="diskpath~go">
+<span class="nx">
+Disk<wbr>Path
+<a class="anchorjs-link " href="#diskpath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -336,7 +447,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>disk<wbr>Id</span>
+        <span id="diskid~nodejs">
+<span class="nx">
+disk<wbr>Id
+<a class="anchorjs-link " href="#diskid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -345,7 +461,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>gateway<wbr>Arn</span>
+        <span id="gatewayarn~nodejs">
+<span class="nx">
+gateway<wbr>Arn
+<a class="anchorjs-link " href="#gatewayarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -353,7 +474,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -362,7 +488,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>disk<wbr>Node</span>
+        <span id="disknode~nodejs">
+<span class="nx">
+disk<wbr>Node
+<a class="anchorjs-link " href="#disknode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -370,7 +501,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>disk<wbr>Path</span>
+        <span id="diskpath~nodejs">
+<span class="nx">
+disk<wbr>Path
+<a class="anchorjs-link " href="#diskpath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -385,7 +521,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>disk_<wbr>id</span>
+        <span id="disk_id~python">
+<span class="nx">
+disk_<wbr>id
+<a class="anchorjs-link " href="#disk_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -394,7 +535,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>gateway_<wbr>arn</span>
+        <span id="gateway_arn~python">
+<span class="nx">
+gateway_<wbr>arn
+<a class="anchorjs-link " href="#gateway_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -402,7 +548,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -411,7 +562,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>disk_<wbr>node</span>
+        <span id="disk_node~python">
+<span class="nx">
+disk_<wbr>node
+<a class="anchorjs-link " href="#disk_node~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -419,7 +575,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>disk_<wbr>path</span>
+        <span id="disk_path~python">
+<span class="nx">
+disk_<wbr>path
+<a class="anchorjs-link " href="#disk_path~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

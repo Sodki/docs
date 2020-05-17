@@ -27,7 +27,7 @@ VPC.
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getVpc<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcArgs">GetVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcResult">GetVpcResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getVpc<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcArgs">GetVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#GetVpcResult">GetVpcResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -37,13 +37,16 @@ VPC.
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupVpc<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcArgs">LookupVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcResult">LookupVpcResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupVpc<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcArgs">LookupVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LookupVpcResult">LookupVpcResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupVpc` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetVpc </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcResult.html">GetVpcResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcArgs.html">GetVpcArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcResult.html">GetVpcResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.GetVpcArgs.html">GetVpcArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -58,7 +61,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -67,7 +75,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default</span>
+        <span id="default~csharp">
+<span class="nx">
+Default
+<a class="anchorjs-link " href="#default~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -77,7 +90,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~csharp">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -86,7 +104,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">List&lt;Get<wbr>Vpc<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
@@ -95,7 +118,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -104,7 +132,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -114,7 +147,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -131,7 +169,12 @@ a pair on the desired VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -140,7 +183,12 @@ a pair on the desired VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default</span>
+        <span id="default~go">
+<span class="nx">
+Default
+<a class="anchorjs-link " href="#default~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -150,7 +198,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~go">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -159,7 +212,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">[]Get<wbr>Vpc<wbr>Filter</a></span>
     </dt>
@@ -168,7 +226,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -177,7 +240,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -187,7 +255,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -204,7 +277,12 @@ a pair on the desired VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr<wbr>Block</span>
+        <span id="cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -213,7 +291,12 @@ a pair on the desired VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default</span>
+        <span id="default~nodejs">
+<span class="nx">
+default
+<a class="anchorjs-link " href="#default~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -223,7 +306,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~nodejs">
+<span class="nx">
+dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -232,7 +320,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">Get<wbr>Vpc<wbr>Filter[]</a></span>
     </dt>
@@ -241,7 +334,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -250,7 +348,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -260,7 +363,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -277,7 +385,12 @@ a pair on the desired VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr_<wbr>block</span>
+        <span id="cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -286,7 +399,12 @@ a pair on the desired VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default</span>
+        <span id="default~python">
+<span class="nx">
+default
+<a class="anchorjs-link " href="#default~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -296,7 +414,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dhcp_<wbr>options_<wbr>id</span>
+        <span id="dhcp_options_id~python">
+<span class="nx">
+dhcp_<wbr>options_<wbr>id
+<a class="anchorjs-link " href="#dhcp_options_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -305,7 +428,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">List[Get<wbr>Vpc<wbr>Filter]</a></span>
     </dt>
@@ -314,7 +442,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -323,7 +456,12 @@ the default VPC for the region.
 
     <dt class="property-optional"
             title="Optional">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -333,7 +471,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -363,7 +506,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -372,7 +520,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -381,7 +534,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block<wbr>Associations</span>
+        <span id="cidrblockassociations~csharp">
+<span class="nx">
+Cidr<wbr>Block<wbr>Associations
+<a class="anchorjs-link " href="#cidrblockassociations~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpccidrblockassociation">List&lt;Get<wbr>Vpc<wbr>Cidr<wbr>Block<wbr>Association&gt;</a></span>
     </dt>
@@ -389,7 +547,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Default</span>
+        <span id="default~csharp">
+<span class="nx">
+Default
+<a class="anchorjs-link " href="#default~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -397,7 +560,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~csharp">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -405,7 +573,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="enablednshostnames~csharp">
+<span class="nx">
+Enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#enablednshostnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -414,7 +587,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Enable<wbr>Dns<wbr>Support</span>
+        <span id="enablednssupport~csharp">
+<span class="nx">
+Enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enablednssupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -423,7 +601,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -431,7 +614,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Tenancy</span>
+        <span id="instancetenancy~csharp">
+<span class="nx">
+Instance<wbr>Tenancy
+<a class="anchorjs-link " href="#instancetenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -441,7 +629,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Ipv6Association<wbr>Id</span>
+        <span id="ipv6associationid~csharp">
+<span class="nx">
+Ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#ipv6associationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -450,7 +643,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Ipv6Cidr<wbr>Block</span>
+        <span id="ipv6cidrblock~csharp">
+<span class="nx">
+Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#ipv6cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -459,7 +657,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="mainroutetableid~csharp">
+<span class="nx">
+Main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#mainroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -468,7 +671,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~csharp">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -477,7 +685,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -486,7 +699,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -494,7 +712,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">List&lt;Get<wbr>Vpc<wbr>Filter&gt;</a></span>
     </dt>
@@ -509,7 +732,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -518,7 +746,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -527,7 +760,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block<wbr>Associations</span>
+        <span id="cidrblockassociations~go">
+<span class="nx">
+Cidr<wbr>Block<wbr>Associations
+<a class="anchorjs-link " href="#cidrblockassociations~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpccidrblockassociation">[]Get<wbr>Vpc<wbr>Cidr<wbr>Block<wbr>Association</a></span>
     </dt>
@@ -535,7 +773,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Default</span>
+        <span id="default~go">
+<span class="nx">
+Default
+<a class="anchorjs-link " href="#default~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -543,7 +786,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~go">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -551,7 +799,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="enablednshostnames~go">
+<span class="nx">
+Enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#enablednshostnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -560,7 +813,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Enable<wbr>Dns<wbr>Support</span>
+        <span id="enablednssupport~go">
+<span class="nx">
+Enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enablednssupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -569,7 +827,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -577,7 +840,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Tenancy</span>
+        <span id="instancetenancy~go">
+<span class="nx">
+Instance<wbr>Tenancy
+<a class="anchorjs-link " href="#instancetenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -587,7 +855,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Ipv6Association<wbr>Id</span>
+        <span id="ipv6associationid~go">
+<span class="nx">
+Ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#ipv6associationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -596,7 +869,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Ipv6Cidr<wbr>Block</span>
+        <span id="ipv6cidrblock~go">
+<span class="nx">
+Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#ipv6cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -605,7 +883,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="mainroutetableid~go">
+<span class="nx">
+Main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#mainroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -614,7 +897,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~go">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -623,7 +911,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -632,7 +925,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -640,7 +938,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">[]Get<wbr>Vpc<wbr>Filter</a></span>
     </dt>
@@ -655,7 +958,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -664,7 +972,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>cidr<wbr>Block</span>
+        <span id="cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -673,7 +986,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>cidr<wbr>Block<wbr>Associations</span>
+        <span id="cidrblockassociations~nodejs">
+<span class="nx">
+cidr<wbr>Block<wbr>Associations
+<a class="anchorjs-link " href="#cidrblockassociations~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpccidrblockassociation">Get<wbr>Vpc<wbr>Cidr<wbr>Block<wbr>Association[]</a></span>
     </dt>
@@ -681,7 +999,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>default</span>
+        <span id="default~nodejs">
+<span class="nx">
+default
+<a class="anchorjs-link " href="#default~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -689,7 +1012,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~nodejs">
+<span class="nx">
+dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -697,7 +1025,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="enablednshostnames~nodejs">
+<span class="nx">
+enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#enablednshostnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -706,7 +1039,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>enable<wbr>Dns<wbr>Support</span>
+        <span id="enablednssupport~nodejs">
+<span class="nx">
+enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enablednssupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -715,7 +1053,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -723,7 +1066,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>Tenancy</span>
+        <span id="instancetenancy~nodejs">
+<span class="nx">
+instance<wbr>Tenancy
+<a class="anchorjs-link " href="#instancetenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -733,7 +1081,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>ipv6Association<wbr>Id</span>
+        <span id="ipv6associationid~nodejs">
+<span class="nx">
+ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#ipv6associationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -742,7 +1095,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>ipv6Cidr<wbr>Block</span>
+        <span id="ipv6cidrblock~nodejs">
+<span class="nx">
+ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#ipv6cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -751,7 +1109,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="mainroutetableid~nodejs">
+<span class="nx">
+main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#mainroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -760,7 +1123,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>owner<wbr>Id</span>
+        <span id="ownerid~nodejs">
+<span class="nx">
+owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -769,7 +1137,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -778,7 +1151,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -786,7 +1164,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">Get<wbr>Vpc<wbr>Filter[]</a></span>
     </dt>
@@ -801,7 +1184,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -810,7 +1198,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>cidr_<wbr>block</span>
+        <span id="cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -819,7 +1212,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>cidr_<wbr>block_<wbr>associations</span>
+        <span id="cidr_block_associations~python">
+<span class="nx">
+cidr_<wbr>block_<wbr>associations
+<a class="anchorjs-link " href="#cidr_block_associations~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpccidrblockassociation">List[Get<wbr>Vpc<wbr>Cidr<wbr>Block<wbr>Association]</a></span>
     </dt>
@@ -827,7 +1225,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>default</span>
+        <span id="default~python">
+<span class="nx">
+default
+<a class="anchorjs-link " href="#default~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -835,7 +1238,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>dhcp_<wbr>options_<wbr>id</span>
+        <span id="dhcp_options_id~python">
+<span class="nx">
+dhcp_<wbr>options_<wbr>id
+<a class="anchorjs-link " href="#dhcp_options_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -843,7 +1251,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>enable_<wbr>dns_<wbr>hostnames</span>
+        <span id="enable_dns_hostnames~python">
+<span class="nx">
+enable_<wbr>dns_<wbr>hostnames
+<a class="anchorjs-link " href="#enable_dns_hostnames~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -852,7 +1265,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>enable_<wbr>dns_<wbr>support</span>
+        <span id="enable_dns_support~python">
+<span class="nx">
+enable_<wbr>dns_<wbr>support
+<a class="anchorjs-link " href="#enable_dns_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -861,7 +1279,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -869,7 +1292,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>tenancy</span>
+        <span id="instance_tenancy~python">
+<span class="nx">
+instance_<wbr>tenancy
+<a class="anchorjs-link " href="#instance_tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -879,7 +1307,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>ipv6_<wbr>association_<wbr>id</span>
+        <span id="ipv6_association_id~python">
+<span class="nx">
+ipv6_<wbr>association_<wbr>id
+<a class="anchorjs-link " href="#ipv6_association_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -888,7 +1321,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>ipv6_<wbr>cidr_<wbr>block</span>
+        <span id="ipv6_cidr_block~python">
+<span class="nx">
+ipv6_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#ipv6_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -897,7 +1335,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>main_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="main_route_table_id~python">
+<span class="nx">
+main_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#main_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -906,7 +1349,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>owner_<wbr>id</span>
+        <span id="owner_id~python">
+<span class="nx">
+owner_<wbr>id
+<a class="anchorjs-link " href="#owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -915,7 +1363,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -924,7 +1377,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -932,7 +1390,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getvpcfilter">List[Get<wbr>Vpc<wbr>Filter]</a></span>
     </dt>
@@ -971,7 +1434,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Association<wbr>Id</span>
+        <span id="associationid~csharp">
+<span class="nx">
+Association<wbr>Id
+<a class="anchorjs-link " href="#associationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -980,7 +1448,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -989,7 +1462,12 @@ selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
 
     <dt class="property-required"
             title="Required">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1006,7 +1484,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Association<wbr>Id</span>
+        <span id="associationid~go">
+<span class="nx">
+Association<wbr>Id
+<a class="anchorjs-link " href="#associationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1015,7 +1498,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1024,7 +1512,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1041,7 +1534,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>association<wbr>Id</span>
+        <span id="associationid~nodejs">
+<span class="nx">
+association<wbr>Id
+<a class="anchorjs-link " href="#associationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1050,7 +1548,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>cidr<wbr>Block</span>
+        <span id="cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1059,7 +1562,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1076,7 +1584,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>association_<wbr>id</span>
+        <span id="association_id~python">
+<span class="nx">
+association_<wbr>id
+<a class="anchorjs-link " href="#association_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1085,7 +1598,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>cidr_<wbr>block</span>
+        <span id="cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1094,7 +1612,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1129,7 +1652,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1139,7 +1667,12 @@ Can be either `"pending"` or `"available"`.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1156,7 +1689,12 @@ A VPC will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1166,7 +1704,12 @@ A VPC will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1183,7 +1726,12 @@ A VPC will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1193,7 +1741,12 @@ A VPC will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1210,7 +1763,12 @@ A VPC will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1220,7 +1778,12 @@ A VPC will be selected if any one of the given values matches.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>

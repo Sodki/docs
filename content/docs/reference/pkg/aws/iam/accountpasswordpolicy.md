@@ -70,19 +70,19 @@ const strict = new aws.iam.AccountPasswordPolicy("strict", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicy">AccountPasswordPolicy</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicyArgs">AccountPasswordPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicy">AccountPasswordPolicy</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicyArgs">AccountPasswordPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AccountPasswordPolicy</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allow_users_to_change_password=None<span class="p">, </span>hard_expiry=None<span class="p">, </span>max_password_age=None<span class="p">, </span>minimum_password_length=None<span class="p">, </span>password_reuse_prevention=None<span class="p">, </span>require_lowercase_characters=None<span class="p">, </span>require_numbers=None<span class="p">, </span>require_symbols=None<span class="p">, </span>require_uppercase_characters=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/iam/#AccountPasswordPolicy">AccountPasswordPolicy</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allow_users_to_change_password=None<span class="p">, </span>hard_expiry=None<span class="p">, </span>max_password_age=None<span class="p">, </span>minimum_password_length=None<span class="p">, </span>password_reuse_prevention=None<span class="p">, </span>require_lowercase_characters=None<span class="p">, </span>require_numbers=None<span class="p">, </span>require_symbols=None<span class="p">, </span>require_uppercase_characters=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAccountPasswordPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicyArgs">AccountPasswordPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicy">AccountPasswordPolicy</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicy">NewAccountPasswordPolicy</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicyArgs">AccountPasswordPolicyArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicy">AccountPasswordPolicy</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicy.html">AccountPasswordPolicy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicyArgs.html">AccountPasswordPolicyArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicy.html">AccountPasswordPolicy</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicyArgs.html">AccountPasswordPolicyArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -248,7 +248,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password</span>
+        <span id="allowuserstochangepassword~csharp">
+<span class="nx">
+Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password
+<a class="anchorjs-link " href="#allowuserstochangepassword~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -257,7 +262,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hard<wbr>Expiry</span>
+        <span id="hardexpiry~csharp">
+<span class="nx">
+Hard<wbr>Expiry
+<a class="anchorjs-link " href="#hardexpiry~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -267,7 +277,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Password<wbr>Age</span>
+        <span id="maxpasswordage~csharp">
+<span class="nx">
+Max<wbr>Password<wbr>Age
+<a class="anchorjs-link " href="#maxpasswordage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -276,7 +291,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Password<wbr>Length</span>
+        <span id="minimumpasswordlength~csharp">
+<span class="nx">
+Minimum<wbr>Password<wbr>Length
+<a class="anchorjs-link " href="#minimumpasswordlength~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -285,7 +305,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Reuse<wbr>Prevention</span>
+        <span id="passwordreuseprevention~csharp">
+<span class="nx">
+Password<wbr>Reuse<wbr>Prevention
+<a class="anchorjs-link " href="#passwordreuseprevention~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -294,7 +319,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Lowercase<wbr>Characters</span>
+        <span id="requirelowercasecharacters~csharp">
+<span class="nx">
+Require<wbr>Lowercase<wbr>Characters
+<a class="anchorjs-link " href="#requirelowercasecharacters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -303,7 +333,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Numbers</span>
+        <span id="requirenumbers~csharp">
+<span class="nx">
+Require<wbr>Numbers
+<a class="anchorjs-link " href="#requirenumbers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -312,7 +347,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Symbols</span>
+        <span id="requiresymbols~csharp">
+<span class="nx">
+Require<wbr>Symbols
+<a class="anchorjs-link " href="#requiresymbols~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -321,7 +361,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Uppercase<wbr>Characters</span>
+        <span id="requireuppercasecharacters~csharp">
+<span class="nx">
+Require<wbr>Uppercase<wbr>Characters
+<a class="anchorjs-link " href="#requireuppercasecharacters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -337,7 +382,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password</span>
+        <span id="allowuserstochangepassword~go">
+<span class="nx">
+Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password
+<a class="anchorjs-link " href="#allowuserstochangepassword~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -346,7 +396,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hard<wbr>Expiry</span>
+        <span id="hardexpiry~go">
+<span class="nx">
+Hard<wbr>Expiry
+<a class="anchorjs-link " href="#hardexpiry~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -356,7 +411,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Password<wbr>Age</span>
+        <span id="maxpasswordage~go">
+<span class="nx">
+Max<wbr>Password<wbr>Age
+<a class="anchorjs-link " href="#maxpasswordage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -365,7 +425,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Password<wbr>Length</span>
+        <span id="minimumpasswordlength~go">
+<span class="nx">
+Minimum<wbr>Password<wbr>Length
+<a class="anchorjs-link " href="#minimumpasswordlength~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -374,7 +439,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Reuse<wbr>Prevention</span>
+        <span id="passwordreuseprevention~go">
+<span class="nx">
+Password<wbr>Reuse<wbr>Prevention
+<a class="anchorjs-link " href="#passwordreuseprevention~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -383,7 +453,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Lowercase<wbr>Characters</span>
+        <span id="requirelowercasecharacters~go">
+<span class="nx">
+Require<wbr>Lowercase<wbr>Characters
+<a class="anchorjs-link " href="#requirelowercasecharacters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -392,7 +467,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Numbers</span>
+        <span id="requirenumbers~go">
+<span class="nx">
+Require<wbr>Numbers
+<a class="anchorjs-link " href="#requirenumbers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -401,7 +481,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Symbols</span>
+        <span id="requiresymbols~go">
+<span class="nx">
+Require<wbr>Symbols
+<a class="anchorjs-link " href="#requiresymbols~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -410,7 +495,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Uppercase<wbr>Characters</span>
+        <span id="requireuppercasecharacters~go">
+<span class="nx">
+Require<wbr>Uppercase<wbr>Characters
+<a class="anchorjs-link " href="#requireuppercasecharacters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -426,7 +516,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Users<wbr>To<wbr>Change<wbr>Password</span>
+        <span id="allowuserstochangepassword~nodejs">
+<span class="nx">
+allow<wbr>Users<wbr>To<wbr>Change<wbr>Password
+<a class="anchorjs-link " href="#allowuserstochangepassword~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -435,7 +530,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>hard<wbr>Expiry</span>
+        <span id="hardexpiry~nodejs">
+<span class="nx">
+hard<wbr>Expiry
+<a class="anchorjs-link " href="#hardexpiry~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -445,7 +545,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Password<wbr>Age</span>
+        <span id="maxpasswordage~nodejs">
+<span class="nx">
+max<wbr>Password<wbr>Age
+<a class="anchorjs-link " href="#maxpasswordage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -454,7 +559,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum<wbr>Password<wbr>Length</span>
+        <span id="minimumpasswordlength~nodejs">
+<span class="nx">
+minimum<wbr>Password<wbr>Length
+<a class="anchorjs-link " href="#minimumpasswordlength~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -463,7 +573,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>password<wbr>Reuse<wbr>Prevention</span>
+        <span id="passwordreuseprevention~nodejs">
+<span class="nx">
+password<wbr>Reuse<wbr>Prevention
+<a class="anchorjs-link " href="#passwordreuseprevention~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -472,7 +587,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Lowercase<wbr>Characters</span>
+        <span id="requirelowercasecharacters~nodejs">
+<span class="nx">
+require<wbr>Lowercase<wbr>Characters
+<a class="anchorjs-link " href="#requirelowercasecharacters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -481,7 +601,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Numbers</span>
+        <span id="requirenumbers~nodejs">
+<span class="nx">
+require<wbr>Numbers
+<a class="anchorjs-link " href="#requirenumbers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -490,7 +615,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Symbols</span>
+        <span id="requiresymbols~nodejs">
+<span class="nx">
+require<wbr>Symbols
+<a class="anchorjs-link " href="#requiresymbols~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -499,7 +629,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Uppercase<wbr>Characters</span>
+        <span id="requireuppercasecharacters~nodejs">
+<span class="nx">
+require<wbr>Uppercase<wbr>Characters
+<a class="anchorjs-link " href="#requireuppercasecharacters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -515,7 +650,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>users_<wbr>to_<wbr>change_<wbr>password</span>
+        <span id="allow_users_to_change_password~python">
+<span class="nx">
+allow_<wbr>users_<wbr>to_<wbr>change_<wbr>password
+<a class="anchorjs-link " href="#allow_users_to_change_password~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -524,7 +664,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>hard_<wbr>expiry</span>
+        <span id="hard_expiry~python">
+<span class="nx">
+hard_<wbr>expiry
+<a class="anchorjs-link " href="#hard_expiry~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -534,7 +679,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>max_<wbr>password_<wbr>age</span>
+        <span id="max_password_age~python">
+<span class="nx">
+max_<wbr>password_<wbr>age
+<a class="anchorjs-link " href="#max_password_age~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -543,7 +693,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum_<wbr>password_<wbr>length</span>
+        <span id="minimum_password_length~python">
+<span class="nx">
+minimum_<wbr>password_<wbr>length
+<a class="anchorjs-link " href="#minimum_password_length~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -552,7 +707,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>password_<wbr>reuse_<wbr>prevention</span>
+        <span id="password_reuse_prevention~python">
+<span class="nx">
+password_<wbr>reuse_<wbr>prevention
+<a class="anchorjs-link " href="#password_reuse_prevention~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -561,7 +721,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>lowercase_<wbr>characters</span>
+        <span id="require_lowercase_characters~python">
+<span class="nx">
+require_<wbr>lowercase_<wbr>characters
+<a class="anchorjs-link " href="#require_lowercase_characters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -570,7 +735,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>numbers</span>
+        <span id="require_numbers~python">
+<span class="nx">
+require_<wbr>numbers
+<a class="anchorjs-link " href="#require_numbers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -579,7 +749,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>symbols</span>
+        <span id="require_symbols~python">
+<span class="nx">
+require_<wbr>symbols
+<a class="anchorjs-link " href="#require_symbols~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -588,7 +763,12 @@ The AccountPasswordPolicy resource accepts the following [input]({{< relref "/do
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>uppercase_<wbr>characters</span>
+        <span id="require_uppercase_characters~python">
+<span class="nx">
+require_<wbr>uppercase_<wbr>characters
+<a class="anchorjs-link " href="#require_uppercase_characters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -615,7 +795,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Expire<wbr>Passwords</span>
+        <span id="expirepasswords~csharp">
+<span class="nx">
+Expire<wbr>Passwords
+<a class="anchorjs-link " href="#expirepasswords~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -626,7 +811,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -641,7 +831,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>Expire<wbr>Passwords</span>
+        <span id="expirepasswords~go">
+<span class="nx">
+Expire<wbr>Passwords
+<a class="anchorjs-link " href="#expirepasswords~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -652,7 +847,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -667,7 +867,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>expire<wbr>Passwords</span>
+        <span id="expirepasswords~nodejs">
+<span class="nx">
+expire<wbr>Passwords
+<a class="anchorjs-link " href="#expirepasswords~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -678,7 +883,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -693,7 +903,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>expire_<wbr>passwords</span>
+        <span id="expire_passwords~python">
+<span class="nx">
+expire_<wbr>passwords
+<a class="anchorjs-link " href="#expire_passwords~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -704,7 +919,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -725,7 +945,7 @@ Get an existing AccountPasswordPolicy resource's state with the given name, ID, 
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicyState">AccountPasswordPolicyState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicy">AccountPasswordPolicy</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicyState">AccountPasswordPolicyState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/iam/#AccountPasswordPolicy">AccountPasswordPolicy</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -733,11 +953,11 @@ Get an existing AccountPasswordPolicy resource's state with the given name, ID, 
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAccountPasswordPolicy<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicyState">AccountPasswordPolicyState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicy">AccountPasswordPolicy</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAccountPasswordPolicy<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicyState">AccountPasswordPolicyState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/iam?tab=doc#AccountPasswordPolicy">AccountPasswordPolicy</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicy.html">AccountPasswordPolicy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicyState.html">AccountPasswordPolicyState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicy.html">AccountPasswordPolicy</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Iam.AccountPasswordPolicyState.html">AccountPasswordPolicyState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -845,7 +1065,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password</span>
+        <span id="state_allowuserstochangepassword~csharp">
+<span class="nx">
+Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password
+<a class="anchorjs-link " href="#state_allowuserstochangepassword~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -854,7 +1079,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expire<wbr>Passwords</span>
+        <span id="state_expirepasswords~csharp">
+<span class="nx">
+Expire<wbr>Passwords
+<a class="anchorjs-link " href="#state_expirepasswords~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -865,7 +1095,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hard<wbr>Expiry</span>
+        <span id="state_hardexpiry~csharp">
+<span class="nx">
+Hard<wbr>Expiry
+<a class="anchorjs-link " href="#state_hardexpiry~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -875,7 +1110,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Password<wbr>Age</span>
+        <span id="state_maxpasswordage~csharp">
+<span class="nx">
+Max<wbr>Password<wbr>Age
+<a class="anchorjs-link " href="#state_maxpasswordage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -884,7 +1124,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Password<wbr>Length</span>
+        <span id="state_minimumpasswordlength~csharp">
+<span class="nx">
+Minimum<wbr>Password<wbr>Length
+<a class="anchorjs-link " href="#state_minimumpasswordlength~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -893,7 +1138,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Reuse<wbr>Prevention</span>
+        <span id="state_passwordreuseprevention~csharp">
+<span class="nx">
+Password<wbr>Reuse<wbr>Prevention
+<a class="anchorjs-link " href="#state_passwordreuseprevention~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -902,7 +1152,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Lowercase<wbr>Characters</span>
+        <span id="state_requirelowercasecharacters~csharp">
+<span class="nx">
+Require<wbr>Lowercase<wbr>Characters
+<a class="anchorjs-link " href="#state_requirelowercasecharacters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -911,7 +1166,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Numbers</span>
+        <span id="state_requirenumbers~csharp">
+<span class="nx">
+Require<wbr>Numbers
+<a class="anchorjs-link " href="#state_requirenumbers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -920,7 +1180,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Symbols</span>
+        <span id="state_requiresymbols~csharp">
+<span class="nx">
+Require<wbr>Symbols
+<a class="anchorjs-link " href="#state_requiresymbols~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -929,7 +1194,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Uppercase<wbr>Characters</span>
+        <span id="state_requireuppercasecharacters~csharp">
+<span class="nx">
+Require<wbr>Uppercase<wbr>Characters
+<a class="anchorjs-link " href="#state_requireuppercasecharacters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -945,7 +1215,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password</span>
+        <span id="state_allowuserstochangepassword~go">
+<span class="nx">
+Allow<wbr>Users<wbr>To<wbr>Change<wbr>Password
+<a class="anchorjs-link " href="#state_allowuserstochangepassword~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -954,7 +1229,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expire<wbr>Passwords</span>
+        <span id="state_expirepasswords~go">
+<span class="nx">
+Expire<wbr>Passwords
+<a class="anchorjs-link " href="#state_expirepasswords~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -965,7 +1245,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hard<wbr>Expiry</span>
+        <span id="state_hardexpiry~go">
+<span class="nx">
+Hard<wbr>Expiry
+<a class="anchorjs-link " href="#state_hardexpiry~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -975,7 +1260,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Password<wbr>Age</span>
+        <span id="state_maxpasswordage~go">
+<span class="nx">
+Max<wbr>Password<wbr>Age
+<a class="anchorjs-link " href="#state_maxpasswordage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -984,7 +1274,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Minimum<wbr>Password<wbr>Length</span>
+        <span id="state_minimumpasswordlength~go">
+<span class="nx">
+Minimum<wbr>Password<wbr>Length
+<a class="anchorjs-link " href="#state_minimumpasswordlength~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -993,7 +1288,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Reuse<wbr>Prevention</span>
+        <span id="state_passwordreuseprevention~go">
+<span class="nx">
+Password<wbr>Reuse<wbr>Prevention
+<a class="anchorjs-link " href="#state_passwordreuseprevention~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1002,7 +1302,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Lowercase<wbr>Characters</span>
+        <span id="state_requirelowercasecharacters~go">
+<span class="nx">
+Require<wbr>Lowercase<wbr>Characters
+<a class="anchorjs-link " href="#state_requirelowercasecharacters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1011,7 +1316,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Numbers</span>
+        <span id="state_requirenumbers~go">
+<span class="nx">
+Require<wbr>Numbers
+<a class="anchorjs-link " href="#state_requirenumbers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1020,7 +1330,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Symbols</span>
+        <span id="state_requiresymbols~go">
+<span class="nx">
+Require<wbr>Symbols
+<a class="anchorjs-link " href="#state_requiresymbols~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1029,7 +1344,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Require<wbr>Uppercase<wbr>Characters</span>
+        <span id="state_requireuppercasecharacters~go">
+<span class="nx">
+Require<wbr>Uppercase<wbr>Characters
+<a class="anchorjs-link " href="#state_requireuppercasecharacters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1045,7 +1365,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Users<wbr>To<wbr>Change<wbr>Password</span>
+        <span id="state_allowuserstochangepassword~nodejs">
+<span class="nx">
+allow<wbr>Users<wbr>To<wbr>Change<wbr>Password
+<a class="anchorjs-link " href="#state_allowuserstochangepassword~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1054,7 +1379,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>expire<wbr>Passwords</span>
+        <span id="state_expirepasswords~nodejs">
+<span class="nx">
+expire<wbr>Passwords
+<a class="anchorjs-link " href="#state_expirepasswords~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1065,7 +1395,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hard<wbr>Expiry</span>
+        <span id="state_hardexpiry~nodejs">
+<span class="nx">
+hard<wbr>Expiry
+<a class="anchorjs-link " href="#state_hardexpiry~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1075,7 +1410,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Password<wbr>Age</span>
+        <span id="state_maxpasswordage~nodejs">
+<span class="nx">
+max<wbr>Password<wbr>Age
+<a class="anchorjs-link " href="#state_maxpasswordage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1084,7 +1424,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum<wbr>Password<wbr>Length</span>
+        <span id="state_minimumpasswordlength~nodejs">
+<span class="nx">
+minimum<wbr>Password<wbr>Length
+<a class="anchorjs-link " href="#state_minimumpasswordlength~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1093,7 +1438,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>password<wbr>Reuse<wbr>Prevention</span>
+        <span id="state_passwordreuseprevention~nodejs">
+<span class="nx">
+password<wbr>Reuse<wbr>Prevention
+<a class="anchorjs-link " href="#state_passwordreuseprevention~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1102,7 +1452,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Lowercase<wbr>Characters</span>
+        <span id="state_requirelowercasecharacters~nodejs">
+<span class="nx">
+require<wbr>Lowercase<wbr>Characters
+<a class="anchorjs-link " href="#state_requirelowercasecharacters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1111,7 +1466,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Numbers</span>
+        <span id="state_requirenumbers~nodejs">
+<span class="nx">
+require<wbr>Numbers
+<a class="anchorjs-link " href="#state_requirenumbers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1120,7 +1480,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Symbols</span>
+        <span id="state_requiresymbols~nodejs">
+<span class="nx">
+require<wbr>Symbols
+<a class="anchorjs-link " href="#state_requiresymbols~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1129,7 +1494,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require<wbr>Uppercase<wbr>Characters</span>
+        <span id="state_requireuppercasecharacters~nodejs">
+<span class="nx">
+require<wbr>Uppercase<wbr>Characters
+<a class="anchorjs-link " href="#state_requireuppercasecharacters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1145,7 +1515,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>users_<wbr>to_<wbr>change_<wbr>password</span>
+        <span id="state_allow_users_to_change_password~python">
+<span class="nx">
+allow_<wbr>users_<wbr>to_<wbr>change_<wbr>password
+<a class="anchorjs-link " href="#state_allow_users_to_change_password~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1154,7 +1529,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>expire_<wbr>passwords</span>
+        <span id="state_expire_passwords~python">
+<span class="nx">
+expire_<wbr>passwords
+<a class="anchorjs-link " href="#state_expire_passwords~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1165,7 +1545,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hard_<wbr>expiry</span>
+        <span id="state_hard_expiry~python">
+<span class="nx">
+hard_<wbr>expiry
+<a class="anchorjs-link " href="#state_hard_expiry~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1175,7 +1560,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max_<wbr>password_<wbr>age</span>
+        <span id="state_max_password_age~python">
+<span class="nx">
+max_<wbr>password_<wbr>age
+<a class="anchorjs-link " href="#state_max_password_age~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1184,7 +1574,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>minimum_<wbr>password_<wbr>length</span>
+        <span id="state_minimum_password_length~python">
+<span class="nx">
+minimum_<wbr>password_<wbr>length
+<a class="anchorjs-link " href="#state_minimum_password_length~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1193,7 +1588,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>password_<wbr>reuse_<wbr>prevention</span>
+        <span id="state_password_reuse_prevention~python">
+<span class="nx">
+password_<wbr>reuse_<wbr>prevention
+<a class="anchorjs-link " href="#state_password_reuse_prevention~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1202,7 +1602,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>lowercase_<wbr>characters</span>
+        <span id="state_require_lowercase_characters~python">
+<span class="nx">
+require_<wbr>lowercase_<wbr>characters
+<a class="anchorjs-link " href="#state_require_lowercase_characters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1211,7 +1616,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>numbers</span>
+        <span id="state_require_numbers~python">
+<span class="nx">
+require_<wbr>numbers
+<a class="anchorjs-link " href="#state_require_numbers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1220,7 +1630,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>symbols</span>
+        <span id="state_require_symbols~python">
+<span class="nx">
+require_<wbr>symbols
+<a class="anchorjs-link " href="#state_require_symbols~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1229,7 +1644,12 @@ Returns `false` if it is `0` or _not present_.
 
     <dt class="property-optional"
             title="Optional">
-        <span>require_<wbr>uppercase_<wbr>characters</span>
+        <span id="state_require_uppercase_characters~python">
+<span class="nx">
+require_<wbr>uppercase_<wbr>characters
+<a class="anchorjs-link " href="#state_require_uppercase_characters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>

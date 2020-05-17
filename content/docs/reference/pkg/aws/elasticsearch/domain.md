@@ -369,19 +369,19 @@ const esDomain = new aws.elasticsearch.Domain("es", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#Domain">Domain</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#Domain">Domain</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Domain</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>access_policies=None<span class="p">, </span>advanced_options=None<span class="p">, </span>cluster_config=None<span class="p">, </span>cognito_options=None<span class="p">, </span>domain_endpoint_options=None<span class="p">, </span>domain_name=None<span class="p">, </span>ebs_options=None<span class="p">, </span>elasticsearch_version=None<span class="p">, </span>encrypt_at_rest=None<span class="p">, </span>log_publishing_options=None<span class="p">, </span>node_to_node_encryption=None<span class="p">, </span>snapshot_options=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_options=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/elasticsearch/#Domain">Domain</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>access_policies=None<span class="p">, </span>advanced_options=None<span class="p">, </span>cluster_config=None<span class="p">, </span>cognito_options=None<span class="p">, </span>domain_endpoint_options=None<span class="p">, </span>domain_name=None<span class="p">, </span>ebs_options=None<span class="p">, </span>elasticsearch_version=None<span class="p">, </span>encrypt_at_rest=None<span class="p">, </span>log_publishing_options=None<span class="p">, </span>node_to_node_encryption=None<span class="p">, </span>snapshot_options=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_options=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDomain<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">NewDomain</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainArgs">DomainArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.Domain.html">Domain</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.DomainArgs.html">DomainArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.Domain.html">Domain</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.DomainArgs.html">DomainArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -547,7 +547,12 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Policies</span>
+        <span id="accesspolicies~csharp">
+<span class="nx">
+Access<wbr>Policies
+<a class="anchorjs-link " href="#accesspolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -556,7 +561,12 @@ The Domain resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Advanced<wbr>Options</span>
+        <span id="advancedoptions~csharp">
+<span class="nx">
+Advanced<wbr>Options
+<a class="anchorjs-link " href="#advancedoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -568,7 +578,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Config</span>
+        <span id="clusterconfig~csharp">
+<span class="nx">
+Cluster<wbr>Config
+<a class="anchorjs-link " href="#clusterconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -577,7 +592,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Options</span>
+        <span id="cognitooptions~csharp">
+<span class="nx">
+Cognito<wbr>Options
+<a class="anchorjs-link " href="#cognitooptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -585,7 +605,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Endpoint<wbr>Options</span>
+        <span id="domainendpointoptions~csharp">
+<span class="nx">
+Domain<wbr>Endpoint<wbr>Options
+<a class="anchorjs-link " href="#domainendpointoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -594,7 +619,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~csharp">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -603,7 +633,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Options</span>
+        <span id="ebsoptions~csharp">
+<span class="nx">
+Ebs<wbr>Options
+<a class="anchorjs-link " href="#ebsoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -612,7 +647,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Version</span>
+        <span id="elasticsearchversion~csharp">
+<span class="nx">
+Elasticsearch<wbr>Version
+<a class="anchorjs-link " href="#elasticsearchversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -621,7 +661,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypt<wbr>At<wbr>Rest</span>
+        <span id="encryptatrest~csharp">
+<span class="nx">
+Encrypt<wbr>At<wbr>Rest
+<a class="anchorjs-link " href="#encryptatrest~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest<wbr>Args</a></span>
     </dt>
@@ -630,7 +675,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Publishing<wbr>Options</span>
+        <span id="logpublishingoptions~csharp">
+<span class="nx">
+Log<wbr>Publishing<wbr>Options
+<a class="anchorjs-link " href="#logpublishingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List&lt;Domain<wbr>Log<wbr>Publishing<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
@@ -639,7 +689,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>To<wbr>Node<wbr>Encryption</span>
+        <span id="nodetonodeencryption~csharp">
+<span class="nx">
+Node<wbr>To<wbr>Node<wbr>Encryption
+<a class="anchorjs-link " href="#nodetonodeencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption<wbr>Args</a></span>
     </dt>
@@ -648,7 +703,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Options</span>
+        <span id="snapshotoptions~csharp">
+<span class="nx">
+Snapshot<wbr>Options
+<a class="anchorjs-link " href="#snapshotoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -657,7 +717,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -666,7 +731,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Options</span>
+        <span id="vpcoptions~csharp">
+<span class="nx">
+Vpc<wbr>Options
+<a class="anchorjs-link " href="#vpcoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -682,7 +752,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Policies</span>
+        <span id="accesspolicies~go">
+<span class="nx">
+Access<wbr>Policies
+<a class="anchorjs-link " href="#accesspolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -691,7 +766,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Advanced<wbr>Options</span>
+        <span id="advancedoptions~go">
+<span class="nx">
+Advanced<wbr>Options
+<a class="anchorjs-link " href="#advancedoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -703,7 +783,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Config</span>
+        <span id="clusterconfig~go">
+<span class="nx">
+Cluster<wbr>Config
+<a class="anchorjs-link " href="#clusterconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
@@ -712,7 +797,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Options</span>
+        <span id="cognitooptions~go">
+<span class="nx">
+Cognito<wbr>Options
+<a class="anchorjs-link " href="#cognitooptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
@@ -720,7 +810,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Endpoint<wbr>Options</span>
+        <span id="domainendpointoptions~go">
+<span class="nx">
+Domain<wbr>Endpoint<wbr>Options
+<a class="anchorjs-link " href="#domainendpointoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
@@ -729,7 +824,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -738,7 +838,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Options</span>
+        <span id="ebsoptions~go">
+<span class="nx">
+Ebs<wbr>Options
+<a class="anchorjs-link " href="#ebsoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
@@ -747,7 +852,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Version</span>
+        <span id="elasticsearchversion~go">
+<span class="nx">
+Elasticsearch<wbr>Version
+<a class="anchorjs-link " href="#elasticsearchversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -756,7 +866,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypt<wbr>At<wbr>Rest</span>
+        <span id="encryptatrest~go">
+<span class="nx">
+Encrypt<wbr>At<wbr>Rest
+<a class="anchorjs-link " href="#encryptatrest~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
@@ -765,7 +880,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Publishing<wbr>Options</span>
+        <span id="logpublishingoptions~go">
+<span class="nx">
+Log<wbr>Publishing<wbr>Options
+<a class="anchorjs-link " href="#logpublishingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">[]Domain<wbr>Log<wbr>Publishing<wbr>Option</a></span>
     </dt>
@@ -774,7 +894,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>To<wbr>Node<wbr>Encryption</span>
+        <span id="nodetonodeencryption~go">
+<span class="nx">
+Node<wbr>To<wbr>Node<wbr>Encryption
+<a class="anchorjs-link " href="#nodetonodeencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
@@ -783,7 +908,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Options</span>
+        <span id="snapshotoptions~go">
+<span class="nx">
+Snapshot<wbr>Options
+<a class="anchorjs-link " href="#snapshotoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
@@ -792,7 +922,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -801,7 +936,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Options</span>
+        <span id="vpcoptions~go">
+<span class="nx">
+Vpc<wbr>Options
+<a class="anchorjs-link " href="#vpcoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
@@ -817,7 +957,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>access<wbr>Policies</span>
+        <span id="accesspolicies~nodejs">
+<span class="nx">
+access<wbr>Policies
+<a class="anchorjs-link " href="#accesspolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Policy<wbr>Document</span>
     </dt>
@@ -826,7 +971,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>advanced<wbr>Options</span>
+        <span id="advancedoptions~nodejs">
+<span class="nx">
+advanced<wbr>Options
+<a class="anchorjs-link " href="#advancedoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -838,7 +988,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Config</span>
+        <span id="clusterconfig~nodejs">
+<span class="nx">
+cluster<wbr>Config
+<a class="anchorjs-link " href="#clusterconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
@@ -847,7 +1002,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito<wbr>Options</span>
+        <span id="cognitooptions~nodejs">
+<span class="nx">
+cognito<wbr>Options
+<a class="anchorjs-link " href="#cognitooptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
@@ -855,7 +1015,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Endpoint<wbr>Options</span>
+        <span id="domainendpointoptions~nodejs">
+<span class="nx">
+domain<wbr>Endpoint<wbr>Options
+<a class="anchorjs-link " href="#domainendpointoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
@@ -864,7 +1029,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Name</span>
+        <span id="domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -873,7 +1043,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Options</span>
+        <span id="ebsoptions~nodejs">
+<span class="nx">
+ebs<wbr>Options
+<a class="anchorjs-link " href="#ebsoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
@@ -882,7 +1057,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch<wbr>Version</span>
+        <span id="elasticsearchversion~nodejs">
+<span class="nx">
+elasticsearch<wbr>Version
+<a class="anchorjs-link " href="#elasticsearchversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -891,7 +1071,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypt<wbr>At<wbr>Rest</span>
+        <span id="encryptatrest~nodejs">
+<span class="nx">
+encrypt<wbr>At<wbr>Rest
+<a class="anchorjs-link " href="#encryptatrest~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
@@ -900,7 +1085,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Publishing<wbr>Options</span>
+        <span id="logpublishingoptions~nodejs">
+<span class="nx">
+log<wbr>Publishing<wbr>Options
+<a class="anchorjs-link " href="#logpublishingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">Domain<wbr>Log<wbr>Publishing<wbr>Option[]</a></span>
     </dt>
@@ -909,7 +1099,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>To<wbr>Node<wbr>Encryption</span>
+        <span id="nodetonodeencryption~nodejs">
+<span class="nx">
+node<wbr>To<wbr>Node<wbr>Encryption
+<a class="anchorjs-link " href="#nodetonodeencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
@@ -918,7 +1113,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Options</span>
+        <span id="snapshotoptions~nodejs">
+<span class="nx">
+snapshot<wbr>Options
+<a class="anchorjs-link " href="#snapshotoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
@@ -927,7 +1127,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -936,7 +1141,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Options</span>
+        <span id="vpcoptions~nodejs">
+<span class="nx">
+vpc<wbr>Options
+<a class="anchorjs-link " href="#vpcoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
@@ -952,7 +1162,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>access_<wbr>policies</span>
+        <span id="access_policies~python">
+<span class="nx">
+access_<wbr>policies
+<a class="anchorjs-link " href="#access_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -961,7 +1176,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>advanced_<wbr>options</span>
+        <span id="advanced_options~python">
+<span class="nx">
+advanced_<wbr>options
+<a class="anchorjs-link " href="#advanced_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -973,7 +1193,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>config</span>
+        <span id="cluster_config~python">
+<span class="nx">
+cluster_<wbr>config
+<a class="anchorjs-link " href="#cluster_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Dict[Domain<wbr>Cluster<wbr>Config]</a></span>
     </dt>
@@ -982,7 +1207,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito_<wbr>options</span>
+        <span id="cognito_options~python">
+<span class="nx">
+cognito_<wbr>options
+<a class="anchorjs-link " href="#cognito_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Dict[Domain<wbr>Cognito<wbr>Options]</a></span>
     </dt>
@@ -990,7 +1220,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>endpoint_<wbr>options</span>
+        <span id="domain_endpoint_options~python">
+<span class="nx">
+domain_<wbr>endpoint_<wbr>options
+<a class="anchorjs-link " href="#domain_endpoint_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Dict[Domain<wbr>Domain<wbr>Endpoint<wbr>Options]</a></span>
     </dt>
@@ -999,7 +1234,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>name</span>
+        <span id="domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1008,7 +1248,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>options</span>
+        <span id="ebs_options~python">
+<span class="nx">
+ebs_<wbr>options
+<a class="anchorjs-link " href="#ebs_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Dict[Domain<wbr>Ebs<wbr>Options]</a></span>
     </dt>
@@ -1017,7 +1262,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch_<wbr>version</span>
+        <span id="elasticsearch_version~python">
+<span class="nx">
+elasticsearch_<wbr>version
+<a class="anchorjs-link " href="#elasticsearch_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1026,7 +1276,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypt_<wbr>at_<wbr>rest</span>
+        <span id="encrypt_at_rest~python">
+<span class="nx">
+encrypt_<wbr>at_<wbr>rest
+<a class="anchorjs-link " href="#encrypt_at_rest~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Dict[Domain<wbr>Encrypt<wbr>At<wbr>Rest]</a></span>
     </dt>
@@ -1035,7 +1290,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>publishing_<wbr>options</span>
+        <span id="log_publishing_options~python">
+<span class="nx">
+log_<wbr>publishing_<wbr>options
+<a class="anchorjs-link " href="#log_publishing_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List[Domain<wbr>Log<wbr>Publishing<wbr>Option]</a></span>
     </dt>
@@ -1044,7 +1304,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>to_<wbr>node_<wbr>encryption</span>
+        <span id="node_to_node_encryption~python">
+<span class="nx">
+node_<wbr>to_<wbr>node_<wbr>encryption
+<a class="anchorjs-link " href="#node_to_node_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Dict[Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption]</a></span>
     </dt>
@@ -1053,7 +1318,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>options</span>
+        <span id="snapshot_options~python">
+<span class="nx">
+snapshot_<wbr>options
+<a class="anchorjs-link " href="#snapshot_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Dict[Domain<wbr>Snapshot<wbr>Options]</a></span>
     </dt>
@@ -1062,7 +1332,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1071,7 +1346,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>options</span>
+        <span id="vpc_options~python">
+<span class="nx">
+vpc_<wbr>options
+<a class="anchorjs-link " href="#vpc_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Dict[Domain<wbr>Vpc<wbr>Options]</a></span>
     </dt>
@@ -1098,7 +1378,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1107,7 +1392,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Domain<wbr>Id</span>
+        <span id="domainid~csharp">
+<span class="nx">
+Domain<wbr>Id
+<a class="anchorjs-link " href="#domainid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1116,7 +1406,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Endpoint</span>
+        <span id="endpoint~csharp">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#endpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1125,7 +1420,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1133,7 +1433,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Kibana<wbr>Endpoint</span>
+        <span id="kibanaendpoint~csharp">
+<span class="nx">
+Kibana<wbr>Endpoint
+<a class="anchorjs-link " href="#kibanaendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1151,7 +1456,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1160,7 +1470,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Domain<wbr>Id</span>
+        <span id="domainid~go">
+<span class="nx">
+Domain<wbr>Id
+<a class="anchorjs-link " href="#domainid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1169,7 +1484,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Endpoint</span>
+        <span id="endpoint~go">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#endpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1178,7 +1498,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1186,7 +1511,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Kibana<wbr>Endpoint</span>
+        <span id="kibanaendpoint~go">
+<span class="nx">
+Kibana<wbr>Endpoint
+<a class="anchorjs-link " href="#kibanaendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1204,7 +1534,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1213,7 +1548,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>domain<wbr>Id</span>
+        <span id="domainid~nodejs">
+<span class="nx">
+domain<wbr>Id
+<a class="anchorjs-link " href="#domainid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1222,7 +1562,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>endpoint</span>
+        <span id="endpoint~nodejs">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#endpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1231,7 +1576,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1239,7 +1589,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>kibana<wbr>Endpoint</span>
+        <span id="kibanaendpoint~nodejs">
+<span class="nx">
+kibana<wbr>Endpoint
+<a class="anchorjs-link " href="#kibanaendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1257,7 +1612,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1266,7 +1626,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>domain_<wbr>id</span>
+        <span id="domain_id~python">
+<span class="nx">
+domain_<wbr>id
+<a class="anchorjs-link " href="#domain_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1275,7 +1640,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>endpoint</span>
+        <span id="endpoint~python">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1284,7 +1654,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1292,7 +1667,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>kibana_<wbr>endpoint</span>
+        <span id="kibana_endpoint~python">
+<span class="nx">
+kibana_<wbr>endpoint
+<a class="anchorjs-link " href="#kibana_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1316,7 +1696,7 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#Domain">Domain</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticsearch/#Domain">Domain</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1324,11 +1704,11 @@ Get an existing Domain resource's state with the given name, ID, and optional ex
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomain<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomain<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#DomainState">DomainState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticsearch?tab=doc#Domain">Domain</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.Domain.html">Domain</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.DomainState.html">DomainState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.Domain.html">Domain</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElasticSearch.DomainState.html">DomainState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1436,7 +1816,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Policies</span>
+        <span id="state_accesspolicies~csharp">
+<span class="nx">
+Access<wbr>Policies
+<a class="anchorjs-link " href="#state_accesspolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1445,7 +1830,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Advanced<wbr>Options</span>
+        <span id="state_advancedoptions~csharp">
+<span class="nx">
+Advanced<wbr>Options
+<a class="anchorjs-link " href="#state_advancedoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1457,7 +1847,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1466,7 +1861,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Config</span>
+        <span id="state_clusterconfig~csharp">
+<span class="nx">
+Cluster<wbr>Config
+<a class="anchorjs-link " href="#state_clusterconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -1475,7 +1875,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Options</span>
+        <span id="state_cognitooptions~csharp">
+<span class="nx">
+Cognito<wbr>Options
+<a class="anchorjs-link " href="#state_cognitooptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1483,7 +1888,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Endpoint<wbr>Options</span>
+        <span id="state_domainendpointoptions~csharp">
+<span class="nx">
+Domain<wbr>Endpoint<wbr>Options
+<a class="anchorjs-link " href="#state_domainendpointoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1492,7 +1902,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Id</span>
+        <span id="state_domainid~csharp">
+<span class="nx">
+Domain<wbr>Id
+<a class="anchorjs-link " href="#state_domainid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1501,7 +1916,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="state_domainname~csharp">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1510,7 +1930,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Options</span>
+        <span id="state_ebsoptions~csharp">
+<span class="nx">
+Ebs<wbr>Options
+<a class="anchorjs-link " href="#state_ebsoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1519,7 +1944,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Version</span>
+        <span id="state_elasticsearchversion~csharp">
+<span class="nx">
+Elasticsearch<wbr>Version
+<a class="anchorjs-link " href="#state_elasticsearchversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1528,7 +1958,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypt<wbr>At<wbr>Rest</span>
+        <span id="state_encryptatrest~csharp">
+<span class="nx">
+Encrypt<wbr>At<wbr>Rest
+<a class="anchorjs-link " href="#state_encryptatrest~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest<wbr>Args</a></span>
     </dt>
@@ -1537,7 +1972,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="state_endpoint~csharp">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#state_endpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1546,7 +1986,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kibana<wbr>Endpoint</span>
+        <span id="state_kibanaendpoint~csharp">
+<span class="nx">
+Kibana<wbr>Endpoint
+<a class="anchorjs-link " href="#state_kibanaendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1557,7 +2002,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Publishing<wbr>Options</span>
+        <span id="state_logpublishingoptions~csharp">
+<span class="nx">
+Log<wbr>Publishing<wbr>Options
+<a class="anchorjs-link " href="#state_logpublishingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List&lt;Domain<wbr>Log<wbr>Publishing<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
@@ -1566,7 +2016,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>To<wbr>Node<wbr>Encryption</span>
+        <span id="state_nodetonodeencryption~csharp">
+<span class="nx">
+Node<wbr>To<wbr>Node<wbr>Encryption
+<a class="anchorjs-link " href="#state_nodetonodeencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption<wbr>Args</a></span>
     </dt>
@@ -1575,7 +2030,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Options</span>
+        <span id="state_snapshotoptions~csharp">
+<span class="nx">
+Snapshot<wbr>Options
+<a class="anchorjs-link " href="#state_snapshotoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1584,7 +2044,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1593,7 +2058,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Options</span>
+        <span id="state_vpcoptions~csharp">
+<span class="nx">
+Vpc<wbr>Options
+<a class="anchorjs-link " href="#state_vpcoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1609,7 +2079,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Policies</span>
+        <span id="state_accesspolicies~go">
+<span class="nx">
+Access<wbr>Policies
+<a class="anchorjs-link " href="#state_accesspolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -1618,7 +2093,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Advanced<wbr>Options</span>
+        <span id="state_advancedoptions~go">
+<span class="nx">
+Advanced<wbr>Options
+<a class="anchorjs-link " href="#state_advancedoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1630,7 +2110,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1639,7 +2124,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Config</span>
+        <span id="state_clusterconfig~go">
+<span class="nx">
+Cluster<wbr>Config
+<a class="anchorjs-link " href="#state_clusterconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
@@ -1648,7 +2138,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cognito<wbr>Options</span>
+        <span id="state_cognitooptions~go">
+<span class="nx">
+Cognito<wbr>Options
+<a class="anchorjs-link " href="#state_cognitooptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
@@ -1656,7 +2151,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Endpoint<wbr>Options</span>
+        <span id="state_domainendpointoptions~go">
+<span class="nx">
+Domain<wbr>Endpoint<wbr>Options
+<a class="anchorjs-link " href="#state_domainendpointoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
@@ -1665,7 +2165,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Id</span>
+        <span id="state_domainid~go">
+<span class="nx">
+Domain<wbr>Id
+<a class="anchorjs-link " href="#state_domainid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1674,7 +2179,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="state_domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1683,7 +2193,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Options</span>
+        <span id="state_ebsoptions~go">
+<span class="nx">
+Ebs<wbr>Options
+<a class="anchorjs-link " href="#state_ebsoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
@@ -1692,7 +2207,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Version</span>
+        <span id="state_elasticsearchversion~go">
+<span class="nx">
+Elasticsearch<wbr>Version
+<a class="anchorjs-link " href="#state_elasticsearchversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1701,7 +2221,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypt<wbr>At<wbr>Rest</span>
+        <span id="state_encryptatrest~go">
+<span class="nx">
+Encrypt<wbr>At<wbr>Rest
+<a class="anchorjs-link " href="#state_encryptatrest~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
@@ -1710,7 +2235,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="state_endpoint~go">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#state_endpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1719,7 +2249,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kibana<wbr>Endpoint</span>
+        <span id="state_kibanaendpoint~go">
+<span class="nx">
+Kibana<wbr>Endpoint
+<a class="anchorjs-link " href="#state_kibanaendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1730,7 +2265,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Publishing<wbr>Options</span>
+        <span id="state_logpublishingoptions~go">
+<span class="nx">
+Log<wbr>Publishing<wbr>Options
+<a class="anchorjs-link " href="#state_logpublishingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">[]Domain<wbr>Log<wbr>Publishing<wbr>Option</a></span>
     </dt>
@@ -1739,7 +2279,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>To<wbr>Node<wbr>Encryption</span>
+        <span id="state_nodetonodeencryption~go">
+<span class="nx">
+Node<wbr>To<wbr>Node<wbr>Encryption
+<a class="anchorjs-link " href="#state_nodetonodeencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
@@ -1748,7 +2293,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Options</span>
+        <span id="state_snapshotoptions~go">
+<span class="nx">
+Snapshot<wbr>Options
+<a class="anchorjs-link " href="#state_snapshotoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
@@ -1757,7 +2307,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1766,7 +2321,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Options</span>
+        <span id="state_vpcoptions~go">
+<span class="nx">
+Vpc<wbr>Options
+<a class="anchorjs-link " href="#state_vpcoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
@@ -1782,7 +2342,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>access<wbr>Policies</span>
+        <span id="state_accesspolicies~nodejs">
+<span class="nx">
+access<wbr>Policies
+<a class="anchorjs-link " href="#state_accesspolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Policy<wbr>Document</span>
     </dt>
@@ -1791,7 +2356,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>advanced<wbr>Options</span>
+        <span id="state_advancedoptions~nodejs">
+<span class="nx">
+advanced<wbr>Options
+<a class="anchorjs-link " href="#state_advancedoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1803,7 +2373,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1812,7 +2387,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Config</span>
+        <span id="state_clusterconfig~nodejs">
+<span class="nx">
+cluster<wbr>Config
+<a class="anchorjs-link " href="#state_clusterconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Domain<wbr>Cluster<wbr>Config</a></span>
     </dt>
@@ -1821,7 +2401,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito<wbr>Options</span>
+        <span id="state_cognitooptions~nodejs">
+<span class="nx">
+cognito<wbr>Options
+<a class="anchorjs-link " href="#state_cognitooptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Domain<wbr>Cognito<wbr>Options</a></span>
     </dt>
@@ -1829,7 +2414,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Endpoint<wbr>Options</span>
+        <span id="state_domainendpointoptions~nodejs">
+<span class="nx">
+domain<wbr>Endpoint<wbr>Options
+<a class="anchorjs-link " href="#state_domainendpointoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Domain<wbr>Domain<wbr>Endpoint<wbr>Options</a></span>
     </dt>
@@ -1838,7 +2428,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Id</span>
+        <span id="state_domainid~nodejs">
+<span class="nx">
+domain<wbr>Id
+<a class="anchorjs-link " href="#state_domainid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1847,7 +2442,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Name</span>
+        <span id="state_domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1856,7 +2456,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Options</span>
+        <span id="state_ebsoptions~nodejs">
+<span class="nx">
+ebs<wbr>Options
+<a class="anchorjs-link " href="#state_ebsoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Domain<wbr>Ebs<wbr>Options</a></span>
     </dt>
@@ -1865,7 +2470,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch<wbr>Version</span>
+        <span id="state_elasticsearchversion~nodejs">
+<span class="nx">
+elasticsearch<wbr>Version
+<a class="anchorjs-link " href="#state_elasticsearchversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1874,7 +2484,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypt<wbr>At<wbr>Rest</span>
+        <span id="state_encryptatrest~nodejs">
+<span class="nx">
+encrypt<wbr>At<wbr>Rest
+<a class="anchorjs-link " href="#state_encryptatrest~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Domain<wbr>Encrypt<wbr>At<wbr>Rest</a></span>
     </dt>
@@ -1883,7 +2498,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="state_endpoint~nodejs">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#state_endpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1892,7 +2512,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kibana<wbr>Endpoint</span>
+        <span id="state_kibanaendpoint~nodejs">
+<span class="nx">
+kibana<wbr>Endpoint
+<a class="anchorjs-link " href="#state_kibanaendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1903,7 +2528,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Publishing<wbr>Options</span>
+        <span id="state_logpublishingoptions~nodejs">
+<span class="nx">
+log<wbr>Publishing<wbr>Options
+<a class="anchorjs-link " href="#state_logpublishingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">Domain<wbr>Log<wbr>Publishing<wbr>Option[]</a></span>
     </dt>
@@ -1912,7 +2542,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>To<wbr>Node<wbr>Encryption</span>
+        <span id="state_nodetonodeencryption~nodejs">
+<span class="nx">
+node<wbr>To<wbr>Node<wbr>Encryption
+<a class="anchorjs-link " href="#state_nodetonodeencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption</a></span>
     </dt>
@@ -1921,7 +2556,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Options</span>
+        <span id="state_snapshotoptions~nodejs">
+<span class="nx">
+snapshot<wbr>Options
+<a class="anchorjs-link " href="#state_snapshotoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Domain<wbr>Snapshot<wbr>Options</a></span>
     </dt>
@@ -1930,7 +2570,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1939,7 +2584,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Options</span>
+        <span id="state_vpcoptions~nodejs">
+<span class="nx">
+vpc<wbr>Options
+<a class="anchorjs-link " href="#state_vpcoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Domain<wbr>Vpc<wbr>Options</a></span>
     </dt>
@@ -1955,7 +2605,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>access_<wbr>policies</span>
+        <span id="state_access_policies~python">
+<span class="nx">
+access_<wbr>policies
+<a class="anchorjs-link " href="#state_access_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -1964,7 +2619,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>advanced_<wbr>options</span>
+        <span id="state_advanced_options~python">
+<span class="nx">
+advanced_<wbr>options
+<a class="anchorjs-link " href="#state_advanced_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1976,7 +2636,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1985,7 +2650,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>config</span>
+        <span id="state_cluster_config~python">
+<span class="nx">
+cluster_<wbr>config
+<a class="anchorjs-link " href="#state_cluster_config~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfig">Dict[Domain<wbr>Cluster<wbr>Config]</a></span>
     </dt>
@@ -1994,7 +2664,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cognito_<wbr>options</span>
+        <span id="state_cognito_options~python">
+<span class="nx">
+cognito_<wbr>options
+<a class="anchorjs-link " href="#state_cognito_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaincognitooptions">Dict[Domain<wbr>Cognito<wbr>Options]</a></span>
     </dt>
@@ -2002,7 +2677,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>endpoint_<wbr>options</span>
+        <span id="state_domain_endpoint_options~python">
+<span class="nx">
+domain_<wbr>endpoint_<wbr>options
+<a class="anchorjs-link " href="#state_domain_endpoint_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domaindomainendpointoptions">Dict[Domain<wbr>Domain<wbr>Endpoint<wbr>Options]</a></span>
     </dt>
@@ -2011,7 +2691,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>id</span>
+        <span id="state_domain_id~python">
+<span class="nx">
+domain_<wbr>id
+<a class="anchorjs-link " href="#state_domain_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2020,7 +2705,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>name</span>
+        <span id="state_domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#state_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2029,7 +2719,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>options</span>
+        <span id="state_ebs_options~python">
+<span class="nx">
+ebs_<wbr>options
+<a class="anchorjs-link " href="#state_ebs_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainebsoptions">Dict[Domain<wbr>Ebs<wbr>Options]</a></span>
     </dt>
@@ -2038,7 +2733,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch_<wbr>version</span>
+        <span id="state_elasticsearch_version~python">
+<span class="nx">
+elasticsearch_<wbr>version
+<a class="anchorjs-link " href="#state_elasticsearch_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2047,7 +2747,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypt_<wbr>at_<wbr>rest</span>
+        <span id="state_encrypt_at_rest~python">
+<span class="nx">
+encrypt_<wbr>at_<wbr>rest
+<a class="anchorjs-link " href="#state_encrypt_at_rest~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainencryptatrest">Dict[Domain<wbr>Encrypt<wbr>At<wbr>Rest]</a></span>
     </dt>
@@ -2056,7 +2761,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="state_endpoint~python">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#state_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2065,7 +2775,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kibana_<wbr>endpoint</span>
+        <span id="state_kibana_endpoint~python">
+<span class="nx">
+kibana_<wbr>endpoint
+<a class="anchorjs-link " href="#state_kibana_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2076,7 +2791,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>publishing_<wbr>options</span>
+        <span id="state_log_publishing_options~python">
+<span class="nx">
+log_<wbr>publishing_<wbr>options
+<a class="anchorjs-link " href="#state_log_publishing_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainlogpublishingoption">List[Domain<wbr>Log<wbr>Publishing<wbr>Option]</a></span>
     </dt>
@@ -2085,7 +2805,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>to_<wbr>node_<wbr>encryption</span>
+        <span id="state_node_to_node_encryption~python">
+<span class="nx">
+node_<wbr>to_<wbr>node_<wbr>encryption
+<a class="anchorjs-link " href="#state_node_to_node_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnodetonodeencryption">Dict[Domain<wbr>Node<wbr>To<wbr>Node<wbr>Encryption]</a></span>
     </dt>
@@ -2094,7 +2819,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>options</span>
+        <span id="state_snapshot_options~python">
+<span class="nx">
+snapshot_<wbr>options
+<a class="anchorjs-link " href="#state_snapshot_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainsnapshotoptions">Dict[Domain<wbr>Snapshot<wbr>Options]</a></span>
     </dt>
@@ -2103,7 +2833,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2112,7 +2847,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>options</span>
+        <span id="state_vpc_options~python">
+<span class="nx">
+vpc_<wbr>options
+<a class="anchorjs-link " href="#state_vpc_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainvpcoptions">Dict[Domain<wbr>Vpc<wbr>Options]</a></span>
     </dt>
@@ -2154,7 +2894,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dedicated<wbr>Master<wbr>Count</span>
+        <span id="dedicatedmastercount~csharp">
+<span class="nx">
+Dedicated<wbr>Master<wbr>Count
+<a class="anchorjs-link " href="#dedicatedmastercount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2163,7 +2908,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dedicated<wbr>Master<wbr>Enabled</span>
+        <span id="dedicatedmasterenabled~csharp">
+<span class="nx">
+Dedicated<wbr>Master<wbr>Enabled
+<a class="anchorjs-link " href="#dedicatedmasterenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2172,7 +2922,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dedicated<wbr>Master<wbr>Type</span>
+        <span id="dedicatedmastertype~csharp">
+<span class="nx">
+Dedicated<wbr>Master<wbr>Type
+<a class="anchorjs-link " href="#dedicatedmastertype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2181,7 +2936,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Count</span>
+        <span id="instancecount~csharp">
+<span class="nx">
+Instance<wbr>Count
+<a class="anchorjs-link " href="#instancecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2190,7 +2950,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2199,7 +2964,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zone<wbr>Awareness<wbr>Config</span>
+        <span id="zoneawarenessconfig~csharp">
+<span class="nx">
+Zone<wbr>Awareness<wbr>Config
+<a class="anchorjs-link " href="#zoneawarenessconfig~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config<wbr>Args</a></span>
     </dt>
@@ -2208,7 +2978,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zone<wbr>Awareness<wbr>Enabled</span>
+        <span id="zoneawarenessenabled~csharp">
+<span class="nx">
+Zone<wbr>Awareness<wbr>Enabled
+<a class="anchorjs-link " href="#zoneawarenessenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2224,7 +2999,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dedicated<wbr>Master<wbr>Count</span>
+        <span id="dedicatedmastercount~go">
+<span class="nx">
+Dedicated<wbr>Master<wbr>Count
+<a class="anchorjs-link " href="#dedicatedmastercount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2233,7 +3013,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dedicated<wbr>Master<wbr>Enabled</span>
+        <span id="dedicatedmasterenabled~go">
+<span class="nx">
+Dedicated<wbr>Master<wbr>Enabled
+<a class="anchorjs-link " href="#dedicatedmasterenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2242,7 +3027,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dedicated<wbr>Master<wbr>Type</span>
+        <span id="dedicatedmastertype~go">
+<span class="nx">
+Dedicated<wbr>Master<wbr>Type
+<a class="anchorjs-link " href="#dedicatedmastertype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2251,7 +3041,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Count</span>
+        <span id="instancecount~go">
+<span class="nx">
+Instance<wbr>Count
+<a class="anchorjs-link " href="#instancecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2260,7 +3055,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2269,7 +3069,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zone<wbr>Awareness<wbr>Config</span>
+        <span id="zoneawarenessconfig~go">
+<span class="nx">
+Zone<wbr>Awareness<wbr>Config
+<a class="anchorjs-link " href="#zoneawarenessconfig~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config</a></span>
     </dt>
@@ -2278,7 +3083,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zone<wbr>Awareness<wbr>Enabled</span>
+        <span id="zoneawarenessenabled~go">
+<span class="nx">
+Zone<wbr>Awareness<wbr>Enabled
+<a class="anchorjs-link " href="#zoneawarenessenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2294,7 +3104,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dedicated<wbr>Master<wbr>Count</span>
+        <span id="dedicatedmastercount~nodejs">
+<span class="nx">
+dedicated<wbr>Master<wbr>Count
+<a class="anchorjs-link " href="#dedicatedmastercount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2303,7 +3118,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dedicated<wbr>Master<wbr>Enabled</span>
+        <span id="dedicatedmasterenabled~nodejs">
+<span class="nx">
+dedicated<wbr>Master<wbr>Enabled
+<a class="anchorjs-link " href="#dedicatedmasterenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2312,7 +3132,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dedicated<wbr>Master<wbr>Type</span>
+        <span id="dedicatedmastertype~nodejs">
+<span class="nx">
+dedicated<wbr>Master<wbr>Type
+<a class="anchorjs-link " href="#dedicatedmastertype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2321,7 +3146,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Count</span>
+        <span id="instancecount~nodejs">
+<span class="nx">
+instance<wbr>Count
+<a class="anchorjs-link " href="#instancecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2330,7 +3160,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2339,7 +3174,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>zone<wbr>Awareness<wbr>Config</span>
+        <span id="zoneawarenessconfig~nodejs">
+<span class="nx">
+zone<wbr>Awareness<wbr>Config
+<a class="anchorjs-link " href="#zoneawarenessconfig~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config</a></span>
     </dt>
@@ -2348,7 +3188,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>zone<wbr>Awareness<wbr>Enabled</span>
+        <span id="zoneawarenessenabled~nodejs">
+<span class="nx">
+zone<wbr>Awareness<wbr>Enabled
+<a class="anchorjs-link " href="#zoneawarenessenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2364,7 +3209,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dedicated<wbr>Master<wbr>Count</span>
+        <span id="dedicatedmastercount~python">
+<span class="nx">
+dedicated<wbr>Master<wbr>Count
+<a class="anchorjs-link " href="#dedicatedmastercount~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2373,7 +3223,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dedicated<wbr>Master<wbr>Enabled</span>
+        <span id="dedicatedmasterenabled~python">
+<span class="nx">
+dedicated<wbr>Master<wbr>Enabled
+<a class="anchorjs-link " href="#dedicatedmasterenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2382,7 +3237,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dedicated<wbr>Master<wbr>Type</span>
+        <span id="dedicatedmastertype~python">
+<span class="nx">
+dedicated<wbr>Master<wbr>Type
+<a class="anchorjs-link " href="#dedicatedmastertype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2391,7 +3251,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>count</span>
+        <span id="instance_count~python">
+<span class="nx">
+instance_<wbr>count
+<a class="anchorjs-link " href="#instance_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2400,7 +3265,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2409,7 +3279,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>zone<wbr>Awareness<wbr>Config</span>
+        <span id="zoneawarenessconfig~python">
+<span class="nx">
+zone<wbr>Awareness<wbr>Config
+<a class="anchorjs-link " href="#zoneawarenessconfig~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainclusterconfigzoneawarenessconfig">Dict[Domain<wbr>Cluster<wbr>Config<wbr>Zone<wbr>Awareness<wbr>Config]</a></span>
     </dt>
@@ -2418,7 +3293,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>zone<wbr>Awareness<wbr>Enabled</span>
+        <span id="zoneawarenessenabled~python">
+<span class="nx">
+zone<wbr>Awareness<wbr>Enabled
+<a class="anchorjs-link " href="#zoneawarenessenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2452,7 +3332,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone<wbr>Count</span>
+        <span id="availabilityzonecount~csharp">
+<span class="nx">
+Availability<wbr>Zone<wbr>Count
+<a class="anchorjs-link " href="#availabilityzonecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2468,7 +3353,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone<wbr>Count</span>
+        <span id="availabilityzonecount~go">
+<span class="nx">
+Availability<wbr>Zone<wbr>Count
+<a class="anchorjs-link " href="#availabilityzonecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2484,7 +3374,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone<wbr>Count</span>
+        <span id="availabilityzonecount~nodejs">
+<span class="nx">
+availability<wbr>Zone<wbr>Count
+<a class="anchorjs-link " href="#availabilityzonecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2500,7 +3395,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone<wbr>Count</span>
+        <span id="availabilityzonecount~python">
+<span class="nx">
+availability<wbr>Zone<wbr>Count
+<a class="anchorjs-link " href="#availabilityzonecount~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2534,7 +3434,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Identity<wbr>Pool<wbr>Id</span>
+        <span id="identitypoolid~csharp">
+<span class="nx">
+Identity<wbr>Pool<wbr>Id
+<a class="anchorjs-link " href="#identitypoolid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2543,7 +3448,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2552,7 +3462,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>User<wbr>Pool<wbr>Id</span>
+        <span id="userpoolid~csharp">
+<span class="nx">
+User<wbr>Pool<wbr>Id
+<a class="anchorjs-link " href="#userpoolid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2561,7 +3476,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2577,7 +3497,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Identity<wbr>Pool<wbr>Id</span>
+        <span id="identitypoolid~go">
+<span class="nx">
+Identity<wbr>Pool<wbr>Id
+<a class="anchorjs-link " href="#identitypoolid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2586,7 +3511,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2595,7 +3525,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>User<wbr>Pool<wbr>Id</span>
+        <span id="userpoolid~go">
+<span class="nx">
+User<wbr>Pool<wbr>Id
+<a class="anchorjs-link " href="#userpoolid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2604,7 +3539,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2620,7 +3560,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>identity<wbr>Pool<wbr>Id</span>
+        <span id="identitypoolid~nodejs">
+<span class="nx">
+identity<wbr>Pool<wbr>Id
+<a class="anchorjs-link " href="#identitypoolid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2629,7 +3574,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2638,7 +3588,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>user<wbr>Pool<wbr>Id</span>
+        <span id="userpoolid~nodejs">
+<span class="nx">
+user<wbr>Pool<wbr>Id
+<a class="anchorjs-link " href="#userpoolid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2647,7 +3602,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2663,7 +3623,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>identity_<wbr>pool_<wbr>id</span>
+        <span id="identity_pool_id~python">
+<span class="nx">
+identity_<wbr>pool_<wbr>id
+<a class="anchorjs-link " href="#identity_pool_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2672,7 +3637,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2681,7 +3651,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>user_<wbr>pool_<wbr>id</span>
+        <span id="user_pool_id~python">
+<span class="nx">
+user_<wbr>pool_<wbr>id
+<a class="anchorjs-link " href="#user_pool_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2690,7 +3665,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2724,7 +3704,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Enforce<wbr>Https</span>
+        <span id="enforcehttps~csharp">
+<span class="nx">
+Enforce<wbr>Https
+<a class="anchorjs-link " href="#enforcehttps~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2733,7 +3718,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tls<wbr>Security<wbr>Policy</span>
+        <span id="tlssecuritypolicy~csharp">
+<span class="nx">
+Tls<wbr>Security<wbr>Policy
+<a class="anchorjs-link " href="#tlssecuritypolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2749,7 +3739,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Enforce<wbr>Https</span>
+        <span id="enforcehttps~go">
+<span class="nx">
+Enforce<wbr>Https
+<a class="anchorjs-link " href="#enforcehttps~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2758,7 +3753,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tls<wbr>Security<wbr>Policy</span>
+        <span id="tlssecuritypolicy~go">
+<span class="nx">
+Tls<wbr>Security<wbr>Policy
+<a class="anchorjs-link " href="#tlssecuritypolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2774,7 +3774,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>enforce<wbr>Https</span>
+        <span id="enforcehttps~nodejs">
+<span class="nx">
+enforce<wbr>Https
+<a class="anchorjs-link " href="#enforcehttps~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2783,7 +3788,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tls<wbr>Security<wbr>Policy</span>
+        <span id="tlssecuritypolicy~nodejs">
+<span class="nx">
+tls<wbr>Security<wbr>Policy
+<a class="anchorjs-link " href="#tlssecuritypolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2799,7 +3809,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>enforce<wbr>Https</span>
+        <span id="enforcehttps~python">
+<span class="nx">
+enforce<wbr>Https
+<a class="anchorjs-link " href="#enforcehttps~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2808,7 +3823,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tls<wbr>Security<wbr>Policy</span>
+        <span id="tlssecuritypolicy~python">
+<span class="nx">
+tls<wbr>Security<wbr>Policy
+<a class="anchorjs-link " href="#tlssecuritypolicy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2842,7 +3862,12 @@ domain on every apply.
 
     <dt class="property-required"
             title="Required">
-        <span>Ebs<wbr>Enabled</span>
+        <span id="ebsenabled~csharp">
+<span class="nx">
+Ebs<wbr>Enabled
+<a class="anchorjs-link " href="#ebsenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2851,7 +3876,12 @@ domain on every apply.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2861,7 +3891,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2871,7 +3906,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2887,7 +3927,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Ebs<wbr>Enabled</span>
+        <span id="ebsenabled~go">
+<span class="nx">
+Ebs<wbr>Enabled
+<a class="anchorjs-link " href="#ebsenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2896,7 +3941,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2906,7 +3956,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2916,7 +3971,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2932,7 +3992,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>ebs<wbr>Enabled</span>
+        <span id="ebsenabled~nodejs">
+<span class="nx">
+ebs<wbr>Enabled
+<a class="anchorjs-link " href="#ebsenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2941,7 +4006,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2951,7 +4021,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2961,7 +4036,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2977,7 +4057,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>ebs<wbr>Enabled</span>
+        <span id="ebsenabled~python">
+<span class="nx">
+ebs<wbr>Enabled
+<a class="anchorjs-link " href="#ebsenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2986,7 +4071,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2996,7 +4086,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3005,7 +4100,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3040,7 +4140,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3049,7 +4154,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3065,7 +4175,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3074,7 +4189,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3090,7 +4210,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3099,7 +4224,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3115,7 +4245,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3124,7 +4259,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3158,7 +4298,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Cloudwatch<wbr>Log<wbr>Group<wbr>Arn</span>
+        <span id="cloudwatchloggrouparn~csharp">
+<span class="nx">
+Cloudwatch<wbr>Log<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchloggrouparn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3167,7 +4312,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Log<wbr>Type</span>
+        <span id="logtype~csharp">
+<span class="nx">
+Log<wbr>Type
+<a class="anchorjs-link " href="#logtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3176,7 +4326,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3192,7 +4347,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Cloudwatch<wbr>Log<wbr>Group<wbr>Arn</span>
+        <span id="cloudwatchloggrouparn~go">
+<span class="nx">
+Cloudwatch<wbr>Log<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchloggrouparn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3201,7 +4361,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Log<wbr>Type</span>
+        <span id="logtype~go">
+<span class="nx">
+Log<wbr>Type
+<a class="anchorjs-link " href="#logtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3210,7 +4375,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3226,7 +4396,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>cloudwatch<wbr>Log<wbr>Group<wbr>Arn</span>
+        <span id="cloudwatchloggrouparn~nodejs">
+<span class="nx">
+cloudwatch<wbr>Log<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchloggrouparn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3235,7 +4410,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>log<wbr>Type</span>
+        <span id="logtype~nodejs">
+<span class="nx">
+log<wbr>Type
+<a class="anchorjs-link " href="#logtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3244,7 +4424,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3260,7 +4445,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>cloudwatch_<wbr>log_<wbr>group_<wbr>arn</span>
+        <span id="cloudwatch_log_group_arn~python">
+<span class="nx">
+cloudwatch_<wbr>log_<wbr>group_<wbr>arn
+<a class="anchorjs-link " href="#cloudwatch_log_group_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3269,7 +4459,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>log<wbr>Type</span>
+        <span id="logtype~python">
+<span class="nx">
+log<wbr>Type
+<a class="anchorjs-link " href="#logtype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3278,7 +4473,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3312,7 +4512,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3328,7 +4533,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3344,7 +4554,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3360,7 +4575,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3394,7 +4614,12 @@ attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type
 
     <dt class="property-required"
             title="Required">
-        <span>Automated<wbr>Snapshot<wbr>Start<wbr>Hour</span>
+        <span id="automatedsnapshotstarthour~csharp">
+<span class="nx">
+Automated<wbr>Snapshot<wbr>Start<wbr>Hour
+<a class="anchorjs-link " href="#automatedsnapshotstarthour~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3411,7 +4636,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-required"
             title="Required">
-        <span>Automated<wbr>Snapshot<wbr>Start<wbr>Hour</span>
+        <span id="automatedsnapshotstarthour~go">
+<span class="nx">
+Automated<wbr>Snapshot<wbr>Start<wbr>Hour
+<a class="anchorjs-link " href="#automatedsnapshotstarthour~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3428,7 +4658,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-required"
             title="Required">
-        <span>automated<wbr>Snapshot<wbr>Start<wbr>Hour</span>
+        <span id="automatedsnapshotstarthour~nodejs">
+<span class="nx">
+automated<wbr>Snapshot<wbr>Start<wbr>Hour
+<a class="anchorjs-link " href="#automatedsnapshotstarthour~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3445,7 +4680,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-required"
             title="Required">
-        <span>automated<wbr>Snapshot<wbr>Start<wbr>Hour</span>
+        <span id="automatedsnapshotstarthour~python">
+<span class="nx">
+automated<wbr>Snapshot<wbr>Start<wbr>Hour
+<a class="anchorjs-link " href="#automatedsnapshotstarthour~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3480,7 +4720,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="availabilityzones~csharp">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3488,7 +4733,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3497,7 +4747,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Ids</span>
+        <span id="subnetids~csharp">
+<span class="nx">
+Subnet<wbr>Ids
+<a class="anchorjs-link " href="#subnetids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3506,7 +4761,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~csharp">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3521,7 +4781,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zones</span>
+        <span id="availabilityzones~go">
+<span class="nx">
+Availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3529,7 +4794,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~go">
+<span class="nx">
+Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3538,7 +4808,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Ids</span>
+        <span id="subnetids~go">
+<span class="nx">
+Subnet<wbr>Ids
+<a class="anchorjs-link " href="#subnetids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3547,7 +4822,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~go">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3562,7 +4842,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zones</span>
+        <span id="availabilityzones~nodejs">
+<span class="nx">
+availability<wbr>Zones
+<a class="anchorjs-link " href="#availabilityzones~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3570,7 +4855,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Ids</span>
+        <span id="securitygroupids~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#securitygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3579,7 +4869,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Ids</span>
+        <span id="subnetids~nodejs">
+<span class="nx">
+subnet<wbr>Ids
+<a class="anchorjs-link " href="#subnetids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3588,7 +4883,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Id</span>
+        <span id="vpcid~nodejs">
+<span class="nx">
+vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3603,7 +4903,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zones</span>
+        <span id="availability_zones~python">
+<span class="nx">
+availability_<wbr>zones
+<a class="anchorjs-link " href="#availability_zones~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3611,7 +4916,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>ids</span>
+        <span id="security_group_ids~python">
+<span class="nx">
+security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3620,7 +4930,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>ids</span>
+        <span id="subnet_ids~python">
+<span class="nx">
+subnet_<wbr>ids
+<a class="anchorjs-link " href="#subnet_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3629,7 +4944,12 @@ snapshot of the indices in the domain.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>id</span>
+        <span id="vpc_id~python">
+<span class="nx">
+vpc_<wbr>id
+<a class="anchorjs-link " href="#vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

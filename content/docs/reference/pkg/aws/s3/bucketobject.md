@@ -212,19 +212,19 @@ const examplebucketObject = new aws.s3.BucketObject("examplebucket_object", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObject">BucketObject</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObjectArgs">BucketObjectArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObject">BucketObject</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObjectArgs">BucketObjectArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">BucketObject</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>acl=None<span class="p">, </span>bucket=None<span class="p">, </span>cache_control=None<span class="p">, </span>content=None<span class="p">, </span>content_base64=None<span class="p">, </span>content_disposition=None<span class="p">, </span>content_encoding=None<span class="p">, </span>content_language=None<span class="p">, </span>content_type=None<span class="p">, </span>etag=None<span class="p">, </span>force_destroy=None<span class="p">, </span>key=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>metadata=None<span class="p">, </span>object_lock_legal_hold_status=None<span class="p">, </span>object_lock_mode=None<span class="p">, </span>object_lock_retain_until_date=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>source=None<span class="p">, </span>storage_class=None<span class="p">, </span>tags=None<span class="p">, </span>website_redirect=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/s3/#BucketObject">BucketObject</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>acl=None<span class="p">, </span>bucket=None<span class="p">, </span>cache_control=None<span class="p">, </span>content=None<span class="p">, </span>content_base64=None<span class="p">, </span>content_disposition=None<span class="p">, </span>content_encoding=None<span class="p">, </span>content_language=None<span class="p">, </span>content_type=None<span class="p">, </span>etag=None<span class="p">, </span>force_destroy=None<span class="p">, </span>key=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>metadata=None<span class="p">, </span>object_lock_legal_hold_status=None<span class="p">, </span>object_lock_mode=None<span class="p">, </span>object_lock_retain_until_date=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>source=None<span class="p">, </span>storage_class=None<span class="p">, </span>tags=None<span class="p">, </span>website_redirect=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewBucketObject<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObjectArgs">BucketObjectArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObject">BucketObject</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObject">NewBucketObject</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObjectArgs">BucketObjectArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObject">BucketObject</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObject.html">BucketObject</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObjectArgs.html">BucketObjectArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObject.html">BucketObject</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObjectArgs.html">BucketObjectArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -390,7 +390,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket</span>
+        <span id="bucket~csharp">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#bucket~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -399,7 +404,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Acl</span>
+        <span id="acl~csharp">
+<span class="nx">
+Acl
+<a class="anchorjs-link " href="#acl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -408,7 +418,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Control</span>
+        <span id="cachecontrol~csharp">
+<span class="nx">
+Cache<wbr>Control
+<a class="anchorjs-link " href="#cachecontrol~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -417,7 +432,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content</span>
+        <span id="content~csharp">
+<span class="nx">
+Content
+<a class="anchorjs-link " href="#content~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -426,7 +446,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Base64</span>
+        <span id="contentbase64~csharp">
+<span class="nx">
+Content<wbr>Base64
+<a class="anchorjs-link " href="#contentbase64~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -435,7 +460,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Disposition</span>
+        <span id="contentdisposition~csharp">
+<span class="nx">
+Content<wbr>Disposition
+<a class="anchorjs-link " href="#contentdisposition~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -444,7 +474,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Encoding</span>
+        <span id="contentencoding~csharp">
+<span class="nx">
+Content<wbr>Encoding
+<a class="anchorjs-link " href="#contentencoding~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -453,7 +488,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Language</span>
+        <span id="contentlanguage~csharp">
+<span class="nx">
+Content<wbr>Language
+<a class="anchorjs-link " href="#contentlanguage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -462,7 +502,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Type</span>
+        <span id="contenttype~csharp">
+<span class="nx">
+Content<wbr>Type
+<a class="anchorjs-link " href="#contenttype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -471,7 +516,12 @@ The BucketObject resource accepts the following [input]({{< relref "/docs/intro/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Etag</span>
+        <span id="etag~csharp">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#etag~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -481,7 +531,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>Force<wbr>Destroy</span>
+        <span id="forcedestroy~csharp">
+<span class="nx">
+Force<wbr>Destroy
+<a class="anchorjs-link " href="#forcedestroy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -491,7 +546,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key</span>
+        <span id="key~csharp">
+<span class="nx">
+Key
+<a class="anchorjs-link " href="#key~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -500,7 +560,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -512,7 +577,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata</span>
+        <span id="metadata~csharp">
+<span class="nx">
+Metadata
+<a class="anchorjs-link " href="#metadata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -521,7 +591,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status</span>
+        <span id="objectlocklegalholdstatus~csharp">
+<span class="nx">
+Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status
+<a class="anchorjs-link " href="#objectlocklegalholdstatus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -530,7 +605,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Mode</span>
+        <span id="objectlockmode~csharp">
+<span class="nx">
+Object<wbr>Lock<wbr>Mode
+<a class="anchorjs-link " href="#objectlockmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -539,7 +619,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date</span>
+        <span id="objectlockretainuntildate~csharp">
+<span class="nx">
+Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date
+<a class="anchorjs-link " href="#objectlockretainuntildate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -548,7 +633,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -557,7 +647,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source</span>
+        <span id="source~csharp">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#source~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
@@ -566,7 +661,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Storage<wbr>Class</span>
+        <span id="storageclass~csharp">
+<span class="nx">
+Storage<wbr>Class
+<a class="anchorjs-link " href="#storageclass~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -576,7 +676,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -585,7 +690,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Website<wbr>Redirect</span>
+        <span id="websiteredirect~csharp">
+<span class="nx">
+Website<wbr>Redirect
+<a class="anchorjs-link " href="#websiteredirect~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -601,7 +711,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket</span>
+        <span id="bucket~go">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#bucket~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -610,7 +725,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Acl</span>
+        <span id="acl~go">
+<span class="nx">
+Acl
+<a class="anchorjs-link " href="#acl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -619,7 +739,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Control</span>
+        <span id="cachecontrol~go">
+<span class="nx">
+Cache<wbr>Control
+<a class="anchorjs-link " href="#cachecontrol~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -628,7 +753,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content</span>
+        <span id="content~go">
+<span class="nx">
+Content
+<a class="anchorjs-link " href="#content~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -637,7 +767,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Base64</span>
+        <span id="contentbase64~go">
+<span class="nx">
+Content<wbr>Base64
+<a class="anchorjs-link " href="#contentbase64~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -646,7 +781,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Disposition</span>
+        <span id="contentdisposition~go">
+<span class="nx">
+Content<wbr>Disposition
+<a class="anchorjs-link " href="#contentdisposition~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -655,7 +795,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Encoding</span>
+        <span id="contentencoding~go">
+<span class="nx">
+Content<wbr>Encoding
+<a class="anchorjs-link " href="#contentencoding~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -664,7 +809,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Language</span>
+        <span id="contentlanguage~go">
+<span class="nx">
+Content<wbr>Language
+<a class="anchorjs-link " href="#contentlanguage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -673,7 +823,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Type</span>
+        <span id="contenttype~go">
+<span class="nx">
+Content<wbr>Type
+<a class="anchorjs-link " href="#contenttype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -682,7 +837,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Etag</span>
+        <span id="etag~go">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#etag~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -692,7 +852,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>Force<wbr>Destroy</span>
+        <span id="forcedestroy~go">
+<span class="nx">
+Force<wbr>Destroy
+<a class="anchorjs-link " href="#forcedestroy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -702,7 +867,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key</span>
+        <span id="key~go">
+<span class="nx">
+Key
+<a class="anchorjs-link " href="#key~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -711,7 +881,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -723,7 +898,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata</span>
+        <span id="metadata~go">
+<span class="nx">
+Metadata
+<a class="anchorjs-link " href="#metadata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -732,7 +912,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status</span>
+        <span id="objectlocklegalholdstatus~go">
+<span class="nx">
+Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status
+<a class="anchorjs-link " href="#objectlocklegalholdstatus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -741,7 +926,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Mode</span>
+        <span id="objectlockmode~go">
+<span class="nx">
+Object<wbr>Lock<wbr>Mode
+<a class="anchorjs-link " href="#objectlockmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -750,7 +940,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date</span>
+        <span id="objectlockretainuntildate~go">
+<span class="nx">
+Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date
+<a class="anchorjs-link " href="#objectlockretainuntildate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -759,7 +954,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~go">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -768,7 +968,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source</span>
+        <span id="source~go">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#source~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Asset">pulumi.<wbr>Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
@@ -777,7 +982,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Storage<wbr>Class</span>
+        <span id="storageclass~go">
+<span class="nx">
+Storage<wbr>Class
+<a class="anchorjs-link " href="#storageclass~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -787,7 +997,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -796,7 +1011,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Website<wbr>Redirect</span>
+        <span id="websiteredirect~go">
+<span class="nx">
+Website<wbr>Redirect
+<a class="anchorjs-link " href="#websiteredirect~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -812,7 +1032,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-required"
             title="Required">
-        <span>bucket</span>
+        <span id="bucket~nodejs">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#bucket~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Bucket</span>
     </dt>
@@ -821,7 +1046,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>acl</span>
+        <span id="acl~nodejs">
+<span class="nx">
+acl
+<a class="anchorjs-link " href="#acl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -830,7 +1060,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Control</span>
+        <span id="cachecontrol~nodejs">
+<span class="nx">
+cache<wbr>Control
+<a class="anchorjs-link " href="#cachecontrol~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -839,7 +1074,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content</span>
+        <span id="content~nodejs">
+<span class="nx">
+content
+<a class="anchorjs-link " href="#content~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -848,7 +1088,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Base64</span>
+        <span id="contentbase64~nodejs">
+<span class="nx">
+content<wbr>Base64
+<a class="anchorjs-link " href="#contentbase64~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -857,7 +1102,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Disposition</span>
+        <span id="contentdisposition~nodejs">
+<span class="nx">
+content<wbr>Disposition
+<a class="anchorjs-link " href="#contentdisposition~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -866,7 +1116,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Encoding</span>
+        <span id="contentencoding~nodejs">
+<span class="nx">
+content<wbr>Encoding
+<a class="anchorjs-link " href="#contentencoding~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -875,7 +1130,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Language</span>
+        <span id="contentlanguage~nodejs">
+<span class="nx">
+content<wbr>Language
+<a class="anchorjs-link " href="#contentlanguage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -884,7 +1144,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Type</span>
+        <span id="contenttype~nodejs">
+<span class="nx">
+content<wbr>Type
+<a class="anchorjs-link " href="#contenttype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -893,7 +1158,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>etag</span>
+        <span id="etag~nodejs">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#etag~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -903,7 +1173,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>force<wbr>Destroy</span>
+        <span id="forcedestroy~nodejs">
+<span class="nx">
+force<wbr>Destroy
+<a class="anchorjs-link " href="#forcedestroy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -913,7 +1188,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>key</span>
+        <span id="key~nodejs">
+<span class="nx">
+key
+<a class="anchorjs-link " href="#key~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -922,7 +1202,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -934,7 +1219,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata</span>
+        <span id="metadata~nodejs">
+<span class="nx">
+metadata
+<a class="anchorjs-link " href="#metadata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -943,7 +1233,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status</span>
+        <span id="objectlocklegalholdstatus~nodejs">
+<span class="nx">
+object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status
+<a class="anchorjs-link " href="#objectlocklegalholdstatus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -952,7 +1247,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object<wbr>Lock<wbr>Mode</span>
+        <span id="objectlockmode~nodejs">
+<span class="nx">
+object<wbr>Lock<wbr>Mode
+<a class="anchorjs-link " href="#objectlockmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -961,7 +1261,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date</span>
+        <span id="objectlockretainuntildate~nodejs">
+<span class="nx">
+object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date
+<a class="anchorjs-link " href="#objectlockretainuntildate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -970,7 +1275,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -979,7 +1289,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>source</span>
+        <span id="source~nodejs">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#source~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Asset">pulumi.asset.<wbr>Asset | pulumi.asset.<wbr>Archive</a></span>
     </dt>
@@ -988,7 +1303,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>storage<wbr>Class</span>
+        <span id="storageclass~nodejs">
+<span class="nx">
+storage<wbr>Class
+<a class="anchorjs-link " href="#storageclass~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -998,7 +1318,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1007,7 +1332,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>website<wbr>Redirect</span>
+        <span id="websiteredirect~nodejs">
+<span class="nx">
+website<wbr>Redirect
+<a class="anchorjs-link " href="#websiteredirect~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1023,7 +1353,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-required"
             title="Required">
-        <span>bucket</span>
+        <span id="bucket~python">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#bucket~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -1032,7 +1367,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>acl</span>
+        <span id="acl~python">
+<span class="nx">
+acl
+<a class="anchorjs-link " href="#acl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1041,7 +1381,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>control</span>
+        <span id="cache_control~python">
+<span class="nx">
+cache_<wbr>control
+<a class="anchorjs-link " href="#cache_control~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1050,7 +1395,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content</span>
+        <span id="content~python">
+<span class="nx">
+content
+<a class="anchorjs-link " href="#content~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1059,7 +1409,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>base64</span>
+        <span id="content_base64~python">
+<span class="nx">
+content_<wbr>base64
+<a class="anchorjs-link " href="#content_base64~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1068,7 +1423,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>disposition</span>
+        <span id="content_disposition~python">
+<span class="nx">
+content_<wbr>disposition
+<a class="anchorjs-link " href="#content_disposition~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1077,7 +1437,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>encoding</span>
+        <span id="content_encoding~python">
+<span class="nx">
+content_<wbr>encoding
+<a class="anchorjs-link " href="#content_encoding~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1086,7 +1451,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>language</span>
+        <span id="content_language~python">
+<span class="nx">
+content_<wbr>language
+<a class="anchorjs-link " href="#content_language~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1095,7 +1465,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>type</span>
+        <span id="content_type~python">
+<span class="nx">
+content_<wbr>type
+<a class="anchorjs-link " href="#content_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1104,7 +1479,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>etag</span>
+        <span id="etag~python">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#etag~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1114,7 +1494,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>force_<wbr>destroy</span>
+        <span id="force_destroy~python">
+<span class="nx">
+force_<wbr>destroy
+<a class="anchorjs-link " href="#force_destroy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1124,7 +1509,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>key</span>
+        <span id="key~python">
+<span class="nx">
+key
+<a class="anchorjs-link " href="#key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1133,7 +1523,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1145,7 +1540,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata</span>
+        <span id="metadata~python">
+<span class="nx">
+metadata
+<a class="anchorjs-link " href="#metadata~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1154,7 +1554,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object_<wbr>lock_<wbr>legal_<wbr>hold_<wbr>status</span>
+        <span id="object_lock_legal_hold_status~python">
+<span class="nx">
+object_<wbr>lock_<wbr>legal_<wbr>hold_<wbr>status
+<a class="anchorjs-link " href="#object_lock_legal_hold_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1163,7 +1568,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object_<wbr>lock_<wbr>mode</span>
+        <span id="object_lock_mode~python">
+<span class="nx">
+object_<wbr>lock_<wbr>mode
+<a class="anchorjs-link " href="#object_lock_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1172,7 +1582,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object_<wbr>lock_<wbr>retain_<wbr>until_<wbr>date</span>
+        <span id="object_lock_retain_until_date~python">
+<span class="nx">
+object_<wbr>lock_<wbr>retain_<wbr>until_<wbr>date
+<a class="anchorjs-link " href="#object_lock_retain_until_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1181,7 +1596,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>server_<wbr>side_<wbr>encryption</span>
+        <span id="server_side_encryption~python">
+<span class="nx">
+server_<wbr>side_<wbr>encryption
+<a class="anchorjs-link " href="#server_side_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1190,7 +1610,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>source</span>
+        <span id="source~python">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#source~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">Union[pulumi.<wbr>Asset, pulumi.<wbr>Archive]</a></span>
     </dt>
@@ -1199,7 +1624,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>storage_<wbr>class</span>
+        <span id="storage_class~python">
+<span class="nx">
+storage_<wbr>class
+<a class="anchorjs-link " href="#storage_class~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1209,7 +1639,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1218,7 +1653,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>website_<wbr>redirect</span>
+        <span id="website_redirect~python">
+<span class="nx">
+website_<wbr>redirect
+<a class="anchorjs-link " href="#website_redirect~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1245,7 +1685,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1253,7 +1698,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Version<wbr>Id</span>
+        <span id="versionid~csharp">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#versionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1270,7 +1720,12 @@ is enabled.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1278,7 +1733,12 @@ is enabled.
 
     <dt class="property-"
             title="">
-        <span>Version<wbr>Id</span>
+        <span id="versionid~go">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#versionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1295,7 +1755,12 @@ is enabled.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1303,7 +1768,12 @@ is enabled.
 
     <dt class="property-"
             title="">
-        <span>version<wbr>Id</span>
+        <span id="versionid~nodejs">
+<span class="nx">
+version<wbr>Id
+<a class="anchorjs-link " href="#versionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1320,7 +1790,12 @@ is enabled.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1328,7 +1803,12 @@ is enabled.
 
     <dt class="property-"
             title="">
-        <span>version_<wbr>id</span>
+        <span id="version_id~python">
+<span class="nx">
+version_<wbr>id
+<a class="anchorjs-link " href="#version_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1351,7 +1831,7 @@ Get an existing BucketObject resource's state with the given name, ID, and optio
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObjectState">BucketObjectState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObject">BucketObject</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObjectState">BucketObjectState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/s3/#BucketObject">BucketObject</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1359,11 +1839,11 @@ Get an existing BucketObject resource's state with the given name, ID, and optio
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBucketObject<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObjectState">BucketObjectState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObject">BucketObject</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetBucketObject<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObjectState">BucketObjectState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/s3?tab=doc#BucketObject">BucketObject</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObject.html">BucketObject</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObjectState.html">BucketObjectState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObject.html">BucketObject</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.S3.BucketObjectState.html">BucketObjectState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1471,7 +1951,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Acl</span>
+        <span id="state_acl~csharp">
+<span class="nx">
+Acl
+<a class="anchorjs-link " href="#state_acl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1480,7 +1965,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket</span>
+        <span id="state_bucket~csharp">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#state_bucket~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1489,7 +1979,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Control</span>
+        <span id="state_cachecontrol~csharp">
+<span class="nx">
+Cache<wbr>Control
+<a class="anchorjs-link " href="#state_cachecontrol~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1498,7 +1993,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content</span>
+        <span id="state_content~csharp">
+<span class="nx">
+Content
+<a class="anchorjs-link " href="#state_content~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1507,7 +2007,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Base64</span>
+        <span id="state_contentbase64~csharp">
+<span class="nx">
+Content<wbr>Base64
+<a class="anchorjs-link " href="#state_contentbase64~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1516,7 +2021,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Disposition</span>
+        <span id="state_contentdisposition~csharp">
+<span class="nx">
+Content<wbr>Disposition
+<a class="anchorjs-link " href="#state_contentdisposition~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1525,7 +2035,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Encoding</span>
+        <span id="state_contentencoding~csharp">
+<span class="nx">
+Content<wbr>Encoding
+<a class="anchorjs-link " href="#state_contentencoding~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1534,7 +2049,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Language</span>
+        <span id="state_contentlanguage~csharp">
+<span class="nx">
+Content<wbr>Language
+<a class="anchorjs-link " href="#state_contentlanguage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1543,7 +2063,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Type</span>
+        <span id="state_contenttype~csharp">
+<span class="nx">
+Content<wbr>Type
+<a class="anchorjs-link " href="#state_contenttype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1552,7 +2077,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Etag</span>
+        <span id="state_etag~csharp">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#state_etag~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1562,7 +2092,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>Force<wbr>Destroy</span>
+        <span id="state_forcedestroy~csharp">
+<span class="nx">
+Force<wbr>Destroy
+<a class="anchorjs-link " href="#state_forcedestroy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1572,7 +2107,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key</span>
+        <span id="state_key~csharp">
+<span class="nx">
+Key
+<a class="anchorjs-link " href="#state_key~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1581,7 +2121,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1593,7 +2138,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata</span>
+        <span id="state_metadata~csharp">
+<span class="nx">
+Metadata
+<a class="anchorjs-link " href="#state_metadata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -1602,7 +2152,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status</span>
+        <span id="state_objectlocklegalholdstatus~csharp">
+<span class="nx">
+Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status
+<a class="anchorjs-link " href="#state_objectlocklegalholdstatus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1611,7 +2166,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Mode</span>
+        <span id="state_objectlockmode~csharp">
+<span class="nx">
+Object<wbr>Lock<wbr>Mode
+<a class="anchorjs-link " href="#state_objectlockmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1620,7 +2180,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date</span>
+        <span id="state_objectlockretainuntildate~csharp">
+<span class="nx">
+Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date
+<a class="anchorjs-link " href="#state_objectlockretainuntildate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1629,7 +2194,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1638,7 +2208,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source</span>
+        <span id="state_source~csharp">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#state_source~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
@@ -1647,7 +2222,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Storage<wbr>Class</span>
+        <span id="state_storageclass~csharp">
+<span class="nx">
+Storage<wbr>Class
+<a class="anchorjs-link " href="#state_storageclass~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1657,7 +2237,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1666,7 +2251,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="state_versionid~csharp">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#state_versionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1676,7 +2266,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Website<wbr>Redirect</span>
+        <span id="state_websiteredirect~csharp">
+<span class="nx">
+Website<wbr>Redirect
+<a class="anchorjs-link " href="#state_websiteredirect~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1692,7 +2287,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Acl</span>
+        <span id="state_acl~go">
+<span class="nx">
+Acl
+<a class="anchorjs-link " href="#state_acl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1701,7 +2301,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket</span>
+        <span id="state_bucket~go">
+<span class="nx">
+Bucket
+<a class="anchorjs-link " href="#state_bucket~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -1710,7 +2315,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Control</span>
+        <span id="state_cachecontrol~go">
+<span class="nx">
+Cache<wbr>Control
+<a class="anchorjs-link " href="#state_cachecontrol~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1719,7 +2329,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content</span>
+        <span id="state_content~go">
+<span class="nx">
+Content
+<a class="anchorjs-link " href="#state_content~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1728,7 +2343,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Base64</span>
+        <span id="state_contentbase64~go">
+<span class="nx">
+Content<wbr>Base64
+<a class="anchorjs-link " href="#state_contentbase64~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1737,7 +2357,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Disposition</span>
+        <span id="state_contentdisposition~go">
+<span class="nx">
+Content<wbr>Disposition
+<a class="anchorjs-link " href="#state_contentdisposition~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1746,7 +2371,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Encoding</span>
+        <span id="state_contentencoding~go">
+<span class="nx">
+Content<wbr>Encoding
+<a class="anchorjs-link " href="#state_contentencoding~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1755,7 +2385,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Language</span>
+        <span id="state_contentlanguage~go">
+<span class="nx">
+Content<wbr>Language
+<a class="anchorjs-link " href="#state_contentlanguage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1764,7 +2399,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Type</span>
+        <span id="state_contenttype~go">
+<span class="nx">
+Content<wbr>Type
+<a class="anchorjs-link " href="#state_contenttype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1773,7 +2413,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Etag</span>
+        <span id="state_etag~go">
+<span class="nx">
+Etag
+<a class="anchorjs-link " href="#state_etag~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1783,7 +2428,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>Force<wbr>Destroy</span>
+        <span id="state_forcedestroy~go">
+<span class="nx">
+Force<wbr>Destroy
+<a class="anchorjs-link " href="#state_forcedestroy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1793,7 +2443,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key</span>
+        <span id="state_key~go">
+<span class="nx">
+Key
+<a class="anchorjs-link " href="#state_key~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1802,7 +2457,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1814,7 +2474,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata</span>
+        <span id="state_metadata~go">
+<span class="nx">
+Metadata
+<a class="anchorjs-link " href="#state_metadata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1823,7 +2488,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status</span>
+        <span id="state_objectlocklegalholdstatus~go">
+<span class="nx">
+Object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status
+<a class="anchorjs-link " href="#state_objectlocklegalholdstatus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1832,7 +2502,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Mode</span>
+        <span id="state_objectlockmode~go">
+<span class="nx">
+Object<wbr>Lock<wbr>Mode
+<a class="anchorjs-link " href="#state_objectlockmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1841,7 +2516,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date</span>
+        <span id="state_objectlockretainuntildate~go">
+<span class="nx">
+Object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date
+<a class="anchorjs-link " href="#state_objectlockretainuntildate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1850,7 +2530,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~go">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1859,7 +2544,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source</span>
+        <span id="state_source~go">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#state_source~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Asset">pulumi.<wbr>Asset<wbr>Or<wbr>Archive</a></span>
     </dt>
@@ -1868,7 +2558,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Storage<wbr>Class</span>
+        <span id="state_storageclass~go">
+<span class="nx">
+Storage<wbr>Class
+<a class="anchorjs-link " href="#state_storageclass~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1878,7 +2573,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1887,7 +2587,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="state_versionid~go">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#state_versionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1897,7 +2602,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Website<wbr>Redirect</span>
+        <span id="state_websiteredirect~go">
+<span class="nx">
+Website<wbr>Redirect
+<a class="anchorjs-link " href="#state_websiteredirect~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1913,7 +2623,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>acl</span>
+        <span id="state_acl~nodejs">
+<span class="nx">
+acl
+<a class="anchorjs-link " href="#state_acl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1922,7 +2637,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket</span>
+        <span id="state_bucket~nodejs">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#state_bucket~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Bucket</span>
     </dt>
@@ -1931,7 +2651,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Control</span>
+        <span id="state_cachecontrol~nodejs">
+<span class="nx">
+cache<wbr>Control
+<a class="anchorjs-link " href="#state_cachecontrol~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1940,7 +2665,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content</span>
+        <span id="state_content~nodejs">
+<span class="nx">
+content
+<a class="anchorjs-link " href="#state_content~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1949,7 +2679,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Base64</span>
+        <span id="state_contentbase64~nodejs">
+<span class="nx">
+content<wbr>Base64
+<a class="anchorjs-link " href="#state_contentbase64~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1958,7 +2693,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Disposition</span>
+        <span id="state_contentdisposition~nodejs">
+<span class="nx">
+content<wbr>Disposition
+<a class="anchorjs-link " href="#state_contentdisposition~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1967,7 +2707,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Encoding</span>
+        <span id="state_contentencoding~nodejs">
+<span class="nx">
+content<wbr>Encoding
+<a class="anchorjs-link " href="#state_contentencoding~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1976,7 +2721,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Language</span>
+        <span id="state_contentlanguage~nodejs">
+<span class="nx">
+content<wbr>Language
+<a class="anchorjs-link " href="#state_contentlanguage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1985,7 +2735,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Type</span>
+        <span id="state_contenttype~nodejs">
+<span class="nx">
+content<wbr>Type
+<a class="anchorjs-link " href="#state_contenttype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1994,7 +2749,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>etag</span>
+        <span id="state_etag~nodejs">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#state_etag~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2004,7 +2764,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>force<wbr>Destroy</span>
+        <span id="state_forcedestroy~nodejs">
+<span class="nx">
+force<wbr>Destroy
+<a class="anchorjs-link " href="#state_forcedestroy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2014,7 +2779,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>key</span>
+        <span id="state_key~nodejs">
+<span class="nx">
+key
+<a class="anchorjs-link " href="#state_key~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2023,7 +2793,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2035,7 +2810,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata</span>
+        <span id="state_metadata~nodejs">
+<span class="nx">
+metadata
+<a class="anchorjs-link " href="#state_metadata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -2044,7 +2824,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status</span>
+        <span id="state_objectlocklegalholdstatus~nodejs">
+<span class="nx">
+object<wbr>Lock<wbr>Legal<wbr>Hold<wbr>Status
+<a class="anchorjs-link " href="#state_objectlocklegalholdstatus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2053,7 +2838,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object<wbr>Lock<wbr>Mode</span>
+        <span id="state_objectlockmode~nodejs">
+<span class="nx">
+object<wbr>Lock<wbr>Mode
+<a class="anchorjs-link " href="#state_objectlockmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2062,7 +2852,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date</span>
+        <span id="state_objectlockretainuntildate~nodejs">
+<span class="nx">
+object<wbr>Lock<wbr>Retain<wbr>Until<wbr>Date
+<a class="anchorjs-link " href="#state_objectlockretainuntildate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2071,7 +2866,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2080,7 +2880,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>source</span>
+        <span id="state_source~nodejs">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#state_source~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Asset">pulumi.asset.<wbr>Asset | pulumi.asset.<wbr>Archive</a></span>
     </dt>
@@ -2089,7 +2894,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>storage<wbr>Class</span>
+        <span id="state_storageclass~nodejs">
+<span class="nx">
+storage<wbr>Class
+<a class="anchorjs-link " href="#state_storageclass~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2099,7 +2909,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2108,7 +2923,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>version<wbr>Id</span>
+        <span id="state_versionid~nodejs">
+<span class="nx">
+version<wbr>Id
+<a class="anchorjs-link " href="#state_versionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2118,7 +2938,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>website<wbr>Redirect</span>
+        <span id="state_websiteredirect~nodejs">
+<span class="nx">
+website<wbr>Redirect
+<a class="anchorjs-link " href="#state_websiteredirect~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2134,7 +2959,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>acl</span>
+        <span id="state_acl~python">
+<span class="nx">
+acl
+<a class="anchorjs-link " href="#state_acl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2143,7 +2973,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket</span>
+        <span id="state_bucket~python">
+<span class="nx">
+bucket
+<a class="anchorjs-link " href="#state_bucket~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -2152,7 +2987,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>control</span>
+        <span id="state_cache_control~python">
+<span class="nx">
+cache_<wbr>control
+<a class="anchorjs-link " href="#state_cache_control~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2161,7 +3001,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content</span>
+        <span id="state_content~python">
+<span class="nx">
+content
+<a class="anchorjs-link " href="#state_content~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2170,7 +3015,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>base64</span>
+        <span id="state_content_base64~python">
+<span class="nx">
+content_<wbr>base64
+<a class="anchorjs-link " href="#state_content_base64~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2179,7 +3029,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>disposition</span>
+        <span id="state_content_disposition~python">
+<span class="nx">
+content_<wbr>disposition
+<a class="anchorjs-link " href="#state_content_disposition~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2188,7 +3043,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>encoding</span>
+        <span id="state_content_encoding~python">
+<span class="nx">
+content_<wbr>encoding
+<a class="anchorjs-link " href="#state_content_encoding~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2197,7 +3057,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>language</span>
+        <span id="state_content_language~python">
+<span class="nx">
+content_<wbr>language
+<a class="anchorjs-link " href="#state_content_language~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2206,7 +3071,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>type</span>
+        <span id="state_content_type~python">
+<span class="nx">
+content_<wbr>type
+<a class="anchorjs-link " href="#state_content_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2215,7 +3085,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>etag</span>
+        <span id="state_etag~python">
+<span class="nx">
+etag
+<a class="anchorjs-link " href="#state_etag~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2225,7 +3100,12 @@ This attribute is not compatible with KMS encryption, `kms_key_id` or `server_si
 
     <dt class="property-optional"
             title="Optional">
-        <span>force_<wbr>destroy</span>
+        <span id="state_force_destroy~python">
+<span class="nx">
+force_<wbr>destroy
+<a class="anchorjs-link " href="#state_force_destroy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2235,7 +3115,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>key</span>
+        <span id="state_key~python">
+<span class="nx">
+key
+<a class="anchorjs-link " href="#state_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2244,7 +3129,12 @@ Default is `false`. This value should be set to `true` only if the bucket has S3
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="state_kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#state_kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2256,7 +3146,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata</span>
+        <span id="state_metadata~python">
+<span class="nx">
+metadata
+<a class="anchorjs-link " href="#state_metadata~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -2265,7 +3160,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object_<wbr>lock_<wbr>legal_<wbr>hold_<wbr>status</span>
+        <span id="state_object_lock_legal_hold_status~python">
+<span class="nx">
+object_<wbr>lock_<wbr>legal_<wbr>hold_<wbr>status
+<a class="anchorjs-link " href="#state_object_lock_legal_hold_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2274,7 +3174,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object_<wbr>lock_<wbr>mode</span>
+        <span id="state_object_lock_mode~python">
+<span class="nx">
+object_<wbr>lock_<wbr>mode
+<a class="anchorjs-link " href="#state_object_lock_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2283,7 +3188,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>object_<wbr>lock_<wbr>retain_<wbr>until_<wbr>date</span>
+        <span id="state_object_lock_retain_until_date~python">
+<span class="nx">
+object_<wbr>lock_<wbr>retain_<wbr>until_<wbr>date
+<a class="anchorjs-link " href="#state_object_lock_retain_until_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2292,7 +3202,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>server_<wbr>side_<wbr>encryption</span>
+        <span id="state_server_side_encryption~python">
+<span class="nx">
+server_<wbr>side_<wbr>encryption
+<a class="anchorjs-link " href="#state_server_side_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2301,7 +3216,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>source</span>
+        <span id="state_source~python">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#state_source~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">Union[pulumi.<wbr>Asset, pulumi.<wbr>Archive]</a></span>
     </dt>
@@ -2310,7 +3230,12 @@ use the exported `arn` attribute:
 
     <dt class="property-optional"
             title="Optional">
-        <span>storage_<wbr>class</span>
+        <span id="state_storage_class~python">
+<span class="nx">
+storage_<wbr>class
+<a class="anchorjs-link " href="#state_storage_class~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2320,7 +3245,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2329,7 +3259,12 @@ for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA
 
     <dt class="property-optional"
             title="Optional">
-        <span>version_<wbr>id</span>
+        <span id="state_version_id~python">
+<span class="nx">
+version_<wbr>id
+<a class="anchorjs-link " href="#state_version_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2339,7 +3274,12 @@ is enabled.
 
     <dt class="property-optional"
             title="Optional">
-        <span>website_<wbr>redirect</span>
+        <span id="state_website_redirect~python">
+<span class="nx">
+website_<wbr>redirect
+<a class="anchorjs-link " href="#state_website_redirect~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

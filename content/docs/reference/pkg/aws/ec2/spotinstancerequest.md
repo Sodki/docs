@@ -90,19 +90,19 @@ const cheapWorker = new aws.ec2.SpotInstanceRequest("cheap_worker", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequest">SpotInstanceRequest</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequestArgs">SpotInstanceRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequest">SpotInstanceRequest</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequestArgs">SpotInstanceRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SpotInstanceRequest</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>ami=None<span class="p">, </span>associate_public_ip_address=None<span class="p">, </span>availability_zone=None<span class="p">, </span>block_duration_minutes=None<span class="p">, </span>cpu_core_count=None<span class="p">, </span>cpu_threads_per_core=None<span class="p">, </span>credit_specification=None<span class="p">, </span>disable_api_termination=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>get_password_data=None<span class="p">, </span>hibernation=None<span class="p">, </span>host_id=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>instance_initiated_shutdown_behavior=None<span class="p">, </span>instance_interruption_behaviour=None<span class="p">, </span>instance_type=None<span class="p">, </span>ipv6_address_count=None<span class="p">, </span>ipv6_addresses=None<span class="p">, </span>key_name=None<span class="p">, </span>launch_group=None<span class="p">, </span>metadata_options=None<span class="p">, </span>monitoring=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>placement_group=None<span class="p">, </span>private_ip=None<span class="p">, </span>root_block_device=None<span class="p">, </span>security_groups=None<span class="p">, </span>source_dest_check=None<span class="p">, </span>spot_price=None<span class="p">, </span>spot_type=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tags=None<span class="p">, </span>tenancy=None<span class="p">, </span>user_data=None<span class="p">, </span>user_data_base64=None<span class="p">, </span>valid_from=None<span class="p">, </span>valid_until=None<span class="p">, </span>volume_tags=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, </span>wait_for_fulfillment=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#SpotInstanceRequest">SpotInstanceRequest</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>ami=None<span class="p">, </span>associate_public_ip_address=None<span class="p">, </span>availability_zone=None<span class="p">, </span>block_duration_minutes=None<span class="p">, </span>cpu_core_count=None<span class="p">, </span>cpu_threads_per_core=None<span class="p">, </span>credit_specification=None<span class="p">, </span>disable_api_termination=None<span class="p">, </span>ebs_block_devices=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>ephemeral_block_devices=None<span class="p">, </span>get_password_data=None<span class="p">, </span>hibernation=None<span class="p">, </span>host_id=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>instance_initiated_shutdown_behavior=None<span class="p">, </span>instance_interruption_behaviour=None<span class="p">, </span>instance_type=None<span class="p">, </span>ipv6_address_count=None<span class="p">, </span>ipv6_addresses=None<span class="p">, </span>key_name=None<span class="p">, </span>launch_group=None<span class="p">, </span>metadata_options=None<span class="p">, </span>monitoring=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>placement_group=None<span class="p">, </span>private_ip=None<span class="p">, </span>root_block_device=None<span class="p">, </span>security_groups=None<span class="p">, </span>source_dest_check=None<span class="p">, </span>spot_price=None<span class="p">, </span>spot_type=None<span class="p">, </span>subnet_id=None<span class="p">, </span>tags=None<span class="p">, </span>tenancy=None<span class="p">, </span>user_data=None<span class="p">, </span>user_data_base64=None<span class="p">, </span>valid_from=None<span class="p">, </span>valid_until=None<span class="p">, </span>volume_tags=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, </span>wait_for_fulfillment=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSpotInstanceRequest<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequestArgs">SpotInstanceRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequest">SpotInstanceRequest</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequest">NewSpotInstanceRequest</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequestArgs">SpotInstanceRequestArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequest">SpotInstanceRequest</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequest.html">SpotInstanceRequest</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequestArgs.html">SpotInstanceRequestArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequest.html">SpotInstanceRequest</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequestArgs.html">SpotInstanceRequestArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -268,7 +268,12 @@ The SpotInstanceRequest resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-required"
             title="Required">
-        <span>Ami</span>
+        <span id="ami~csharp">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#ami~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -277,7 +282,12 @@ The SpotInstanceRequest resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-required"
             title="Required">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -286,7 +296,12 @@ The SpotInstanceRequest resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~csharp">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -295,7 +310,12 @@ The SpotInstanceRequest resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -304,7 +324,12 @@ The SpotInstanceRequest resource accepts the following [input]({{< relref "/docs
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Duration<wbr>Minutes</span>
+        <span id="blockdurationminutes~csharp">
+<span class="nx">
+Block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#blockdurationminutes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -315,7 +340,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Core<wbr>Count</span>
+        <span id="cpucorecount~csharp">
+<span class="nx">
+Cpu<wbr>Core<wbr>Count
+<a class="anchorjs-link " href="#cpucorecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -326,7 +356,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Threads<wbr>Per<wbr>Core</span>
+        <span id="cputhreadspercore~csharp">
+<span class="nx">
+Cpu<wbr>Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#cputhreadspercore~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -335,7 +370,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="creditspecification~csharp">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#creditspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -344,7 +384,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~csharp">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -354,7 +399,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">List&lt;Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -364,7 +414,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -377,7 +432,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">List&lt;Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -387,7 +447,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~csharp">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -396,7 +461,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation</span>
+        <span id="hibernation~csharp">
+<span class="nx">
+Hibernation
+<a class="anchorjs-link " href="#hibernation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -405,7 +475,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Id</span>
+        <span id="hostid~csharp">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#hostid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -414,7 +489,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -424,7 +504,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="instanceinitiatedshutdownbehavior~csharp">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinitiatedshutdownbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -436,7 +521,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="instanceinterruptionbehaviour~csharp">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#instanceinterruptionbehaviour~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -445,7 +535,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Address<wbr>Count</span>
+        <span id="ipv6addresscount~csharp">
+<span class="nx">
+Ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#ipv6addresscount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -454,7 +549,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Addresses</span>
+        <span id="ipv6addresses~csharp">
+<span class="nx">
+Ipv6Addresses
+<a class="anchorjs-link " href="#ipv6addresses~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -463,7 +563,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~csharp">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -472,7 +577,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Group</span>
+        <span id="launchgroup~csharp">
+<span class="nx">
+Launch<wbr>Group
+<a class="anchorjs-link " href="#launchgroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -482,7 +592,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="metadataoptions~csharp">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -491,7 +606,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="monitoring~csharp">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -500,7 +620,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="networkinterfaces~csharp">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#networkinterfaces~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">List&lt;Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
@@ -509,7 +634,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Group</span>
+        <span id="placementgroup~csharp">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -518,7 +648,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -528,7 +663,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Device</span>
+        <span id="rootblockdevice~csharp">
+<span class="nx">
+Root<wbr>Block<wbr>Device
+<a class="anchorjs-link " href="#rootblockdevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device<wbr>Args</a></span>
     </dt>
@@ -538,7 +678,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~csharp">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -547,7 +692,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Dest<wbr>Check</span>
+        <span id="sourcedestcheck~csharp">
+<span class="nx">
+Source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#sourcedestcheck~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -557,7 +707,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~csharp">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -566,7 +721,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Type</span>
+        <span id="spottype~csharp">
+<span class="nx">
+Spot<wbr>Type
+<a class="anchorjs-link " href="#spottype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -576,7 +736,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -585,7 +750,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -594,7 +764,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="tenancy~csharp">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -603,7 +778,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="userdata~csharp">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -612,7 +792,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data<wbr>Base64</span>
+        <span id="userdatabase64~csharp">
+<span class="nx">
+User<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#userdatabase64~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -621,7 +806,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="validfrom~csharp">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#validfrom~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -630,7 +820,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="validuntil~csharp">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -639,7 +834,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Tags</span>
+        <span id="volumetags~csharp">
+<span class="nx">
+Volume<wbr>Tags
+<a class="anchorjs-link " href="#volumetags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -648,7 +848,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -657,7 +862,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="waitforfulfillment~csharp">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#waitforfulfillment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -675,7 +885,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Ami</span>
+        <span id="ami~go">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#ami~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -684,7 +899,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Instance<wbr>Type</span>
+        <span id="instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -693,7 +913,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~go">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -702,7 +927,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -711,7 +941,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Duration<wbr>Minutes</span>
+        <span id="blockdurationminutes~go">
+<span class="nx">
+Block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#blockdurationminutes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -722,7 +957,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Core<wbr>Count</span>
+        <span id="cpucorecount~go">
+<span class="nx">
+Cpu<wbr>Core<wbr>Count
+<a class="anchorjs-link " href="#cpucorecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -733,7 +973,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Threads<wbr>Per<wbr>Core</span>
+        <span id="cputhreadspercore~go">
+<span class="nx">
+Cpu<wbr>Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#cputhreadspercore~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -742,7 +987,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="creditspecification~go">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#creditspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -751,7 +1001,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~go">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -761,7 +1016,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">[]Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -771,7 +1031,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -784,7 +1049,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">[]Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -794,7 +1064,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~go">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -803,7 +1078,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation</span>
+        <span id="hibernation~go">
+<span class="nx">
+Hibernation
+<a class="anchorjs-link " href="#hibernation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -812,7 +1092,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Id</span>
+        <span id="hostid~go">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#hostid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -821,7 +1106,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -831,7 +1121,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="instanceinitiatedshutdownbehavior~go">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinitiatedshutdownbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -843,7 +1138,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="instanceinterruptionbehaviour~go">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#instanceinterruptionbehaviour~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -852,7 +1152,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Address<wbr>Count</span>
+        <span id="ipv6addresscount~go">
+<span class="nx">
+Ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#ipv6addresscount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -861,7 +1166,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Addresses</span>
+        <span id="ipv6addresses~go">
+<span class="nx">
+Ipv6Addresses
+<a class="anchorjs-link " href="#ipv6addresses~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -870,7 +1180,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="keyname~go">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#keyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -879,7 +1194,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Group</span>
+        <span id="launchgroup~go">
+<span class="nx">
+Launch<wbr>Group
+<a class="anchorjs-link " href="#launchgroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -889,7 +1209,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="metadataoptions~go">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -898,7 +1223,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="monitoring~go">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#monitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -907,7 +1237,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="networkinterfaces~go">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#networkinterfaces~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">[]Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface</a></span>
     </dt>
@@ -916,7 +1251,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Group</span>
+        <span id="placementgroup~go">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -925,7 +1265,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -935,7 +1280,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Device</span>
+        <span id="rootblockdevice~go">
+<span class="nx">
+Root<wbr>Block<wbr>Device
+<a class="anchorjs-link " href="#rootblockdevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -945,7 +1295,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Groups</span>
+        <span id="securitygroups~go">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -954,7 +1309,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Dest<wbr>Check</span>
+        <span id="sourcedestcheck~go">
+<span class="nx">
+Source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#sourcedestcheck~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -964,7 +1324,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="spotprice~go">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -973,7 +1338,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Type</span>
+        <span id="spottype~go">
+<span class="nx">
+Spot<wbr>Type
+<a class="anchorjs-link " href="#spottype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -983,7 +1353,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -992,7 +1367,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1001,7 +1381,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="tenancy~go">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#tenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1010,7 +1395,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="userdata~go">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#userdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1019,7 +1409,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data<wbr>Base64</span>
+        <span id="userdatabase64~go">
+<span class="nx">
+User<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#userdatabase64~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1028,7 +1423,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="validfrom~go">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#validfrom~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1037,7 +1437,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="validuntil~go">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1046,7 +1451,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Tags</span>
+        <span id="volumetags~go">
+<span class="nx">
+Volume<wbr>Tags
+<a class="anchorjs-link " href="#volumetags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1055,7 +1465,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1064,7 +1479,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="waitforfulfillment~go">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#waitforfulfillment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1082,7 +1502,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>ami</span>
+        <span id="ami~nodejs">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#ami~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1091,7 +1516,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>instance<wbr>Type</span>
+        <span id="instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1100,7 +1530,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="associatepublicipaddress~nodejs">
+<span class="nx">
+associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#associatepublicipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1109,7 +1544,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1118,7 +1558,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Duration<wbr>Minutes</span>
+        <span id="blockdurationminutes~nodejs">
+<span class="nx">
+block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#blockdurationminutes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1129,7 +1574,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Core<wbr>Count</span>
+        <span id="cpucorecount~nodejs">
+<span class="nx">
+cpu<wbr>Core<wbr>Count
+<a class="anchorjs-link " href="#cpucorecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1140,7 +1590,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Threads<wbr>Per<wbr>Core</span>
+        <span id="cputhreadspercore~nodejs">
+<span class="nx">
+cpu<wbr>Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#cputhreadspercore~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1149,7 +1604,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit<wbr>Specification</span>
+        <span id="creditspecification~nodejs">
+<span class="nx">
+credit<wbr>Specification
+<a class="anchorjs-link " href="#creditspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -1158,7 +1618,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable<wbr>Api<wbr>Termination</span>
+        <span id="disableapitermination~nodejs">
+<span class="nx">
+disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#disableapitermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1168,7 +1633,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1178,7 +1648,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1191,7 +1666,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -1201,7 +1681,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>get<wbr>Password<wbr>Data</span>
+        <span id="getpassworddata~nodejs">
+<span class="nx">
+get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#getpassworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1210,7 +1695,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation</span>
+        <span id="hibernation~nodejs">
+<span class="nx">
+hibernation
+<a class="anchorjs-link " href="#hibernation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1219,7 +1709,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>host<wbr>Id</span>
+        <span id="hostid~nodejs">
+<span class="nx">
+host<wbr>Id
+<a class="anchorjs-link " href="#hostid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1228,7 +1723,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile</span>
+        <span id="iaminstanceprofile~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#iaminstanceprofile~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1238,7 +1738,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="instanceinitiatedshutdownbehavior~nodejs">
+<span class="nx">
+instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#instanceinitiatedshutdownbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1250,7 +1755,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="instanceinterruptionbehaviour~nodejs">
+<span class="nx">
+instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#instanceinterruptionbehaviour~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1259,7 +1769,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Address<wbr>Count</span>
+        <span id="ipv6addresscount~nodejs">
+<span class="nx">
+ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#ipv6addresscount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1268,7 +1783,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Addresses</span>
+        <span id="ipv6addresses~nodejs">
+<span class="nx">
+ipv6Addresses
+<a class="anchorjs-link " href="#ipv6addresses~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1277,7 +1797,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>key<wbr>Name</span>
+        <span id="keyname~nodejs">
+<span class="nx">
+key<wbr>Name
+<a class="anchorjs-link " href="#keyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1286,7 +1811,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch<wbr>Group</span>
+        <span id="launchgroup~nodejs">
+<span class="nx">
+launch<wbr>Group
+<a class="anchorjs-link " href="#launchgroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1296,7 +1826,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata<wbr>Options</span>
+        <span id="metadataoptions~nodejs">
+<span class="nx">
+metadata<wbr>Options
+<a class="anchorjs-link " href="#metadataoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -1305,7 +1840,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="monitoring~nodejs">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1314,7 +1854,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interfaces</span>
+        <span id="networkinterfaces~nodejs">
+<span class="nx">
+network<wbr>Interfaces
+<a class="anchorjs-link " href="#networkinterfaces~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface[]</a></span>
     </dt>
@@ -1323,7 +1868,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement<wbr>Group</span>
+        <span id="placementgroup~nodejs">
+<span class="nx">
+placement<wbr>Group
+<a class="anchorjs-link " href="#placementgroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1332,7 +1882,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Ip</span>
+        <span id="privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1342,7 +1897,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Block<wbr>Device</span>
+        <span id="rootblockdevice~nodejs">
+<span class="nx">
+root<wbr>Block<wbr>Device
+<a class="anchorjs-link " href="#rootblockdevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -1352,7 +1912,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Groups</span>
+        <span id="securitygroups~nodejs">
+<span class="nx">
+security<wbr>Groups
+<a class="anchorjs-link " href="#securitygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1361,7 +1926,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Dest<wbr>Check</span>
+        <span id="sourcedestcheck~nodejs">
+<span class="nx">
+source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#sourcedestcheck~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1371,7 +1941,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Price</span>
+        <span id="spotprice~nodejs">
+<span class="nx">
+spot<wbr>Price
+<a class="anchorjs-link " href="#spotprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1380,7 +1955,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Type</span>
+        <span id="spottype~nodejs">
+<span class="nx">
+spot<wbr>Type
+<a class="anchorjs-link " href="#spottype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1390,7 +1970,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1399,7 +1984,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1408,7 +1998,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="tenancy~nodejs">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1417,7 +2012,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data</span>
+        <span id="userdata~nodejs">
+<span class="nx">
+user<wbr>Data
+<a class="anchorjs-link " href="#userdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1426,7 +2026,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data<wbr>Base64</span>
+        <span id="userdatabase64~nodejs">
+<span class="nx">
+user<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#userdatabase64~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1435,7 +2040,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>From</span>
+        <span id="validfrom~nodejs">
+<span class="nx">
+valid<wbr>From
+<a class="anchorjs-link " href="#validfrom~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1444,7 +2054,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>Until</span>
+        <span id="validuntil~nodejs">
+<span class="nx">
+valid<wbr>Until
+<a class="anchorjs-link " href="#validuntil~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1453,7 +2068,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Tags</span>
+        <span id="volumetags~nodejs">
+<span class="nx">
+volume<wbr>Tags
+<a class="anchorjs-link " href="#volumetags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1462,7 +2082,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1471,7 +2096,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait<wbr>For<wbr>Fulfillment</span>
+        <span id="waitforfulfillment~nodejs">
+<span class="nx">
+wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#waitforfulfillment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1489,7 +2119,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>ami</span>
+        <span id="ami~python">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#ami~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1498,7 +2133,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>instance_<wbr>type</span>
+        <span id="instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1507,7 +2147,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate_<wbr>public_<wbr>ip_<wbr>address</span>
+        <span id="associate_public_ip_address~python">
+<span class="nx">
+associate_<wbr>public_<wbr>ip_<wbr>address
+<a class="anchorjs-link " href="#associate_public_ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1516,7 +2161,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1525,7 +2175,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block_<wbr>duration_<wbr>minutes</span>
+        <span id="block_duration_minutes~python">
+<span class="nx">
+block_<wbr>duration_<wbr>minutes
+<a class="anchorjs-link " href="#block_duration_minutes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1536,7 +2191,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu_<wbr>core_<wbr>count</span>
+        <span id="cpu_core_count~python">
+<span class="nx">
+cpu_<wbr>core_<wbr>count
+<a class="anchorjs-link " href="#cpu_core_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1547,7 +2207,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu_<wbr>threads_<wbr>per_<wbr>core</span>
+        <span id="cpu_threads_per_core~python">
+<span class="nx">
+cpu_<wbr>threads_<wbr>per_<wbr>core
+<a class="anchorjs-link " href="#cpu_threads_per_core~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1556,7 +2221,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit_<wbr>specification</span>
+        <span id="credit_specification~python">
+<span class="nx">
+credit_<wbr>specification
+<a class="anchorjs-link " href="#credit_specification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Dict[Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification]</a></span>
     </dt>
@@ -1565,7 +2235,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable_<wbr>api_<wbr>termination</span>
+        <span id="disable_api_termination~python">
+<span class="nx">
+disable_<wbr>api_<wbr>termination
+<a class="anchorjs-link " href="#disable_api_termination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1575,7 +2250,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">List[Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1585,7 +2265,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1598,7 +2283,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">List[Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1608,7 +2298,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>get_<wbr>password_<wbr>data</span>
+        <span id="get_password_data~python">
+<span class="nx">
+get_<wbr>password_<wbr>data
+<a class="anchorjs-link " href="#get_password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1617,7 +2312,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation</span>
+        <span id="hibernation~python">
+<span class="nx">
+hibernation
+<a class="anchorjs-link " href="#hibernation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1626,7 +2326,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>host_<wbr>id</span>
+        <span id="host_id~python">
+<span class="nx">
+host_<wbr>id
+<a class="anchorjs-link " href="#host_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1635,7 +2340,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>instance_<wbr>profile</span>
+        <span id="iam_instance_profile~python">
+<span class="nx">
+iam_<wbr>instance_<wbr>profile
+<a class="anchorjs-link " href="#iam_instance_profile~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1645,7 +2355,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior</span>
+        <span id="instance_initiated_shutdown_behavior~python">
+<span class="nx">
+instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior
+<a class="anchorjs-link " href="#instance_initiated_shutdown_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1657,7 +2372,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>interruption_<wbr>behaviour</span>
+        <span id="instance_interruption_behaviour~python">
+<span class="nx">
+instance_<wbr>interruption_<wbr>behaviour
+<a class="anchorjs-link " href="#instance_interruption_behaviour~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1666,7 +2386,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>address_<wbr>count</span>
+        <span id="ipv6_address_count~python">
+<span class="nx">
+ipv6_<wbr>address_<wbr>count
+<a class="anchorjs-link " href="#ipv6_address_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1675,7 +2400,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>addresses</span>
+        <span id="ipv6_addresses~python">
+<span class="nx">
+ipv6_<wbr>addresses
+<a class="anchorjs-link " href="#ipv6_addresses~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1684,7 +2414,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>key_<wbr>name</span>
+        <span id="key_name~python">
+<span class="nx">
+key_<wbr>name
+<a class="anchorjs-link " href="#key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1693,7 +2428,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch_<wbr>group</span>
+        <span id="launch_group~python">
+<span class="nx">
+launch_<wbr>group
+<a class="anchorjs-link " href="#launch_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1703,7 +2443,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata_<wbr>options</span>
+        <span id="metadata_options~python">
+<span class="nx">
+metadata_<wbr>options
+<a class="anchorjs-link " href="#metadata_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Dict[Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options]</a></span>
     </dt>
@@ -1712,7 +2457,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="monitoring~python">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1721,7 +2471,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interfaces</span>
+        <span id="network_interfaces~python">
+<span class="nx">
+network_<wbr>interfaces
+<a class="anchorjs-link " href="#network_interfaces~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">List[Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface]</a></span>
     </dt>
@@ -1730,7 +2485,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement_<wbr>group</span>
+        <span id="placement_group~python">
+<span class="nx">
+placement_<wbr>group
+<a class="anchorjs-link " href="#placement_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1739,7 +2499,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>ip</span>
+        <span id="private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1749,7 +2514,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>block_<wbr>device</span>
+        <span id="root_block_device~python">
+<span class="nx">
+root_<wbr>block_<wbr>device
+<a class="anchorjs-link " href="#root_block_device~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Dict[Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -1759,7 +2529,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>groups</span>
+        <span id="security_groups~python">
+<span class="nx">
+security_<wbr>groups
+<a class="anchorjs-link " href="#security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1768,7 +2543,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>dest_<wbr>check</span>
+        <span id="source_dest_check~python">
+<span class="nx">
+source_<wbr>dest_<wbr>check
+<a class="anchorjs-link " href="#source_dest_check~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1778,7 +2558,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>price</span>
+        <span id="spot_price~python">
+<span class="nx">
+spot_<wbr>price
+<a class="anchorjs-link " href="#spot_price~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1787,7 +2572,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>type</span>
+        <span id="spot_type~python">
+<span class="nx">
+spot_<wbr>type
+<a class="anchorjs-link " href="#spot_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1797,7 +2587,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1806,7 +2601,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1815,7 +2615,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="tenancy~python">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1824,7 +2629,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data</span>
+        <span id="user_data~python">
+<span class="nx">
+user_<wbr>data
+<a class="anchorjs-link " href="#user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1833,7 +2643,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data_<wbr>base64</span>
+        <span id="user_data_base64~python">
+<span class="nx">
+user_<wbr>data_<wbr>base64
+<a class="anchorjs-link " href="#user_data_base64~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1842,7 +2657,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>from</span>
+        <span id="valid_from~python">
+<span class="nx">
+valid_<wbr>from
+<a class="anchorjs-link " href="#valid_from~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1851,7 +2671,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>until</span>
+        <span id="valid_until~python">
+<span class="nx">
+valid_<wbr>until
+<a class="anchorjs-link " href="#valid_until~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1860,7 +2685,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>tags</span>
+        <span id="volume_tags~python">
+<span class="nx">
+volume_<wbr>tags
+<a class="anchorjs-link " href="#volume_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1869,7 +2699,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1878,7 +2713,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait_<wbr>for_<wbr>fulfillment</span>
+        <span id="wait_for_fulfillment~python">
+<span class="nx">
+wait_<wbr>for_<wbr>fulfillment
+<a class="anchorjs-link " href="#wait_for_fulfillment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1907,7 +2747,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1915,7 +2760,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1923,7 +2773,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>State</span>
+        <span id="instancestate~csharp">
+<span class="nx">
+Instance<wbr>State
+<a class="anchorjs-link " href="#instancestate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1931,7 +2786,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Outpost<wbr>Arn</span>
+        <span id="outpostarn~csharp">
+<span class="nx">
+Outpost<wbr>Arn
+<a class="anchorjs-link " href="#outpostarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1939,7 +2799,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Password<wbr>Data</span>
+        <span id="passworddata~csharp">
+<span class="nx">
+Password<wbr>Data
+<a class="anchorjs-link " href="#passworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1947,7 +2812,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Primary<wbr>Network<wbr>Interface<wbr>Id</span>
+        <span id="primarynetworkinterfaceid~csharp">
+<span class="nx">
+Primary<wbr>Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#primarynetworkinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1955,7 +2825,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1966,7 +2841,12 @@ for your VPC
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1976,7 +2856,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1985,7 +2870,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Bid<wbr>Status</span>
+        <span id="spotbidstatus~csharp">
+<span class="nx">
+Spot<wbr>Bid<wbr>Status
+<a class="anchorjs-link " href="#spotbidstatus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1999,7 +2889,12 @@ of the Spot Instance Request.
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Instance<wbr>Id</span>
+        <span id="spotinstanceid~csharp">
+<span class="nx">
+Spot<wbr>Instance<wbr>Id
+<a class="anchorjs-link " href="#spotinstanceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2009,7 +2904,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="spotrequeststate~csharp">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#spotrequeststate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2024,7 +2924,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2032,7 +2937,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2040,7 +2950,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>State</span>
+        <span id="instancestate~go">
+<span class="nx">
+Instance<wbr>State
+<a class="anchorjs-link " href="#instancestate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2048,7 +2963,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Outpost<wbr>Arn</span>
+        <span id="outpostarn~go">
+<span class="nx">
+Outpost<wbr>Arn
+<a class="anchorjs-link " href="#outpostarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2056,7 +2976,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Password<wbr>Data</span>
+        <span id="passworddata~go">
+<span class="nx">
+Password<wbr>Data
+<a class="anchorjs-link " href="#passworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2064,7 +2989,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Primary<wbr>Network<wbr>Interface<wbr>Id</span>
+        <span id="primarynetworkinterfaceid~go">
+<span class="nx">
+Primary<wbr>Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#primarynetworkinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2072,7 +3002,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Private<wbr>Dns</span>
+        <span id="privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2083,7 +3018,12 @@ for your VPC
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Dns</span>
+        <span id="publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2093,7 +3033,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>Public<wbr>Ip</span>
+        <span id="publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2102,7 +3047,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Bid<wbr>Status</span>
+        <span id="spotbidstatus~go">
+<span class="nx">
+Spot<wbr>Bid<wbr>Status
+<a class="anchorjs-link " href="#spotbidstatus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2116,7 +3066,12 @@ of the Spot Instance Request.
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Instance<wbr>Id</span>
+        <span id="spotinstanceid~go">
+<span class="nx">
+Spot<wbr>Instance<wbr>Id
+<a class="anchorjs-link " href="#spotinstanceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2126,7 +3081,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="spotrequeststate~go">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#spotrequeststate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2141,7 +3101,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2149,7 +3114,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2157,7 +3127,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>State</span>
+        <span id="instancestate~nodejs">
+<span class="nx">
+instance<wbr>State
+<a class="anchorjs-link " href="#instancestate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2165,7 +3140,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>outpost<wbr>Arn</span>
+        <span id="outpostarn~nodejs">
+<span class="nx">
+outpost<wbr>Arn
+<a class="anchorjs-link " href="#outpostarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2173,7 +3153,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>password<wbr>Data</span>
+        <span id="passworddata~nodejs">
+<span class="nx">
+password<wbr>Data
+<a class="anchorjs-link " href="#passworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2181,7 +3166,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>primary<wbr>Network<wbr>Interface<wbr>Id</span>
+        <span id="primarynetworkinterfaceid~nodejs">
+<span class="nx">
+primary<wbr>Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#primarynetworkinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2189,7 +3179,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>private<wbr>Dns</span>
+        <span id="privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2200,7 +3195,12 @@ for your VPC
 
     <dt class="property-"
             title="">
-        <span>public<wbr>Dns</span>
+        <span id="publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2210,7 +3210,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>public<wbr>Ip</span>
+        <span id="publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2219,7 +3224,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>spot<wbr>Bid<wbr>Status</span>
+        <span id="spotbidstatus~nodejs">
+<span class="nx">
+spot<wbr>Bid<wbr>Status
+<a class="anchorjs-link " href="#spotbidstatus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2233,7 +3243,12 @@ of the Spot Instance Request.
 
     <dt class="property-"
             title="">
-        <span>spot<wbr>Instance<wbr>Id</span>
+        <span id="spotinstanceid~nodejs">
+<span class="nx">
+spot<wbr>Instance<wbr>Id
+<a class="anchorjs-link " href="#spotinstanceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2243,7 +3258,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>spot<wbr>Request<wbr>State</span>
+        <span id="spotrequeststate~nodejs">
+<span class="nx">
+spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#spotrequeststate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2258,7 +3278,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2266,7 +3291,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2274,7 +3304,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>state</span>
+        <span id="instance_state~python">
+<span class="nx">
+instance_<wbr>state
+<a class="anchorjs-link " href="#instance_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2282,7 +3317,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>outpost_<wbr>arn</span>
+        <span id="outpost_arn~python">
+<span class="nx">
+outpost_<wbr>arn
+<a class="anchorjs-link " href="#outpost_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2290,7 +3330,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>password_<wbr>data</span>
+        <span id="password_data~python">
+<span class="nx">
+password_<wbr>data
+<a class="anchorjs-link " href="#password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2298,7 +3343,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>primary_<wbr>network_<wbr>interface_<wbr>id</span>
+        <span id="primary_network_interface_id~python">
+<span class="nx">
+primary_<wbr>network_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#primary_network_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2306,7 +3356,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>private_<wbr>dns</span>
+        <span id="private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2317,7 +3372,12 @@ for your VPC
 
     <dt class="property-"
             title="">
-        <span>public_<wbr>dns</span>
+        <span id="public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2327,7 +3387,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>public_<wbr>ip</span>
+        <span id="public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2336,7 +3401,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-"
             title="">
-        <span>spot_<wbr>bid_<wbr>status</span>
+        <span id="spot_bid_status~python">
+<span class="nx">
+spot_<wbr>bid_<wbr>status
+<a class="anchorjs-link " href="#spot_bid_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2350,7 +3420,12 @@ of the Spot Instance Request.
 
     <dt class="property-"
             title="">
-        <span>spot_<wbr>instance_<wbr>id</span>
+        <span id="spot_instance_id~python">
+<span class="nx">
+spot_<wbr>instance_<wbr>id
+<a class="anchorjs-link " href="#spot_instance_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2360,7 +3435,12 @@ the Spot Instance request.
 
     <dt class="property-"
             title="">
-        <span>spot_<wbr>request_<wbr>state</span>
+        <span id="spot_request_state~python">
+<span class="nx">
+spot_<wbr>request_<wbr>state
+<a class="anchorjs-link " href="#spot_request_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2381,7 +3461,7 @@ Get an existing SpotInstanceRequest resource's state with the given name, ID, an
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequestState">SpotInstanceRequestState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequest">SpotInstanceRequest</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequestState">SpotInstanceRequestState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SpotInstanceRequest">SpotInstanceRequest</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -2389,11 +3469,11 @@ Get an existing SpotInstanceRequest resource's state with the given name, ID, an
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSpotInstanceRequest<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequestState">SpotInstanceRequestState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequest">SpotInstanceRequest</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSpotInstanceRequest<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequestState">SpotInstanceRequestState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SpotInstanceRequest">SpotInstanceRequest</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequest.html">SpotInstanceRequest</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequestState.html">SpotInstanceRequestState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequest.html">SpotInstanceRequest</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SpotInstanceRequestState.html">SpotInstanceRequestState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -2501,7 +3581,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ami</span>
+        <span id="state_ami~csharp">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#state_ami~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2510,7 +3595,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2518,7 +3608,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="state_associatepublicipaddress~csharp">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#state_associatepublicipaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2527,7 +3622,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2536,7 +3636,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Duration<wbr>Minutes</span>
+        <span id="state_blockdurationminutes~csharp">
+<span class="nx">
+Block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#state_blockdurationminutes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2547,7 +3652,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Core<wbr>Count</span>
+        <span id="state_cpucorecount~csharp">
+<span class="nx">
+Cpu<wbr>Core<wbr>Count
+<a class="anchorjs-link " href="#state_cpucorecount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2558,7 +3668,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Threads<wbr>Per<wbr>Core</span>
+        <span id="state_cputhreadspercore~csharp">
+<span class="nx">
+Cpu<wbr>Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#state_cputhreadspercore~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2567,7 +3682,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="state_creditspecification~csharp">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#state_creditspecification~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification<wbr>Args</a></span>
     </dt>
@@ -2576,7 +3696,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="state_disableapitermination~csharp">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#state_disableapitermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2586,7 +3711,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~csharp">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">List&lt;Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2596,7 +3726,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~csharp">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2609,7 +3744,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~csharp">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">List&lt;Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device<wbr>Args&gt;</a></span>
     </dt>
@@ -2619,7 +3759,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="state_getpassworddata~csharp">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#state_getpassworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2628,7 +3773,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation</span>
+        <span id="state_hibernation~csharp">
+<span class="nx">
+Hibernation
+<a class="anchorjs-link " href="#state_hibernation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2637,7 +3787,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Id</span>
+        <span id="state_hostid~csharp">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#state_hostid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2646,7 +3801,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="state_iaminstanceprofile~csharp">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#state_iaminstanceprofile~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2656,7 +3816,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="state_instanceinitiatedshutdownbehavior~csharp">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#state_instanceinitiatedshutdownbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2668,7 +3833,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="state_instanceinterruptionbehaviour~csharp">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#state_instanceinterruptionbehaviour~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2677,7 +3847,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>State</span>
+        <span id="state_instancestate~csharp">
+<span class="nx">
+Instance<wbr>State
+<a class="anchorjs-link " href="#state_instancestate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2685,7 +3860,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="state_instancetype~csharp">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2694,7 +3874,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Address<wbr>Count</span>
+        <span id="state_ipv6addresscount~csharp">
+<span class="nx">
+Ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#state_ipv6addresscount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2703,7 +3888,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Addresses</span>
+        <span id="state_ipv6addresses~csharp">
+<span class="nx">
+Ipv6Addresses
+<a class="anchorjs-link " href="#state_ipv6addresses~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2712,7 +3902,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="state_keyname~csharp">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#state_keyname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2721,7 +3916,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Group</span>
+        <span id="state_launchgroup~csharp">
+<span class="nx">
+Launch<wbr>Group
+<a class="anchorjs-link " href="#state_launchgroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2731,7 +3931,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="state_metadataoptions~csharp">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#state_metadataoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -2740,7 +3945,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="state_monitoring~csharp">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#state_monitoring~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2749,7 +3959,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="state_networkinterfaces~csharp">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#state_networkinterfaces~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">List&lt;Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
@@ -2758,7 +3973,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Outpost<wbr>Arn</span>
+        <span id="state_outpostarn~csharp">
+<span class="nx">
+Outpost<wbr>Arn
+<a class="anchorjs-link " href="#state_outpostarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2766,7 +3986,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Data</span>
+        <span id="state_passworddata~csharp">
+<span class="nx">
+Password<wbr>Data
+<a class="anchorjs-link " href="#state_passworddata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2774,7 +3999,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Group</span>
+        <span id="state_placementgroup~csharp">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#state_placementgroup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2783,7 +4013,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Primary<wbr>Network<wbr>Interface<wbr>Id</span>
+        <span id="state_primarynetworkinterfaceid~csharp">
+<span class="nx">
+Primary<wbr>Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#state_primarynetworkinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2791,7 +4026,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="state_privatedns~csharp">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2802,7 +4042,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="state_privateip~csharp">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2812,7 +4057,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="state_publicdns~csharp">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2822,7 +4072,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="state_publicip~csharp">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2831,7 +4086,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Device</span>
+        <span id="state_rootblockdevice~csharp">
+<span class="nx">
+Root<wbr>Block<wbr>Device
+<a class="anchorjs-link " href="#state_rootblockdevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device<wbr>Args</a></span>
     </dt>
@@ -2841,7 +4101,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Groups</span>
+        <span id="state_securitygroups~csharp">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#state_securitygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2850,7 +4115,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Dest<wbr>Check</span>
+        <span id="state_sourcedestcheck~csharp">
+<span class="nx">
+Source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#state_sourcedestcheck~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2860,7 +4130,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Bid<wbr>Status</span>
+        <span id="state_spotbidstatus~csharp">
+<span class="nx">
+Spot<wbr>Bid<wbr>Status
+<a class="anchorjs-link " href="#state_spotbidstatus~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2874,7 +4149,12 @@ of the Spot Instance Request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Instance<wbr>Id</span>
+        <span id="state_spotinstanceid~csharp">
+<span class="nx">
+Spot<wbr>Instance<wbr>Id
+<a class="anchorjs-link " href="#state_spotinstanceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2884,7 +4164,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="state_spotprice~csharp">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#state_spotprice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2893,7 +4178,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="state_spotrequeststate~csharp">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#state_spotrequeststate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2901,7 +4191,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Type</span>
+        <span id="state_spottype~csharp">
+<span class="nx">
+Spot<wbr>Type
+<a class="anchorjs-link " href="#state_spottype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2911,7 +4206,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="state_subnetid~csharp">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_subnetid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2920,7 +4220,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -2929,7 +4234,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="state_tenancy~csharp">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#state_tenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2938,7 +4248,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="state_userdata~csharp">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#state_userdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2947,7 +4262,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data<wbr>Base64</span>
+        <span id="state_userdatabase64~csharp">
+<span class="nx">
+User<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#state_userdatabase64~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2956,7 +4276,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="state_validfrom~csharp">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#state_validfrom~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2965,7 +4290,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="state_validuntil~csharp">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#state_validuntil~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2974,7 +4304,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Tags</span>
+        <span id="state_volumetags~csharp">
+<span class="nx">
+Volume<wbr>Tags
+<a class="anchorjs-link " href="#state_volumetags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -2983,7 +4318,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2992,7 +4332,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="state_waitforfulfillment~csharp">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#state_waitforfulfillment~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3010,7 +4355,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ami</span>
+        <span id="state_ami~go">
+<span class="nx">
+Ami
+<a class="anchorjs-link " href="#state_ami~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3019,7 +4369,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3027,7 +4382,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="state_associatepublicipaddress~go">
+<span class="nx">
+Associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#state_associatepublicipaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3036,7 +4396,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3045,7 +4410,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Duration<wbr>Minutes</span>
+        <span id="state_blockdurationminutes~go">
+<span class="nx">
+Block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#state_blockdurationminutes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3056,7 +4426,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Core<wbr>Count</span>
+        <span id="state_cpucorecount~go">
+<span class="nx">
+Cpu<wbr>Core<wbr>Count
+<a class="anchorjs-link " href="#state_cpucorecount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3067,7 +4442,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Threads<wbr>Per<wbr>Core</span>
+        <span id="state_cputhreadspercore~go">
+<span class="nx">
+Cpu<wbr>Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#state_cputhreadspercore~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3076,7 +4456,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credit<wbr>Specification</span>
+        <span id="state_creditspecification~go">
+<span class="nx">
+Credit<wbr>Specification
+<a class="anchorjs-link " href="#state_creditspecification~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -3085,7 +4470,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>Disable<wbr>Api<wbr>Termination</span>
+        <span id="state_disableapitermination~go">
+<span class="nx">
+Disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#state_disableapitermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3095,7 +4485,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~go">
+<span class="nx">
+Ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">[]Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -3105,7 +4500,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~go">
+<span class="nx">
+Ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3118,7 +4518,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~go">
+<span class="nx">
+Ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">[]Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -3128,7 +4533,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Get<wbr>Password<wbr>Data</span>
+        <span id="state_getpassworddata~go">
+<span class="nx">
+Get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#state_getpassworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3137,7 +4547,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hibernation</span>
+        <span id="state_hibernation~go">
+<span class="nx">
+Hibernation
+<a class="anchorjs-link " href="#state_hibernation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3146,7 +4561,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Id</span>
+        <span id="state_hostid~go">
+<span class="nx">
+Host<wbr>Id
+<a class="anchorjs-link " href="#state_hostid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3155,7 +4575,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Instance<wbr>Profile</span>
+        <span id="state_iaminstanceprofile~go">
+<span class="nx">
+Iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#state_iaminstanceprofile~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3165,7 +4590,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="state_instanceinitiatedshutdownbehavior~go">
+<span class="nx">
+Instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#state_instanceinitiatedshutdownbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3177,7 +4607,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="state_instanceinterruptionbehaviour~go">
+<span class="nx">
+Instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#state_instanceinterruptionbehaviour~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3186,7 +4621,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>State</span>
+        <span id="state_instancestate~go">
+<span class="nx">
+Instance<wbr>State
+<a class="anchorjs-link " href="#state_instancestate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3194,7 +4634,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Type</span>
+        <span id="state_instancetype~go">
+<span class="nx">
+Instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3203,7 +4648,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Address<wbr>Count</span>
+        <span id="state_ipv6addresscount~go">
+<span class="nx">
+Ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#state_ipv6addresscount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3212,7 +4662,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Addresses</span>
+        <span id="state_ipv6addresses~go">
+<span class="nx">
+Ipv6Addresses
+<a class="anchorjs-link " href="#state_ipv6addresses~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3221,7 +4676,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Key<wbr>Name</span>
+        <span id="state_keyname~go">
+<span class="nx">
+Key<wbr>Name
+<a class="anchorjs-link " href="#state_keyname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3230,7 +4690,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Launch<wbr>Group</span>
+        <span id="state_launchgroup~go">
+<span class="nx">
+Launch<wbr>Group
+<a class="anchorjs-link " href="#state_launchgroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3240,7 +4705,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata<wbr>Options</span>
+        <span id="state_metadataoptions~go">
+<span class="nx">
+Metadata<wbr>Options
+<a class="anchorjs-link " href="#state_metadataoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -3249,7 +4719,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Monitoring</span>
+        <span id="state_monitoring~go">
+<span class="nx">
+Monitoring
+<a class="anchorjs-link " href="#state_monitoring~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3258,7 +4733,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Interfaces</span>
+        <span id="state_networkinterfaces~go">
+<span class="nx">
+Network<wbr>Interfaces
+<a class="anchorjs-link " href="#state_networkinterfaces~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">[]Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface</a></span>
     </dt>
@@ -3267,7 +4747,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Outpost<wbr>Arn</span>
+        <span id="state_outpostarn~go">
+<span class="nx">
+Outpost<wbr>Arn
+<a class="anchorjs-link " href="#state_outpostarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3275,7 +4760,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Password<wbr>Data</span>
+        <span id="state_passworddata~go">
+<span class="nx">
+Password<wbr>Data
+<a class="anchorjs-link " href="#state_passworddata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3283,7 +4773,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Group</span>
+        <span id="state_placementgroup~go">
+<span class="nx">
+Placement<wbr>Group
+<a class="anchorjs-link " href="#state_placementgroup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3292,7 +4787,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Primary<wbr>Network<wbr>Interface<wbr>Id</span>
+        <span id="state_primarynetworkinterfaceid~go">
+<span class="nx">
+Primary<wbr>Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#state_primarynetworkinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3300,7 +4800,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Dns</span>
+        <span id="state_privatedns~go">
+<span class="nx">
+Private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3311,7 +4816,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Private<wbr>Ip</span>
+        <span id="state_privateip~go">
+<span class="nx">
+Private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3321,7 +4831,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Dns</span>
+        <span id="state_publicdns~go">
+<span class="nx">
+Public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3331,7 +4846,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Public<wbr>Ip</span>
+        <span id="state_publicip~go">
+<span class="nx">
+Public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3340,7 +4860,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Block<wbr>Device</span>
+        <span id="state_rootblockdevice~go">
+<span class="nx">
+Root<wbr>Block<wbr>Device
+<a class="anchorjs-link " href="#state_rootblockdevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -3350,7 +4875,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Groups</span>
+        <span id="state_securitygroups~go">
+<span class="nx">
+Security<wbr>Groups
+<a class="anchorjs-link " href="#state_securitygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3359,7 +4889,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Dest<wbr>Check</span>
+        <span id="state_sourcedestcheck~go">
+<span class="nx">
+Source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#state_sourcedestcheck~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3369,7 +4904,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Bid<wbr>Status</span>
+        <span id="state_spotbidstatus~go">
+<span class="nx">
+Spot<wbr>Bid<wbr>Status
+<a class="anchorjs-link " href="#state_spotbidstatus~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3383,7 +4923,12 @@ of the Spot Instance Request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Instance<wbr>Id</span>
+        <span id="state_spotinstanceid~go">
+<span class="nx">
+Spot<wbr>Instance<wbr>Id
+<a class="anchorjs-link " href="#state_spotinstanceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3393,7 +4938,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Price</span>
+        <span id="state_spotprice~go">
+<span class="nx">
+Spot<wbr>Price
+<a class="anchorjs-link " href="#state_spotprice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3402,7 +4952,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Request<wbr>State</span>
+        <span id="state_spotrequeststate~go">
+<span class="nx">
+Spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#state_spotrequeststate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3410,7 +4965,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spot<wbr>Type</span>
+        <span id="state_spottype~go">
+<span class="nx">
+Spot<wbr>Type
+<a class="anchorjs-link " href="#state_spottype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3420,7 +4980,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subnet<wbr>Id</span>
+        <span id="state_subnetid~go">
+<span class="nx">
+Subnet<wbr>Id
+<a class="anchorjs-link " href="#state_subnetid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3429,7 +4994,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -3438,7 +5008,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tenancy</span>
+        <span id="state_tenancy~go">
+<span class="nx">
+Tenancy
+<a class="anchorjs-link " href="#state_tenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3447,7 +5022,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data</span>
+        <span id="state_userdata~go">
+<span class="nx">
+User<wbr>Data
+<a class="anchorjs-link " href="#state_userdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3456,7 +5036,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>User<wbr>Data<wbr>Base64</span>
+        <span id="state_userdatabase64~go">
+<span class="nx">
+User<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#state_userdatabase64~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3465,7 +5050,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>From</span>
+        <span id="state_validfrom~go">
+<span class="nx">
+Valid<wbr>From
+<a class="anchorjs-link " href="#state_validfrom~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3474,7 +5064,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Valid<wbr>Until</span>
+        <span id="state_validuntil~go">
+<span class="nx">
+Valid<wbr>Until
+<a class="anchorjs-link " href="#state_validuntil~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3483,7 +5078,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Tags</span>
+        <span id="state_volumetags~go">
+<span class="nx">
+Volume<wbr>Tags
+<a class="anchorjs-link " href="#state_volumetags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -3492,7 +5092,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3501,7 +5106,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Wait<wbr>For<wbr>Fulfillment</span>
+        <span id="state_waitforfulfillment~go">
+<span class="nx">
+Wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#state_waitforfulfillment~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3519,7 +5129,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ami</span>
+        <span id="state_ami~nodejs">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#state_ami~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3528,7 +5143,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3536,7 +5156,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate<wbr>Public<wbr>Ip<wbr>Address</span>
+        <span id="state_associatepublicipaddress~nodejs">
+<span class="nx">
+associate<wbr>Public<wbr>Ip<wbr>Address
+<a class="anchorjs-link " href="#state_associatepublicipaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3545,7 +5170,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="state_availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3554,7 +5184,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Duration<wbr>Minutes</span>
+        <span id="state_blockdurationminutes~nodejs">
+<span class="nx">
+block<wbr>Duration<wbr>Minutes
+<a class="anchorjs-link " href="#state_blockdurationminutes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3565,7 +5200,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Core<wbr>Count</span>
+        <span id="state_cpucorecount~nodejs">
+<span class="nx">
+cpu<wbr>Core<wbr>Count
+<a class="anchorjs-link " href="#state_cpucorecount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3576,7 +5216,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Threads<wbr>Per<wbr>Core</span>
+        <span id="state_cputhreadspercore~nodejs">
+<span class="nx">
+cpu<wbr>Threads<wbr>Per<wbr>Core
+<a class="anchorjs-link " href="#state_cputhreadspercore~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3585,7 +5230,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit<wbr>Specification</span>
+        <span id="state_creditspecification~nodejs">
+<span class="nx">
+credit<wbr>Specification
+<a class="anchorjs-link " href="#state_creditspecification~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification</a></span>
     </dt>
@@ -3594,7 +5244,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable<wbr>Api<wbr>Termination</span>
+        <span id="state_disableapitermination~nodejs">
+<span class="nx">
+disable<wbr>Api<wbr>Termination
+<a class="anchorjs-link " href="#state_disableapitermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3604,7 +5259,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Block<wbr>Devices</span>
+        <span id="state_ebsblockdevices~nodejs">
+<span class="nx">
+ebs<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ebsblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -3614,7 +5274,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs<wbr>Optimized</span>
+        <span id="state_ebsoptimized~nodejs">
+<span class="nx">
+ebs<wbr>Optimized
+<a class="anchorjs-link " href="#state_ebsoptimized~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3627,7 +5292,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral<wbr>Block<wbr>Devices</span>
+        <span id="state_ephemeralblockdevices~nodejs">
+<span class="nx">
+ephemeral<wbr>Block<wbr>Devices
+<a class="anchorjs-link " href="#state_ephemeralblockdevices~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device[]</a></span>
     </dt>
@@ -3637,7 +5307,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>get<wbr>Password<wbr>Data</span>
+        <span id="state_getpassworddata~nodejs">
+<span class="nx">
+get<wbr>Password<wbr>Data
+<a class="anchorjs-link " href="#state_getpassworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3646,7 +5321,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation</span>
+        <span id="state_hibernation~nodejs">
+<span class="nx">
+hibernation
+<a class="anchorjs-link " href="#state_hibernation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3655,7 +5335,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>host<wbr>Id</span>
+        <span id="state_hostid~nodejs">
+<span class="nx">
+host<wbr>Id
+<a class="anchorjs-link " href="#state_hostid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3664,7 +5349,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Instance<wbr>Profile</span>
+        <span id="state_iaminstanceprofile~nodejs">
+<span class="nx">
+iam<wbr>Instance<wbr>Profile
+<a class="anchorjs-link " href="#state_iaminstanceprofile~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3674,7 +5364,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior</span>
+        <span id="state_instanceinitiatedshutdownbehavior~nodejs">
+<span class="nx">
+instance<wbr>Initiated<wbr>Shutdown<wbr>Behavior
+<a class="anchorjs-link " href="#state_instanceinitiatedshutdownbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3686,7 +5381,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Interruption<wbr>Behaviour</span>
+        <span id="state_instanceinterruptionbehaviour~nodejs">
+<span class="nx">
+instance<wbr>Interruption<wbr>Behaviour
+<a class="anchorjs-link " href="#state_instanceinterruptionbehaviour~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3695,7 +5395,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>State</span>
+        <span id="state_instancestate~nodejs">
+<span class="nx">
+instance<wbr>State
+<a class="anchorjs-link " href="#state_instancestate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3703,7 +5408,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Type</span>
+        <span id="state_instancetype~nodejs">
+<span class="nx">
+instance<wbr>Type
+<a class="anchorjs-link " href="#state_instancetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3712,7 +5422,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Address<wbr>Count</span>
+        <span id="state_ipv6addresscount~nodejs">
+<span class="nx">
+ipv6Address<wbr>Count
+<a class="anchorjs-link " href="#state_ipv6addresscount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3721,7 +5436,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Addresses</span>
+        <span id="state_ipv6addresses~nodejs">
+<span class="nx">
+ipv6Addresses
+<a class="anchorjs-link " href="#state_ipv6addresses~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3730,7 +5450,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>key<wbr>Name</span>
+        <span id="state_keyname~nodejs">
+<span class="nx">
+key<wbr>Name
+<a class="anchorjs-link " href="#state_keyname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3739,7 +5464,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch<wbr>Group</span>
+        <span id="state_launchgroup~nodejs">
+<span class="nx">
+launch<wbr>Group
+<a class="anchorjs-link " href="#state_launchgroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3749,7 +5479,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata<wbr>Options</span>
+        <span id="state_metadataoptions~nodejs">
+<span class="nx">
+metadata<wbr>Options
+<a class="anchorjs-link " href="#state_metadataoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options</a></span>
     </dt>
@@ -3758,7 +5493,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="state_monitoring~nodejs">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#state_monitoring~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3767,7 +5507,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Interfaces</span>
+        <span id="state_networkinterfaces~nodejs">
+<span class="nx">
+network<wbr>Interfaces
+<a class="anchorjs-link " href="#state_networkinterfaces~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface[]</a></span>
     </dt>
@@ -3776,7 +5521,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>outpost<wbr>Arn</span>
+        <span id="state_outpostarn~nodejs">
+<span class="nx">
+outpost<wbr>Arn
+<a class="anchorjs-link " href="#state_outpostarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3784,7 +5534,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>password<wbr>Data</span>
+        <span id="state_passworddata~nodejs">
+<span class="nx">
+password<wbr>Data
+<a class="anchorjs-link " href="#state_passworddata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3792,7 +5547,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement<wbr>Group</span>
+        <span id="state_placementgroup~nodejs">
+<span class="nx">
+placement<wbr>Group
+<a class="anchorjs-link " href="#state_placementgroup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3801,7 +5561,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>primary<wbr>Network<wbr>Interface<wbr>Id</span>
+        <span id="state_primarynetworkinterfaceid~nodejs">
+<span class="nx">
+primary<wbr>Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#state_primarynetworkinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3809,7 +5574,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Dns</span>
+        <span id="state_privatedns~nodejs">
+<span class="nx">
+private<wbr>Dns
+<a class="anchorjs-link " href="#state_privatedns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3820,7 +5590,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>private<wbr>Ip</span>
+        <span id="state_privateip~nodejs">
+<span class="nx">
+private<wbr>Ip
+<a class="anchorjs-link " href="#state_privateip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3830,7 +5605,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Dns</span>
+        <span id="state_publicdns~nodejs">
+<span class="nx">
+public<wbr>Dns
+<a class="anchorjs-link " href="#state_publicdns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3840,7 +5620,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public<wbr>Ip</span>
+        <span id="state_publicip~nodejs">
+<span class="nx">
+public<wbr>Ip
+<a class="anchorjs-link " href="#state_publicip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3849,7 +5634,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Block<wbr>Device</span>
+        <span id="state_rootblockdevice~nodejs">
+<span class="nx">
+root<wbr>Block<wbr>Device
+<a class="anchorjs-link " href="#state_rootblockdevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device</a></span>
     </dt>
@@ -3859,7 +5649,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Groups</span>
+        <span id="state_securitygroups~nodejs">
+<span class="nx">
+security<wbr>Groups
+<a class="anchorjs-link " href="#state_securitygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3868,7 +5663,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Dest<wbr>Check</span>
+        <span id="state_sourcedestcheck~nodejs">
+<span class="nx">
+source<wbr>Dest<wbr>Check
+<a class="anchorjs-link " href="#state_sourcedestcheck~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3878,7 +5678,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Bid<wbr>Status</span>
+        <span id="state_spotbidstatus~nodejs">
+<span class="nx">
+spot<wbr>Bid<wbr>Status
+<a class="anchorjs-link " href="#state_spotbidstatus~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3892,7 +5697,12 @@ of the Spot Instance Request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Instance<wbr>Id</span>
+        <span id="state_spotinstanceid~nodejs">
+<span class="nx">
+spot<wbr>Instance<wbr>Id
+<a class="anchorjs-link " href="#state_spotinstanceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3902,7 +5712,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Price</span>
+        <span id="state_spotprice~nodejs">
+<span class="nx">
+spot<wbr>Price
+<a class="anchorjs-link " href="#state_spotprice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3911,7 +5726,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Request<wbr>State</span>
+        <span id="state_spotrequeststate~nodejs">
+<span class="nx">
+spot<wbr>Request<wbr>State
+<a class="anchorjs-link " href="#state_spotrequeststate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3919,7 +5739,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot<wbr>Type</span>
+        <span id="state_spottype~nodejs">
+<span class="nx">
+spot<wbr>Type
+<a class="anchorjs-link " href="#state_spottype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3929,7 +5754,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet<wbr>Id</span>
+        <span id="state_subnetid~nodejs">
+<span class="nx">
+subnet<wbr>Id
+<a class="anchorjs-link " href="#state_subnetid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3938,7 +5768,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -3947,7 +5782,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="state_tenancy~nodejs">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#state_tenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3956,7 +5796,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data</span>
+        <span id="state_userdata~nodejs">
+<span class="nx">
+user<wbr>Data
+<a class="anchorjs-link " href="#state_userdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3965,7 +5810,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user<wbr>Data<wbr>Base64</span>
+        <span id="state_userdatabase64~nodejs">
+<span class="nx">
+user<wbr>Data<wbr>Base64
+<a class="anchorjs-link " href="#state_userdatabase64~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3974,7 +5824,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>From</span>
+        <span id="state_validfrom~nodejs">
+<span class="nx">
+valid<wbr>From
+<a class="anchorjs-link " href="#state_validfrom~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3983,7 +5838,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid<wbr>Until</span>
+        <span id="state_validuntil~nodejs">
+<span class="nx">
+valid<wbr>Until
+<a class="anchorjs-link " href="#state_validuntil~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3992,7 +5852,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Tags</span>
+        <span id="state_volumetags~nodejs">
+<span class="nx">
+volume<wbr>Tags
+<a class="anchorjs-link " href="#state_volumetags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -4001,7 +5866,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4010,7 +5880,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait<wbr>For<wbr>Fulfillment</span>
+        <span id="state_waitforfulfillment~nodejs">
+<span class="nx">
+wait<wbr>For<wbr>Fulfillment
+<a class="anchorjs-link " href="#state_waitforfulfillment~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4028,7 +5903,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ami</span>
+        <span id="state_ami~python">
+<span class="nx">
+ami
+<a class="anchorjs-link " href="#state_ami~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4037,7 +5917,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4045,7 +5930,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>associate_<wbr>public_<wbr>ip_<wbr>address</span>
+        <span id="state_associate_public_ip_address~python">
+<span class="nx">
+associate_<wbr>public_<wbr>ip_<wbr>address
+<a class="anchorjs-link " href="#state_associate_public_ip_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4054,7 +5944,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="state_availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#state_availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4063,7 +5958,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block_<wbr>duration_<wbr>minutes</span>
+        <span id="state_block_duration_minutes~python">
+<span class="nx">
+block_<wbr>duration_<wbr>minutes
+<a class="anchorjs-link " href="#state_block_duration_minutes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4074,7 +5974,12 @@ Note that you can't specify an Availability Zone group or a launch group if you 
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu_<wbr>core_<wbr>count</span>
+        <span id="state_cpu_core_count~python">
+<span class="nx">
+cpu_<wbr>core_<wbr>count
+<a class="anchorjs-link " href="#state_cpu_core_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4085,7 +5990,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu_<wbr>threads_<wbr>per_<wbr>core</span>
+        <span id="state_cpu_threads_per_core~python">
+<span class="nx">
+cpu_<wbr>threads_<wbr>per_<wbr>core
+<a class="anchorjs-link " href="#state_cpu_threads_per_core~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4094,7 +6004,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>credit_<wbr>specification</span>
+        <span id="state_credit_specification~python">
+<span class="nx">
+credit_<wbr>specification
+<a class="anchorjs-link " href="#state_credit_specification~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestcreditspecification">Dict[Spot<wbr>Instance<wbr>Request<wbr>Credit<wbr>Specification]</a></span>
     </dt>
@@ -4103,7 +6018,12 @@ only supported on creation of instance type that support CPU Options
 
     <dt class="property-optional"
             title="Optional">
-        <span>disable_<wbr>api_<wbr>termination</span>
+        <span id="state_disable_api_termination~python">
+<span class="nx">
+disable_<wbr>api_<wbr>termination
+<a class="anchorjs-link " href="#state_disable_api_termination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4113,7 +6033,12 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>block_<wbr>devices</span>
+        <span id="state_ebs_block_devices~python">
+<span class="nx">
+ebs_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_ebs_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestebsblockdevice">List[Spot<wbr>Instance<wbr>Request<wbr>Ebs<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -4123,7 +6048,12 @@ instance.  Block device configurations only apply on resource creation. See Bloc
 
     <dt class="property-optional"
             title="Optional">
-        <span>ebs_<wbr>optimized</span>
+        <span id="state_ebs_optimized~python">
+<span class="nx">
+ebs_<wbr>optimized
+<a class="anchorjs-link " href="#state_ebs_optimized~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4136,7 +6066,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>ephemeral_<wbr>block_<wbr>devices</span>
+        <span id="state_ephemeral_block_devices~python">
+<span class="nx">
+ephemeral_<wbr>block_<wbr>devices
+<a class="anchorjs-link " href="#state_ephemeral_block_devices~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestephemeralblockdevice">List[Spot<wbr>Instance<wbr>Request<wbr>Ephemeral<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -4146,7 +6081,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>get_<wbr>password_<wbr>data</span>
+        <span id="state_get_password_data~python">
+<span class="nx">
+get_<wbr>password_<wbr>data
+<a class="anchorjs-link " href="#state_get_password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4155,7 +6095,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>hibernation</span>
+        <span id="state_hibernation~python">
+<span class="nx">
+hibernation
+<a class="anchorjs-link " href="#state_hibernation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4164,7 +6109,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>host_<wbr>id</span>
+        <span id="state_host_id~python">
+<span class="nx">
+host_<wbr>id
+<a class="anchorjs-link " href="#state_host_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4173,7 +6123,12 @@ See the [EBS Optimized section](https://docs.aws.amazon.com/AWSEC2/latest/UserGu
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>instance_<wbr>profile</span>
+        <span id="state_iam_instance_profile~python">
+<span class="nx">
+iam_<wbr>instance_<wbr>profile
+<a class="anchorjs-link " href="#state_iam_instance_profile~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4183,7 +6138,12 @@ launch the instance with. Specified as the name of the Instance Profile. Ensure 
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior</span>
+        <span id="state_instance_initiated_shutdown_behavior~python">
+<span class="nx">
+instance_<wbr>initiated_<wbr>shutdown_<wbr>behavior
+<a class="anchorjs-link " href="#state_instance_initiated_shutdown_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4195,7 +6155,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>interruption_<wbr>behaviour</span>
+        <span id="state_instance_interruption_behaviour~python">
+<span class="nx">
+instance_<wbr>interruption_<wbr>behaviour
+<a class="anchorjs-link " href="#state_instance_interruption_behaviour~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4204,7 +6169,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>state</span>
+        <span id="state_instance_state~python">
+<span class="nx">
+instance_<wbr>state
+<a class="anchorjs-link " href="#state_instance_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4212,7 +6182,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>type</span>
+        <span id="state_instance_type~python">
+<span class="nx">
+instance_<wbr>type
+<a class="anchorjs-link " href="#state_instance_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4221,7 +6196,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>address_<wbr>count</span>
+        <span id="state_ipv6_address_count~python">
+<span class="nx">
+ipv6_<wbr>address_<wbr>count
+<a class="anchorjs-link " href="#state_ipv6_address_count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4230,7 +6210,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>addresses</span>
+        <span id="state_ipv6_addresses~python">
+<span class="nx">
+ipv6_<wbr>addresses
+<a class="anchorjs-link " href="#state_ipv6_addresses~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4239,7 +6224,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>key_<wbr>name</span>
+        <span id="state_key_name~python">
+<span class="nx">
+key_<wbr>name
+<a class="anchorjs-link " href="#state_key_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4248,7 +6238,12 @@ instances. See [Shutdown Behavior](https://docs.aws.amazon.com/AWSEC2/latest/Use
 
     <dt class="property-optional"
             title="Optional">
-        <span>launch_<wbr>group</span>
+        <span id="state_launch_group~python">
+<span class="nx">
+launch_<wbr>group
+<a class="anchorjs-link " href="#state_launch_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4258,7 +6253,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata_<wbr>options</span>
+        <span id="state_metadata_options~python">
+<span class="nx">
+metadata_<wbr>options
+<a class="anchorjs-link " href="#state_metadata_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestmetadataoptions">Dict[Spot<wbr>Instance<wbr>Request<wbr>Metadata<wbr>Options]</a></span>
     </dt>
@@ -4267,7 +6267,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>monitoring</span>
+        <span id="state_monitoring~python">
+<span class="nx">
+monitoring
+<a class="anchorjs-link " href="#state_monitoring~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4276,7 +6281,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>interfaces</span>
+        <span id="state_network_interfaces~python">
+<span class="nx">
+network_<wbr>interfaces
+<a class="anchorjs-link " href="#state_network_interfaces~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestnetworkinterface">List[Spot<wbr>Instance<wbr>Request<wbr>Network<wbr>Interface]</a></span>
     </dt>
@@ -4285,7 +6295,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>outpost_<wbr>arn</span>
+        <span id="state_outpost_arn~python">
+<span class="nx">
+outpost_<wbr>arn
+<a class="anchorjs-link " href="#state_outpost_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4293,7 +6308,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>password_<wbr>data</span>
+        <span id="state_password_data~python">
+<span class="nx">
+password_<wbr>data
+<a class="anchorjs-link " href="#state_password_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4301,7 +6321,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement_<wbr>group</span>
+        <span id="state_placement_group~python">
+<span class="nx">
+placement_<wbr>group
+<a class="anchorjs-link " href="#state_placement_group~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4310,7 +6335,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>primary_<wbr>network_<wbr>interface_<wbr>id</span>
+        <span id="state_primary_network_interface_id~python">
+<span class="nx">
+primary_<wbr>network_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#state_primary_network_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4318,7 +6348,12 @@ If left empty instances are launched and terminated individually.
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>dns</span>
+        <span id="state_private_dns~python">
+<span class="nx">
+private_<wbr>dns
+<a class="anchorjs-link " href="#state_private_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4329,7 +6364,12 @@ for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>private_<wbr>ip</span>
+        <span id="state_private_ip~python">
+<span class="nx">
+private_<wbr>ip
+<a class="anchorjs-link " href="#state_private_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4339,7 +6379,12 @@ instance in a VPC.
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>dns</span>
+        <span id="state_public_dns~python">
+<span class="nx">
+public_<wbr>dns
+<a class="anchorjs-link " href="#state_public_dns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4349,7 +6394,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>public_<wbr>ip</span>
+        <span id="state_public_ip~python">
+<span class="nx">
+public_<wbr>ip
+<a class="anchorjs-link " href="#state_public_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4358,7 +6408,12 @@ is only available if you've enabled DNS hostnames for your VPC
 
     <dt class="property-optional"
             title="Optional">
-        <span>root_<wbr>block_<wbr>device</span>
+        <span id="state_root_block_device~python">
+<span class="nx">
+root_<wbr>block_<wbr>device
+<a class="anchorjs-link " href="#state_root_block_device~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#spotinstancerequestrootblockdevice">Dict[Spot<wbr>Instance<wbr>Request<wbr>Root<wbr>Block<wbr>Device]</a></span>
     </dt>
@@ -4368,7 +6423,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>groups</span>
+        <span id="state_security_groups~python">
+<span class="nx">
+security_<wbr>groups
+<a class="anchorjs-link " href="#state_security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4377,7 +6437,12 @@ device of the instance. See Block Devices below for details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>dest_<wbr>check</span>
+        <span id="state_source_dest_check~python">
+<span class="nx">
+source_<wbr>dest_<wbr>check
+<a class="anchorjs-link " href="#state_source_dest_check~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4387,7 +6452,12 @@ the destination address does not match the instance. Used for NAT or VPNs. Defau
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>bid_<wbr>status</span>
+        <span id="state_spot_bid_status~python">
+<span class="nx">
+spot_<wbr>bid_<wbr>status
+<a class="anchorjs-link " href="#state_spot_bid_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4401,7 +6471,12 @@ of the Spot Instance Request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>instance_<wbr>id</span>
+        <span id="state_spot_instance_id~python">
+<span class="nx">
+spot_<wbr>instance_<wbr>id
+<a class="anchorjs-link " href="#state_spot_instance_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4411,7 +6486,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>price</span>
+        <span id="state_spot_price~python">
+<span class="nx">
+spot_<wbr>price
+<a class="anchorjs-link " href="#state_spot_price~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4420,7 +6500,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>request_<wbr>state</span>
+        <span id="state_spot_request_state~python">
+<span class="nx">
+spot_<wbr>request_<wbr>state
+<a class="anchorjs-link " href="#state_spot_request_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4428,7 +6513,12 @@ the Spot Instance request.
 
     <dt class="property-optional"
             title="Optional">
-        <span>spot_<wbr>type</span>
+        <span id="state_spot_type~python">
+<span class="nx">
+spot_<wbr>type
+<a class="anchorjs-link " href="#state_spot_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4438,7 +6528,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subnet_<wbr>id</span>
+        <span id="state_subnet_id~python">
+<span class="nx">
+subnet_<wbr>id
+<a class="anchorjs-link " href="#state_subnet_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4447,7 +6542,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -4456,7 +6556,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tenancy</span>
+        <span id="state_tenancy~python">
+<span class="nx">
+tenancy
+<a class="anchorjs-link " href="#state_tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4465,7 +6570,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data</span>
+        <span id="state_user_data~python">
+<span class="nx">
+user_<wbr>data
+<a class="anchorjs-link " href="#state_user_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4474,7 +6584,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>user_<wbr>data_<wbr>base64</span>
+        <span id="state_user_data_base64~python">
+<span class="nx">
+user_<wbr>data_<wbr>base64
+<a class="anchorjs-link " href="#state_user_data_base64~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4483,7 +6598,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>from</span>
+        <span id="state_valid_from~python">
+<span class="nx">
+valid_<wbr>from
+<a class="anchorjs-link " href="#state_valid_from~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4492,7 +6612,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>valid_<wbr>until</span>
+        <span id="state_valid_until~python">
+<span class="nx">
+valid_<wbr>until
+<a class="anchorjs-link " href="#state_valid_until~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4501,7 +6626,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>tags</span>
+        <span id="state_volume_tags~python">
+<span class="nx">
+volume_<wbr>tags
+<a class="anchorjs-link " href="#state_volume_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -4510,7 +6640,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="state_vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4519,7 +6654,12 @@ the instance is terminated, the spot request will be closed.
 
     <dt class="property-optional"
             title="Optional">
-        <span>wait_<wbr>for_<wbr>fulfillment</span>
+        <span id="state_wait_for_fulfillment~python">
+<span class="nx">
+wait_<wbr>for_<wbr>fulfillment
+<a class="anchorjs-link " href="#state_wait_for_fulfillment~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4563,7 +6703,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Credits</span>
+        <span id="cpucredits~csharp">
+<span class="nx">
+Cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4579,7 +6724,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu<wbr>Credits</span>
+        <span id="cpucredits~go">
+<span class="nx">
+Cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4595,7 +6745,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Credits</span>
+        <span id="cpucredits~nodejs">
+<span class="nx">
+cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4611,7 +6766,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu<wbr>Credits</span>
+        <span id="cpucredits~python">
+<span class="nx">
+cpu<wbr>Credits
+<a class="anchorjs-link " href="#cpucredits~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4645,7 +6805,12 @@ timeout of 10m is reached.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4654,7 +6819,12 @@ timeout of 10m is reached.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4664,7 +6834,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4675,7 +6850,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`. Must be con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4686,7 +6866,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4695,7 +6880,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~csharp">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4704,7 +6894,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~csharp">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4712,7 +6907,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4721,7 +6921,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4738,7 +6943,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4747,7 +6957,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4757,7 +6972,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4768,7 +6988,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`. Must be con
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4779,7 +7004,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4788,7 +7018,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Id</span>
+        <span id="snapshotid~go">
+<span class="nx">
+Snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4797,7 +7032,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~go">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4805,7 +7045,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4814,7 +7059,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4831,7 +7081,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4840,7 +7095,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4850,7 +7110,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4861,7 +7126,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`. Must be con
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4872,7 +7142,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4881,7 +7156,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Id</span>
+        <span id="snapshotid~nodejs">
+<span class="nx">
+snapshot<wbr>Id
+<a class="anchorjs-link " href="#snapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4890,7 +7170,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Id</span>
+        <span id="volumeid~nodejs">
+<span class="nx">
+volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4898,7 +7183,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4907,7 +7197,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4924,7 +7219,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4933,7 +7233,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4943,7 +7248,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4954,7 +7264,12 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`. Must be con
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4965,7 +7280,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4974,7 +7294,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>id</span>
+        <span id="snapshot_id~python">
+<span class="nx">
+snapshot_<wbr>id
+<a class="anchorjs-link " href="#snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4983,7 +7308,12 @@ This must be set with a `volume_type` of `"io1"`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4993,7 +7323,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>id</span>
+        <span id="volume_id~python">
+<span class="nx">
+volume_<wbr>id
+<a class="anchorjs-link " href="#volume_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5001,7 +7336,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5035,7 +7375,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5044,7 +7389,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~csharp">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5053,7 +7403,12 @@ or `"io1"`. (Default: `"gp2"`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5071,7 +7426,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5080,7 +7440,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~go">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5089,7 +7454,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5107,7 +7477,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5116,7 +7491,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~nodejs">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5125,7 +7505,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5143,7 +7528,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5152,7 +7542,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~python">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5161,7 +7556,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5197,7 +7597,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Endpoint</span>
+        <span id="httpendpoint~csharp">
+<span class="nx">
+Http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5206,7 +7611,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~csharp">
+<span class="nx">
+Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5215,7 +7625,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Tokens</span>
+        <span id="httptokens~csharp">
+<span class="nx">
+Http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5231,7 +7646,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Endpoint</span>
+        <span id="httpendpoint~go">
+<span class="nx">
+Http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5240,7 +7660,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~go">
+<span class="nx">
+Http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5249,7 +7674,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Tokens</span>
+        <span id="httptokens~go">
+<span class="nx">
+Http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5265,7 +7695,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Endpoint</span>
+        <span id="httpendpoint~nodejs">
+<span class="nx">
+http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5274,7 +7709,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~nodejs">
+<span class="nx">
+http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5283,7 +7723,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Tokens</span>
+        <span id="httptokens~nodejs">
+<span class="nx">
+http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5299,7 +7744,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Endpoint</span>
+        <span id="httpendpoint~python">
+<span class="nx">
+http<wbr>Endpoint
+<a class="anchorjs-link " href="#httpendpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5308,7 +7758,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit</span>
+        <span id="httpputresponsehoplimit~python">
+<span class="nx">
+http<wbr>Put<wbr>Response<wbr>Hop<wbr>Limit
+<a class="anchorjs-link " href="#httpputresponsehoplimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5317,7 +7772,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Tokens</span>
+        <span id="httptokens~python">
+<span class="nx">
+http<wbr>Tokens
+<a class="anchorjs-link " href="#httptokens~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5351,7 +7811,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Index</span>
+        <span id="deviceindex~csharp">
+<span class="nx">
+Device<wbr>Index
+<a class="anchorjs-link " href="#deviceindex~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5360,7 +7825,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~csharp">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5369,7 +7839,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5385,7 +7860,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Index</span>
+        <span id="deviceindex~go">
+<span class="nx">
+Device<wbr>Index
+<a class="anchorjs-link " href="#deviceindex~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5394,7 +7874,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>Network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~go">
+<span class="nx">
+Network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5403,7 +7888,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5419,7 +7909,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Index</span>
+        <span id="deviceindex~nodejs">
+<span class="nx">
+device<wbr>Index
+<a class="anchorjs-link " href="#deviceindex~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5428,7 +7923,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>network<wbr>Interface<wbr>Id</span>
+        <span id="networkinterfaceid~nodejs">
+<span class="nx">
+network<wbr>Interface<wbr>Id
+<a class="anchorjs-link " href="#networkinterfaceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5437,7 +7937,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5453,7 +7958,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>index</span>
+        <span id="device_index~python">
+<span class="nx">
+device_<wbr>index
+<a class="anchorjs-link " href="#device_index~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5462,7 +7972,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-required"
             title="Required">
-        <span>network_<wbr>interface_<wbr>id</span>
+        <span id="network_interface_id~python">
+<span class="nx">
+network_<wbr>interface_<wbr>id
+<a class="anchorjs-link " href="#network_interface_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5471,7 +7986,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5505,7 +8025,12 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~csharp">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5515,7 +8040,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5524,7 +8054,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5533,7 +8068,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~csharp">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5545,7 +8085,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5554,7 +8099,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~csharp">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5562,7 +8112,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~csharp">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5571,7 +8126,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~csharp">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5587,7 +8147,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~go">
+<span class="nx">
+Delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5597,7 +8162,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5606,7 +8176,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5615,7 +8190,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iops</span>
+        <span id="iops~go">
+<span class="nx">
+Iops
+<a class="anchorjs-link " href="#iops~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5627,7 +8207,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5636,7 +8221,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Id</span>
+        <span id="volumeid~go">
+<span class="nx">
+Volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5644,7 +8234,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Size</span>
+        <span id="volumesize~go">
+<span class="nx">
+Volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5653,7 +8248,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volume<wbr>Type</span>
+        <span id="volumetype~go">
+<span class="nx">
+Volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5669,7 +8269,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~nodejs">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5679,7 +8284,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5688,7 +8298,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5697,7 +8312,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~nodejs">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5709,7 +8329,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5718,7 +8343,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Id</span>
+        <span id="volumeid~nodejs">
+<span class="nx">
+volume<wbr>Id
+<a class="anchorjs-link " href="#volumeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5726,7 +8356,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Size</span>
+        <span id="volumesize~nodejs">
+<span class="nx">
+volume<wbr>Size
+<a class="anchorjs-link " href="#volumesize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5735,7 +8370,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~nodejs">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5751,7 +8391,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>delete<wbr>On<wbr>Termination</span>
+        <span id="deleteontermination~python">
+<span class="nx">
+delete<wbr>On<wbr>Termination
+<a class="anchorjs-link " href="#deleteontermination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5761,7 +8406,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5770,7 +8420,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5779,7 +8434,12 @@ on instance termination (Default: `true`).
 
     <dt class="property-optional"
             title="Optional">
-        <span>iops</span>
+        <span id="iops~python">
+<span class="nx">
+iops
+<a class="anchorjs-link " href="#iops~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5791,7 +8451,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5800,7 +8465,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume<wbr>Type</span>
+        <span id="volumetype~python">
+<span class="nx">
+volume<wbr>Type
+<a class="anchorjs-link " href="#volumetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5809,7 +8479,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>id</span>
+        <span id="volume_id~python">
+<span class="nx">
+volume_<wbr>id
+<a class="anchorjs-link " href="#volume_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5817,7 +8492,12 @@ using that type
 
     <dt class="property-optional"
             title="Optional">
-        <span>volume_<wbr>size</span>
+        <span id="volume_size~python">
+<span class="nx">
+volume_<wbr>size
+<a class="anchorjs-link " href="#volume_size~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

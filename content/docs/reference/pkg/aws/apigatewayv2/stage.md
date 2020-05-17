@@ -56,19 +56,19 @@ const example = new aws.apigatewayv2.Stage("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Stage">Stage</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#StageArgs">StageArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Stage">Stage</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#StageArgs">StageArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Stage</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>access_log_settings=None<span class="p">, </span>api_id=None<span class="p">, </span>auto_deploy=None<span class="p">, </span>client_certificate_id=None<span class="p">, </span>default_route_settings=None<span class="p">, </span>deployment_id=None<span class="p">, </span>description=None<span class="p">, </span>name=None<span class="p">, </span>route_settings=None<span class="p">, </span>stage_variables=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigatewayv2/#Stage">Stage</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>access_log_settings=None<span class="p">, </span>api_id=None<span class="p">, </span>auto_deploy=None<span class="p">, </span>client_certificate_id=None<span class="p">, </span>default_route_settings=None<span class="p">, </span>deployment_id=None<span class="p">, </span>description=None<span class="p">, </span>name=None<span class="p">, </span>route_settings=None<span class="p">, </span>stage_variables=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewStage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#StageArgs">StageArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Stage">Stage</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Stage">NewStage</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#StageArgs">StageArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Stage">Stage</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Stage.html">Stage</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.StageArgs.html">StageArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Stage.html">Stage</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.StageArgs.html">StageArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -234,7 +234,12 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-required"
             title="Required">
-        <span>Api<wbr>Id</span>
+        <span id="apiid~csharp">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#apiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -243,7 +248,12 @@ The Stage resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Log<wbr>Settings</span>
+        <span id="accesslogsettings~csharp">
+<span class="nx">
+Access<wbr>Log<wbr>Settings
+<a class="anchorjs-link " href="#accesslogsettings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings<wbr>Args</a></span>
     </dt>
@@ -253,7 +263,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Deploy</span>
+        <span id="autodeploy~csharp">
+<span class="nx">
+Auto<wbr>Deploy
+<a class="anchorjs-link " href="#autodeploy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -262,7 +277,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Certificate<wbr>Id</span>
+        <span id="clientcertificateid~csharp">
+<span class="nx">
+Client<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#clientcertificateid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -272,7 +292,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Route<wbr>Settings</span>
+        <span id="defaultroutesettings~csharp">
+<span class="nx">
+Default<wbr>Route<wbr>Settings
+<a class="anchorjs-link " href="#defaultroutesettings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Stage<wbr>Default<wbr>Route<wbr>Settings<wbr>Args</a></span>
     </dt>
@@ -281,7 +306,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deployment<wbr>Id</span>
+        <span id="deploymentid~csharp">
+<span class="nx">
+Deployment<wbr>Id
+<a class="anchorjs-link " href="#deploymentid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -290,7 +320,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -299,7 +334,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -308,7 +348,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Settings</span>
+        <span id="routesettings~csharp">
+<span class="nx">
+Route<wbr>Settings
+<a class="anchorjs-link " href="#routesettings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">List&lt;Stage<wbr>Route<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
@@ -317,7 +362,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stage<wbr>Variables</span>
+        <span id="stagevariables~csharp">
+<span class="nx">
+Stage<wbr>Variables
+<a class="anchorjs-link " href="#stagevariables~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -326,7 +376,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -342,7 +397,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-required"
             title="Required">
-        <span>Api<wbr>Id</span>
+        <span id="apiid~go">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#apiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -351,7 +411,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Log<wbr>Settings</span>
+        <span id="accesslogsettings~go">
+<span class="nx">
+Access<wbr>Log<wbr>Settings
+<a class="anchorjs-link " href="#accesslogsettings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
@@ -361,7 +426,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Deploy</span>
+        <span id="autodeploy~go">
+<span class="nx">
+Auto<wbr>Deploy
+<a class="anchorjs-link " href="#autodeploy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -370,7 +440,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Certificate<wbr>Id</span>
+        <span id="clientcertificateid~go">
+<span class="nx">
+Client<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#clientcertificateid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -380,7 +455,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Route<wbr>Settings</span>
+        <span id="defaultroutesettings~go">
+<span class="nx">
+Default<wbr>Route<wbr>Settings
+<a class="anchorjs-link " href="#defaultroutesettings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Stage<wbr>Default<wbr>Route<wbr>Settings</a></span>
     </dt>
@@ -389,7 +469,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deployment<wbr>Id</span>
+        <span id="deploymentid~go">
+<span class="nx">
+Deployment<wbr>Id
+<a class="anchorjs-link " href="#deploymentid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -398,7 +483,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -407,7 +497,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -416,7 +511,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Settings</span>
+        <span id="routesettings~go">
+<span class="nx">
+Route<wbr>Settings
+<a class="anchorjs-link " href="#routesettings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">[]Stage<wbr>Route<wbr>Setting</a></span>
     </dt>
@@ -425,7 +525,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stage<wbr>Variables</span>
+        <span id="stagevariables~go">
+<span class="nx">
+Stage<wbr>Variables
+<a class="anchorjs-link " href="#stagevariables~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -434,7 +539,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -450,7 +560,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-required"
             title="Required">
-        <span>api<wbr>Id</span>
+        <span id="apiid~nodejs">
+<span class="nx">
+api<wbr>Id
+<a class="anchorjs-link " href="#apiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -459,7 +574,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>access<wbr>Log<wbr>Settings</span>
+        <span id="accesslogsettings~nodejs">
+<span class="nx">
+access<wbr>Log<wbr>Settings
+<a class="anchorjs-link " href="#accesslogsettings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
@@ -469,7 +589,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Deploy</span>
+        <span id="autodeploy~nodejs">
+<span class="nx">
+auto<wbr>Deploy
+<a class="anchorjs-link " href="#autodeploy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -478,7 +603,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Certificate<wbr>Id</span>
+        <span id="clientcertificateid~nodejs">
+<span class="nx">
+client<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#clientcertificateid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -488,7 +618,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Route<wbr>Settings</span>
+        <span id="defaultroutesettings~nodejs">
+<span class="nx">
+default<wbr>Route<wbr>Settings
+<a class="anchorjs-link " href="#defaultroutesettings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Stage<wbr>Default<wbr>Route<wbr>Settings</a></span>
     </dt>
@@ -497,7 +632,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>deployment<wbr>Id</span>
+        <span id="deploymentid~nodejs">
+<span class="nx">
+deployment<wbr>Id
+<a class="anchorjs-link " href="#deploymentid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -506,7 +646,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -515,7 +660,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -524,7 +674,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Settings</span>
+        <span id="routesettings~nodejs">
+<span class="nx">
+route<wbr>Settings
+<a class="anchorjs-link " href="#routesettings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">Stage<wbr>Route<wbr>Setting[]</a></span>
     </dt>
@@ -533,7 +688,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stage<wbr>Variables</span>
+        <span id="stagevariables~nodejs">
+<span class="nx">
+stage<wbr>Variables
+<a class="anchorjs-link " href="#stagevariables~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -542,7 +702,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -558,7 +723,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-required"
             title="Required">
-        <span>api_<wbr>id</span>
+        <span id="api_id~python">
+<span class="nx">
+api_<wbr>id
+<a class="anchorjs-link " href="#api_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -567,7 +737,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>access_<wbr>log_<wbr>settings</span>
+        <span id="access_log_settings~python">
+<span class="nx">
+access_<wbr>log_<wbr>settings
+<a class="anchorjs-link " href="#access_log_settings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Dict[Stage<wbr>Access<wbr>Log<wbr>Settings]</a></span>
     </dt>
@@ -577,7 +752,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>deploy</span>
+        <span id="auto_deploy~python">
+<span class="nx">
+auto_<wbr>deploy
+<a class="anchorjs-link " href="#auto_deploy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -586,7 +766,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>client_<wbr>certificate_<wbr>id</span>
+        <span id="client_certificate_id~python">
+<span class="nx">
+client_<wbr>certificate_<wbr>id
+<a class="anchorjs-link " href="#client_certificate_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -596,7 +781,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>route_<wbr>settings</span>
+        <span id="default_route_settings~python">
+<span class="nx">
+default_<wbr>route_<wbr>settings
+<a class="anchorjs-link " href="#default_route_settings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Dict[Stage<wbr>Default<wbr>Route<wbr>Settings]</a></span>
     </dt>
@@ -605,7 +795,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>deployment_<wbr>id</span>
+        <span id="deployment_id~python">
+<span class="nx">
+deployment_<wbr>id
+<a class="anchorjs-link " href="#deployment_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -614,7 +809,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -623,7 +823,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -632,7 +837,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>settings</span>
+        <span id="route_settings~python">
+<span class="nx">
+route_<wbr>settings
+<a class="anchorjs-link " href="#route_settings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">List[Stage<wbr>Route<wbr>Setting]</a></span>
     </dt>
@@ -641,7 +851,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stage_<wbr>variables</span>
+        <span id="stage_variables~python">
+<span class="nx">
+stage_<wbr>variables
+<a class="anchorjs-link " href="#stage_variables~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -650,7 +865,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -677,7 +897,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -686,7 +911,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Execution<wbr>Arn</span>
+        <span id="executionarn~csharp">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#executionarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -697,7 +927,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -705,7 +940,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Invoke<wbr>Url</span>
+        <span id="invokeurl~csharp">
+<span class="nx">
+Invoke<wbr>Url
+<a class="anchorjs-link " href="#invokeurl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -722,7 +962,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -731,7 +976,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-"
             title="">
-        <span>Execution<wbr>Arn</span>
+        <span id="executionarn~go">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#executionarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -742,7 +992,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -750,7 +1005,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Invoke<wbr>Url</span>
+        <span id="invokeurl~go">
+<span class="nx">
+Invoke<wbr>Url
+<a class="anchorjs-link " href="#invokeurl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -767,7 +1027,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -776,7 +1041,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-"
             title="">
-        <span>execution<wbr>Arn</span>
+        <span id="executionarn~nodejs">
+<span class="nx">
+execution<wbr>Arn
+<a class="anchorjs-link " href="#executionarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -787,7 +1057,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -795,7 +1070,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>invoke<wbr>Url</span>
+        <span id="invokeurl~nodejs">
+<span class="nx">
+invoke<wbr>Url
+<a class="anchorjs-link " href="#invokeurl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -812,7 +1092,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -821,7 +1106,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-"
             title="">
-        <span>execution_<wbr>arn</span>
+        <span id="execution_arn~python">
+<span class="nx">
+execution_<wbr>arn
+<a class="anchorjs-link " href="#execution_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -832,7 +1122,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -840,7 +1135,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>invoke_<wbr>url</span>
+        <span id="invoke_url~python">
+<span class="nx">
+invoke_<wbr>url
+<a class="anchorjs-link " href="#invoke_url~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -863,7 +1163,7 @@ Get an existing Stage resource's state with the given name, ID, and optional ext
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#StageState">StageState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Stage">Stage</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#StageState">StageState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Stage">Stage</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -871,11 +1171,11 @@ Get an existing Stage resource's state with the given name, ID, and optional ext
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStage<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#StageState">StageState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Stage">Stage</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetStage<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#StageState">StageState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Stage">Stage</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Stage.html">Stage</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.StageState.html">StageState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Stage.html">Stage</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.StageState.html">StageState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -983,7 +1283,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Log<wbr>Settings</span>
+        <span id="state_accesslogsettings~csharp">
+<span class="nx">
+Access<wbr>Log<wbr>Settings
+<a class="anchorjs-link " href="#state_accesslogsettings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings<wbr>Args</a></span>
     </dt>
@@ -993,7 +1298,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Id</span>
+        <span id="state_apiid~csharp">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1002,7 +1312,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1011,7 +1326,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Deploy</span>
+        <span id="state_autodeploy~csharp">
+<span class="nx">
+Auto<wbr>Deploy
+<a class="anchorjs-link " href="#state_autodeploy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1020,7 +1340,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Certificate<wbr>Id</span>
+        <span id="state_clientcertificateid~csharp">
+<span class="nx">
+Client<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#state_clientcertificateid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1030,7 +1355,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Route<wbr>Settings</span>
+        <span id="state_defaultroutesettings~csharp">
+<span class="nx">
+Default<wbr>Route<wbr>Settings
+<a class="anchorjs-link " href="#state_defaultroutesettings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Stage<wbr>Default<wbr>Route<wbr>Settings<wbr>Args</a></span>
     </dt>
@@ -1039,7 +1369,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deployment<wbr>Id</span>
+        <span id="state_deploymentid~csharp">
+<span class="nx">
+Deployment<wbr>Id
+<a class="anchorjs-link " href="#state_deploymentid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1048,7 +1383,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1057,7 +1397,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Arn</span>
+        <span id="state_executionarn~csharp">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#state_executionarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1068,7 +1413,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Invoke<wbr>Url</span>
+        <span id="state_invokeurl~csharp">
+<span class="nx">
+Invoke<wbr>Url
+<a class="anchorjs-link " href="#state_invokeurl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1078,7 +1428,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1087,7 +1442,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Settings</span>
+        <span id="state_routesettings~csharp">
+<span class="nx">
+Route<wbr>Settings
+<a class="anchorjs-link " href="#state_routesettings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">List&lt;Stage<wbr>Route<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
@@ -1096,7 +1456,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stage<wbr>Variables</span>
+        <span id="state_stagevariables~csharp">
+<span class="nx">
+Stage<wbr>Variables
+<a class="anchorjs-link " href="#state_stagevariables~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -1105,7 +1470,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1121,7 +1491,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Access<wbr>Log<wbr>Settings</span>
+        <span id="state_accesslogsettings~go">
+<span class="nx">
+Access<wbr>Log<wbr>Settings
+<a class="anchorjs-link " href="#state_accesslogsettings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
@@ -1131,7 +1506,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Id</span>
+        <span id="state_apiid~go">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1140,7 +1520,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1149,7 +1534,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Auto<wbr>Deploy</span>
+        <span id="state_autodeploy~go">
+<span class="nx">
+Auto<wbr>Deploy
+<a class="anchorjs-link " href="#state_autodeploy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1158,7 +1548,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>Client<wbr>Certificate<wbr>Id</span>
+        <span id="state_clientcertificateid~go">
+<span class="nx">
+Client<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#state_clientcertificateid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1168,7 +1563,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Route<wbr>Settings</span>
+        <span id="state_defaultroutesettings~go">
+<span class="nx">
+Default<wbr>Route<wbr>Settings
+<a class="anchorjs-link " href="#state_defaultroutesettings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Stage<wbr>Default<wbr>Route<wbr>Settings</a></span>
     </dt>
@@ -1177,7 +1577,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deployment<wbr>Id</span>
+        <span id="state_deploymentid~go">
+<span class="nx">
+Deployment<wbr>Id
+<a class="anchorjs-link " href="#state_deploymentid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1186,7 +1591,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1195,7 +1605,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Arn</span>
+        <span id="state_executionarn~go">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#state_executionarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1206,7 +1621,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Invoke<wbr>Url</span>
+        <span id="state_invokeurl~go">
+<span class="nx">
+Invoke<wbr>Url
+<a class="anchorjs-link " href="#state_invokeurl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1216,7 +1636,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1225,7 +1650,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Settings</span>
+        <span id="state_routesettings~go">
+<span class="nx">
+Route<wbr>Settings
+<a class="anchorjs-link " href="#state_routesettings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">[]Stage<wbr>Route<wbr>Setting</a></span>
     </dt>
@@ -1234,7 +1664,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stage<wbr>Variables</span>
+        <span id="state_stagevariables~go">
+<span class="nx">
+Stage<wbr>Variables
+<a class="anchorjs-link " href="#state_stagevariables~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1243,7 +1678,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1259,7 +1699,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>access<wbr>Log<wbr>Settings</span>
+        <span id="state_accesslogsettings~nodejs">
+<span class="nx">
+access<wbr>Log<wbr>Settings
+<a class="anchorjs-link " href="#state_accesslogsettings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Stage<wbr>Access<wbr>Log<wbr>Settings</a></span>
     </dt>
@@ -1269,7 +1714,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Id</span>
+        <span id="state_apiid~nodejs">
+<span class="nx">
+api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1278,7 +1728,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1287,7 +1742,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto<wbr>Deploy</span>
+        <span id="state_autodeploy~nodejs">
+<span class="nx">
+auto<wbr>Deploy
+<a class="anchorjs-link " href="#state_autodeploy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1296,7 +1756,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>client<wbr>Certificate<wbr>Id</span>
+        <span id="state_clientcertificateid~nodejs">
+<span class="nx">
+client<wbr>Certificate<wbr>Id
+<a class="anchorjs-link " href="#state_clientcertificateid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1306,7 +1771,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Route<wbr>Settings</span>
+        <span id="state_defaultroutesettings~nodejs">
+<span class="nx">
+default<wbr>Route<wbr>Settings
+<a class="anchorjs-link " href="#state_defaultroutesettings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Stage<wbr>Default<wbr>Route<wbr>Settings</a></span>
     </dt>
@@ -1315,7 +1785,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>deployment<wbr>Id</span>
+        <span id="state_deploymentid~nodejs">
+<span class="nx">
+deployment<wbr>Id
+<a class="anchorjs-link " href="#state_deploymentid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1324,7 +1799,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1333,7 +1813,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution<wbr>Arn</span>
+        <span id="state_executionarn~nodejs">
+<span class="nx">
+execution<wbr>Arn
+<a class="anchorjs-link " href="#state_executionarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1344,7 +1829,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>invoke<wbr>Url</span>
+        <span id="state_invokeurl~nodejs">
+<span class="nx">
+invoke<wbr>Url
+<a class="anchorjs-link " href="#state_invokeurl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1354,7 +1844,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1363,7 +1858,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Settings</span>
+        <span id="state_routesettings~nodejs">
+<span class="nx">
+route<wbr>Settings
+<a class="anchorjs-link " href="#state_routesettings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">Stage<wbr>Route<wbr>Setting[]</a></span>
     </dt>
@@ -1372,7 +1872,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>stage<wbr>Variables</span>
+        <span id="state_stagevariables~nodejs">
+<span class="nx">
+stage<wbr>Variables
+<a class="anchorjs-link " href="#state_stagevariables~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1381,7 +1886,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1397,7 +1907,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>access_<wbr>log_<wbr>settings</span>
+        <span id="state_access_log_settings~python">
+<span class="nx">
+access_<wbr>log_<wbr>settings
+<a class="anchorjs-link " href="#state_access_log_settings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageaccesslogsettings">Dict[Stage<wbr>Access<wbr>Log<wbr>Settings]</a></span>
     </dt>
@@ -1407,7 +1922,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>id</span>
+        <span id="state_api_id~python">
+<span class="nx">
+api_<wbr>id
+<a class="anchorjs-link " href="#state_api_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1416,7 +1936,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1425,7 +1950,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>auto_<wbr>deploy</span>
+        <span id="state_auto_deploy~python">
+<span class="nx">
+auto_<wbr>deploy
+<a class="anchorjs-link " href="#state_auto_deploy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1434,7 +1964,12 @@ Use the [`aws.apigateway.Account`](https://www.terraform.io/docs/providers/aws/r
 
     <dt class="property-optional"
             title="Optional">
-        <span>client_<wbr>certificate_<wbr>id</span>
+        <span id="state_client_certificate_id~python">
+<span class="nx">
+client_<wbr>certificate_<wbr>id
+<a class="anchorjs-link " href="#state_client_certificate_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1444,7 +1979,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>route_<wbr>settings</span>
+        <span id="state_default_route_settings~python">
+<span class="nx">
+default_<wbr>route_<wbr>settings
+<a class="anchorjs-link " href="#state_default_route_settings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stagedefaultroutesettings">Dict[Stage<wbr>Default<wbr>Route<wbr>Settings]</a></span>
     </dt>
@@ -1453,7 +1993,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>deployment_<wbr>id</span>
+        <span id="state_deployment_id~python">
+<span class="nx">
+deployment_<wbr>id
+<a class="anchorjs-link " href="#state_deployment_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1462,7 +2007,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1471,7 +2021,12 @@ Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution_<wbr>arn</span>
+        <span id="state_execution_arn~python">
+<span class="nx">
+execution_<wbr>arn
+<a class="anchorjs-link " href="#state_execution_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1482,7 +2037,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>invoke_<wbr>url</span>
+        <span id="state_invoke_url~python">
+<span class="nx">
+invoke_<wbr>url
+<a class="anchorjs-link " href="#state_invoke_url~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1492,7 +2052,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1501,7 +2066,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>settings</span>
+        <span id="state_route_settings~python">
+<span class="nx">
+route_<wbr>settings
+<a class="anchorjs-link " href="#state_route_settings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#stageroutesetting">List[Stage<wbr>Route<wbr>Setting]</a></span>
     </dt>
@@ -1510,7 +2080,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>stage_<wbr>variables</span>
+        <span id="state_stage_variables~python">
+<span class="nx">
+stage_<wbr>variables
+<a class="anchorjs-link " href="#state_stage_variables~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1519,7 +2094,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1561,7 +2141,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>Destination<wbr>Arn</span>
+        <span id="destinationarn~csharp">
+<span class="nx">
+Destination<wbr>Arn
+<a class="anchorjs-link " href="#destinationarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1570,7 +2155,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>Format</span>
+        <span id="format~csharp">
+<span class="nx">
+Format
+<a class="anchorjs-link " href="#format~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1586,7 +2176,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>Destination<wbr>Arn</span>
+        <span id="destinationarn~go">
+<span class="nx">
+Destination<wbr>Arn
+<a class="anchorjs-link " href="#destinationarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1595,7 +2190,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>Format</span>
+        <span id="format~go">
+<span class="nx">
+Format
+<a class="anchorjs-link " href="#format~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1611,7 +2211,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>destination<wbr>Arn</span>
+        <span id="destinationarn~nodejs">
+<span class="nx">
+destination<wbr>Arn
+<a class="anchorjs-link " href="#destinationarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1620,7 +2225,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>format</span>
+        <span id="format~nodejs">
+<span class="nx">
+format
+<a class="anchorjs-link " href="#format~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1636,7 +2246,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>destination_<wbr>arn</span>
+        <span id="destination_arn~python">
+<span class="nx">
+destination_<wbr>arn
+<a class="anchorjs-link " href="#destination_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1645,7 +2260,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-required"
             title="Required">
-        <span>format</span>
+        <span id="format~python">
+<span class="nx">
+format
+<a class="anchorjs-link " href="#format~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1679,7 +2299,12 @@ e.g. `wss://z4675bid1j.execute-api.eu-west-2.amazonaws.com/example-stage`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~csharp">
+<span class="nx">
+Data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1689,7 +2314,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~csharp">
+<span class="nx">
+Detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1698,7 +2328,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Level</span>
+        <span id="logginglevel~csharp">
+<span class="nx">
+Logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1708,7 +2343,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~csharp">
+<span class="nx">
+Throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1717,7 +2357,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~csharp">
+<span class="nx">
+Throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -1733,7 +2378,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~go">
+<span class="nx">
+Data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1743,7 +2393,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~go">
+<span class="nx">
+Detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1752,7 +2407,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Level</span>
+        <span id="logginglevel~go">
+<span class="nx">
+Logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1762,7 +2422,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~go">
+<span class="nx">
+Throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1771,7 +2436,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~go">
+<span class="nx">
+Throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -1787,7 +2457,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~nodejs">
+<span class="nx">
+data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1797,7 +2472,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~nodejs">
+<span class="nx">
+detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1806,7 +2486,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Level</span>
+        <span id="logginglevel~nodejs">
+<span class="nx">
+logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1816,7 +2501,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~nodejs">
+<span class="nx">
+throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1825,7 +2515,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~nodejs">
+<span class="nx">
+throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -1841,7 +2536,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~python">
+<span class="nx">
+data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1851,7 +2551,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~python">
+<span class="nx">
+detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1860,7 +2565,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Level</span>
+        <span id="logginglevel~python">
+<span class="nx">
+logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1870,7 +2580,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~python">
+<span class="nx">
+throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1879,7 +2594,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~python">
+<span class="nx">
+throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1913,7 +2633,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-required"
             title="Required">
-        <span>Route<wbr>Key</span>
+        <span id="routekey~csharp">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#routekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1922,7 +2647,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~csharp">
+<span class="nx">
+Data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1932,7 +2662,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~csharp">
+<span class="nx">
+Detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1941,7 +2676,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Level</span>
+        <span id="logginglevel~csharp">
+<span class="nx">
+Logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1951,7 +2691,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~csharp">
+<span class="nx">
+Throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1960,7 +2705,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~csharp">
+<span class="nx">
+Throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -1976,7 +2726,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-required"
             title="Required">
-        <span>Route<wbr>Key</span>
+        <span id="routekey~go">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#routekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1985,7 +2740,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~go">
+<span class="nx">
+Data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1995,7 +2755,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~go">
+<span class="nx">
+Detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2004,7 +2769,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging<wbr>Level</span>
+        <span id="logginglevel~go">
+<span class="nx">
+Logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2014,7 +2784,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~go">
+<span class="nx">
+Throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2023,7 +2798,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>Throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~go">
+<span class="nx">
+Throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -2039,7 +2819,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-required"
             title="Required">
-        <span>route<wbr>Key</span>
+        <span id="routekey~nodejs">
+<span class="nx">
+route<wbr>Key
+<a class="anchorjs-link " href="#routekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2048,7 +2833,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~nodejs">
+<span class="nx">
+data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2058,7 +2848,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~nodejs">
+<span class="nx">
+detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2067,7 +2862,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Level</span>
+        <span id="logginglevel~nodejs">
+<span class="nx">
+logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2077,7 +2877,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~nodejs">
+<span class="nx">
+throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2086,7 +2891,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~nodejs">
+<span class="nx">
+throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -2102,7 +2912,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-required"
             title="Required">
-        <span>route_<wbr>key</span>
+        <span id="route_key~python">
+<span class="nx">
+route_<wbr>key
+<a class="anchorjs-link " href="#route_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2111,7 +2926,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Trace<wbr>Enabled</span>
+        <span id="datatraceenabled~python">
+<span class="nx">
+data<wbr>Trace<wbr>Enabled
+<a class="anchorjs-link " href="#datatraceenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2121,7 +2941,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>detailed<wbr>Metrics<wbr>Enabled</span>
+        <span id="detailedmetricsenabled~python">
+<span class="nx">
+detailed<wbr>Metrics<wbr>Enabled
+<a class="anchorjs-link " href="#detailedmetricsenabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2130,7 +2955,12 @@ Defaults to `false`. Supported only for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging<wbr>Level</span>
+        <span id="logginglevel~python">
+<span class="nx">
+logging<wbr>Level
+<a class="anchorjs-link " href="#logginglevel~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2140,7 +2970,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Burst<wbr>Limit</span>
+        <span id="throttlingburstlimit~python">
+<span class="nx">
+throttling<wbr>Burst<wbr>Limit
+<a class="anchorjs-link " href="#throttlingburstlimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2149,7 +2984,12 @@ Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebS
 
     <dt class="property-optional"
             title="Optional">
-        <span>throttling<wbr>Rate<wbr>Limit</span>
+        <span id="throttlingratelimit~python">
+<span class="nx">
+throttling<wbr>Rate<wbr>Limit
+<a class="anchorjs-link " href="#throttlingratelimit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

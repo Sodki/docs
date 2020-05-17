@@ -465,19 +465,19 @@ const testStream = new aws.kinesis.FirehoseDeliveryStream("test_stream", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStreamArgs">FirehoseDeliveryStreamArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStreamArgs">FirehoseDeliveryStreamArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">FirehoseDeliveryStream</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>arn=None<span class="p">, </span>destination=None<span class="p">, </span>destination_id=None<span class="p">, </span>elasticsearch_configuration=None<span class="p">, </span>extended_s3_configuration=None<span class="p">, </span>kinesis_source_configuration=None<span class="p">, </span>name=None<span class="p">, </span>redshift_configuration=None<span class="p">, </span>s3_configuration=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>splunk_configuration=None<span class="p">, </span>tags=None<span class="p">, </span>version_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/kinesis/#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>arn=None<span class="p">, </span>destination=None<span class="p">, </span>destination_id=None<span class="p">, </span>elasticsearch_configuration=None<span class="p">, </span>extended_s3_configuration=None<span class="p">, </span>kinesis_source_configuration=None<span class="p">, </span>name=None<span class="p">, </span>redshift_configuration=None<span class="p">, </span>s3_configuration=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>splunk_configuration=None<span class="p">, </span>tags=None<span class="p">, </span>version_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewFirehoseDeliveryStream<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStreamArgs">FirehoseDeliveryStreamArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStream">NewFirehoseDeliveryStream</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStreamArgs">FirehoseDeliveryStreamArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStream.html">FirehoseDeliveryStream</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStreamArgs.html">FirehoseDeliveryStreamArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStream.html">FirehoseDeliveryStream</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStreamArgs.html">FirehoseDeliveryStreamArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -643,7 +643,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-required"
             title="Required">
-        <span>Destination</span>
+        <span id="destination~csharp">
+<span class="nx">
+Destination
+<a class="anchorjs-link " href="#destination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -652,7 +657,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -661,7 +671,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-optional"
             title="Optional">
-        <span>Destination<wbr>Id</span>
+        <span id="destinationid~csharp">
+<span class="nx">
+Destination<wbr>Id
+<a class="anchorjs-link " href="#destinationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -669,7 +684,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Configuration</span>
+        <span id="elasticsearchconfiguration~csharp">
+<span class="nx">
+Elasticsearch<wbr>Configuration
+<a class="anchorjs-link " href="#elasticsearchconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -678,7 +698,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>S3Configuration</span>
+        <span id="extendeds3configuration~csharp">
+<span class="nx">
+Extended<wbr>S3Configuration
+<a class="anchorjs-link " href="#extendeds3configuration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Args</a></span>
     </dt>
@@ -687,7 +712,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Source<wbr>Configuration</span>
+        <span id="kinesissourceconfiguration~csharp">
+<span class="nx">
+Kinesis<wbr>Source<wbr>Configuration
+<a class="anchorjs-link " href="#kinesissourceconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -696,7 +726,12 @@ The FirehoseDeliveryStream resource accepts the following [input]({{< relref "/d
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -706,7 +741,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Redshift<wbr>Configuration</span>
+        <span id="redshiftconfiguration~csharp">
+<span class="nx">
+Redshift<wbr>Configuration
+<a class="anchorjs-link " href="#redshiftconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -717,7 +757,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Configuration</span>
+        <span id="s3configuration~csharp">
+<span class="nx">
+S3Configuration
+<a class="anchorjs-link " href="#s3configuration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration<wbr>Args</a></span>
     </dt>
@@ -727,7 +772,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
@@ -737,7 +787,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Splunk<wbr>Configuration</span>
+        <span id="splunkconfiguration~csharp">
+<span class="nx">
+Splunk<wbr>Configuration
+<a class="anchorjs-link " href="#splunkconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -745,7 +800,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -754,7 +814,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="versionid~csharp">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#versionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -770,7 +835,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Destination</span>
+        <span id="destination~go">
+<span class="nx">
+Destination
+<a class="anchorjs-link " href="#destination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -779,7 +849,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -788,7 +863,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Destination<wbr>Id</span>
+        <span id="destinationid~go">
+<span class="nx">
+Destination<wbr>Id
+<a class="anchorjs-link " href="#destinationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -796,7 +876,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Configuration</span>
+        <span id="elasticsearchconfiguration~go">
+<span class="nx">
+Elasticsearch<wbr>Configuration
+<a class="anchorjs-link " href="#elasticsearchconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration</a></span>
     </dt>
@@ -805,7 +890,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>S3Configuration</span>
+        <span id="extendeds3configuration~go">
+<span class="nx">
+Extended<wbr>S3Configuration
+<a class="anchorjs-link " href="#extendeds3configuration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration</a></span>
     </dt>
@@ -814,7 +904,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Source<wbr>Configuration</span>
+        <span id="kinesissourceconfiguration~go">
+<span class="nx">
+Kinesis<wbr>Source<wbr>Configuration
+<a class="anchorjs-link " href="#kinesissourceconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration</a></span>
     </dt>
@@ -823,7 +918,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -833,7 +933,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Redshift<wbr>Configuration</span>
+        <span id="redshiftconfiguration~go">
+<span class="nx">
+Redshift<wbr>Configuration
+<a class="anchorjs-link " href="#redshiftconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration</a></span>
     </dt>
@@ -844,7 +949,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Configuration</span>
+        <span id="s3configuration~go">
+<span class="nx">
+S3Configuration
+<a class="anchorjs-link " href="#s3configuration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration</a></span>
     </dt>
@@ -854,7 +964,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~go">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -864,7 +979,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Splunk<wbr>Configuration</span>
+        <span id="splunkconfiguration~go">
+<span class="nx">
+Splunk<wbr>Configuration
+<a class="anchorjs-link " href="#splunkconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration</a></span>
     </dt>
@@ -872,7 +992,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -881,7 +1006,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="versionid~go">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#versionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -897,7 +1027,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>destination</span>
+        <span id="destination~nodejs">
+<span class="nx">
+destination
+<a class="anchorjs-link " href="#destination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -906,7 +1041,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -915,7 +1055,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>destination<wbr>Id</span>
+        <span id="destinationid~nodejs">
+<span class="nx">
+destination<wbr>Id
+<a class="anchorjs-link " href="#destinationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -923,7 +1068,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch<wbr>Configuration</span>
+        <span id="elasticsearchconfiguration~nodejs">
+<span class="nx">
+elasticsearch<wbr>Configuration
+<a class="anchorjs-link " href="#elasticsearchconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration</a></span>
     </dt>
@@ -932,7 +1082,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended<wbr>S3Configuration</span>
+        <span id="extendeds3configuration~nodejs">
+<span class="nx">
+extended<wbr>S3Configuration
+<a class="anchorjs-link " href="#extendeds3configuration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration</a></span>
     </dt>
@@ -941,7 +1096,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Source<wbr>Configuration</span>
+        <span id="kinesissourceconfiguration~nodejs">
+<span class="nx">
+kinesis<wbr>Source<wbr>Configuration
+<a class="anchorjs-link " href="#kinesissourceconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration</a></span>
     </dt>
@@ -950,7 +1110,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -960,7 +1125,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>redshift<wbr>Configuration</span>
+        <span id="redshiftconfiguration~nodejs">
+<span class="nx">
+redshift<wbr>Configuration
+<a class="anchorjs-link " href="#redshiftconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration</a></span>
     </dt>
@@ -971,7 +1141,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Configuration</span>
+        <span id="s3configuration~nodejs">
+<span class="nx">
+s3Configuration
+<a class="anchorjs-link " href="#s3configuration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration</a></span>
     </dt>
@@ -981,7 +1156,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Encryption</span>
+        <span id="serversideencryption~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#serversideencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -991,7 +1171,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>splunk<wbr>Configuration</span>
+        <span id="splunkconfiguration~nodejs">
+<span class="nx">
+splunk<wbr>Configuration
+<a class="anchorjs-link " href="#splunkconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration</a></span>
     </dt>
@@ -999,7 +1184,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1008,7 +1198,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>version<wbr>Id</span>
+        <span id="versionid~nodejs">
+<span class="nx">
+version<wbr>Id
+<a class="anchorjs-link " href="#versionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1024,7 +1219,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>destination</span>
+        <span id="destination~python">
+<span class="nx">
+destination
+<a class="anchorjs-link " href="#destination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1033,7 +1233,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1042,7 +1247,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>destination_<wbr>id</span>
+        <span id="destination_id~python">
+<span class="nx">
+destination_<wbr>id
+<a class="anchorjs-link " href="#destination_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1050,7 +1260,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch_<wbr>configuration</span>
+        <span id="elasticsearch_configuration~python">
+<span class="nx">
+elasticsearch_<wbr>configuration
+<a class="anchorjs-link " href="#elasticsearch_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration]</a></span>
     </dt>
@@ -1059,7 +1274,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended_<wbr>s3_<wbr>configuration</span>
+        <span id="extended_s3_configuration~python">
+<span class="nx">
+extended_<wbr>s3_<wbr>configuration
+<a class="anchorjs-link " href="#extended_s3_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration]</a></span>
     </dt>
@@ -1068,7 +1288,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis_<wbr>source_<wbr>configuration</span>
+        <span id="kinesis_source_configuration~python">
+<span class="nx">
+kinesis_<wbr>source_<wbr>configuration
+<a class="anchorjs-link " href="#kinesis_source_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration]</a></span>
     </dt>
@@ -1077,7 +1302,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1087,7 +1317,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>redshift_<wbr>configuration</span>
+        <span id="redshift_configuration~python">
+<span class="nx">
+redshift_<wbr>configuration
+<a class="anchorjs-link " href="#redshift_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration]</a></span>
     </dt>
@@ -1098,7 +1333,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3_<wbr>configuration</span>
+        <span id="s3_configuration~python">
+<span class="nx">
+s3_<wbr>configuration
+<a class="anchorjs-link " href="#s3_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration]</a></span>
     </dt>
@@ -1108,7 +1348,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>server_<wbr>side_<wbr>encryption</span>
+        <span id="server_side_encryption~python">
+<span class="nx">
+server_<wbr>side_<wbr>encryption
+<a class="anchorjs-link " href="#server_side_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
@@ -1118,7 +1363,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>splunk_<wbr>configuration</span>
+        <span id="splunk_configuration~python">
+<span class="nx">
+splunk_<wbr>configuration
+<a class="anchorjs-link " href="#splunk_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration]</a></span>
     </dt>
@@ -1126,7 +1376,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1135,7 +1390,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>version_<wbr>id</span>
+        <span id="version_id~python">
+<span class="nx">
+version_<wbr>id
+<a class="anchorjs-link " href="#version_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1162,7 +1422,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1177,7 +1442,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1192,7 +1462,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1207,7 +1482,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1228,7 +1508,7 @@ Get an existing FirehoseDeliveryStream resource's state with the given name, ID,
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStreamState">FirehoseDeliveryStreamState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStreamState">FirehoseDeliveryStreamState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1236,11 +1516,11 @@ Get an existing FirehoseDeliveryStream resource's state with the given name, ID,
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFirehoseDeliveryStream<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStreamState">FirehoseDeliveryStreamState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFirehoseDeliveryStream<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStreamState">FirehoseDeliveryStreamState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#FirehoseDeliveryStream">FirehoseDeliveryStream</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStream.html">FirehoseDeliveryStream</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStreamState.html">FirehoseDeliveryStreamState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStream.html">FirehoseDeliveryStream</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.FirehoseDeliveryStreamState.html">FirehoseDeliveryStreamState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1348,7 +1628,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1357,7 +1642,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Destination</span>
+        <span id="state_destination~csharp">
+<span class="nx">
+Destination
+<a class="anchorjs-link " href="#state_destination~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1366,7 +1656,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Destination<wbr>Id</span>
+        <span id="state_destinationid~csharp">
+<span class="nx">
+Destination<wbr>Id
+<a class="anchorjs-link " href="#state_destinationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1374,7 +1669,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Configuration</span>
+        <span id="state_elasticsearchconfiguration~csharp">
+<span class="nx">
+Elasticsearch<wbr>Configuration
+<a class="anchorjs-link " href="#state_elasticsearchconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1383,7 +1683,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>S3Configuration</span>
+        <span id="state_extendeds3configuration~csharp">
+<span class="nx">
+Extended<wbr>S3Configuration
+<a class="anchorjs-link " href="#state_extendeds3configuration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Args</a></span>
     </dt>
@@ -1392,7 +1697,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Source<wbr>Configuration</span>
+        <span id="state_kinesissourceconfiguration~csharp">
+<span class="nx">
+Kinesis<wbr>Source<wbr>Configuration
+<a class="anchorjs-link " href="#state_kinesissourceconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1401,7 +1711,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1411,7 +1726,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Redshift<wbr>Configuration</span>
+        <span id="state_redshiftconfiguration~csharp">
+<span class="nx">
+Redshift<wbr>Configuration
+<a class="anchorjs-link " href="#state_redshiftconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1422,7 +1742,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Configuration</span>
+        <span id="state_s3configuration~csharp">
+<span class="nx">
+S3Configuration
+<a class="anchorjs-link " href="#state_s3configuration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration<wbr>Args</a></span>
     </dt>
@@ -1432,7 +1757,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~csharp">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
@@ -1442,7 +1772,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Splunk<wbr>Configuration</span>
+        <span id="state_splunkconfiguration~csharp">
+<span class="nx">
+Splunk<wbr>Configuration
+<a class="anchorjs-link " href="#state_splunkconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1450,7 +1785,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1459,7 +1799,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="state_versionid~csharp">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#state_versionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1475,7 +1820,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1484,7 +1834,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Destination</span>
+        <span id="state_destination~go">
+<span class="nx">
+Destination
+<a class="anchorjs-link " href="#state_destination~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1493,7 +1848,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Destination<wbr>Id</span>
+        <span id="state_destinationid~go">
+<span class="nx">
+Destination<wbr>Id
+<a class="anchorjs-link " href="#state_destinationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1501,7 +1861,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elasticsearch<wbr>Configuration</span>
+        <span id="state_elasticsearchconfiguration~go">
+<span class="nx">
+Elasticsearch<wbr>Configuration
+<a class="anchorjs-link " href="#state_elasticsearchconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration</a></span>
     </dt>
@@ -1510,7 +1875,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>S3Configuration</span>
+        <span id="state_extendeds3configuration~go">
+<span class="nx">
+Extended<wbr>S3Configuration
+<a class="anchorjs-link " href="#state_extendeds3configuration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration</a></span>
     </dt>
@@ -1519,7 +1889,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Source<wbr>Configuration</span>
+        <span id="state_kinesissourceconfiguration~go">
+<span class="nx">
+Kinesis<wbr>Source<wbr>Configuration
+<a class="anchorjs-link " href="#state_kinesissourceconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration</a></span>
     </dt>
@@ -1528,7 +1903,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1538,7 +1918,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Redshift<wbr>Configuration</span>
+        <span id="state_redshiftconfiguration~go">
+<span class="nx">
+Redshift<wbr>Configuration
+<a class="anchorjs-link " href="#state_redshiftconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration</a></span>
     </dt>
@@ -1549,7 +1934,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Configuration</span>
+        <span id="state_s3configuration~go">
+<span class="nx">
+S3Configuration
+<a class="anchorjs-link " href="#state_s3configuration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration</a></span>
     </dt>
@@ -1559,7 +1949,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~go">
+<span class="nx">
+Server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -1569,7 +1964,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Splunk<wbr>Configuration</span>
+        <span id="state_splunkconfiguration~go">
+<span class="nx">
+Splunk<wbr>Configuration
+<a class="anchorjs-link " href="#state_splunkconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration</a></span>
     </dt>
@@ -1577,7 +1977,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1586,7 +1991,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="state_versionid~go">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#state_versionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1602,7 +2012,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1611,7 +2026,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>destination</span>
+        <span id="state_destination~nodejs">
+<span class="nx">
+destination
+<a class="anchorjs-link " href="#state_destination~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1620,7 +2040,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>destination<wbr>Id</span>
+        <span id="state_destinationid~nodejs">
+<span class="nx">
+destination<wbr>Id
+<a class="anchorjs-link " href="#state_destinationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1628,7 +2053,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch<wbr>Configuration</span>
+        <span id="state_elasticsearchconfiguration~nodejs">
+<span class="nx">
+elasticsearch<wbr>Configuration
+<a class="anchorjs-link " href="#state_elasticsearchconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration</a></span>
     </dt>
@@ -1637,7 +2067,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended<wbr>S3Configuration</span>
+        <span id="state_extendeds3configuration~nodejs">
+<span class="nx">
+extended<wbr>S3Configuration
+<a class="anchorjs-link " href="#state_extendeds3configuration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration</a></span>
     </dt>
@@ -1646,7 +2081,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Source<wbr>Configuration</span>
+        <span id="state_kinesissourceconfiguration~nodejs">
+<span class="nx">
+kinesis<wbr>Source<wbr>Configuration
+<a class="anchorjs-link " href="#state_kinesissourceconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration</a></span>
     </dt>
@@ -1655,7 +2095,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1665,7 +2110,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>redshift<wbr>Configuration</span>
+        <span id="state_redshiftconfiguration~nodejs">
+<span class="nx">
+redshift<wbr>Configuration
+<a class="anchorjs-link " href="#state_redshiftconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration</a></span>
     </dt>
@@ -1676,7 +2126,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Configuration</span>
+        <span id="state_s3configuration~nodejs">
+<span class="nx">
+s3Configuration
+<a class="anchorjs-link " href="#state_s3configuration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration</a></span>
     </dt>
@@ -1686,7 +2141,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>server<wbr>Side<wbr>Encryption</span>
+        <span id="state_serversideencryption~nodejs">
+<span class="nx">
+server<wbr>Side<wbr>Encryption
+<a class="anchorjs-link " href="#state_serversideencryption~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
@@ -1696,7 +2156,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>splunk<wbr>Configuration</span>
+        <span id="state_splunkconfiguration~nodejs">
+<span class="nx">
+splunk<wbr>Configuration
+<a class="anchorjs-link " href="#state_splunkconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration</a></span>
     </dt>
@@ -1704,7 +2169,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1713,7 +2183,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>version<wbr>Id</span>
+        <span id="state_versionid~nodejs">
+<span class="nx">
+version<wbr>Id
+<a class="anchorjs-link " href="#state_versionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1729,7 +2204,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1738,7 +2218,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>destination</span>
+        <span id="state_destination~python">
+<span class="nx">
+destination
+<a class="anchorjs-link " href="#state_destination~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1747,7 +2232,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>destination_<wbr>id</span>
+        <span id="state_destination_id~python">
+<span class="nx">
+destination_<wbr>id
+<a class="anchorjs-link " href="#state_destination_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1755,7 +2245,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>elasticsearch_<wbr>configuration</span>
+        <span id="state_elasticsearch_configuration~python">
+<span class="nx">
+elasticsearch_<wbr>configuration
+<a class="anchorjs-link " href="#state_elasticsearch_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration]</a></span>
     </dt>
@@ -1764,7 +2259,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended_<wbr>s3_<wbr>configuration</span>
+        <span id="state_extended_s3_configuration~python">
+<span class="nx">
+extended_<wbr>s3_<wbr>configuration
+<a class="anchorjs-link " href="#state_extended_s3_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configuration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration]</a></span>
     </dt>
@@ -1773,7 +2273,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis_<wbr>source_<wbr>configuration</span>
+        <span id="state_kinesis_source_configuration~python">
+<span class="nx">
+kinesis_<wbr>source_<wbr>configuration
+<a class="anchorjs-link " href="#state_kinesis_source_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamkinesissourceconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Kinesis<wbr>Source<wbr>Configuration]</a></span>
     </dt>
@@ -1782,7 +2287,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1792,7 +2302,12 @@ AWS account and region the Stream is created in.
 
     <dt class="property-optional"
             title="Optional">
-        <span>redshift_<wbr>configuration</span>
+        <span id="state_redshift_configuration~python">
+<span class="nx">
+redshift_<wbr>configuration
+<a class="anchorjs-link " href="#state_redshift_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration]</a></span>
     </dt>
@@ -1803,7 +2318,12 @@ Using `redshift_configuration` requires the user to also specify a
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3_<wbr>configuration</span>
+        <span id="state_s3_configuration~python">
+<span class="nx">
+s3_<wbr>configuration
+<a class="anchorjs-link " href="#state_s3_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configuration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration]</a></span>
     </dt>
@@ -1813,7 +2333,12 @@ is redshift). More details are given below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>server_<wbr>side_<wbr>encryption</span>
+        <span id="state_server_side_encryption~python">
+<span class="nx">
+server_<wbr>side_<wbr>encryption
+<a class="anchorjs-link " href="#state_server_side_encryption~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamserversideencryption">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
@@ -1823,7 +2348,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>splunk_<wbr>configuration</span>
+        <span id="state_splunk_configuration~python">
+<span class="nx">
+splunk_<wbr>configuration
+<a class="anchorjs-link " href="#state_splunk_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration]</a></span>
     </dt>
@@ -1831,7 +2361,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1840,7 +2375,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>version_<wbr>id</span>
+        <span id="state_version_id~python">
+<span class="nx">
+version_<wbr>id
+<a class="anchorjs-link " href="#state_version_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1882,7 +2422,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Domain<wbr>Arn</span>
+        <span id="domainarn~csharp">
+<span class="nx">
+Domain<wbr>Arn
+<a class="anchorjs-link " href="#domainarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1891,7 +2436,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Index<wbr>Name</span>
+        <span id="indexname~csharp">
+<span class="nx">
+Index<wbr>Name
+<a class="anchorjs-link " href="#indexname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1900,7 +2450,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1909,7 +2464,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffering<wbr>Interval</span>
+        <span id="bufferinginterval~csharp">
+<span class="nx">
+Buffering<wbr>Interval
+<a class="anchorjs-link " href="#bufferinginterval~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1918,7 +2478,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffering<wbr>Size</span>
+        <span id="bufferingsize~csharp">
+<span class="nx">
+Buffering<wbr>Size
+<a class="anchorjs-link " href="#bufferingsize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1927,7 +2492,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1936,7 +2506,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Index<wbr>Rotation<wbr>Period</span>
+        <span id="indexrotationperiod~csharp">
+<span class="nx">
+Index<wbr>Rotation<wbr>Period
+<a class="anchorjs-link " href="#indexrotationperiod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1945,7 +2520,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~csharp">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1954,7 +2534,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retry<wbr>Duration</span>
+        <span id="retryduration~csharp">
+<span class="nx">
+Retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1963,7 +2548,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~csharp">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1972,7 +2562,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type<wbr>Name</span>
+        <span id="typename~csharp">
+<span class="nx">
+Type<wbr>Name
+<a class="anchorjs-link " href="#typename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1988,7 +2583,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Domain<wbr>Arn</span>
+        <span id="domainarn~go">
+<span class="nx">
+Domain<wbr>Arn
+<a class="anchorjs-link " href="#domainarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1997,7 +2597,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Index<wbr>Name</span>
+        <span id="indexname~go">
+<span class="nx">
+Index<wbr>Name
+<a class="anchorjs-link " href="#indexname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2006,7 +2611,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2015,7 +2625,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffering<wbr>Interval</span>
+        <span id="bufferinginterval~go">
+<span class="nx">
+Buffering<wbr>Interval
+<a class="anchorjs-link " href="#bufferinginterval~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2024,7 +2639,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffering<wbr>Size</span>
+        <span id="bufferingsize~go">
+<span class="nx">
+Buffering<wbr>Size
+<a class="anchorjs-link " href="#bufferingsize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2033,7 +2653,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -2042,7 +2667,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Index<wbr>Rotation<wbr>Period</span>
+        <span id="indexrotationperiod~go">
+<span class="nx">
+Index<wbr>Rotation<wbr>Period
+<a class="anchorjs-link " href="#indexrotationperiod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2051,7 +2681,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~go">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -2060,7 +2695,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retry<wbr>Duration</span>
+        <span id="retryduration~go">
+<span class="nx">
+Retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2069,7 +2709,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~go">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2078,7 +2723,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type<wbr>Name</span>
+        <span id="typename~go">
+<span class="nx">
+Type<wbr>Name
+<a class="anchorjs-link " href="#typename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2094,7 +2744,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>domain<wbr>Arn</span>
+        <span id="domainarn~nodejs">
+<span class="nx">
+domain<wbr>Arn
+<a class="anchorjs-link " href="#domainarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2103,7 +2758,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>index<wbr>Name</span>
+        <span id="indexname~nodejs">
+<span class="nx">
+index<wbr>Name
+<a class="anchorjs-link " href="#indexname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2112,7 +2772,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2121,7 +2786,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffering<wbr>Interval</span>
+        <span id="bufferinginterval~nodejs">
+<span class="nx">
+buffering<wbr>Interval
+<a class="anchorjs-link " href="#bufferinginterval~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2130,7 +2800,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffering<wbr>Size</span>
+        <span id="bufferingsize~nodejs">
+<span class="nx">
+buffering<wbr>Size
+<a class="anchorjs-link " href="#bufferingsize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2139,7 +2814,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -2148,7 +2828,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>index<wbr>Rotation<wbr>Period</span>
+        <span id="indexrotationperiod~nodejs">
+<span class="nx">
+index<wbr>Rotation<wbr>Period
+<a class="anchorjs-link " href="#indexrotationperiod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2157,7 +2842,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~nodejs">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -2166,7 +2856,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>retry<wbr>Duration</span>
+        <span id="retryduration~nodejs">
+<span class="nx">
+retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2175,7 +2870,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~nodejs">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2184,7 +2884,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>type<wbr>Name</span>
+        <span id="typename~nodejs">
+<span class="nx">
+type<wbr>Name
+<a class="anchorjs-link " href="#typename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2200,7 +2905,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>domain<wbr>Arn</span>
+        <span id="domainarn~python">
+<span class="nx">
+domain<wbr>Arn
+<a class="anchorjs-link " href="#domainarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2209,7 +2919,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>index<wbr>Name</span>
+        <span id="indexname~python">
+<span class="nx">
+index<wbr>Name
+<a class="anchorjs-link " href="#indexname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2218,7 +2933,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2227,7 +2947,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffering<wbr>Interval</span>
+        <span id="bufferinginterval~python">
+<span class="nx">
+buffering<wbr>Interval
+<a class="anchorjs-link " href="#bufferinginterval~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2236,7 +2961,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffering<wbr>Size</span>
+        <span id="bufferingsize~python">
+<span class="nx">
+buffering<wbr>Size
+<a class="anchorjs-link " href="#bufferingsize~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2245,7 +2975,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -2254,7 +2989,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>index<wbr>Rotation<wbr>Period</span>
+        <span id="indexrotationperiod~python">
+<span class="nx">
+index<wbr>Rotation<wbr>Period
+<a class="anchorjs-link " href="#indexrotationperiod~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2263,7 +3003,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~python">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration]</a></span>
     </dt>
@@ -2272,7 +3017,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>retry<wbr>Duration</span>
+        <span id="retryduration~python">
+<span class="nx">
+retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2281,7 +3031,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~python">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2290,7 +3045,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>type<wbr>Name</span>
+        <span id="typename~python">
+<span class="nx">
+type<wbr>Name
+<a class="anchorjs-link " href="#typename~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2324,7 +3084,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2333,7 +3098,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2342,7 +3112,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2358,7 +3133,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2367,7 +3147,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2376,7 +3161,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2392,7 +3182,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2401,7 +3196,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2410,7 +3210,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2426,7 +3231,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2435,7 +3245,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2444,7 +3259,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2478,7 +3298,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2487,7 +3312,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~csharp">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessor">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
@@ -2503,7 +3333,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2512,7 +3347,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~go">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessor">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor</a></span>
     </dt>
@@ -2528,7 +3368,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2537,7 +3382,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~nodejs">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessor">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor[]</a></span>
     </dt>
@@ -2553,7 +3403,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2562,7 +3417,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~python">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessor">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor]</a></span>
     </dt>
@@ -2596,7 +3456,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2605,7 +3470,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~csharp">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessorparameter">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
@@ -2621,7 +3491,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2630,7 +3505,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~go">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessorparameter">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter</a></span>
     </dt>
@@ -2646,7 +3526,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2655,7 +3540,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~nodejs">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessorparameter">Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter[]</a></span>
     </dt>
@@ -2671,7 +3561,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2680,7 +3575,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~python">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamelasticsearchconfigurationprocessingconfigurationprocessorparameter">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Elasticsearch<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter]</a></span>
     </dt>
@@ -2714,7 +3614,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~csharp">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2723,7 +3628,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~csharp">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2739,7 +3649,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~go">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2748,7 +3663,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~go">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2764,7 +3684,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~nodejs">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2773,7 +3698,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~nodejs">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2789,7 +3719,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~python">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2798,7 +3733,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~python">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2832,7 +3772,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~csharp">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2841,7 +3786,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2850,7 +3800,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~csharp">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2859,7 +3814,12 @@ Server-side encryption should not be enabled when a kinesis stream is configured
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~csharp">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2869,7 +3829,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -2878,7 +3843,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~csharp">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2887,7 +3857,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Format<wbr>Conversion<wbr>Configuration</span>
+        <span id="dataformatconversionconfiguration~csharp">
+<span class="nx">
+Data<wbr>Format<wbr>Conversion<wbr>Configuration
+<a class="anchorjs-link " href="#dataformatconversionconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -2896,7 +3871,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Error<wbr>Output<wbr>Prefix</span>
+        <span id="erroroutputprefix~csharp">
+<span class="nx">
+Error<wbr>Output<wbr>Prefix
+<a class="anchorjs-link " href="#erroroutputprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2905,7 +3885,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2915,7 +3900,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2924,7 +3914,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~csharp">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -2933,7 +3928,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~csharp">
+<span class="nx">
+S3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -2942,7 +3942,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~csharp">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2958,7 +3963,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~go">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2967,7 +3977,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2976,7 +3991,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~go">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2985,7 +4005,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~go">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2995,7 +4020,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -3004,7 +4034,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~go">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3013,7 +4048,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Format<wbr>Conversion<wbr>Configuration</span>
+        <span id="dataformatconversionconfiguration~go">
+<span class="nx">
+Data<wbr>Format<wbr>Conversion<wbr>Configuration
+<a class="anchorjs-link " href="#dataformatconversionconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration</a></span>
     </dt>
@@ -3022,7 +4062,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Error<wbr>Output<wbr>Prefix</span>
+        <span id="erroroutputprefix~go">
+<span class="nx">
+Error<wbr>Output<wbr>Prefix
+<a class="anchorjs-link " href="#erroroutputprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3031,7 +4076,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3041,7 +4091,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3050,7 +4105,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~go">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -3059,7 +4119,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~go">
+<span class="nx">
+S3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration</a></span>
     </dt>
@@ -3068,7 +4133,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~go">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3084,7 +4154,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~nodejs">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3093,7 +4168,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3102,7 +4182,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~nodejs">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3111,7 +4196,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~nodejs">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3121,7 +4211,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -3130,7 +4225,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~nodejs">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3139,7 +4239,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Format<wbr>Conversion<wbr>Configuration</span>
+        <span id="dataformatconversionconfiguration~nodejs">
+<span class="nx">
+data<wbr>Format<wbr>Conversion<wbr>Configuration
+<a class="anchorjs-link " href="#dataformatconversionconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration</a></span>
     </dt>
@@ -3148,7 +4253,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>error<wbr>Output<wbr>Prefix</span>
+        <span id="erroroutputprefix~nodejs">
+<span class="nx">
+error<wbr>Output<wbr>Prefix
+<a class="anchorjs-link " href="#erroroutputprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3157,7 +4267,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3167,7 +4282,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3176,7 +4296,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~nodejs">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -3185,7 +4310,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~nodejs">
+<span class="nx">
+s3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration</a></span>
     </dt>
@@ -3194,7 +4324,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~nodejs">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3210,7 +4345,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~python">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3219,7 +4359,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3228,7 +4373,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~python">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3237,7 +4387,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~python">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3247,7 +4402,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -3256,7 +4416,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~python">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3265,7 +4430,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Format<wbr>Conversion<wbr>Configuration</span>
+        <span id="dataformatconversionconfiguration~python">
+<span class="nx">
+data<wbr>Format<wbr>Conversion<wbr>Configuration
+<a class="anchorjs-link " href="#dataformatconversionconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration]</a></span>
     </dt>
@@ -3274,7 +4444,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>error<wbr>Output<wbr>Prefix</span>
+        <span id="erroroutputprefix~python">
+<span class="nx">
+error<wbr>Output<wbr>Prefix
+<a class="anchorjs-link " href="#erroroutputprefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3283,7 +4458,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>arn</span>
+        <span id="kms_key_arn~python">
+<span class="nx">
+kms_<wbr>key_<wbr>arn
+<a class="anchorjs-link " href="#kms_key_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3293,7 +4473,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3302,7 +4487,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~python">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration]</a></span>
     </dt>
@@ -3311,7 +4501,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~python">
+<span class="nx">
+s3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration]</a></span>
     </dt>
@@ -3320,7 +4515,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~python">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3354,7 +4554,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3363,7 +4568,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3372,7 +4582,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3388,7 +4603,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3397,7 +4617,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3406,7 +4631,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3422,7 +4652,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3431,7 +4666,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3440,7 +4680,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3456,7 +4701,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3465,7 +4715,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3474,7 +4729,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3508,7 +4768,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Input<wbr>Format<wbr>Configuration</span>
+        <span id="inputformatconfiguration~csharp">
+<span class="nx">
+Input<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#inputformatconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -3517,7 +4782,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Output<wbr>Format<wbr>Configuration</span>
+        <span id="outputformatconfiguration~csharp">
+<span class="nx">
+Output<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#outputformatconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -3526,7 +4796,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema<wbr>Configuration</span>
+        <span id="schemaconfiguration~csharp">
+<span class="nx">
+Schema<wbr>Configuration
+<a class="anchorjs-link " href="#schemaconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationschemaconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Schema<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -3535,7 +4810,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3551,7 +4831,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Input<wbr>Format<wbr>Configuration</span>
+        <span id="inputformatconfiguration~go">
+<span class="nx">
+Input<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#inputformatconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration</a></span>
     </dt>
@@ -3560,7 +4845,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Output<wbr>Format<wbr>Configuration</span>
+        <span id="outputformatconfiguration~go">
+<span class="nx">
+Output<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#outputformatconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration</a></span>
     </dt>
@@ -3569,7 +4859,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema<wbr>Configuration</span>
+        <span id="schemaconfiguration~go">
+<span class="nx">
+Schema<wbr>Configuration
+<a class="anchorjs-link " href="#schemaconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationschemaconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Schema<wbr>Configuration</a></span>
     </dt>
@@ -3578,7 +4873,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3594,7 +4894,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>input<wbr>Format<wbr>Configuration</span>
+        <span id="inputformatconfiguration~nodejs">
+<span class="nx">
+input<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#inputformatconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration</a></span>
     </dt>
@@ -3603,7 +4908,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>output<wbr>Format<wbr>Configuration</span>
+        <span id="outputformatconfiguration~nodejs">
+<span class="nx">
+output<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#outputformatconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration</a></span>
     </dt>
@@ -3612,7 +4922,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>schema<wbr>Configuration</span>
+        <span id="schemaconfiguration~nodejs">
+<span class="nx">
+schema<wbr>Configuration
+<a class="anchorjs-link " href="#schemaconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationschemaconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Schema<wbr>Configuration</a></span>
     </dt>
@@ -3621,7 +4936,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3637,7 +4957,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>input<wbr>Format<wbr>Configuration</span>
+        <span id="inputformatconfiguration~python">
+<span class="nx">
+input<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#inputformatconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration]</a></span>
     </dt>
@@ -3646,7 +4971,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>output<wbr>Format<wbr>Configuration</span>
+        <span id="outputformatconfiguration~python">
+<span class="nx">
+output<wbr>Format<wbr>Configuration
+<a class="anchorjs-link " href="#outputformatconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration]</a></span>
     </dt>
@@ -3655,7 +4985,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>schema<wbr>Configuration</span>
+        <span id="schemaconfiguration~python">
+<span class="nx">
+schema<wbr>Configuration
+<a class="anchorjs-link " href="#schemaconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationschemaconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Schema<wbr>Configuration]</a></span>
     </dt>
@@ -3664,7 +4999,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3698,7 +5038,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Deserializer</span>
+        <span id="deserializer~csharp">
+<span class="nx">
+Deserializer
+<a class="anchorjs-link " href="#deserializer~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializer">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Args</a></span>
     </dt>
@@ -3714,7 +5059,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Deserializer</span>
+        <span id="deserializer~go">
+<span class="nx">
+Deserializer
+<a class="anchorjs-link " href="#deserializer~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializer">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer</a></span>
     </dt>
@@ -3730,7 +5080,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>deserializer</span>
+        <span id="deserializer~nodejs">
+<span class="nx">
+deserializer
+<a class="anchorjs-link " href="#deserializer~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializer">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer</a></span>
     </dt>
@@ -3746,7 +5101,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>deserializer</span>
+        <span id="deserializer~python">
+<span class="nx">
+deserializer
+<a class="anchorjs-link " href="#deserializer~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializer">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer]</a></span>
     </dt>
@@ -3780,7 +5140,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hive<wbr>Json<wbr>Ser<wbr>De</span>
+        <span id="hivejsonserde~csharp">
+<span class="nx">
+Hive<wbr>Json<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#hivejsonserde~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializerhivejsonserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Hive<wbr>Json<wbr>Ser<wbr>De<wbr>Args</a></span>
     </dt>
@@ -3789,7 +5154,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Open<wbr>XJson<wbr>Ser<wbr>De</span>
+        <span id="openxjsonserde~csharp">
+<span class="nx">
+Open<wbr>XJson<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#openxjsonserde~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializeropenxjsonserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Open<wbr>XJson<wbr>Ser<wbr>De<wbr>Args</a></span>
     </dt>
@@ -3805,7 +5175,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hive<wbr>Json<wbr>Ser<wbr>De</span>
+        <span id="hivejsonserde~go">
+<span class="nx">
+Hive<wbr>Json<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#hivejsonserde~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializerhivejsonserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Hive<wbr>Json<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -3814,7 +5189,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Open<wbr>XJson<wbr>Ser<wbr>De</span>
+        <span id="openxjsonserde~go">
+<span class="nx">
+Open<wbr>XJson<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#openxjsonserde~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializeropenxjsonserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Open<wbr>XJson<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -3830,7 +5210,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hive<wbr>Json<wbr>Ser<wbr>De</span>
+        <span id="hivejsonserde~nodejs">
+<span class="nx">
+hive<wbr>Json<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#hivejsonserde~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializerhivejsonserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Hive<wbr>Json<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -3839,7 +5224,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>open<wbr>XJson<wbr>Ser<wbr>De</span>
+        <span id="openxjsonserde~nodejs">
+<span class="nx">
+open<wbr>XJson<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#openxjsonserde~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializeropenxjsonserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Open<wbr>XJson<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -3855,7 +5245,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hive<wbr>Json<wbr>Ser<wbr>De</span>
+        <span id="hivejsonserde~python">
+<span class="nx">
+hive<wbr>Json<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#hivejsonserde~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializerhivejsonserde">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Hive<wbr>Json<wbr>Ser<wbr>De]</a></span>
     </dt>
@@ -3864,7 +5259,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>open<wbr>XJson<wbr>Ser<wbr>De</span>
+        <span id="openxjsonserde~python">
+<span class="nx">
+open<wbr>XJson<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#openxjsonserde~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationinputformatconfigurationdeserializeropenxjsonserde">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Input<wbr>Format<wbr>Configuration<wbr>Deserializer<wbr>Open<wbr>XJson<wbr>Ser<wbr>De]</a></span>
     </dt>
@@ -3898,7 +5298,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timestamp<wbr>Formats</span>
+        <span id="timestampformats~csharp">
+<span class="nx">
+Timestamp<wbr>Formats
+<a class="anchorjs-link " href="#timestampformats~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3914,7 +5319,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timestamp<wbr>Formats</span>
+        <span id="timestampformats~go">
+<span class="nx">
+Timestamp<wbr>Formats
+<a class="anchorjs-link " href="#timestampformats~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3930,7 +5340,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>timestamp<wbr>Formats</span>
+        <span id="timestampformats~nodejs">
+<span class="nx">
+timestamp<wbr>Formats
+<a class="anchorjs-link " href="#timestampformats~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3946,7 +5361,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>timestamp<wbr>Formats</span>
+        <span id="timestampformats~python">
+<span class="nx">
+timestamp<wbr>Formats
+<a class="anchorjs-link " href="#timestampformats~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3980,7 +5400,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Case<wbr>Insensitive</span>
+        <span id="caseinsensitive~csharp">
+<span class="nx">
+Case<wbr>Insensitive
+<a class="anchorjs-link " href="#caseinsensitive~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3989,7 +5414,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings</span>
+        <span id="columntojsonkeymappings~csharp">
+<span class="nx">
+Column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings
+<a class="anchorjs-link " href="#columntojsonkeymappings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -3998,7 +5428,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores</span>
+        <span id="convertdotsinjsonkeystounderscores~csharp">
+<span class="nx">
+Convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores
+<a class="anchorjs-link " href="#convertdotsinjsonkeystounderscores~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4014,7 +5449,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Case<wbr>Insensitive</span>
+        <span id="caseinsensitive~go">
+<span class="nx">
+Case<wbr>Insensitive
+<a class="anchorjs-link " href="#caseinsensitive~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4023,7 +5463,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings</span>
+        <span id="columntojsonkeymappings~go">
+<span class="nx">
+Column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings
+<a class="anchorjs-link " href="#columntojsonkeymappings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -4032,7 +5477,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores</span>
+        <span id="convertdotsinjsonkeystounderscores~go">
+<span class="nx">
+Convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores
+<a class="anchorjs-link " href="#convertdotsinjsonkeystounderscores~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4048,7 +5498,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>case<wbr>Insensitive</span>
+        <span id="caseinsensitive~nodejs">
+<span class="nx">
+case<wbr>Insensitive
+<a class="anchorjs-link " href="#caseinsensitive~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4057,7 +5512,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings</span>
+        <span id="columntojsonkeymappings~nodejs">
+<span class="nx">
+column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings
+<a class="anchorjs-link " href="#columntojsonkeymappings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -4066,7 +5526,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores</span>
+        <span id="convertdotsinjsonkeystounderscores~nodejs">
+<span class="nx">
+convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores
+<a class="anchorjs-link " href="#convertdotsinjsonkeystounderscores~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4082,7 +5547,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>case<wbr>Insensitive</span>
+        <span id="caseinsensitive~python">
+<span class="nx">
+case<wbr>Insensitive
+<a class="anchorjs-link " href="#caseinsensitive~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4091,7 +5561,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings</span>
+        <span id="columntojsonkeymappings~python">
+<span class="nx">
+column<wbr>To<wbr>Json<wbr>Key<wbr>Mappings
+<a class="anchorjs-link " href="#columntojsonkeymappings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -4100,7 +5575,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores</span>
+        <span id="convertdotsinjsonkeystounderscores~python">
+<span class="nx">
+convert<wbr>Dots<wbr>In<wbr>Json<wbr>Keys<wbr>To<wbr>Underscores
+<a class="anchorjs-link " href="#convertdotsinjsonkeystounderscores~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4134,7 +5614,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Serializer</span>
+        <span id="serializer~csharp">
+<span class="nx">
+Serializer
+<a class="anchorjs-link " href="#serializer~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializer">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Args</a></span>
     </dt>
@@ -4150,7 +5635,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Serializer</span>
+        <span id="serializer~go">
+<span class="nx">
+Serializer
+<a class="anchorjs-link " href="#serializer~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializer">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer</a></span>
     </dt>
@@ -4166,7 +5656,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>serializer</span>
+        <span id="serializer~nodejs">
+<span class="nx">
+serializer
+<a class="anchorjs-link " href="#serializer~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializer">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer</a></span>
     </dt>
@@ -4182,7 +5677,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>serializer</span>
+        <span id="serializer~python">
+<span class="nx">
+serializer
+<a class="anchorjs-link " href="#serializer~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializer">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer]</a></span>
     </dt>
@@ -4216,7 +5716,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Orc<wbr>Ser<wbr>De</span>
+        <span id="orcserde~csharp">
+<span class="nx">
+Orc<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#orcserde~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerorcserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Orc<wbr>Ser<wbr>De<wbr>Args</a></span>
     </dt>
@@ -4225,7 +5730,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parquet<wbr>Ser<wbr>De</span>
+        <span id="parquetserde~csharp">
+<span class="nx">
+Parquet<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#parquetserde~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerparquetserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Parquet<wbr>Ser<wbr>De<wbr>Args</a></span>
     </dt>
@@ -4241,7 +5751,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Orc<wbr>Ser<wbr>De</span>
+        <span id="orcserde~go">
+<span class="nx">
+Orc<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#orcserde~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerorcserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Orc<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -4250,7 +5765,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parquet<wbr>Ser<wbr>De</span>
+        <span id="parquetserde~go">
+<span class="nx">
+Parquet<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#parquetserde~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerparquetserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Parquet<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -4266,7 +5786,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>orc<wbr>Ser<wbr>De</span>
+        <span id="orcserde~nodejs">
+<span class="nx">
+orc<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#orcserde~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerorcserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Orc<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -4275,7 +5800,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parquet<wbr>Ser<wbr>De</span>
+        <span id="parquetserde~nodejs">
+<span class="nx">
+parquet<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#parquetserde~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerparquetserde">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Parquet<wbr>Ser<wbr>De</a></span>
     </dt>
@@ -4291,7 +5821,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>orc<wbr>Ser<wbr>De</span>
+        <span id="orcserde~python">
+<span class="nx">
+orc<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#orcserde~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerorcserde">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Orc<wbr>Ser<wbr>De]</a></span>
     </dt>
@@ -4300,7 +5835,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parquet<wbr>Ser<wbr>De</span>
+        <span id="parquetserde~python">
+<span class="nx">
+parquet<wbr>Ser<wbr>De
+<a class="anchorjs-link " href="#parquetserde~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationdataformatconversionconfigurationoutputformatconfigurationserializerparquetserde">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Data<wbr>Format<wbr>Conversion<wbr>Configuration<wbr>Output<wbr>Format<wbr>Configuration<wbr>Serializer<wbr>Parquet<wbr>Ser<wbr>De]</a></span>
     </dt>
@@ -4334,7 +5874,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~csharp">
+<span class="nx">
+Block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4343,7 +5888,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bloom<wbr>Filter<wbr>Columns</span>
+        <span id="bloomfiltercolumns~csharp">
+<span class="nx">
+Bloom<wbr>Filter<wbr>Columns
+<a class="anchorjs-link " href="#bloomfiltercolumns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -4352,7 +5902,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability</span>
+        <span id="bloomfilterfalsepositiveprobability~csharp">
+<span class="nx">
+Bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability
+<a class="anchorjs-link " href="#bloomfilterfalsepositiveprobability~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -4361,7 +5916,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression</span>
+        <span id="compression~csharp">
+<span class="nx">
+Compression
+<a class="anchorjs-link " href="#compression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4370,7 +5930,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dictionary<wbr>Key<wbr>Threshold</span>
+        <span id="dictionarykeythreshold~csharp">
+<span class="nx">
+Dictionary<wbr>Key<wbr>Threshold
+<a class="anchorjs-link " href="#dictionarykeythreshold~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -4379,7 +5944,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Padding</span>
+        <span id="enablepadding~csharp">
+<span class="nx">
+Enable<wbr>Padding
+<a class="anchorjs-link " href="#enablepadding~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4388,7 +5958,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Format<wbr>Version</span>
+        <span id="formatversion~csharp">
+<span class="nx">
+Format<wbr>Version
+<a class="anchorjs-link " href="#formatversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4397,7 +5972,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Padding<wbr>Tolerance</span>
+        <span id="paddingtolerance~csharp">
+<span class="nx">
+Padding<wbr>Tolerance
+<a class="anchorjs-link " href="#paddingtolerance~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -4406,7 +5986,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Row<wbr>Index<wbr>Stride</span>
+        <span id="rowindexstride~csharp">
+<span class="nx">
+Row<wbr>Index<wbr>Stride
+<a class="anchorjs-link " href="#rowindexstride~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4415,7 +6000,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stripe<wbr>Size<wbr>Bytes</span>
+        <span id="stripesizebytes~csharp">
+<span class="nx">
+Stripe<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#stripesizebytes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4431,7 +6021,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~go">
+<span class="nx">
+Block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4440,7 +6035,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bloom<wbr>Filter<wbr>Columns</span>
+        <span id="bloomfiltercolumns~go">
+<span class="nx">
+Bloom<wbr>Filter<wbr>Columns
+<a class="anchorjs-link " href="#bloomfiltercolumns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -4449,7 +6049,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability</span>
+        <span id="bloomfilterfalsepositiveprobability~go">
+<span class="nx">
+Bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability
+<a class="anchorjs-link " href="#bloomfilterfalsepositiveprobability~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -4458,7 +6063,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression</span>
+        <span id="compression~go">
+<span class="nx">
+Compression
+<a class="anchorjs-link " href="#compression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4467,7 +6077,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dictionary<wbr>Key<wbr>Threshold</span>
+        <span id="dictionarykeythreshold~go">
+<span class="nx">
+Dictionary<wbr>Key<wbr>Threshold
+<a class="anchorjs-link " href="#dictionarykeythreshold~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -4476,7 +6091,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Padding</span>
+        <span id="enablepadding~go">
+<span class="nx">
+Enable<wbr>Padding
+<a class="anchorjs-link " href="#enablepadding~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4485,7 +6105,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Format<wbr>Version</span>
+        <span id="formatversion~go">
+<span class="nx">
+Format<wbr>Version
+<a class="anchorjs-link " href="#formatversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4494,7 +6119,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Padding<wbr>Tolerance</span>
+        <span id="paddingtolerance~go">
+<span class="nx">
+Padding<wbr>Tolerance
+<a class="anchorjs-link " href="#paddingtolerance~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -4503,7 +6133,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Row<wbr>Index<wbr>Stride</span>
+        <span id="rowindexstride~go">
+<span class="nx">
+Row<wbr>Index<wbr>Stride
+<a class="anchorjs-link " href="#rowindexstride~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4512,7 +6147,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stripe<wbr>Size<wbr>Bytes</span>
+        <span id="stripesizebytes~go">
+<span class="nx">
+Stripe<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#stripesizebytes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4528,7 +6168,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~nodejs">
+<span class="nx">
+block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4537,7 +6182,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bloom<wbr>Filter<wbr>Columns</span>
+        <span id="bloomfiltercolumns~nodejs">
+<span class="nx">
+bloom<wbr>Filter<wbr>Columns
+<a class="anchorjs-link " href="#bloomfiltercolumns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -4546,7 +6196,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability</span>
+        <span id="bloomfilterfalsepositiveprobability~nodejs">
+<span class="nx">
+bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability
+<a class="anchorjs-link " href="#bloomfilterfalsepositiveprobability~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -4555,7 +6210,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression</span>
+        <span id="compression~nodejs">
+<span class="nx">
+compression
+<a class="anchorjs-link " href="#compression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4564,7 +6224,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dictionary<wbr>Key<wbr>Threshold</span>
+        <span id="dictionarykeythreshold~nodejs">
+<span class="nx">
+dictionary<wbr>Key<wbr>Threshold
+<a class="anchorjs-link " href="#dictionarykeythreshold~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -4573,7 +6238,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Padding</span>
+        <span id="enablepadding~nodejs">
+<span class="nx">
+enable<wbr>Padding
+<a class="anchorjs-link " href="#enablepadding~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4582,7 +6252,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>format<wbr>Version</span>
+        <span id="formatversion~nodejs">
+<span class="nx">
+format<wbr>Version
+<a class="anchorjs-link " href="#formatversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4591,7 +6266,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>padding<wbr>Tolerance</span>
+        <span id="paddingtolerance~nodejs">
+<span class="nx">
+padding<wbr>Tolerance
+<a class="anchorjs-link " href="#paddingtolerance~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -4600,7 +6280,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>row<wbr>Index<wbr>Stride</span>
+        <span id="rowindexstride~nodejs">
+<span class="nx">
+row<wbr>Index<wbr>Stride
+<a class="anchorjs-link " href="#rowindexstride~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4609,7 +6294,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stripe<wbr>Size<wbr>Bytes</span>
+        <span id="stripesizebytes~nodejs">
+<span class="nx">
+stripe<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#stripesizebytes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4625,7 +6315,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~python">
+<span class="nx">
+block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4634,7 +6329,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bloom<wbr>Filter<wbr>Columns</span>
+        <span id="bloomfiltercolumns~python">
+<span class="nx">
+bloom<wbr>Filter<wbr>Columns
+<a class="anchorjs-link " href="#bloomfiltercolumns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -4643,7 +6343,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability</span>
+        <span id="bloomfilterfalsepositiveprobability~python">
+<span class="nx">
+bloom<wbr>Filter<wbr>False<wbr>Positive<wbr>Probability
+<a class="anchorjs-link " href="#bloomfilterfalsepositiveprobability~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4652,7 +6357,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression</span>
+        <span id="compression~python">
+<span class="nx">
+compression
+<a class="anchorjs-link " href="#compression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4661,7 +6371,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>dictionary<wbr>Key<wbr>Threshold</span>
+        <span id="dictionarykeythreshold~python">
+<span class="nx">
+dictionary<wbr>Key<wbr>Threshold
+<a class="anchorjs-link " href="#dictionarykeythreshold~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4670,7 +6385,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Padding</span>
+        <span id="enablepadding~python">
+<span class="nx">
+enable<wbr>Padding
+<a class="anchorjs-link " href="#enablepadding~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4679,7 +6399,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>format<wbr>Version</span>
+        <span id="formatversion~python">
+<span class="nx">
+format<wbr>Version
+<a class="anchorjs-link " href="#formatversion~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4688,7 +6413,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>padding<wbr>Tolerance</span>
+        <span id="paddingtolerance~python">
+<span class="nx">
+padding<wbr>Tolerance
+<a class="anchorjs-link " href="#paddingtolerance~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4697,7 +6427,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>row<wbr>Index<wbr>Stride</span>
+        <span id="rowindexstride~python">
+<span class="nx">
+row<wbr>Index<wbr>Stride
+<a class="anchorjs-link " href="#rowindexstride~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4706,7 +6441,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stripe<wbr>Size<wbr>Bytes</span>
+        <span id="stripesizebytes~python">
+<span class="nx">
+stripe<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#stripesizebytes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4740,7 +6480,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~csharp">
+<span class="nx">
+Block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4749,7 +6494,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression</span>
+        <span id="compression~csharp">
+<span class="nx">
+Compression
+<a class="anchorjs-link " href="#compression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4758,7 +6508,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dictionary<wbr>Compression</span>
+        <span id="enabledictionarycompression~csharp">
+<span class="nx">
+Enable<wbr>Dictionary<wbr>Compression
+<a class="anchorjs-link " href="#enabledictionarycompression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -4767,7 +6522,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Padding<wbr>Bytes</span>
+        <span id="maxpaddingbytes~csharp">
+<span class="nx">
+Max<wbr>Padding<wbr>Bytes
+<a class="anchorjs-link " href="#maxpaddingbytes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4776,7 +6536,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Page<wbr>Size<wbr>Bytes</span>
+        <span id="pagesizebytes~csharp">
+<span class="nx">
+Page<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#pagesizebytes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -4785,7 +6550,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Writer<wbr>Version</span>
+        <span id="writerversion~csharp">
+<span class="nx">
+Writer<wbr>Version
+<a class="anchorjs-link " href="#writerversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4801,7 +6571,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~go">
+<span class="nx">
+Block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4810,7 +6585,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression</span>
+        <span id="compression~go">
+<span class="nx">
+Compression
+<a class="anchorjs-link " href="#compression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4819,7 +6599,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dictionary<wbr>Compression</span>
+        <span id="enabledictionarycompression~go">
+<span class="nx">
+Enable<wbr>Dictionary<wbr>Compression
+<a class="anchorjs-link " href="#enabledictionarycompression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -4828,7 +6613,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Padding<wbr>Bytes</span>
+        <span id="maxpaddingbytes~go">
+<span class="nx">
+Max<wbr>Padding<wbr>Bytes
+<a class="anchorjs-link " href="#maxpaddingbytes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4837,7 +6627,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Page<wbr>Size<wbr>Bytes</span>
+        <span id="pagesizebytes~go">
+<span class="nx">
+Page<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#pagesizebytes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -4846,7 +6641,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Writer<wbr>Version</span>
+        <span id="writerversion~go">
+<span class="nx">
+Writer<wbr>Version
+<a class="anchorjs-link " href="#writerversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4862,7 +6662,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~nodejs">
+<span class="nx">
+block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4871,7 +6676,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression</span>
+        <span id="compression~nodejs">
+<span class="nx">
+compression
+<a class="anchorjs-link " href="#compression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4880,7 +6690,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Dictionary<wbr>Compression</span>
+        <span id="enabledictionarycompression~nodejs">
+<span class="nx">
+enable<wbr>Dictionary<wbr>Compression
+<a class="anchorjs-link " href="#enabledictionarycompression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4889,7 +6704,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Padding<wbr>Bytes</span>
+        <span id="maxpaddingbytes~nodejs">
+<span class="nx">
+max<wbr>Padding<wbr>Bytes
+<a class="anchorjs-link " href="#maxpaddingbytes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4898,7 +6718,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>page<wbr>Size<wbr>Bytes</span>
+        <span id="pagesizebytes~nodejs">
+<span class="nx">
+page<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#pagesizebytes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -4907,7 +6732,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>writer<wbr>Version</span>
+        <span id="writerversion~nodejs">
+<span class="nx">
+writer<wbr>Version
+<a class="anchorjs-link " href="#writerversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4923,7 +6753,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Size<wbr>Bytes</span>
+        <span id="blocksizebytes~python">
+<span class="nx">
+block<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#blocksizebytes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4932,7 +6767,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression</span>
+        <span id="compression~python">
+<span class="nx">
+compression
+<a class="anchorjs-link " href="#compression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4941,7 +6781,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Dictionary<wbr>Compression</span>
+        <span id="enabledictionarycompression~python">
+<span class="nx">
+enable<wbr>Dictionary<wbr>Compression
+<a class="anchorjs-link " href="#enabledictionarycompression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4950,7 +6795,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Padding<wbr>Bytes</span>
+        <span id="maxpaddingbytes~python">
+<span class="nx">
+max<wbr>Padding<wbr>Bytes
+<a class="anchorjs-link " href="#maxpaddingbytes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4959,7 +6809,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>page<wbr>Size<wbr>Bytes</span>
+        <span id="pagesizebytes~python">
+<span class="nx">
+page<wbr>Size<wbr>Bytes
+<a class="anchorjs-link " href="#pagesizebytes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -4968,7 +6823,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>writer<wbr>Version</span>
+        <span id="writerversion~python">
+<span class="nx">
+writer<wbr>Version
+<a class="anchorjs-link " href="#writerversion~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5002,7 +6862,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Database<wbr>Name</span>
+        <span id="databasename~csharp">
+<span class="nx">
+Database<wbr>Name
+<a class="anchorjs-link " href="#databasename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5011,7 +6876,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5020,7 +6890,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Table<wbr>Name</span>
+        <span id="tablename~csharp">
+<span class="nx">
+Table<wbr>Name
+<a class="anchorjs-link " href="#tablename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5029,7 +6904,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Catalog<wbr>Id</span>
+        <span id="catalogid~csharp">
+<span class="nx">
+Catalog<wbr>Id
+<a class="anchorjs-link " href="#catalogid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5038,7 +6918,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Region</span>
+        <span id="region~csharp">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5047,7 +6932,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="versionid~csharp">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#versionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5063,7 +6953,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Database<wbr>Name</span>
+        <span id="databasename~go">
+<span class="nx">
+Database<wbr>Name
+<a class="anchorjs-link " href="#databasename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5072,7 +6967,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5081,7 +6981,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Table<wbr>Name</span>
+        <span id="tablename~go">
+<span class="nx">
+Table<wbr>Name
+<a class="anchorjs-link " href="#tablename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5090,7 +6995,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Catalog<wbr>Id</span>
+        <span id="catalogid~go">
+<span class="nx">
+Catalog<wbr>Id
+<a class="anchorjs-link " href="#catalogid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5099,7 +7009,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Region</span>
+        <span id="region~go">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5108,7 +7023,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version<wbr>Id</span>
+        <span id="versionid~go">
+<span class="nx">
+Version<wbr>Id
+<a class="anchorjs-link " href="#versionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5124,7 +7044,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>database<wbr>Name</span>
+        <span id="databasename~nodejs">
+<span class="nx">
+database<wbr>Name
+<a class="anchorjs-link " href="#databasename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5133,7 +7058,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5142,7 +7072,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>table<wbr>Name</span>
+        <span id="tablename~nodejs">
+<span class="nx">
+table<wbr>Name
+<a class="anchorjs-link " href="#tablename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5151,7 +7086,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>catalog<wbr>Id</span>
+        <span id="catalogid~nodejs">
+<span class="nx">
+catalog<wbr>Id
+<a class="anchorjs-link " href="#catalogid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5160,7 +7100,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>region</span>
+        <span id="region~nodejs">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5169,7 +7114,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version<wbr>Id</span>
+        <span id="versionid~nodejs">
+<span class="nx">
+version<wbr>Id
+<a class="anchorjs-link " href="#versionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5185,7 +7135,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>database_<wbr>name</span>
+        <span id="database_name~python">
+<span class="nx">
+database_<wbr>name
+<a class="anchorjs-link " href="#database_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5194,7 +7149,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5203,7 +7163,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>table_<wbr>name</span>
+        <span id="table_name~python">
+<span class="nx">
+table_<wbr>name
+<a class="anchorjs-link " href="#table_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5212,7 +7177,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>catalog_<wbr>id</span>
+        <span id="catalog_id~python">
+<span class="nx">
+catalog_<wbr>id
+<a class="anchorjs-link " href="#catalog_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5221,7 +7191,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>region</span>
+        <span id="region~python">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5230,7 +7205,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version_<wbr>id</span>
+        <span id="version_id~python">
+<span class="nx">
+version_<wbr>id
+<a class="anchorjs-link " href="#version_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5264,7 +7244,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5273,7 +7258,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~csharp">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessor">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
@@ -5289,7 +7279,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -5298,7 +7293,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~go">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessor">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor</a></span>
     </dt>
@@ -5314,7 +7314,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -5323,7 +7328,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~nodejs">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessor">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor[]</a></span>
     </dt>
@@ -5339,7 +7349,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -5348,7 +7363,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~python">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessor">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor]</a></span>
     </dt>
@@ -5382,7 +7402,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5391,7 +7416,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~csharp">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessorparameter">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
@@ -5407,7 +7437,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5416,7 +7451,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~go">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessorparameter">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter</a></span>
     </dt>
@@ -5432,7 +7472,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5441,7 +7486,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~nodejs">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessorparameter">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter[]</a></span>
     </dt>
@@ -5457,7 +7507,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5466,7 +7521,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~python">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurationprocessingconfigurationprocessorparameter">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter]</a></span>
     </dt>
@@ -5500,7 +7560,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~csharp">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5509,7 +7574,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~csharp">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5525,7 +7595,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~go">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5534,7 +7609,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~go">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5550,7 +7630,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~nodejs">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5559,7 +7644,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~nodejs">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5575,7 +7665,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~python">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5584,7 +7679,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~python">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5618,7 +7718,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~csharp">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5627,7 +7732,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5636,7 +7746,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~csharp">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5645,7 +7760,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~csharp">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -5655,7 +7775,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -5664,7 +7789,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~csharp">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5673,7 +7803,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5683,7 +7818,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5699,7 +7839,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~go">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5708,7 +7853,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5717,7 +7867,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~go">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5726,7 +7881,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~go">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -5736,7 +7896,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -5745,7 +7910,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~go">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5754,7 +7924,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5764,7 +7939,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5780,7 +7960,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~nodejs">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5789,7 +7974,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5798,7 +7988,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~nodejs">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5807,7 +8002,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~nodejs">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -5817,7 +8017,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -5826,7 +8031,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~nodejs">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5835,7 +8045,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5845,7 +8060,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5861,7 +8081,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~python">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5870,7 +8095,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5879,7 +8109,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~python">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5888,7 +8123,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~python">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -5898,7 +8138,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamextendeds3configurations3backupconfigurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Extended<wbr>S3Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -5907,7 +8152,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~python">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5916,7 +8166,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>arn</span>
+        <span id="kms_key_arn~python">
+<span class="nx">
+kms_<wbr>key_<wbr>arn
+<a class="anchorjs-link " href="#kms_key_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5926,7 +8181,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5960,7 +8220,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -5969,7 +8234,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5978,7 +8248,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5994,7 +8269,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -6003,7 +8283,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6012,7 +8297,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6028,7 +8318,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -6037,7 +8332,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6046,7 +8346,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6062,7 +8367,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -6071,7 +8381,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6080,7 +8395,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6114,7 +8434,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Kinesis<wbr>Stream<wbr>Arn</span>
+        <span id="kinesisstreamarn~csharp">
+<span class="nx">
+Kinesis<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#kinesisstreamarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6123,7 +8448,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6139,7 +8469,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Kinesis<wbr>Stream<wbr>Arn</span>
+        <span id="kinesisstreamarn~go">
+<span class="nx">
+Kinesis<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#kinesisstreamarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6148,7 +8483,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6164,7 +8504,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>kinesis<wbr>Stream<wbr>Arn</span>
+        <span id="kinesisstreamarn~nodejs">
+<span class="nx">
+kinesis<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#kinesisstreamarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6173,7 +8518,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6189,7 +8539,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>kinesis<wbr>Stream<wbr>Arn</span>
+        <span id="kinesisstreamarn~python">
+<span class="nx">
+kinesis<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#kinesisstreamarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6198,7 +8553,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6232,7 +8592,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Jdbcurl</span>
+        <span id="clusterjdbcurl~csharp">
+<span class="nx">
+Cluster<wbr>Jdbcurl
+<a class="anchorjs-link " href="#clusterjdbcurl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6241,7 +8606,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Data<wbr>Table<wbr>Name</span>
+        <span id="datatablename~csharp">
+<span class="nx">
+Data<wbr>Table<wbr>Name
+<a class="anchorjs-link " href="#datatablename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6250,7 +8620,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Password</span>
+        <span id="password~csharp">
+<span class="nx">
+Password
+<a class="anchorjs-link " href="#password~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6259,7 +8634,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6268,7 +8648,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Username</span>
+        <span id="username~csharp">
+<span class="nx">
+Username
+<a class="anchorjs-link " href="#username~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6277,7 +8662,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -6286,7 +8676,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Copy<wbr>Options</span>
+        <span id="copyoptions~csharp">
+<span class="nx">
+Copy<wbr>Options
+<a class="anchorjs-link " href="#copyoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6295,7 +8690,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Table<wbr>Columns</span>
+        <span id="datatablecolumns~csharp">
+<span class="nx">
+Data<wbr>Table<wbr>Columns
+<a class="anchorjs-link " href="#datatablecolumns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6304,7 +8704,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~csharp">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -6313,7 +8718,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retry<wbr>Duration</span>
+        <span id="retryduration~csharp">
+<span class="nx">
+Retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -6322,7 +8732,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~csharp">
+<span class="nx">
+S3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -6331,7 +8746,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~csharp">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6347,7 +8767,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Jdbcurl</span>
+        <span id="clusterjdbcurl~go">
+<span class="nx">
+Cluster<wbr>Jdbcurl
+<a class="anchorjs-link " href="#clusterjdbcurl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6356,7 +8781,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Data<wbr>Table<wbr>Name</span>
+        <span id="datatablename~go">
+<span class="nx">
+Data<wbr>Table<wbr>Name
+<a class="anchorjs-link " href="#datatablename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6365,7 +8795,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Password</span>
+        <span id="password~go">
+<span class="nx">
+Password
+<a class="anchorjs-link " href="#password~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6374,7 +8809,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6383,7 +8823,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Username</span>
+        <span id="username~go">
+<span class="nx">
+Username
+<a class="anchorjs-link " href="#username~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6392,7 +8837,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -6401,7 +8851,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Copy<wbr>Options</span>
+        <span id="copyoptions~go">
+<span class="nx">
+Copy<wbr>Options
+<a class="anchorjs-link " href="#copyoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6410,7 +8865,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Table<wbr>Columns</span>
+        <span id="datatablecolumns~go">
+<span class="nx">
+Data<wbr>Table<wbr>Columns
+<a class="anchorjs-link " href="#datatablecolumns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6419,7 +8879,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~go">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -6428,7 +8893,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retry<wbr>Duration</span>
+        <span id="retryduration~go">
+<span class="nx">
+Retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -6437,7 +8907,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~go">
+<span class="nx">
+S3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration</a></span>
     </dt>
@@ -6446,7 +8921,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~go">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6462,7 +8942,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Jdbcurl</span>
+        <span id="clusterjdbcurl~nodejs">
+<span class="nx">
+cluster<wbr>Jdbcurl
+<a class="anchorjs-link " href="#clusterjdbcurl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6471,7 +8956,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>data<wbr>Table<wbr>Name</span>
+        <span id="datatablename~nodejs">
+<span class="nx">
+data<wbr>Table<wbr>Name
+<a class="anchorjs-link " href="#datatablename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6480,7 +8970,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>password</span>
+        <span id="password~nodejs">
+<span class="nx">
+password
+<a class="anchorjs-link " href="#password~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6489,7 +8984,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6498,7 +8998,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>username</span>
+        <span id="username~nodejs">
+<span class="nx">
+username
+<a class="anchorjs-link " href="#username~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6507,7 +9012,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -6516,7 +9026,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>copy<wbr>Options</span>
+        <span id="copyoptions~nodejs">
+<span class="nx">
+copy<wbr>Options
+<a class="anchorjs-link " href="#copyoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6525,7 +9040,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Table<wbr>Columns</span>
+        <span id="datatablecolumns~nodejs">
+<span class="nx">
+data<wbr>Table<wbr>Columns
+<a class="anchorjs-link " href="#datatablecolumns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6534,7 +9054,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~nodejs">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -6543,7 +9068,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>retry<wbr>Duration</span>
+        <span id="retryduration~nodejs">
+<span class="nx">
+retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -6552,7 +9082,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~nodejs">
+<span class="nx">
+s3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration</a></span>
     </dt>
@@ -6561,7 +9096,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~nodejs">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6577,7 +9117,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Jdbcurl</span>
+        <span id="clusterjdbcurl~python">
+<span class="nx">
+cluster<wbr>Jdbcurl
+<a class="anchorjs-link " href="#clusterjdbcurl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6586,7 +9131,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>data<wbr>Table<wbr>Name</span>
+        <span id="datatablename~python">
+<span class="nx">
+data<wbr>Table<wbr>Name
+<a class="anchorjs-link " href="#datatablename~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6595,7 +9145,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>password</span>
+        <span id="password~python">
+<span class="nx">
+password
+<a class="anchorjs-link " href="#password~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6604,7 +9159,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6613,7 +9173,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>username</span>
+        <span id="username~python">
+<span class="nx">
+username
+<a class="anchorjs-link " href="#username~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6622,7 +9187,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -6631,7 +9201,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>copy<wbr>Options</span>
+        <span id="copyoptions~python">
+<span class="nx">
+copy<wbr>Options
+<a class="anchorjs-link " href="#copyoptions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6640,7 +9215,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Table<wbr>Columns</span>
+        <span id="datatablecolumns~python">
+<span class="nx">
+data<wbr>Table<wbr>Columns
+<a class="anchorjs-link " href="#datatablecolumns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6649,7 +9229,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~python">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration]</a></span>
     </dt>
@@ -6658,7 +9243,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>retry<wbr>Duration</span>
+        <span id="retryduration~python">
+<span class="nx">
+retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -6667,7 +9257,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Configuration</span>
+        <span id="s3backupconfiguration~python">
+<span class="nx">
+s3Backup<wbr>Configuration
+<a class="anchorjs-link " href="#s3backupconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration]</a></span>
     </dt>
@@ -6676,7 +9271,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~python">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6710,7 +9310,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -6719,7 +9324,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6728,7 +9338,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6744,7 +9359,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -6753,7 +9373,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6762,7 +9387,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -6778,7 +9408,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -6787,7 +9422,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6796,7 +9436,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -6812,7 +9457,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -6821,7 +9471,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6830,7 +9485,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -6864,7 +9524,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -6873,7 +9538,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~csharp">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessor">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
@@ -6889,7 +9559,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -6898,7 +9573,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~go">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessor">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor</a></span>
     </dt>
@@ -6914,7 +9594,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -6923,7 +9608,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~nodejs">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessor">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor[]</a></span>
     </dt>
@@ -6939,7 +9629,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -6948,7 +9643,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~python">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessor">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor]</a></span>
     </dt>
@@ -6982,7 +9682,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -6991,7 +9696,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~csharp">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessorparameter">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
@@ -7007,7 +9717,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7016,7 +9731,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~go">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessorparameter">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter</a></span>
     </dt>
@@ -7032,7 +9752,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7041,7 +9766,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~nodejs">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessorparameter">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter[]</a></span>
     </dt>
@@ -7057,7 +9787,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7066,7 +9801,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~python">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurationprocessingconfigurationprocessorparameter">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter]</a></span>
     </dt>
@@ -7100,7 +9840,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~csharp">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7109,7 +9854,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~csharp">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7125,7 +9875,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~go">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7134,7 +9889,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~go">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7150,7 +9910,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~nodejs">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7159,7 +9924,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~nodejs">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7175,7 +9945,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~python">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7184,7 +9959,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~python">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7218,7 +9998,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~csharp">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7227,7 +10012,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7236,7 +10026,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~csharp">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -7245,7 +10040,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~csharp">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -7255,7 +10055,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -7264,7 +10069,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~csharp">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7273,7 +10083,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7283,7 +10098,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7299,7 +10119,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~go">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7308,7 +10133,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7317,7 +10147,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~go">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -7326,7 +10161,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~go">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -7336,7 +10176,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -7345,7 +10190,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~go">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7354,7 +10204,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7364,7 +10219,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7380,7 +10240,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~nodejs">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7389,7 +10254,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7398,7 +10268,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~nodejs">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -7407,7 +10282,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~nodejs">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -7417,7 +10297,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -7426,7 +10311,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~nodejs">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7435,7 +10325,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7445,7 +10340,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7461,7 +10361,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~python">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7470,7 +10375,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7479,7 +10389,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~python">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -7488,7 +10403,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~python">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -7498,7 +10418,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamredshiftconfigurations3backupconfigurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Redshift<wbr>Configuration<wbr>S3Backup<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -7507,7 +10432,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~python">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7516,7 +10446,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>arn</span>
+        <span id="kms_key_arn~python">
+<span class="nx">
+kms_<wbr>key_<wbr>arn
+<a class="anchorjs-link " href="#kms_key_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7526,7 +10461,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7560,7 +10500,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -7569,7 +10514,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7578,7 +10528,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7594,7 +10549,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -7603,7 +10563,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7612,7 +10577,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7628,7 +10598,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -7637,7 +10612,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7646,7 +10626,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7662,7 +10647,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -7671,7 +10661,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7680,7 +10675,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7714,7 +10714,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~csharp">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7723,7 +10728,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7732,7 +10742,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~csharp">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -7741,7 +10756,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~csharp">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -7751,7 +10771,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -7760,7 +10785,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~csharp">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7769,7 +10799,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7779,7 +10814,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~csharp">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -7795,7 +10835,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~go">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7804,7 +10849,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7813,7 +10863,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Interval</span>
+        <span id="bufferinterval~go">
+<span class="nx">
+Buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -7822,7 +10877,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Buffer<wbr>Size</span>
+        <span id="buffersize~go">
+<span class="nx">
+Buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -7832,7 +10892,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -7841,7 +10906,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Compression<wbr>Format</span>
+        <span id="compressionformat~go">
+<span class="nx">
+Compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7850,7 +10920,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7860,7 +10935,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix</span>
+        <span id="prefix~go">
+<span class="nx">
+Prefix
+<a class="anchorjs-link " href="#prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -7876,7 +10956,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~nodejs">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7885,7 +10970,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7894,7 +10984,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~nodejs">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -7903,7 +10998,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~nodejs">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -7913,7 +11013,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -7922,7 +11027,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~nodejs">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7931,7 +11041,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Arn</span>
+        <span id="kmskeyarn~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Arn
+<a class="anchorjs-link " href="#kmskeyarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7941,7 +11056,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~nodejs">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -7957,7 +11077,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~python">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7966,7 +11091,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -7975,7 +11105,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Interval</span>
+        <span id="bufferinterval~python">
+<span class="nx">
+buffer<wbr>Interval
+<a class="anchorjs-link " href="#bufferinterval~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -7984,7 +11119,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>buffer<wbr>Size</span>
+        <span id="buffersize~python">
+<span class="nx">
+buffer<wbr>Size
+<a class="anchorjs-link " href="#buffersize~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -7994,7 +11134,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreams3configurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>S3Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -8003,7 +11148,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>compression<wbr>Format</span>
+        <span id="compressionformat~python">
+<span class="nx">
+compression<wbr>Format
+<a class="anchorjs-link " href="#compressionformat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8012,7 +11162,12 @@ We recommend setting SizeInMBs to a value greater than the amount of data you ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>arn</span>
+        <span id="kms_key_arn~python">
+<span class="nx">
+kms_<wbr>key_<wbr>arn
+<a class="anchorjs-link " href="#kms_key_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8022,7 +11177,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix</span>
+        <span id="prefix~python">
+<span class="nx">
+prefix
+<a class="anchorjs-link " href="#prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8056,7 +11216,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -8065,7 +11230,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8074,7 +11244,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8090,7 +11265,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -8099,7 +11279,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8108,7 +11293,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8124,7 +11314,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -8133,7 +11328,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8142,7 +11342,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8158,7 +11363,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -8167,7 +11377,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8176,7 +11391,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8210,7 +11430,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -8226,7 +11451,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -8242,7 +11472,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -8258,7 +11493,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -8292,7 +11532,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Hec<wbr>Endpoint</span>
+        <span id="hecendpoint~csharp">
+<span class="nx">
+Hec<wbr>Endpoint
+<a class="anchorjs-link " href="#hecendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8301,7 +11546,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Hec<wbr>Token</span>
+        <span id="hectoken~csharp">
+<span class="nx">
+Hec<wbr>Token
+<a class="anchorjs-link " href="#hectoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8310,7 +11560,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -8319,7 +11574,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hec<wbr>Acknowledgment<wbr>Timeout</span>
+        <span id="hecacknowledgmenttimeout~csharp">
+<span class="nx">
+Hec<wbr>Acknowledgment<wbr>Timeout
+<a class="anchorjs-link " href="#hecacknowledgmenttimeout~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -8328,7 +11588,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hec<wbr>Endpoint<wbr>Type</span>
+        <span id="hecendpointtype~csharp">
+<span class="nx">
+Hec<wbr>Endpoint<wbr>Type
+<a class="anchorjs-link " href="#hecendpointtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8337,7 +11602,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~csharp">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -8346,7 +11616,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retry<wbr>Duration</span>
+        <span id="retryduration~csharp">
+<span class="nx">
+Retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -8355,7 +11630,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~csharp">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8371,7 +11651,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Hec<wbr>Endpoint</span>
+        <span id="hecendpoint~go">
+<span class="nx">
+Hec<wbr>Endpoint
+<a class="anchorjs-link " href="#hecendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8380,7 +11665,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Hec<wbr>Token</span>
+        <span id="hectoken~go">
+<span class="nx">
+Hec<wbr>Token
+<a class="anchorjs-link " href="#hectoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8389,7 +11679,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -8398,7 +11693,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hec<wbr>Acknowledgment<wbr>Timeout</span>
+        <span id="hecacknowledgmenttimeout~go">
+<span class="nx">
+Hec<wbr>Acknowledgment<wbr>Timeout
+<a class="anchorjs-link " href="#hecacknowledgmenttimeout~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -8407,7 +11707,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Hec<wbr>Endpoint<wbr>Type</span>
+        <span id="hecendpointtype~go">
+<span class="nx">
+Hec<wbr>Endpoint<wbr>Type
+<a class="anchorjs-link " href="#hecendpointtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8416,7 +11721,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~go">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -8425,7 +11735,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retry<wbr>Duration</span>
+        <span id="retryduration~go">
+<span class="nx">
+Retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -8434,7 +11749,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Backup<wbr>Mode</span>
+        <span id="s3backupmode~go">
+<span class="nx">
+S3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8450,7 +11770,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>hec<wbr>Endpoint</span>
+        <span id="hecendpoint~nodejs">
+<span class="nx">
+hec<wbr>Endpoint
+<a class="anchorjs-link " href="#hecendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8459,7 +11784,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>hec<wbr>Token</span>
+        <span id="hectoken~nodejs">
+<span class="nx">
+hec<wbr>Token
+<a class="anchorjs-link " href="#hectoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8468,7 +11798,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationcloudwatchloggingoptions">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -8477,7 +11812,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hec<wbr>Acknowledgment<wbr>Timeout</span>
+        <span id="hecacknowledgmenttimeout~nodejs">
+<span class="nx">
+hec<wbr>Acknowledgment<wbr>Timeout
+<a class="anchorjs-link " href="#hecacknowledgmenttimeout~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -8486,7 +11826,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hec<wbr>Endpoint<wbr>Type</span>
+        <span id="hecendpointtype~nodejs">
+<span class="nx">
+hec<wbr>Endpoint<wbr>Type
+<a class="anchorjs-link " href="#hecendpointtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8495,7 +11840,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~nodejs">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfiguration">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -8504,7 +11854,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>retry<wbr>Duration</span>
+        <span id="retryduration~nodejs">
+<span class="nx">
+retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -8513,7 +11868,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~nodejs">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8529,7 +11889,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>hec<wbr>Endpoint</span>
+        <span id="hecendpoint~python">
+<span class="nx">
+hec<wbr>Endpoint
+<a class="anchorjs-link " href="#hecendpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8538,7 +11903,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>hec<wbr>Token</span>
+        <span id="hectoken~python">
+<span class="nx">
+hec<wbr>Token
+<a class="anchorjs-link " href="#hectoken~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8547,7 +11917,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationcloudwatchloggingoptions">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -8556,7 +11931,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hec<wbr>Acknowledgment<wbr>Timeout</span>
+        <span id="hecacknowledgmenttimeout~python">
+<span class="nx">
+hec<wbr>Acknowledgment<wbr>Timeout
+<a class="anchorjs-link " href="#hecacknowledgmenttimeout~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -8565,7 +11945,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>hec<wbr>Endpoint<wbr>Type</span>
+        <span id="hecendpointtype~python">
+<span class="nx">
+hec<wbr>Endpoint<wbr>Type
+<a class="anchorjs-link " href="#hecendpointtype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8574,7 +11959,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~python">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfiguration">Dict[Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration]</a></span>
     </dt>
@@ -8583,7 +11973,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>retry<wbr>Duration</span>
+        <span id="retryduration~python">
+<span class="nx">
+retry<wbr>Duration
+<a class="anchorjs-link " href="#retryduration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -8592,7 +11987,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Backup<wbr>Mode</span>
+        <span id="s3backupmode~python">
+<span class="nx">
+s3Backup<wbr>Mode
+<a class="anchorjs-link " href="#s3backupmode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8626,7 +12026,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -8635,7 +12040,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~csharp">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8644,7 +12054,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8660,7 +12075,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -8669,7 +12089,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~go">
+<span class="nx">
+Log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8678,7 +12103,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8694,7 +12124,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -8703,7 +12138,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Group<wbr>Name</span>
+        <span id="loggroupname~nodejs">
+<span class="nx">
+log<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#loggroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8712,7 +12152,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8728,7 +12173,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -8737,7 +12187,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log<wbr>Stream<wbr>Name</span>
+        <span id="logstreamname~python">
+<span class="nx">
+log<wbr>Stream<wbr>Name
+<a class="anchorjs-link " href="#logstreamname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8746,7 +12201,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>log_<wbr>group_<wbr>name</span>
+        <span id="log_group_name~python">
+<span class="nx">
+log_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#log_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8780,7 +12240,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~csharp">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -8789,7 +12254,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~csharp">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessor">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Args&gt;</a></span>
     </dt>
@@ -8805,7 +12275,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enabled</span>
+        <span id="enabled~go">
+<span class="nx">
+Enabled
+<a class="anchorjs-link " href="#enabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -8814,7 +12289,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processors</span>
+        <span id="processors~go">
+<span class="nx">
+Processors
+<a class="anchorjs-link " href="#processors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessor">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor</a></span>
     </dt>
@@ -8830,7 +12310,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~nodejs">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -8839,7 +12324,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~nodejs">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessor">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor[]</a></span>
     </dt>
@@ -8855,7 +12345,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enabled</span>
+        <span id="enabled~python">
+<span class="nx">
+enabled
+<a class="anchorjs-link " href="#enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -8864,7 +12359,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processors</span>
+        <span id="processors~python">
+<span class="nx">
+processors
+<a class="anchorjs-link " href="#processors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessor">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor]</a></span>
     </dt>
@@ -8898,7 +12398,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -8907,7 +12412,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~csharp">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessorparameter">List&lt;Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter<wbr>Args&gt;</a></span>
     </dt>
@@ -8923,7 +12433,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -8932,7 +12447,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parameters</span>
+        <span id="parameters~go">
+<span class="nx">
+Parameters
+<a class="anchorjs-link " href="#parameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessorparameter">[]Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter</a></span>
     </dt>
@@ -8948,7 +12468,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -8957,7 +12482,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~nodejs">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessorparameter">Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter[]</a></span>
     </dt>
@@ -8973,7 +12503,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -8982,7 +12517,12 @@ be used.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parameters</span>
+        <span id="parameters~python">
+<span class="nx">
+parameters
+<a class="anchorjs-link " href="#parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#firehosedeliverystreamsplunkconfigurationprocessingconfigurationprocessorparameter">List[Firehose<wbr>Delivery<wbr>Stream<wbr>Splunk<wbr>Configuration<wbr>Processing<wbr>Configuration<wbr>Processor<wbr>Parameter]</a></span>
     </dt>
@@ -9016,7 +12556,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~csharp">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -9025,7 +12570,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~csharp">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -9041,7 +12591,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Name</span>
+        <span id="parametername~go">
+<span class="nx">
+Parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -9050,7 +12605,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>Parameter<wbr>Value</span>
+        <span id="parametervalue~go">
+<span class="nx">
+Parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -9066,7 +12626,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~nodejs">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -9075,7 +12640,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~nodejs">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -9091,7 +12661,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Name</span>
+        <span id="parametername~python">
+<span class="nx">
+parameter<wbr>Name
+<a class="anchorjs-link " href="#parametername~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -9100,7 +12675,12 @@ be used.
 
     <dt class="property-required"
             title="Required">
-        <span>parameter<wbr>Value</span>
+        <span id="parametervalue~python">
+<span class="nx">
+parameter<wbr>Value
+<a class="anchorjs-link " href="#parametervalue~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

@@ -89,7 +89,7 @@ const fromEurope = new aws.ec2.SecurityGroup("fromEurope", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getIpRanges<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetIpRangesArgs">GetIpRangesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetIpRangesResult">GetIpRangesResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getIpRanges<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetIpRangesArgs">GetIpRangesArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetIpRangesResult">GetIpRangesResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -99,13 +99,14 @@ const fromEurope = new aws.ec2.SecurityGroup("fromEurope", {
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIpRanges<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetIpRangesArgs">GetIpRangesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetIpRangesResult">GetIpRangesResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIpRanges<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetIpRangesArgs">GetIpRangesArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetIpRangesResult">GetIpRangesResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetIpRanges </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetIpRangesResult.html">GetIpRangesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetIpRangesArgs.html">GetIpRangesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetIpRangesResult.html">GetIpRangesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetIpRangesArgs.html">GetIpRangesArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -120,7 +121,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Services</span>
+        <span id="services~csharp">
+<span class="nx">
+Services
+<a class="anchorjs-link " href="#services~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -133,7 +139,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regions</span>
+        <span id="regions~csharp">
+<span class="nx">
+Regions
+<a class="anchorjs-link " href="#regions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -144,7 +155,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Url</span>
+        <span id="url~csharp">
+<span class="nx">
+Url
+<a class="anchorjs-link " href="#url~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -160,7 +176,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-required"
             title="Required">
-        <span>Services</span>
+        <span id="services~go">
+<span class="nx">
+Services
+<a class="anchorjs-link " href="#services~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -173,7 +194,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regions</span>
+        <span id="regions~go">
+<span class="nx">
+Regions
+<a class="anchorjs-link " href="#regions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -184,7 +210,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>Url</span>
+        <span id="url~go">
+<span class="nx">
+Url
+<a class="anchorjs-link " href="#url~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -200,7 +231,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-required"
             title="Required">
-        <span>services</span>
+        <span id="services~nodejs">
+<span class="nx">
+services
+<a class="anchorjs-link " href="#services~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -213,7 +249,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>regions</span>
+        <span id="regions~nodejs">
+<span class="nx">
+regions
+<a class="anchorjs-link " href="#regions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -224,7 +265,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>url</span>
+        <span id="url~nodejs">
+<span class="nx">
+url
+<a class="anchorjs-link " href="#url~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -240,7 +286,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-required"
             title="Required">
-        <span>services</span>
+        <span id="services~python">
+<span class="nx">
+services
+<a class="anchorjs-link " href="#services~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -253,7 +304,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>regions</span>
+        <span id="regions~python">
+<span class="nx">
+regions
+<a class="anchorjs-link " href="#regions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -264,7 +320,12 @@ omitted). Valid items are `global` (for `cloudfront`) as well as all AWS regions
 
     <dt class="property-optional"
             title="Optional">
-        <span>url</span>
+        <span id="url~python">
+<span class="nx">
+url
+<a class="anchorjs-link " href="#url~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -293,7 +354,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Blocks</span>
+        <span id="cidrblocks~csharp">
+<span class="nx">
+Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#cidrblocks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -302,7 +368,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Create<wbr>Date</span>
+        <span id="createdate~csharp">
+<span class="nx">
+Create<wbr>Date
+<a class="anchorjs-link " href="#createdate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -311,7 +382,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -320,7 +396,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ipv6Cidr<wbr>Blocks</span>
+        <span id="ipv6cidrblocks~csharp">
+<span class="nx">
+Ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#ipv6cidrblocks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -329,7 +410,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Services</span>
+        <span id="services~csharp">
+<span class="nx">
+Services
+<a class="anchorjs-link " href="#services~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -337,7 +423,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Sync<wbr>Token</span>
+        <span id="synctoken~csharp">
+<span class="nx">
+Sync<wbr>Token
+<a class="anchorjs-link " href="#synctoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -347,7 +438,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Regions</span>
+        <span id="regions~csharp">
+<span class="nx">
+Regions
+<a class="anchorjs-link " href="#regions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -355,7 +451,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Url</span>
+        <span id="url~csharp">
+<span class="nx">
+Url
+<a class="anchorjs-link " href="#url~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -370,7 +471,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Blocks</span>
+        <span id="cidrblocks~go">
+<span class="nx">
+Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#cidrblocks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -379,7 +485,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Create<wbr>Date</span>
+        <span id="createdate~go">
+<span class="nx">
+Create<wbr>Date
+<a class="anchorjs-link " href="#createdate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -388,7 +499,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -397,7 +513,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Ipv6Cidr<wbr>Blocks</span>
+        <span id="ipv6cidrblocks~go">
+<span class="nx">
+Ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#ipv6cidrblocks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -406,7 +527,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Services</span>
+        <span id="services~go">
+<span class="nx">
+Services
+<a class="anchorjs-link " href="#services~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -414,7 +540,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Sync<wbr>Token</span>
+        <span id="synctoken~go">
+<span class="nx">
+Sync<wbr>Token
+<a class="anchorjs-link " href="#synctoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -424,7 +555,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Regions</span>
+        <span id="regions~go">
+<span class="nx">
+Regions
+<a class="anchorjs-link " href="#regions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -432,7 +568,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Url</span>
+        <span id="url~go">
+<span class="nx">
+Url
+<a class="anchorjs-link " href="#url~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -447,7 +588,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>cidr<wbr>Blocks</span>
+        <span id="cidrblocks~nodejs">
+<span class="nx">
+cidr<wbr>Blocks
+<a class="anchorjs-link " href="#cidrblocks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -456,7 +602,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>create<wbr>Date</span>
+        <span id="createdate~nodejs">
+<span class="nx">
+create<wbr>Date
+<a class="anchorjs-link " href="#createdate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -465,7 +616,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -474,7 +630,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>ipv6Cidr<wbr>Blocks</span>
+        <span id="ipv6cidrblocks~nodejs">
+<span class="nx">
+ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#ipv6cidrblocks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -483,7 +644,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>services</span>
+        <span id="services~nodejs">
+<span class="nx">
+services
+<a class="anchorjs-link " href="#services~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -491,7 +657,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>sync<wbr>Token</span>
+        <span id="synctoken~nodejs">
+<span class="nx">
+sync<wbr>Token
+<a class="anchorjs-link " href="#synctoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -501,7 +672,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>regions</span>
+        <span id="regions~nodejs">
+<span class="nx">
+regions
+<a class="anchorjs-link " href="#regions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -509,7 +685,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>url</span>
+        <span id="url~nodejs">
+<span class="nx">
+url
+<a class="anchorjs-link " href="#url~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -524,7 +705,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>cidr_<wbr>blocks</span>
+        <span id="cidr_blocks~python">
+<span class="nx">
+cidr_<wbr>blocks
+<a class="anchorjs-link " href="#cidr_blocks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -533,7 +719,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>create_<wbr>date</span>
+        <span id="create_date~python">
+<span class="nx">
+create_<wbr>date
+<a class="anchorjs-link " href="#create_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -542,7 +733,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -551,7 +747,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>ipv6_<wbr>cidr_<wbr>blocks</span>
+        <span id="ipv6_cidr_blocks~python">
+<span class="nx">
+ipv6_<wbr>cidr_<wbr>blocks
+<a class="anchorjs-link " href="#ipv6_cidr_blocks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -560,7 +761,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>services</span>
+        <span id="services~python">
+<span class="nx">
+services
+<a class="anchorjs-link " href="#services~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -568,7 +774,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>sync_<wbr>token</span>
+        <span id="sync_token~python">
+<span class="nx">
+sync_<wbr>token
+<a class="anchorjs-link " href="#sync_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -578,7 +789,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>regions</span>
+        <span id="regions~python">
+<span class="nx">
+regions
+<a class="anchorjs-link " href="#regions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -586,7 +802,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>url</span>
+        <span id="url~python">
+<span class="nx">
+url
+<a class="anchorjs-link " href="#url~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

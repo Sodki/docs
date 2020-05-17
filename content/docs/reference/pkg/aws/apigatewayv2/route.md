@@ -59,19 +59,19 @@ const example = new aws.apigatewayv2.Route("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Route">Route</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Route">Route</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Route</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_id=None<span class="p">, </span>api_key_required=None<span class="p">, </span>authorization_scopes=None<span class="p">, </span>authorization_type=None<span class="p">, </span>authorizer_id=None<span class="p">, </span>model_selection_expression=None<span class="p">, </span>operation_name=None<span class="p">, </span>request_models=None<span class="p">, </span>route_key=None<span class="p">, </span>route_response_selection_expression=None<span class="p">, </span>target=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigatewayv2/#Route">Route</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_id=None<span class="p">, </span>api_key_required=None<span class="p">, </span>authorization_scopes=None<span class="p">, </span>authorization_type=None<span class="p">, </span>authorizer_id=None<span class="p">, </span>model_selection_expression=None<span class="p">, </span>operation_name=None<span class="p">, </span>request_models=None<span class="p">, </span>route_key=None<span class="p">, </span>route_response_selection_expression=None<span class="p">, </span>target=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRoute<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Route">NewRoute</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Route.html">Route</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.RouteArgs.html">RouteArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Route.html">Route</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.RouteArgs.html">RouteArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -237,7 +237,12 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-required"
             title="Required">
-        <span>Api<wbr>Id</span>
+        <span id="apiid~csharp">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#apiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -246,7 +251,12 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-required"
             title="Required">
-        <span>Route<wbr>Key</span>
+        <span id="routekey~csharp">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#routekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -255,7 +265,12 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="apikeyrequired~csharp">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#apikeyrequired~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -264,7 +279,12 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="authorizationscopes~csharp">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#authorizationscopes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -273,7 +293,12 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Type</span>
+        <span id="authorizationtype~csharp">
+<span class="nx">
+Authorization<wbr>Type
+<a class="anchorjs-link " href="#authorizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -285,7 +310,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="authorizerid~csharp">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#authorizerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -294,7 +324,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Model<wbr>Selection<wbr>Expression</span>
+        <span id="modelselectionexpression~csharp">
+<span class="nx">
+Model<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#modelselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -303,7 +338,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Operation<wbr>Name</span>
+        <span id="operationname~csharp">
+<span class="nx">
+Operation<wbr>Name
+<a class="anchorjs-link " href="#operationname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -312,7 +352,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="requestmodels~csharp">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#requestmodels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -321,7 +366,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="routeresponseselectionexpression~csharp">
+<span class="nx">
+Route<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#routeresponseselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -330,7 +380,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -346,7 +401,12 @@ Defaults to `NONE`.
 
     <dt class="property-required"
             title="Required">
-        <span>Api<wbr>Id</span>
+        <span id="apiid~go">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#apiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -355,7 +415,12 @@ Defaults to `NONE`.
 
     <dt class="property-required"
             title="Required">
-        <span>Route<wbr>Key</span>
+        <span id="routekey~go">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#routekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -364,7 +429,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="apikeyrequired~go">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#apikeyrequired~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -373,7 +443,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="authorizationscopes~go">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#authorizationscopes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -382,7 +457,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Type</span>
+        <span id="authorizationtype~go">
+<span class="nx">
+Authorization<wbr>Type
+<a class="anchorjs-link " href="#authorizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -394,7 +474,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="authorizerid~go">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#authorizerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -403,7 +488,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Model<wbr>Selection<wbr>Expression</span>
+        <span id="modelselectionexpression~go">
+<span class="nx">
+Model<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#modelselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -412,7 +502,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Operation<wbr>Name</span>
+        <span id="operationname~go">
+<span class="nx">
+Operation<wbr>Name
+<a class="anchorjs-link " href="#operationname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -421,7 +516,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="requestmodels~go">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#requestmodels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -430,7 +530,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="routeresponseselectionexpression~go">
+<span class="nx">
+Route<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#routeresponseselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -439,7 +544,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -455,7 +565,12 @@ Defaults to `NONE`.
 
     <dt class="property-required"
             title="Required">
-        <span>api<wbr>Id</span>
+        <span id="apiid~nodejs">
+<span class="nx">
+api<wbr>Id
+<a class="anchorjs-link " href="#apiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -464,7 +579,12 @@ Defaults to `NONE`.
 
     <dt class="property-required"
             title="Required">
-        <span>route<wbr>Key</span>
+        <span id="routekey~nodejs">
+<span class="nx">
+route<wbr>Key
+<a class="anchorjs-link " href="#routekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -473,7 +593,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Key<wbr>Required</span>
+        <span id="apikeyrequired~nodejs">
+<span class="nx">
+api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#apikeyrequired~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -482,7 +607,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization<wbr>Scopes</span>
+        <span id="authorizationscopes~nodejs">
+<span class="nx">
+authorization<wbr>Scopes
+<a class="anchorjs-link " href="#authorizationscopes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -491,7 +621,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization<wbr>Type</span>
+        <span id="authorizationtype~nodejs">
+<span class="nx">
+authorization<wbr>Type
+<a class="anchorjs-link " href="#authorizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -503,7 +638,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer<wbr>Id</span>
+        <span id="authorizerid~nodejs">
+<span class="nx">
+authorizer<wbr>Id
+<a class="anchorjs-link " href="#authorizerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -512,7 +652,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>model<wbr>Selection<wbr>Expression</span>
+        <span id="modelselectionexpression~nodejs">
+<span class="nx">
+model<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#modelselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -521,7 +666,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>operation<wbr>Name</span>
+        <span id="operationname~nodejs">
+<span class="nx">
+operation<wbr>Name
+<a class="anchorjs-link " href="#operationname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -530,7 +680,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Models</span>
+        <span id="requestmodels~nodejs">
+<span class="nx">
+request<wbr>Models
+<a class="anchorjs-link " href="#requestmodels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -539,7 +694,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="routeresponseselectionexpression~nodejs">
+<span class="nx">
+route<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#routeresponseselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -548,7 +708,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -564,7 +729,12 @@ Defaults to `NONE`.
 
     <dt class="property-required"
             title="Required">
-        <span>api_<wbr>id</span>
+        <span id="api_id~python">
+<span class="nx">
+api_<wbr>id
+<a class="anchorjs-link " href="#api_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -573,7 +743,12 @@ Defaults to `NONE`.
 
     <dt class="property-required"
             title="Required">
-        <span>route_<wbr>key</span>
+        <span id="route_key~python">
+<span class="nx">
+route_<wbr>key
+<a class="anchorjs-link " href="#route_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -582,7 +757,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>key_<wbr>required</span>
+        <span id="api_key_required~python">
+<span class="nx">
+api_<wbr>key_<wbr>required
+<a class="anchorjs-link " href="#api_key_required~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -591,7 +771,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization_<wbr>scopes</span>
+        <span id="authorization_scopes~python">
+<span class="nx">
+authorization_<wbr>scopes
+<a class="anchorjs-link " href="#authorization_scopes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -600,7 +785,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization_<wbr>type</span>
+        <span id="authorization_type~python">
+<span class="nx">
+authorization_<wbr>type
+<a class="anchorjs-link " href="#authorization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -612,7 +802,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer_<wbr>id</span>
+        <span id="authorizer_id~python">
+<span class="nx">
+authorizer_<wbr>id
+<a class="anchorjs-link " href="#authorizer_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -621,7 +816,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>model_<wbr>selection_<wbr>expression</span>
+        <span id="model_selection_expression~python">
+<span class="nx">
+model_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#model_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -630,7 +830,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>operation_<wbr>name</span>
+        <span id="operation_name~python">
+<span class="nx">
+operation_<wbr>name
+<a class="anchorjs-link " href="#operation_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -639,7 +844,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>models</span>
+        <span id="request_models~python">
+<span class="nx">
+request_<wbr>models
+<a class="anchorjs-link " href="#request_models~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -648,7 +858,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>response_<wbr>selection_<wbr>expression</span>
+        <span id="route_response_selection_expression~python">
+<span class="nx">
+route_<wbr>response_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#route_response_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -657,7 +872,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -684,7 +904,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -699,7 +924,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -714,7 +944,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -729,7 +964,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -750,7 +990,7 @@ Get an existing Route resource's state with the given name, ID, and optional ext
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Route">Route</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Route">Route</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -758,11 +998,11 @@ Get an existing Route resource's state with the given name, ID, and optional ext
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRoute<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRoute<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Route.html">Route</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.RouteState.html">RouteState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Route.html">Route</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.RouteState.html">RouteState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -870,7 +1110,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Id</span>
+        <span id="state_apiid~csharp">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -879,7 +1124,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="state_apikeyrequired~csharp">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#state_apikeyrequired~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -888,7 +1138,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="state_authorizationscopes~csharp">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#state_authorizationscopes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -897,7 +1152,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Type</span>
+        <span id="state_authorizationtype~csharp">
+<span class="nx">
+Authorization<wbr>Type
+<a class="anchorjs-link " href="#state_authorizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -909,7 +1169,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="state_authorizerid~csharp">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#state_authorizerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -918,7 +1183,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Model<wbr>Selection<wbr>Expression</span>
+        <span id="state_modelselectionexpression~csharp">
+<span class="nx">
+Model<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_modelselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -927,7 +1197,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Operation<wbr>Name</span>
+        <span id="state_operationname~csharp">
+<span class="nx">
+Operation<wbr>Name
+<a class="anchorjs-link " href="#state_operationname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -936,7 +1211,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="state_requestmodels~csharp">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#state_requestmodels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -945,7 +1225,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Key</span>
+        <span id="state_routekey~csharp">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#state_routekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -954,7 +1239,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="state_routeresponseselectionexpression~csharp">
+<span class="nx">
+Route<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_routeresponseselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -963,7 +1253,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="state_target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#state_target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -979,7 +1274,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Id</span>
+        <span id="state_apiid~go">
+<span class="nx">
+Api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -988,7 +1288,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="state_apikeyrequired~go">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#state_apikeyrequired~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -997,7 +1302,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="state_authorizationscopes~go">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#state_authorizationscopes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1006,7 +1316,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Type</span>
+        <span id="state_authorizationtype~go">
+<span class="nx">
+Authorization<wbr>Type
+<a class="anchorjs-link " href="#state_authorizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1018,7 +1333,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="state_authorizerid~go">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#state_authorizerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1027,7 +1347,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Model<wbr>Selection<wbr>Expression</span>
+        <span id="state_modelselectionexpression~go">
+<span class="nx">
+Model<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_modelselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1036,7 +1361,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Operation<wbr>Name</span>
+        <span id="state_operationname~go">
+<span class="nx">
+Operation<wbr>Name
+<a class="anchorjs-link " href="#state_operationname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1045,7 +1375,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="state_requestmodels~go">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#state_requestmodels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1054,7 +1389,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Key</span>
+        <span id="state_routekey~go">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#state_routekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1063,7 +1403,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="state_routeresponseselectionexpression~go">
+<span class="nx">
+Route<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_routeresponseselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1072,7 +1417,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="state_target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#state_target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1088,7 +1438,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Id</span>
+        <span id="state_apiid~nodejs">
+<span class="nx">
+api<wbr>Id
+<a class="anchorjs-link " href="#state_apiid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1097,7 +1452,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Key<wbr>Required</span>
+        <span id="state_apikeyrequired~nodejs">
+<span class="nx">
+api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#state_apikeyrequired~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1106,7 +1466,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization<wbr>Scopes</span>
+        <span id="state_authorizationscopes~nodejs">
+<span class="nx">
+authorization<wbr>Scopes
+<a class="anchorjs-link " href="#state_authorizationscopes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1115,7 +1480,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization<wbr>Type</span>
+        <span id="state_authorizationtype~nodejs">
+<span class="nx">
+authorization<wbr>Type
+<a class="anchorjs-link " href="#state_authorizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1127,7 +1497,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer<wbr>Id</span>
+        <span id="state_authorizerid~nodejs">
+<span class="nx">
+authorizer<wbr>Id
+<a class="anchorjs-link " href="#state_authorizerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1136,7 +1511,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>model<wbr>Selection<wbr>Expression</span>
+        <span id="state_modelselectionexpression~nodejs">
+<span class="nx">
+model<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_modelselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1145,7 +1525,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>operation<wbr>Name</span>
+        <span id="state_operationname~nodejs">
+<span class="nx">
+operation<wbr>Name
+<a class="anchorjs-link " href="#state_operationname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1154,7 +1539,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Models</span>
+        <span id="state_requestmodels~nodejs">
+<span class="nx">
+request<wbr>Models
+<a class="anchorjs-link " href="#state_requestmodels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1163,7 +1553,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Key</span>
+        <span id="state_routekey~nodejs">
+<span class="nx">
+route<wbr>Key
+<a class="anchorjs-link " href="#state_routekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1172,7 +1567,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Response<wbr>Selection<wbr>Expression</span>
+        <span id="state_routeresponseselectionexpression~nodejs">
+<span class="nx">
+route<wbr>Response<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_routeresponseselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1181,7 +1581,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="state_target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#state_target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1197,7 +1602,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>id</span>
+        <span id="state_api_id~python">
+<span class="nx">
+api_<wbr>id
+<a class="anchorjs-link " href="#state_api_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1206,7 +1616,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>key_<wbr>required</span>
+        <span id="state_api_key_required~python">
+<span class="nx">
+api_<wbr>key_<wbr>required
+<a class="anchorjs-link " href="#state_api_key_required~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1215,7 +1630,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization_<wbr>scopes</span>
+        <span id="state_authorization_scopes~python">
+<span class="nx">
+authorization_<wbr>scopes
+<a class="anchorjs-link " href="#state_authorization_scopes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1224,7 +1644,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization_<wbr>type</span>
+        <span id="state_authorization_type~python">
+<span class="nx">
+authorization_<wbr>type
+<a class="anchorjs-link " href="#state_authorization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1236,7 +1661,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer_<wbr>id</span>
+        <span id="state_authorizer_id~python">
+<span class="nx">
+authorizer_<wbr>id
+<a class="anchorjs-link " href="#state_authorizer_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1245,7 +1675,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>model_<wbr>selection_<wbr>expression</span>
+        <span id="state_model_selection_expression~python">
+<span class="nx">
+model_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#state_model_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1254,7 +1689,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>operation_<wbr>name</span>
+        <span id="state_operation_name~python">
+<span class="nx">
+operation_<wbr>name
+<a class="anchorjs-link " href="#state_operation_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1263,7 +1703,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>models</span>
+        <span id="state_request_models~python">
+<span class="nx">
+request_<wbr>models
+<a class="anchorjs-link " href="#state_request_models~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1272,7 +1717,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>key</span>
+        <span id="state_route_key~python">
+<span class="nx">
+route_<wbr>key
+<a class="anchorjs-link " href="#state_route_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1281,7 +1731,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>response_<wbr>selection_<wbr>expression</span>
+        <span id="state_route_response_selection_expression~python">
+<span class="nx">
+route_<wbr>response_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#state_route_response_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1290,7 +1745,12 @@ Defaults to `NONE`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="state_target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#state_target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

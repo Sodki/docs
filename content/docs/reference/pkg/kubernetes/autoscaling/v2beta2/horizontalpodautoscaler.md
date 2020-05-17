@@ -18,19 +18,19 @@ HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, wh
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/autoscaling/v2beta2/#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/types/input/#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/autoscaling/v2beta2/#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/types/input/#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">HorizontalPodAutoscaler</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>metadata=None<span class="p">, </span>spec=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_kubernetes/autoscaling/v2beta2/#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>metadata=None<span class="p">, </span>spec=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewHorizontalPodAutoscaler<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#HorizontalPodAutoscalerArgs">HorizontalPodAutoscalerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#HorizontalPodAutoscaler">NewHorizontalPodAutoscaler</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#HorizontalPodAutoscalerArgs">HorizontalPodAutoscalerArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#HorizontalPodAutoscaler">HorizontalPodAutoscaler</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Kubernetes/Pulumi.Kubernetes.Autoscaling.V2Beta2.HorizontalPodAutoscaler.html">HorizontalPodAutoscaler</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Kubernetes/Pulumi.Kubernetes.Types.Inputs.Autoscaling.V2Beta2.HorizontalPodAutoscalerArgs.html">HorizontalPodAutoscalerArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Kubernetes/Pulumi.Kubernetes.Autoscaling.V2Beta2.HorizontalPodAutoscaler.html">HorizontalPodAutoscaler</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Kubernetes/Pulumi.Kubernetes.Types.Inputs.Autoscaling.V2Beta2.HorizontalPodAutoscalerArgs.html">HorizontalPodAutoscalerArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -196,15 +196,25 @@ The HorizontalPodAutoscaler resource accepts the following [input]({{< relref "/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata</span>
+        <span id="metadata~csharp">
+<span class="nx">
+Metadata
+<a class="anchorjs-link " href="#metadata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#objectmeta">Object<wbr>Meta<wbr>Args</a></span>
+        <span class="property-type"><a href="#objectmeta">Pulumi.<wbr>Kubernetes.<wbr>Meta.<wbr>V1.<wbr>Inputs.<wbr>Object<wbr>Meta<wbr>Args</a></span>
     </dt>
     <dd>{{% md %}}metadata is the standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spec</span>
+        <span id="spec~csharp">
+<span class="nx">
+Spec
+<a class="anchorjs-link " href="#spec~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerspec">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Spec<wbr>Args</a></span>
     </dt>
@@ -219,7 +229,12 @@ The HorizontalPodAutoscaler resource accepts the following [input]({{< relref "/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metadata</span>
+        <span id="metadata~go">
+<span class="nx">
+Metadata
+<a class="anchorjs-link " href="#metadata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmeta">Object<wbr>Meta</a></span>
     </dt>
@@ -227,7 +242,12 @@ The HorizontalPodAutoscaler resource accepts the following [input]({{< relref "/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Spec</span>
+        <span id="spec~go">
+<span class="nx">
+Spec
+<a class="anchorjs-link " href="#spec~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerspec">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Spec</a></span>
     </dt>
@@ -242,15 +262,25 @@ The HorizontalPodAutoscaler resource accepts the following [input]({{< relref "/
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata</span>
+        <span id="metadata~nodejs">
+<span class="nx">
+metadata
+<a class="anchorjs-link " href="#metadata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#objectmeta">Object<wbr>Meta</a></span>
+        <span class="property-type"><a href="#objectmeta">meta.v1.<wbr>Object<wbr>Meta</a></span>
     </dt>
     <dd>{{% md %}}metadata is the standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>spec</span>
+        <span id="spec~nodejs">
+<span class="nx">
+spec
+<a class="anchorjs-link " href="#spec~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerspec">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Spec</a></span>
     </dt>
@@ -265,7 +295,12 @@ The HorizontalPodAutoscaler resource accepts the following [input]({{< relref "/
 
     <dt class="property-optional"
             title="Optional">
-        <span>metadata</span>
+        <span id="metadata~python">
+<span class="nx">
+metadata
+<a class="anchorjs-link " href="#metadata~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmeta">Dict[Object<wbr>Meta]</a></span>
     </dt>
@@ -273,7 +308,12 @@ The HorizontalPodAutoscaler resource accepts the following [input]({{< relref "/
 
     <dt class="property-optional"
             title="Optional">
-        <span>spec</span>
+        <span id="spec~python">
+<span class="nx">
+spec
+<a class="anchorjs-link " href="#spec~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerspec">Dict[Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Spec]</a></span>
     </dt>
@@ -299,7 +339,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -307,7 +352,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerstatus">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Status</a></span>
     </dt>
@@ -322,7 +372,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -330,7 +385,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerstatus">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Status</a></span>
     </dt>
@@ -345,7 +405,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -353,7 +418,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerstatus">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Status</a></span>
     </dt>
@@ -368,7 +438,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -376,7 +451,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerstatus">Dict[Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Status]</a></span>
     </dt>
@@ -415,7 +495,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -430,7 +515,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -445,7 +535,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -460,7 +555,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -490,7 +590,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier<wbr>Args</a></span>
     </dt>
@@ -498,7 +603,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target<wbr>Args</a></span>
     </dt>
@@ -513,7 +623,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -521,7 +636,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -536,7 +656,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -544,7 +669,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -559,7 +689,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Dict[Metric<wbr>Identifier]</a></span>
     </dt>
@@ -567,7 +702,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Dict[Metric<wbr>Target]</a></span>
     </dt>
@@ -597,7 +737,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~csharp">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -605,7 +750,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier<wbr>Args</a></span>
     </dt>
@@ -620,7 +770,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~go">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -628,7 +783,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -643,7 +803,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~nodejs">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -651,7 +816,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -666,7 +836,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~python">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Dict[Metric<wbr>Value<wbr>Status]</a></span>
     </dt>
@@ -674,7 +849,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Dict[Metric<wbr>Identifier]</a></span>
     </dt>
@@ -704,7 +884,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Period<wbr>Seconds</span>
+        <span id="periodseconds~csharp">
+<span class="nx">
+Period<wbr>Seconds
+<a class="anchorjs-link " href="#periodseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -712,7 +897,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -720,7 +910,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~csharp">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -735,7 +930,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Period<wbr>Seconds</span>
+        <span id="periodseconds~go">
+<span class="nx">
+Period<wbr>Seconds
+<a class="anchorjs-link " href="#periodseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -743,7 +943,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -751,7 +956,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~go">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -766,7 +976,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>period<wbr>Seconds</span>
+        <span id="periodseconds~nodejs">
+<span class="nx">
+period<wbr>Seconds
+<a class="anchorjs-link " href="#periodseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -774,7 +989,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -782,7 +1002,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~nodejs">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -797,7 +1022,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>period_<wbr>seconds</span>
+        <span id="period_seconds~python">
+<span class="nx">
+period_<wbr>seconds
+<a class="anchorjs-link " href="#period_seconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -805,7 +1035,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -813,7 +1048,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~python">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -843,7 +1083,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policies</span>
+        <span id="policies~csharp">
+<span class="nx">
+Policies
+<a class="anchorjs-link " href="#policies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingpolicy">List&lt;HPAScaling<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -851,7 +1096,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Select<wbr>Policy</span>
+        <span id="selectpolicy~csharp">
+<span class="nx">
+Select<wbr>Policy
+<a class="anchorjs-link " href="#selectpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -859,7 +1109,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stabilization<wbr>Window<wbr>Seconds</span>
+        <span id="stabilizationwindowseconds~csharp">
+<span class="nx">
+Stabilization<wbr>Window<wbr>Seconds
+<a class="anchorjs-link " href="#stabilizationwindowseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -874,7 +1129,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Policies</span>
+        <span id="policies~go">
+<span class="nx">
+Policies
+<a class="anchorjs-link " href="#policies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingpolicy">[]HPAScaling<wbr>Policy</a></span>
     </dt>
@@ -882,7 +1142,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Select<wbr>Policy</span>
+        <span id="selectpolicy~go">
+<span class="nx">
+Select<wbr>Policy
+<a class="anchorjs-link " href="#selectpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -890,7 +1155,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stabilization<wbr>Window<wbr>Seconds</span>
+        <span id="stabilizationwindowseconds~go">
+<span class="nx">
+Stabilization<wbr>Window<wbr>Seconds
+<a class="anchorjs-link " href="#stabilizationwindowseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -905,7 +1175,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>policies</span>
+        <span id="policies~nodejs">
+<span class="nx">
+policies
+<a class="anchorjs-link " href="#policies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingpolicy">HPAScaling<wbr>Policy[]</a></span>
     </dt>
@@ -913,7 +1188,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>select<wbr>Policy</span>
+        <span id="selectpolicy~nodejs">
+<span class="nx">
+select<wbr>Policy
+<a class="anchorjs-link " href="#selectpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -921,7 +1201,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>stabilization<wbr>Window<wbr>Seconds</span>
+        <span id="stabilizationwindowseconds~nodejs">
+<span class="nx">
+stabilization<wbr>Window<wbr>Seconds
+<a class="anchorjs-link " href="#stabilizationwindowseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -936,7 +1221,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>policies</span>
+        <span id="policies~python">
+<span class="nx">
+policies
+<a class="anchorjs-link " href="#policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingpolicy">List[HPAScaling<wbr>Policy]</a></span>
     </dt>
@@ -944,7 +1234,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>select_<wbr>policy</span>
+        <span id="select_policy~python">
+<span class="nx">
+select_<wbr>policy
+<a class="anchorjs-link " href="#select_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -952,7 +1247,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>stabilization_<wbr>window_<wbr>seconds</span>
+        <span id="stabilization_window_seconds~python">
+<span class="nx">
+stabilization_<wbr>window_<wbr>seconds
+<a class="anchorjs-link " href="#stabilization_window_seconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -982,7 +1282,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scale<wbr>Down</span>
+        <span id="scaledown~csharp">
+<span class="nx">
+Scale<wbr>Down
+<a class="anchorjs-link " href="#scaledown~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">HPAScaling<wbr>Rules<wbr>Args</a></span>
     </dt>
@@ -990,7 +1295,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scale<wbr>Up</span>
+        <span id="scaleup~csharp">
+<span class="nx">
+Scale<wbr>Up
+<a class="anchorjs-link " href="#scaleup~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">HPAScaling<wbr>Rules<wbr>Args</a></span>
     </dt>
@@ -1008,7 +1318,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scale<wbr>Down</span>
+        <span id="scaledown~go">
+<span class="nx">
+Scale<wbr>Down
+<a class="anchorjs-link " href="#scaledown~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">HPAScaling<wbr>Rules</a></span>
     </dt>
@@ -1016,7 +1331,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scale<wbr>Up</span>
+        <span id="scaleup~go">
+<span class="nx">
+Scale<wbr>Up
+<a class="anchorjs-link " href="#scaleup~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">HPAScaling<wbr>Rules</a></span>
     </dt>
@@ -1034,7 +1354,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>scale<wbr>Down</span>
+        <span id="scaledown~nodejs">
+<span class="nx">
+scale<wbr>Down
+<a class="anchorjs-link " href="#scaledown~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">HPAScaling<wbr>Rules</a></span>
     </dt>
@@ -1042,7 +1367,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>scale<wbr>Up</span>
+        <span id="scaleup~nodejs">
+<span class="nx">
+scale<wbr>Up
+<a class="anchorjs-link " href="#scaleup~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">HPAScaling<wbr>Rules</a></span>
     </dt>
@@ -1060,7 +1390,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>scale_<wbr>down</span>
+        <span id="scale_down~python">
+<span class="nx">
+scale_<wbr>down
+<a class="anchorjs-link " href="#scale_down~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">Dict[HPAScaling<wbr>Rules]</a></span>
     </dt>
@@ -1068,7 +1403,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>scale_<wbr>up</span>
+        <span id="scale_up~python">
+<span class="nx">
+scale_<wbr>up
+<a class="anchorjs-link " href="#scale_up~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#hpascalingrules">Dict[HPAScaling<wbr>Rules]</a></span>
     </dt>
@@ -1101,7 +1441,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1109,7 +1454,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1117,7 +1467,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Transition<wbr>Time</span>
+        <span id="lasttransitiontime~csharp">
+<span class="nx">
+Last<wbr>Transition<wbr>Time
+<a class="anchorjs-link " href="#lasttransitiontime~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1125,7 +1480,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Message</span>
+        <span id="message~csharp">
+<span class="nx">
+Message
+<a class="anchorjs-link " href="#message~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1133,7 +1493,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reason</span>
+        <span id="reason~csharp">
+<span class="nx">
+Reason
+<a class="anchorjs-link " href="#reason~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1148,7 +1513,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1156,7 +1526,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1164,7 +1539,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Transition<wbr>Time</span>
+        <span id="lasttransitiontime~go">
+<span class="nx">
+Last<wbr>Transition<wbr>Time
+<a class="anchorjs-link " href="#lasttransitiontime~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1172,7 +1552,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Message</span>
+        <span id="message~go">
+<span class="nx">
+Message
+<a class="anchorjs-link " href="#message~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1180,7 +1565,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reason</span>
+        <span id="reason~go">
+<span class="nx">
+Reason
+<a class="anchorjs-link " href="#reason~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1195,7 +1585,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1203,7 +1598,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1211,7 +1611,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Transition<wbr>Time</span>
+        <span id="lasttransitiontime~nodejs">
+<span class="nx">
+last<wbr>Transition<wbr>Time
+<a class="anchorjs-link " href="#lasttransitiontime~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1219,7 +1624,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>message</span>
+        <span id="message~nodejs">
+<span class="nx">
+message
+<a class="anchorjs-link " href="#message~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1227,7 +1637,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>reason</span>
+        <span id="reason~nodejs">
+<span class="nx">
+reason
+<a class="anchorjs-link " href="#reason~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1242,7 +1657,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1250,7 +1670,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1258,7 +1683,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>transition_<wbr>time</span>
+        <span id="last_transition_time~python">
+<span class="nx">
+last_<wbr>transition_<wbr>time
+<a class="anchorjs-link " href="#last_transition_time~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1266,7 +1696,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>message</span>
+        <span id="message~python">
+<span class="nx">
+message
+<a class="anchorjs-link " href="#message~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1274,7 +1709,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>reason</span>
+        <span id="reason~python">
+<span class="nx">
+reason
+<a class="anchorjs-link " href="#reason~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1304,7 +1744,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Max<wbr>Replicas</span>
+        <span id="maxreplicas~csharp">
+<span class="nx">
+Max<wbr>Replicas
+<a class="anchorjs-link " href="#maxreplicas~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1312,7 +1757,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Scale<wbr>Target<wbr>Ref</span>
+        <span id="scaletargetref~csharp">
+<span class="nx">
+Scale<wbr>Target<wbr>Ref
+<a class="anchorjs-link " href="#scaletargetref~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference<wbr>Args</a></span>
     </dt>
@@ -1320,7 +1770,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Behavior</span>
+        <span id="behavior~csharp">
+<span class="nx">
+Behavior
+<a class="anchorjs-link " href="#behavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerbehavior">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Behavior<wbr>Args</a></span>
     </dt>
@@ -1328,7 +1783,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metrics</span>
+        <span id="metrics~csharp">
+<span class="nx">
+Metrics
+<a class="anchorjs-link " href="#metrics~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricspec">List&lt;Metric<wbr>Spec<wbr>Args&gt;</a></span>
     </dt>
@@ -1336,7 +1796,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Replicas</span>
+        <span id="minreplicas~csharp">
+<span class="nx">
+Min<wbr>Replicas
+<a class="anchorjs-link " href="#minreplicas~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1351,7 +1816,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Max<wbr>Replicas</span>
+        <span id="maxreplicas~go">
+<span class="nx">
+Max<wbr>Replicas
+<a class="anchorjs-link " href="#maxreplicas~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1359,7 +1829,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Scale<wbr>Target<wbr>Ref</span>
+        <span id="scaletargetref~go">
+<span class="nx">
+Scale<wbr>Target<wbr>Ref
+<a class="anchorjs-link " href="#scaletargetref~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference</a></span>
     </dt>
@@ -1367,7 +1842,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Behavior</span>
+        <span id="behavior~go">
+<span class="nx">
+Behavior
+<a class="anchorjs-link " href="#behavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerbehavior">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Behavior</a></span>
     </dt>
@@ -1375,7 +1855,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metrics</span>
+        <span id="metrics~go">
+<span class="nx">
+Metrics
+<a class="anchorjs-link " href="#metrics~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricspec">[]Metric<wbr>Spec</a></span>
     </dt>
@@ -1383,7 +1868,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Min<wbr>Replicas</span>
+        <span id="minreplicas~go">
+<span class="nx">
+Min<wbr>Replicas
+<a class="anchorjs-link " href="#minreplicas~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1398,7 +1888,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>max<wbr>Replicas</span>
+        <span id="maxreplicas~nodejs">
+<span class="nx">
+max<wbr>Replicas
+<a class="anchorjs-link " href="#maxreplicas~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1406,7 +1901,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>scale<wbr>Target<wbr>Ref</span>
+        <span id="scaletargetref~nodejs">
+<span class="nx">
+scale<wbr>Target<wbr>Ref
+<a class="anchorjs-link " href="#scaletargetref~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference</a></span>
     </dt>
@@ -1414,7 +1914,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>behavior</span>
+        <span id="behavior~nodejs">
+<span class="nx">
+behavior
+<a class="anchorjs-link " href="#behavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerbehavior">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Behavior</a></span>
     </dt>
@@ -1422,7 +1927,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>metrics</span>
+        <span id="metrics~nodejs">
+<span class="nx">
+metrics
+<a class="anchorjs-link " href="#metrics~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricspec">Metric<wbr>Spec[]</a></span>
     </dt>
@@ -1430,7 +1940,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>min<wbr>Replicas</span>
+        <span id="minreplicas~nodejs">
+<span class="nx">
+min<wbr>Replicas
+<a class="anchorjs-link " href="#minreplicas~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1445,7 +1960,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>max_<wbr>replicas</span>
+        <span id="max_replicas~python">
+<span class="nx">
+max_<wbr>replicas
+<a class="anchorjs-link " href="#max_replicas~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1453,7 +1973,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>scale_<wbr>target_<wbr>ref</span>
+        <span id="scale_target_ref~python">
+<span class="nx">
+scale_<wbr>target_<wbr>ref
+<a class="anchorjs-link " href="#scale_target_ref~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Dict[Cross<wbr>Version<wbr>Object<wbr>Reference]</a></span>
     </dt>
@@ -1461,7 +1986,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>behavior</span>
+        <span id="behavior~python">
+<span class="nx">
+behavior
+<a class="anchorjs-link " href="#behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalerbehavior">Dict[Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Behavior]</a></span>
     </dt>
@@ -1469,7 +1999,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>metrics</span>
+        <span id="metrics~python">
+<span class="nx">
+metrics
+<a class="anchorjs-link " href="#metrics~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricspec">List[Metric<wbr>Spec]</a></span>
     </dt>
@@ -1477,7 +2012,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>min_<wbr>replicas</span>
+        <span id="min_replicas~python">
+<span class="nx">
+min_<wbr>replicas
+<a class="anchorjs-link " href="#min_replicas~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1507,7 +2047,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Conditions</span>
+        <span id="conditions~csharp">
+<span class="nx">
+Conditions
+<a class="anchorjs-link " href="#conditions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalercondition">List&lt;Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
@@ -1515,7 +2060,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Current<wbr>Replicas</span>
+        <span id="currentreplicas~csharp">
+<span class="nx">
+Current<wbr>Replicas
+<a class="anchorjs-link " href="#currentreplicas~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1523,7 +2073,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Desired<wbr>Replicas</span>
+        <span id="desiredreplicas~csharp">
+<span class="nx">
+Desired<wbr>Replicas
+<a class="anchorjs-link " href="#desiredreplicas~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1531,7 +2086,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Current<wbr>Metrics</span>
+        <span id="currentmetrics~csharp">
+<span class="nx">
+Current<wbr>Metrics
+<a class="anchorjs-link " href="#currentmetrics~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricstatus">List&lt;Metric<wbr>Status<wbr>Args&gt;</a></span>
     </dt>
@@ -1539,7 +2099,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Scale<wbr>Time</span>
+        <span id="lastscaletime~csharp">
+<span class="nx">
+Last<wbr>Scale<wbr>Time
+<a class="anchorjs-link " href="#lastscaletime~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1547,7 +2112,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Observed<wbr>Generation</span>
+        <span id="observedgeneration~csharp">
+<span class="nx">
+Observed<wbr>Generation
+<a class="anchorjs-link " href="#observedgeneration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1562,7 +2132,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Conditions</span>
+        <span id="conditions~go">
+<span class="nx">
+Conditions
+<a class="anchorjs-link " href="#conditions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalercondition">[]Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Condition</a></span>
     </dt>
@@ -1570,7 +2145,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Current<wbr>Replicas</span>
+        <span id="currentreplicas~go">
+<span class="nx">
+Current<wbr>Replicas
+<a class="anchorjs-link " href="#currentreplicas~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1578,7 +2158,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Desired<wbr>Replicas</span>
+        <span id="desiredreplicas~go">
+<span class="nx">
+Desired<wbr>Replicas
+<a class="anchorjs-link " href="#desiredreplicas~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1586,7 +2171,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Current<wbr>Metrics</span>
+        <span id="currentmetrics~go">
+<span class="nx">
+Current<wbr>Metrics
+<a class="anchorjs-link " href="#currentmetrics~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricstatus">[]Metric<wbr>Status</a></span>
     </dt>
@@ -1594,7 +2184,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Scale<wbr>Time</span>
+        <span id="lastscaletime~go">
+<span class="nx">
+Last<wbr>Scale<wbr>Time
+<a class="anchorjs-link " href="#lastscaletime~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1602,7 +2197,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Observed<wbr>Generation</span>
+        <span id="observedgeneration~go">
+<span class="nx">
+Observed<wbr>Generation
+<a class="anchorjs-link " href="#observedgeneration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1617,7 +2217,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>conditions</span>
+        <span id="conditions~nodejs">
+<span class="nx">
+conditions
+<a class="anchorjs-link " href="#conditions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalercondition">Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Condition[]</a></span>
     </dt>
@@ -1625,7 +2230,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>current<wbr>Replicas</span>
+        <span id="currentreplicas~nodejs">
+<span class="nx">
+current<wbr>Replicas
+<a class="anchorjs-link " href="#currentreplicas~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1633,7 +2243,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>desired<wbr>Replicas</span>
+        <span id="desiredreplicas~nodejs">
+<span class="nx">
+desired<wbr>Replicas
+<a class="anchorjs-link " href="#desiredreplicas~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1641,7 +2256,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>current<wbr>Metrics</span>
+        <span id="currentmetrics~nodejs">
+<span class="nx">
+current<wbr>Metrics
+<a class="anchorjs-link " href="#currentmetrics~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricstatus">Metric<wbr>Status[]</a></span>
     </dt>
@@ -1649,7 +2269,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Scale<wbr>Time</span>
+        <span id="lastscaletime~nodejs">
+<span class="nx">
+last<wbr>Scale<wbr>Time
+<a class="anchorjs-link " href="#lastscaletime~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1657,7 +2282,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>observed<wbr>Generation</span>
+        <span id="observedgeneration~nodejs">
+<span class="nx">
+observed<wbr>Generation
+<a class="anchorjs-link " href="#observedgeneration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1672,7 +2302,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>conditions</span>
+        <span id="conditions~python">
+<span class="nx">
+conditions
+<a class="anchorjs-link " href="#conditions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#horizontalpodautoscalercondition">List[Horizontal<wbr>Pod<wbr>Autoscaler<wbr>Condition]</a></span>
     </dt>
@@ -1680,7 +2315,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>current_<wbr>replicas</span>
+        <span id="current_replicas~python">
+<span class="nx">
+current_<wbr>replicas
+<a class="anchorjs-link " href="#current_replicas~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1688,7 +2328,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>desired_<wbr>replicas</span>
+        <span id="desired_replicas~python">
+<span class="nx">
+desired_<wbr>replicas
+<a class="anchorjs-link " href="#desired_replicas~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1696,7 +2341,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>current_<wbr>metrics</span>
+        <span id="current_metrics~python">
+<span class="nx">
+current_<wbr>metrics
+<a class="anchorjs-link " href="#current_metrics~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricstatus">List[Metric<wbr>Status]</a></span>
     </dt>
@@ -1704,7 +2354,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>scale_<wbr>time</span>
+        <span id="last_scale_time~python">
+<span class="nx">
+last_<wbr>scale_<wbr>time
+<a class="anchorjs-link " href="#last_scale_time~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1712,7 +2367,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>observed_<wbr>generation</span>
+        <span id="observed_generation~python">
+<span class="nx">
+observed_<wbr>generation
+<a class="anchorjs-link " href="#observed_generation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1731,7 +2391,7 @@ No stabilization is used.{{% /md %}}</dd>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#LabelSelectorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#LabelSelectorOutput">output</a> API doc for this type.
+> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#LabelSelectorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#LabelSelectorOutput">output</a> API doc for this type.
 {{% /choosable %}}
 
 
@@ -1742,15 +2402,25 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Match<wbr>Expressions</span>
+        <span id="matchexpressions~csharp">
+<span class="nx">
+Match<wbr>Expressions
+<a class="anchorjs-link " href="#matchexpressions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#labelselectorrequirement">List&lt;Label<wbr>Selector<wbr>Requirement<wbr>Args&gt;</a></span>
+        <span class="property-type"><a href="#labelselectorrequirement">List&lt;Pulumi.<wbr>Kubernetes.<wbr>Meta.<wbr>V1.<wbr>Inputs.<wbr>Label<wbr>Selector<wbr>Requirement<wbr>Args&gt;</a></span>
     </dt>
     <dd>{{% md %}}matchExpressions is a list of label selector requirements. The requirements are ANDed.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Match<wbr>Labels</span>
+        <span id="matchlabels~csharp">
+<span class="nx">
+Match<wbr>Labels
+<a class="anchorjs-link " href="#matchlabels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -1765,7 +2435,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Match<wbr>Expressions</span>
+        <span id="matchexpressions~go">
+<span class="nx">
+Match<wbr>Expressions
+<a class="anchorjs-link " href="#matchexpressions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#labelselectorrequirement">Label<wbr>Selector<wbr>Requirement</a></span>
     </dt>
@@ -1773,7 +2448,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Match<wbr>Labels</span>
+        <span id="matchlabels~go">
+<span class="nx">
+Match<wbr>Labels
+<a class="anchorjs-link " href="#matchlabels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1788,15 +2468,25 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>match<wbr>Expressions</span>
+        <span id="matchexpressions~nodejs">
+<span class="nx">
+match<wbr>Expressions
+<a class="anchorjs-link " href="#matchexpressions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#labelselectorrequirement">Label<wbr>Selector<wbr>Requirement[]</a></span>
+        <span class="property-type"><a href="#labelselectorrequirement">meta.v1.<wbr>Label<wbr>Selector<wbr>Requirement[]</a></span>
     </dt>
     <dd>{{% md %}}matchExpressions is a list of label selector requirements. The requirements are ANDed.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>match<wbr>Labels</span>
+        <span id="matchlabels~nodejs">
+<span class="nx">
+match<wbr>Labels
+<a class="anchorjs-link " href="#matchlabels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1811,7 +2501,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>match_<wbr>expressions</span>
+        <span id="match_expressions~python">
+<span class="nx">
+match_<wbr>expressions
+<a class="anchorjs-link " href="#match_expressions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#labelselectorrequirement">List[Label<wbr>Selector<wbr>Requirement]</a></span>
     </dt>
@@ -1819,7 +2514,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>match_<wbr>labels</span>
+        <span id="match_labels~python">
+<span class="nx">
+match_<wbr>labels
+<a class="anchorjs-link " href="#match_labels~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1838,7 +2538,7 @@ No stabilization is used.{{% /md %}}</dd>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#LabelSelectorRequirementArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#LabelSelectorRequirementOutput">output</a> API doc for this type.
+> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#LabelSelectorRequirementArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#LabelSelectorRequirementOutput">output</a> API doc for this type.
 {{% /choosable %}}
 
 
@@ -1849,7 +2549,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Key</span>
+        <span id="key~csharp">
+<span class="nx">
+Key
+<a class="anchorjs-link " href="#key~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1857,7 +2562,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Operator</span>
+        <span id="operator~csharp">
+<span class="nx">
+Operator
+<a class="anchorjs-link " href="#operator~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1865,7 +2575,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1880,7 +2595,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Key</span>
+        <span id="key~go">
+<span class="nx">
+Key
+<a class="anchorjs-link " href="#key~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1888,7 +2608,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Operator</span>
+        <span id="operator~go">
+<span class="nx">
+Operator
+<a class="anchorjs-link " href="#operator~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1896,7 +2621,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1911,7 +2641,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>key</span>
+        <span id="key~nodejs">
+<span class="nx">
+key
+<a class="anchorjs-link " href="#key~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1919,7 +2654,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>operator</span>
+        <span id="operator~nodejs">
+<span class="nx">
+operator
+<a class="anchorjs-link " href="#operator~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1927,7 +2667,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1942,7 +2687,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>key</span>
+        <span id="key~python">
+<span class="nx">
+key
+<a class="anchorjs-link " href="#key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1950,7 +2700,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>operator</span>
+        <span id="operator~python">
+<span class="nx">
+operator
+<a class="anchorjs-link " href="#operator~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1958,7 +2713,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1977,7 +2737,7 @@ No stabilization is used.{{% /md %}}</dd>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#ManagedFieldsEntryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#ManagedFieldsEntryOutput">output</a> API doc for this type.
+> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#ManagedFieldsEntryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#ManagedFieldsEntryOutput">output</a> API doc for this type.
 {{% /choosable %}}
 
 
@@ -1988,7 +2748,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fields<wbr>Type</span>
+        <span id="fieldstype~csharp">
+<span class="nx">
+Fields<wbr>Type
+<a class="anchorjs-link " href="#fieldstype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1996,7 +2761,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fields<wbr>V1</span>
+        <span id="fieldsv1~csharp">
+<span class="nx">
+Fields<wbr>V1
+<a class="anchorjs-link " href="#fieldsv1~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">object</a></span>
     </dt>
@@ -2004,7 +2774,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manager</span>
+        <span id="manager~csharp">
+<span class="nx">
+Manager
+<a class="anchorjs-link " href="#manager~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2012,7 +2787,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Operation</span>
+        <span id="operation~csharp">
+<span class="nx">
+Operation
+<a class="anchorjs-link " href="#operation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2020,7 +2800,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Time</span>
+        <span id="time~csharp">
+<span class="nx">
+Time
+<a class="anchorjs-link " href="#time~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2035,7 +2820,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fields<wbr>Type</span>
+        <span id="fieldstype~go">
+<span class="nx">
+Fields<wbr>Type
+<a class="anchorjs-link " href="#fieldstype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2043,7 +2833,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fields<wbr>V1</span>
+        <span id="fieldsv1~go">
+<span class="nx">
+Fields<wbr>V1
+<a class="anchorjs-link " href="#fieldsv1~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Any">interface{}</a></span>
     </dt>
@@ -2051,7 +2846,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Manager</span>
+        <span id="manager~go">
+<span class="nx">
+Manager
+<a class="anchorjs-link " href="#manager~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2059,7 +2859,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Operation</span>
+        <span id="operation~go">
+<span class="nx">
+Operation
+<a class="anchorjs-link " href="#operation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2067,7 +2872,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Time</span>
+        <span id="time~go">
+<span class="nx">
+Time
+<a class="anchorjs-link " href="#time~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2082,7 +2892,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>fields<wbr>Type</span>
+        <span id="fieldstype~nodejs">
+<span class="nx">
+fields<wbr>Type
+<a class="anchorjs-link " href="#fieldstype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2090,7 +2905,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>fields<wbr>V1</span>
+        <span id="fieldsv1~nodejs">
+<span class="nx">
+fields<wbr>V1
+<a class="anchorjs-link " href="#fieldsv1~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Any">any</a></span>
     </dt>
@@ -2098,7 +2918,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>manager</span>
+        <span id="manager~nodejs">
+<span class="nx">
+manager
+<a class="anchorjs-link " href="#manager~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2106,7 +2931,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>operation</span>
+        <span id="operation~nodejs">
+<span class="nx">
+operation
+<a class="anchorjs-link " href="#operation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2114,7 +2944,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>time</span>
+        <span id="time~nodejs">
+<span class="nx">
+time
+<a class="anchorjs-link " href="#time~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2129,7 +2964,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>fields_<wbr>type</span>
+        <span id="fields_type~python">
+<span class="nx">
+fields_<wbr>type
+<a class="anchorjs-link " href="#fields_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2137,7 +2977,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>fields_<wbr>v1</span>
+        <span id="fields_v1~python">
+<span class="nx">
+fields_<wbr>v1
+<a class="anchorjs-link " href="#fields_v1~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">Dict[str, Any]</a></span>
     </dt>
@@ -2145,7 +2990,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>manager</span>
+        <span id="manager~python">
+<span class="nx">
+manager
+<a class="anchorjs-link " href="#manager~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2153,7 +3003,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>operation</span>
+        <span id="operation~python">
+<span class="nx">
+operation
+<a class="anchorjs-link " href="#operation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2161,7 +3016,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>time</span>
+        <span id="time~python">
+<span class="nx">
+time
+<a class="anchorjs-link " href="#time~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2191,7 +3051,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2199,9 +3064,14 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Selector</span>
+        <span id="selector~csharp">
+<span class="nx">
+Selector
+<a class="anchorjs-link " href="#selector~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#labelselector">Label<wbr>Selector<wbr>Args</a></span>
+        <span class="property-type"><a href="#labelselector">Pulumi.<wbr>Kubernetes.<wbr>Meta.<wbr>V1.<wbr>Inputs.<wbr>Label<wbr>Selector<wbr>Args</a></span>
     </dt>
     <dd>{{% md %}}selector is the string-encoded form of a standard kubernetes label selector for the given metric When set, it is passed as an additional parameter to the metrics server for more specific metrics scoping. When unset, just the metricName will be used to gather metrics.{{% /md %}}</dd>
 
@@ -2214,7 +3084,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2222,7 +3097,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Selector</span>
+        <span id="selector~go">
+<span class="nx">
+Selector
+<a class="anchorjs-link " href="#selector~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#labelselector">Label<wbr>Selector</a></span>
     </dt>
@@ -2237,7 +3117,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2245,9 +3130,14 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>selector</span>
+        <span id="selector~nodejs">
+<span class="nx">
+selector
+<a class="anchorjs-link " href="#selector~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#labelselector">Label<wbr>Selector</a></span>
+        <span class="property-type"><a href="#labelselector">meta.v1.<wbr>Label<wbr>Selector</a></span>
     </dt>
     <dd>{{% md %}}selector is the string-encoded form of a standard kubernetes label selector for the given metric When set, it is passed as an additional parameter to the metrics server for more specific metrics scoping. When unset, just the metricName will be used to gather metrics.{{% /md %}}</dd>
 
@@ -2260,7 +3150,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2268,7 +3163,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>selector</span>
+        <span id="selector~python">
+<span class="nx">
+selector
+<a class="anchorjs-link " href="#selector~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#labelselector">Dict[Label<wbr>Selector]</a></span>
     </dt>
@@ -2298,7 +3198,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2306,7 +3211,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>External</span>
+        <span id="external~csharp">
+<span class="nx">
+External
+<a class="anchorjs-link " href="#external~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricsource">External<wbr>Metric<wbr>Source<wbr>Args</a></span>
     </dt>
@@ -2314,7 +3224,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object</span>
+        <span id="object~csharp">
+<span class="nx">
+Object
+<a class="anchorjs-link " href="#object~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricsource">Object<wbr>Metric<wbr>Source<wbr>Args</a></span>
     </dt>
@@ -2322,7 +3237,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pods</span>
+        <span id="pods~csharp">
+<span class="nx">
+Pods
+<a class="anchorjs-link " href="#pods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricsource">Pods<wbr>Metric<wbr>Source<wbr>Args</a></span>
     </dt>
@@ -2330,7 +3250,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource</span>
+        <span id="resource~csharp">
+<span class="nx">
+Resource
+<a class="anchorjs-link " href="#resource~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricsource">Resource<wbr>Metric<wbr>Source<wbr>Args</a></span>
     </dt>
@@ -2345,7 +3270,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2353,7 +3283,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>External</span>
+        <span id="external~go">
+<span class="nx">
+External
+<a class="anchorjs-link " href="#external~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricsource">External<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2361,7 +3296,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object</span>
+        <span id="object~go">
+<span class="nx">
+Object
+<a class="anchorjs-link " href="#object~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricsource">Object<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2369,7 +3309,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pods</span>
+        <span id="pods~go">
+<span class="nx">
+Pods
+<a class="anchorjs-link " href="#pods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricsource">Pods<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2377,7 +3322,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource</span>
+        <span id="resource~go">
+<span class="nx">
+Resource
+<a class="anchorjs-link " href="#resource~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricsource">Resource<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2392,7 +3342,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2400,7 +3355,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>external</span>
+        <span id="external~nodejs">
+<span class="nx">
+external
+<a class="anchorjs-link " href="#external~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricsource">External<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2408,7 +3368,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>object</span>
+        <span id="object~nodejs">
+<span class="nx">
+object
+<a class="anchorjs-link " href="#object~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricsource">Object<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2416,7 +3381,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>pods</span>
+        <span id="pods~nodejs">
+<span class="nx">
+pods
+<a class="anchorjs-link " href="#pods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricsource">Pods<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2424,7 +3394,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource</span>
+        <span id="resource~nodejs">
+<span class="nx">
+resource
+<a class="anchorjs-link " href="#resource~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricsource">Resource<wbr>Metric<wbr>Source</a></span>
     </dt>
@@ -2439,7 +3414,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2447,7 +3427,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>external</span>
+        <span id="external~python">
+<span class="nx">
+external
+<a class="anchorjs-link " href="#external~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricsource">Dict[External<wbr>Metric<wbr>Source]</a></span>
     </dt>
@@ -2455,7 +3440,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>object</span>
+        <span id="object~python">
+<span class="nx">
+object
+<a class="anchorjs-link " href="#object~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricsource">Dict[Object<wbr>Metric<wbr>Source]</a></span>
     </dt>
@@ -2463,7 +3453,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>pods</span>
+        <span id="pods~python">
+<span class="nx">
+pods
+<a class="anchorjs-link " href="#pods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricsource">Dict[Pods<wbr>Metric<wbr>Source]</a></span>
     </dt>
@@ -2471,7 +3466,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource</span>
+        <span id="resource~python">
+<span class="nx">
+resource
+<a class="anchorjs-link " href="#resource~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricsource">Dict[Resource<wbr>Metric<wbr>Source]</a></span>
     </dt>
@@ -2501,7 +3501,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2509,7 +3514,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>External</span>
+        <span id="external~csharp">
+<span class="nx">
+External
+<a class="anchorjs-link " href="#external~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricstatus">External<wbr>Metric<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -2517,7 +3527,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object</span>
+        <span id="object~csharp">
+<span class="nx">
+Object
+<a class="anchorjs-link " href="#object~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricstatus">Object<wbr>Metric<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -2525,7 +3540,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pods</span>
+        <span id="pods~csharp">
+<span class="nx">
+Pods
+<a class="anchorjs-link " href="#pods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricstatus">Pods<wbr>Metric<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -2533,7 +3553,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource</span>
+        <span id="resource~csharp">
+<span class="nx">
+Resource
+<a class="anchorjs-link " href="#resource~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricstatus">Resource<wbr>Metric<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -2548,7 +3573,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2556,7 +3586,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>External</span>
+        <span id="external~go">
+<span class="nx">
+External
+<a class="anchorjs-link " href="#external~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricstatus">External<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2564,7 +3599,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Object</span>
+        <span id="object~go">
+<span class="nx">
+Object
+<a class="anchorjs-link " href="#object~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricstatus">Object<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2572,7 +3612,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pods</span>
+        <span id="pods~go">
+<span class="nx">
+Pods
+<a class="anchorjs-link " href="#pods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricstatus">Pods<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2580,7 +3625,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource</span>
+        <span id="resource~go">
+<span class="nx">
+Resource
+<a class="anchorjs-link " href="#resource~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricstatus">Resource<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2595,7 +3645,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2603,7 +3658,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>external</span>
+        <span id="external~nodejs">
+<span class="nx">
+external
+<a class="anchorjs-link " href="#external~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricstatus">External<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2611,7 +3671,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>object</span>
+        <span id="object~nodejs">
+<span class="nx">
+object
+<a class="anchorjs-link " href="#object~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricstatus">Object<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2619,7 +3684,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>pods</span>
+        <span id="pods~nodejs">
+<span class="nx">
+pods
+<a class="anchorjs-link " href="#pods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricstatus">Pods<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2627,7 +3697,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource</span>
+        <span id="resource~nodejs">
+<span class="nx">
+resource
+<a class="anchorjs-link " href="#resource~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricstatus">Resource<wbr>Metric<wbr>Status</a></span>
     </dt>
@@ -2642,7 +3717,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2650,7 +3730,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>external</span>
+        <span id="external~python">
+<span class="nx">
+external
+<a class="anchorjs-link " href="#external~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#externalmetricstatus">Dict[External<wbr>Metric<wbr>Status]</a></span>
     </dt>
@@ -2658,7 +3743,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>object</span>
+        <span id="object~python">
+<span class="nx">
+object
+<a class="anchorjs-link " href="#object~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#objectmetricstatus">Dict[Object<wbr>Metric<wbr>Status]</a></span>
     </dt>
@@ -2666,7 +3756,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>pods</span>
+        <span id="pods~python">
+<span class="nx">
+pods
+<a class="anchorjs-link " href="#pods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#podsmetricstatus">Dict[Pods<wbr>Metric<wbr>Status]</a></span>
     </dt>
@@ -2674,7 +3769,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource</span>
+        <span id="resource~python">
+<span class="nx">
+resource
+<a class="anchorjs-link " href="#resource~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#resourcemetricstatus">Dict[Resource<wbr>Metric<wbr>Status]</a></span>
     </dt>
@@ -2704,7 +3804,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2712,7 +3817,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Utilization</span>
+        <span id="averageutilization~csharp">
+<span class="nx">
+Average<wbr>Utilization
+<a class="anchorjs-link " href="#averageutilization~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2720,7 +3830,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Value</span>
+        <span id="averagevalue~csharp">
+<span class="nx">
+Average<wbr>Value
+<a class="anchorjs-link " href="#averagevalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2728,7 +3843,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Value</span>
+        <span id="value~csharp">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2743,7 +3863,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2751,7 +3876,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Utilization</span>
+        <span id="averageutilization~go">
+<span class="nx">
+Average<wbr>Utilization
+<a class="anchorjs-link " href="#averageutilization~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2759,7 +3889,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Value</span>
+        <span id="averagevalue~go">
+<span class="nx">
+Average<wbr>Value
+<a class="anchorjs-link " href="#averagevalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2767,7 +3902,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Value</span>
+        <span id="value~go">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2782,7 +3922,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2790,7 +3935,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average<wbr>Utilization</span>
+        <span id="averageutilization~nodejs">
+<span class="nx">
+average<wbr>Utilization
+<a class="anchorjs-link " href="#averageutilization~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2798,7 +3948,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average<wbr>Value</span>
+        <span id="averagevalue~nodejs">
+<span class="nx">
+average<wbr>Value
+<a class="anchorjs-link " href="#averagevalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2806,7 +3961,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>value</span>
+        <span id="value~nodejs">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2821,7 +3981,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2829,7 +3994,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average_<wbr>utilization</span>
+        <span id="average_utilization~python">
+<span class="nx">
+average_<wbr>utilization
+<a class="anchorjs-link " href="#average_utilization~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2837,7 +4007,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average_<wbr>value</span>
+        <span id="average_value~python">
+<span class="nx">
+average_<wbr>value
+<a class="anchorjs-link " href="#average_value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2845,7 +4020,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>value</span>
+        <span id="value~python">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2875,7 +4055,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Utilization</span>
+        <span id="averageutilization~csharp">
+<span class="nx">
+Average<wbr>Utilization
+<a class="anchorjs-link " href="#averageutilization~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2883,7 +4068,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Value</span>
+        <span id="averagevalue~csharp">
+<span class="nx">
+Average<wbr>Value
+<a class="anchorjs-link " href="#averagevalue~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2891,7 +4081,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Value</span>
+        <span id="value~csharp">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2906,7 +4101,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Utilization</span>
+        <span id="averageutilization~go">
+<span class="nx">
+Average<wbr>Utilization
+<a class="anchorjs-link " href="#averageutilization~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2914,7 +4114,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Average<wbr>Value</span>
+        <span id="averagevalue~go">
+<span class="nx">
+Average<wbr>Value
+<a class="anchorjs-link " href="#averagevalue~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2922,7 +4127,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Value</span>
+        <span id="value~go">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2937,7 +4147,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average<wbr>Utilization</span>
+        <span id="averageutilization~nodejs">
+<span class="nx">
+average<wbr>Utilization
+<a class="anchorjs-link " href="#averageutilization~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2945,7 +4160,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average<wbr>Value</span>
+        <span id="averagevalue~nodejs">
+<span class="nx">
+average<wbr>Value
+<a class="anchorjs-link " href="#averagevalue~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2953,7 +4173,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>value</span>
+        <span id="value~nodejs">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2968,7 +4193,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average_<wbr>utilization</span>
+        <span id="average_utilization~python">
+<span class="nx">
+average_<wbr>utilization
+<a class="anchorjs-link " href="#average_utilization~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2976,7 +4206,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>average_<wbr>value</span>
+        <span id="average_value~python">
+<span class="nx">
+average_<wbr>value
+<a class="anchorjs-link " href="#average_value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2984,7 +4219,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>value</span>
+        <span id="value~python">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3003,7 +4243,7 @@ No stabilization is used.{{% /md %}}</dd>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#ObjectMetaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#ObjectMetaOutput">output</a> API doc for this type.
+> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#ObjectMetaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#ObjectMetaOutput">output</a> API doc for this type.
 {{% /choosable %}}
 
 
@@ -3014,7 +4254,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Annotations</span>
+        <span id="annotations~csharp">
+<span class="nx">
+Annotations
+<a class="anchorjs-link " href="#annotations~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -3022,7 +4267,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Name</span>
+        <span id="clustername~csharp">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3030,7 +4280,12 @@ No stabilization is used.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Creation<wbr>Timestamp</span>
+        <span id="creationtimestamp~csharp">
+<span class="nx">
+Creation<wbr>Timestamp
+<a class="anchorjs-link " href="#creationtimestamp~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3040,7 +4295,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deletion<wbr>Grace<wbr>Period<wbr>Seconds</span>
+        <span id="deletiongraceperiodseconds~csharp">
+<span class="nx">
+Deletion<wbr>Grace<wbr>Period<wbr>Seconds
+<a class="anchorjs-link " href="#deletiongraceperiodseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3048,7 +4308,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deletion<wbr>Timestamp</span>
+        <span id="deletiontimestamp~csharp">
+<span class="nx">
+Deletion<wbr>Timestamp
+<a class="anchorjs-link " href="#deletiontimestamp~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3058,7 +4323,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Finalizers</span>
+        <span id="finalizers~csharp">
+<span class="nx">
+Finalizers
+<a class="anchorjs-link " href="#finalizers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -3066,7 +4336,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Generate<wbr>Name</span>
+        <span id="generatename~csharp">
+<span class="nx">
+Generate<wbr>Name
+<a class="anchorjs-link " href="#generatename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3078,7 +4353,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Generation</span>
+        <span id="generation~csharp">
+<span class="nx">
+Generation
+<a class="anchorjs-link " href="#generation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3086,7 +4366,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Labels</span>
+        <span id="labels~csharp">
+<span class="nx">
+Labels
+<a class="anchorjs-link " href="#labels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -3094,15 +4379,25 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Managed<wbr>Fields</span>
+        <span id="managedfields~csharp">
+<span class="nx">
+Managed<wbr>Fields
+<a class="anchorjs-link " href="#managedfields~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#managedfieldsentry">List&lt;Managed<wbr>Fields<wbr>Entry<wbr>Args&gt;</a></span>
+        <span class="property-type"><a href="#managedfieldsentry">List&lt;Pulumi.<wbr>Kubernetes.<wbr>Meta.<wbr>V1.<wbr>Inputs.<wbr>Managed<wbr>Fields<wbr>Entry<wbr>Args&gt;</a></span>
     </dt>
     <dd>{{% md %}}ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like "ci-cd". The set of fields is always in the version that the workflow used when modifying the object.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3110,7 +4405,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="namespace~csharp">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3120,15 +4420,25 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>References</span>
+        <span id="ownerreferences~csharp">
+<span class="nx">
+Owner<wbr>References
+<a class="anchorjs-link " href="#ownerreferences~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#ownerreference">List&lt;Owner<wbr>Reference<wbr>Args&gt;</a></span>
+        <span class="property-type"><a href="#ownerreference">List&lt;Pulumi.<wbr>Kubernetes.<wbr>Meta.<wbr>V1.<wbr>Inputs.<wbr>Owner<wbr>Reference<wbr>Args&gt;</a></span>
     </dt>
     <dd>{{% md %}}List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Version</span>
+        <span id="resourceversion~csharp">
+<span class="nx">
+Resource<wbr>Version
+<a class="anchorjs-link " href="#resourceversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3138,7 +4448,12 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 
     <dt class="property-optional"
             title="Optional">
-        <span>Self<wbr>Link</span>
+        <span id="selflink~csharp">
+<span class="nx">
+Self<wbr>Link
+<a class="anchorjs-link " href="#selflink~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3148,7 +4463,12 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 
     <dt class="property-optional"
             title="Optional">
-        <span>Uid</span>
+        <span id="uid~csharp">
+<span class="nx">
+Uid
+<a class="anchorjs-link " href="#uid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3165,7 +4485,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Annotations</span>
+        <span id="annotations~go">
+<span class="nx">
+Annotations
+<a class="anchorjs-link " href="#annotations~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -3173,7 +4498,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Name</span>
+        <span id="clustername~go">
+<span class="nx">
+Cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3181,7 +4511,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Creation<wbr>Timestamp</span>
+        <span id="creationtimestamp~go">
+<span class="nx">
+Creation<wbr>Timestamp
+<a class="anchorjs-link " href="#creationtimestamp~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3191,7 +4526,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deletion<wbr>Grace<wbr>Period<wbr>Seconds</span>
+        <span id="deletiongraceperiodseconds~go">
+<span class="nx">
+Deletion<wbr>Grace<wbr>Period<wbr>Seconds
+<a class="anchorjs-link " href="#deletiongraceperiodseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3199,7 +4539,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Deletion<wbr>Timestamp</span>
+        <span id="deletiontimestamp~go">
+<span class="nx">
+Deletion<wbr>Timestamp
+<a class="anchorjs-link " href="#deletiontimestamp~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3209,7 +4554,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Finalizers</span>
+        <span id="finalizers~go">
+<span class="nx">
+Finalizers
+<a class="anchorjs-link " href="#finalizers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -3217,7 +4567,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Generate<wbr>Name</span>
+        <span id="generatename~go">
+<span class="nx">
+Generate<wbr>Name
+<a class="anchorjs-link " href="#generatename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3229,7 +4584,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Generation</span>
+        <span id="generation~go">
+<span class="nx">
+Generation
+<a class="anchorjs-link " href="#generation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3237,7 +4597,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Labels</span>
+        <span id="labels~go">
+<span class="nx">
+Labels
+<a class="anchorjs-link " href="#labels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -3245,7 +4610,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Managed<wbr>Fields</span>
+        <span id="managedfields~go">
+<span class="nx">
+Managed<wbr>Fields
+<a class="anchorjs-link " href="#managedfields~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedfieldsentry">Managed<wbr>Fields<wbr>Entry</a></span>
     </dt>
@@ -3253,7 +4623,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3261,7 +4636,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="namespace~go">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3271,7 +4651,12 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>References</span>
+        <span id="ownerreferences~go">
+<span class="nx">
+Owner<wbr>References
+<a class="anchorjs-link " href="#ownerreferences~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ownerreference">Owner<wbr>Reference</a></span>
     </dt>
@@ -3279,7 +4664,12 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Version</span>
+        <span id="resourceversion~go">
+<span class="nx">
+Resource<wbr>Version
+<a class="anchorjs-link " href="#resourceversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3289,7 +4679,12 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 
     <dt class="property-optional"
             title="Optional">
-        <span>Self<wbr>Link</span>
+        <span id="selflink~go">
+<span class="nx">
+Self<wbr>Link
+<a class="anchorjs-link " href="#selflink~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3299,7 +4694,12 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 
     <dt class="property-optional"
             title="Optional">
-        <span>Uid</span>
+        <span id="uid~go">
+<span class="nx">
+Uid
+<a class="anchorjs-link " href="#uid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3316,7 +4716,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>annotations</span>
+        <span id="annotations~nodejs">
+<span class="nx">
+annotations
+<a class="anchorjs-link " href="#annotations~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -3324,7 +4729,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Name</span>
+        <span id="clustername~nodejs">
+<span class="nx">
+cluster<wbr>Name
+<a class="anchorjs-link " href="#clustername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3332,7 +4742,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>creation<wbr>Timestamp</span>
+        <span id="creationtimestamp~nodejs">
+<span class="nx">
+creation<wbr>Timestamp
+<a class="anchorjs-link " href="#creationtimestamp~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3342,7 +4757,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>deletion<wbr>Grace<wbr>Period<wbr>Seconds</span>
+        <span id="deletiongraceperiodseconds~nodejs">
+<span class="nx">
+deletion<wbr>Grace<wbr>Period<wbr>Seconds
+<a class="anchorjs-link " href="#deletiongraceperiodseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3350,7 +4770,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>deletion<wbr>Timestamp</span>
+        <span id="deletiontimestamp~nodejs">
+<span class="nx">
+deletion<wbr>Timestamp
+<a class="anchorjs-link " href="#deletiontimestamp~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3360,7 +4785,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>finalizers</span>
+        <span id="finalizers~nodejs">
+<span class="nx">
+finalizers
+<a class="anchorjs-link " href="#finalizers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -3368,7 +4798,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>generate<wbr>Name</span>
+        <span id="generatename~nodejs">
+<span class="nx">
+generate<wbr>Name
+<a class="anchorjs-link " href="#generatename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3380,7 +4815,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>generation</span>
+        <span id="generation~nodejs">
+<span class="nx">
+generation
+<a class="anchorjs-link " href="#generation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3388,7 +4828,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>labels</span>
+        <span id="labels~nodejs">
+<span class="nx">
+labels
+<a class="anchorjs-link " href="#labels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -3396,15 +4841,25 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>managed<wbr>Fields</span>
+        <span id="managedfields~nodejs">
+<span class="nx">
+managed<wbr>Fields
+<a class="anchorjs-link " href="#managedfields~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#managedfieldsentry">Managed<wbr>Fields<wbr>Entry[]</a></span>
+        <span class="property-type"><a href="#managedfieldsentry">meta.v1.<wbr>Managed<wbr>Fields<wbr>Entry[]</a></span>
     </dt>
     <dd>{{% md %}}ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like "ci-cd". The set of fields is always in the version that the workflow used when modifying the object.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3412,7 +4867,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="namespace~nodejs">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3422,15 +4882,25 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner<wbr>References</span>
+        <span id="ownerreferences~nodejs">
+<span class="nx">
+owner<wbr>References
+<a class="anchorjs-link " href="#ownerreferences~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
-        <span class="property-type"><a href="#ownerreference">Owner<wbr>Reference[]</a></span>
+        <span class="property-type"><a href="#ownerreference">meta.v1.<wbr>Owner<wbr>Reference[]</a></span>
     </dt>
     <dd>{{% md %}}List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.{{% /md %}}</dd>
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource<wbr>Version</span>
+        <span id="resourceversion~nodejs">
+<span class="nx">
+resource<wbr>Version
+<a class="anchorjs-link " href="#resourceversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3440,7 +4910,12 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 
     <dt class="property-optional"
             title="Optional">
-        <span>self<wbr>Link</span>
+        <span id="selflink~nodejs">
+<span class="nx">
+self<wbr>Link
+<a class="anchorjs-link " href="#selflink~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3450,7 +4925,12 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 
     <dt class="property-optional"
             title="Optional">
-        <span>uid</span>
+        <span id="uid~nodejs">
+<span class="nx">
+uid
+<a class="anchorjs-link " href="#uid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3467,7 +4947,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>annotations</span>
+        <span id="annotations~python">
+<span class="nx">
+annotations
+<a class="anchorjs-link " href="#annotations~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -3475,7 +4960,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>name</span>
+        <span id="cluster_name~python">
+<span class="nx">
+cluster_<wbr>name
+<a class="anchorjs-link " href="#cluster_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3483,7 +4973,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>creation_<wbr>timestamp</span>
+        <span id="creation_timestamp~python">
+<span class="nx">
+creation_<wbr>timestamp
+<a class="anchorjs-link " href="#creation_timestamp~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3493,7 +4988,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>deletion_<wbr>grace_<wbr>period_<wbr>seconds</span>
+        <span id="deletion_grace_period_seconds~python">
+<span class="nx">
+deletion_<wbr>grace_<wbr>period_<wbr>seconds
+<a class="anchorjs-link " href="#deletion_grace_period_seconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3501,7 +5001,12 @@ Populated by the system. Read-only. Null for lists. More info: https://git.k8s.i
 
     <dt class="property-optional"
             title="Optional">
-        <span>deletion_<wbr>timestamp</span>
+        <span id="deletion_timestamp~python">
+<span class="nx">
+deletion_<wbr>timestamp
+<a class="anchorjs-link " href="#deletion_timestamp~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3511,7 +5016,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>finalizers</span>
+        <span id="finalizers~python">
+<span class="nx">
+finalizers
+<a class="anchorjs-link " href="#finalizers~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3519,7 +5029,12 @@ Populated by the system when a graceful deletion is requested. Read-only. More i
 
     <dt class="property-optional"
             title="Optional">
-        <span>generate_<wbr>name</span>
+        <span id="generate_name~python">
+<span class="nx">
+generate_<wbr>name
+<a class="anchorjs-link " href="#generate_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3531,7 +5046,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>generation</span>
+        <span id="generation~python">
+<span class="nx">
+generation
+<a class="anchorjs-link " href="#generation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3539,7 +5059,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>labels</span>
+        <span id="labels~python">
+<span class="nx">
+labels
+<a class="anchorjs-link " href="#labels~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -3547,7 +5072,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>managed_<wbr>fields</span>
+        <span id="managed_fields~python">
+<span class="nx">
+managed_<wbr>fields
+<a class="anchorjs-link " href="#managed_fields~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#managedfieldsentry">List[Managed<wbr>Fields<wbr>Entry]</a></span>
     </dt>
@@ -3555,7 +5085,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3563,7 +5098,12 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="namespace~python">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3573,7 +5113,12 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner_<wbr>references</span>
+        <span id="owner_references~python">
+<span class="nx">
+owner_<wbr>references
+<a class="anchorjs-link " href="#owner_references~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#ownerreference">List[Owner<wbr>Reference]</a></span>
     </dt>
@@ -3581,7 +5126,12 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource_<wbr>version</span>
+        <span id="resource_version~python">
+<span class="nx">
+resource_<wbr>version
+<a class="anchorjs-link " href="#resource_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3591,7 +5141,12 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 
     <dt class="property-optional"
             title="Optional">
-        <span>self_<wbr>link</span>
+        <span id="self_link~python">
+<span class="nx">
+self_<wbr>link
+<a class="anchorjs-link " href="#self_link~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3601,7 +5156,12 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 
     <dt class="property-optional"
             title="Optional">
-        <span>uid</span>
+        <span id="uid~python">
+<span class="nx">
+uid
+<a class="anchorjs-link " href="#uid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3633,7 +5193,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Described<wbr>Object</span>
+        <span id="describedobject~csharp">
+<span class="nx">
+Described<wbr>Object
+<a class="anchorjs-link " href="#describedobject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference<wbr>Args</a></span>
     </dt>
@@ -3641,7 +5206,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier<wbr>Args</a></span>
     </dt>
@@ -3649,7 +5219,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target<wbr>Args</a></span>
     </dt>
@@ -3664,7 +5239,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Described<wbr>Object</span>
+        <span id="describedobject~go">
+<span class="nx">
+Described<wbr>Object
+<a class="anchorjs-link " href="#describedobject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference</a></span>
     </dt>
@@ -3672,7 +5252,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -3680,7 +5265,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -3695,7 +5285,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>described<wbr>Object</span>
+        <span id="describedobject~nodejs">
+<span class="nx">
+described<wbr>Object
+<a class="anchorjs-link " href="#describedobject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference</a></span>
     </dt>
@@ -3703,7 +5298,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -3711,7 +5311,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -3726,7 +5331,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>described_<wbr>object</span>
+        <span id="described_object~python">
+<span class="nx">
+described_<wbr>object
+<a class="anchorjs-link " href="#described_object~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Dict[Cross<wbr>Version<wbr>Object<wbr>Reference]</a></span>
     </dt>
@@ -3734,7 +5344,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Dict[Metric<wbr>Identifier]</a></span>
     </dt>
@@ -3742,7 +5357,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Dict[Metric<wbr>Target]</a></span>
     </dt>
@@ -3772,7 +5392,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~csharp">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -3780,7 +5405,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Described<wbr>Object</span>
+        <span id="describedobject~csharp">
+<span class="nx">
+Described<wbr>Object
+<a class="anchorjs-link " href="#describedobject~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference<wbr>Args</a></span>
     </dt>
@@ -3788,7 +5418,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier<wbr>Args</a></span>
     </dt>
@@ -3803,7 +5438,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~go">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -3811,7 +5451,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Described<wbr>Object</span>
+        <span id="describedobject~go">
+<span class="nx">
+Described<wbr>Object
+<a class="anchorjs-link " href="#describedobject~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference</a></span>
     </dt>
@@ -3819,7 +5464,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -3834,7 +5484,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~nodejs">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -3842,7 +5497,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>described<wbr>Object</span>
+        <span id="describedobject~nodejs">
+<span class="nx">
+described<wbr>Object
+<a class="anchorjs-link " href="#describedobject~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Cross<wbr>Version<wbr>Object<wbr>Reference</a></span>
     </dt>
@@ -3850,7 +5510,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -3865,7 +5530,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~python">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Dict[Metric<wbr>Value<wbr>Status]</a></span>
     </dt>
@@ -3873,7 +5543,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>described_<wbr>object</span>
+        <span id="described_object~python">
+<span class="nx">
+described_<wbr>object
+<a class="anchorjs-link " href="#described_object~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#crossversionobjectreference">Dict[Cross<wbr>Version<wbr>Object<wbr>Reference]</a></span>
     </dt>
@@ -3881,7 +5556,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Dict[Metric<wbr>Identifier]</a></span>
     </dt>
@@ -3900,7 +5580,7 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 {{% /choosable %}}
 
 {{% choosable language go %}}
-> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#OwnerReferenceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/meta/v1?tab=doc#OwnerReferenceOutput">output</a> API doc for this type.
+> See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#OwnerReferenceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/autoscaling/v2beta2?tab=doc#OwnerReferenceOutput">output</a> API doc for this type.
 {{% /choosable %}}
 
 
@@ -3911,7 +5591,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3919,7 +5604,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Uid</span>
+        <span id="uid~csharp">
+<span class="nx">
+Uid
+<a class="anchorjs-link " href="#uid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3927,7 +5617,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Owner<wbr>Deletion</span>
+        <span id="blockownerdeletion~csharp">
+<span class="nx">
+Block<wbr>Owner<wbr>Deletion
+<a class="anchorjs-link " href="#blockownerdeletion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3935,7 +5630,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Controller</span>
+        <span id="controller~csharp">
+<span class="nx">
+Controller
+<a class="anchorjs-link " href="#controller~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3950,7 +5650,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3958,7 +5663,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Uid</span>
+        <span id="uid~go">
+<span class="nx">
+Uid
+<a class="anchorjs-link " href="#uid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3966,7 +5676,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Block<wbr>Owner<wbr>Deletion</span>
+        <span id="blockownerdeletion~go">
+<span class="nx">
+Block<wbr>Owner<wbr>Deletion
+<a class="anchorjs-link " href="#blockownerdeletion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3974,7 +5689,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>Controller</span>
+        <span id="controller~go">
+<span class="nx">
+Controller
+<a class="anchorjs-link " href="#controller~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3989,7 +5709,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3997,7 +5722,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>uid</span>
+        <span id="uid~nodejs">
+<span class="nx">
+uid
+<a class="anchorjs-link " href="#uid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4005,7 +5735,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>block<wbr>Owner<wbr>Deletion</span>
+        <span id="blockownerdeletion~nodejs">
+<span class="nx">
+block<wbr>Owner<wbr>Deletion
+<a class="anchorjs-link " href="#blockownerdeletion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4013,7 +5748,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>controller</span>
+        <span id="controller~nodejs">
+<span class="nx">
+controller
+<a class="anchorjs-link " href="#controller~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -4028,7 +5768,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4036,7 +5781,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>uid</span>
+        <span id="uid~python">
+<span class="nx">
+uid
+<a class="anchorjs-link " href="#uid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4044,7 +5794,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>block_<wbr>owner_<wbr>deletion</span>
+        <span id="block_owner_deletion~python">
+<span class="nx">
+block_<wbr>owner_<wbr>deletion
+<a class="anchorjs-link " href="#block_owner_deletion~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4052,7 +5807,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-optional"
             title="Optional">
-        <span>controller</span>
+        <span id="controller~python">
+<span class="nx">
+controller
+<a class="anchorjs-link " href="#controller~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -4082,7 +5842,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier<wbr>Args</a></span>
     </dt>
@@ -4090,7 +5855,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target<wbr>Args</a></span>
     </dt>
@@ -4105,7 +5875,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -4113,7 +5888,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -4128,7 +5908,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -4136,7 +5921,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -4151,7 +5941,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Dict[Metric<wbr>Identifier]</a></span>
     </dt>
@@ -4159,7 +5954,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Dict[Metric<wbr>Target]</a></span>
     </dt>
@@ -4189,7 +5989,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~csharp">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -4197,7 +6002,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier<wbr>Args</a></span>
     </dt>
@@ -4212,7 +6022,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~go">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -4220,7 +6035,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -4235,7 +6055,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~nodejs">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -4243,7 +6068,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Metric<wbr>Identifier</a></span>
     </dt>
@@ -4258,7 +6088,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~python">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Dict[Metric<wbr>Value<wbr>Status]</a></span>
     </dt>
@@ -4266,7 +6101,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricidentifier">Dict[Metric<wbr>Identifier]</a></span>
     </dt>
@@ -4296,7 +6136,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4304,7 +6149,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target<wbr>Args</a></span>
     </dt>
@@ -4319,7 +6169,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4327,7 +6182,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -4342,7 +6202,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4350,7 +6215,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Metric<wbr>Target</a></span>
     </dt>
@@ -4365,7 +6235,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4373,7 +6248,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metrictarget">Dict[Metric<wbr>Target]</a></span>
     </dt>
@@ -4403,7 +6283,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~csharp">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status<wbr>Args</a></span>
     </dt>
@@ -4411,7 +6296,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4426,7 +6316,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Current</span>
+        <span id="current~go">
+<span class="nx">
+Current
+<a class="anchorjs-link " href="#current~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -4434,7 +6329,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4449,7 +6349,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~nodejs">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Metric<wbr>Value<wbr>Status</a></span>
     </dt>
@@ -4457,7 +6362,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4472,7 +6382,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>current</span>
+        <span id="current~python">
+<span class="nx">
+current
+<a class="anchorjs-link " href="#current~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricvaluestatus">Dict[Metric<wbr>Value<wbr>Status]</a></span>
     </dt>
@@ -4480,7 +6395,12 @@ Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-gu
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

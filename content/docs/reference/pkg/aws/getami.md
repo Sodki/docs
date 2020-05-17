@@ -91,7 +91,7 @@ const example = pulumi.output(aws.getAmi({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAmi<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAmiArgs">GetAmiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAmiResult">GetAmiResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAmi<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAmiArgs">GetAmiArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/#GetAmiResult">GetAmiResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -101,13 +101,14 @@ const example = pulumi.output(aws.getAmi({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAmi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiArgs">GetAmiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiResult">GetAmiResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAmi<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiArgs">GetAmiArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/?tab=doc#GetAmiResult">GetAmiResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAmi </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAmiResult.html">GetAmiResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAmiArgs.html">GetAmiArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAmiResult.html">GetAmiResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.GetAmiArgs.html">GetAmiArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -122,7 +123,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Owners</span>
+        <span id="owners~csharp">
+<span class="nx">
+Owners
+<a class="anchorjs-link " href="#owners~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -131,7 +137,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Executable<wbr>Users</span>
+        <span id="executableusers~csharp">
+<span class="nx">
+Executable<wbr>Users
+<a class="anchorjs-link " href="#executableusers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -141,7 +152,12 @@ the image. Valid items are the numeric account ID or `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List&lt;Get<wbr>Ami<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
@@ -152,7 +168,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Most<wbr>Recent</span>
+        <span id="mostrecent~csharp">
+<span class="nx">
+Most<wbr>Recent
+<a class="anchorjs-link " href="#mostrecent~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -162,7 +183,12 @@ recent AMI.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name<wbr>Regex</span>
+        <span id="nameregex~csharp">
+<span class="nx">
+Name<wbr>Regex
+<a class="anchorjs-link " href="#nameregex~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -175,7 +201,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -193,7 +224,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-required"
             title="Required">
-        <span>Owners</span>
+        <span id="owners~go">
+<span class="nx">
+Owners
+<a class="anchorjs-link " href="#owners~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -202,7 +238,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Executable<wbr>Users</span>
+        <span id="executableusers~go">
+<span class="nx">
+Executable<wbr>Users
+<a class="anchorjs-link " href="#executableusers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -212,7 +253,12 @@ the image. Valid items are the numeric account ID or `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">[]Get<wbr>Ami<wbr>Filter</a></span>
     </dt>
@@ -223,7 +269,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>Most<wbr>Recent</span>
+        <span id="mostrecent~go">
+<span class="nx">
+Most<wbr>Recent
+<a class="anchorjs-link " href="#mostrecent~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -233,7 +284,12 @@ recent AMI.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name<wbr>Regex</span>
+        <span id="nameregex~go">
+<span class="nx">
+Name<wbr>Regex
+<a class="anchorjs-link " href="#nameregex~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -246,7 +302,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -264,7 +325,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-required"
             title="Required">
-        <span>owners</span>
+        <span id="owners~nodejs">
+<span class="nx">
+owners
+<a class="anchorjs-link " href="#owners~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -273,7 +339,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>executable<wbr>Users</span>
+        <span id="executableusers~nodejs">
+<span class="nx">
+executable<wbr>Users
+<a class="anchorjs-link " href="#executableusers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -283,7 +354,12 @@ the image. Valid items are the numeric account ID or `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">Get<wbr>Ami<wbr>Filter[]</a></span>
     </dt>
@@ -294,7 +370,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>most<wbr>Recent</span>
+        <span id="mostrecent~nodejs">
+<span class="nx">
+most<wbr>Recent
+<a class="anchorjs-link " href="#mostrecent~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -304,7 +385,12 @@ recent AMI.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name<wbr>Regex</span>
+        <span id="nameregex~nodejs">
+<span class="nx">
+name<wbr>Regex
+<a class="anchorjs-link " href="#nameregex~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -317,7 +403,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -335,7 +426,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-required"
             title="Required">
-        <span>owners</span>
+        <span id="owners~python">
+<span class="nx">
+owners
+<a class="anchorjs-link " href="#owners~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -344,7 +440,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>executable_<wbr>users</span>
+        <span id="executable_users~python">
+<span class="nx">
+executable_<wbr>users
+<a class="anchorjs-link " href="#executable_users~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -354,7 +455,12 @@ the image. Valid items are the numeric account ID or `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List[Get<wbr>Ami<wbr>Filter]</a></span>
     </dt>
@@ -365,7 +471,12 @@ several valid keys, for a full reference, check out
 
     <dt class="property-optional"
             title="Optional">
-        <span>most_<wbr>recent</span>
+        <span id="most_recent~python">
+<span class="nx">
+most_<wbr>recent
+<a class="anchorjs-link " href="#most_recent~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -375,7 +486,12 @@ recent AMI.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name_<wbr>regex</span>
+        <span id="name_regex~python">
+<span class="nx">
+name_<wbr>regex
+<a class="anchorjs-link " href="#name_regex~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -388,7 +504,12 @@ options to narrow down the list AWS returns.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -419,7 +540,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Architecture</span>
+        <span id="architecture~csharp">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#architecture~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -428,7 +554,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Block<wbr>Device<wbr>Mappings</span>
+        <span id="blockdevicemappings~csharp">
+<span class="nx">
+Block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#blockdevicemappings~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">List&lt;Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping&gt;</a></span>
     </dt>
@@ -451,7 +582,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>Creation<wbr>Date</span>
+        <span id="creationdate~csharp">
+<span class="nx">
+Creation<wbr>Date
+<a class="anchorjs-link " href="#creationdate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -460,7 +596,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -470,7 +611,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Hypervisor</span>
+        <span id="hypervisor~csharp">
+<span class="nx">
+Hypervisor
+<a class="anchorjs-link " href="#hypervisor~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -479,7 +625,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -488,7 +639,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Id</span>
+        <span id="imageid~csharp">
+<span class="nx">
+Image<wbr>Id
+<a class="anchorjs-link " href="#imageid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -497,7 +653,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Location</span>
+        <span id="imagelocation~csharp">
+<span class="nx">
+Image<wbr>Location
+<a class="anchorjs-link " href="#imagelocation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -506,7 +667,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Owner<wbr>Alias</span>
+        <span id="imageowneralias~csharp">
+<span class="nx">
+Image<wbr>Owner<wbr>Alias
+<a class="anchorjs-link " href="#imageowneralias~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -516,7 +682,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Type</span>
+        <span id="imagetype~csharp">
+<span class="nx">
+Image<wbr>Type
+<a class="anchorjs-link " href="#imagetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -525,7 +696,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>Kernel<wbr>Id</span>
+        <span id="kernelid~csharp">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -535,7 +711,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -544,7 +725,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~csharp">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -553,7 +739,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Owners</span>
+        <span id="owners~csharp">
+<span class="nx">
+Owners
+<a class="anchorjs-link " href="#owners~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -561,7 +752,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Platform</span>
+        <span id="platform~csharp">
+<span class="nx">
+Platform
+<a class="anchorjs-link " href="#platform~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -570,7 +766,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Product<wbr>Codes</span>
+        <span id="productcodes~csharp">
+<span class="nx">
+Product<wbr>Codes
+<a class="anchorjs-link " href="#productcodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">List&lt;Get<wbr>Ami<wbr>Product<wbr>Code&gt;</a></span>
     </dt>
@@ -581,7 +782,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Public</span>
+        <span id="public~csharp">
+<span class="nx">
+Public
+<a class="anchorjs-link " href="#public~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -590,7 +796,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Ramdisk<wbr>Id</span>
+        <span id="ramdiskid~csharp">
+<span class="nx">
+Ramdisk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -600,7 +811,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Device<wbr>Name</span>
+        <span id="rootdevicename~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#rootdevicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -609,7 +825,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Device<wbr>Type</span>
+        <span id="rootdevicetype~csharp">
+<span class="nx">
+Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#rootdevicetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -618,7 +839,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Snapshot<wbr>Id</span>
+        <span id="rootsnapshotid~csharp">
+<span class="nx">
+Root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#rootsnapshotid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -628,7 +854,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Sriov<wbr>Net<wbr>Support</span>
+        <span id="sriovnetsupport~csharp">
+<span class="nx">
+Sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#sriovnetsupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -637,7 +868,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>State</span>
+        <span id="state~csharp">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -647,7 +883,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>State<wbr>Reason</span>
+        <span id="statereason~csharp">
+<span class="nx">
+State<wbr>Reason
+<a class="anchorjs-link " href="#statereason~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -658,7 +899,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -669,7 +915,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Virtualization<wbr>Type</span>
+        <span id="virtualizationtype~csharp">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -679,7 +930,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Executable<wbr>Users</span>
+        <span id="executableusers~csharp">
+<span class="nx">
+Executable<wbr>Users
+<a class="anchorjs-link " href="#executableusers~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -687,7 +943,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~csharp">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List&lt;Get<wbr>Ami<wbr>Filter&gt;</a></span>
     </dt>
@@ -695,7 +956,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Most<wbr>Recent</span>
+        <span id="mostrecent~csharp">
+<span class="nx">
+Most<wbr>Recent
+<a class="anchorjs-link " href="#mostrecent~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -703,7 +969,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Name<wbr>Regex</span>
+        <span id="nameregex~csharp">
+<span class="nx">
+Name<wbr>Regex
+<a class="anchorjs-link " href="#nameregex~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -718,7 +989,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Architecture</span>
+        <span id="architecture~go">
+<span class="nx">
+Architecture
+<a class="anchorjs-link " href="#architecture~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -727,7 +1003,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Block<wbr>Device<wbr>Mappings</span>
+        <span id="blockdevicemappings~go">
+<span class="nx">
+Block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#blockdevicemappings~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">[]Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
@@ -750,7 +1031,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>Creation<wbr>Date</span>
+        <span id="creationdate~go">
+<span class="nx">
+Creation<wbr>Date
+<a class="anchorjs-link " href="#creationdate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -759,7 +1045,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -769,7 +1060,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Hypervisor</span>
+        <span id="hypervisor~go">
+<span class="nx">
+Hypervisor
+<a class="anchorjs-link " href="#hypervisor~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -778,7 +1074,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -787,7 +1088,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Id</span>
+        <span id="imageid~go">
+<span class="nx">
+Image<wbr>Id
+<a class="anchorjs-link " href="#imageid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -796,7 +1102,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Location</span>
+        <span id="imagelocation~go">
+<span class="nx">
+Image<wbr>Location
+<a class="anchorjs-link " href="#imagelocation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -805,7 +1116,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Owner<wbr>Alias</span>
+        <span id="imageowneralias~go">
+<span class="nx">
+Image<wbr>Owner<wbr>Alias
+<a class="anchorjs-link " href="#imageowneralias~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -815,7 +1131,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>Image<wbr>Type</span>
+        <span id="imagetype~go">
+<span class="nx">
+Image<wbr>Type
+<a class="anchorjs-link " href="#imagetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -824,7 +1145,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>Kernel<wbr>Id</span>
+        <span id="kernelid~go">
+<span class="nx">
+Kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -834,7 +1160,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -843,7 +1174,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~go">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -852,7 +1188,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Owners</span>
+        <span id="owners~go">
+<span class="nx">
+Owners
+<a class="anchorjs-link " href="#owners~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -860,7 +1201,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Platform</span>
+        <span id="platform~go">
+<span class="nx">
+Platform
+<a class="anchorjs-link " href="#platform~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -869,7 +1215,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Product<wbr>Codes</span>
+        <span id="productcodes~go">
+<span class="nx">
+Product<wbr>Codes
+<a class="anchorjs-link " href="#productcodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">[]Get<wbr>Ami<wbr>Product<wbr>Code</a></span>
     </dt>
@@ -880,7 +1231,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Public</span>
+        <span id="public~go">
+<span class="nx">
+Public
+<a class="anchorjs-link " href="#public~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -889,7 +1245,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Ramdisk<wbr>Id</span>
+        <span id="ramdiskid~go">
+<span class="nx">
+Ramdisk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -899,7 +1260,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Device<wbr>Name</span>
+        <span id="rootdevicename~go">
+<span class="nx">
+Root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#rootdevicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -908,7 +1274,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Device<wbr>Type</span>
+        <span id="rootdevicetype~go">
+<span class="nx">
+Root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#rootdevicetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -917,7 +1288,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Root<wbr>Snapshot<wbr>Id</span>
+        <span id="rootsnapshotid~go">
+<span class="nx">
+Root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#rootsnapshotid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -927,7 +1303,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>Sriov<wbr>Net<wbr>Support</span>
+        <span id="sriovnetsupport~go">
+<span class="nx">
+Sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#sriovnetsupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -936,7 +1317,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>State</span>
+        <span id="state~go">
+<span class="nx">
+State
+<a class="anchorjs-link " href="#state~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -946,7 +1332,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>State<wbr>Reason</span>
+        <span id="statereason~go">
+<span class="nx">
+State<wbr>Reason
+<a class="anchorjs-link " href="#statereason~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -957,7 +1348,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -968,7 +1364,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Virtualization<wbr>Type</span>
+        <span id="virtualizationtype~go">
+<span class="nx">
+Virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -978,7 +1379,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Executable<wbr>Users</span>
+        <span id="executableusers~go">
+<span class="nx">
+Executable<wbr>Users
+<a class="anchorjs-link " href="#executableusers~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -986,7 +1392,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Filters</span>
+        <span id="filters~go">
+<span class="nx">
+Filters
+<a class="anchorjs-link " href="#filters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">[]Get<wbr>Ami<wbr>Filter</a></span>
     </dt>
@@ -994,7 +1405,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Most<wbr>Recent</span>
+        <span id="mostrecent~go">
+<span class="nx">
+Most<wbr>Recent
+<a class="anchorjs-link " href="#mostrecent~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1002,7 +1418,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>Name<wbr>Regex</span>
+        <span id="nameregex~go">
+<span class="nx">
+Name<wbr>Regex
+<a class="anchorjs-link " href="#nameregex~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1017,7 +1438,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>architecture</span>
+        <span id="architecture~nodejs">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#architecture~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1026,7 +1452,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>block<wbr>Device<wbr>Mappings</span>
+        <span id="blockdevicemappings~nodejs">
+<span class="nx">
+block<wbr>Device<wbr>Mappings
+<a class="anchorjs-link " href="#blockdevicemappings~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
@@ -1049,7 +1480,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>creation<wbr>Date</span>
+        <span id="creationdate~nodejs">
+<span class="nx">
+creation<wbr>Date
+<a class="anchorjs-link " href="#creationdate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1058,7 +1494,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1068,7 +1509,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>hypervisor</span>
+        <span id="hypervisor~nodejs">
+<span class="nx">
+hypervisor
+<a class="anchorjs-link " href="#hypervisor~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1077,7 +1523,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1086,7 +1537,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Id</span>
+        <span id="imageid~nodejs">
+<span class="nx">
+image<wbr>Id
+<a class="anchorjs-link " href="#imageid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1095,7 +1551,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Location</span>
+        <span id="imagelocation~nodejs">
+<span class="nx">
+image<wbr>Location
+<a class="anchorjs-link " href="#imagelocation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1104,7 +1565,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Owner<wbr>Alias</span>
+        <span id="imageowneralias~nodejs">
+<span class="nx">
+image<wbr>Owner<wbr>Alias
+<a class="anchorjs-link " href="#imageowneralias~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1114,7 +1580,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>image<wbr>Type</span>
+        <span id="imagetype~nodejs">
+<span class="nx">
+image<wbr>Type
+<a class="anchorjs-link " href="#imagetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1123,7 +1594,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>kernel<wbr>Id</span>
+        <span id="kernelid~nodejs">
+<span class="nx">
+kernel<wbr>Id
+<a class="anchorjs-link " href="#kernelid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1133,7 +1609,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1142,7 +1623,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>owner<wbr>Id</span>
+        <span id="ownerid~nodejs">
+<span class="nx">
+owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1151,7 +1637,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>owners</span>
+        <span id="owners~nodejs">
+<span class="nx">
+owners
+<a class="anchorjs-link " href="#owners~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1159,7 +1650,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>platform</span>
+        <span id="platform~nodejs">
+<span class="nx">
+platform
+<a class="anchorjs-link " href="#platform~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1168,7 +1664,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>product<wbr>Codes</span>
+        <span id="productcodes~nodejs">
+<span class="nx">
+product<wbr>Codes
+<a class="anchorjs-link " href="#productcodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">Get<wbr>Ami<wbr>Product<wbr>Code[]</a></span>
     </dt>
@@ -1179,7 +1680,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>public</span>
+        <span id="public~nodejs">
+<span class="nx">
+public
+<a class="anchorjs-link " href="#public~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1188,7 +1694,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>ramdisk<wbr>Id</span>
+        <span id="ramdiskid~nodejs">
+<span class="nx">
+ramdisk<wbr>Id
+<a class="anchorjs-link " href="#ramdiskid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1198,7 +1709,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>root<wbr>Device<wbr>Name</span>
+        <span id="rootdevicename~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Name
+<a class="anchorjs-link " href="#rootdevicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1207,7 +1723,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>root<wbr>Device<wbr>Type</span>
+        <span id="rootdevicetype~nodejs">
+<span class="nx">
+root<wbr>Device<wbr>Type
+<a class="anchorjs-link " href="#rootdevicetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1216,7 +1737,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>root<wbr>Snapshot<wbr>Id</span>
+        <span id="rootsnapshotid~nodejs">
+<span class="nx">
+root<wbr>Snapshot<wbr>Id
+<a class="anchorjs-link " href="#rootsnapshotid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1226,7 +1752,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>sriov<wbr>Net<wbr>Support</span>
+        <span id="sriovnetsupport~nodejs">
+<span class="nx">
+sriov<wbr>Net<wbr>Support
+<a class="anchorjs-link " href="#sriovnetsupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1235,7 +1766,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>state</span>
+        <span id="state~nodejs">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1245,7 +1781,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>state<wbr>Reason</span>
+        <span id="statereason~nodejs">
+<span class="nx">
+state<wbr>Reason
+<a class="anchorjs-link " href="#statereason~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1256,7 +1797,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1267,7 +1813,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>virtualization<wbr>Type</span>
+        <span id="virtualizationtype~nodejs">
+<span class="nx">
+virtualization<wbr>Type
+<a class="anchorjs-link " href="#virtualizationtype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1277,7 +1828,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>executable<wbr>Users</span>
+        <span id="executableusers~nodejs">
+<span class="nx">
+executable<wbr>Users
+<a class="anchorjs-link " href="#executableusers~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1285,7 +1841,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~nodejs">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">Get<wbr>Ami<wbr>Filter[]</a></span>
     </dt>
@@ -1293,7 +1854,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>most<wbr>Recent</span>
+        <span id="mostrecent~nodejs">
+<span class="nx">
+most<wbr>Recent
+<a class="anchorjs-link " href="#mostrecent~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1301,7 +1867,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>name<wbr>Regex</span>
+        <span id="nameregex~nodejs">
+<span class="nx">
+name<wbr>Regex
+<a class="anchorjs-link " href="#nameregex~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1316,7 +1887,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>architecture</span>
+        <span id="architecture~python">
+<span class="nx">
+architecture
+<a class="anchorjs-link " href="#architecture~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1325,7 +1901,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>block_<wbr>device_<wbr>mappings</span>
+        <span id="block_device_mappings~python">
+<span class="nx">
+block_<wbr>device_<wbr>mappings
+<a class="anchorjs-link " href="#block_device_mappings~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiblockdevicemapping">List[Get<wbr>Ami<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
@@ -1348,7 +1929,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>creation_<wbr>date</span>
+        <span id="creation_date~python">
+<span class="nx">
+creation_<wbr>date
+<a class="anchorjs-link " href="#creation_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1357,7 +1943,12 @@ instance stores).
 
     <dt class="property-"
             title="">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1367,7 +1958,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>hypervisor</span>
+        <span id="hypervisor~python">
+<span class="nx">
+hypervisor
+<a class="anchorjs-link " href="#hypervisor~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1376,7 +1972,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1385,7 +1986,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>id</span>
+        <span id="image_id~python">
+<span class="nx">
+image_<wbr>id
+<a class="anchorjs-link " href="#image_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1394,7 +2000,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>location</span>
+        <span id="image_location~python">
+<span class="nx">
+image_<wbr>location
+<a class="anchorjs-link " href="#image_location~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1403,7 +2014,12 @@ creation.
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>owner_<wbr>alias</span>
+        <span id="image_owner_alias~python">
+<span class="nx">
+image_<wbr>owner_<wbr>alias
+<a class="anchorjs-link " href="#image_owner_alias~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1413,7 +2029,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>image_<wbr>type</span>
+        <span id="image_type~python">
+<span class="nx">
+image_<wbr>type
+<a class="anchorjs-link " href="#image_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1422,7 +2043,12 @@ the AWS account ID of the AMI owner.
 
     <dt class="property-"
             title="">
-        <span>kernel_<wbr>id</span>
+        <span id="kernel_id~python">
+<span class="nx">
+kernel_<wbr>id
+<a class="anchorjs-link " href="#kernel_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1432,7 +2058,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1441,7 +2072,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>owner_<wbr>id</span>
+        <span id="owner_id~python">
+<span class="nx">
+owner_<wbr>id
+<a class="anchorjs-link " href="#owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1450,7 +2086,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>owners</span>
+        <span id="owners~python">
+<span class="nx">
+owners
+<a class="anchorjs-link " href="#owners~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1458,7 +2099,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>platform</span>
+        <span id="platform~python">
+<span class="nx">
+platform
+<a class="anchorjs-link " href="#platform~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1467,7 +2113,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>product_<wbr>codes</span>
+        <span id="product_codes~python">
+<span class="nx">
+product_<wbr>codes
+<a class="anchorjs-link " href="#product_codes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamiproductcode">List[Get<wbr>Ami<wbr>Product<wbr>Code]</a></span>
     </dt>
@@ -1478,7 +2129,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>public</span>
+        <span id="public~python">
+<span class="nx">
+public
+<a class="anchorjs-link " href="#public~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1487,7 +2143,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>ramdisk_<wbr>id</span>
+        <span id="ramdisk_id~python">
+<span class="nx">
+ramdisk_<wbr>id
+<a class="anchorjs-link " href="#ramdisk_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1497,7 +2158,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>root_<wbr>device_<wbr>name</span>
+        <span id="root_device_name~python">
+<span class="nx">
+root_<wbr>device_<wbr>name
+<a class="anchorjs-link " href="#root_device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1506,7 +2172,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>root_<wbr>device_<wbr>type</span>
+        <span id="root_device_type~python">
+<span class="nx">
+root_<wbr>device_<wbr>type
+<a class="anchorjs-link " href="#root_device_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1515,7 +2186,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>root_<wbr>snapshot_<wbr>id</span>
+        <span id="root_snapshot_id~python">
+<span class="nx">
+root_<wbr>snapshot_<wbr>id
+<a class="anchorjs-link " href="#root_snapshot_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1525,7 +2201,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>sriov_<wbr>net_<wbr>support</span>
+        <span id="sriov_net_support~python">
+<span class="nx">
+sriov_<wbr>net_<wbr>support
+<a class="anchorjs-link " href="#sriov_net_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1534,7 +2215,12 @@ for machine images.
 
     <dt class="property-"
             title="">
-        <span>state</span>
+        <span id="state~python">
+<span class="nx">
+state
+<a class="anchorjs-link " href="#state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1544,7 +2230,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>state_<wbr>reason</span>
+        <span id="state_reason~python">
+<span class="nx">
+state_<wbr>reason
+<a class="anchorjs-link " href="#state_reason~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1555,7 +2246,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1566,7 +2262,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>virtualization_<wbr>type</span>
+        <span id="virtualization_type~python">
+<span class="nx">
+virtualization_<wbr>type
+<a class="anchorjs-link " href="#virtualization_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1576,7 +2277,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>executable_<wbr>users</span>
+        <span id="executable_users~python">
+<span class="nx">
+executable_<wbr>users
+<a class="anchorjs-link " href="#executable_users~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1584,7 +2290,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>filters</span>
+        <span id="filters~python">
+<span class="nx">
+filters
+<a class="anchorjs-link " href="#filters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getamifilter">List[Get<wbr>Ami<wbr>Filter]</a></span>
     </dt>
@@ -1592,7 +2303,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>most_<wbr>recent</span>
+        <span id="most_recent~python">
+<span class="nx">
+most_<wbr>recent
+<a class="anchorjs-link " href="#most_recent~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1600,7 +2316,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-"
             title="">
-        <span>name_<wbr>regex</span>
+        <span id="name_regex~python">
+<span class="nx">
+name_<wbr>regex
+<a class="anchorjs-link " href="#name_regex~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1639,7 +2360,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1647,7 +2373,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Ebs</span>
+        <span id="ebs~csharp">
+<span class="nx">
+Ebs
+<a class="anchorjs-link " href="#ebs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1655,7 +2386,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~csharp">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1663,7 +2399,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~csharp">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1678,7 +2419,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1686,7 +2432,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Ebs</span>
+        <span id="ebs~go">
+<span class="nx">
+Ebs
+<a class="anchorjs-link " href="#ebs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1694,7 +2445,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>No<wbr>Device</span>
+        <span id="nodevice~go">
+<span class="nx">
+No<wbr>Device
+<a class="anchorjs-link " href="#nodevice~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1702,7 +2458,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Virtual<wbr>Name</span>
+        <span id="virtualname~go">
+<span class="nx">
+Virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1717,7 +2478,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1725,7 +2491,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>ebs</span>
+        <span id="ebs~nodejs">
+<span class="nx">
+ebs
+<a class="anchorjs-link " href="#ebs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1733,7 +2504,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~nodejs">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1741,7 +2517,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~nodejs">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1756,7 +2537,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1764,7 +2550,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>ebs</span>
+        <span id="ebs~python">
+<span class="nx">
+ebs
+<a class="anchorjs-link " href="#ebs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1772,7 +2563,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>no<wbr>Device</span>
+        <span id="nodevice~python">
+<span class="nx">
+no<wbr>Device
+<a class="anchorjs-link " href="#nodevice~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1780,7 +2576,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>virtual<wbr>Name</span>
+        <span id="virtualname~python">
+<span class="nx">
+virtual<wbr>Name
+<a class="anchorjs-link " href="#virtualname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1813,7 +2614,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1822,7 +2628,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1837,7 +2648,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1846,7 +2662,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1861,7 +2682,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1870,7 +2696,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1885,7 +2716,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1894,7 +2730,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1927,7 +2768,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Product<wbr>Code<wbr>Id</span>
+        <span id="productcodeid~csharp">
+<span class="nx">
+Product<wbr>Code<wbr>Id
+<a class="anchorjs-link " href="#productcodeid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1935,7 +2781,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Product<wbr>Code<wbr>Type</span>
+        <span id="productcodetype~csharp">
+<span class="nx">
+Product<wbr>Code<wbr>Type
+<a class="anchorjs-link " href="#productcodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1950,7 +2801,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Product<wbr>Code<wbr>Id</span>
+        <span id="productcodeid~go">
+<span class="nx">
+Product<wbr>Code<wbr>Id
+<a class="anchorjs-link " href="#productcodeid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1958,7 +2814,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>Product<wbr>Code<wbr>Type</span>
+        <span id="productcodetype~go">
+<span class="nx">
+Product<wbr>Code<wbr>Type
+<a class="anchorjs-link " href="#productcodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1973,7 +2834,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>product<wbr>Code<wbr>Id</span>
+        <span id="productcodeid~nodejs">
+<span class="nx">
+product<wbr>Code<wbr>Id
+<a class="anchorjs-link " href="#productcodeid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1981,7 +2847,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>product<wbr>Code<wbr>Type</span>
+        <span id="productcodetype~nodejs">
+<span class="nx">
+product<wbr>Code<wbr>Type
+<a class="anchorjs-link " href="#productcodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1996,7 +2867,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>product<wbr>Code<wbr>Id</span>
+        <span id="productcodeid~python">
+<span class="nx">
+product<wbr>Code<wbr>Id
+<a class="anchorjs-link " href="#productcodeid~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2004,7 +2880,12 @@ is successfully registered and can be used to launch an instance.
 
     <dt class="property-required"
             title="Required">
-        <span>product<wbr>Code<wbr>Type</span>
+        <span id="productcodetype~python">
+<span class="nx">
+product<wbr>Code<wbr>Type
+<a class="anchorjs-link " href="#productcodetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

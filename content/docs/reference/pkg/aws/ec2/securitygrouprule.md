@@ -113,19 +113,19 @@ const example = new aws.ec2.SecurityGroupRule("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRule">SecurityGroupRule</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRuleArgs">SecurityGroupRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRule">SecurityGroupRule</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRuleArgs">SecurityGroupRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SecurityGroupRule</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cidr_blocks=None<span class="p">, </span>description=None<span class="p">, </span>from_port=None<span class="p">, </span>ipv6_cidr_blocks=None<span class="p">, </span>prefix_list_ids=None<span class="p">, </span>protocol=None<span class="p">, </span>security_group_id=None<span class="p">, </span>self=None<span class="p">, </span>source_security_group_id=None<span class="p">, </span>to_port=None<span class="p">, </span>type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#SecurityGroupRule">SecurityGroupRule</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cidr_blocks=None<span class="p">, </span>description=None<span class="p">, </span>from_port=None<span class="p">, </span>ipv6_cidr_blocks=None<span class="p">, </span>prefix_list_ids=None<span class="p">, </span>protocol=None<span class="p">, </span>security_group_id=None<span class="p">, </span>self=None<span class="p">, </span>source_security_group_id=None<span class="p">, </span>to_port=None<span class="p">, </span>type=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSecurityGroupRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRuleArgs">SecurityGroupRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRule">SecurityGroupRule</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRule">NewSecurityGroupRule</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRuleArgs">SecurityGroupRuleArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRule">SecurityGroupRule</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRule.html">SecurityGroupRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRuleArgs.html">SecurityGroupRuleArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRule.html">SecurityGroupRule</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRuleArgs.html">SecurityGroupRuleArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -291,7 +291,12 @@ The SecurityGroupRule resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-required"
             title="Required">
-        <span>From<wbr>Port</span>
+        <span id="fromport~csharp">
+<span class="nx">
+From<wbr>Port
+<a class="anchorjs-link " href="#fromport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -300,7 +305,12 @@ The SecurityGroupRule resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-required"
             title="Required">
-        <span>Protocol</span>
+        <span id="protocol~csharp">
+<span class="nx">
+Protocol
+<a class="anchorjs-link " href="#protocol~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -309,7 +319,12 @@ The SecurityGroupRule resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-required"
             title="Required">
-        <span>Security<wbr>Group<wbr>Id</span>
+        <span id="securitygroupid~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#securitygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -318,7 +333,12 @@ The SecurityGroupRule resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-required"
             title="Required">
-        <span>To<wbr>Port</span>
+        <span id="toport~csharp">
+<span class="nx">
+To<wbr>Port
+<a class="anchorjs-link " href="#toport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -327,7 +347,12 @@ The SecurityGroupRule resource accepts the following [input]({{< relref "/docs/i
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -337,7 +362,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Blocks</span>
+        <span id="cidrblocks~csharp">
+<span class="nx">
+Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#cidrblocks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -346,7 +376,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -355,7 +390,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Cidr<wbr>Blocks</span>
+        <span id="ipv6cidrblocks~csharp">
+<span class="nx">
+Ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#ipv6cidrblocks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -364,7 +404,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix<wbr>List<wbr>Ids</span>
+        <span id="prefixlistids~csharp">
+<span class="nx">
+Prefix<wbr>List<wbr>Ids
+<a class="anchorjs-link " href="#prefixlistids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -374,7 +419,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Self</span>
+        <span id="self~csharp">
+<span class="nx">
+Self
+<a class="anchorjs-link " href="#self~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -384,7 +434,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="sourcesecuritygroupid~csharp">
+<span class="nx">
+Source<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#sourcesecuritygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -401,7 +456,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>From<wbr>Port</span>
+        <span id="fromport~go">
+<span class="nx">
+From<wbr>Port
+<a class="anchorjs-link " href="#fromport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -410,7 +470,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>Protocol</span>
+        <span id="protocol~go">
+<span class="nx">
+Protocol
+<a class="anchorjs-link " href="#protocol~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -419,7 +484,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>Security<wbr>Group<wbr>Id</span>
+        <span id="securitygroupid~go">
+<span class="nx">
+Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#securitygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -428,7 +498,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>To<wbr>Port</span>
+        <span id="toport~go">
+<span class="nx">
+To<wbr>Port
+<a class="anchorjs-link " href="#toport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -437,7 +512,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -447,7 +527,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Blocks</span>
+        <span id="cidrblocks~go">
+<span class="nx">
+Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#cidrblocks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -456,7 +541,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -465,7 +555,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Cidr<wbr>Blocks</span>
+        <span id="ipv6cidrblocks~go">
+<span class="nx">
+Ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#ipv6cidrblocks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -474,7 +569,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix<wbr>List<wbr>Ids</span>
+        <span id="prefixlistids~go">
+<span class="nx">
+Prefix<wbr>List<wbr>Ids
+<a class="anchorjs-link " href="#prefixlistids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -484,7 +584,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Self</span>
+        <span id="self~go">
+<span class="nx">
+Self
+<a class="anchorjs-link " href="#self~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -494,7 +599,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="sourcesecuritygroupid~go">
+<span class="nx">
+Source<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#sourcesecuritygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -511,7 +621,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>from<wbr>Port</span>
+        <span id="fromport~nodejs">
+<span class="nx">
+from<wbr>Port
+<a class="anchorjs-link " href="#fromport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -520,7 +635,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>protocol</span>
+        <span id="protocol~nodejs">
+<span class="nx">
+protocol
+<a class="anchorjs-link " href="#protocol~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -529,7 +649,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>security<wbr>Group<wbr>Id</span>
+        <span id="securitygroupid~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#securitygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -538,7 +663,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>to<wbr>Port</span>
+        <span id="toport~nodejs">
+<span class="nx">
+to<wbr>Port
+<a class="anchorjs-link " href="#toport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -547,7 +677,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -557,7 +692,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr<wbr>Blocks</span>
+        <span id="cidrblocks~nodejs">
+<span class="nx">
+cidr<wbr>Blocks
+<a class="anchorjs-link " href="#cidrblocks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -566,7 +706,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -575,7 +720,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Cidr<wbr>Blocks</span>
+        <span id="ipv6cidrblocks~nodejs">
+<span class="nx">
+ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#ipv6cidrblocks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -584,7 +734,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix<wbr>List<wbr>Ids</span>
+        <span id="prefixlistids~nodejs">
+<span class="nx">
+prefix<wbr>List<wbr>Ids
+<a class="anchorjs-link " href="#prefixlistids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -594,7 +749,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>self</span>
+        <span id="self~nodejs">
+<span class="nx">
+self
+<a class="anchorjs-link " href="#self~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -604,7 +764,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="sourcesecuritygroupid~nodejs">
+<span class="nx">
+source<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#sourcesecuritygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -621,7 +786,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>from_<wbr>port</span>
+        <span id="from_port~python">
+<span class="nx">
+from_<wbr>port
+<a class="anchorjs-link " href="#from_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -630,7 +800,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>protocol</span>
+        <span id="protocol~python">
+<span class="nx">
+protocol
+<a class="anchorjs-link " href="#protocol~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -639,7 +814,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>security_<wbr>group_<wbr>id</span>
+        <span id="security_group_id~python">
+<span class="nx">
+security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -648,7 +828,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>to_<wbr>port</span>
+        <span id="to_port~python">
+<span class="nx">
+to_<wbr>port
+<a class="anchorjs-link " href="#to_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -657,7 +842,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -667,7 +857,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr_<wbr>blocks</span>
+        <span id="cidr_blocks~python">
+<span class="nx">
+cidr_<wbr>blocks
+<a class="anchorjs-link " href="#cidr_blocks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -676,7 +871,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -685,7 +885,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>cidr_<wbr>blocks</span>
+        <span id="ipv6_cidr_blocks~python">
+<span class="nx">
+ipv6_<wbr>cidr_<wbr>blocks
+<a class="anchorjs-link " href="#ipv6_cidr_blocks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -694,7 +899,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix_<wbr>list_<wbr>ids</span>
+        <span id="prefix_list_ids~python">
+<span class="nx">
+prefix_<wbr>list_<wbr>ids
+<a class="anchorjs-link " href="#prefix_list_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -704,7 +914,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>self</span>
+        <span id="self~python">
+<span class="nx">
+self
+<a class="anchorjs-link " href="#self~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -714,7 +929,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>security_<wbr>group_<wbr>id</span>
+        <span id="source_security_group_id~python">
+<span class="nx">
+source_<wbr>security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#source_security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -742,7 +962,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -757,7 +982,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -772,7 +1002,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -787,7 +1022,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -808,7 +1048,7 @@ Get an existing SecurityGroupRule resource's state with the given name, ID, and 
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRuleState">SecurityGroupRuleState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRule">SecurityGroupRule</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRuleState">SecurityGroupRuleState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#SecurityGroupRule">SecurityGroupRule</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -816,11 +1056,11 @@ Get an existing SecurityGroupRule resource's state with the given name, ID, and 
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSecurityGroupRule<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRuleState">SecurityGroupRuleState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRule">SecurityGroupRule</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSecurityGroupRule<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRuleState">SecurityGroupRuleState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#SecurityGroupRule">SecurityGroupRule</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRule.html">SecurityGroupRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRuleState.html">SecurityGroupRuleState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRule.html">SecurityGroupRule</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.SecurityGroupRuleState.html">SecurityGroupRuleState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -928,7 +1168,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Blocks</span>
+        <span id="state_cidrblocks~csharp">
+<span class="nx">
+Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#state_cidrblocks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -937,7 +1182,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -946,7 +1196,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>From<wbr>Port</span>
+        <span id="state_fromport~csharp">
+<span class="nx">
+From<wbr>Port
+<a class="anchorjs-link " href="#state_fromport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -955,7 +1210,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Cidr<wbr>Blocks</span>
+        <span id="state_ipv6cidrblocks~csharp">
+<span class="nx">
+Ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#state_ipv6cidrblocks~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -964,7 +1224,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix<wbr>List<wbr>Ids</span>
+        <span id="state_prefixlistids~csharp">
+<span class="nx">
+Prefix<wbr>List<wbr>Ids
+<a class="anchorjs-link " href="#state_prefixlistids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -974,7 +1239,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Protocol</span>
+        <span id="state_protocol~csharp">
+<span class="nx">
+Protocol
+<a class="anchorjs-link " href="#state_protocol~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -983,7 +1253,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Id</span>
+        <span id="state_securitygroupid~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_securitygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -992,7 +1267,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Self</span>
+        <span id="state_self~csharp">
+<span class="nx">
+Self
+<a class="anchorjs-link " href="#state_self~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1002,7 +1282,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="state_sourcesecuritygroupid~csharp">
+<span class="nx">
+Source<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_sourcesecuritygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1012,7 +1297,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>To<wbr>Port</span>
+        <span id="state_toport~csharp">
+<span class="nx">
+To<wbr>Port
+<a class="anchorjs-link " href="#state_toport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1021,7 +1311,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="state_type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#state_type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1038,7 +1333,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Blocks</span>
+        <span id="state_cidrblocks~go">
+<span class="nx">
+Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#state_cidrblocks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1047,7 +1347,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1056,7 +1361,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>From<wbr>Port</span>
+        <span id="state_fromport~go">
+<span class="nx">
+From<wbr>Port
+<a class="anchorjs-link " href="#state_fromport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1065,7 +1375,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Cidr<wbr>Blocks</span>
+        <span id="state_ipv6cidrblocks~go">
+<span class="nx">
+Ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#state_ipv6cidrblocks~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1074,7 +1389,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>Prefix<wbr>List<wbr>Ids</span>
+        <span id="state_prefixlistids~go">
+<span class="nx">
+Prefix<wbr>List<wbr>Ids
+<a class="anchorjs-link " href="#state_prefixlistids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1084,7 +1404,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Protocol</span>
+        <span id="state_protocol~go">
+<span class="nx">
+Protocol
+<a class="anchorjs-link " href="#state_protocol~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1093,7 +1418,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Group<wbr>Id</span>
+        <span id="state_securitygroupid~go">
+<span class="nx">
+Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_securitygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1102,7 +1432,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Self</span>
+        <span id="state_self~go">
+<span class="nx">
+Self
+<a class="anchorjs-link " href="#state_self~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1112,7 +1447,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="state_sourcesecuritygroupid~go">
+<span class="nx">
+Source<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_sourcesecuritygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1122,7 +1462,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>To<wbr>Port</span>
+        <span id="state_toport~go">
+<span class="nx">
+To<wbr>Port
+<a class="anchorjs-link " href="#state_toport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1131,7 +1476,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="state_type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#state_type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1148,7 +1498,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr<wbr>Blocks</span>
+        <span id="state_cidrblocks~nodejs">
+<span class="nx">
+cidr<wbr>Blocks
+<a class="anchorjs-link " href="#state_cidrblocks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1157,7 +1512,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1166,7 +1526,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>from<wbr>Port</span>
+        <span id="state_fromport~nodejs">
+<span class="nx">
+from<wbr>Port
+<a class="anchorjs-link " href="#state_fromport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1175,7 +1540,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Cidr<wbr>Blocks</span>
+        <span id="state_ipv6cidrblocks~nodejs">
+<span class="nx">
+ipv6Cidr<wbr>Blocks
+<a class="anchorjs-link " href="#state_ipv6cidrblocks~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1184,7 +1554,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix<wbr>List<wbr>Ids</span>
+        <span id="state_prefixlistids~nodejs">
+<span class="nx">
+prefix<wbr>List<wbr>Ids
+<a class="anchorjs-link " href="#state_prefixlistids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1194,7 +1569,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>protocol</span>
+        <span id="state_protocol~nodejs">
+<span class="nx">
+protocol
+<a class="anchorjs-link " href="#state_protocol~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1203,7 +1583,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Group<wbr>Id</span>
+        <span id="state_securitygroupid~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_securitygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1212,7 +1597,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>self</span>
+        <span id="state_self~nodejs">
+<span class="nx">
+self
+<a class="anchorjs-link " href="#state_self~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1222,7 +1612,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="state_sourcesecuritygroupid~nodejs">
+<span class="nx">
+source<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_sourcesecuritygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1232,7 +1627,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>to<wbr>Port</span>
+        <span id="state_toport~nodejs">
+<span class="nx">
+to<wbr>Port
+<a class="anchorjs-link " href="#state_toport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1241,7 +1641,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="state_type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#state_type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1258,7 +1663,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr_<wbr>blocks</span>
+        <span id="state_cidr_blocks~python">
+<span class="nx">
+cidr_<wbr>blocks
+<a class="anchorjs-link " href="#state_cidr_blocks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1267,7 +1677,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1276,7 +1691,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>from_<wbr>port</span>
+        <span id="state_from_port~python">
+<span class="nx">
+from_<wbr>port
+<a class="anchorjs-link " href="#state_from_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1285,7 +1705,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>cidr_<wbr>blocks</span>
+        <span id="state_ipv6_cidr_blocks~python">
+<span class="nx">
+ipv6_<wbr>cidr_<wbr>blocks
+<a class="anchorjs-link " href="#state_ipv6_cidr_blocks~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1294,7 +1719,12 @@ or `egress` (outbound).
 
     <dt class="property-optional"
             title="Optional">
-        <span>prefix_<wbr>list_<wbr>ids</span>
+        <span id="state_prefix_list_ids~python">
+<span class="nx">
+prefix_<wbr>list_<wbr>ids
+<a class="anchorjs-link " href="#state_prefix_list_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1304,7 +1734,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>protocol</span>
+        <span id="state_protocol~python">
+<span class="nx">
+protocol
+<a class="anchorjs-link " href="#state_protocol~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1313,7 +1748,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>group_<wbr>id</span>
+        <span id="state_security_group_id~python">
+<span class="nx">
+security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#state_security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1322,7 +1762,12 @@ Only valid with `egress`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>self</span>
+        <span id="state_self~python">
+<span class="nx">
+self
+<a class="anchorjs-link " href="#state_self~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1332,7 +1777,12 @@ a source to this ingress rule. Cannot be specified with `source_security_group_i
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>security_<wbr>group_<wbr>id</span>
+        <span id="state_source_security_group_id~python">
+<span class="nx">
+source_<wbr>security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#state_source_security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1342,7 +1792,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>to_<wbr>port</span>
+        <span id="state_to_port~python">
+<span class="nx">
+to_<wbr>port
+<a class="anchorjs-link " href="#state_to_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1351,7 +1806,12 @@ depending on the `type`. Cannot be specified with `cidr_blocks` and `self`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="state_type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#state_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

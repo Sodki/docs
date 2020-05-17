@@ -110,19 +110,19 @@ const testApplication = new aws.kinesis.AnalyticsApplication("test_application",
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplicationArgs">AnalyticsApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplicationArgs">AnalyticsApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">AnalyticsApplication</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cloudwatch_logging_options=None<span class="p">, </span>code=None<span class="p">, </span>description=None<span class="p">, </span>inputs=None<span class="p">, </span>name=None<span class="p">, </span>outputs=None<span class="p">, </span>reference_data_sources=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cloudwatch_logging_options=None<span class="p">, </span>code=None<span class="p">, </span>description=None<span class="p">, </span>inputs=None<span class="p">, </span>name=None<span class="p">, </span>outputs=None<span class="p">, </span>reference_data_sources=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAnalyticsApplication<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationArgs">AnalyticsApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">AnalyticsApplication</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">NewAnalyticsApplication</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationArgs">AnalyticsApplicationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">AnalyticsApplication</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplication.html">AnalyticsApplication</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplicationArgs.html">AnalyticsApplicationArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplication.html">AnalyticsApplication</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplicationArgs.html">AnalyticsApplicationArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -288,7 +288,12 @@ The AnalyticsApplication resource accepts the following [input]({{< relref "/doc
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -298,7 +303,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Code</span>
+        <span id="code~csharp">
+<span class="nx">
+Code
+<a class="anchorjs-link " href="#code~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -307,7 +317,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -316,7 +331,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inputs</span>
+        <span id="inputs~csharp">
+<span class="nx">
+Inputs
+<a class="anchorjs-link " href="#inputs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs<wbr>Args</a></span>
     </dt>
@@ -325,7 +345,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -334,7 +359,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Outputs</span>
+        <span id="outputs~csharp">
+<span class="nx">
+Outputs
+<a class="anchorjs-link " href="#outputs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List&lt;Analytics<wbr>Application<wbr>Output<wbr>Args&gt;</a></span>
     </dt>
@@ -343,7 +373,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reference<wbr>Data<wbr>Sources</span>
+        <span id="referencedatasources~csharp">
+<span class="nx">
+Reference<wbr>Data<wbr>Sources
+<a class="anchorjs-link " href="#referencedatasources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Args</a></span>
     </dt>
@@ -353,7 +388,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -369,7 +409,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -379,7 +424,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Code</span>
+        <span id="code~go">
+<span class="nx">
+Code
+<a class="anchorjs-link " href="#code~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -388,7 +438,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -397,7 +452,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inputs</span>
+        <span id="inputs~go">
+<span class="nx">
+Inputs
+<a class="anchorjs-link " href="#inputs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
@@ -406,7 +466,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -415,7 +480,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Outputs</span>
+        <span id="outputs~go">
+<span class="nx">
+Outputs
+<a class="anchorjs-link " href="#outputs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">[]Analytics<wbr>Application<wbr>Output</a></span>
     </dt>
@@ -424,7 +494,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reference<wbr>Data<wbr>Sources</span>
+        <span id="referencedatasources~go">
+<span class="nx">
+Reference<wbr>Data<wbr>Sources
+<a class="anchorjs-link " href="#referencedatasources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
@@ -434,7 +509,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -450,7 +530,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -460,7 +545,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>code</span>
+        <span id="code~nodejs">
+<span class="nx">
+code
+<a class="anchorjs-link " href="#code~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -469,7 +559,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -478,7 +573,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>inputs</span>
+        <span id="inputs~nodejs">
+<span class="nx">
+inputs
+<a class="anchorjs-link " href="#inputs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
@@ -487,7 +587,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -496,7 +601,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>outputs</span>
+        <span id="outputs~nodejs">
+<span class="nx">
+outputs
+<a class="anchorjs-link " href="#outputs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">Analytics<wbr>Application<wbr>Output[]</a></span>
     </dt>
@@ -505,7 +615,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>reference<wbr>Data<wbr>Sources</span>
+        <span id="referencedatasources~nodejs">
+<span class="nx">
+reference<wbr>Data<wbr>Sources
+<a class="anchorjs-link " href="#referencedatasources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
@@ -515,7 +630,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -531,7 +651,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Dict[Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -541,7 +666,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>code</span>
+        <span id="code~python">
+<span class="nx">
+code
+<a class="anchorjs-link " href="#code~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -550,7 +680,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -559,7 +694,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>inputs</span>
+        <span id="inputs~python">
+<span class="nx">
+inputs
+<a class="anchorjs-link " href="#inputs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Dict[Analytics<wbr>Application<wbr>Inputs]</a></span>
     </dt>
@@ -568,7 +708,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -577,7 +722,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>outputs</span>
+        <span id="outputs~python">
+<span class="nx">
+outputs
+<a class="anchorjs-link " href="#outputs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List[Analytics<wbr>Application<wbr>Output]</a></span>
     </dt>
@@ -586,7 +736,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>reference_<wbr>data_<wbr>sources</span>
+        <span id="reference_data_sources~python">
+<span class="nx">
+reference_<wbr>data_<wbr>sources
+<a class="anchorjs-link " href="#reference_data_sources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources]</a></span>
     </dt>
@@ -596,7 +751,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -623,7 +783,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -632,7 +797,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Create<wbr>Timestamp</span>
+        <span id="createtimestamp~csharp">
+<span class="nx">
+Create<wbr>Timestamp
+<a class="anchorjs-link " href="#createtimestamp~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -641,7 +811,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -649,7 +824,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Last<wbr>Update<wbr>Timestamp</span>
+        <span id="lastupdatetimestamp~csharp">
+<span class="nx">
+Last<wbr>Update<wbr>Timestamp
+<a class="anchorjs-link " href="#lastupdatetimestamp~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -658,7 +838,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -667,7 +852,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Version</span>
+        <span id="version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -683,7 +873,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -692,7 +887,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Create<wbr>Timestamp</span>
+        <span id="createtimestamp~go">
+<span class="nx">
+Create<wbr>Timestamp
+<a class="anchorjs-link " href="#createtimestamp~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -701,7 +901,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -709,7 +914,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Last<wbr>Update<wbr>Timestamp</span>
+        <span id="lastupdatetimestamp~go">
+<span class="nx">
+Last<wbr>Update<wbr>Timestamp
+<a class="anchorjs-link " href="#lastupdatetimestamp~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -718,7 +928,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Status</span>
+        <span id="status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -727,7 +942,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Version</span>
+        <span id="version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -743,7 +963,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">ARN</span>
     </dt>
@@ -752,7 +977,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>create<wbr>Timestamp</span>
+        <span id="createtimestamp~nodejs">
+<span class="nx">
+create<wbr>Timestamp
+<a class="anchorjs-link " href="#createtimestamp~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -761,7 +991,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -769,7 +1004,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>last<wbr>Update<wbr>Timestamp</span>
+        <span id="lastupdatetimestamp~nodejs">
+<span class="nx">
+last<wbr>Update<wbr>Timestamp
+<a class="anchorjs-link " href="#lastupdatetimestamp~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -778,7 +1018,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -787,7 +1032,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>version</span>
+        <span id="version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -803,7 +1053,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
@@ -812,7 +1067,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>create_<wbr>timestamp</span>
+        <span id="create_timestamp~python">
+<span class="nx">
+create_<wbr>timestamp
+<a class="anchorjs-link " href="#create_timestamp~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -821,7 +1081,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -829,7 +1094,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>last_<wbr>update_<wbr>timestamp</span>
+        <span id="last_update_timestamp~python">
+<span class="nx">
+last_<wbr>update_<wbr>timestamp
+<a class="anchorjs-link " href="#last_update_timestamp~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -838,7 +1108,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>status</span>
+        <span id="status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -847,7 +1122,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>version</span>
+        <span id="version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -869,7 +1149,7 @@ Get an existing AnalyticsApplication resource's state with the given name, ID, a
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplicationState">AnalyticsApplicationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplicationState">AnalyticsApplicationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/kinesis/#AnalyticsApplication">AnalyticsApplication</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -877,11 +1157,11 @@ Get an existing AnalyticsApplication resource's state with the given name, ID, a
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAnalyticsApplication<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationState">AnalyticsApplicationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">AnalyticsApplication</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAnalyticsApplication<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplicationState">AnalyticsApplicationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/kinesis?tab=doc#AnalyticsApplication">AnalyticsApplication</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplication.html">AnalyticsApplication</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplicationState.html">AnalyticsApplicationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplication.html">AnalyticsApplication</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Kinesis.AnalyticsApplicationState.html">AnalyticsApplicationState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -989,7 +1269,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -998,7 +1283,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="state_cloudwatchloggingoptions~csharp">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#state_cloudwatchloggingoptions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options<wbr>Args</a></span>
     </dt>
@@ -1008,7 +1298,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Code</span>
+        <span id="state_code~csharp">
+<span class="nx">
+Code
+<a class="anchorjs-link " href="#state_code~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1017,7 +1312,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Create<wbr>Timestamp</span>
+        <span id="state_createtimestamp~csharp">
+<span class="nx">
+Create<wbr>Timestamp
+<a class="anchorjs-link " href="#state_createtimestamp~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1026,7 +1326,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1035,7 +1340,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inputs</span>
+        <span id="state_inputs~csharp">
+<span class="nx">
+Inputs
+<a class="anchorjs-link " href="#state_inputs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs<wbr>Args</a></span>
     </dt>
@@ -1044,7 +1354,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Update<wbr>Timestamp</span>
+        <span id="state_lastupdatetimestamp~csharp">
+<span class="nx">
+Last<wbr>Update<wbr>Timestamp
+<a class="anchorjs-link " href="#state_lastupdatetimestamp~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1053,7 +1368,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1062,7 +1382,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Outputs</span>
+        <span id="state_outputs~csharp">
+<span class="nx">
+Outputs
+<a class="anchorjs-link " href="#state_outputs~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List&lt;Analytics<wbr>Application<wbr>Output<wbr>Args&gt;</a></span>
     </dt>
@@ -1071,7 +1396,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reference<wbr>Data<wbr>Sources</span>
+        <span id="state_referencedatasources~csharp">
+<span class="nx">
+Reference<wbr>Data<wbr>Sources
+<a class="anchorjs-link " href="#state_referencedatasources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Args</a></span>
     </dt>
@@ -1081,7 +1411,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="state_status~csharp">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#state_status~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1090,7 +1425,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1099,7 +1439,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="state_version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#state_version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1115,7 +1460,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1124,7 +1474,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="state_cloudwatchloggingoptions~go">
+<span class="nx">
+Cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#state_cloudwatchloggingoptions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -1134,7 +1489,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Code</span>
+        <span id="state_code~go">
+<span class="nx">
+Code
+<a class="anchorjs-link " href="#state_code~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1143,7 +1503,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Create<wbr>Timestamp</span>
+        <span id="state_createtimestamp~go">
+<span class="nx">
+Create<wbr>Timestamp
+<a class="anchorjs-link " href="#state_createtimestamp~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1152,7 +1517,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1161,7 +1531,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inputs</span>
+        <span id="state_inputs~go">
+<span class="nx">
+Inputs
+<a class="anchorjs-link " href="#state_inputs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
@@ -1170,7 +1545,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Last<wbr>Update<wbr>Timestamp</span>
+        <span id="state_lastupdatetimestamp~go">
+<span class="nx">
+Last<wbr>Update<wbr>Timestamp
+<a class="anchorjs-link " href="#state_lastupdatetimestamp~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1179,7 +1559,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1188,7 +1573,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Outputs</span>
+        <span id="state_outputs~go">
+<span class="nx">
+Outputs
+<a class="anchorjs-link " href="#state_outputs~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">[]Analytics<wbr>Application<wbr>Output</a></span>
     </dt>
@@ -1197,7 +1587,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Reference<wbr>Data<wbr>Sources</span>
+        <span id="state_referencedatasources~go">
+<span class="nx">
+Reference<wbr>Data<wbr>Sources
+<a class="anchorjs-link " href="#state_referencedatasources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
@@ -1207,7 +1602,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Status</span>
+        <span id="state_status~go">
+<span class="nx">
+Status
+<a class="anchorjs-link " href="#state_status~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1216,7 +1616,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1225,7 +1630,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="state_version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#state_version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1241,7 +1651,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">ARN</span>
     </dt>
@@ -1250,7 +1665,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch<wbr>Logging<wbr>Options</span>
+        <span id="state_cloudwatchloggingoptions~nodejs">
+<span class="nx">
+cloudwatch<wbr>Logging<wbr>Options
+<a class="anchorjs-link " href="#state_cloudwatchloggingoptions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options</a></span>
     </dt>
@@ -1260,7 +1680,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>code</span>
+        <span id="state_code~nodejs">
+<span class="nx">
+code
+<a class="anchorjs-link " href="#state_code~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1269,7 +1694,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>create<wbr>Timestamp</span>
+        <span id="state_createtimestamp~nodejs">
+<span class="nx">
+create<wbr>Timestamp
+<a class="anchorjs-link " href="#state_createtimestamp~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1278,7 +1708,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1287,7 +1722,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>inputs</span>
+        <span id="state_inputs~nodejs">
+<span class="nx">
+inputs
+<a class="anchorjs-link " href="#state_inputs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Analytics<wbr>Application<wbr>Inputs</a></span>
     </dt>
@@ -1296,7 +1736,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last<wbr>Update<wbr>Timestamp</span>
+        <span id="state_lastupdatetimestamp~nodejs">
+<span class="nx">
+last<wbr>Update<wbr>Timestamp
+<a class="anchorjs-link " href="#state_lastupdatetimestamp~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1305,7 +1750,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1314,7 +1764,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>outputs</span>
+        <span id="state_outputs~nodejs">
+<span class="nx">
+outputs
+<a class="anchorjs-link " href="#state_outputs~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">Analytics<wbr>Application<wbr>Output[]</a></span>
     </dt>
@@ -1323,7 +1778,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>reference<wbr>Data<wbr>Sources</span>
+        <span id="state_referencedatasources~nodejs">
+<span class="nx">
+reference<wbr>Data<wbr>Sources
+<a class="anchorjs-link " href="#state_referencedatasources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources</a></span>
     </dt>
@@ -1333,7 +1793,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="state_status~nodejs">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#state_status~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1342,7 +1807,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1351,7 +1821,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="state_version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#state_version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1367,7 +1842,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
@@ -1376,7 +1856,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudwatch_<wbr>logging_<wbr>options</span>
+        <span id="state_cloudwatch_logging_options~python">
+<span class="nx">
+cloudwatch_<wbr>logging_<wbr>options
+<a class="anchorjs-link " href="#state_cloudwatch_logging_options~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationcloudwatchloggingoptions">Dict[Analytics<wbr>Application<wbr>Cloudwatch<wbr>Logging<wbr>Options]</a></span>
     </dt>
@@ -1386,7 +1871,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>code</span>
+        <span id="state_code~python">
+<span class="nx">
+code
+<a class="anchorjs-link " href="#state_code~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1395,7 +1885,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>create_<wbr>timestamp</span>
+        <span id="state_create_timestamp~python">
+<span class="nx">
+create_<wbr>timestamp
+<a class="anchorjs-link " href="#state_create_timestamp~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1404,7 +1899,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1413,7 +1913,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>inputs</span>
+        <span id="state_inputs~python">
+<span class="nx">
+inputs
+<a class="anchorjs-link " href="#state_inputs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputs">Dict[Analytics<wbr>Application<wbr>Inputs]</a></span>
     </dt>
@@ -1422,7 +1927,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>last_<wbr>update_<wbr>timestamp</span>
+        <span id="state_last_update_timestamp~python">
+<span class="nx">
+last_<wbr>update_<wbr>timestamp
+<a class="anchorjs-link " href="#state_last_update_timestamp~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1431,7 +1941,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1440,7 +1955,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>outputs</span>
+        <span id="state_outputs~python">
+<span class="nx">
+outputs
+<a class="anchorjs-link " href="#state_outputs~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutput">List[Analytics<wbr>Application<wbr>Output]</a></span>
     </dt>
@@ -1449,7 +1969,12 @@ See CloudWatch Logging Options below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>reference_<wbr>data_<wbr>sources</span>
+        <span id="state_reference_data_sources~python">
+<span class="nx">
+reference_<wbr>data_<wbr>sources
+<a class="anchorjs-link " href="#state_reference_data_sources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasources">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources]</a></span>
     </dt>
@@ -1459,7 +1984,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>status</span>
+        <span id="state_status~python">
+<span class="nx">
+status
+<a class="anchorjs-link " href="#state_status~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1468,7 +1998,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1477,7 +2012,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="state_version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#state_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1519,7 +2059,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Log<wbr>Stream<wbr>Arn</span>
+        <span id="logstreamarn~csharp">
+<span class="nx">
+Log<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#logstreamarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1528,7 +2073,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1537,7 +2087,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1553,7 +2108,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Log<wbr>Stream<wbr>Arn</span>
+        <span id="logstreamarn~go">
+<span class="nx">
+Log<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#logstreamarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1562,7 +2122,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1571,7 +2136,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1587,7 +2157,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>log<wbr>Stream<wbr>Arn</span>
+        <span id="logstreamarn~nodejs">
+<span class="nx">
+log<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#logstreamarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1596,7 +2171,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1605,7 +2185,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1621,7 +2206,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>log<wbr>Stream<wbr>Arn</span>
+        <span id="logstreamarn~python">
+<span class="nx">
+log<wbr>Stream<wbr>Arn
+<a class="anchorjs-link " href="#logstreamarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1630,7 +2220,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1639,7 +2234,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1673,7 +2273,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name<wbr>Prefix</span>
+        <span id="nameprefix~csharp">
+<span class="nx">
+Name<wbr>Prefix
+<a class="anchorjs-link " href="#nameprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1682,7 +2287,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema</span>
+        <span id="schema~csharp">
+<span class="nx">
+Schema
+<a class="anchorjs-link " href="#schema~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Args</a></span>
     </dt>
@@ -1691,7 +2301,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1700,7 +2315,12 @@ See Reference Data Sources below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~csharp">
+<span class="nx">
+Kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose<wbr>Args</a></span>
     </dt>
@@ -1710,7 +2330,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Stream</span>
+        <span id="kinesisstream~csharp">
+<span class="nx">
+Kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream<wbr>Args</a></span>
     </dt>
@@ -1720,7 +2345,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parallelism</span>
+        <span id="parallelism~csharp">
+<span class="nx">
+Parallelism
+<a class="anchorjs-link " href="#parallelism~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism<wbr>Args</a></span>
     </dt>
@@ -1730,7 +2360,12 @@ See Parallelism below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~csharp">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1740,7 +2375,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Starting<wbr>Position<wbr>Configurations</span>
+        <span id="startingpositionconfigurations~csharp">
+<span class="nx">
+Starting<wbr>Position<wbr>Configurations
+<a class="anchorjs-link " href="#startingpositionconfigurations~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">List&lt;Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration<wbr>Args&gt;</a></span>
     </dt>
@@ -1748,7 +2388,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stream<wbr>Names</span>
+        <span id="streamnames~csharp">
+<span class="nx">
+Stream<wbr>Names
+<a class="anchorjs-link " href="#streamnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1763,7 +2408,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name<wbr>Prefix</span>
+        <span id="nameprefix~go">
+<span class="nx">
+Name<wbr>Prefix
+<a class="anchorjs-link " href="#nameprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1772,7 +2422,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema</span>
+        <span id="schema~go">
+<span class="nx">
+Schema
+<a class="anchorjs-link " href="#schema~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema</a></span>
     </dt>
@@ -1781,7 +2436,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1790,7 +2450,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~go">
+<span class="nx">
+Kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
@@ -1800,7 +2465,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Stream</span>
+        <span id="kinesisstream~go">
+<span class="nx">
+Kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
@@ -1810,7 +2480,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Parallelism</span>
+        <span id="parallelism~go">
+<span class="nx">
+Parallelism
+<a class="anchorjs-link " href="#parallelism~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism</a></span>
     </dt>
@@ -1820,7 +2495,12 @@ See Parallelism below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Processing<wbr>Configuration</span>
+        <span id="processingconfiguration~go">
+<span class="nx">
+Processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -1830,7 +2510,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Starting<wbr>Position<wbr>Configurations</span>
+        <span id="startingpositionconfigurations~go">
+<span class="nx">
+Starting<wbr>Position<wbr>Configurations
+<a class="anchorjs-link " href="#startingpositionconfigurations~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">[]Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration</a></span>
     </dt>
@@ -1838,7 +2523,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Stream<wbr>Names</span>
+        <span id="streamnames~go">
+<span class="nx">
+Stream<wbr>Names
+<a class="anchorjs-link " href="#streamnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1853,7 +2543,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name<wbr>Prefix</span>
+        <span id="nameprefix~nodejs">
+<span class="nx">
+name<wbr>Prefix
+<a class="anchorjs-link " href="#nameprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1862,7 +2557,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>schema</span>
+        <span id="schema~nodejs">
+<span class="nx">
+schema
+<a class="anchorjs-link " href="#schema~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Analytics<wbr>Application<wbr>Inputs<wbr>Schema</a></span>
     </dt>
@@ -1871,7 +2571,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1880,7 +2585,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~nodejs">
+<span class="nx">
+kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
@@ -1890,7 +2600,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Stream</span>
+        <span id="kinesisstream~nodejs">
+<span class="nx">
+kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
@@ -1900,7 +2615,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parallelism</span>
+        <span id="parallelism~nodejs">
+<span class="nx">
+parallelism
+<a class="anchorjs-link " href="#parallelism~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism</a></span>
     </dt>
@@ -1910,7 +2630,12 @@ See Parallelism below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~nodejs">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration</a></span>
     </dt>
@@ -1920,7 +2645,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>starting<wbr>Position<wbr>Configurations</span>
+        <span id="startingpositionconfigurations~nodejs">
+<span class="nx">
+starting<wbr>Position<wbr>Configurations
+<a class="anchorjs-link " href="#startingpositionconfigurations~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration[]</a></span>
     </dt>
@@ -1928,7 +2658,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stream<wbr>Names</span>
+        <span id="streamnames~nodejs">
+<span class="nx">
+stream<wbr>Names
+<a class="anchorjs-link " href="#streamnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1943,7 +2678,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name_<wbr>prefix</span>
+        <span id="name_prefix~python">
+<span class="nx">
+name_<wbr>prefix
+<a class="anchorjs-link " href="#name_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1952,7 +2692,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>schema</span>
+        <span id="schema~python">
+<span class="nx">
+schema
+<a class="anchorjs-link " href="#schema~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschema">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema]</a></span>
     </dt>
@@ -1961,7 +2706,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1970,7 +2720,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~python">
+<span class="nx">
+kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisfirehose">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Firehose]</a></span>
     </dt>
@@ -1980,7 +2735,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Stream</span>
+        <span id="kinesisstream~python">
+<span class="nx">
+kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputskinesisstream">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Kinesis<wbr>Stream]</a></span>
     </dt>
@@ -1990,7 +2750,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>parallelism</span>
+        <span id="parallelism~python">
+<span class="nx">
+parallelism
+<a class="anchorjs-link " href="#parallelism~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsparallelism">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Parallelism]</a></span>
     </dt>
@@ -2000,7 +2765,12 @@ See Parallelism below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>processing<wbr>Configuration</span>
+        <span id="processingconfiguration~python">
+<span class="nx">
+processing<wbr>Configuration
+<a class="anchorjs-link " href="#processingconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfiguration">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration]</a></span>
     </dt>
@@ -2010,7 +2780,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>starting<wbr>Position<wbr>Configurations</span>
+        <span id="startingpositionconfigurations~python">
+<span class="nx">
+starting<wbr>Position<wbr>Configurations
+<a class="anchorjs-link " href="#startingpositionconfigurations~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsstartingpositionconfiguration">List[Analytics<wbr>Application<wbr>Inputs<wbr>Starting<wbr>Position<wbr>Configuration]</a></span>
     </dt>
@@ -2018,7 +2793,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>stream<wbr>Names</span>
+        <span id="streamnames~python">
+<span class="nx">
+stream<wbr>Names
+<a class="anchorjs-link " href="#streamnames~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2051,7 +2831,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~csharp">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2060,7 +2845,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2076,7 +2866,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~go">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2085,7 +2880,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2101,7 +2901,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Arn</span>
+        <span id="resourcearn~nodejs">
+<span class="nx">
+resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2110,7 +2915,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2126,7 +2936,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>arn</span>
+        <span id="resource_arn~python">
+<span class="nx">
+resource_<wbr>arn
+<a class="anchorjs-link " href="#resource_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2135,7 +2950,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2169,7 +2989,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~csharp">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2178,7 +3003,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2194,7 +3024,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~go">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2203,7 +3038,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2219,7 +3059,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Arn</span>
+        <span id="resourcearn~nodejs">
+<span class="nx">
+resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2228,7 +3073,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2244,7 +3094,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>arn</span>
+        <span id="resource_arn~python">
+<span class="nx">
+resource_<wbr>arn
+<a class="anchorjs-link " href="#resource_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2253,7 +3108,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2287,7 +3147,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Count</span>
+        <span id="count~csharp">
+<span class="nx">
+Count
+<a class="anchorjs-link " href="#count~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2303,7 +3168,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Count</span>
+        <span id="count~go">
+<span class="nx">
+Count
+<a class="anchorjs-link " href="#count~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2319,7 +3189,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>count</span>
+        <span id="count~nodejs">
+<span class="nx">
+count
+<a class="anchorjs-link " href="#count~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2335,7 +3210,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>count</span>
+        <span id="count~python">
+<span class="nx">
+count
+<a class="anchorjs-link " href="#count~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2369,7 +3249,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Lambda</span>
+        <span id="lambda~csharp">
+<span class="nx">
+Lambda
+<a class="anchorjs-link " href="#lambda~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda<wbr>Args</a></span>
     </dt>
@@ -2385,7 +3270,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Lambda</span>
+        <span id="lambda~go">
+<span class="nx">
+Lambda
+<a class="anchorjs-link " href="#lambda~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda</a></span>
     </dt>
@@ -2401,7 +3291,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>lambda</span>
+        <span id="lambda~nodejs">
+<span class="nx">
+lambda
+<a class="anchorjs-link " href="#lambda~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda</a></span>
     </dt>
@@ -2417,7 +3312,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>lambda_</span>
+        <span id="lambda_~python">
+<span class="nx">
+lambda_
+<a class="anchorjs-link " href="#lambda_~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsprocessingconfigurationlambda">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Processing<wbr>Configuration<wbr>Lambda]</a></span>
     </dt>
@@ -2451,7 +3351,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~csharp">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2460,7 +3365,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2476,7 +3386,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~go">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2485,7 +3400,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2501,7 +3421,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Arn</span>
+        <span id="resourcearn~nodejs">
+<span class="nx">
+resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2510,7 +3435,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2526,7 +3456,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>arn</span>
+        <span id="resource_arn~python">
+<span class="nx">
+resource_<wbr>arn
+<a class="anchorjs-link " href="#resource_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2535,7 +3470,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2569,7 +3509,12 @@ See Processing Configuration below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Columns</span>
+        <span id="recordcolumns~csharp">
+<span class="nx">
+Record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">List&lt;Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column<wbr>Args&gt;</a></span>
     </dt>
@@ -2579,7 +3524,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Format</span>
+        <span id="recordformat~csharp">
+<span class="nx">
+Record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Args</a></span>
     </dt>
@@ -2589,7 +3539,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Encoding</span>
+        <span id="recordencoding~csharp">
+<span class="nx">
+Record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2605,7 +3560,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Columns</span>
+        <span id="recordcolumns~go">
+<span class="nx">
+Record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">[]Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column</a></span>
     </dt>
@@ -2615,7 +3575,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Format</span>
+        <span id="recordformat~go">
+<span class="nx">
+Record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
@@ -2625,7 +3590,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Encoding</span>
+        <span id="recordencoding~go">
+<span class="nx">
+Record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2641,7 +3611,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Columns</span>
+        <span id="recordcolumns~nodejs">
+<span class="nx">
+record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column[]</a></span>
     </dt>
@@ -2651,7 +3626,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Format</span>
+        <span id="recordformat~nodejs">
+<span class="nx">
+record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
@@ -2661,7 +3641,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Encoding</span>
+        <span id="recordencoding~nodejs">
+<span class="nx">
+record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2677,7 +3662,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Columns</span>
+        <span id="recordcolumns~python">
+<span class="nx">
+record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordcolumn">List[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Column]</a></span>
     </dt>
@@ -2687,7 +3677,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Format</span>
+        <span id="recordformat~python">
+<span class="nx">
+record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformat">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format]</a></span>
     </dt>
@@ -2697,7 +3692,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Encoding</span>
+        <span id="recordencoding~python">
+<span class="nx">
+record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2731,7 +3731,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2740,7 +3745,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Sql<wbr>Type</span>
+        <span id="sqltype~csharp">
+<span class="nx">
+Sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2749,7 +3759,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping</span>
+        <span id="mapping~csharp">
+<span class="nx">
+Mapping
+<a class="anchorjs-link " href="#mapping~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2765,7 +3780,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2774,7 +3794,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Sql<wbr>Type</span>
+        <span id="sqltype~go">
+<span class="nx">
+Sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2783,7 +3808,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping</span>
+        <span id="mapping~go">
+<span class="nx">
+Mapping
+<a class="anchorjs-link " href="#mapping~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2799,7 +3829,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2808,7 +3843,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>sql<wbr>Type</span>
+        <span id="sqltype~nodejs">
+<span class="nx">
+sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2817,7 +3857,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping</span>
+        <span id="mapping~nodejs">
+<span class="nx">
+mapping
+<a class="anchorjs-link " href="#mapping~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2833,7 +3878,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2842,7 +3892,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>sql<wbr>Type</span>
+        <span id="sqltype~python">
+<span class="nx">
+sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2851,7 +3906,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping</span>
+        <span id="mapping~python">
+<span class="nx">
+mapping
+<a class="anchorjs-link " href="#mapping~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2885,7 +3945,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping<wbr>Parameters</span>
+        <span id="mappingparameters~csharp">
+<span class="nx">
+Mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Args</a></span>
     </dt>
@@ -2895,7 +3960,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~csharp">
+<span class="nx">
+Record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2911,7 +3981,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping<wbr>Parameters</span>
+        <span id="mappingparameters~go">
+<span class="nx">
+Mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
@@ -2921,7 +3996,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~go">
+<span class="nx">
+Record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2937,7 +4017,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping<wbr>Parameters</span>
+        <span id="mappingparameters~nodejs">
+<span class="nx">
+mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
@@ -2947,7 +4032,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~nodejs">
+<span class="nx">
+record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2963,7 +4053,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping<wbr>Parameters</span>
+        <span id="mappingparameters~python">
+<span class="nx">
+mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameters">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters]</a></span>
     </dt>
@@ -2973,7 +4068,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~python">
+<span class="nx">
+record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3007,7 +4107,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Csv</span>
+        <span id="csv~csharp">
+<span class="nx">
+Csv
+<a class="anchorjs-link " href="#csv~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv<wbr>Args</a></span>
     </dt>
@@ -3017,7 +4122,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Json</span>
+        <span id="json~csharp">
+<span class="nx">
+Json
+<a class="anchorjs-link " href="#json~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json<wbr>Args</a></span>
     </dt>
@@ -3034,7 +4144,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Csv</span>
+        <span id="csv~go">
+<span class="nx">
+Csv
+<a class="anchorjs-link " href="#csv~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
@@ -3044,7 +4159,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Json</span>
+        <span id="json~go">
+<span class="nx">
+Json
+<a class="anchorjs-link " href="#json~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
@@ -3061,7 +4181,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>csv</span>
+        <span id="csv~nodejs">
+<span class="nx">
+csv
+<a class="anchorjs-link " href="#csv~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
@@ -3071,7 +4196,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>json</span>
+        <span id="json~nodejs">
+<span class="nx">
+json
+<a class="anchorjs-link " href="#json~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
@@ -3088,7 +4218,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>csv</span>
+        <span id="csv~python">
+<span class="nx">
+csv
+<a class="anchorjs-link " href="#csv~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparameterscsv">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv]</a></span>
     </dt>
@@ -3098,7 +4233,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>json</span>
+        <span id="json~python">
+<span class="nx">
+json
+<a class="anchorjs-link " href="#json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationinputsschemarecordformatmappingparametersjson">Dict[Analytics<wbr>Application<wbr>Inputs<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json]</a></span>
     </dt>
@@ -3133,7 +4273,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~csharp">
+<span class="nx">
+Record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3142,7 +4287,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~csharp">
+<span class="nx">
+Record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3158,7 +4308,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~go">
+<span class="nx">
+Record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3167,7 +4322,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~go">
+<span class="nx">
+Record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3183,7 +4343,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~nodejs">
+<span class="nx">
+record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3192,7 +4357,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~nodejs">
+<span class="nx">
+record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3208,7 +4378,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~python">
+<span class="nx">
+record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3217,7 +4392,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~python">
+<span class="nx">
+record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3251,7 +4431,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~csharp">
+<span class="nx">
+Record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3267,7 +4452,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~go">
+<span class="nx">
+Record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3283,7 +4473,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~nodejs">
+<span class="nx">
+record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3299,7 +4494,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~python">
+<span class="nx">
+record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3333,7 +4533,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Starting<wbr>Position</span>
+        <span id="startingposition~csharp">
+<span class="nx">
+Starting<wbr>Position
+<a class="anchorjs-link " href="#startingposition~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3348,7 +4553,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Starting<wbr>Position</span>
+        <span id="startingposition~go">
+<span class="nx">
+Starting<wbr>Position
+<a class="anchorjs-link " href="#startingposition~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3363,7 +4573,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>starting<wbr>Position</span>
+        <span id="startingposition~nodejs">
+<span class="nx">
+starting<wbr>Position
+<a class="anchorjs-link " href="#startingposition~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3378,7 +4593,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>starting_<wbr>position</span>
+        <span id="starting_position~python">
+<span class="nx">
+starting_<wbr>position
+<a class="anchorjs-link " href="#starting_position~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3411,7 +4631,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3420,7 +4645,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema</span>
+        <span id="schema~csharp">
+<span class="nx">
+Schema
+<a class="anchorjs-link " href="#schema~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema<wbr>Args</a></span>
     </dt>
@@ -3429,7 +4659,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3438,7 +4673,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~csharp">
+<span class="nx">
+Kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose<wbr>Args</a></span>
     </dt>
@@ -3448,7 +4688,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Stream</span>
+        <span id="kinesisstream~csharp">
+<span class="nx">
+Kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream<wbr>Args</a></span>
     </dt>
@@ -3458,7 +4703,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda</span>
+        <span id="lambda~csharp">
+<span class="nx">
+Lambda
+<a class="anchorjs-link " href="#lambda~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda<wbr>Args</a></span>
     </dt>
@@ -3474,7 +4724,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3483,7 +4738,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema</span>
+        <span id="schema~go">
+<span class="nx">
+Schema
+<a class="anchorjs-link " href="#schema~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema</a></span>
     </dt>
@@ -3492,7 +4752,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3501,7 +4766,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~go">
+<span class="nx">
+Kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
@@ -3511,7 +4781,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kinesis<wbr>Stream</span>
+        <span id="kinesisstream~go">
+<span class="nx">
+Kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
@@ -3521,7 +4796,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Lambda</span>
+        <span id="lambda~go">
+<span class="nx">
+Lambda
+<a class="anchorjs-link " href="#lambda~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda</a></span>
     </dt>
@@ -3537,7 +4817,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3546,7 +4831,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>schema</span>
+        <span id="schema~nodejs">
+<span class="nx">
+schema
+<a class="anchorjs-link " href="#schema~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Analytics<wbr>Application<wbr>Output<wbr>Schema</a></span>
     </dt>
@@ -3555,7 +4845,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3564,7 +4859,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~nodejs">
+<span class="nx">
+kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose</a></span>
     </dt>
@@ -3574,7 +4874,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Stream</span>
+        <span id="kinesisstream~nodejs">
+<span class="nx">
+kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream</a></span>
     </dt>
@@ -3584,7 +4889,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda</span>
+        <span id="lambda~nodejs">
+<span class="nx">
+lambda
+<a class="anchorjs-link " href="#lambda~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Analytics<wbr>Application<wbr>Output<wbr>Lambda</a></span>
     </dt>
@@ -3600,7 +4910,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3609,7 +4924,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>schema</span>
+        <span id="schema~python">
+<span class="nx">
+schema
+<a class="anchorjs-link " href="#schema~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputschema">Dict[Analytics<wbr>Application<wbr>Output<wbr>Schema]</a></span>
     </dt>
@@ -3618,7 +4938,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3627,7 +4952,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Firehose</span>
+        <span id="kinesisfirehose~python">
+<span class="nx">
+kinesis<wbr>Firehose
+<a class="anchorjs-link " href="#kinesisfirehose~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisfirehose">Dict[Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Firehose]</a></span>
     </dt>
@@ -3637,7 +4967,12 @@ See Kinesis Firehose below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kinesis<wbr>Stream</span>
+        <span id="kinesisstream~python">
+<span class="nx">
+kinesis<wbr>Stream
+<a class="anchorjs-link " href="#kinesisstream~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputkinesisstream">Dict[Analytics<wbr>Application<wbr>Output<wbr>Kinesis<wbr>Stream]</a></span>
     </dt>
@@ -3647,7 +4982,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>lambda_</span>
+        <span id="lambda_~python">
+<span class="nx">
+lambda_
+<a class="anchorjs-link " href="#lambda_~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationoutputlambda">Dict[Analytics<wbr>Application<wbr>Output<wbr>Lambda]</a></span>
     </dt>
@@ -3681,7 +5021,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~csharp">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3690,7 +5035,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3706,7 +5056,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~go">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3715,7 +5070,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3731,7 +5091,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Arn</span>
+        <span id="resourcearn~nodejs">
+<span class="nx">
+resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3740,7 +5105,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3756,7 +5126,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>arn</span>
+        <span id="resource_arn~python">
+<span class="nx">
+resource_<wbr>arn
+<a class="anchorjs-link " href="#resource_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3765,7 +5140,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3799,7 +5179,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~csharp">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3808,7 +5193,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3824,7 +5214,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~go">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3833,7 +5228,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3849,7 +5249,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Arn</span>
+        <span id="resourcearn~nodejs">
+<span class="nx">
+resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3858,7 +5263,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3874,7 +5284,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>arn</span>
+        <span id="resource_arn~python">
+<span class="nx">
+resource_<wbr>arn
+<a class="anchorjs-link " href="#resource_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3883,7 +5298,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3917,7 +5337,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~csharp">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3926,7 +5351,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3942,7 +5372,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Arn</span>
+        <span id="resourcearn~go">
+<span class="nx">
+Resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3951,7 +5386,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3967,7 +5407,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Arn</span>
+        <span id="resourcearn~nodejs">
+<span class="nx">
+resource<wbr>Arn
+<a class="anchorjs-link " href="#resourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3976,7 +5421,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3992,7 +5442,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>arn</span>
+        <span id="resource_arn~python">
+<span class="nx">
+resource_<wbr>arn
+<a class="anchorjs-link " href="#resource_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4001,7 +5456,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4035,7 +5495,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~csharp">
+<span class="nx">
+Record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4051,7 +5516,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~go">
+<span class="nx">
+Record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4067,7 +5537,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~nodejs">
+<span class="nx">
+record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4083,7 +5558,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~python">
+<span class="nx">
+record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4117,7 +5597,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>S3</span>
+        <span id="s3~csharp">
+<span class="nx">
+S3
+<a class="anchorjs-link " href="#s3~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3Args</a></span>
     </dt>
@@ -4126,7 +5611,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema</span>
+        <span id="schema~csharp">
+<span class="nx">
+Schema
+<a class="anchorjs-link " href="#schema~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Args</a></span>
     </dt>
@@ -4135,7 +5625,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Table<wbr>Name</span>
+        <span id="tablename~csharp">
+<span class="nx">
+Table<wbr>Name
+<a class="anchorjs-link " href="#tablename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4144,7 +5639,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4160,7 +5660,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>S3</span>
+        <span id="s3~go">
+<span class="nx">
+S3
+<a class="anchorjs-link " href="#s3~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3</a></span>
     </dt>
@@ -4169,7 +5674,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Schema</span>
+        <span id="schema~go">
+<span class="nx">
+Schema
+<a class="anchorjs-link " href="#schema~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema</a></span>
     </dt>
@@ -4178,7 +5688,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Table<wbr>Name</span>
+        <span id="tablename~go">
+<span class="nx">
+Table<wbr>Name
+<a class="anchorjs-link " href="#tablename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4187,7 +5702,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4203,7 +5723,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>s3</span>
+        <span id="s3~nodejs">
+<span class="nx">
+s3
+<a class="anchorjs-link " href="#s3~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3</a></span>
     </dt>
@@ -4212,7 +5737,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>schema</span>
+        <span id="schema~nodejs">
+<span class="nx">
+schema
+<a class="anchorjs-link " href="#schema~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema</a></span>
     </dt>
@@ -4221,7 +5751,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>table<wbr>Name</span>
+        <span id="tablename~nodejs">
+<span class="nx">
+table<wbr>Name
+<a class="anchorjs-link " href="#tablename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4230,7 +5765,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4246,7 +5786,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>s3</span>
+        <span id="s3~python">
+<span class="nx">
+s3
+<a class="anchorjs-link " href="#s3~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcess3">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>S3]</a></span>
     </dt>
@@ -4255,7 +5800,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>schema</span>
+        <span id="schema~python">
+<span class="nx">
+schema
+<a class="anchorjs-link " href="#schema~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschema">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema]</a></span>
     </dt>
@@ -4264,7 +5814,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>table_<wbr>name</span>
+        <span id="table_name~python">
+<span class="nx">
+table_<wbr>name
+<a class="anchorjs-link " href="#table_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4273,7 +5828,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4307,7 +5867,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~csharp">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4316,7 +5881,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>File<wbr>Key</span>
+        <span id="filekey~csharp">
+<span class="nx">
+File<wbr>Key
+<a class="anchorjs-link " href="#filekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4325,7 +5895,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~csharp">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4341,7 +5916,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Bucket<wbr>Arn</span>
+        <span id="bucketarn~go">
+<span class="nx">
+Bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4350,7 +5930,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>File<wbr>Key</span>
+        <span id="filekey~go">
+<span class="nx">
+File<wbr>Key
+<a class="anchorjs-link " href="#filekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4359,7 +5944,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Role<wbr>Arn</span>
+        <span id="rolearn~go">
+<span class="nx">
+Role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4375,7 +5965,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~nodejs">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4384,7 +5979,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>file<wbr>Key</span>
+        <span id="filekey~nodejs">
+<span class="nx">
+file<wbr>Key
+<a class="anchorjs-link " href="#filekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4393,7 +5993,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role<wbr>Arn</span>
+        <span id="rolearn~nodejs">
+<span class="nx">
+role<wbr>Arn
+<a class="anchorjs-link " href="#rolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4409,7 +6014,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>bucket<wbr>Arn</span>
+        <span id="bucketarn~python">
+<span class="nx">
+bucket<wbr>Arn
+<a class="anchorjs-link " href="#bucketarn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4418,7 +6028,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>file<wbr>Key</span>
+        <span id="filekey~python">
+<span class="nx">
+file<wbr>Key
+<a class="anchorjs-link " href="#filekey~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4427,7 +6042,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>role_<wbr>arn</span>
+        <span id="role_arn~python">
+<span class="nx">
+role_<wbr>arn
+<a class="anchorjs-link " href="#role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4461,7 +6081,12 @@ See Kinesis Stream below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Columns</span>
+        <span id="recordcolumns~csharp">
+<span class="nx">
+Record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">List&lt;Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column<wbr>Args&gt;</a></span>
     </dt>
@@ -4471,7 +6096,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Format</span>
+        <span id="recordformat~csharp">
+<span class="nx">
+Record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Args</a></span>
     </dt>
@@ -4481,7 +6111,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Encoding</span>
+        <span id="recordencoding~csharp">
+<span class="nx">
+Record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4497,7 +6132,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Columns</span>
+        <span id="recordcolumns~go">
+<span class="nx">
+Record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">[]Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column</a></span>
     </dt>
@@ -4507,7 +6147,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Format</span>
+        <span id="recordformat~go">
+<span class="nx">
+Record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
@@ -4517,7 +6162,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Encoding</span>
+        <span id="recordencoding~go">
+<span class="nx">
+Record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4533,7 +6183,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Columns</span>
+        <span id="recordcolumns~nodejs">
+<span class="nx">
+record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column[]</a></span>
     </dt>
@@ -4543,7 +6198,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Format</span>
+        <span id="recordformat~nodejs">
+<span class="nx">
+record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format</a></span>
     </dt>
@@ -4553,7 +6213,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Encoding</span>
+        <span id="recordencoding~nodejs">
+<span class="nx">
+record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4569,7 +6234,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Columns</span>
+        <span id="recordcolumns~python">
+<span class="nx">
+record<wbr>Columns
+<a class="anchorjs-link " href="#recordcolumns~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordcolumn">List[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Column]</a></span>
     </dt>
@@ -4579,7 +6249,12 @@ See Record Columns below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Format</span>
+        <span id="recordformat~python">
+<span class="nx">
+record<wbr>Format
+<a class="anchorjs-link " href="#recordformat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformat">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format]</a></span>
     </dt>
@@ -4589,7 +6264,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Encoding</span>
+        <span id="recordencoding~python">
+<span class="nx">
+record<wbr>Encoding
+<a class="anchorjs-link " href="#recordencoding~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4623,7 +6303,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4632,7 +6317,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Sql<wbr>Type</span>
+        <span id="sqltype~csharp">
+<span class="nx">
+Sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4641,7 +6331,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping</span>
+        <span id="mapping~csharp">
+<span class="nx">
+Mapping
+<a class="anchorjs-link " href="#mapping~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4657,7 +6352,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4666,7 +6366,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Sql<wbr>Type</span>
+        <span id="sqltype~go">
+<span class="nx">
+Sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4675,7 +6380,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping</span>
+        <span id="mapping~go">
+<span class="nx">
+Mapping
+<a class="anchorjs-link " href="#mapping~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4691,7 +6401,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4700,7 +6415,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>sql<wbr>Type</span>
+        <span id="sqltype~nodejs">
+<span class="nx">
+sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4709,7 +6429,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping</span>
+        <span id="mapping~nodejs">
+<span class="nx">
+mapping
+<a class="anchorjs-link " href="#mapping~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4725,7 +6450,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4734,7 +6464,12 @@ See Record Format below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>sql<wbr>Type</span>
+        <span id="sqltype~python">
+<span class="nx">
+sql<wbr>Type
+<a class="anchorjs-link " href="#sqltype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4743,7 +6478,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping</span>
+        <span id="mapping~python">
+<span class="nx">
+mapping
+<a class="anchorjs-link " href="#mapping~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4777,7 +6517,12 @@ See Record Format below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping<wbr>Parameters</span>
+        <span id="mappingparameters~csharp">
+<span class="nx">
+Mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Args</a></span>
     </dt>
@@ -4787,7 +6532,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~csharp">
+<span class="nx">
+Record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -4803,7 +6553,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Mapping<wbr>Parameters</span>
+        <span id="mappingparameters~go">
+<span class="nx">
+Mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
@@ -4813,7 +6568,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~go">
+<span class="nx">
+Record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -4829,7 +6589,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping<wbr>Parameters</span>
+        <span id="mappingparameters~nodejs">
+<span class="nx">
+mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters</a></span>
     </dt>
@@ -4839,7 +6604,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~nodejs">
+<span class="nx">
+record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -4855,7 +6625,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>mapping<wbr>Parameters</span>
+        <span id="mappingparameters~python">
+<span class="nx">
+mapping<wbr>Parameters
+<a class="anchorjs-link " href="#mappingparameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameters">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters]</a></span>
     </dt>
@@ -4865,7 +6640,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>record<wbr>Format<wbr>Type</span>
+        <span id="recordformattype~python">
+<span class="nx">
+record<wbr>Format<wbr>Type
+<a class="anchorjs-link " href="#recordformattype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -4899,7 +6679,12 @@ See Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Csv</span>
+        <span id="csv~csharp">
+<span class="nx">
+Csv
+<a class="anchorjs-link " href="#csv~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv<wbr>Args</a></span>
     </dt>
@@ -4909,7 +6694,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Json</span>
+        <span id="json~csharp">
+<span class="nx">
+Json
+<a class="anchorjs-link " href="#json~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json<wbr>Args</a></span>
     </dt>
@@ -4926,7 +6716,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Csv</span>
+        <span id="csv~go">
+<span class="nx">
+Csv
+<a class="anchorjs-link " href="#csv~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
@@ -4936,7 +6731,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Json</span>
+        <span id="json~go">
+<span class="nx">
+Json
+<a class="anchorjs-link " href="#json~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
@@ -4953,7 +6753,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>csv</span>
+        <span id="csv~nodejs">
+<span class="nx">
+csv
+<a class="anchorjs-link " href="#csv~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv</a></span>
     </dt>
@@ -4963,7 +6768,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>json</span>
+        <span id="json~nodejs">
+<span class="nx">
+json
+<a class="anchorjs-link " href="#json~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json</a></span>
     </dt>
@@ -4980,7 +6790,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>csv</span>
+        <span id="csv~python">
+<span class="nx">
+csv
+<a class="anchorjs-link " href="#csv~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparameterscsv">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Csv]</a></span>
     </dt>
@@ -4990,7 +6805,12 @@ See CSV Mapping Parameters below for more details.
 
     <dt class="property-optional"
             title="Optional">
-        <span>json</span>
+        <span id="json~python">
+<span class="nx">
+json
+<a class="anchorjs-link " href="#json~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#analyticsapplicationreferencedatasourcesschemarecordformatmappingparametersjson">Dict[Analytics<wbr>Application<wbr>Reference<wbr>Data<wbr>Sources<wbr>Schema<wbr>Record<wbr>Format<wbr>Mapping<wbr>Parameters<wbr>Json]</a></span>
     </dt>
@@ -5025,7 +6845,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~csharp">
+<span class="nx">
+Record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5034,7 +6859,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~csharp">
+<span class="nx">
+Record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5050,7 +6880,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~go">
+<span class="nx">
+Record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5059,7 +6894,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~go">
+<span class="nx">
+Record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5075,7 +6915,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~nodejs">
+<span class="nx">
+record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5084,7 +6929,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~nodejs">
+<span class="nx">
+record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5100,7 +6950,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Column<wbr>Delimiter</span>
+        <span id="recordcolumndelimiter~python">
+<span class="nx">
+record<wbr>Column<wbr>Delimiter
+<a class="anchorjs-link " href="#recordcolumndelimiter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5109,7 +6964,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Delimiter</span>
+        <span id="recordrowdelimiter~python">
+<span class="nx">
+record<wbr>Row<wbr>Delimiter
+<a class="anchorjs-link " href="#recordrowdelimiter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -5143,7 +7003,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~csharp">
+<span class="nx">
+Record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -5159,7 +7024,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>Record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~go">
+<span class="nx">
+Record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -5175,7 +7045,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~nodejs">
+<span class="nx">
+record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -5191,7 +7066,12 @@ See JSON Mapping Parameters below for more details.
 
     <dt class="property-required"
             title="Required">
-        <span>record<wbr>Row<wbr>Path</span>
+        <span id="recordrowpath~python">
+<span class="nx">
+record<wbr>Row<wbr>Path
+<a class="anchorjs-link " href="#recordrowpath~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

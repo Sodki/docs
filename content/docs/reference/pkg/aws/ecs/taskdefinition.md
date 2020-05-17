@@ -81,19 +81,19 @@ const service = new aws.ecs.TaskDefinition("service", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinition">TaskDefinition</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinitionArgs">TaskDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinition">TaskDefinition</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinitionArgs">TaskDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">TaskDefinition</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>container_definitions=None<span class="p">, </span>cpu=None<span class="p">, </span>execution_role_arn=None<span class="p">, </span>family=None<span class="p">, </span>inference_accelerators=None<span class="p">, </span>ipc_mode=None<span class="p">, </span>memory=None<span class="p">, </span>network_mode=None<span class="p">, </span>pid_mode=None<span class="p">, </span>placement_constraints=None<span class="p">, </span>proxy_configuration=None<span class="p">, </span>requires_compatibilities=None<span class="p">, </span>tags=None<span class="p">, </span>task_role_arn=None<span class="p">, </span>volumes=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ecs/#TaskDefinition">TaskDefinition</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>container_definitions=None<span class="p">, </span>cpu=None<span class="p">, </span>execution_role_arn=None<span class="p">, </span>family=None<span class="p">, </span>inference_accelerators=None<span class="p">, </span>ipc_mode=None<span class="p">, </span>memory=None<span class="p">, </span>network_mode=None<span class="p">, </span>pid_mode=None<span class="p">, </span>placement_constraints=None<span class="p">, </span>proxy_configuration=None<span class="p">, </span>requires_compatibilities=None<span class="p">, </span>tags=None<span class="p">, </span>task_role_arn=None<span class="p">, </span>volumes=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTaskDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionArgs">TaskDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">TaskDefinition</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">NewTaskDefinition</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionArgs">TaskDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">TaskDefinition</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinition.html">TaskDefinition</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinitionArgs.html">TaskDefinitionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinition.html">TaskDefinition</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinitionArgs.html">TaskDefinitionArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -259,7 +259,12 @@ The TaskDefinition resource accepts the following [input]({{< relref "/docs/intr
 
     <dt class="property-required"
             title="Required">
-        <span>Container<wbr>Definitions</span>
+        <span id="containerdefinitions~csharp">
+<span class="nx">
+Container<wbr>Definitions
+<a class="anchorjs-link " href="#containerdefinitions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -273,7 +278,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Family</span>
+        <span id="family~csharp">
+<span class="nx">
+Family
+<a class="anchorjs-link " href="#family~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -282,7 +292,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu</span>
+        <span id="cpu~csharp">
+<span class="nx">
+Cpu
+<a class="anchorjs-link " href="#cpu~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -291,7 +306,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Role<wbr>Arn</span>
+        <span id="executionrolearn~csharp">
+<span class="nx">
+Execution<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#executionrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -300,7 +320,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inference<wbr>Accelerators</span>
+        <span id="inferenceaccelerators~csharp">
+<span class="nx">
+Inference<wbr>Accelerators
+<a class="anchorjs-link " href="#inferenceaccelerators~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List&lt;Task<wbr>Definition<wbr>Inference<wbr>Accelerator<wbr>Args&gt;</a></span>
     </dt>
@@ -309,7 +334,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipc<wbr>Mode</span>
+        <span id="ipcmode~csharp">
+<span class="nx">
+Ipc<wbr>Mode
+<a class="anchorjs-link " href="#ipcmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -318,7 +348,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Memory</span>
+        <span id="memory~csharp">
+<span class="nx">
+Memory
+<a class="anchorjs-link " href="#memory~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -327,7 +362,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Mode</span>
+        <span id="networkmode~csharp">
+<span class="nx">
+Network<wbr>Mode
+<a class="anchorjs-link " href="#networkmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -336,7 +376,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pid<wbr>Mode</span>
+        <span id="pidmode~csharp">
+<span class="nx">
+Pid<wbr>Mode
+<a class="anchorjs-link " href="#pidmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -345,7 +390,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Constraints</span>
+        <span id="placementconstraints~csharp">
+<span class="nx">
+Placement<wbr>Constraints
+<a class="anchorjs-link " href="#placementconstraints~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List&lt;Task<wbr>Definition<wbr>Placement<wbr>Constraint<wbr>Args&gt;</a></span>
     </dt>
@@ -354,7 +404,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Proxy<wbr>Configuration</span>
+        <span id="proxyconfiguration~csharp">
+<span class="nx">
+Proxy<wbr>Configuration
+<a class="anchorjs-link " href="#proxyconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -363,7 +418,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Requires<wbr>Compatibilities</span>
+        <span id="requirescompatibilities~csharp">
+<span class="nx">
+Requires<wbr>Compatibilities
+<a class="anchorjs-link " href="#requirescompatibilities~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -372,7 +432,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -381,7 +446,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Task<wbr>Role<wbr>Arn</span>
+        <span id="taskrolearn~csharp">
+<span class="nx">
+Task<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#taskrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -390,7 +460,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volumes</span>
+        <span id="volumes~csharp">
+<span class="nx">
+Volumes
+<a class="anchorjs-link " href="#volumes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List&lt;Task<wbr>Definition<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
@@ -406,7 +481,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Container<wbr>Definitions</span>
+        <span id="containerdefinitions~go">
+<span class="nx">
+Container<wbr>Definitions
+<a class="anchorjs-link " href="#containerdefinitions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -420,7 +500,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Family</span>
+        <span id="family~go">
+<span class="nx">
+Family
+<a class="anchorjs-link " href="#family~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -429,7 +514,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu</span>
+        <span id="cpu~go">
+<span class="nx">
+Cpu
+<a class="anchorjs-link " href="#cpu~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -438,7 +528,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Role<wbr>Arn</span>
+        <span id="executionrolearn~go">
+<span class="nx">
+Execution<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#executionrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -447,7 +542,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inference<wbr>Accelerators</span>
+        <span id="inferenceaccelerators~go">
+<span class="nx">
+Inference<wbr>Accelerators
+<a class="anchorjs-link " href="#inferenceaccelerators~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">[]Task<wbr>Definition<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
@@ -456,7 +556,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipc<wbr>Mode</span>
+        <span id="ipcmode~go">
+<span class="nx">
+Ipc<wbr>Mode
+<a class="anchorjs-link " href="#ipcmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -465,7 +570,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Memory</span>
+        <span id="memory~go">
+<span class="nx">
+Memory
+<a class="anchorjs-link " href="#memory~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -474,7 +584,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Mode</span>
+        <span id="networkmode~go">
+<span class="nx">
+Network<wbr>Mode
+<a class="anchorjs-link " href="#networkmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -483,7 +598,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pid<wbr>Mode</span>
+        <span id="pidmode~go">
+<span class="nx">
+Pid<wbr>Mode
+<a class="anchorjs-link " href="#pidmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -492,7 +612,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Constraints</span>
+        <span id="placementconstraints~go">
+<span class="nx">
+Placement<wbr>Constraints
+<a class="anchorjs-link " href="#placementconstraints~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">[]Task<wbr>Definition<wbr>Placement<wbr>Constraint</a></span>
     </dt>
@@ -501,7 +626,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Proxy<wbr>Configuration</span>
+        <span id="proxyconfiguration~go">
+<span class="nx">
+Proxy<wbr>Configuration
+<a class="anchorjs-link " href="#proxyconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
@@ -510,7 +640,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Requires<wbr>Compatibilities</span>
+        <span id="requirescompatibilities~go">
+<span class="nx">
+Requires<wbr>Compatibilities
+<a class="anchorjs-link " href="#requirescompatibilities~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -519,7 +654,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -528,7 +668,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Task<wbr>Role<wbr>Arn</span>
+        <span id="taskrolearn~go">
+<span class="nx">
+Task<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#taskrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -537,7 +682,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volumes</span>
+        <span id="volumes~go">
+<span class="nx">
+Volumes
+<a class="anchorjs-link " href="#volumes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">[]Task<wbr>Definition<wbr>Volume</a></span>
     </dt>
@@ -553,7 +703,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>container<wbr>Definitions</span>
+        <span id="containerdefinitions~nodejs">
+<span class="nx">
+container<wbr>Definitions
+<a class="anchorjs-link " href="#containerdefinitions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -567,7 +722,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>family</span>
+        <span id="family~nodejs">
+<span class="nx">
+family
+<a class="anchorjs-link " href="#family~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -576,7 +736,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu</span>
+        <span id="cpu~nodejs">
+<span class="nx">
+cpu
+<a class="anchorjs-link " href="#cpu~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -585,7 +750,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution<wbr>Role<wbr>Arn</span>
+        <span id="executionrolearn~nodejs">
+<span class="nx">
+execution<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#executionrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -594,7 +764,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>inference<wbr>Accelerators</span>
+        <span id="inferenceaccelerators~nodejs">
+<span class="nx">
+inference<wbr>Accelerators
+<a class="anchorjs-link " href="#inferenceaccelerators~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">Task<wbr>Definition<wbr>Inference<wbr>Accelerator[]</a></span>
     </dt>
@@ -603,7 +778,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipc<wbr>Mode</span>
+        <span id="ipcmode~nodejs">
+<span class="nx">
+ipc<wbr>Mode
+<a class="anchorjs-link " href="#ipcmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -612,7 +792,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>memory</span>
+        <span id="memory~nodejs">
+<span class="nx">
+memory
+<a class="anchorjs-link " href="#memory~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -621,7 +806,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Mode</span>
+        <span id="networkmode~nodejs">
+<span class="nx">
+network<wbr>Mode
+<a class="anchorjs-link " href="#networkmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -630,7 +820,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>pid<wbr>Mode</span>
+        <span id="pidmode~nodejs">
+<span class="nx">
+pid<wbr>Mode
+<a class="anchorjs-link " href="#pidmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -639,7 +834,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement<wbr>Constraints</span>
+        <span id="placementconstraints~nodejs">
+<span class="nx">
+placement<wbr>Constraints
+<a class="anchorjs-link " href="#placementconstraints~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">Task<wbr>Definition<wbr>Placement<wbr>Constraint[]</a></span>
     </dt>
@@ -648,7 +848,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>proxy<wbr>Configuration</span>
+        <span id="proxyconfiguration~nodejs">
+<span class="nx">
+proxy<wbr>Configuration
+<a class="anchorjs-link " href="#proxyconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
@@ -657,7 +862,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>requires<wbr>Compatibilities</span>
+        <span id="requirescompatibilities~nodejs">
+<span class="nx">
+requires<wbr>Compatibilities
+<a class="anchorjs-link " href="#requirescompatibilities~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -666,7 +876,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -675,7 +890,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>task<wbr>Role<wbr>Arn</span>
+        <span id="taskrolearn~nodejs">
+<span class="nx">
+task<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#taskrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -684,7 +904,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>volumes</span>
+        <span id="volumes~nodejs">
+<span class="nx">
+volumes
+<a class="anchorjs-link " href="#volumes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">Task<wbr>Definition<wbr>Volume[]</a></span>
     </dt>
@@ -700,7 +925,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>container_<wbr>definitions</span>
+        <span id="container_definitions~python">
+<span class="nx">
+container_<wbr>definitions
+<a class="anchorjs-link " href="#container_definitions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -714,7 +944,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>family</span>
+        <span id="family~python">
+<span class="nx">
+family
+<a class="anchorjs-link " href="#family~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -723,7 +958,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu</span>
+        <span id="cpu~python">
+<span class="nx">
+cpu
+<a class="anchorjs-link " href="#cpu~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -732,7 +972,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution_<wbr>role_<wbr>arn</span>
+        <span id="execution_role_arn~python">
+<span class="nx">
+execution_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#execution_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -741,7 +986,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>inference_<wbr>accelerators</span>
+        <span id="inference_accelerators~python">
+<span class="nx">
+inference_<wbr>accelerators
+<a class="anchorjs-link " href="#inference_accelerators~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List[Task<wbr>Definition<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
@@ -750,7 +1000,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipc_<wbr>mode</span>
+        <span id="ipc_mode~python">
+<span class="nx">
+ipc_<wbr>mode
+<a class="anchorjs-link " href="#ipc_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -759,7 +1014,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>memory</span>
+        <span id="memory~python">
+<span class="nx">
+memory
+<a class="anchorjs-link " href="#memory~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -768,7 +1028,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>mode</span>
+        <span id="network_mode~python">
+<span class="nx">
+network_<wbr>mode
+<a class="anchorjs-link " href="#network_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -777,7 +1042,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>pid_<wbr>mode</span>
+        <span id="pid_mode~python">
+<span class="nx">
+pid_<wbr>mode
+<a class="anchorjs-link " href="#pid_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -786,7 +1056,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement_<wbr>constraints</span>
+        <span id="placement_constraints~python">
+<span class="nx">
+placement_<wbr>constraints
+<a class="anchorjs-link " href="#placement_constraints~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List[Task<wbr>Definition<wbr>Placement<wbr>Constraint]</a></span>
     </dt>
@@ -795,7 +1070,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>proxy_<wbr>configuration</span>
+        <span id="proxy_configuration~python">
+<span class="nx">
+proxy_<wbr>configuration
+<a class="anchorjs-link " href="#proxy_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Dict[Task<wbr>Definition<wbr>Proxy<wbr>Configuration]</a></span>
     </dt>
@@ -804,7 +1084,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>requires_<wbr>compatibilities</span>
+        <span id="requires_compatibilities~python">
+<span class="nx">
+requires_<wbr>compatibilities
+<a class="anchorjs-link " href="#requires_compatibilities~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -813,7 +1098,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -822,7 +1112,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>task_<wbr>role_<wbr>arn</span>
+        <span id="task_role_arn~python">
+<span class="nx">
+task_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#task_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -831,7 +1126,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>volumes</span>
+        <span id="volumes~python">
+<span class="nx">
+volumes
+<a class="anchorjs-link " href="#volumes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List[Task<wbr>Definition<wbr>Volume]</a></span>
     </dt>
@@ -858,7 +1158,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -867,7 +1172,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -875,7 +1185,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Revision</span>
+        <span id="revision~csharp">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#revision~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -891,7 +1206,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -900,7 +1220,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -908,7 +1233,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Revision</span>
+        <span id="revision~go">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#revision~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -924,7 +1254,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -933,7 +1268,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -941,7 +1281,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>revision</span>
+        <span id="revision~nodejs">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#revision~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -957,7 +1302,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -966,7 +1316,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -974,7 +1329,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>revision</span>
+        <span id="revision~python">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#revision~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -996,7 +1356,7 @@ Get an existing TaskDefinition resource's state with the given name, ID, and opt
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinitionState">TaskDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinition">TaskDefinition</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinitionState">TaskDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ecs/#TaskDefinition">TaskDefinition</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1004,11 +1364,11 @@ Get an existing TaskDefinition resource's state with the given name, ID, and opt
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTaskDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionState">TaskDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">TaskDefinition</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTaskDefinition<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinitionState">TaskDefinitionState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ecs?tab=doc#TaskDefinition">TaskDefinition</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinition.html">TaskDefinition</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinitionState.html">TaskDefinitionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinition.html">TaskDefinition</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ecs.TaskDefinitionState.html">TaskDefinitionState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1116,7 +1476,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1125,7 +1490,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Container<wbr>Definitions</span>
+        <span id="state_containerdefinitions~csharp">
+<span class="nx">
+Container<wbr>Definitions
+<a class="anchorjs-link " href="#state_containerdefinitions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1139,7 +1509,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu</span>
+        <span id="state_cpu~csharp">
+<span class="nx">
+Cpu
+<a class="anchorjs-link " href="#state_cpu~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1148,7 +1523,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Role<wbr>Arn</span>
+        <span id="state_executionrolearn~csharp">
+<span class="nx">
+Execution<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_executionrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1157,7 +1537,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Family</span>
+        <span id="state_family~csharp">
+<span class="nx">
+Family
+<a class="anchorjs-link " href="#state_family~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1166,7 +1551,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inference<wbr>Accelerators</span>
+        <span id="state_inferenceaccelerators~csharp">
+<span class="nx">
+Inference<wbr>Accelerators
+<a class="anchorjs-link " href="#state_inferenceaccelerators~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List&lt;Task<wbr>Definition<wbr>Inference<wbr>Accelerator<wbr>Args&gt;</a></span>
     </dt>
@@ -1175,7 +1565,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipc<wbr>Mode</span>
+        <span id="state_ipcmode~csharp">
+<span class="nx">
+Ipc<wbr>Mode
+<a class="anchorjs-link " href="#state_ipcmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1184,7 +1579,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Memory</span>
+        <span id="state_memory~csharp">
+<span class="nx">
+Memory
+<a class="anchorjs-link " href="#state_memory~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1193,7 +1593,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Mode</span>
+        <span id="state_networkmode~csharp">
+<span class="nx">
+Network<wbr>Mode
+<a class="anchorjs-link " href="#state_networkmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1202,7 +1607,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pid<wbr>Mode</span>
+        <span id="state_pidmode~csharp">
+<span class="nx">
+Pid<wbr>Mode
+<a class="anchorjs-link " href="#state_pidmode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1211,7 +1621,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Constraints</span>
+        <span id="state_placementconstraints~csharp">
+<span class="nx">
+Placement<wbr>Constraints
+<a class="anchorjs-link " href="#state_placementconstraints~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List&lt;Task<wbr>Definition<wbr>Placement<wbr>Constraint<wbr>Args&gt;</a></span>
     </dt>
@@ -1220,7 +1635,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Proxy<wbr>Configuration</span>
+        <span id="state_proxyconfiguration~csharp">
+<span class="nx">
+Proxy<wbr>Configuration
+<a class="anchorjs-link " href="#state_proxyconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1229,7 +1649,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Requires<wbr>Compatibilities</span>
+        <span id="state_requirescompatibilities~csharp">
+<span class="nx">
+Requires<wbr>Compatibilities
+<a class="anchorjs-link " href="#state_requirescompatibilities~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1238,7 +1663,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Revision</span>
+        <span id="state_revision~csharp">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#state_revision~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1247,7 +1677,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1256,7 +1691,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Task<wbr>Role<wbr>Arn</span>
+        <span id="state_taskrolearn~csharp">
+<span class="nx">
+Task<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_taskrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1265,7 +1705,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volumes</span>
+        <span id="state_volumes~csharp">
+<span class="nx">
+Volumes
+<a class="anchorjs-link " href="#state_volumes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List&lt;Task<wbr>Definition<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
@@ -1281,7 +1726,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1290,7 +1740,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Container<wbr>Definitions</span>
+        <span id="state_containerdefinitions~go">
+<span class="nx">
+Container<wbr>Definitions
+<a class="anchorjs-link " href="#state_containerdefinitions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1304,7 +1759,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cpu</span>
+        <span id="state_cpu~go">
+<span class="nx">
+Cpu
+<a class="anchorjs-link " href="#state_cpu~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1313,7 +1773,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Role<wbr>Arn</span>
+        <span id="state_executionrolearn~go">
+<span class="nx">
+Execution<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_executionrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1322,7 +1787,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Family</span>
+        <span id="state_family~go">
+<span class="nx">
+Family
+<a class="anchorjs-link " href="#state_family~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1331,7 +1801,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Inference<wbr>Accelerators</span>
+        <span id="state_inferenceaccelerators~go">
+<span class="nx">
+Inference<wbr>Accelerators
+<a class="anchorjs-link " href="#state_inferenceaccelerators~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">[]Task<wbr>Definition<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
@@ -1340,7 +1815,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipc<wbr>Mode</span>
+        <span id="state_ipcmode~go">
+<span class="nx">
+Ipc<wbr>Mode
+<a class="anchorjs-link " href="#state_ipcmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1349,7 +1829,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Memory</span>
+        <span id="state_memory~go">
+<span class="nx">
+Memory
+<a class="anchorjs-link " href="#state_memory~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1358,7 +1843,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Network<wbr>Mode</span>
+        <span id="state_networkmode~go">
+<span class="nx">
+Network<wbr>Mode
+<a class="anchorjs-link " href="#state_networkmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1367,7 +1857,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Pid<wbr>Mode</span>
+        <span id="state_pidmode~go">
+<span class="nx">
+Pid<wbr>Mode
+<a class="anchorjs-link " href="#state_pidmode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1376,7 +1871,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Placement<wbr>Constraints</span>
+        <span id="state_placementconstraints~go">
+<span class="nx">
+Placement<wbr>Constraints
+<a class="anchorjs-link " href="#state_placementconstraints~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">[]Task<wbr>Definition<wbr>Placement<wbr>Constraint</a></span>
     </dt>
@@ -1385,7 +1885,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Proxy<wbr>Configuration</span>
+        <span id="state_proxyconfiguration~go">
+<span class="nx">
+Proxy<wbr>Configuration
+<a class="anchorjs-link " href="#state_proxyconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
@@ -1394,7 +1899,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Requires<wbr>Compatibilities</span>
+        <span id="state_requirescompatibilities~go">
+<span class="nx">
+Requires<wbr>Compatibilities
+<a class="anchorjs-link " href="#state_requirescompatibilities~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1403,7 +1913,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Revision</span>
+        <span id="state_revision~go">
+<span class="nx">
+Revision
+<a class="anchorjs-link " href="#state_revision~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1412,7 +1927,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1421,7 +1941,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Task<wbr>Role<wbr>Arn</span>
+        <span id="state_taskrolearn~go">
+<span class="nx">
+Task<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_taskrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1430,7 +1955,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Volumes</span>
+        <span id="state_volumes~go">
+<span class="nx">
+Volumes
+<a class="anchorjs-link " href="#state_volumes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">[]Task<wbr>Definition<wbr>Volume</a></span>
     </dt>
@@ -1446,7 +1976,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1455,7 +1990,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>container<wbr>Definitions</span>
+        <span id="state_containerdefinitions~nodejs">
+<span class="nx">
+container<wbr>Definitions
+<a class="anchorjs-link " href="#state_containerdefinitions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1469,7 +2009,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu</span>
+        <span id="state_cpu~nodejs">
+<span class="nx">
+cpu
+<a class="anchorjs-link " href="#state_cpu~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1478,7 +2023,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution<wbr>Role<wbr>Arn</span>
+        <span id="state_executionrolearn~nodejs">
+<span class="nx">
+execution<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_executionrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1487,7 +2037,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>family</span>
+        <span id="state_family~nodejs">
+<span class="nx">
+family
+<a class="anchorjs-link " href="#state_family~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1496,7 +2051,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>inference<wbr>Accelerators</span>
+        <span id="state_inferenceaccelerators~nodejs">
+<span class="nx">
+inference<wbr>Accelerators
+<a class="anchorjs-link " href="#state_inferenceaccelerators~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">Task<wbr>Definition<wbr>Inference<wbr>Accelerator[]</a></span>
     </dt>
@@ -1505,7 +2065,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipc<wbr>Mode</span>
+        <span id="state_ipcmode~nodejs">
+<span class="nx">
+ipc<wbr>Mode
+<a class="anchorjs-link " href="#state_ipcmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1514,7 +2079,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>memory</span>
+        <span id="state_memory~nodejs">
+<span class="nx">
+memory
+<a class="anchorjs-link " href="#state_memory~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1523,7 +2093,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>network<wbr>Mode</span>
+        <span id="state_networkmode~nodejs">
+<span class="nx">
+network<wbr>Mode
+<a class="anchorjs-link " href="#state_networkmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1532,7 +2107,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>pid<wbr>Mode</span>
+        <span id="state_pidmode~nodejs">
+<span class="nx">
+pid<wbr>Mode
+<a class="anchorjs-link " href="#state_pidmode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1541,7 +2121,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement<wbr>Constraints</span>
+        <span id="state_placementconstraints~nodejs">
+<span class="nx">
+placement<wbr>Constraints
+<a class="anchorjs-link " href="#state_placementconstraints~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">Task<wbr>Definition<wbr>Placement<wbr>Constraint[]</a></span>
     </dt>
@@ -1550,7 +2135,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>proxy<wbr>Configuration</span>
+        <span id="state_proxyconfiguration~nodejs">
+<span class="nx">
+proxy<wbr>Configuration
+<a class="anchorjs-link " href="#state_proxyconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Task<wbr>Definition<wbr>Proxy<wbr>Configuration</a></span>
     </dt>
@@ -1559,7 +2149,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>requires<wbr>Compatibilities</span>
+        <span id="state_requirescompatibilities~nodejs">
+<span class="nx">
+requires<wbr>Compatibilities
+<a class="anchorjs-link " href="#state_requirescompatibilities~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1568,7 +2163,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>revision</span>
+        <span id="state_revision~nodejs">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#state_revision~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1577,7 +2177,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1586,7 +2191,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>task<wbr>Role<wbr>Arn</span>
+        <span id="state_taskrolearn~nodejs">
+<span class="nx">
+task<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_taskrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1595,7 +2205,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>volumes</span>
+        <span id="state_volumes~nodejs">
+<span class="nx">
+volumes
+<a class="anchorjs-link " href="#state_volumes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">Task<wbr>Definition<wbr>Volume[]</a></span>
     </dt>
@@ -1611,7 +2226,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1620,7 +2240,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>container_<wbr>definitions</span>
+        <span id="state_container_definitions~python">
+<span class="nx">
+container_<wbr>definitions
+<a class="anchorjs-link " href="#state_container_definitions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1634,7 +2259,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>cpu</span>
+        <span id="state_cpu~python">
+<span class="nx">
+cpu
+<a class="anchorjs-link " href="#state_cpu~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1643,7 +2273,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution_<wbr>role_<wbr>arn</span>
+        <span id="state_execution_role_arn~python">
+<span class="nx">
+execution_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#state_execution_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1652,7 +2287,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>family</span>
+        <span id="state_family~python">
+<span class="nx">
+family
+<a class="anchorjs-link " href="#state_family~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1661,7 +2301,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>inference_<wbr>accelerators</span>
+        <span id="state_inference_accelerators~python">
+<span class="nx">
+inference_<wbr>accelerators
+<a class="anchorjs-link " href="#state_inference_accelerators~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitioninferenceaccelerator">List[Task<wbr>Definition<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
@@ -1670,7 +2315,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipc_<wbr>mode</span>
+        <span id="state_ipc_mode~python">
+<span class="nx">
+ipc_<wbr>mode
+<a class="anchorjs-link " href="#state_ipc_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1679,7 +2329,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>memory</span>
+        <span id="state_memory~python">
+<span class="nx">
+memory
+<a class="anchorjs-link " href="#state_memory~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1688,7 +2343,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>network_<wbr>mode</span>
+        <span id="state_network_mode~python">
+<span class="nx">
+network_<wbr>mode
+<a class="anchorjs-link " href="#state_network_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1697,7 +2357,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>pid_<wbr>mode</span>
+        <span id="state_pid_mode~python">
+<span class="nx">
+pid_<wbr>mode
+<a class="anchorjs-link " href="#state_pid_mode~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1706,7 +2371,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>placement_<wbr>constraints</span>
+        <span id="state_placement_constraints~python">
+<span class="nx">
+placement_<wbr>constraints
+<a class="anchorjs-link " href="#state_placement_constraints~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionplacementconstraint">List[Task<wbr>Definition<wbr>Placement<wbr>Constraint]</a></span>
     </dt>
@@ -1715,7 +2385,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>proxy_<wbr>configuration</span>
+        <span id="state_proxy_configuration~python">
+<span class="nx">
+proxy_<wbr>configuration
+<a class="anchorjs-link " href="#state_proxy_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionproxyconfiguration">Dict[Task<wbr>Definition<wbr>Proxy<wbr>Configuration]</a></span>
     </dt>
@@ -1724,7 +2399,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>requires_<wbr>compatibilities</span>
+        <span id="state_requires_compatibilities~python">
+<span class="nx">
+requires_<wbr>compatibilities
+<a class="anchorjs-link " href="#state_requires_compatibilities~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1733,7 +2413,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>revision</span>
+        <span id="state_revision~python">
+<span class="nx">
+revision
+<a class="anchorjs-link " href="#state_revision~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1742,7 +2427,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1751,7 +2441,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>task_<wbr>role_<wbr>arn</span>
+        <span id="state_task_role_arn~python">
+<span class="nx">
+task_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#state_task_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1760,7 +2455,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>volumes</span>
+        <span id="state_volumes~python">
+<span class="nx">
+volumes
+<a class="anchorjs-link " href="#state_volumes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolume">List[Task<wbr>Definition<wbr>Volume]</a></span>
     </dt>
@@ -1802,7 +2502,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~csharp">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1811,7 +2516,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Type</span>
+        <span id="devicetype~csharp">
+<span class="nx">
+Device<wbr>Type
+<a class="anchorjs-link " href="#devicetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1827,7 +2537,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Name</span>
+        <span id="devicename~go">
+<span class="nx">
+Device<wbr>Name
+<a class="anchorjs-link " href="#devicename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1836,7 +2551,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Device<wbr>Type</span>
+        <span id="devicetype~go">
+<span class="nx">
+Device<wbr>Type
+<a class="anchorjs-link " href="#devicetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1852,7 +2572,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Name</span>
+        <span id="devicename~nodejs">
+<span class="nx">
+device<wbr>Name
+<a class="anchorjs-link " href="#devicename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1861,7 +2586,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Type</span>
+        <span id="devicetype~nodejs">
+<span class="nx">
+device<wbr>Type
+<a class="anchorjs-link " href="#devicetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1877,7 +2607,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>device<wbr>Type</span>
+        <span id="devicetype~python">
+<span class="nx">
+device<wbr>Type
+<a class="anchorjs-link " href="#devicetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1886,7 +2621,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>device_<wbr>name</span>
+        <span id="device_name~python">
+<span class="nx">
+device_<wbr>name
+<a class="anchorjs-link " href="#device_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1920,7 +2660,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1929,7 +2674,12 @@ official [Developer Guide](https://docs.aws.amazon.com/AmazonECS/latest/develope
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expression</span>
+        <span id="expression~csharp">
+<span class="nx">
+Expression
+<a class="anchorjs-link " href="#expression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1948,7 +2698,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1957,7 +2712,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expression</span>
+        <span id="expression~go">
+<span class="nx">
+Expression
+<a class="anchorjs-link " href="#expression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1976,7 +2736,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1985,7 +2750,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>expression</span>
+        <span id="expression~nodejs">
+<span class="nx">
+expression
+<a class="anchorjs-link " href="#expression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2004,7 +2774,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2013,7 +2788,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>expression</span>
+        <span id="expression~python">
+<span class="nx">
+expression
+<a class="anchorjs-link " href="#expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2050,7 +2830,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>Container<wbr>Name</span>
+        <span id="containername~csharp">
+<span class="nx">
+Container<wbr>Name
+<a class="anchorjs-link " href="#containername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2059,7 +2844,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>Properties</span>
+        <span id="properties~csharp">
+<span class="nx">
+Properties
+<a class="anchorjs-link " href="#properties~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -2068,7 +2858,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2084,7 +2879,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>Container<wbr>Name</span>
+        <span id="containername~go">
+<span class="nx">
+Container<wbr>Name
+<a class="anchorjs-link " href="#containername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2093,7 +2893,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>Properties</span>
+        <span id="properties~go">
+<span class="nx">
+Properties
+<a class="anchorjs-link " href="#properties~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -2102,7 +2907,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2118,7 +2928,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>container<wbr>Name</span>
+        <span id="containername~nodejs">
+<span class="nx">
+container<wbr>Name
+<a class="anchorjs-link " href="#containername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2127,7 +2942,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>properties</span>
+        <span id="properties~nodejs">
+<span class="nx">
+properties
+<a class="anchorjs-link " href="#properties~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -2136,7 +2956,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2152,7 +2977,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>container_<wbr>name</span>
+        <span id="container_name~python">
+<span class="nx">
+container_<wbr>name
+<a class="anchorjs-link " href="#container_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2161,7 +2991,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>properties</span>
+        <span id="properties~python">
+<span class="nx">
+properties
+<a class="anchorjs-link " href="#properties~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -2170,7 +3005,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2204,7 +3044,12 @@ Guide](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2214,7 +3059,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Docker<wbr>Volume<wbr>Configuration</span>
+        <span id="dockervolumeconfiguration~csharp">
+<span class="nx">
+Docker<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#dockervolumeconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -2223,7 +3073,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Efs<wbr>Volume<wbr>Configuration</span>
+        <span id="efsvolumeconfiguration~csharp">
+<span class="nx">
+Efs<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#efsvolumeconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -2232,7 +3087,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Path</span>
+        <span id="hostpath~csharp">
+<span class="nx">
+Host<wbr>Path
+<a class="anchorjs-link " href="#hostpath~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2248,7 +3108,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2258,7 +3123,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Docker<wbr>Volume<wbr>Configuration</span>
+        <span id="dockervolumeconfiguration~go">
+<span class="nx">
+Docker<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#dockervolumeconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration</a></span>
     </dt>
@@ -2267,7 +3137,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Efs<wbr>Volume<wbr>Configuration</span>
+        <span id="efsvolumeconfiguration~go">
+<span class="nx">
+Efs<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#efsvolumeconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration</a></span>
     </dt>
@@ -2276,7 +3151,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Host<wbr>Path</span>
+        <span id="hostpath~go">
+<span class="nx">
+Host<wbr>Path
+<a class="anchorjs-link " href="#hostpath~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2292,7 +3172,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2302,7 +3187,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>docker<wbr>Volume<wbr>Configuration</span>
+        <span id="dockervolumeconfiguration~nodejs">
+<span class="nx">
+docker<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#dockervolumeconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration</a></span>
     </dt>
@@ -2311,7 +3201,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>efs<wbr>Volume<wbr>Configuration</span>
+        <span id="efsvolumeconfiguration~nodejs">
+<span class="nx">
+efs<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#efsvolumeconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration</a></span>
     </dt>
@@ -2320,7 +3215,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>host<wbr>Path</span>
+        <span id="hostpath~nodejs">
+<span class="nx">
+host<wbr>Path
+<a class="anchorjs-link " href="#hostpath~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2336,7 +3236,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2346,7 +3251,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>docker<wbr>Volume<wbr>Configuration</span>
+        <span id="dockervolumeconfiguration~python">
+<span class="nx">
+docker<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#dockervolumeconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumedockervolumeconfiguration">Dict[Task<wbr>Definition<wbr>Volume<wbr>Docker<wbr>Volume<wbr>Configuration]</a></span>
     </dt>
@@ -2355,7 +3265,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>efs<wbr>Volume<wbr>Configuration</span>
+        <span id="efsvolumeconfiguration~python">
+<span class="nx">
+efs<wbr>Volume<wbr>Configuration
+<a class="anchorjs-link " href="#efsvolumeconfiguration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#taskdefinitionvolumeefsvolumeconfiguration">Dict[Task<wbr>Definition<wbr>Volume<wbr>Efs<wbr>Volume<wbr>Configuration]</a></span>
     </dt>
@@ -2364,7 +3279,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>host<wbr>Path</span>
+        <span id="hostpath~python">
+<span class="nx">
+host<wbr>Path
+<a class="anchorjs-link " href="#hostpath~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2398,7 +3318,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Autoprovision</span>
+        <span id="autoprovision~csharp">
+<span class="nx">
+Autoprovision
+<a class="anchorjs-link " href="#autoprovision~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2407,7 +3332,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Driver</span>
+        <span id="driver~csharp">
+<span class="nx">
+Driver
+<a class="anchorjs-link " href="#driver~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2416,7 +3346,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Driver<wbr>Opts</span>
+        <span id="driveropts~csharp">
+<span class="nx">
+Driver<wbr>Opts
+<a class="anchorjs-link " href="#driveropts~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -2425,7 +3360,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Labels</span>
+        <span id="labels~csharp">
+<span class="nx">
+Labels
+<a class="anchorjs-link " href="#labels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -2434,7 +3374,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scope</span>
+        <span id="scope~csharp">
+<span class="nx">
+Scope
+<a class="anchorjs-link " href="#scope~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2450,7 +3395,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Autoprovision</span>
+        <span id="autoprovision~go">
+<span class="nx">
+Autoprovision
+<a class="anchorjs-link " href="#autoprovision~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2459,7 +3409,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Driver</span>
+        <span id="driver~go">
+<span class="nx">
+Driver
+<a class="anchorjs-link " href="#driver~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2468,7 +3423,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Driver<wbr>Opts</span>
+        <span id="driveropts~go">
+<span class="nx">
+Driver<wbr>Opts
+<a class="anchorjs-link " href="#driveropts~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -2477,7 +3437,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Labels</span>
+        <span id="labels~go">
+<span class="nx">
+Labels
+<a class="anchorjs-link " href="#labels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -2486,7 +3451,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Scope</span>
+        <span id="scope~go">
+<span class="nx">
+Scope
+<a class="anchorjs-link " href="#scope~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2502,7 +3472,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>autoprovision</span>
+        <span id="autoprovision~nodejs">
+<span class="nx">
+autoprovision
+<a class="anchorjs-link " href="#autoprovision~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2511,7 +3486,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>driver</span>
+        <span id="driver~nodejs">
+<span class="nx">
+driver
+<a class="anchorjs-link " href="#driver~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2520,7 +3500,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>driver<wbr>Opts</span>
+        <span id="driveropts~nodejs">
+<span class="nx">
+driver<wbr>Opts
+<a class="anchorjs-link " href="#driveropts~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -2529,7 +3514,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>labels</span>
+        <span id="labels~nodejs">
+<span class="nx">
+labels
+<a class="anchorjs-link " href="#labels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -2538,7 +3528,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>scope</span>
+        <span id="scope~nodejs">
+<span class="nx">
+scope
+<a class="anchorjs-link " href="#scope~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2554,7 +3549,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>autoprovision</span>
+        <span id="autoprovision~python">
+<span class="nx">
+autoprovision
+<a class="anchorjs-link " href="#autoprovision~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2563,7 +3563,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>driver</span>
+        <span id="driver~python">
+<span class="nx">
+driver
+<a class="anchorjs-link " href="#driver~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2572,7 +3577,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>driver<wbr>Opts</span>
+        <span id="driveropts~python">
+<span class="nx">
+driver<wbr>Opts
+<a class="anchorjs-link " href="#driveropts~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -2581,7 +3591,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>labels</span>
+        <span id="labels~python">
+<span class="nx">
+labels
+<a class="anchorjs-link " href="#labels~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -2590,7 +3605,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>scope</span>
+        <span id="scope~python">
+<span class="nx">
+scope
+<a class="anchorjs-link " href="#scope~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2624,7 +3644,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>File<wbr>System<wbr>Id</span>
+        <span id="filesystemid~csharp">
+<span class="nx">
+File<wbr>System<wbr>Id
+<a class="anchorjs-link " href="#filesystemid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2633,7 +3658,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Directory</span>
+        <span id="rootdirectory~csharp">
+<span class="nx">
+Root<wbr>Directory
+<a class="anchorjs-link " href="#rootdirectory~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2649,7 +3679,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>File<wbr>System<wbr>Id</span>
+        <span id="filesystemid~go">
+<span class="nx">
+File<wbr>System<wbr>Id
+<a class="anchorjs-link " href="#filesystemid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2658,7 +3693,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Root<wbr>Directory</span>
+        <span id="rootdirectory~go">
+<span class="nx">
+Root<wbr>Directory
+<a class="anchorjs-link " href="#rootdirectory~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2674,7 +3714,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>file<wbr>System<wbr>Id</span>
+        <span id="filesystemid~nodejs">
+<span class="nx">
+file<wbr>System<wbr>Id
+<a class="anchorjs-link " href="#filesystemid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2683,7 +3728,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Directory</span>
+        <span id="rootdirectory~nodejs">
+<span class="nx">
+root<wbr>Directory
+<a class="anchorjs-link " href="#rootdirectory~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2699,7 +3749,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-required"
             title="Required">
-        <span>file_<wbr>system_<wbr>id</span>
+        <span id="file_system_id~python">
+<span class="nx">
+file_<wbr>system_<wbr>id
+<a class="anchorjs-link " href="#file_system_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2708,7 +3763,12 @@ parameter of container definition in the `mountPoints` section.
 
     <dt class="property-optional"
             title="Optional">
-        <span>root<wbr>Directory</span>
+        <span id="rootdirectory~python">
+<span class="nx">
+root<wbr>Directory
+<a class="anchorjs-link " href="#rootdirectory~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

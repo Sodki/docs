@@ -60,7 +60,7 @@ const reportDefinition = pulumi.output(aws.cur.getReportDefinition({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getReportDefinition<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cur/#GetReportDefinitionArgs">GetReportDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cur/#GetReportDefinitionResult">GetReportDefinitionResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getReportDefinition<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cur/#GetReportDefinitionArgs">GetReportDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cur/#GetReportDefinitionResult">GetReportDefinitionResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -70,13 +70,16 @@ const reportDefinition = pulumi.output(aws.cur.getReportDefinition({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupReportDefinition<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cur?tab=doc#LookupReportDefinitionArgs">LookupReportDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cur?tab=doc#LookupReportDefinitionResult">LookupReportDefinitionResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupReportDefinition<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cur?tab=doc#LookupReportDefinitionArgs">LookupReportDefinitionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cur?tab=doc#LookupReportDefinitionResult">LookupReportDefinitionResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupReportDefinition` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetReportDefinition </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cur.GetReportDefinitionResult.html">GetReportDefinitionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cur.GetReportDefinitionArgs.html">GetReportDefinitionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cur.GetReportDefinitionResult.html">GetReportDefinitionResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cur.GetReportDefinitionArgs.html">GetReportDefinitionArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -91,7 +94,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Report<wbr>Name</span>
+        <span id="reportname~csharp">
+<span class="nx">
+Report<wbr>Name
+<a class="anchorjs-link " href="#reportname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -107,7 +115,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Report<wbr>Name</span>
+        <span id="reportname~go">
+<span class="nx">
+Report<wbr>Name
+<a class="anchorjs-link " href="#reportname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -123,7 +136,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>report<wbr>Name</span>
+        <span id="reportname~nodejs">
+<span class="nx">
+report<wbr>Name
+<a class="anchorjs-link " href="#reportname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -139,7 +157,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>report_<wbr>name</span>
+        <span id="report_name~python">
+<span class="nx">
+report_<wbr>name
+<a class="anchorjs-link " href="#report_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -168,7 +191,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Additional<wbr>Artifacts</span>
+        <span id="additionalartifacts~csharp">
+<span class="nx">
+Additional<wbr>Artifacts
+<a class="anchorjs-link " href="#additionalartifacts~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -177,7 +205,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Additional<wbr>Schema<wbr>Elements</span>
+        <span id="additionalschemaelements~csharp">
+<span class="nx">
+Additional<wbr>Schema<wbr>Elements
+<a class="anchorjs-link " href="#additionalschemaelements~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -186,7 +219,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Compression</span>
+        <span id="compression~csharp">
+<span class="nx">
+Compression
+<a class="anchorjs-link " href="#compression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -195,7 +233,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Format</span>
+        <span id="format~csharp">
+<span class="nx">
+Format
+<a class="anchorjs-link " href="#format~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -204,7 +247,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -213,7 +261,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Report<wbr>Name</span>
+        <span id="reportname~csharp">
+<span class="nx">
+Report<wbr>Name
+<a class="anchorjs-link " href="#reportname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -221,7 +274,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>S3Bucket</span>
+        <span id="s3bucket~csharp">
+<span class="nx">
+S3Bucket
+<a class="anchorjs-link " href="#s3bucket~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -230,7 +288,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>S3Prefix</span>
+        <span id="s3prefix~csharp">
+<span class="nx">
+S3Prefix
+<a class="anchorjs-link " href="#s3prefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -239,7 +302,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>S3Region</span>
+        <span id="s3region~csharp">
+<span class="nx">
+S3Region
+<a class="anchorjs-link " href="#s3region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -248,7 +316,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Time<wbr>Unit</span>
+        <span id="timeunit~csharp">
+<span class="nx">
+Time<wbr>Unit
+<a class="anchorjs-link " href="#timeunit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -264,7 +337,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Additional<wbr>Artifacts</span>
+        <span id="additionalartifacts~go">
+<span class="nx">
+Additional<wbr>Artifacts
+<a class="anchorjs-link " href="#additionalartifacts~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -273,7 +351,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Additional<wbr>Schema<wbr>Elements</span>
+        <span id="additionalschemaelements~go">
+<span class="nx">
+Additional<wbr>Schema<wbr>Elements
+<a class="anchorjs-link " href="#additionalschemaelements~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -282,7 +365,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Compression</span>
+        <span id="compression~go">
+<span class="nx">
+Compression
+<a class="anchorjs-link " href="#compression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -291,7 +379,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Format</span>
+        <span id="format~go">
+<span class="nx">
+Format
+<a class="anchorjs-link " href="#format~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -300,7 +393,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -309,7 +407,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Report<wbr>Name</span>
+        <span id="reportname~go">
+<span class="nx">
+Report<wbr>Name
+<a class="anchorjs-link " href="#reportname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -317,7 +420,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>S3Bucket</span>
+        <span id="s3bucket~go">
+<span class="nx">
+S3Bucket
+<a class="anchorjs-link " href="#s3bucket~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -326,7 +434,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>S3Prefix</span>
+        <span id="s3prefix~go">
+<span class="nx">
+S3Prefix
+<a class="anchorjs-link " href="#s3prefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -335,7 +448,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>S3Region</span>
+        <span id="s3region~go">
+<span class="nx">
+S3Region
+<a class="anchorjs-link " href="#s3region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -344,7 +462,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Time<wbr>Unit</span>
+        <span id="timeunit~go">
+<span class="nx">
+Time<wbr>Unit
+<a class="anchorjs-link " href="#timeunit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -360,7 +483,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>additional<wbr>Artifacts</span>
+        <span id="additionalartifacts~nodejs">
+<span class="nx">
+additional<wbr>Artifacts
+<a class="anchorjs-link " href="#additionalartifacts~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -369,7 +497,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>additional<wbr>Schema<wbr>Elements</span>
+        <span id="additionalschemaelements~nodejs">
+<span class="nx">
+additional<wbr>Schema<wbr>Elements
+<a class="anchorjs-link " href="#additionalschemaelements~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -378,7 +511,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>compression</span>
+        <span id="compression~nodejs">
+<span class="nx">
+compression
+<a class="anchorjs-link " href="#compression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -387,7 +525,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>format</span>
+        <span id="format~nodejs">
+<span class="nx">
+format
+<a class="anchorjs-link " href="#format~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -396,7 +539,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -405,7 +553,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>report<wbr>Name</span>
+        <span id="reportname~nodejs">
+<span class="nx">
+report<wbr>Name
+<a class="anchorjs-link " href="#reportname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -413,7 +566,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>s3Bucket</span>
+        <span id="s3bucket~nodejs">
+<span class="nx">
+s3Bucket
+<a class="anchorjs-link " href="#s3bucket~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -422,7 +580,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>s3Prefix</span>
+        <span id="s3prefix~nodejs">
+<span class="nx">
+s3Prefix
+<a class="anchorjs-link " href="#s3prefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -431,7 +594,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>s3Region</span>
+        <span id="s3region~nodejs">
+<span class="nx">
+s3Region
+<a class="anchorjs-link " href="#s3region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -440,7 +608,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>time<wbr>Unit</span>
+        <span id="timeunit~nodejs">
+<span class="nx">
+time<wbr>Unit
+<a class="anchorjs-link " href="#timeunit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -456,7 +629,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>additional_<wbr>artifacts</span>
+        <span id="additional_artifacts~python">
+<span class="nx">
+additional_<wbr>artifacts
+<a class="anchorjs-link " href="#additional_artifacts~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -465,7 +643,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>additional_<wbr>schema_<wbr>elements</span>
+        <span id="additional_schema_elements~python">
+<span class="nx">
+additional_<wbr>schema_<wbr>elements
+<a class="anchorjs-link " href="#additional_schema_elements~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -474,7 +657,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>compression</span>
+        <span id="compression~python">
+<span class="nx">
+compression
+<a class="anchorjs-link " href="#compression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -483,7 +671,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>format</span>
+        <span id="format~python">
+<span class="nx">
+format
+<a class="anchorjs-link " href="#format~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -492,7 +685,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -501,7 +699,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>report_<wbr>name</span>
+        <span id="report_name~python">
+<span class="nx">
+report_<wbr>name
+<a class="anchorjs-link " href="#report_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -509,7 +712,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>s3_<wbr>bucket</span>
+        <span id="s3_bucket~python">
+<span class="nx">
+s3_<wbr>bucket
+<a class="anchorjs-link " href="#s3_bucket~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -518,7 +726,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>s3_<wbr>prefix</span>
+        <span id="s3_prefix~python">
+<span class="nx">
+s3_<wbr>prefix
+<a class="anchorjs-link " href="#s3_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -527,7 +740,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>s3_<wbr>region</span>
+        <span id="s3_region~python">
+<span class="nx">
+s3_<wbr>region
+<a class="anchorjs-link " href="#s3_region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -536,7 +754,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>time_<wbr>unit</span>
+        <span id="time_unit~python">
+<span class="nx">
+time_<wbr>unit
+<a class="anchorjs-link " href="#time_unit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

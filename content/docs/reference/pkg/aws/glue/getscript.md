@@ -419,7 +419,7 @@ export const scalaCode = example.scalaCode;
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getScript<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#GetScriptArgs">GetScriptArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#GetScriptResult">GetScriptResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getScript<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#GetScriptArgs">GetScriptArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/glue/#GetScriptResult">GetScriptResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -429,13 +429,14 @@ export const scalaCode = example.scalaCode;
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetScript<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#GetScriptArgs">GetScriptArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#GetScriptResult">GetScriptResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetScript<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#GetScriptArgs">GetScriptArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/glue?tab=doc#GetScriptResult">GetScriptResult</a></span>, error)</span></code></pre></div>
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetScript </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.GetScriptResult.html">GetScriptResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.GetScriptArgs.html">GetScriptArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.GetScriptResult.html">GetScriptResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Glue.GetScriptArgs.html">GetScriptArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -450,7 +451,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Dag<wbr>Edges</span>
+        <span id="dagedges~csharp">
+<span class="nx">
+Dag<wbr>Edges
+<a class="anchorjs-link " href="#dagedges~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">List&lt;Get<wbr>Script<wbr>Dag<wbr>Edge<wbr>Args&gt;</a></span>
     </dt>
@@ -459,7 +465,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Dag<wbr>Nodes</span>
+        <span id="dagnodes~csharp">
+<span class="nx">
+Dag<wbr>Nodes
+<a class="anchorjs-link " href="#dagnodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">List&lt;Get<wbr>Script<wbr>Dag<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
@@ -468,7 +479,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Language</span>
+        <span id="language~csharp">
+<span class="nx">
+Language
+<a class="anchorjs-link " href="#language~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -484,7 +500,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Dag<wbr>Edges</span>
+        <span id="dagedges~go">
+<span class="nx">
+Dag<wbr>Edges
+<a class="anchorjs-link " href="#dagedges~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">[]Get<wbr>Script<wbr>Dag<wbr>Edge</a></span>
     </dt>
@@ -493,7 +514,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Dag<wbr>Nodes</span>
+        <span id="dagnodes~go">
+<span class="nx">
+Dag<wbr>Nodes
+<a class="anchorjs-link " href="#dagnodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">[]Get<wbr>Script<wbr>Dag<wbr>Node</a></span>
     </dt>
@@ -502,7 +528,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Language</span>
+        <span id="language~go">
+<span class="nx">
+Language
+<a class="anchorjs-link " href="#language~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -518,7 +549,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>dag<wbr>Edges</span>
+        <span id="dagedges~nodejs">
+<span class="nx">
+dag<wbr>Edges
+<a class="anchorjs-link " href="#dagedges~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">Get<wbr>Script<wbr>Dag<wbr>Edge[]</a></span>
     </dt>
@@ -527,7 +563,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>dag<wbr>Nodes</span>
+        <span id="dagnodes~nodejs">
+<span class="nx">
+dag<wbr>Nodes
+<a class="anchorjs-link " href="#dagnodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">Get<wbr>Script<wbr>Dag<wbr>Node[]</a></span>
     </dt>
@@ -536,7 +577,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>language</span>
+        <span id="language~nodejs">
+<span class="nx">
+language
+<a class="anchorjs-link " href="#language~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -552,7 +598,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>dag_<wbr>edges</span>
+        <span id="dag_edges~python">
+<span class="nx">
+dag_<wbr>edges
+<a class="anchorjs-link " href="#dag_edges~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">List[Get<wbr>Script<wbr>Dag<wbr>Edge]</a></span>
     </dt>
@@ -561,7 +612,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>dag_<wbr>nodes</span>
+        <span id="dag_nodes~python">
+<span class="nx">
+dag_<wbr>nodes
+<a class="anchorjs-link " href="#dag_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">List[Get<wbr>Script<wbr>Dag<wbr>Node]</a></span>
     </dt>
@@ -570,7 +626,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>language</span>
+        <span id="language~python">
+<span class="nx">
+language
+<a class="anchorjs-link " href="#language~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -599,7 +660,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dag<wbr>Edges</span>
+        <span id="dagedges~csharp">
+<span class="nx">
+Dag<wbr>Edges
+<a class="anchorjs-link " href="#dagedges~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">List&lt;Get<wbr>Script<wbr>Dag<wbr>Edge&gt;</a></span>
     </dt>
@@ -607,7 +673,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dag<wbr>Nodes</span>
+        <span id="dagnodes~csharp">
+<span class="nx">
+Dag<wbr>Nodes
+<a class="anchorjs-link " href="#dagnodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">List&lt;Get<wbr>Script<wbr>Dag<wbr>Node&gt;</a></span>
     </dt>
@@ -615,7 +686,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -624,7 +700,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Python<wbr>Script</span>
+        <span id="pythonscript~csharp">
+<span class="nx">
+Python<wbr>Script
+<a class="anchorjs-link " href="#pythonscript~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -633,7 +714,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Scala<wbr>Code</span>
+        <span id="scalacode~csharp">
+<span class="nx">
+Scala<wbr>Code
+<a class="anchorjs-link " href="#scalacode~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -642,7 +728,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Language</span>
+        <span id="language~csharp">
+<span class="nx">
+Language
+<a class="anchorjs-link " href="#language~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -657,7 +748,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dag<wbr>Edges</span>
+        <span id="dagedges~go">
+<span class="nx">
+Dag<wbr>Edges
+<a class="anchorjs-link " href="#dagedges~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">[]Get<wbr>Script<wbr>Dag<wbr>Edge</a></span>
     </dt>
@@ -665,7 +761,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Dag<wbr>Nodes</span>
+        <span id="dagnodes~go">
+<span class="nx">
+Dag<wbr>Nodes
+<a class="anchorjs-link " href="#dagnodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">[]Get<wbr>Script<wbr>Dag<wbr>Node</a></span>
     </dt>
@@ -673,7 +774,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -682,7 +788,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Python<wbr>Script</span>
+        <span id="pythonscript~go">
+<span class="nx">
+Python<wbr>Script
+<a class="anchorjs-link " href="#pythonscript~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -691,7 +802,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Scala<wbr>Code</span>
+        <span id="scalacode~go">
+<span class="nx">
+Scala<wbr>Code
+<a class="anchorjs-link " href="#scalacode~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -700,7 +816,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Language</span>
+        <span id="language~go">
+<span class="nx">
+Language
+<a class="anchorjs-link " href="#language~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -715,7 +836,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>dag<wbr>Edges</span>
+        <span id="dagedges~nodejs">
+<span class="nx">
+dag<wbr>Edges
+<a class="anchorjs-link " href="#dagedges~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">Get<wbr>Script<wbr>Dag<wbr>Edge[]</a></span>
     </dt>
@@ -723,7 +849,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>dag<wbr>Nodes</span>
+        <span id="dagnodes~nodejs">
+<span class="nx">
+dag<wbr>Nodes
+<a class="anchorjs-link " href="#dagnodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">Get<wbr>Script<wbr>Dag<wbr>Node[]</a></span>
     </dt>
@@ -731,7 +862,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -740,7 +876,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>python<wbr>Script</span>
+        <span id="pythonscript~nodejs">
+<span class="nx">
+python<wbr>Script
+<a class="anchorjs-link " href="#pythonscript~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -749,7 +890,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>scala<wbr>Code</span>
+        <span id="scalacode~nodejs">
+<span class="nx">
+scala<wbr>Code
+<a class="anchorjs-link " href="#scalacode~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -758,7 +904,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>language</span>
+        <span id="language~nodejs">
+<span class="nx">
+language
+<a class="anchorjs-link " href="#language~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -773,7 +924,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>dag_<wbr>edges</span>
+        <span id="dag_edges~python">
+<span class="nx">
+dag_<wbr>edges
+<a class="anchorjs-link " href="#dag_edges~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagedge">List[Get<wbr>Script<wbr>Dag<wbr>Edge]</a></span>
     </dt>
@@ -781,7 +937,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>dag_<wbr>nodes</span>
+        <span id="dag_nodes~python">
+<span class="nx">
+dag_<wbr>nodes
+<a class="anchorjs-link " href="#dag_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnode">List[Get<wbr>Script<wbr>Dag<wbr>Node]</a></span>
     </dt>
@@ -789,7 +950,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -798,7 +964,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>python_<wbr>script</span>
+        <span id="python_script~python">
+<span class="nx">
+python_<wbr>script
+<a class="anchorjs-link " href="#python_script~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -807,7 +978,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>scala_<wbr>code</span>
+        <span id="scala_code~python">
+<span class="nx">
+scala_<wbr>code
+<a class="anchorjs-link " href="#scala_code~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -816,7 +992,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>language</span>
+        <span id="language~python">
+<span class="nx">
+language
+<a class="anchorjs-link " href="#language~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -855,7 +1036,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Source</span>
+        <span id="source~csharp">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#source~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -864,7 +1050,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -873,7 +1064,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Parameter</span>
+        <span id="targetparameter~csharp">
+<span class="nx">
+Target<wbr>Parameter
+<a class="anchorjs-link " href="#targetparameter~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -889,7 +1085,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Source</span>
+        <span id="source~go">
+<span class="nx">
+Source
+<a class="anchorjs-link " href="#source~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -898,7 +1099,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -907,7 +1113,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target<wbr>Parameter</span>
+        <span id="targetparameter~go">
+<span class="nx">
+Target<wbr>Parameter
+<a class="anchorjs-link " href="#targetparameter~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -923,7 +1134,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>source</span>
+        <span id="source~nodejs">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#source~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -932,7 +1148,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -941,7 +1162,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Parameter</span>
+        <span id="targetparameter~nodejs">
+<span class="nx">
+target<wbr>Parameter
+<a class="anchorjs-link " href="#targetparameter~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -957,7 +1183,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>source</span>
+        <span id="source~python">
+<span class="nx">
+source
+<a class="anchorjs-link " href="#source~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -966,7 +1197,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -975,7 +1211,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>target<wbr>Parameter</span>
+        <span id="targetparameter~python">
+<span class="nx">
+target<wbr>Parameter
+<a class="anchorjs-link " href="#targetparameter~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1009,7 +1250,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Args</span>
+        <span id="args~csharp">
+<span class="nx">
+Args
+<a class="anchorjs-link " href="#args~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnodearg">List&lt;Get<wbr>Script<wbr>Dag<wbr>Node<wbr>Arg<wbr>Args&gt;</a></span>
     </dt>
@@ -1018,7 +1264,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1027,7 +1278,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1036,7 +1292,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Line<wbr>Number</span>
+        <span id="linenumber~csharp">
+<span class="nx">
+Line<wbr>Number
+<a class="anchorjs-link " href="#linenumber~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1052,7 +1313,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Args</span>
+        <span id="args~go">
+<span class="nx">
+Args
+<a class="anchorjs-link " href="#args~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnodearg">[]Get<wbr>Script<wbr>Dag<wbr>Node<wbr>Arg</a></span>
     </dt>
@@ -1061,7 +1327,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1070,7 +1341,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1079,7 +1355,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Line<wbr>Number</span>
+        <span id="linenumber~go">
+<span class="nx">
+Line<wbr>Number
+<a class="anchorjs-link " href="#linenumber~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1095,7 +1376,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>args</span>
+        <span id="args~nodejs">
+<span class="nx">
+args
+<a class="anchorjs-link " href="#args~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnodearg">Get<wbr>Script<wbr>Dag<wbr>Node<wbr>Arg[]</a></span>
     </dt>
@@ -1104,7 +1390,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1113,7 +1404,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>node<wbr>Type</span>
+        <span id="nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1122,7 +1418,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>line<wbr>Number</span>
+        <span id="linenumber~nodejs">
+<span class="nx">
+line<wbr>Number
+<a class="anchorjs-link " href="#linenumber~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1138,7 +1439,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>args</span>
+        <span id="args~python">
+<span class="nx">
+args
+<a class="anchorjs-link " href="#args~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscriptdagnodearg">List[Get<wbr>Script<wbr>Dag<wbr>Node<wbr>Arg]</a></span>
     </dt>
@@ -1147,7 +1453,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1156,7 +1467,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>node_<wbr>type</span>
+        <span id="node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1165,7 +1481,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>line<wbr>Number</span>
+        <span id="linenumber~python">
+<span class="nx">
+line<wbr>Number
+<a class="anchorjs-link " href="#linenumber~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1199,7 +1520,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1208,7 +1534,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~csharp">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1217,7 +1548,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Param</span>
+        <span id="param~csharp">
+<span class="nx">
+Param
+<a class="anchorjs-link " href="#param~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1233,7 +1569,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1242,7 +1583,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>Value</span>
+        <span id="value~go">
+<span class="nx">
+Value
+<a class="anchorjs-link " href="#value~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1251,7 +1597,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Param</span>
+        <span id="param~go">
+<span class="nx">
+Param
+<a class="anchorjs-link " href="#param~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1267,7 +1618,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1276,7 +1632,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~nodejs">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1285,7 +1646,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>param</span>
+        <span id="param~nodejs">
+<span class="nx">
+param
+<a class="anchorjs-link " href="#param~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1301,7 +1667,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1310,7 +1681,12 @@ The following output properties are available:
 
     <dt class="property-required"
             title="Required">
-        <span>value</span>
+        <span id="value~python">
+<span class="nx">
+value
+<a class="anchorjs-link " href="#value~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1319,7 +1695,12 @@ The following output properties are available:
 
     <dt class="property-optional"
             title="Optional">
-        <span>param</span>
+        <span id="param~python">
+<span class="nx">
+param
+<a class="anchorjs-link " href="#param~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>

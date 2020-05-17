@@ -214,19 +214,19 @@ const myDemoIntegration = new aws.apigateway.Integration("MyDemoIntegration", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Integration">Integration</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Integration">Integration</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Integration</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cache_key_parameters=None<span class="p">, </span>cache_namespace=None<span class="p">, </span>connection_id=None<span class="p">, </span>connection_type=None<span class="p">, </span>content_handling=None<span class="p">, </span>credentials=None<span class="p">, </span>http_method=None<span class="p">, </span>integration_http_method=None<span class="p">, </span>passthrough_behavior=None<span class="p">, </span>request_parameters=None<span class="p">, </span>request_templates=None<span class="p">, </span>resource_id=None<span class="p">, </span>rest_api=None<span class="p">, </span>timeout_milliseconds=None<span class="p">, </span>type=None<span class="p">, </span>uri=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigateway/#Integration">Integration</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cache_key_parameters=None<span class="p">, </span>cache_namespace=None<span class="p">, </span>connection_id=None<span class="p">, </span>connection_type=None<span class="p">, </span>content_handling=None<span class="p">, </span>credentials=None<span class="p">, </span>http_method=None<span class="p">, </span>integration_http_method=None<span class="p">, </span>passthrough_behavior=None<span class="p">, </span>request_parameters=None<span class="p">, </span>request_templates=None<span class="p">, </span>resource_id=None<span class="p">, </span>rest_api=None<span class="p">, </span>timeout_milliseconds=None<span class="p">, </span>type=None<span class="p">, </span>uri=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Integration">NewIntegration</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#IntegrationArgs">IntegrationArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Integration.html">Integration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.IntegrationArgs.html">IntegrationArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Integration.html">Integration</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.IntegrationArgs.html">IntegrationArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -392,7 +392,12 @@ The Integration resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Method</span>
+        <span id="httpmethod~csharp">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#httpmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -402,7 +407,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Id</span>
+        <span id="resourceid~csharp">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#resourceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -411,7 +421,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>Rest<wbr>Api</span>
+        <span id="restapi~csharp">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#restapi~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -420,7 +435,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -429,7 +449,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Key<wbr>Parameters</span>
+        <span id="cachekeyparameters~csharp">
+<span class="nx">
+Cache<wbr>Key<wbr>Parameters
+<a class="anchorjs-link " href="#cachekeyparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -438,7 +463,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Namespace</span>
+        <span id="cachenamespace~csharp">
+<span class="nx">
+Cache<wbr>Namespace
+<a class="anchorjs-link " href="#cachenamespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -447,7 +477,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="connectionid~csharp">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#connectionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -456,7 +491,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="connectiontype~csharp">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#connectiontype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -465,7 +505,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling</span>
+        <span id="contenthandling~csharp">
+<span class="nx">
+Content<wbr>Handling
+<a class="anchorjs-link " href="#contenthandling~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -474,7 +519,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials</span>
+        <span id="credentials~csharp">
+<span class="nx">
+Credentials
+<a class="anchorjs-link " href="#credentials~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -483,7 +533,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Http<wbr>Method</span>
+        <span id="integrationhttpmethod~csharp">
+<span class="nx">
+Integration<wbr>Http<wbr>Method
+<a class="anchorjs-link " href="#integrationhttpmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -496,7 +551,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="passthroughbehavior~csharp">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#passthroughbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -505,7 +565,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="requestparameters~csharp">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#requestparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -515,7 +580,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="requesttemplates~csharp">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#requesttemplates~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -524,7 +594,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="timeoutmilliseconds~csharp">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#timeoutmilliseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -533,7 +608,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Uri</span>
+        <span id="uri~csharp">
+<span class="nx">
+Uri
+<a class="anchorjs-link " href="#uri~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -551,7 +631,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Method</span>
+        <span id="httpmethod~go">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#httpmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -561,7 +646,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Id</span>
+        <span id="resourceid~go">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#resourceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -570,7 +660,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>Rest<wbr>Api</span>
+        <span id="restapi~go">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#restapi~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -579,7 +674,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -588,7 +688,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Key<wbr>Parameters</span>
+        <span id="cachekeyparameters~go">
+<span class="nx">
+Cache<wbr>Key<wbr>Parameters
+<a class="anchorjs-link " href="#cachekeyparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -597,7 +702,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Namespace</span>
+        <span id="cachenamespace~go">
+<span class="nx">
+Cache<wbr>Namespace
+<a class="anchorjs-link " href="#cachenamespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -606,7 +716,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="connectionid~go">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#connectionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -615,7 +730,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="connectiontype~go">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#connectiontype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -624,7 +744,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling</span>
+        <span id="contenthandling~go">
+<span class="nx">
+Content<wbr>Handling
+<a class="anchorjs-link " href="#contenthandling~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -633,7 +758,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials</span>
+        <span id="credentials~go">
+<span class="nx">
+Credentials
+<a class="anchorjs-link " href="#credentials~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -642,7 +772,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Http<wbr>Method</span>
+        <span id="integrationhttpmethod~go">
+<span class="nx">
+Integration<wbr>Http<wbr>Method
+<a class="anchorjs-link " href="#integrationhttpmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -655,7 +790,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="passthroughbehavior~go">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#passthroughbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -664,7 +804,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="requestparameters~go">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#requestparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -674,7 +819,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="requesttemplates~go">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#requesttemplates~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -683,7 +833,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="timeoutmilliseconds~go">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#timeoutmilliseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -692,7 +847,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Uri</span>
+        <span id="uri~go">
+<span class="nx">
+Uri
+<a class="anchorjs-link " href="#uri~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -710,7 +870,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Method</span>
+        <span id="httpmethod~nodejs">
+<span class="nx">
+http<wbr>Method
+<a class="anchorjs-link " href="#httpmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -720,7 +885,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Id</span>
+        <span id="resourceid~nodejs">
+<span class="nx">
+resource<wbr>Id
+<a class="anchorjs-link " href="#resourceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -729,7 +899,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>rest<wbr>Api</span>
+        <span id="restapi~nodejs">
+<span class="nx">
+rest<wbr>Api
+<a class="anchorjs-link " href="#restapi~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
@@ -738,7 +913,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -747,7 +927,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Key<wbr>Parameters</span>
+        <span id="cachekeyparameters~nodejs">
+<span class="nx">
+cache<wbr>Key<wbr>Parameters
+<a class="anchorjs-link " href="#cachekeyparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -756,7 +941,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Namespace</span>
+        <span id="cachenamespace~nodejs">
+<span class="nx">
+cache<wbr>Namespace
+<a class="anchorjs-link " href="#cachenamespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -765,7 +955,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Id</span>
+        <span id="connectionid~nodejs">
+<span class="nx">
+connection<wbr>Id
+<a class="anchorjs-link " href="#connectionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -774,7 +969,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Type</span>
+        <span id="connectiontype~nodejs">
+<span class="nx">
+connection<wbr>Type
+<a class="anchorjs-link " href="#connectiontype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -783,7 +983,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Handling</span>
+        <span id="contenthandling~nodejs">
+<span class="nx">
+content<wbr>Handling
+<a class="anchorjs-link " href="#contenthandling~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -792,7 +997,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials</span>
+        <span id="credentials~nodejs">
+<span class="nx">
+credentials
+<a class="anchorjs-link " href="#credentials~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -801,7 +1011,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Http<wbr>Method</span>
+        <span id="integrationhttpmethod~nodejs">
+<span class="nx">
+integration<wbr>Http<wbr>Method
+<a class="anchorjs-link " href="#integrationhttpmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -814,7 +1029,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough<wbr>Behavior</span>
+        <span id="passthroughbehavior~nodejs">
+<span class="nx">
+passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#passthroughbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -823,7 +1043,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Parameters</span>
+        <span id="requestparameters~nodejs">
+<span class="nx">
+request<wbr>Parameters
+<a class="anchorjs-link " href="#requestparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -833,7 +1058,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Templates</span>
+        <span id="requesttemplates~nodejs">
+<span class="nx">
+request<wbr>Templates
+<a class="anchorjs-link " href="#requesttemplates~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -842,7 +1072,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout<wbr>Milliseconds</span>
+        <span id="timeoutmilliseconds~nodejs">
+<span class="nx">
+timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#timeoutmilliseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -851,7 +1086,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>uri</span>
+        <span id="uri~nodejs">
+<span class="nx">
+uri
+<a class="anchorjs-link " href="#uri~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -869,7 +1109,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-required"
             title="Required">
-        <span>http_<wbr>method</span>
+        <span id="http_method~python">
+<span class="nx">
+http_<wbr>method
+<a class="anchorjs-link " href="#http_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -879,7 +1124,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>id</span>
+        <span id="resource_id~python">
+<span class="nx">
+resource_<wbr>id
+<a class="anchorjs-link " href="#resource_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -888,7 +1138,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>rest_<wbr>api</span>
+        <span id="rest_api~python">
+<span class="nx">
+rest_<wbr>api
+<a class="anchorjs-link " href="#rest_api~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -897,7 +1152,12 @@ when calling the associated resource.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -906,7 +1166,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>key_<wbr>parameters</span>
+        <span id="cache_key_parameters~python">
+<span class="nx">
+cache_<wbr>key_<wbr>parameters
+<a class="anchorjs-link " href="#cache_key_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -915,7 +1180,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>namespace</span>
+        <span id="cache_namespace~python">
+<span class="nx">
+cache_<wbr>namespace
+<a class="anchorjs-link " href="#cache_namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -924,7 +1194,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>id</span>
+        <span id="connection_id~python">
+<span class="nx">
+connection_<wbr>id
+<a class="anchorjs-link " href="#connection_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -933,7 +1208,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>type</span>
+        <span id="connection_type~python">
+<span class="nx">
+connection_<wbr>type
+<a class="anchorjs-link " href="#connection_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -942,7 +1222,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>handling</span>
+        <span id="content_handling~python">
+<span class="nx">
+content_<wbr>handling
+<a class="anchorjs-link " href="#content_handling~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -951,7 +1236,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials</span>
+        <span id="credentials~python">
+<span class="nx">
+credentials
+<a class="anchorjs-link " href="#credentials~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -960,7 +1250,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>http_<wbr>method</span>
+        <span id="integration_http_method~python">
+<span class="nx">
+integration_<wbr>http_<wbr>method
+<a class="anchorjs-link " href="#integration_http_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -973,7 +1268,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough_<wbr>behavior</span>
+        <span id="passthrough_behavior~python">
+<span class="nx">
+passthrough_<wbr>behavior
+<a class="anchorjs-link " href="#passthrough_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -982,7 +1282,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>parameters</span>
+        <span id="request_parameters~python">
+<span class="nx">
+request_<wbr>parameters
+<a class="anchorjs-link " href="#request_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -992,7 +1297,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>templates</span>
+        <span id="request_templates~python">
+<span class="nx">
+request_<wbr>templates
+<a class="anchorjs-link " href="#request_templates~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1001,7 +1311,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout_<wbr>milliseconds</span>
+        <span id="timeout_milliseconds~python">
+<span class="nx">
+timeout_<wbr>milliseconds
+<a class="anchorjs-link " href="#timeout_milliseconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1010,7 +1325,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>uri</span>
+        <span id="uri~python">
+<span class="nx">
+uri
+<a class="anchorjs-link " href="#uri~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1039,7 +1359,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1054,7 +1379,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1069,7 +1399,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1084,7 +1419,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1105,7 +1445,7 @@ Get an existing Integration resource's state with the given name, ID, and option
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Integration">Integration</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Integration">Integration</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1113,11 +1453,11 @@ Get an existing Integration resource's state with the given name, ID, and option
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegration<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetIntegration<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#IntegrationState">IntegrationState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Integration">Integration</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Integration.html">Integration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.IntegrationState.html">IntegrationState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Integration.html">Integration</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.IntegrationState.html">IntegrationState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1225,7 +1565,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Key<wbr>Parameters</span>
+        <span id="state_cachekeyparameters~csharp">
+<span class="nx">
+Cache<wbr>Key<wbr>Parameters
+<a class="anchorjs-link " href="#state_cachekeyparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1234,7 +1579,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Namespace</span>
+        <span id="state_cachenamespace~csharp">
+<span class="nx">
+Cache<wbr>Namespace
+<a class="anchorjs-link " href="#state_cachenamespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1243,7 +1593,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="state_connectionid~csharp">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#state_connectionid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1252,7 +1607,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="state_connectiontype~csharp">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#state_connectiontype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1261,7 +1621,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling</span>
+        <span id="state_contenthandling~csharp">
+<span class="nx">
+Content<wbr>Handling
+<a class="anchorjs-link " href="#state_contenthandling~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1270,7 +1635,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials</span>
+        <span id="state_credentials~csharp">
+<span class="nx">
+Credentials
+<a class="anchorjs-link " href="#state_credentials~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1279,7 +1649,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Method</span>
+        <span id="state_httpmethod~csharp">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#state_httpmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1289,7 +1664,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Http<wbr>Method</span>
+        <span id="state_integrationhttpmethod~csharp">
+<span class="nx">
+Integration<wbr>Http<wbr>Method
+<a class="anchorjs-link " href="#state_integrationhttpmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1302,7 +1682,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="state_passthroughbehavior~csharp">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#state_passthroughbehavior~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1311,7 +1696,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="state_requestparameters~csharp">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#state_requestparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -1321,7 +1711,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="state_requesttemplates~csharp">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#state_requesttemplates~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -1330,7 +1725,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Id</span>
+        <span id="state_resourceid~csharp">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#state_resourceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1339,7 +1739,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Rest<wbr>Api</span>
+        <span id="state_restapi~csharp">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#state_restapi~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1348,7 +1753,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="state_timeoutmilliseconds~csharp">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#state_timeoutmilliseconds~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1357,7 +1767,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="state_type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#state_type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1366,7 +1781,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Uri</span>
+        <span id="state_uri~csharp">
+<span class="nx">
+Uri
+<a class="anchorjs-link " href="#state_uri~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1384,7 +1804,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Key<wbr>Parameters</span>
+        <span id="state_cachekeyparameters~go">
+<span class="nx">
+Cache<wbr>Key<wbr>Parameters
+<a class="anchorjs-link " href="#state_cachekeyparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1393,7 +1818,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cache<wbr>Namespace</span>
+        <span id="state_cachenamespace~go">
+<span class="nx">
+Cache<wbr>Namespace
+<a class="anchorjs-link " href="#state_cachenamespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1402,7 +1832,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Id</span>
+        <span id="state_connectionid~go">
+<span class="nx">
+Connection<wbr>Id
+<a class="anchorjs-link " href="#state_connectionid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1411,7 +1846,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Connection<wbr>Type</span>
+        <span id="state_connectiontype~go">
+<span class="nx">
+Connection<wbr>Type
+<a class="anchorjs-link " href="#state_connectiontype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1420,7 +1860,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Content<wbr>Handling</span>
+        <span id="state_contenthandling~go">
+<span class="nx">
+Content<wbr>Handling
+<a class="anchorjs-link " href="#state_contenthandling~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1429,7 +1874,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials</span>
+        <span id="state_credentials~go">
+<span class="nx">
+Credentials
+<a class="anchorjs-link " href="#state_credentials~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1438,7 +1888,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Method</span>
+        <span id="state_httpmethod~go">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#state_httpmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1448,7 +1903,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Integration<wbr>Http<wbr>Method</span>
+        <span id="state_integrationhttpmethod~go">
+<span class="nx">
+Integration<wbr>Http<wbr>Method
+<a class="anchorjs-link " href="#state_integrationhttpmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1461,7 +1921,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Passthrough<wbr>Behavior</span>
+        <span id="state_passthroughbehavior~go">
+<span class="nx">
+Passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#state_passthroughbehavior~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1470,7 +1935,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="state_requestparameters~go">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#state_requestparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1480,7 +1950,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Templates</span>
+        <span id="state_requesttemplates~go">
+<span class="nx">
+Request<wbr>Templates
+<a class="anchorjs-link " href="#state_requesttemplates~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1489,7 +1964,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Id</span>
+        <span id="state_resourceid~go">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#state_resourceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1498,7 +1978,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Rest<wbr>Api</span>
+        <span id="state_restapi~go">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#state_restapi~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -1507,7 +1992,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Timeout<wbr>Milliseconds</span>
+        <span id="state_timeoutmilliseconds~go">
+<span class="nx">
+Timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#state_timeoutmilliseconds~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1516,7 +2006,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="state_type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#state_type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1525,7 +2020,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>Uri</span>
+        <span id="state_uri~go">
+<span class="nx">
+Uri
+<a class="anchorjs-link " href="#state_uri~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1543,7 +2043,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Key<wbr>Parameters</span>
+        <span id="state_cachekeyparameters~nodejs">
+<span class="nx">
+cache<wbr>Key<wbr>Parameters
+<a class="anchorjs-link " href="#state_cachekeyparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1552,7 +2057,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache<wbr>Namespace</span>
+        <span id="state_cachenamespace~nodejs">
+<span class="nx">
+cache<wbr>Namespace
+<a class="anchorjs-link " href="#state_cachenamespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1561,7 +2071,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Id</span>
+        <span id="state_connectionid~nodejs">
+<span class="nx">
+connection<wbr>Id
+<a class="anchorjs-link " href="#state_connectionid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1570,7 +2085,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection<wbr>Type</span>
+        <span id="state_connectiontype~nodejs">
+<span class="nx">
+connection<wbr>Type
+<a class="anchorjs-link " href="#state_connectiontype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1579,7 +2099,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>content<wbr>Handling</span>
+        <span id="state_contenthandling~nodejs">
+<span class="nx">
+content<wbr>Handling
+<a class="anchorjs-link " href="#state_contenthandling~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1588,7 +2113,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials</span>
+        <span id="state_credentials~nodejs">
+<span class="nx">
+credentials
+<a class="anchorjs-link " href="#state_credentials~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1597,7 +2127,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Method</span>
+        <span id="state_httpmethod~nodejs">
+<span class="nx">
+http<wbr>Method
+<a class="anchorjs-link " href="#state_httpmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1607,7 +2142,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration<wbr>Http<wbr>Method</span>
+        <span id="state_integrationhttpmethod~nodejs">
+<span class="nx">
+integration<wbr>Http<wbr>Method
+<a class="anchorjs-link " href="#state_integrationhttpmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1620,7 +2160,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough<wbr>Behavior</span>
+        <span id="state_passthroughbehavior~nodejs">
+<span class="nx">
+passthrough<wbr>Behavior
+<a class="anchorjs-link " href="#state_passthroughbehavior~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1629,7 +2174,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Parameters</span>
+        <span id="state_requestparameters~nodejs">
+<span class="nx">
+request<wbr>Parameters
+<a class="anchorjs-link " href="#state_requestparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1639,7 +2189,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Templates</span>
+        <span id="state_requesttemplates~nodejs">
+<span class="nx">
+request<wbr>Templates
+<a class="anchorjs-link " href="#state_requesttemplates~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1648,7 +2203,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource<wbr>Id</span>
+        <span id="state_resourceid~nodejs">
+<span class="nx">
+resource<wbr>Id
+<a class="anchorjs-link " href="#state_resourceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1657,7 +2217,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>rest<wbr>Api</span>
+        <span id="state_restapi~nodejs">
+<span class="nx">
+rest<wbr>Api
+<a class="anchorjs-link " href="#state_restapi~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
@@ -1666,7 +2231,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout<wbr>Milliseconds</span>
+        <span id="state_timeoutmilliseconds~nodejs">
+<span class="nx">
+timeout<wbr>Milliseconds
+<a class="anchorjs-link " href="#state_timeoutmilliseconds~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1675,7 +2245,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="state_type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#state_type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1684,7 +2259,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>uri</span>
+        <span id="state_uri~nodejs">
+<span class="nx">
+uri
+<a class="anchorjs-link " href="#state_uri~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1702,7 +2282,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>key_<wbr>parameters</span>
+        <span id="state_cache_key_parameters~python">
+<span class="nx">
+cache_<wbr>key_<wbr>parameters
+<a class="anchorjs-link " href="#state_cache_key_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1711,7 +2296,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>cache_<wbr>namespace</span>
+        <span id="state_cache_namespace~python">
+<span class="nx">
+cache_<wbr>namespace
+<a class="anchorjs-link " href="#state_cache_namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1720,7 +2310,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>id</span>
+        <span id="state_connection_id~python">
+<span class="nx">
+connection_<wbr>id
+<a class="anchorjs-link " href="#state_connection_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1729,7 +2324,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>connection_<wbr>type</span>
+        <span id="state_connection_type~python">
+<span class="nx">
+connection_<wbr>type
+<a class="anchorjs-link " href="#state_connection_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1738,7 +2338,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>content_<wbr>handling</span>
+        <span id="state_content_handling~python">
+<span class="nx">
+content_<wbr>handling
+<a class="anchorjs-link " href="#state_content_handling~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1747,7 +2352,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials</span>
+        <span id="state_credentials~python">
+<span class="nx">
+credentials
+<a class="anchorjs-link " href="#state_credentials~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1756,7 +2366,12 @@ e.g. `arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lamb
 
     <dt class="property-optional"
             title="Optional">
-        <span>http_<wbr>method</span>
+        <span id="state_http_method~python">
+<span class="nx">
+http_<wbr>method
+<a class="anchorjs-link " href="#state_http_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1766,7 +2381,12 @@ when calling the associated resource.
 
     <dt class="property-optional"
             title="Optional">
-        <span>integration_<wbr>http_<wbr>method</span>
+        <span id="state_integration_http_method~python">
+<span class="nx">
+integration_<wbr>http_<wbr>method
+<a class="anchorjs-link " href="#state_integration_http_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1779,7 +2399,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>passthrough_<wbr>behavior</span>
+        <span id="state_passthrough_behavior~python">
+<span class="nx">
+passthrough_<wbr>behavior
+<a class="anchorjs-link " href="#state_passthrough_behavior~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1788,7 +2413,12 @@ e.g. Lambda function [can only be invoked](https://github.com/awslabs/aws-apigat
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>parameters</span>
+        <span id="state_request_parameters~python">
+<span class="nx">
+request_<wbr>parameters
+<a class="anchorjs-link " href="#state_request_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1798,7 +2428,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>templates</span>
+        <span id="state_request_templates~python">
+<span class="nx">
+request_<wbr>templates
+<a class="anchorjs-link " href="#state_request_templates~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1807,7 +2442,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource_<wbr>id</span>
+        <span id="state_resource_id~python">
+<span class="nx">
+resource_<wbr>id
+<a class="anchorjs-link " href="#state_resource_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1816,7 +2456,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>rest_<wbr>api</span>
+        <span id="state_rest_api~python">
+<span class="nx">
+rest_<wbr>api
+<a class="anchorjs-link " href="#state_rest_api~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -1825,7 +2470,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>timeout_<wbr>milliseconds</span>
+        <span id="state_timeout_milliseconds~python">
+<span class="nx">
+timeout_<wbr>milliseconds
+<a class="anchorjs-link " href="#state_timeout_milliseconds~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1834,7 +2484,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="state_type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#state_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1843,7 +2498,12 @@ For example: `request_parameters = { "integration.request.header.X-Some-Other-He
 
     <dt class="property-optional"
             title="Optional">
-        <span>uri</span>
+        <span id="state_uri~python">
+<span class="nx">
+uri
+<a class="anchorjs-link " href="#state_uri~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

@@ -89,19 +89,19 @@ const example = new aws.apigatewayv2.Api("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Api">Api</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#ApiArgs">ApiArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Api">Api</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#ApiArgs">ApiArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Api</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_key_selection_expression=None<span class="p">, </span>cors_configuration=None<span class="p">, </span>credentials_arn=None<span class="p">, </span>description=None<span class="p">, </span>name=None<span class="p">, </span>protocol_type=None<span class="p">, </span>route_key=None<span class="p">, </span>route_selection_expression=None<span class="p">, </span>tags=None<span class="p">, </span>target=None<span class="p">, </span>version=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigatewayv2/#Api">Api</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_key_selection_expression=None<span class="p">, </span>cors_configuration=None<span class="p">, </span>credentials_arn=None<span class="p">, </span>description=None<span class="p">, </span>name=None<span class="p">, </span>protocol_type=None<span class="p">, </span>route_key=None<span class="p">, </span>route_selection_expression=None<span class="p">, </span>tags=None<span class="p">, </span>target=None<span class="p">, </span>version=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#ApiArgs">ApiArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Api">Api</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Api">NewApi</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#ApiArgs">ApiArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Api">Api</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Api.html">Api</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.ApiArgs.html">ApiArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Api.html">Api</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.ApiArgs.html">ApiArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -267,7 +267,12 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
     <dt class="property-required"
             title="Required">
-        <span>Protocol<wbr>Type</span>
+        <span id="protocoltype~csharp">
+<span class="nx">
+Protocol<wbr>Type
+<a class="anchorjs-link " href="#protocoltype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -276,7 +281,12 @@ The Api resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Selection<wbr>Expression</span>
+        <span id="apikeyselectionexpression~csharp">
+<span class="nx">
+Api<wbr>Key<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#apikeyselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -287,7 +297,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cors<wbr>Configuration</span>
+        <span id="corsconfiguration~csharp">
+<span class="nx">
+Cors<wbr>Configuration
+<a class="anchorjs-link " href="#corsconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Api<wbr>Cors<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -296,7 +311,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="credentialsarn~csharp">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#credentialsarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -305,7 +325,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -314,7 +339,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -323,7 +353,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Key</span>
+        <span id="routekey~csharp">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#routekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -332,7 +367,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Selection<wbr>Expression</span>
+        <span id="routeselectionexpression~csharp">
+<span class="nx">
+Route<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#routeselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -342,7 +382,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -351,7 +396,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -362,7 +412,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -378,7 +433,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-required"
             title="Required">
-        <span>Protocol<wbr>Type</span>
+        <span id="protocoltype~go">
+<span class="nx">
+Protocol<wbr>Type
+<a class="anchorjs-link " href="#protocoltype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -387,7 +447,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Selection<wbr>Expression</span>
+        <span id="apikeyselectionexpression~go">
+<span class="nx">
+Api<wbr>Key<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#apikeyselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -398,7 +463,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cors<wbr>Configuration</span>
+        <span id="corsconfiguration~go">
+<span class="nx">
+Cors<wbr>Configuration
+<a class="anchorjs-link " href="#corsconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Api<wbr>Cors<wbr>Configuration</a></span>
     </dt>
@@ -407,7 +477,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="credentialsarn~go">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#credentialsarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -416,7 +491,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -425,7 +505,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -434,7 +519,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Key</span>
+        <span id="routekey~go">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#routekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -443,7 +533,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Selection<wbr>Expression</span>
+        <span id="routeselectionexpression~go">
+<span class="nx">
+Route<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#routeselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -453,7 +548,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -462,7 +562,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -473,7 +578,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -489,7 +599,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-required"
             title="Required">
-        <span>protocol<wbr>Type</span>
+        <span id="protocoltype~nodejs">
+<span class="nx">
+protocol<wbr>Type
+<a class="anchorjs-link " href="#protocoltype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -498,7 +613,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Key<wbr>Selection<wbr>Expression</span>
+        <span id="apikeyselectionexpression~nodejs">
+<span class="nx">
+api<wbr>Key<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#apikeyselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -509,7 +629,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cors<wbr>Configuration</span>
+        <span id="corsconfiguration~nodejs">
+<span class="nx">
+cors<wbr>Configuration
+<a class="anchorjs-link " href="#corsconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Api<wbr>Cors<wbr>Configuration</a></span>
     </dt>
@@ -518,7 +643,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials<wbr>Arn</span>
+        <span id="credentialsarn~nodejs">
+<span class="nx">
+credentials<wbr>Arn
+<a class="anchorjs-link " href="#credentialsarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -527,7 +657,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -536,7 +671,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -545,7 +685,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Key</span>
+        <span id="routekey~nodejs">
+<span class="nx">
+route<wbr>Key
+<a class="anchorjs-link " href="#routekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -554,7 +699,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Selection<wbr>Expression</span>
+        <span id="routeselectionexpression~nodejs">
+<span class="nx">
+route<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#routeselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -564,7 +714,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -573,7 +728,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -584,7 +744,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -600,7 +765,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-required"
             title="Required">
-        <span>protocol_<wbr>type</span>
+        <span id="protocol_type~python">
+<span class="nx">
+protocol_<wbr>type
+<a class="anchorjs-link " href="#protocol_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -609,7 +779,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>key_<wbr>selection_<wbr>expression</span>
+        <span id="api_key_selection_expression~python">
+<span class="nx">
+api_<wbr>key_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#api_key_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -620,7 +795,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cors_<wbr>configuration</span>
+        <span id="cors_configuration~python">
+<span class="nx">
+cors_<wbr>configuration
+<a class="anchorjs-link " href="#cors_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Dict[Api<wbr>Cors<wbr>Configuration]</a></span>
     </dt>
@@ -629,7 +809,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials_<wbr>arn</span>
+        <span id="credentials_arn~python">
+<span class="nx">
+credentials_<wbr>arn
+<a class="anchorjs-link " href="#credentials_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -638,7 +823,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -647,7 +837,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -656,7 +851,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>key</span>
+        <span id="route_key~python">
+<span class="nx">
+route_<wbr>key
+<a class="anchorjs-link " href="#route_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -665,7 +865,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>selection_<wbr>expression</span>
+        <span id="route_selection_expression~python">
+<span class="nx">
+route_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#route_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -675,7 +880,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -684,7 +894,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -695,7 +910,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -722,7 +942,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Api<wbr>Endpoint</span>
+        <span id="apiendpoint~csharp">
+<span class="nx">
+Api<wbr>Endpoint
+<a class="anchorjs-link " href="#apiendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -731,7 +956,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -740,7 +970,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Execution<wbr>Arn</span>
+        <span id="executionarn~csharp">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#executionarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -751,7 +986,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -766,7 +1006,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Api<wbr>Endpoint</span>
+        <span id="apiendpoint~go">
+<span class="nx">
+Api<wbr>Endpoint
+<a class="anchorjs-link " href="#apiendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -775,7 +1020,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -784,7 +1034,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Execution<wbr>Arn</span>
+        <span id="executionarn~go">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#executionarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -795,7 +1050,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -810,7 +1070,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>api<wbr>Endpoint</span>
+        <span id="apiendpoint~nodejs">
+<span class="nx">
+api<wbr>Endpoint
+<a class="anchorjs-link " href="#apiendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -819,7 +1084,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -828,7 +1098,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>execution<wbr>Arn</span>
+        <span id="executionarn~nodejs">
+<span class="nx">
+execution<wbr>Arn
+<a class="anchorjs-link " href="#executionarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -839,7 +1114,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -854,7 +1134,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>api_<wbr>endpoint</span>
+        <span id="api_endpoint~python">
+<span class="nx">
+api_<wbr>endpoint
+<a class="anchorjs-link " href="#api_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -863,7 +1148,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -872,7 +1162,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>execution_<wbr>arn</span>
+        <span id="execution_arn~python">
+<span class="nx">
+execution_<wbr>arn
+<a class="anchorjs-link " href="#execution_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -883,7 +1178,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -904,7 +1204,7 @@ Get an existing Api resource's state with the given name, ID, and optional extra
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#ApiState">ApiState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Api">Api</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#ApiState">ApiState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigatewayv2/#Api">Api</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -912,11 +1212,11 @@ Get an existing Api resource's state with the given name, ID, and optional extra
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetApi<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#ApiState">ApiState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Api">Api</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetApi<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#ApiState">ApiState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigatewayv2?tab=doc#Api">Api</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Api.html">Api</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.ApiState.html">ApiState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.Api.html">Api</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGatewayV2.ApiState.html">ApiState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1024,7 +1324,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Endpoint</span>
+        <span id="state_apiendpoint~csharp">
+<span class="nx">
+Api<wbr>Endpoint
+<a class="anchorjs-link " href="#state_apiendpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1033,7 +1338,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Selection<wbr>Expression</span>
+        <span id="state_apikeyselectionexpression~csharp">
+<span class="nx">
+Api<wbr>Key<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_apikeyselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1044,7 +1354,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1053,7 +1368,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cors<wbr>Configuration</span>
+        <span id="state_corsconfiguration~csharp">
+<span class="nx">
+Cors<wbr>Configuration
+<a class="anchorjs-link " href="#state_corsconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Api<wbr>Cors<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1062,7 +1382,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="state_credentialsarn~csharp">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#state_credentialsarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1071,7 +1396,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~csharp">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1080,7 +1410,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Arn</span>
+        <span id="state_executionarn~csharp">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#state_executionarn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1091,7 +1426,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1100,7 +1440,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Protocol<wbr>Type</span>
+        <span id="state_protocoltype~csharp">
+<span class="nx">
+Protocol<wbr>Type
+<a class="anchorjs-link " href="#state_protocoltype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1109,7 +1454,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Key</span>
+        <span id="state_routekey~csharp">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#state_routekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1118,7 +1468,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Selection<wbr>Expression</span>
+        <span id="state_routeselectionexpression~csharp">
+<span class="nx">
+Route<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_routeselectionexpression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1128,7 +1483,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1137,7 +1497,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="state_target~csharp">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#state_target~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1148,7 +1513,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="state_version~csharp">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#state_version~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1164,7 +1534,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Endpoint</span>
+        <span id="state_apiendpoint~go">
+<span class="nx">
+Api<wbr>Endpoint
+<a class="anchorjs-link " href="#state_apiendpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1173,7 +1548,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Selection<wbr>Expression</span>
+        <span id="state_apikeyselectionexpression~go">
+<span class="nx">
+Api<wbr>Key<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_apikeyselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1184,7 +1564,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1193,7 +1578,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cors<wbr>Configuration</span>
+        <span id="state_corsconfiguration~go">
+<span class="nx">
+Cors<wbr>Configuration
+<a class="anchorjs-link " href="#state_corsconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Api<wbr>Cors<wbr>Configuration</a></span>
     </dt>
@@ -1202,7 +1592,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Credentials<wbr>Arn</span>
+        <span id="state_credentialsarn~go">
+<span class="nx">
+Credentials<wbr>Arn
+<a class="anchorjs-link " href="#state_credentialsarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1211,7 +1606,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Description</span>
+        <span id="state_description~go">
+<span class="nx">
+Description
+<a class="anchorjs-link " href="#state_description~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1220,7 +1620,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Execution<wbr>Arn</span>
+        <span id="state_executionarn~go">
+<span class="nx">
+Execution<wbr>Arn
+<a class="anchorjs-link " href="#state_executionarn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1231,7 +1636,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1240,7 +1650,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Protocol<wbr>Type</span>
+        <span id="state_protocoltype~go">
+<span class="nx">
+Protocol<wbr>Type
+<a class="anchorjs-link " href="#state_protocoltype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1249,7 +1664,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Key</span>
+        <span id="state_routekey~go">
+<span class="nx">
+Route<wbr>Key
+<a class="anchorjs-link " href="#state_routekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1258,7 +1678,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>Route<wbr>Selection<wbr>Expression</span>
+        <span id="state_routeselectionexpression~go">
+<span class="nx">
+Route<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_routeselectionexpression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1268,7 +1693,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1277,7 +1707,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Target</span>
+        <span id="state_target~go">
+<span class="nx">
+Target
+<a class="anchorjs-link " href="#state_target~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1288,7 +1723,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Version</span>
+        <span id="state_version~go">
+<span class="nx">
+Version
+<a class="anchorjs-link " href="#state_version~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1304,7 +1744,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Endpoint</span>
+        <span id="state_apiendpoint~nodejs">
+<span class="nx">
+api<wbr>Endpoint
+<a class="anchorjs-link " href="#state_apiendpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1313,7 +1758,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Key<wbr>Selection<wbr>Expression</span>
+        <span id="state_apikeyselectionexpression~nodejs">
+<span class="nx">
+api<wbr>Key<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_apikeyselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1324,7 +1774,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1333,7 +1788,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cors<wbr>Configuration</span>
+        <span id="state_corsconfiguration~nodejs">
+<span class="nx">
+cors<wbr>Configuration
+<a class="anchorjs-link " href="#state_corsconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Api<wbr>Cors<wbr>Configuration</a></span>
     </dt>
@@ -1342,7 +1802,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials<wbr>Arn</span>
+        <span id="state_credentialsarn~nodejs">
+<span class="nx">
+credentials<wbr>Arn
+<a class="anchorjs-link " href="#state_credentialsarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1351,7 +1816,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~nodejs">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1360,7 +1830,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution<wbr>Arn</span>
+        <span id="state_executionarn~nodejs">
+<span class="nx">
+execution<wbr>Arn
+<a class="anchorjs-link " href="#state_executionarn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1371,7 +1846,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1380,7 +1860,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>protocol<wbr>Type</span>
+        <span id="state_protocoltype~nodejs">
+<span class="nx">
+protocol<wbr>Type
+<a class="anchorjs-link " href="#state_protocoltype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1389,7 +1874,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Key</span>
+        <span id="state_routekey~nodejs">
+<span class="nx">
+route<wbr>Key
+<a class="anchorjs-link " href="#state_routekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1398,7 +1888,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>route<wbr>Selection<wbr>Expression</span>
+        <span id="state_routeselectionexpression~nodejs">
+<span class="nx">
+route<wbr>Selection<wbr>Expression
+<a class="anchorjs-link " href="#state_routeselectionexpression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1408,7 +1903,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1417,7 +1917,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="state_target~nodejs">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#state_target~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1428,7 +1933,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="state_version~nodejs">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#state_version~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1444,7 +1954,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>endpoint</span>
+        <span id="state_api_endpoint~python">
+<span class="nx">
+api_<wbr>endpoint
+<a class="anchorjs-link " href="#state_api_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1453,7 +1968,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>key_<wbr>selection_<wbr>expression</span>
+        <span id="state_api_key_selection_expression~python">
+<span class="nx">
+api_<wbr>key_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#state_api_key_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1464,7 +1984,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1473,7 +1998,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cors_<wbr>configuration</span>
+        <span id="state_cors_configuration~python">
+<span class="nx">
+cors_<wbr>configuration
+<a class="anchorjs-link " href="#state_cors_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#apicorsconfiguration">Dict[Api<wbr>Cors<wbr>Configuration]</a></span>
     </dt>
@@ -1482,7 +2012,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>credentials_<wbr>arn</span>
+        <span id="state_credentials_arn~python">
+<span class="nx">
+credentials_<wbr>arn
+<a class="anchorjs-link " href="#state_credentials_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1491,7 +2026,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>description</span>
+        <span id="state_description~python">
+<span class="nx">
+description
+<a class="anchorjs-link " href="#state_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1500,7 +2040,12 @@ Applicable for WebSocket APIs.
 
     <dt class="property-optional"
             title="Optional">
-        <span>execution_<wbr>arn</span>
+        <span id="state_execution_arn~python">
+<span class="nx">
+execution_<wbr>arn
+<a class="anchorjs-link " href="#state_execution_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1511,7 +2056,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1520,7 +2070,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>protocol_<wbr>type</span>
+        <span id="state_protocol_type~python">
+<span class="nx">
+protocol_<wbr>type
+<a class="anchorjs-link " href="#state_protocol_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1529,7 +2084,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>key</span>
+        <span id="state_route_key~python">
+<span class="nx">
+route_<wbr>key
+<a class="anchorjs-link " href="#state_route_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1538,7 +2098,12 @@ See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigate
 
     <dt class="property-optional"
             title="Optional">
-        <span>route_<wbr>selection_<wbr>expression</span>
+        <span id="state_route_selection_expression~python">
+<span class="nx">
+route_<wbr>selection_<wbr>expression
+<a class="anchorjs-link " href="#state_route_selection_expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1548,7 +2113,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1557,7 +2127,12 @@ Defaults to `$request.method $request.path`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>target</span>
+        <span id="state_target~python">
+<span class="nx">
+target
+<a class="anchorjs-link " href="#state_target~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1568,7 +2143,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>version</span>
+        <span id="state_version~python">
+<span class="nx">
+version
+<a class="anchorjs-link " href="#state_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1610,7 +2190,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Credentials</span>
+        <span id="allowcredentials~csharp">
+<span class="nx">
+Allow<wbr>Credentials
+<a class="anchorjs-link " href="#allowcredentials~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1619,7 +2204,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Headers</span>
+        <span id="allowheaders~csharp">
+<span class="nx">
+Allow<wbr>Headers
+<a class="anchorjs-link " href="#allowheaders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1628,7 +2218,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Methods</span>
+        <span id="allowmethods~csharp">
+<span class="nx">
+Allow<wbr>Methods
+<a class="anchorjs-link " href="#allowmethods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1637,7 +2232,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Origins</span>
+        <span id="alloworigins~csharp">
+<span class="nx">
+Allow<wbr>Origins
+<a class="anchorjs-link " href="#alloworigins~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1646,7 +2246,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expose<wbr>Headers</span>
+        <span id="exposeheaders~csharp">
+<span class="nx">
+Expose<wbr>Headers
+<a class="anchorjs-link " href="#exposeheaders~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1655,7 +2260,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Age</span>
+        <span id="maxage~csharp">
+<span class="nx">
+Max<wbr>Age
+<a class="anchorjs-link " href="#maxage~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1671,7 +2281,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Credentials</span>
+        <span id="allowcredentials~go">
+<span class="nx">
+Allow<wbr>Credentials
+<a class="anchorjs-link " href="#allowcredentials~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1680,7 +2295,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Headers</span>
+        <span id="allowheaders~go">
+<span class="nx">
+Allow<wbr>Headers
+<a class="anchorjs-link " href="#allowheaders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1689,7 +2309,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Methods</span>
+        <span id="allowmethods~go">
+<span class="nx">
+Allow<wbr>Methods
+<a class="anchorjs-link " href="#allowmethods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1698,7 +2323,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Origins</span>
+        <span id="alloworigins~go">
+<span class="nx">
+Allow<wbr>Origins
+<a class="anchorjs-link " href="#alloworigins~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1707,7 +2337,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expose<wbr>Headers</span>
+        <span id="exposeheaders~go">
+<span class="nx">
+Expose<wbr>Headers
+<a class="anchorjs-link " href="#exposeheaders~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1716,7 +2351,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>Max<wbr>Age</span>
+        <span id="maxage~go">
+<span class="nx">
+Max<wbr>Age
+<a class="anchorjs-link " href="#maxage~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1732,7 +2372,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Credentials</span>
+        <span id="allowcredentials~nodejs">
+<span class="nx">
+allow<wbr>Credentials
+<a class="anchorjs-link " href="#allowcredentials~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1741,7 +2386,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Headers</span>
+        <span id="allowheaders~nodejs">
+<span class="nx">
+allow<wbr>Headers
+<a class="anchorjs-link " href="#allowheaders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1750,7 +2400,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Methods</span>
+        <span id="allowmethods~nodejs">
+<span class="nx">
+allow<wbr>Methods
+<a class="anchorjs-link " href="#allowmethods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1759,7 +2414,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Origins</span>
+        <span id="alloworigins~nodejs">
+<span class="nx">
+allow<wbr>Origins
+<a class="anchorjs-link " href="#alloworigins~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1768,7 +2428,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>expose<wbr>Headers</span>
+        <span id="exposeheaders~nodejs">
+<span class="nx">
+expose<wbr>Headers
+<a class="anchorjs-link " href="#exposeheaders~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1777,7 +2442,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Age</span>
+        <span id="maxage~nodejs">
+<span class="nx">
+max<wbr>Age
+<a class="anchorjs-link " href="#maxage~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1793,7 +2463,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Credentials</span>
+        <span id="allowcredentials~python">
+<span class="nx">
+allow<wbr>Credentials
+<a class="anchorjs-link " href="#allowcredentials~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1802,7 +2477,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Headers</span>
+        <span id="allowheaders~python">
+<span class="nx">
+allow<wbr>Headers
+<a class="anchorjs-link " href="#allowheaders~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1811,7 +2491,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Methods</span>
+        <span id="allowmethods~python">
+<span class="nx">
+allow<wbr>Methods
+<a class="anchorjs-link " href="#allowmethods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1820,7 +2505,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Origins</span>
+        <span id="alloworigins~python">
+<span class="nx">
+allow<wbr>Origins
+<a class="anchorjs-link " href="#alloworigins~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1829,7 +2519,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>expose<wbr>Headers</span>
+        <span id="exposeheaders~python">
+<span class="nx">
+expose<wbr>Headers
+<a class="anchorjs-link " href="#exposeheaders~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1838,7 +2533,12 @@ The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. A
 
     <dt class="property-optional"
             title="Optional">
-        <span>max<wbr>Age</span>
+        <span id="maxage~python">
+<span class="nx">
+max<wbr>Age
+<a class="anchorjs-link " href="#maxage~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

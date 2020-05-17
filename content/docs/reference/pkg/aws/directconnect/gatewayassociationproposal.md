@@ -60,19 +60,19 @@ const example = new aws.directconnect.GatewayAssociationProposal("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposal">GatewayAssociationProposal</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposalArgs">GatewayAssociationProposalArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposal">GatewayAssociationProposal</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposalArgs">GatewayAssociationProposalArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">GatewayAssociationProposal</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allowed_prefixes=None<span class="p">, </span>associated_gateway_id=None<span class="p">, </span>dx_gateway_id=None<span class="p">, </span>dx_gateway_owner_account_id=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/directconnect/#GatewayAssociationProposal">GatewayAssociationProposal</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allowed_prefixes=None<span class="p">, </span>associated_gateway_id=None<span class="p">, </span>dx_gateway_id=None<span class="p">, </span>dx_gateway_owner_account_id=None<span class="p">, </span>vpn_gateway_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewGatewayAssociationProposal<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposalArgs">GatewayAssociationProposalArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposal">GatewayAssociationProposal</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposal">NewGatewayAssociationProposal</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposalArgs">GatewayAssociationProposalArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposal">GatewayAssociationProposal</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposal.html">GatewayAssociationProposal</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposalArgs.html">GatewayAssociationProposalArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposal.html">GatewayAssociationProposal</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposalArgs.html">GatewayAssociationProposalArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -238,7 +238,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>Dx<wbr>Gateway<wbr>Id</span>
+        <span id="dxgatewayid~csharp">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#dxgatewayid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -247,7 +252,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="dxgatewayowneraccountid~csharp">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#dxgatewayowneraccountid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -256,7 +266,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allowed<wbr>Prefixes</span>
+        <span id="allowedprefixes~csharp">
+<span class="nx">
+Allowed<wbr>Prefixes
+<a class="anchorjs-link " href="#allowedprefixes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -265,7 +280,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Id</span>
+        <span id="associatedgatewayid~csharp">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#associatedgatewayid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -274,7 +294,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>Vpn<wbr>Gateway<wbr>Id</span>
+        <span id="vpngatewayid~csharp">
+<span class="nx">
+Vpn<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#vpngatewayid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -290,7 +315,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>Dx<wbr>Gateway<wbr>Id</span>
+        <span id="dxgatewayid~go">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#dxgatewayid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -299,7 +329,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="dxgatewayowneraccountid~go">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#dxgatewayowneraccountid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -308,7 +343,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allowed<wbr>Prefixes</span>
+        <span id="allowedprefixes~go">
+<span class="nx">
+Allowed<wbr>Prefixes
+<a class="anchorjs-link " href="#allowedprefixes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -317,7 +357,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Id</span>
+        <span id="associatedgatewayid~go">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#associatedgatewayid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -326,7 +371,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>Vpn<wbr>Gateway<wbr>Id</span>
+        <span id="vpngatewayid~go">
+<span class="nx">
+Vpn<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#vpngatewayid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -342,7 +392,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>dx<wbr>Gateway<wbr>Id</span>
+        <span id="dxgatewayid~nodejs">
+<span class="nx">
+dx<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#dxgatewayid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -351,7 +406,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="dxgatewayowneraccountid~nodejs">
+<span class="nx">
+dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#dxgatewayowneraccountid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -360,7 +420,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>allowed<wbr>Prefixes</span>
+        <span id="allowedprefixes~nodejs">
+<span class="nx">
+allowed<wbr>Prefixes
+<a class="anchorjs-link " href="#allowedprefixes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -369,7 +434,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated<wbr>Gateway<wbr>Id</span>
+        <span id="associatedgatewayid~nodejs">
+<span class="nx">
+associated<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#associatedgatewayid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -378,7 +448,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>vpn<wbr>Gateway<wbr>Id</span>
+        <span id="vpngatewayid~nodejs">
+<span class="nx">
+vpn<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#vpngatewayid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -394,7 +469,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>dx_<wbr>gateway_<wbr>id</span>
+        <span id="dx_gateway_id~python">
+<span class="nx">
+dx_<wbr>gateway_<wbr>id
+<a class="anchorjs-link " href="#dx_gateway_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -403,7 +483,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-required"
             title="Required">
-        <span>dx_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id</span>
+        <span id="dx_gateway_owner_account_id~python">
+<span class="nx">
+dx_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id
+<a class="anchorjs-link " href="#dx_gateway_owner_account_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -412,7 +497,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>allowed_<wbr>prefixes</span>
+        <span id="allowed_prefixes~python">
+<span class="nx">
+allowed_<wbr>prefixes
+<a class="anchorjs-link " href="#allowed_prefixes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -421,7 +511,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated_<wbr>gateway_<wbr>id</span>
+        <span id="associated_gateway_id~python">
+<span class="nx">
+associated_<wbr>gateway_<wbr>id
+<a class="anchorjs-link " href="#associated_gateway_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -430,7 +525,12 @@ The GatewayAssociationProposal resource accepts the following [input]({{< relref
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>vpn_<wbr>gateway_<wbr>id</span>
+        <span id="vpn_gateway_id~python">
+<span class="nx">
+vpn_<wbr>gateway_<wbr>id
+<a class="anchorjs-link " href="#vpn_gateway_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -457,7 +557,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="associatedgatewayowneraccountid~csharp">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#associatedgatewayowneraccountid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -466,7 +571,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Associated<wbr>Gateway<wbr>Type</span>
+        <span id="associatedgatewaytype~csharp">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Type
+<a class="anchorjs-link " href="#associatedgatewaytype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -475,7 +585,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -490,7 +605,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="associatedgatewayowneraccountid~go">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#associatedgatewayowneraccountid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -499,7 +619,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Associated<wbr>Gateway<wbr>Type</span>
+        <span id="associatedgatewaytype~go">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Type
+<a class="anchorjs-link " href="#associatedgatewaytype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -508,7 +633,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -523,7 +653,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="associatedgatewayowneraccountid~nodejs">
+<span class="nx">
+associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#associatedgatewayowneraccountid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -532,7 +667,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>associated<wbr>Gateway<wbr>Type</span>
+        <span id="associatedgatewaytype~nodejs">
+<span class="nx">
+associated<wbr>Gateway<wbr>Type
+<a class="anchorjs-link " href="#associatedgatewaytype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -541,7 +681,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -556,7 +701,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>associated_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id</span>
+        <span id="associated_gateway_owner_account_id~python">
+<span class="nx">
+associated_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id
+<a class="anchorjs-link " href="#associated_gateway_owner_account_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -565,7 +715,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>associated_<wbr>gateway_<wbr>type</span>
+        <span id="associated_gateway_type~python">
+<span class="nx">
+associated_<wbr>gateway_<wbr>type
+<a class="anchorjs-link " href="#associated_gateway_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -574,7 +729,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -595,7 +755,7 @@ Get an existing GatewayAssociationProposal resource's state with the given name,
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposalState">GatewayAssociationProposalState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposal">GatewayAssociationProposal</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposalState">GatewayAssociationProposalState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directconnect/#GatewayAssociationProposal">GatewayAssociationProposal</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -603,11 +763,11 @@ Get an existing GatewayAssociationProposal resource's state with the given name,
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetGatewayAssociationProposal<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposalState">GatewayAssociationProposalState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposal">GatewayAssociationProposal</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetGatewayAssociationProposal<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposalState">GatewayAssociationProposalState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directconnect?tab=doc#GatewayAssociationProposal">GatewayAssociationProposal</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposal.html">GatewayAssociationProposal</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposalState.html">GatewayAssociationProposalState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposal.html">GatewayAssociationProposal</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectConnect.GatewayAssociationProposalState.html">GatewayAssociationProposalState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -715,7 +875,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allowed<wbr>Prefixes</span>
+        <span id="state_allowedprefixes~csharp">
+<span class="nx">
+Allowed<wbr>Prefixes
+<a class="anchorjs-link " href="#state_allowedprefixes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -724,7 +889,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Id</span>
+        <span id="state_associatedgatewayid~csharp">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_associatedgatewayid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -733,7 +903,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="state_associatedgatewayowneraccountid~csharp">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_associatedgatewayowneraccountid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -742,7 +917,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Type</span>
+        <span id="state_associatedgatewaytype~csharp">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Type
+<a class="anchorjs-link " href="#state_associatedgatewaytype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -751,7 +931,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dx<wbr>Gateway<wbr>Id</span>
+        <span id="state_dxgatewayid~csharp">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_dxgatewayid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -760,7 +945,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="state_dxgatewayowneraccountid~csharp">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_dxgatewayowneraccountid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -769,7 +959,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>Vpn<wbr>Gateway<wbr>Id</span>
+        <span id="state_vpngatewayid~csharp">
+<span class="nx">
+Vpn<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_vpngatewayid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -785,7 +980,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allowed<wbr>Prefixes</span>
+        <span id="state_allowedprefixes~go">
+<span class="nx">
+Allowed<wbr>Prefixes
+<a class="anchorjs-link " href="#state_allowedprefixes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -794,7 +994,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Id</span>
+        <span id="state_associatedgatewayid~go">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_associatedgatewayid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -803,7 +1008,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="state_associatedgatewayowneraccountid~go">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_associatedgatewayowneraccountid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -812,7 +1022,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Associated<wbr>Gateway<wbr>Type</span>
+        <span id="state_associatedgatewaytype~go">
+<span class="nx">
+Associated<wbr>Gateway<wbr>Type
+<a class="anchorjs-link " href="#state_associatedgatewaytype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -821,7 +1036,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dx<wbr>Gateway<wbr>Id</span>
+        <span id="state_dxgatewayid~go">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_dxgatewayid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -830,7 +1050,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="state_dxgatewayowneraccountid~go">
+<span class="nx">
+Dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_dxgatewayowneraccountid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -839,7 +1064,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>Vpn<wbr>Gateway<wbr>Id</span>
+        <span id="state_vpngatewayid~go">
+<span class="nx">
+Vpn<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_vpngatewayid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -855,7 +1085,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>allowed<wbr>Prefixes</span>
+        <span id="state_allowedprefixes~nodejs">
+<span class="nx">
+allowed<wbr>Prefixes
+<a class="anchorjs-link " href="#state_allowedprefixes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -864,7 +1099,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated<wbr>Gateway<wbr>Id</span>
+        <span id="state_associatedgatewayid~nodejs">
+<span class="nx">
+associated<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_associatedgatewayid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -873,7 +1113,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="state_associatedgatewayowneraccountid~nodejs">
+<span class="nx">
+associated<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_associatedgatewayowneraccountid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -882,7 +1127,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated<wbr>Gateway<wbr>Type</span>
+        <span id="state_associatedgatewaytype~nodejs">
+<span class="nx">
+associated<wbr>Gateway<wbr>Type
+<a class="anchorjs-link " href="#state_associatedgatewaytype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -891,7 +1141,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>dx<wbr>Gateway<wbr>Id</span>
+        <span id="state_dxgatewayid~nodejs">
+<span class="nx">
+dx<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_dxgatewayid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -900,7 +1155,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id</span>
+        <span id="state_dxgatewayowneraccountid~nodejs">
+<span class="nx">
+dx<wbr>Gateway<wbr>Owner<wbr>Account<wbr>Id
+<a class="anchorjs-link " href="#state_dxgatewayowneraccountid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -909,7 +1169,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>vpn<wbr>Gateway<wbr>Id</span>
+        <span id="state_vpngatewayid~nodejs">
+<span class="nx">
+vpn<wbr>Gateway<wbr>Id
+<a class="anchorjs-link " href="#state_vpngatewayid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -925,7 +1190,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>allowed_<wbr>prefixes</span>
+        <span id="state_allowed_prefixes~python">
+<span class="nx">
+allowed_<wbr>prefixes
+<a class="anchorjs-link " href="#state_allowed_prefixes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -934,7 +1204,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated_<wbr>gateway_<wbr>id</span>
+        <span id="state_associated_gateway_id~python">
+<span class="nx">
+associated_<wbr>gateway_<wbr>id
+<a class="anchorjs-link " href="#state_associated_gateway_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -943,7 +1218,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id</span>
+        <span id="state_associated_gateway_owner_account_id~python">
+<span class="nx">
+associated_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id
+<a class="anchorjs-link " href="#state_associated_gateway_owner_account_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -952,7 +1232,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>associated_<wbr>gateway_<wbr>type</span>
+        <span id="state_associated_gateway_type~python">
+<span class="nx">
+associated_<wbr>gateway_<wbr>type
+<a class="anchorjs-link " href="#state_associated_gateway_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -961,7 +1246,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>dx_<wbr>gateway_<wbr>id</span>
+        <span id="state_dx_gateway_id~python">
+<span class="nx">
+dx_<wbr>gateway_<wbr>id
+<a class="anchorjs-link " href="#state_dx_gateway_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -970,7 +1260,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>dx_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id</span>
+        <span id="state_dx_gateway_owner_account_id~python">
+<span class="nx">
+dx_<wbr>gateway_<wbr>owner_<wbr>account_<wbr>id
+<a class="anchorjs-link " href="#state_dx_gateway_owner_account_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -979,7 +1274,12 @@ The following state arguments are supported:
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
-        <span>vpn_<wbr>gateway_<wbr>id</span>
+        <span id="state_vpn_gateway_id~python">
+<span class="nx">
+vpn_<wbr>gateway_<wbr>id
+<a class="anchorjs-link " href="#state_vpn_gateway_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

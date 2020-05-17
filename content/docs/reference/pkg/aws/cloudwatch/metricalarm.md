@@ -333,19 +333,19 @@ const foobar = new aws.cloudwatch.MetricAlarm("foobar", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarmArgs">MetricAlarmArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarmArgs">MetricAlarmArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">MetricAlarm</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>actions_enabled=None<span class="p">, </span>alarm_actions=None<span class="p">, </span>alarm_description=None<span class="p">, </span>comparison_operator=None<span class="p">, </span>datapoints_to_alarm=None<span class="p">, </span>dimensions=None<span class="p">, </span>evaluate_low_sample_count_percentiles=None<span class="p">, </span>evaluation_periods=None<span class="p">, </span>extended_statistic=None<span class="p">, </span>insufficient_data_actions=None<span class="p">, </span>metric_name=None<span class="p">, </span>metric_queries=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>ok_actions=None<span class="p">, </span>period=None<span class="p">, </span>statistic=None<span class="p">, </span>tags=None<span class="p">, </span>threshold=None<span class="p">, </span>threshold_metric_id=None<span class="p">, </span>treat_missing_data=None<span class="p">, </span>unit=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>actions_enabled=None<span class="p">, </span>alarm_actions=None<span class="p">, </span>alarm_description=None<span class="p">, </span>comparison_operator=None<span class="p">, </span>datapoints_to_alarm=None<span class="p">, </span>dimensions=None<span class="p">, </span>evaluate_low_sample_count_percentiles=None<span class="p">, </span>evaluation_periods=None<span class="p">, </span>extended_statistic=None<span class="p">, </span>insufficient_data_actions=None<span class="p">, </span>metric_name=None<span class="p">, </span>metric_queries=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>ok_actions=None<span class="p">, </span>period=None<span class="p">, </span>statistic=None<span class="p">, </span>tags=None<span class="p">, </span>threshold=None<span class="p">, </span>threshold_metric_id=None<span class="p">, </span>treat_missing_data=None<span class="p">, </span>unit=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewMetricAlarm<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmArgs">MetricAlarmArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">MetricAlarm</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">NewMetricAlarm</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmArgs">MetricAlarmArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">MetricAlarm</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarm.html">MetricAlarm</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarmArgs.html">MetricAlarmArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarm.html">MetricAlarm</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarmArgs.html">MetricAlarmArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -511,7 +511,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-required"
             title="Required">
-        <span>Comparison<wbr>Operator</span>
+        <span id="comparisonoperator~csharp">
+<span class="nx">
+Comparison<wbr>Operator
+<a class="anchorjs-link " href="#comparisonoperator~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -520,7 +525,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-required"
             title="Required">
-        <span>Evaluation<wbr>Periods</span>
+        <span id="evaluationperiods~csharp">
+<span class="nx">
+Evaluation<wbr>Periods
+<a class="anchorjs-link " href="#evaluationperiods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -529,7 +539,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Actions<wbr>Enabled</span>
+        <span id="actionsenabled~csharp">
+<span class="nx">
+Actions<wbr>Enabled
+<a class="anchorjs-link " href="#actionsenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -538,7 +553,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Actions</span>
+        <span id="alarmactions~csharp">
+<span class="nx">
+Alarm<wbr>Actions
+<a class="anchorjs-link " href="#alarmactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
@@ -547,7 +567,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Description</span>
+        <span id="alarmdescription~csharp">
+<span class="nx">
+Alarm<wbr>Description
+<a class="anchorjs-link " href="#alarmdescription~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -556,7 +581,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Datapoints<wbr>To<wbr>Alarm</span>
+        <span id="datapointstoalarm~csharp">
+<span class="nx">
+Datapoints<wbr>To<wbr>Alarm
+<a class="anchorjs-link " href="#datapointstoalarm~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -565,7 +595,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dimensions</span>
+        <span id="dimensions~csharp">
+<span class="nx">
+Dimensions
+<a class="anchorjs-link " href="#dimensions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -574,7 +609,12 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles</span>
+        <span id="evaluatelowsamplecountpercentiles~csharp">
+<span class="nx">
+Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles
+<a class="anchorjs-link " href="#evaluatelowsamplecountpercentiles~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -588,7 +628,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>Statistic</span>
+        <span id="extendedstatistic~csharp">
+<span class="nx">
+Extended<wbr>Statistic
+<a class="anchorjs-link " href="#extendedstatistic~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -597,7 +642,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Insufficient<wbr>Data<wbr>Actions</span>
+        <span id="insufficientdataactions~csharp">
+<span class="nx">
+Insufficient<wbr>Data<wbr>Actions
+<a class="anchorjs-link " href="#insufficientdataactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
@@ -606,7 +656,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Name</span>
+        <span id="metricname~csharp">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -616,7 +671,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Queries</span>
+        <span id="metricqueries~csharp">
+<span class="nx">
+Metric<wbr>Queries
+<a class="anchorjs-link " href="#metricqueries~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List&lt;Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Args&gt;</a></span>
     </dt>
@@ -625,7 +685,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -634,7 +699,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="namespace~csharp">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -644,7 +714,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ok<wbr>Actions</span>
+        <span id="okactions~csharp">
+<span class="nx">
+Ok<wbr>Actions
+<a class="anchorjs-link " href="#okactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
@@ -653,7 +728,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Period</span>
+        <span id="period~csharp">
+<span class="nx">
+Period
+<a class="anchorjs-link " href="#period~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -662,7 +742,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statistic</span>
+        <span id="statistic~csharp">
+<span class="nx">
+Statistic
+<a class="anchorjs-link " href="#statistic~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -672,7 +757,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -681,7 +771,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold</span>
+        <span id="threshold~csharp">
+<span class="nx">
+Threshold
+<a class="anchorjs-link " href="#threshold~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -690,7 +785,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold<wbr>Metric<wbr>Id</span>
+        <span id="thresholdmetricid~csharp">
+<span class="nx">
+Threshold<wbr>Metric<wbr>Id
+<a class="anchorjs-link " href="#thresholdmetricid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -699,7 +799,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Treat<wbr>Missing<wbr>Data</span>
+        <span id="treatmissingdata~csharp">
+<span class="nx">
+Treat<wbr>Missing<wbr>Data
+<a class="anchorjs-link " href="#treatmissingdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -708,7 +813,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="unit~csharp">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#unit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -724,7 +834,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>Comparison<wbr>Operator</span>
+        <span id="comparisonoperator~go">
+<span class="nx">
+Comparison<wbr>Operator
+<a class="anchorjs-link " href="#comparisonoperator~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -733,7 +848,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>Evaluation<wbr>Periods</span>
+        <span id="evaluationperiods~go">
+<span class="nx">
+Evaluation<wbr>Periods
+<a class="anchorjs-link " href="#evaluationperiods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -742,7 +862,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Actions<wbr>Enabled</span>
+        <span id="actionsenabled~go">
+<span class="nx">
+Actions<wbr>Enabled
+<a class="anchorjs-link " href="#actionsenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -751,7 +876,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Actions</span>
+        <span id="alarmactions~go">
+<span class="nx">
+Alarm<wbr>Actions
+<a class="anchorjs-link " href="#alarmactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
@@ -760,7 +890,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Description</span>
+        <span id="alarmdescription~go">
+<span class="nx">
+Alarm<wbr>Description
+<a class="anchorjs-link " href="#alarmdescription~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -769,7 +904,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Datapoints<wbr>To<wbr>Alarm</span>
+        <span id="datapointstoalarm~go">
+<span class="nx">
+Datapoints<wbr>To<wbr>Alarm
+<a class="anchorjs-link " href="#datapointstoalarm~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -778,7 +918,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dimensions</span>
+        <span id="dimensions~go">
+<span class="nx">
+Dimensions
+<a class="anchorjs-link " href="#dimensions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -787,7 +932,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles</span>
+        <span id="evaluatelowsamplecountpercentiles~go">
+<span class="nx">
+Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles
+<a class="anchorjs-link " href="#evaluatelowsamplecountpercentiles~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -801,7 +951,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>Statistic</span>
+        <span id="extendedstatistic~go">
+<span class="nx">
+Extended<wbr>Statistic
+<a class="anchorjs-link " href="#extendedstatistic~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -810,7 +965,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Insufficient<wbr>Data<wbr>Actions</span>
+        <span id="insufficientdataactions~go">
+<span class="nx">
+Insufficient<wbr>Data<wbr>Actions
+<a class="anchorjs-link " href="#insufficientdataactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
@@ -819,7 +979,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Name</span>
+        <span id="metricname~go">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -829,7 +994,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Queries</span>
+        <span id="metricqueries~go">
+<span class="nx">
+Metric<wbr>Queries
+<a class="anchorjs-link " href="#metricqueries~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">[]Metric<wbr>Alarm<wbr>Metric<wbr>Query</a></span>
     </dt>
@@ -838,7 +1008,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -847,7 +1022,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="namespace~go">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -857,7 +1037,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ok<wbr>Actions</span>
+        <span id="okactions~go">
+<span class="nx">
+Ok<wbr>Actions
+<a class="anchorjs-link " href="#okactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
@@ -866,7 +1051,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Period</span>
+        <span id="period~go">
+<span class="nx">
+Period
+<a class="anchorjs-link " href="#period~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -875,7 +1065,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statistic</span>
+        <span id="statistic~go">
+<span class="nx">
+Statistic
+<a class="anchorjs-link " href="#statistic~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -885,7 +1080,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -894,7 +1094,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold</span>
+        <span id="threshold~go">
+<span class="nx">
+Threshold
+<a class="anchorjs-link " href="#threshold~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -903,7 +1108,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold<wbr>Metric<wbr>Id</span>
+        <span id="thresholdmetricid~go">
+<span class="nx">
+Threshold<wbr>Metric<wbr>Id
+<a class="anchorjs-link " href="#thresholdmetricid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -912,7 +1122,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Treat<wbr>Missing<wbr>Data</span>
+        <span id="treatmissingdata~go">
+<span class="nx">
+Treat<wbr>Missing<wbr>Data
+<a class="anchorjs-link " href="#treatmissingdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -921,7 +1136,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="unit~go">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#unit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -937,7 +1157,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>comparison<wbr>Operator</span>
+        <span id="comparisonoperator~nodejs">
+<span class="nx">
+comparison<wbr>Operator
+<a class="anchorjs-link " href="#comparisonoperator~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -946,7 +1171,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>evaluation<wbr>Periods</span>
+        <span id="evaluationperiods~nodejs">
+<span class="nx">
+evaluation<wbr>Periods
+<a class="anchorjs-link " href="#evaluationperiods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -955,7 +1185,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>actions<wbr>Enabled</span>
+        <span id="actionsenabled~nodejs">
+<span class="nx">
+actions<wbr>Enabled
+<a class="anchorjs-link " href="#actionsenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -964,7 +1199,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm<wbr>Actions</span>
+        <span id="alarmactions~nodejs">
+<span class="nx">
+alarm<wbr>Actions
+<a class="anchorjs-link " href="#alarmactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
@@ -973,7 +1213,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm<wbr>Description</span>
+        <span id="alarmdescription~nodejs">
+<span class="nx">
+alarm<wbr>Description
+<a class="anchorjs-link " href="#alarmdescription~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -982,7 +1227,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>datapoints<wbr>To<wbr>Alarm</span>
+        <span id="datapointstoalarm~nodejs">
+<span class="nx">
+datapoints<wbr>To<wbr>Alarm
+<a class="anchorjs-link " href="#datapointstoalarm~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -991,7 +1241,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>dimensions</span>
+        <span id="dimensions~nodejs">
+<span class="nx">
+dimensions
+<a class="anchorjs-link " href="#dimensions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1000,7 +1255,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles</span>
+        <span id="evaluatelowsamplecountpercentiles~nodejs">
+<span class="nx">
+evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles
+<a class="anchorjs-link " href="#evaluatelowsamplecountpercentiles~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1014,7 +1274,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended<wbr>Statistic</span>
+        <span id="extendedstatistic~nodejs">
+<span class="nx">
+extended<wbr>Statistic
+<a class="anchorjs-link " href="#extendedstatistic~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1023,7 +1288,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>insufficient<wbr>Data<wbr>Actions</span>
+        <span id="insufficientdataactions~nodejs">
+<span class="nx">
+insufficient<wbr>Data<wbr>Actions
+<a class="anchorjs-link " href="#insufficientdataactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
@@ -1032,7 +1302,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Name</span>
+        <span id="metricname~nodejs">
+<span class="nx">
+metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1042,7 +1317,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Queries</span>
+        <span id="metricqueries~nodejs">
+<span class="nx">
+metric<wbr>Queries
+<a class="anchorjs-link " href="#metricqueries~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">Metric<wbr>Alarm<wbr>Metric<wbr>Query[]</a></span>
     </dt>
@@ -1051,7 +1331,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1060,7 +1345,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="namespace~nodejs">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1070,7 +1360,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>ok<wbr>Actions</span>
+        <span id="okactions~nodejs">
+<span class="nx">
+ok<wbr>Actions
+<a class="anchorjs-link " href="#okactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
@@ -1079,7 +1374,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>period</span>
+        <span id="period~nodejs">
+<span class="nx">
+period
+<a class="anchorjs-link " href="#period~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1088,7 +1388,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>statistic</span>
+        <span id="statistic~nodejs">
+<span class="nx">
+statistic
+<a class="anchorjs-link " href="#statistic~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1098,7 +1403,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1107,7 +1417,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold</span>
+        <span id="threshold~nodejs">
+<span class="nx">
+threshold
+<a class="anchorjs-link " href="#threshold~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -1116,7 +1431,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold<wbr>Metric<wbr>Id</span>
+        <span id="thresholdmetricid~nodejs">
+<span class="nx">
+threshold<wbr>Metric<wbr>Id
+<a class="anchorjs-link " href="#thresholdmetricid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1125,7 +1445,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>treat<wbr>Missing<wbr>Data</span>
+        <span id="treatmissingdata~nodejs">
+<span class="nx">
+treat<wbr>Missing<wbr>Data
+<a class="anchorjs-link " href="#treatmissingdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1134,7 +1459,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="unit~nodejs">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#unit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1150,7 +1480,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>comparison_<wbr>operator</span>
+        <span id="comparison_operator~python">
+<span class="nx">
+comparison_<wbr>operator
+<a class="anchorjs-link " href="#comparison_operator~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1159,7 +1494,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>evaluation_<wbr>periods</span>
+        <span id="evaluation_periods~python">
+<span class="nx">
+evaluation_<wbr>periods
+<a class="anchorjs-link " href="#evaluation_periods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1168,7 +1508,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>actions_<wbr>enabled</span>
+        <span id="actions_enabled~python">
+<span class="nx">
+actions_<wbr>enabled
+<a class="anchorjs-link " href="#actions_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1177,7 +1522,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm_<wbr>actions</span>
+        <span id="alarm_actions~python">
+<span class="nx">
+alarm_<wbr>actions
+<a class="anchorjs-link " href="#alarm_actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
@@ -1186,7 +1536,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm_<wbr>description</span>
+        <span id="alarm_description~python">
+<span class="nx">
+alarm_<wbr>description
+<a class="anchorjs-link " href="#alarm_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1195,7 +1550,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>datapoints_<wbr>to_<wbr>alarm</span>
+        <span id="datapoints_to_alarm~python">
+<span class="nx">
+datapoints_<wbr>to_<wbr>alarm
+<a class="anchorjs-link " href="#datapoints_to_alarm~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1204,7 +1564,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>dimensions</span>
+        <span id="dimensions~python">
+<span class="nx">
+dimensions
+<a class="anchorjs-link " href="#dimensions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1213,7 +1578,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>evaluate_<wbr>low_<wbr>sample_<wbr>count_<wbr>percentiles</span>
+        <span id="evaluate_low_sample_count_percentiles~python">
+<span class="nx">
+evaluate_<wbr>low_<wbr>sample_<wbr>count_<wbr>percentiles
+<a class="anchorjs-link " href="#evaluate_low_sample_count_percentiles~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1227,7 +1597,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended_<wbr>statistic</span>
+        <span id="extended_statistic~python">
+<span class="nx">
+extended_<wbr>statistic
+<a class="anchorjs-link " href="#extended_statistic~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1236,7 +1611,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>insufficient_<wbr>data_<wbr>actions</span>
+        <span id="insufficient_data_actions~python">
+<span class="nx">
+insufficient_<wbr>data_<wbr>actions
+<a class="anchorjs-link " href="#insufficient_data_actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
@@ -1245,7 +1625,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric_<wbr>name</span>
+        <span id="metric_name~python">
+<span class="nx">
+metric_<wbr>name
+<a class="anchorjs-link " href="#metric_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1255,7 +1640,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric_<wbr>queries</span>
+        <span id="metric_queries~python">
+<span class="nx">
+metric_<wbr>queries
+<a class="anchorjs-link " href="#metric_queries~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List[Metric<wbr>Alarm<wbr>Metric<wbr>Query]</a></span>
     </dt>
@@ -1264,7 +1654,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1273,7 +1668,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="namespace~python">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1283,7 +1683,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>ok_<wbr>actions</span>
+        <span id="ok_actions~python">
+<span class="nx">
+ok_<wbr>actions
+<a class="anchorjs-link " href="#ok_actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
@@ -1292,7 +1697,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>period</span>
+        <span id="period~python">
+<span class="nx">
+period
+<a class="anchorjs-link " href="#period~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1301,7 +1711,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>statistic</span>
+        <span id="statistic~python">
+<span class="nx">
+statistic
+<a class="anchorjs-link " href="#statistic~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1311,7 +1726,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1320,7 +1740,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold</span>
+        <span id="threshold~python">
+<span class="nx">
+threshold
+<a class="anchorjs-link " href="#threshold~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1329,7 +1754,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold_<wbr>metric_<wbr>id</span>
+        <span id="threshold_metric_id~python">
+<span class="nx">
+threshold_<wbr>metric_<wbr>id
+<a class="anchorjs-link " href="#threshold_metric_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1338,7 +1768,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>treat_<wbr>missing_<wbr>data</span>
+        <span id="treat_missing_data~python">
+<span class="nx">
+treat_<wbr>missing_<wbr>data
+<a class="anchorjs-link " href="#treat_missing_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1347,7 +1782,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="unit~python">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#unit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1374,7 +1814,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1383,7 +1828,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1398,7 +1848,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1407,7 +1862,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1422,7 +1882,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1431,7 +1896,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1446,7 +1916,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1455,7 +1930,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1476,7 +1956,7 @@ Get an existing MetricAlarm resource's state with the given name, ID, and option
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarmState">MetricAlarmState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarmState">MetricAlarmState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1484,11 +1964,11 @@ Get an existing MetricAlarm resource's state with the given name, ID, and option
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMetricAlarm<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmState">MetricAlarmState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">MetricAlarm</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMetricAlarm<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmState">MetricAlarmState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">MetricAlarm</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarm.html">MetricAlarm</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarmState.html">MetricAlarmState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarm.html">MetricAlarm</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarmState.html">MetricAlarmState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1596,7 +2076,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Actions<wbr>Enabled</span>
+        <span id="state_actionsenabled~csharp">
+<span class="nx">
+Actions<wbr>Enabled
+<a class="anchorjs-link " href="#state_actionsenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1605,7 +2090,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Actions</span>
+        <span id="state_alarmactions~csharp">
+<span class="nx">
+Alarm<wbr>Actions
+<a class="anchorjs-link " href="#state_alarmactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
@@ -1614,7 +2104,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Description</span>
+        <span id="state_alarmdescription~csharp">
+<span class="nx">
+Alarm<wbr>Description
+<a class="anchorjs-link " href="#state_alarmdescription~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1623,7 +2118,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1632,7 +2132,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Comparison<wbr>Operator</span>
+        <span id="state_comparisonoperator~csharp">
+<span class="nx">
+Comparison<wbr>Operator
+<a class="anchorjs-link " href="#state_comparisonoperator~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1641,7 +2146,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Datapoints<wbr>To<wbr>Alarm</span>
+        <span id="state_datapointstoalarm~csharp">
+<span class="nx">
+Datapoints<wbr>To<wbr>Alarm
+<a class="anchorjs-link " href="#state_datapointstoalarm~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1650,7 +2160,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dimensions</span>
+        <span id="state_dimensions~csharp">
+<span class="nx">
+Dimensions
+<a class="anchorjs-link " href="#state_dimensions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1659,7 +2174,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles</span>
+        <span id="state_evaluatelowsamplecountpercentiles~csharp">
+<span class="nx">
+Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles
+<a class="anchorjs-link " href="#state_evaluatelowsamplecountpercentiles~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1673,7 +2193,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Evaluation<wbr>Periods</span>
+        <span id="state_evaluationperiods~csharp">
+<span class="nx">
+Evaluation<wbr>Periods
+<a class="anchorjs-link " href="#state_evaluationperiods~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1682,7 +2207,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>Statistic</span>
+        <span id="state_extendedstatistic~csharp">
+<span class="nx">
+Extended<wbr>Statistic
+<a class="anchorjs-link " href="#state_extendedstatistic~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1691,7 +2221,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Insufficient<wbr>Data<wbr>Actions</span>
+        <span id="state_insufficientdataactions~csharp">
+<span class="nx">
+Insufficient<wbr>Data<wbr>Actions
+<a class="anchorjs-link " href="#state_insufficientdataactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
@@ -1700,7 +2235,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Name</span>
+        <span id="state_metricname~csharp">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#state_metricname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1710,7 +2250,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Queries</span>
+        <span id="state_metricqueries~csharp">
+<span class="nx">
+Metric<wbr>Queries
+<a class="anchorjs-link " href="#state_metricqueries~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List&lt;Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Args&gt;</a></span>
     </dt>
@@ -1719,7 +2264,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1728,7 +2278,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="state_namespace~csharp">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#state_namespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1738,7 +2293,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ok<wbr>Actions</span>
+        <span id="state_okactions~csharp">
+<span class="nx">
+Ok<wbr>Actions
+<a class="anchorjs-link " href="#state_okactions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
@@ -1747,7 +2307,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Period</span>
+        <span id="state_period~csharp">
+<span class="nx">
+Period
+<a class="anchorjs-link " href="#state_period~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1756,7 +2321,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statistic</span>
+        <span id="state_statistic~csharp">
+<span class="nx">
+Statistic
+<a class="anchorjs-link " href="#state_statistic~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1766,7 +2336,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1775,7 +2350,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold</span>
+        <span id="state_threshold~csharp">
+<span class="nx">
+Threshold
+<a class="anchorjs-link " href="#state_threshold~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
@@ -1784,7 +2364,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold<wbr>Metric<wbr>Id</span>
+        <span id="state_thresholdmetricid~csharp">
+<span class="nx">
+Threshold<wbr>Metric<wbr>Id
+<a class="anchorjs-link " href="#state_thresholdmetricid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1793,7 +2378,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Treat<wbr>Missing<wbr>Data</span>
+        <span id="state_treatmissingdata~csharp">
+<span class="nx">
+Treat<wbr>Missing<wbr>Data
+<a class="anchorjs-link " href="#state_treatmissingdata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1802,7 +2392,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="state_unit~csharp">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#state_unit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1818,7 +2413,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Actions<wbr>Enabled</span>
+        <span id="state_actionsenabled~go">
+<span class="nx">
+Actions<wbr>Enabled
+<a class="anchorjs-link " href="#state_actionsenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1827,7 +2427,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Actions</span>
+        <span id="state_alarmactions~go">
+<span class="nx">
+Alarm<wbr>Actions
+<a class="anchorjs-link " href="#state_alarmactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
@@ -1836,7 +2441,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Alarm<wbr>Description</span>
+        <span id="state_alarmdescription~go">
+<span class="nx">
+Alarm<wbr>Description
+<a class="anchorjs-link " href="#state_alarmdescription~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1845,7 +2455,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1854,7 +2469,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Comparison<wbr>Operator</span>
+        <span id="state_comparisonoperator~go">
+<span class="nx">
+Comparison<wbr>Operator
+<a class="anchorjs-link " href="#state_comparisonoperator~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1863,7 +2483,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Datapoints<wbr>To<wbr>Alarm</span>
+        <span id="state_datapointstoalarm~go">
+<span class="nx">
+Datapoints<wbr>To<wbr>Alarm
+<a class="anchorjs-link " href="#state_datapointstoalarm~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1872,7 +2497,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dimensions</span>
+        <span id="state_dimensions~go">
+<span class="nx">
+Dimensions
+<a class="anchorjs-link " href="#state_dimensions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1881,7 +2511,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles</span>
+        <span id="state_evaluatelowsamplecountpercentiles~go">
+<span class="nx">
+Evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles
+<a class="anchorjs-link " href="#state_evaluatelowsamplecountpercentiles~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1895,7 +2530,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Evaluation<wbr>Periods</span>
+        <span id="state_evaluationperiods~go">
+<span class="nx">
+Evaluation<wbr>Periods
+<a class="anchorjs-link " href="#state_evaluationperiods~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1904,7 +2544,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Extended<wbr>Statistic</span>
+        <span id="state_extendedstatistic~go">
+<span class="nx">
+Extended<wbr>Statistic
+<a class="anchorjs-link " href="#state_extendedstatistic~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1913,7 +2558,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Insufficient<wbr>Data<wbr>Actions</span>
+        <span id="state_insufficientdataactions~go">
+<span class="nx">
+Insufficient<wbr>Data<wbr>Actions
+<a class="anchorjs-link " href="#state_insufficientdataactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
@@ -1922,7 +2572,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Name</span>
+        <span id="state_metricname~go">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#state_metricname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1932,7 +2587,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric<wbr>Queries</span>
+        <span id="state_metricqueries~go">
+<span class="nx">
+Metric<wbr>Queries
+<a class="anchorjs-link " href="#state_metricqueries~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">[]Metric<wbr>Alarm<wbr>Metric<wbr>Query</a></span>
     </dt>
@@ -1941,7 +2601,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1950,7 +2615,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="state_namespace~go">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#state_namespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1960,7 +2630,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ok<wbr>Actions</span>
+        <span id="state_okactions~go">
+<span class="nx">
+Ok<wbr>Actions
+<a class="anchorjs-link " href="#state_okactions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
@@ -1969,7 +2644,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Period</span>
+        <span id="state_period~go">
+<span class="nx">
+Period
+<a class="anchorjs-link " href="#state_period~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1978,7 +2658,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statistic</span>
+        <span id="state_statistic~go">
+<span class="nx">
+Statistic
+<a class="anchorjs-link " href="#state_statistic~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1988,7 +2673,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1997,7 +2687,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold</span>
+        <span id="state_threshold~go">
+<span class="nx">
+Threshold
+<a class="anchorjs-link " href="#state_threshold~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
@@ -2006,7 +2701,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Threshold<wbr>Metric<wbr>Id</span>
+        <span id="state_thresholdmetricid~go">
+<span class="nx">
+Threshold<wbr>Metric<wbr>Id
+<a class="anchorjs-link " href="#state_thresholdmetricid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2015,7 +2715,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Treat<wbr>Missing<wbr>Data</span>
+        <span id="state_treatmissingdata~go">
+<span class="nx">
+Treat<wbr>Missing<wbr>Data
+<a class="anchorjs-link " href="#state_treatmissingdata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2024,7 +2729,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="state_unit~go">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#state_unit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2040,7 +2750,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>actions<wbr>Enabled</span>
+        <span id="state_actionsenabled~nodejs">
+<span class="nx">
+actions<wbr>Enabled
+<a class="anchorjs-link " href="#state_actionsenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2049,7 +2764,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm<wbr>Actions</span>
+        <span id="state_alarmactions~nodejs">
+<span class="nx">
+alarm<wbr>Actions
+<a class="anchorjs-link " href="#state_alarmactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
@@ -2058,7 +2778,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm<wbr>Description</span>
+        <span id="state_alarmdescription~nodejs">
+<span class="nx">
+alarm<wbr>Description
+<a class="anchorjs-link " href="#state_alarmdescription~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2067,7 +2792,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2076,7 +2806,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>comparison<wbr>Operator</span>
+        <span id="state_comparisonoperator~nodejs">
+<span class="nx">
+comparison<wbr>Operator
+<a class="anchorjs-link " href="#state_comparisonoperator~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2085,7 +2820,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>datapoints<wbr>To<wbr>Alarm</span>
+        <span id="state_datapointstoalarm~nodejs">
+<span class="nx">
+datapoints<wbr>To<wbr>Alarm
+<a class="anchorjs-link " href="#state_datapointstoalarm~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2094,7 +2834,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>dimensions</span>
+        <span id="state_dimensions~nodejs">
+<span class="nx">
+dimensions
+<a class="anchorjs-link " href="#state_dimensions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2103,7 +2848,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles</span>
+        <span id="state_evaluatelowsamplecountpercentiles~nodejs">
+<span class="nx">
+evaluate<wbr>Low<wbr>Sample<wbr>Count<wbr>Percentiles
+<a class="anchorjs-link " href="#state_evaluatelowsamplecountpercentiles~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2117,7 +2867,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>evaluation<wbr>Periods</span>
+        <span id="state_evaluationperiods~nodejs">
+<span class="nx">
+evaluation<wbr>Periods
+<a class="anchorjs-link " href="#state_evaluationperiods~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2126,7 +2881,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended<wbr>Statistic</span>
+        <span id="state_extendedstatistic~nodejs">
+<span class="nx">
+extended<wbr>Statistic
+<a class="anchorjs-link " href="#state_extendedstatistic~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2135,7 +2895,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>insufficient<wbr>Data<wbr>Actions</span>
+        <span id="state_insufficientdataactions~nodejs">
+<span class="nx">
+insufficient<wbr>Data<wbr>Actions
+<a class="anchorjs-link " href="#state_insufficientdataactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
@@ -2144,7 +2909,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Name</span>
+        <span id="state_metricname~nodejs">
+<span class="nx">
+metric<wbr>Name
+<a class="anchorjs-link " href="#state_metricname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2154,7 +2924,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric<wbr>Queries</span>
+        <span id="state_metricqueries~nodejs">
+<span class="nx">
+metric<wbr>Queries
+<a class="anchorjs-link " href="#state_metricqueries~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">Metric<wbr>Alarm<wbr>Metric<wbr>Query[]</a></span>
     </dt>
@@ -2163,7 +2938,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2172,7 +2952,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="state_namespace~nodejs">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#state_namespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2182,7 +2967,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>ok<wbr>Actions</span>
+        <span id="state_okactions~nodejs">
+<span class="nx">
+ok<wbr>Actions
+<a class="anchorjs-link " href="#state_okactions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
@@ -2191,7 +2981,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>period</span>
+        <span id="state_period~nodejs">
+<span class="nx">
+period
+<a class="anchorjs-link " href="#state_period~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2200,7 +2995,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>statistic</span>
+        <span id="state_statistic~nodejs">
+<span class="nx">
+statistic
+<a class="anchorjs-link " href="#state_statistic~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2210,7 +3010,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2219,7 +3024,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold</span>
+        <span id="state_threshold~nodejs">
+<span class="nx">
+threshold
+<a class="anchorjs-link " href="#state_threshold~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
@@ -2228,7 +3038,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold<wbr>Metric<wbr>Id</span>
+        <span id="state_thresholdmetricid~nodejs">
+<span class="nx">
+threshold<wbr>Metric<wbr>Id
+<a class="anchorjs-link " href="#state_thresholdmetricid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2237,7 +3052,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>treat<wbr>Missing<wbr>Data</span>
+        <span id="state_treatmissingdata~nodejs">
+<span class="nx">
+treat<wbr>Missing<wbr>Data
+<a class="anchorjs-link " href="#state_treatmissingdata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2246,7 +3066,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="state_unit~nodejs">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#state_unit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2262,7 +3087,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>actions_<wbr>enabled</span>
+        <span id="state_actions_enabled~python">
+<span class="nx">
+actions_<wbr>enabled
+<a class="anchorjs-link " href="#state_actions_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2271,7 +3101,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm_<wbr>actions</span>
+        <span id="state_alarm_actions~python">
+<span class="nx">
+alarm_<wbr>actions
+<a class="anchorjs-link " href="#state_alarm_actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
@@ -2280,7 +3115,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>alarm_<wbr>description</span>
+        <span id="state_alarm_description~python">
+<span class="nx">
+alarm_<wbr>description
+<a class="anchorjs-link " href="#state_alarm_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2289,7 +3129,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2298,7 +3143,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>comparison_<wbr>operator</span>
+        <span id="state_comparison_operator~python">
+<span class="nx">
+comparison_<wbr>operator
+<a class="anchorjs-link " href="#state_comparison_operator~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2307,7 +3157,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>datapoints_<wbr>to_<wbr>alarm</span>
+        <span id="state_datapoints_to_alarm~python">
+<span class="nx">
+datapoints_<wbr>to_<wbr>alarm
+<a class="anchorjs-link " href="#state_datapoints_to_alarm~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2316,7 +3171,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>dimensions</span>
+        <span id="state_dimensions~python">
+<span class="nx">
+dimensions
+<a class="anchorjs-link " href="#state_dimensions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2325,7 +3185,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>evaluate_<wbr>low_<wbr>sample_<wbr>count_<wbr>percentiles</span>
+        <span id="state_evaluate_low_sample_count_percentiles~python">
+<span class="nx">
+evaluate_<wbr>low_<wbr>sample_<wbr>count_<wbr>percentiles
+<a class="anchorjs-link " href="#state_evaluate_low_sample_count_percentiles~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2339,7 +3204,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>evaluation_<wbr>periods</span>
+        <span id="state_evaluation_periods~python">
+<span class="nx">
+evaluation_<wbr>periods
+<a class="anchorjs-link " href="#state_evaluation_periods~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2348,7 +3218,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>extended_<wbr>statistic</span>
+        <span id="state_extended_statistic~python">
+<span class="nx">
+extended_<wbr>statistic
+<a class="anchorjs-link " href="#state_extended_statistic~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2357,7 +3232,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>insufficient_<wbr>data_<wbr>actions</span>
+        <span id="state_insufficient_data_actions~python">
+<span class="nx">
+insufficient_<wbr>data_<wbr>actions
+<a class="anchorjs-link " href="#state_insufficient_data_actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
@@ -2366,7 +3246,12 @@ The following values are supported: `ignore`, and `evaluate`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric_<wbr>name</span>
+        <span id="state_metric_name~python">
+<span class="nx">
+metric_<wbr>name
+<a class="anchorjs-link " href="#state_metric_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2376,7 +3261,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric_<wbr>queries</span>
+        <span id="state_metric_queries~python">
+<span class="nx">
+metric_<wbr>queries
+<a class="anchorjs-link " href="#state_metric_queries~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List[Metric<wbr>Alarm<wbr>Metric<wbr>Query]</a></span>
     </dt>
@@ -2385,7 +3275,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2394,7 +3289,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="state_namespace~python">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#state_namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2404,7 +3304,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>ok_<wbr>actions</span>
+        <span id="state_ok_actions~python">
+<span class="nx">
+ok_<wbr>actions
+<a class="anchorjs-link " href="#state_ok_actions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
@@ -2413,7 +3318,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>period</span>
+        <span id="state_period~python">
+<span class="nx">
+period
+<a class="anchorjs-link " href="#state_period~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2422,7 +3332,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>statistic</span>
+        <span id="state_statistic~python">
+<span class="nx">
+statistic
+<a class="anchorjs-link " href="#state_statistic~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2432,7 +3347,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2441,7 +3361,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold</span>
+        <span id="state_threshold~python">
+<span class="nx">
+threshold
+<a class="anchorjs-link " href="#state_threshold~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2450,7 +3375,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>threshold_<wbr>metric_<wbr>id</span>
+        <span id="state_threshold_metric_id~python">
+<span class="nx">
+threshold_<wbr>metric_<wbr>id
+<a class="anchorjs-link " href="#state_threshold_metric_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2459,7 +3389,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>treat_<wbr>missing_<wbr>data</span>
+        <span id="state_treat_missing_data~python">
+<span class="nx">
+treat_<wbr>missing_<wbr>data
+<a class="anchorjs-link " href="#state_treat_missing_data~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2468,7 +3403,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="state_unit~python">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#state_unit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2510,7 +3450,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2519,7 +3464,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expression</span>
+        <span id="expression~csharp">
+<span class="nx">
+Expression
+<a class="anchorjs-link " href="#expression~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2528,7 +3478,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Label</span>
+        <span id="label~csharp">
+<span class="nx">
+Label
+<a class="anchorjs-link " href="#label~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2537,7 +3492,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric</span>
+        <span id="metric~csharp">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric<wbr>Args</a></span>
     </dt>
@@ -2546,7 +3506,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Return<wbr>Data</span>
+        <span id="returndata~csharp">
+<span class="nx">
+Return<wbr>Data
+<a class="anchorjs-link " href="#returndata~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2562,7 +3527,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2571,7 +3541,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Expression</span>
+        <span id="expression~go">
+<span class="nx">
+Expression
+<a class="anchorjs-link " href="#expression~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2580,7 +3555,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Label</span>
+        <span id="label~go">
+<span class="nx">
+Label
+<a class="anchorjs-link " href="#label~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2589,7 +3569,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Metric</span>
+        <span id="metric~go">
+<span class="nx">
+Metric
+<a class="anchorjs-link " href="#metric~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric</a></span>
     </dt>
@@ -2598,7 +3583,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Return<wbr>Data</span>
+        <span id="returndata~go">
+<span class="nx">
+Return<wbr>Data
+<a class="anchorjs-link " href="#returndata~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2614,7 +3604,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2623,7 +3618,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>expression</span>
+        <span id="expression~nodejs">
+<span class="nx">
+expression
+<a class="anchorjs-link " href="#expression~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2632,7 +3632,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>label</span>
+        <span id="label~nodejs">
+<span class="nx">
+label
+<a class="anchorjs-link " href="#label~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2641,7 +3646,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric</span>
+        <span id="metric~nodejs">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric</a></span>
     </dt>
@@ -2650,7 +3660,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>return<wbr>Data</span>
+        <span id="returndata~nodejs">
+<span class="nx">
+return<wbr>Data
+<a class="anchorjs-link " href="#returndata~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2666,7 +3681,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2675,7 +3695,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>expression</span>
+        <span id="expression~python">
+<span class="nx">
+expression
+<a class="anchorjs-link " href="#expression~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2684,7 +3709,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>label</span>
+        <span id="label~python">
+<span class="nx">
+label
+<a class="anchorjs-link " href="#label~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2693,7 +3723,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>metric</span>
+        <span id="metric~python">
+<span class="nx">
+metric
+<a class="anchorjs-link " href="#metric~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Dict[Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric]</a></span>
     </dt>
@@ -2702,7 +3737,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>return<wbr>Data</span>
+        <span id="returndata~python">
+<span class="nx">
+return<wbr>Data
+<a class="anchorjs-link " href="#returndata~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2736,7 +3776,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-required"
             title="Required">
-        <span>Metric<wbr>Name</span>
+        <span id="metricname~csharp">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2746,7 +3791,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>Period</span>
+        <span id="period~csharp">
+<span class="nx">
+Period
+<a class="anchorjs-link " href="#period~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2755,7 +3805,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>Stat</span>
+        <span id="stat~csharp">
+<span class="nx">
+Stat
+<a class="anchorjs-link " href="#stat~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2765,7 +3820,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dimensions</span>
+        <span id="dimensions~csharp">
+<span class="nx">
+Dimensions
+<a class="anchorjs-link " href="#dimensions~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -2774,7 +3834,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="namespace~csharp">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2784,7 +3849,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="unit~csharp">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#unit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2800,7 +3870,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>Metric<wbr>Name</span>
+        <span id="metricname~go">
+<span class="nx">
+Metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2810,7 +3885,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>Period</span>
+        <span id="period~go">
+<span class="nx">
+Period
+<a class="anchorjs-link " href="#period~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2819,7 +3899,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>Stat</span>
+        <span id="stat~go">
+<span class="nx">
+Stat
+<a class="anchorjs-link " href="#stat~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2829,7 +3914,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dimensions</span>
+        <span id="dimensions~go">
+<span class="nx">
+Dimensions
+<a class="anchorjs-link " href="#dimensions~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2838,7 +3928,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Namespace</span>
+        <span id="namespace~go">
+<span class="nx">
+Namespace
+<a class="anchorjs-link " href="#namespace~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2848,7 +3943,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>Unit</span>
+        <span id="unit~go">
+<span class="nx">
+Unit
+<a class="anchorjs-link " href="#unit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2864,7 +3964,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>metric<wbr>Name</span>
+        <span id="metricname~nodejs">
+<span class="nx">
+metric<wbr>Name
+<a class="anchorjs-link " href="#metricname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2874,7 +3979,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>period</span>
+        <span id="period~nodejs">
+<span class="nx">
+period
+<a class="anchorjs-link " href="#period~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2883,7 +3993,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>stat</span>
+        <span id="stat~nodejs">
+<span class="nx">
+stat
+<a class="anchorjs-link " href="#stat~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2893,7 +4008,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>dimensions</span>
+        <span id="dimensions~nodejs">
+<span class="nx">
+dimensions
+<a class="anchorjs-link " href="#dimensions~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2902,7 +4022,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="namespace~nodejs">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2912,7 +4037,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="unit~nodejs">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#unit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2928,7 +4058,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>metric_<wbr>name</span>
+        <span id="metric_name~python">
+<span class="nx">
+metric_<wbr>name
+<a class="anchorjs-link " href="#metric_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2938,7 +4073,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>period</span>
+        <span id="period~python">
+<span class="nx">
+period
+<a class="anchorjs-link " href="#period~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2947,7 +4087,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-required"
             title="Required">
-        <span>stat</span>
+        <span id="stat~python">
+<span class="nx">
+stat
+<a class="anchorjs-link " href="#stat~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2957,7 +4102,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>dimensions</span>
+        <span id="dimensions~python">
+<span class="nx">
+dimensions
+<a class="anchorjs-link " href="#dimensions~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2966,7 +4116,12 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
     <dt class="property-optional"
             title="Optional">
-        <span>namespace</span>
+        <span id="namespace~python">
+<span class="nx">
+namespace
+<a class="anchorjs-link " href="#namespace~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2976,7 +4131,12 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
 
     <dt class="property-optional"
             title="Optional">
-        <span>unit</span>
+        <span id="unit~python">
+<span class="nx">
+unit
+<a class="anchorjs-link " href="#unit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

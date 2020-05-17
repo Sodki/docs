@@ -69,19 +69,19 @@ const defaultCluster = new aws.redshift.Cluster("default", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allow_version_upgrade=None<span class="p">, </span>automated_snapshot_retention_period=None<span class="p">, </span>availability_zone=None<span class="p">, </span>cluster_identifier=None<span class="p">, </span>cluster_parameter_group_name=None<span class="p">, </span>cluster_public_key=None<span class="p">, </span>cluster_revision_number=None<span class="p">, </span>cluster_security_groups=None<span class="p">, </span>cluster_subnet_group_name=None<span class="p">, </span>cluster_type=None<span class="p">, </span>cluster_version=None<span class="p">, </span>database_name=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>encrypted=None<span class="p">, </span>endpoint=None<span class="p">, </span>enhanced_vpc_routing=None<span class="p">, </span>final_snapshot_identifier=None<span class="p">, </span>iam_roles=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>logging=None<span class="p">, </span>master_password=None<span class="p">, </span>master_username=None<span class="p">, </span>node_type=None<span class="p">, </span>number_of_nodes=None<span class="p">, </span>owner_account=None<span class="p">, </span>port=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>skip_final_snapshot=None<span class="p">, </span>snapshot_cluster_identifier=None<span class="p">, </span>snapshot_copy=None<span class="p">, </span>snapshot_identifier=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/redshift/#Cluster">Cluster</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>allow_version_upgrade=None<span class="p">, </span>automated_snapshot_retention_period=None<span class="p">, </span>availability_zone=None<span class="p">, </span>cluster_identifier=None<span class="p">, </span>cluster_parameter_group_name=None<span class="p">, </span>cluster_public_key=None<span class="p">, </span>cluster_revision_number=None<span class="p">, </span>cluster_security_groups=None<span class="p">, </span>cluster_subnet_group_name=None<span class="p">, </span>cluster_type=None<span class="p">, </span>cluster_version=None<span class="p">, </span>database_name=None<span class="p">, </span>elastic_ip=None<span class="p">, </span>encrypted=None<span class="p">, </span>endpoint=None<span class="p">, </span>enhanced_vpc_routing=None<span class="p">, </span>final_snapshot_identifier=None<span class="p">, </span>iam_roles=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>logging=None<span class="p">, </span>master_password=None<span class="p">, </span>master_username=None<span class="p">, </span>node_type=None<span class="p">, </span>number_of_nodes=None<span class="p">, </span>owner_account=None<span class="p">, </span>port=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>skip_final_snapshot=None<span class="p">, </span>snapshot_cluster_identifier=None<span class="p">, </span>snapshot_copy=None<span class="p">, </span>snapshot_identifier=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#Cluster">NewCluster</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.ClusterArgs.html">ClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.ClusterArgs.html">ClusterArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -247,7 +247,12 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Identifier</span>
+        <span id="clusteridentifier~csharp">
+<span class="nx">
+Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#clusteridentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -257,7 +262,12 @@ string.
 
     <dt class="property-required"
             title="Required">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -266,7 +276,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Version<wbr>Upgrade</span>
+        <span id="allowversionupgrade~csharp">
+<span class="nx">
+Allow<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#allowversionupgrade~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -275,7 +290,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automated<wbr>Snapshot<wbr>Retention<wbr>Period</span>
+        <span id="automatedsnapshotretentionperiod~csharp">
+<span class="nx">
+Automated<wbr>Snapshot<wbr>Retention<wbr>Period
+<a class="anchorjs-link " href="#automatedsnapshotretentionperiod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -284,7 +304,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -293,7 +318,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Parameter<wbr>Group<wbr>Name</span>
+        <span id="clusterparametergroupname~csharp">
+<span class="nx">
+Cluster<wbr>Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#clusterparametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -302,7 +332,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Public<wbr>Key</span>
+        <span id="clusterpublickey~csharp">
+<span class="nx">
+Cluster<wbr>Public<wbr>Key
+<a class="anchorjs-link " href="#clusterpublickey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -311,7 +346,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Revision<wbr>Number</span>
+        <span id="clusterrevisionnumber~csharp">
+<span class="nx">
+Cluster<wbr>Revision<wbr>Number
+<a class="anchorjs-link " href="#clusterrevisionnumber~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -320,7 +360,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Security<wbr>Groups</span>
+        <span id="clustersecuritygroups~csharp">
+<span class="nx">
+Cluster<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#clustersecuritygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -329,7 +374,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Subnet<wbr>Group<wbr>Name</span>
+        <span id="clustersubnetgroupname~csharp">
+<span class="nx">
+Cluster<wbr>Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#clustersubnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -338,7 +388,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Type</span>
+        <span id="clustertype~csharp">
+<span class="nx">
+Cluster<wbr>Type
+<a class="anchorjs-link " href="#clustertype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -347,7 +402,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Version</span>
+        <span id="clusterversion~csharp">
+<span class="nx">
+Cluster<wbr>Version
+<a class="anchorjs-link " href="#clusterversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -357,7 +417,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Database<wbr>Name</span>
+        <span id="databasename~csharp">
+<span class="nx">
+Database<wbr>Name
+<a class="anchorjs-link " href="#databasename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -367,7 +432,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="elasticip~csharp">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#elasticip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -376,7 +446,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -385,7 +460,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="endpoint~csharp">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#endpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -394,7 +474,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Vpc<wbr>Routing</span>
+        <span id="enhancedvpcrouting~csharp">
+<span class="nx">
+Enhanced<wbr>Vpc<wbr>Routing
+<a class="anchorjs-link " href="#enhancedvpcrouting~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -403,7 +488,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Final<wbr>Snapshot<wbr>Identifier</span>
+        <span id="finalsnapshotidentifier~csharp">
+<span class="nx">
+Final<wbr>Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#finalsnapshotidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -412,7 +502,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Roles</span>
+        <span id="iamroles~csharp">
+<span class="nx">
+Iam<wbr>Roles
+<a class="anchorjs-link " href="#iamroles~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -421,7 +516,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -430,7 +530,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging</span>
+        <span id="logging~csharp">
+<span class="nx">
+Logging
+<a class="anchorjs-link " href="#logging~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Cluster<wbr>Logging<wbr>Args</a></span>
     </dt>
@@ -439,7 +544,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Password</span>
+        <span id="masterpassword~csharp">
+<span class="nx">
+Master<wbr>Password
+<a class="anchorjs-link " href="#masterpassword~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -450,7 +560,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Username</span>
+        <span id="masterusername~csharp">
+<span class="nx">
+Master<wbr>Username
+<a class="anchorjs-link " href="#masterusername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -459,7 +574,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Of<wbr>Nodes</span>
+        <span id="numberofnodes~csharp">
+<span class="nx">
+Number<wbr>Of<wbr>Nodes
+<a class="anchorjs-link " href="#numberofnodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -468,7 +588,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Account</span>
+        <span id="owneraccount~csharp">
+<span class="nx">
+Owner<wbr>Account
+<a class="anchorjs-link " href="#owneraccount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -477,7 +602,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -487,7 +617,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Maintenance<wbr>Window</span>
+        <span id="preferredmaintenancewindow~csharp">
+<span class="nx">
+Preferred<wbr>Maintenance<wbr>Window
+<a class="anchorjs-link " href="#preferredmaintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -497,7 +632,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Publicly<wbr>Accessible</span>
+        <span id="publiclyaccessible~csharp">
+<span class="nx">
+Publicly<wbr>Accessible
+<a class="anchorjs-link " href="#publiclyaccessible~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -506,7 +646,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Skip<wbr>Final<wbr>Snapshot</span>
+        <span id="skipfinalsnapshot~csharp">
+<span class="nx">
+Skip<wbr>Final<wbr>Snapshot
+<a class="anchorjs-link " href="#skipfinalsnapshot~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -515,7 +660,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Cluster<wbr>Identifier</span>
+        <span id="snapshotclusteridentifier~csharp">
+<span class="nx">
+Snapshot<wbr>Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#snapshotclusteridentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -524,7 +674,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Copy</span>
+        <span id="snapshotcopy~csharp">
+<span class="nx">
+Snapshot<wbr>Copy
+<a class="anchorjs-link " href="#snapshotcopy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Cluster<wbr>Snapshot<wbr>Copy<wbr>Args</a></span>
     </dt>
@@ -533,7 +688,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Identifier</span>
+        <span id="snapshotidentifier~csharp">
+<span class="nx">
+Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#snapshotidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -542,7 +702,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -551,7 +716,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -567,7 +737,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Identifier</span>
+        <span id="clusteridentifier~go">
+<span class="nx">
+Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#clusteridentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -577,7 +752,12 @@ string.
 
     <dt class="property-required"
             title="Required">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -586,7 +766,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Version<wbr>Upgrade</span>
+        <span id="allowversionupgrade~go">
+<span class="nx">
+Allow<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#allowversionupgrade~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -595,7 +780,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automated<wbr>Snapshot<wbr>Retention<wbr>Period</span>
+        <span id="automatedsnapshotretentionperiod~go">
+<span class="nx">
+Automated<wbr>Snapshot<wbr>Retention<wbr>Period
+<a class="anchorjs-link " href="#automatedsnapshotretentionperiod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -604,7 +794,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -613,7 +808,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Parameter<wbr>Group<wbr>Name</span>
+        <span id="clusterparametergroupname~go">
+<span class="nx">
+Cluster<wbr>Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#clusterparametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -622,7 +822,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Public<wbr>Key</span>
+        <span id="clusterpublickey~go">
+<span class="nx">
+Cluster<wbr>Public<wbr>Key
+<a class="anchorjs-link " href="#clusterpublickey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -631,7 +836,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Revision<wbr>Number</span>
+        <span id="clusterrevisionnumber~go">
+<span class="nx">
+Cluster<wbr>Revision<wbr>Number
+<a class="anchorjs-link " href="#clusterrevisionnumber~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -640,7 +850,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Security<wbr>Groups</span>
+        <span id="clustersecuritygroups~go">
+<span class="nx">
+Cluster<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#clustersecuritygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -649,7 +864,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Subnet<wbr>Group<wbr>Name</span>
+        <span id="clustersubnetgroupname~go">
+<span class="nx">
+Cluster<wbr>Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#clustersubnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -658,7 +878,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Type</span>
+        <span id="clustertype~go">
+<span class="nx">
+Cluster<wbr>Type
+<a class="anchorjs-link " href="#clustertype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -667,7 +892,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Version</span>
+        <span id="clusterversion~go">
+<span class="nx">
+Cluster<wbr>Version
+<a class="anchorjs-link " href="#clusterversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -677,7 +907,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Database<wbr>Name</span>
+        <span id="databasename~go">
+<span class="nx">
+Database<wbr>Name
+<a class="anchorjs-link " href="#databasename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -687,7 +922,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="elasticip~go">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#elasticip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -696,7 +936,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -705,7 +950,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="endpoint~go">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#endpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -714,7 +964,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Vpc<wbr>Routing</span>
+        <span id="enhancedvpcrouting~go">
+<span class="nx">
+Enhanced<wbr>Vpc<wbr>Routing
+<a class="anchorjs-link " href="#enhancedvpcrouting~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -723,7 +978,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Final<wbr>Snapshot<wbr>Identifier</span>
+        <span id="finalsnapshotidentifier~go">
+<span class="nx">
+Final<wbr>Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#finalsnapshotidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -732,7 +992,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Roles</span>
+        <span id="iamroles~go">
+<span class="nx">
+Iam<wbr>Roles
+<a class="anchorjs-link " href="#iamroles~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -741,7 +1006,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -750,7 +1020,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging</span>
+        <span id="logging~go">
+<span class="nx">
+Logging
+<a class="anchorjs-link " href="#logging~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Cluster<wbr>Logging</a></span>
     </dt>
@@ -759,7 +1034,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Password</span>
+        <span id="masterpassword~go">
+<span class="nx">
+Master<wbr>Password
+<a class="anchorjs-link " href="#masterpassword~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -770,7 +1050,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Username</span>
+        <span id="masterusername~go">
+<span class="nx">
+Master<wbr>Username
+<a class="anchorjs-link " href="#masterusername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -779,7 +1064,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Of<wbr>Nodes</span>
+        <span id="numberofnodes~go">
+<span class="nx">
+Number<wbr>Of<wbr>Nodes
+<a class="anchorjs-link " href="#numberofnodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -788,7 +1078,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Account</span>
+        <span id="owneraccount~go">
+<span class="nx">
+Owner<wbr>Account
+<a class="anchorjs-link " href="#owneraccount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -797,7 +1092,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -807,7 +1107,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Maintenance<wbr>Window</span>
+        <span id="preferredmaintenancewindow~go">
+<span class="nx">
+Preferred<wbr>Maintenance<wbr>Window
+<a class="anchorjs-link " href="#preferredmaintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -817,7 +1122,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Publicly<wbr>Accessible</span>
+        <span id="publiclyaccessible~go">
+<span class="nx">
+Publicly<wbr>Accessible
+<a class="anchorjs-link " href="#publiclyaccessible~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -826,7 +1136,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Skip<wbr>Final<wbr>Snapshot</span>
+        <span id="skipfinalsnapshot~go">
+<span class="nx">
+Skip<wbr>Final<wbr>Snapshot
+<a class="anchorjs-link " href="#skipfinalsnapshot~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -835,7 +1150,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Cluster<wbr>Identifier</span>
+        <span id="snapshotclusteridentifier~go">
+<span class="nx">
+Snapshot<wbr>Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#snapshotclusteridentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -844,7 +1164,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Copy</span>
+        <span id="snapshotcopy~go">
+<span class="nx">
+Snapshot<wbr>Copy
+<a class="anchorjs-link " href="#snapshotcopy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Cluster<wbr>Snapshot<wbr>Copy</a></span>
     </dt>
@@ -853,7 +1178,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Identifier</span>
+        <span id="snapshotidentifier~go">
+<span class="nx">
+Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#snapshotidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -862,7 +1192,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -871,7 +1206,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -887,7 +1227,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Identifier</span>
+        <span id="clusteridentifier~nodejs">
+<span class="nx">
+cluster<wbr>Identifier
+<a class="anchorjs-link " href="#clusteridentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -897,7 +1242,12 @@ string.
 
     <dt class="property-required"
             title="Required">
-        <span>node<wbr>Type</span>
+        <span id="nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -906,7 +1256,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Version<wbr>Upgrade</span>
+        <span id="allowversionupgrade~nodejs">
+<span class="nx">
+allow<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#allowversionupgrade~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -915,7 +1270,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>automated<wbr>Snapshot<wbr>Retention<wbr>Period</span>
+        <span id="automatedsnapshotretentionperiod~nodejs">
+<span class="nx">
+automated<wbr>Snapshot<wbr>Retention<wbr>Period
+<a class="anchorjs-link " href="#automatedsnapshotretentionperiod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -924,7 +1284,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -933,7 +1298,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Parameter<wbr>Group<wbr>Name</span>
+        <span id="clusterparametergroupname~nodejs">
+<span class="nx">
+cluster<wbr>Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#clusterparametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -942,7 +1312,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Public<wbr>Key</span>
+        <span id="clusterpublickey~nodejs">
+<span class="nx">
+cluster<wbr>Public<wbr>Key
+<a class="anchorjs-link " href="#clusterpublickey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -951,7 +1326,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Revision<wbr>Number</span>
+        <span id="clusterrevisionnumber~nodejs">
+<span class="nx">
+cluster<wbr>Revision<wbr>Number
+<a class="anchorjs-link " href="#clusterrevisionnumber~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -960,7 +1340,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Security<wbr>Groups</span>
+        <span id="clustersecuritygroups~nodejs">
+<span class="nx">
+cluster<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#clustersecuritygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -969,7 +1354,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Subnet<wbr>Group<wbr>Name</span>
+        <span id="clustersubnetgroupname~nodejs">
+<span class="nx">
+cluster<wbr>Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#clustersubnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -978,7 +1368,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Type</span>
+        <span id="clustertype~nodejs">
+<span class="nx">
+cluster<wbr>Type
+<a class="anchorjs-link " href="#clustertype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -987,7 +1382,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Version</span>
+        <span id="clusterversion~nodejs">
+<span class="nx">
+cluster<wbr>Version
+<a class="anchorjs-link " href="#clusterversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -997,7 +1397,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>database<wbr>Name</span>
+        <span id="databasename~nodejs">
+<span class="nx">
+database<wbr>Name
+<a class="anchorjs-link " href="#databasename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1007,7 +1412,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Ip</span>
+        <span id="elasticip~nodejs">
+<span class="nx">
+elastic<wbr>Ip
+<a class="anchorjs-link " href="#elasticip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1016,7 +1426,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1025,7 +1440,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="endpoint~nodejs">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#endpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1034,7 +1454,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced<wbr>Vpc<wbr>Routing</span>
+        <span id="enhancedvpcrouting~nodejs">
+<span class="nx">
+enhanced<wbr>Vpc<wbr>Routing
+<a class="anchorjs-link " href="#enhancedvpcrouting~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1043,7 +1468,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>final<wbr>Snapshot<wbr>Identifier</span>
+        <span id="finalsnapshotidentifier~nodejs">
+<span class="nx">
+final<wbr>Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#finalsnapshotidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1052,7 +1482,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Roles</span>
+        <span id="iamroles~nodejs">
+<span class="nx">
+iam<wbr>Roles
+<a class="anchorjs-link " href="#iamroles~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1061,7 +1496,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1070,7 +1510,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging</span>
+        <span id="logging~nodejs">
+<span class="nx">
+logging
+<a class="anchorjs-link " href="#logging~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Cluster<wbr>Logging</a></span>
     </dt>
@@ -1079,7 +1524,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>master<wbr>Password</span>
+        <span id="masterpassword~nodejs">
+<span class="nx">
+master<wbr>Password
+<a class="anchorjs-link " href="#masterpassword~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1090,7 +1540,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>master<wbr>Username</span>
+        <span id="masterusername~nodejs">
+<span class="nx">
+master<wbr>Username
+<a class="anchorjs-link " href="#masterusername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1099,7 +1554,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Of<wbr>Nodes</span>
+        <span id="numberofnodes~nodejs">
+<span class="nx">
+number<wbr>Of<wbr>Nodes
+<a class="anchorjs-link " href="#numberofnodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1108,7 +1568,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner<wbr>Account</span>
+        <span id="owneraccount~nodejs">
+<span class="nx">
+owner<wbr>Account
+<a class="anchorjs-link " href="#owneraccount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1117,7 +1582,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1127,7 +1597,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred<wbr>Maintenance<wbr>Window</span>
+        <span id="preferredmaintenancewindow~nodejs">
+<span class="nx">
+preferred<wbr>Maintenance<wbr>Window
+<a class="anchorjs-link " href="#preferredmaintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1137,7 +1612,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>publicly<wbr>Accessible</span>
+        <span id="publiclyaccessible~nodejs">
+<span class="nx">
+publicly<wbr>Accessible
+<a class="anchorjs-link " href="#publiclyaccessible~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1146,7 +1626,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>skip<wbr>Final<wbr>Snapshot</span>
+        <span id="skipfinalsnapshot~nodejs">
+<span class="nx">
+skip<wbr>Final<wbr>Snapshot
+<a class="anchorjs-link " href="#skipfinalsnapshot~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1155,7 +1640,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Cluster<wbr>Identifier</span>
+        <span id="snapshotclusteridentifier~nodejs">
+<span class="nx">
+snapshot<wbr>Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#snapshotclusteridentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1164,7 +1654,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Copy</span>
+        <span id="snapshotcopy~nodejs">
+<span class="nx">
+snapshot<wbr>Copy
+<a class="anchorjs-link " href="#snapshotcopy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Cluster<wbr>Snapshot<wbr>Copy</a></span>
     </dt>
@@ -1173,7 +1668,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Identifier</span>
+        <span id="snapshotidentifier~nodejs">
+<span class="nx">
+snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#snapshotidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1182,7 +1682,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1191,7 +1696,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1207,7 +1717,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-required"
             title="Required">
-        <span>cluster_<wbr>identifier</span>
+        <span id="cluster_identifier~python">
+<span class="nx">
+cluster_<wbr>identifier
+<a class="anchorjs-link " href="#cluster_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1217,7 +1732,12 @@ string.
 
     <dt class="property-required"
             title="Required">
-        <span>node_<wbr>type</span>
+        <span id="node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1226,7 +1746,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>version_<wbr>upgrade</span>
+        <span id="allow_version_upgrade~python">
+<span class="nx">
+allow_<wbr>version_<wbr>upgrade
+<a class="anchorjs-link " href="#allow_version_upgrade~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1235,7 +1760,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>automated_<wbr>snapshot_<wbr>retention_<wbr>period</span>
+        <span id="automated_snapshot_retention_period~python">
+<span class="nx">
+automated_<wbr>snapshot_<wbr>retention_<wbr>period
+<a class="anchorjs-link " href="#automated_snapshot_retention_period~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1244,7 +1774,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1253,7 +1788,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>parameter_<wbr>group_<wbr>name</span>
+        <span id="cluster_parameter_group_name~python">
+<span class="nx">
+cluster_<wbr>parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#cluster_parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1262,7 +1802,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>public_<wbr>key</span>
+        <span id="cluster_public_key~python">
+<span class="nx">
+cluster_<wbr>public_<wbr>key
+<a class="anchorjs-link " href="#cluster_public_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1271,7 +1816,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>revision_<wbr>number</span>
+        <span id="cluster_revision_number~python">
+<span class="nx">
+cluster_<wbr>revision_<wbr>number
+<a class="anchorjs-link " href="#cluster_revision_number~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1280,7 +1830,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>security_<wbr>groups</span>
+        <span id="cluster_security_groups~python">
+<span class="nx">
+cluster_<wbr>security_<wbr>groups
+<a class="anchorjs-link " href="#cluster_security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1289,7 +1844,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>subnet_<wbr>group_<wbr>name</span>
+        <span id="cluster_subnet_group_name~python">
+<span class="nx">
+cluster_<wbr>subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#cluster_subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1298,7 +1858,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>type</span>
+        <span id="cluster_type~python">
+<span class="nx">
+cluster_<wbr>type
+<a class="anchorjs-link " href="#cluster_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1307,7 +1872,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>version</span>
+        <span id="cluster_version~python">
+<span class="nx">
+cluster_<wbr>version
+<a class="anchorjs-link " href="#cluster_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1317,7 +1887,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>database_<wbr>name</span>
+        <span id="database_name~python">
+<span class="nx">
+database_<wbr>name
+<a class="anchorjs-link " href="#database_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1327,7 +1902,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>ip</span>
+        <span id="elastic_ip~python">
+<span class="nx">
+elastic_<wbr>ip
+<a class="anchorjs-link " href="#elastic_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1336,7 +1916,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1345,7 +1930,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="endpoint~python">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1354,7 +1944,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced_<wbr>vpc_<wbr>routing</span>
+        <span id="enhanced_vpc_routing~python">
+<span class="nx">
+enhanced_<wbr>vpc_<wbr>routing
+<a class="anchorjs-link " href="#enhanced_vpc_routing~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1363,7 +1958,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>final_<wbr>snapshot_<wbr>identifier</span>
+        <span id="final_snapshot_identifier~python">
+<span class="nx">
+final_<wbr>snapshot_<wbr>identifier
+<a class="anchorjs-link " href="#final_snapshot_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1372,7 +1972,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>roles</span>
+        <span id="iam_roles~python">
+<span class="nx">
+iam_<wbr>roles
+<a class="anchorjs-link " href="#iam_roles~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1381,7 +1986,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1390,7 +2000,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging</span>
+        <span id="logging~python">
+<span class="nx">
+logging
+<a class="anchorjs-link " href="#logging~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Dict[Cluster<wbr>Logging]</a></span>
     </dt>
@@ -1399,7 +2014,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>master_<wbr>password</span>
+        <span id="master_password~python">
+<span class="nx">
+master_<wbr>password
+<a class="anchorjs-link " href="#master_password~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1410,7 +2030,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>master_<wbr>username</span>
+        <span id="master_username~python">
+<span class="nx">
+master_<wbr>username
+<a class="anchorjs-link " href="#master_username~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1419,7 +2044,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>number_<wbr>of_<wbr>nodes</span>
+        <span id="number_of_nodes~python">
+<span class="nx">
+number_<wbr>of_<wbr>nodes
+<a class="anchorjs-link " href="#number_of_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1428,7 +2058,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner_<wbr>account</span>
+        <span id="owner_account~python">
+<span class="nx">
+owner_<wbr>account
+<a class="anchorjs-link " href="#owner_account~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1437,7 +2072,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1447,7 +2087,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred_<wbr>maintenance_<wbr>window</span>
+        <span id="preferred_maintenance_window~python">
+<span class="nx">
+preferred_<wbr>maintenance_<wbr>window
+<a class="anchorjs-link " href="#preferred_maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1457,7 +2102,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>publicly_<wbr>accessible</span>
+        <span id="publicly_accessible~python">
+<span class="nx">
+publicly_<wbr>accessible
+<a class="anchorjs-link " href="#publicly_accessible~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1466,7 +2116,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>skip_<wbr>final_<wbr>snapshot</span>
+        <span id="skip_final_snapshot~python">
+<span class="nx">
+skip_<wbr>final_<wbr>snapshot
+<a class="anchorjs-link " href="#skip_final_snapshot~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1475,7 +2130,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>cluster_<wbr>identifier</span>
+        <span id="snapshot_cluster_identifier~python">
+<span class="nx">
+snapshot_<wbr>cluster_<wbr>identifier
+<a class="anchorjs-link " href="#snapshot_cluster_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1484,7 +2144,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>copy</span>
+        <span id="snapshot_copy~python">
+<span class="nx">
+snapshot_<wbr>copy
+<a class="anchorjs-link " href="#snapshot_copy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Dict[Cluster<wbr>Snapshot<wbr>Copy]</a></span>
     </dt>
@@ -1493,7 +2158,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>identifier</span>
+        <span id="snapshot_identifier~python">
+<span class="nx">
+snapshot_<wbr>identifier
+<a class="anchorjs-link " href="#snapshot_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1502,7 +2172,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1511,7 +2186,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1538,7 +2218,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1547,7 +2232,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Dns<wbr>Name</span>
+        <span id="dnsname~csharp">
+<span class="nx">
+Dns<wbr>Name
+<a class="anchorjs-link " href="#dnsname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1556,7 +2246,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1571,7 +2266,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1580,7 +2280,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Dns<wbr>Name</span>
+        <span id="dnsname~go">
+<span class="nx">
+Dns<wbr>Name
+<a class="anchorjs-link " href="#dnsname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1589,7 +2294,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1604,7 +2314,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1613,7 +2328,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>dns<wbr>Name</span>
+        <span id="dnsname~nodejs">
+<span class="nx">
+dns<wbr>Name
+<a class="anchorjs-link " href="#dnsname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1622,7 +2342,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1637,7 +2362,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1646,7 +2376,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>dns_<wbr>name</span>
+        <span id="dns_name~python">
+<span class="nx">
+dns_<wbr>name
+<a class="anchorjs-link " href="#dns_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1655,7 +2390,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1676,7 +2416,7 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#Cluster">Cluster</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/redshift/#Cluster">Cluster</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1684,11 +2424,11 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/redshift?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.RedShift.ClusterState.html">ClusterState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1796,7 +2536,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Version<wbr>Upgrade</span>
+        <span id="state_allowversionupgrade~csharp">
+<span class="nx">
+Allow<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#state_allowversionupgrade~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1805,7 +2550,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1814,7 +2564,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automated<wbr>Snapshot<wbr>Retention<wbr>Period</span>
+        <span id="state_automatedsnapshotretentionperiod~csharp">
+<span class="nx">
+Automated<wbr>Snapshot<wbr>Retention<wbr>Period
+<a class="anchorjs-link " href="#state_automatedsnapshotretentionperiod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1823,7 +2578,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~csharp">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1832,7 +2592,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Identifier</span>
+        <span id="state_clusteridentifier~csharp">
+<span class="nx">
+Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#state_clusteridentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1842,7 +2607,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_clusterparametergroupname~csharp">
+<span class="nx">
+Cluster<wbr>Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_clusterparametergroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1851,7 +2621,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Public<wbr>Key</span>
+        <span id="state_clusterpublickey~csharp">
+<span class="nx">
+Cluster<wbr>Public<wbr>Key
+<a class="anchorjs-link " href="#state_clusterpublickey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1860,7 +2635,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Revision<wbr>Number</span>
+        <span id="state_clusterrevisionnumber~csharp">
+<span class="nx">
+Cluster<wbr>Revision<wbr>Number
+<a class="anchorjs-link " href="#state_clusterrevisionnumber~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1869,7 +2649,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Security<wbr>Groups</span>
+        <span id="state_clustersecuritygroups~csharp">
+<span class="nx">
+Cluster<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#state_clustersecuritygroups~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1878,7 +2663,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_clustersubnetgroupname~csharp">
+<span class="nx">
+Cluster<wbr>Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_clustersubnetgroupname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1887,7 +2677,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Type</span>
+        <span id="state_clustertype~csharp">
+<span class="nx">
+Cluster<wbr>Type
+<a class="anchorjs-link " href="#state_clustertype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1896,7 +2691,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Version</span>
+        <span id="state_clusterversion~csharp">
+<span class="nx">
+Cluster<wbr>Version
+<a class="anchorjs-link " href="#state_clusterversion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1906,7 +2706,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Database<wbr>Name</span>
+        <span id="state_databasename~csharp">
+<span class="nx">
+Database<wbr>Name
+<a class="anchorjs-link " href="#state_databasename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1916,7 +2721,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dns<wbr>Name</span>
+        <span id="state_dnsname~csharp">
+<span class="nx">
+Dns<wbr>Name
+<a class="anchorjs-link " href="#state_dnsname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1925,7 +2735,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="state_elasticip~csharp">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#state_elasticip~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1934,7 +2749,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="state_encrypted~csharp">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#state_encrypted~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1943,7 +2763,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="state_endpoint~csharp">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#state_endpoint~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1952,7 +2777,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Vpc<wbr>Routing</span>
+        <span id="state_enhancedvpcrouting~csharp">
+<span class="nx">
+Enhanced<wbr>Vpc<wbr>Routing
+<a class="anchorjs-link " href="#state_enhancedvpcrouting~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1961,7 +2791,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Final<wbr>Snapshot<wbr>Identifier</span>
+        <span id="state_finalsnapshotidentifier~csharp">
+<span class="nx">
+Final<wbr>Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#state_finalsnapshotidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1970,7 +2805,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Roles</span>
+        <span id="state_iamroles~csharp">
+<span class="nx">
+Iam<wbr>Roles
+<a class="anchorjs-link " href="#state_iamroles~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1979,7 +2819,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1988,7 +2833,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging</span>
+        <span id="state_logging~csharp">
+<span class="nx">
+Logging
+<a class="anchorjs-link " href="#state_logging~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Cluster<wbr>Logging<wbr>Args</a></span>
     </dt>
@@ -1997,7 +2847,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Password</span>
+        <span id="state_masterpassword~csharp">
+<span class="nx">
+Master<wbr>Password
+<a class="anchorjs-link " href="#state_masterpassword~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2008,7 +2863,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Username</span>
+        <span id="state_masterusername~csharp">
+<span class="nx">
+Master<wbr>Username
+<a class="anchorjs-link " href="#state_masterusername~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2017,7 +2877,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2026,7 +2891,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Of<wbr>Nodes</span>
+        <span id="state_numberofnodes~csharp">
+<span class="nx">
+Number<wbr>Of<wbr>Nodes
+<a class="anchorjs-link " href="#state_numberofnodes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2035,7 +2905,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Account</span>
+        <span id="state_owneraccount~csharp">
+<span class="nx">
+Owner<wbr>Account
+<a class="anchorjs-link " href="#state_owneraccount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2044,7 +2919,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2054,7 +2934,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Maintenance<wbr>Window</span>
+        <span id="state_preferredmaintenancewindow~csharp">
+<span class="nx">
+Preferred<wbr>Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_preferredmaintenancewindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2064,7 +2949,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Publicly<wbr>Accessible</span>
+        <span id="state_publiclyaccessible~csharp">
+<span class="nx">
+Publicly<wbr>Accessible
+<a class="anchorjs-link " href="#state_publiclyaccessible~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2073,7 +2963,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Skip<wbr>Final<wbr>Snapshot</span>
+        <span id="state_skipfinalsnapshot~csharp">
+<span class="nx">
+Skip<wbr>Final<wbr>Snapshot
+<a class="anchorjs-link " href="#state_skipfinalsnapshot~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -2082,7 +2977,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Cluster<wbr>Identifier</span>
+        <span id="state_snapshotclusteridentifier~csharp">
+<span class="nx">
+Snapshot<wbr>Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#state_snapshotclusteridentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2091,7 +2991,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Copy</span>
+        <span id="state_snapshotcopy~csharp">
+<span class="nx">
+Snapshot<wbr>Copy
+<a class="anchorjs-link " href="#state_snapshotcopy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Cluster<wbr>Snapshot<wbr>Copy<wbr>Args</a></span>
     </dt>
@@ -2100,7 +3005,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Identifier</span>
+        <span id="state_snapshotidentifier~csharp">
+<span class="nx">
+Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#state_snapshotidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2109,7 +3019,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -2118,7 +3033,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~csharp">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2134,7 +3054,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Version<wbr>Upgrade</span>
+        <span id="state_allowversionupgrade~go">
+<span class="nx">
+Allow<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#state_allowversionupgrade~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2143,7 +3068,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2152,7 +3082,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Automated<wbr>Snapshot<wbr>Retention<wbr>Period</span>
+        <span id="state_automatedsnapshotretentionperiod~go">
+<span class="nx">
+Automated<wbr>Snapshot<wbr>Retention<wbr>Period
+<a class="anchorjs-link " href="#state_automatedsnapshotretentionperiod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2161,7 +3096,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Availability<wbr>Zone</span>
+        <span id="state_availabilityzone~go">
+<span class="nx">
+Availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2170,7 +3110,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Identifier</span>
+        <span id="state_clusteridentifier~go">
+<span class="nx">
+Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#state_clusteridentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2180,7 +3125,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_clusterparametergroupname~go">
+<span class="nx">
+Cluster<wbr>Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_clusterparametergroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2189,7 +3139,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Public<wbr>Key</span>
+        <span id="state_clusterpublickey~go">
+<span class="nx">
+Cluster<wbr>Public<wbr>Key
+<a class="anchorjs-link " href="#state_clusterpublickey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2198,7 +3153,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Revision<wbr>Number</span>
+        <span id="state_clusterrevisionnumber~go">
+<span class="nx">
+Cluster<wbr>Revision<wbr>Number
+<a class="anchorjs-link " href="#state_clusterrevisionnumber~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2207,7 +3167,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Security<wbr>Groups</span>
+        <span id="state_clustersecuritygroups~go">
+<span class="nx">
+Cluster<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#state_clustersecuritygroups~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2216,7 +3181,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_clustersubnetgroupname~go">
+<span class="nx">
+Cluster<wbr>Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_clustersubnetgroupname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2225,7 +3195,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Type</span>
+        <span id="state_clustertype~go">
+<span class="nx">
+Cluster<wbr>Type
+<a class="anchorjs-link " href="#state_clustertype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2234,7 +3209,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>Version</span>
+        <span id="state_clusterversion~go">
+<span class="nx">
+Cluster<wbr>Version
+<a class="anchorjs-link " href="#state_clusterversion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2244,7 +3224,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Database<wbr>Name</span>
+        <span id="state_databasename~go">
+<span class="nx">
+Database<wbr>Name
+<a class="anchorjs-link " href="#state_databasename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2254,7 +3239,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dns<wbr>Name</span>
+        <span id="state_dnsname~go">
+<span class="nx">
+Dns<wbr>Name
+<a class="anchorjs-link " href="#state_dnsname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2263,7 +3253,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Elastic<wbr>Ip</span>
+        <span id="state_elasticip~go">
+<span class="nx">
+Elastic<wbr>Ip
+<a class="anchorjs-link " href="#state_elasticip~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2272,7 +3267,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Encrypted</span>
+        <span id="state_encrypted~go">
+<span class="nx">
+Encrypted
+<a class="anchorjs-link " href="#state_encrypted~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2281,7 +3281,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint</span>
+        <span id="state_endpoint~go">
+<span class="nx">
+Endpoint
+<a class="anchorjs-link " href="#state_endpoint~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2290,7 +3295,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enhanced<wbr>Vpc<wbr>Routing</span>
+        <span id="state_enhancedvpcrouting~go">
+<span class="nx">
+Enhanced<wbr>Vpc<wbr>Routing
+<a class="anchorjs-link " href="#state_enhancedvpcrouting~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2299,7 +3309,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Final<wbr>Snapshot<wbr>Identifier</span>
+        <span id="state_finalsnapshotidentifier~go">
+<span class="nx">
+Final<wbr>Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#state_finalsnapshotidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2308,7 +3323,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Iam<wbr>Roles</span>
+        <span id="state_iamroles~go">
+<span class="nx">
+Iam<wbr>Roles
+<a class="anchorjs-link " href="#state_iamroles~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2317,7 +3337,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2326,7 +3351,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Logging</span>
+        <span id="state_logging~go">
+<span class="nx">
+Logging
+<a class="anchorjs-link " href="#state_logging~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Cluster<wbr>Logging</a></span>
     </dt>
@@ -2335,7 +3365,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Password</span>
+        <span id="state_masterpassword~go">
+<span class="nx">
+Master<wbr>Password
+<a class="anchorjs-link " href="#state_masterpassword~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2346,7 +3381,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Master<wbr>Username</span>
+        <span id="state_masterusername~go">
+<span class="nx">
+Master<wbr>Username
+<a class="anchorjs-link " href="#state_masterusername~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2355,7 +3395,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Node<wbr>Type</span>
+        <span id="state_nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2364,7 +3409,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Number<wbr>Of<wbr>Nodes</span>
+        <span id="state_numberofnodes~go">
+<span class="nx">
+Number<wbr>Of<wbr>Nodes
+<a class="anchorjs-link " href="#state_numberofnodes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2373,7 +3423,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Account</span>
+        <span id="state_owneraccount~go">
+<span class="nx">
+Owner<wbr>Account
+<a class="anchorjs-link " href="#state_owneraccount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2382,7 +3437,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Port</span>
+        <span id="state_port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#state_port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2392,7 +3452,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>Preferred<wbr>Maintenance<wbr>Window</span>
+        <span id="state_preferredmaintenancewindow~go">
+<span class="nx">
+Preferred<wbr>Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_preferredmaintenancewindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2402,7 +3467,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Publicly<wbr>Accessible</span>
+        <span id="state_publiclyaccessible~go">
+<span class="nx">
+Publicly<wbr>Accessible
+<a class="anchorjs-link " href="#state_publiclyaccessible~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2411,7 +3481,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Skip<wbr>Final<wbr>Snapshot</span>
+        <span id="state_skipfinalsnapshot~go">
+<span class="nx">
+Skip<wbr>Final<wbr>Snapshot
+<a class="anchorjs-link " href="#state_skipfinalsnapshot~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2420,7 +3495,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Cluster<wbr>Identifier</span>
+        <span id="state_snapshotclusteridentifier~go">
+<span class="nx">
+Snapshot<wbr>Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#state_snapshotclusteridentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2429,7 +3509,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Copy</span>
+        <span id="state_snapshotcopy~go">
+<span class="nx">
+Snapshot<wbr>Copy
+<a class="anchorjs-link " href="#state_snapshotcopy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Cluster<wbr>Snapshot<wbr>Copy</a></span>
     </dt>
@@ -2438,7 +3523,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Snapshot<wbr>Identifier</span>
+        <span id="state_snapshotidentifier~go">
+<span class="nx">
+Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#state_snapshotidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2447,7 +3537,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -2456,7 +3551,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~go">
+<span class="nx">
+Vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2472,7 +3572,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Version<wbr>Upgrade</span>
+        <span id="state_allowversionupgrade~nodejs">
+<span class="nx">
+allow<wbr>Version<wbr>Upgrade
+<a class="anchorjs-link " href="#state_allowversionupgrade~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2481,7 +3586,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2490,7 +3600,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>automated<wbr>Snapshot<wbr>Retention<wbr>Period</span>
+        <span id="state_automatedsnapshotretentionperiod~nodejs">
+<span class="nx">
+automated<wbr>Snapshot<wbr>Retention<wbr>Period
+<a class="anchorjs-link " href="#state_automatedsnapshotretentionperiod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2499,7 +3614,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability<wbr>Zone</span>
+        <span id="state_availabilityzone~nodejs">
+<span class="nx">
+availability<wbr>Zone
+<a class="anchorjs-link " href="#state_availabilityzone~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2508,7 +3628,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Identifier</span>
+        <span id="state_clusteridentifier~nodejs">
+<span class="nx">
+cluster<wbr>Identifier
+<a class="anchorjs-link " href="#state_clusteridentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2518,7 +3643,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Parameter<wbr>Group<wbr>Name</span>
+        <span id="state_clusterparametergroupname~nodejs">
+<span class="nx">
+cluster<wbr>Parameter<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_clusterparametergroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2527,7 +3657,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Public<wbr>Key</span>
+        <span id="state_clusterpublickey~nodejs">
+<span class="nx">
+cluster<wbr>Public<wbr>Key
+<a class="anchorjs-link " href="#state_clusterpublickey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2536,7 +3671,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Revision<wbr>Number</span>
+        <span id="state_clusterrevisionnumber~nodejs">
+<span class="nx">
+cluster<wbr>Revision<wbr>Number
+<a class="anchorjs-link " href="#state_clusterrevisionnumber~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2545,7 +3685,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Security<wbr>Groups</span>
+        <span id="state_clustersecuritygroups~nodejs">
+<span class="nx">
+cluster<wbr>Security<wbr>Groups
+<a class="anchorjs-link " href="#state_clustersecuritygroups~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2554,7 +3699,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Subnet<wbr>Group<wbr>Name</span>
+        <span id="state_clustersubnetgroupname~nodejs">
+<span class="nx">
+cluster<wbr>Subnet<wbr>Group<wbr>Name
+<a class="anchorjs-link " href="#state_clustersubnetgroupname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2563,7 +3713,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Type</span>
+        <span id="state_clustertype~nodejs">
+<span class="nx">
+cluster<wbr>Type
+<a class="anchorjs-link " href="#state_clustertype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2572,7 +3727,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>Version</span>
+        <span id="state_clusterversion~nodejs">
+<span class="nx">
+cluster<wbr>Version
+<a class="anchorjs-link " href="#state_clusterversion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2582,7 +3742,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>database<wbr>Name</span>
+        <span id="state_databasename~nodejs">
+<span class="nx">
+database<wbr>Name
+<a class="anchorjs-link " href="#state_databasename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2592,7 +3757,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>dns<wbr>Name</span>
+        <span id="state_dnsname~nodejs">
+<span class="nx">
+dns<wbr>Name
+<a class="anchorjs-link " href="#state_dnsname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2601,7 +3771,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic<wbr>Ip</span>
+        <span id="state_elasticip~nodejs">
+<span class="nx">
+elastic<wbr>Ip
+<a class="anchorjs-link " href="#state_elasticip~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2610,7 +3785,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="state_encrypted~nodejs">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#state_encrypted~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2619,7 +3799,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="state_endpoint~nodejs">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#state_endpoint~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2628,7 +3813,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced<wbr>Vpc<wbr>Routing</span>
+        <span id="state_enhancedvpcrouting~nodejs">
+<span class="nx">
+enhanced<wbr>Vpc<wbr>Routing
+<a class="anchorjs-link " href="#state_enhancedvpcrouting~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2637,7 +3827,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>final<wbr>Snapshot<wbr>Identifier</span>
+        <span id="state_finalsnapshotidentifier~nodejs">
+<span class="nx">
+final<wbr>Snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#state_finalsnapshotidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2646,7 +3841,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam<wbr>Roles</span>
+        <span id="state_iamroles~nodejs">
+<span class="nx">
+iam<wbr>Roles
+<a class="anchorjs-link " href="#state_iamroles~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2655,7 +3855,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2664,7 +3869,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging</span>
+        <span id="state_logging~nodejs">
+<span class="nx">
+logging
+<a class="anchorjs-link " href="#state_logging~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Cluster<wbr>Logging</a></span>
     </dt>
@@ -2673,7 +3883,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>master<wbr>Password</span>
+        <span id="state_masterpassword~nodejs">
+<span class="nx">
+master<wbr>Password
+<a class="anchorjs-link " href="#state_masterpassword~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2684,7 +3899,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>master<wbr>Username</span>
+        <span id="state_masterusername~nodejs">
+<span class="nx">
+master<wbr>Username
+<a class="anchorjs-link " href="#state_masterusername~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2693,7 +3913,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>node<wbr>Type</span>
+        <span id="state_nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#state_nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2702,7 +3927,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>number<wbr>Of<wbr>Nodes</span>
+        <span id="state_numberofnodes~nodejs">
+<span class="nx">
+number<wbr>Of<wbr>Nodes
+<a class="anchorjs-link " href="#state_numberofnodes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2711,7 +3941,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner<wbr>Account</span>
+        <span id="state_owneraccount~nodejs">
+<span class="nx">
+owner<wbr>Account
+<a class="anchorjs-link " href="#state_owneraccount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2720,7 +3955,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2730,7 +3970,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred<wbr>Maintenance<wbr>Window</span>
+        <span id="state_preferredmaintenancewindow~nodejs">
+<span class="nx">
+preferred<wbr>Maintenance<wbr>Window
+<a class="anchorjs-link " href="#state_preferredmaintenancewindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2740,7 +3985,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>publicly<wbr>Accessible</span>
+        <span id="state_publiclyaccessible~nodejs">
+<span class="nx">
+publicly<wbr>Accessible
+<a class="anchorjs-link " href="#state_publiclyaccessible~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2749,7 +3999,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>skip<wbr>Final<wbr>Snapshot</span>
+        <span id="state_skipfinalsnapshot~nodejs">
+<span class="nx">
+skip<wbr>Final<wbr>Snapshot
+<a class="anchorjs-link " href="#state_skipfinalsnapshot~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2758,7 +4013,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Cluster<wbr>Identifier</span>
+        <span id="state_snapshotclusteridentifier~nodejs">
+<span class="nx">
+snapshot<wbr>Cluster<wbr>Identifier
+<a class="anchorjs-link " href="#state_snapshotclusteridentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2767,7 +4027,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Copy</span>
+        <span id="state_snapshotcopy~nodejs">
+<span class="nx">
+snapshot<wbr>Copy
+<a class="anchorjs-link " href="#state_snapshotcopy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Cluster<wbr>Snapshot<wbr>Copy</a></span>
     </dt>
@@ -2776,7 +4041,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot<wbr>Identifier</span>
+        <span id="state_snapshotidentifier~nodejs">
+<span class="nx">
+snapshot<wbr>Identifier
+<a class="anchorjs-link " href="#state_snapshotidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2785,7 +4055,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -2794,7 +4069,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc<wbr>Security<wbr>Group<wbr>Ids</span>
+        <span id="state_vpcsecuritygroupids~nodejs">
+<span class="nx">
+vpc<wbr>Security<wbr>Group<wbr>Ids
+<a class="anchorjs-link " href="#state_vpcsecuritygroupids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2810,7 +4090,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>version_<wbr>upgrade</span>
+        <span id="state_allow_version_upgrade~python">
+<span class="nx">
+allow_<wbr>version_<wbr>upgrade
+<a class="anchorjs-link " href="#state_allow_version_upgrade~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2819,7 +4104,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2828,7 +4118,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>automated_<wbr>snapshot_<wbr>retention_<wbr>period</span>
+        <span id="state_automated_snapshot_retention_period~python">
+<span class="nx">
+automated_<wbr>snapshot_<wbr>retention_<wbr>period
+<a class="anchorjs-link " href="#state_automated_snapshot_retention_period~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -2837,7 +4132,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>availability_<wbr>zone</span>
+        <span id="state_availability_zone~python">
+<span class="nx">
+availability_<wbr>zone
+<a class="anchorjs-link " href="#state_availability_zone~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2846,7 +4146,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>identifier</span>
+        <span id="state_cluster_identifier~python">
+<span class="nx">
+cluster_<wbr>identifier
+<a class="anchorjs-link " href="#state_cluster_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2856,7 +4161,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>parameter_<wbr>group_<wbr>name</span>
+        <span id="state_cluster_parameter_group_name~python">
+<span class="nx">
+cluster_<wbr>parameter_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_cluster_parameter_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2865,7 +4175,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>public_<wbr>key</span>
+        <span id="state_cluster_public_key~python">
+<span class="nx">
+cluster_<wbr>public_<wbr>key
+<a class="anchorjs-link " href="#state_cluster_public_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2874,7 +4189,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>revision_<wbr>number</span>
+        <span id="state_cluster_revision_number~python">
+<span class="nx">
+cluster_<wbr>revision_<wbr>number
+<a class="anchorjs-link " href="#state_cluster_revision_number~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2883,7 +4203,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>security_<wbr>groups</span>
+        <span id="state_cluster_security_groups~python">
+<span class="nx">
+cluster_<wbr>security_<wbr>groups
+<a class="anchorjs-link " href="#state_cluster_security_groups~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2892,7 +4217,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>subnet_<wbr>group_<wbr>name</span>
+        <span id="state_cluster_subnet_group_name~python">
+<span class="nx">
+cluster_<wbr>subnet_<wbr>group_<wbr>name
+<a class="anchorjs-link " href="#state_cluster_subnet_group_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2901,7 +4231,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>type</span>
+        <span id="state_cluster_type~python">
+<span class="nx">
+cluster_<wbr>type
+<a class="anchorjs-link " href="#state_cluster_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2910,7 +4245,12 @@ string.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>version</span>
+        <span id="state_cluster_version~python">
+<span class="nx">
+cluster_<wbr>version
+<a class="anchorjs-link " href="#state_cluster_version~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2920,7 +4260,12 @@ The version selected runs on all the nodes in the cluster.
 
     <dt class="property-optional"
             title="Optional">
-        <span>database_<wbr>name</span>
+        <span id="state_database_name~python">
+<span class="nx">
+database_<wbr>name
+<a class="anchorjs-link " href="#state_database_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2930,7 +4275,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>dns_<wbr>name</span>
+        <span id="state_dns_name~python">
+<span class="nx">
+dns_<wbr>name
+<a class="anchorjs-link " href="#state_dns_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2939,7 +4289,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>elastic_<wbr>ip</span>
+        <span id="state_elastic_ip~python">
+<span class="nx">
+elastic_<wbr>ip
+<a class="anchorjs-link " href="#state_elastic_ip~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2948,7 +4303,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>encrypted</span>
+        <span id="state_encrypted~python">
+<span class="nx">
+encrypted
+<a class="anchorjs-link " href="#state_encrypted~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2957,7 +4317,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint</span>
+        <span id="state_endpoint~python">
+<span class="nx">
+endpoint
+<a class="anchorjs-link " href="#state_endpoint~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2966,7 +4331,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>enhanced_<wbr>vpc_<wbr>routing</span>
+        <span id="state_enhanced_vpc_routing~python">
+<span class="nx">
+enhanced_<wbr>vpc_<wbr>routing
+<a class="anchorjs-link " href="#state_enhanced_vpc_routing~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2975,7 +4345,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>final_<wbr>snapshot_<wbr>identifier</span>
+        <span id="state_final_snapshot_identifier~python">
+<span class="nx">
+final_<wbr>snapshot_<wbr>identifier
+<a class="anchorjs-link " href="#state_final_snapshot_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2984,7 +4359,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>iam_<wbr>roles</span>
+        <span id="state_iam_roles~python">
+<span class="nx">
+iam_<wbr>roles
+<a class="anchorjs-link " href="#state_iam_roles~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -2993,7 +4373,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="state_kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#state_kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3002,7 +4387,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>logging</span>
+        <span id="state_logging~python">
+<span class="nx">
+logging
+<a class="anchorjs-link " href="#state_logging~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogging">Dict[Cluster<wbr>Logging]</a></span>
     </dt>
@@ -3011,7 +4401,12 @@ If you do not provide a name, Amazon Redshift will create a default database cal
 
     <dt class="property-optional"
             title="Optional">
-        <span>master_<wbr>password</span>
+        <span id="state_master_password~python">
+<span class="nx">
+master_<wbr>password
+<a class="anchorjs-link " href="#state_master_password~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3022,7 +4417,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>master_<wbr>username</span>
+        <span id="state_master_username~python">
+<span class="nx">
+master_<wbr>username
+<a class="anchorjs-link " href="#state_master_username~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3031,7 +4431,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>node_<wbr>type</span>
+        <span id="state_node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#state_node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3040,7 +4445,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>number_<wbr>of_<wbr>nodes</span>
+        <span id="state_number_of_nodes~python">
+<span class="nx">
+number_<wbr>of_<wbr>nodes
+<a class="anchorjs-link " href="#state_number_of_nodes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3049,7 +4459,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner_<wbr>account</span>
+        <span id="state_owner_account~python">
+<span class="nx">
+owner_<wbr>account
+<a class="anchorjs-link " href="#state_owner_account~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3058,7 +4473,12 @@ contain at least one uppercase letter, one lowercase letter, and one number.
 
     <dt class="property-optional"
             title="Optional">
-        <span>port</span>
+        <span id="state_port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#state_port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -3068,7 +4488,12 @@ The cluster is accessible only via the JDBC and ODBC connection strings. Part of
 
     <dt class="property-optional"
             title="Optional">
-        <span>preferred_<wbr>maintenance_<wbr>window</span>
+        <span id="state_preferred_maintenance_window~python">
+<span class="nx">
+preferred_<wbr>maintenance_<wbr>window
+<a class="anchorjs-link " href="#state_preferred_maintenance_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3078,7 +4503,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>publicly_<wbr>accessible</span>
+        <span id="state_publicly_accessible~python">
+<span class="nx">
+publicly_<wbr>accessible
+<a class="anchorjs-link " href="#state_publicly_accessible~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3087,7 +4517,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>skip_<wbr>final_<wbr>snapshot</span>
+        <span id="state_skip_final_snapshot~python">
+<span class="nx">
+skip_<wbr>final_<wbr>snapshot
+<a class="anchorjs-link " href="#state_skip_final_snapshot~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3096,7 +4531,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>cluster_<wbr>identifier</span>
+        <span id="state_snapshot_cluster_identifier~python">
+<span class="nx">
+snapshot_<wbr>cluster_<wbr>identifier
+<a class="anchorjs-link " href="#state_snapshot_cluster_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3105,7 +4545,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>copy</span>
+        <span id="state_snapshot_copy~python">
+<span class="nx">
+snapshot_<wbr>copy
+<a class="anchorjs-link " href="#state_snapshot_copy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clustersnapshotcopy">Dict[Cluster<wbr>Snapshot<wbr>Copy]</a></span>
     </dt>
@@ -3114,7 +4559,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>snapshot_<wbr>identifier</span>
+        <span id="state_snapshot_identifier~python">
+<span class="nx">
+snapshot_<wbr>identifier
+<a class="anchorjs-link " href="#state_snapshot_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3123,7 +4573,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -3132,7 +4587,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>vpc_<wbr>security_<wbr>group_<wbr>ids</span>
+        <span id="state_vpc_security_group_ids~python">
+<span class="nx">
+vpc_<wbr>security_<wbr>group_<wbr>ids
+<a class="anchorjs-link " href="#state_vpc_security_group_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -3174,7 +4634,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-required"
             title="Required">
-        <span>Enable</span>
+        <span id="enable~csharp">
+<span class="nx">
+Enable
+<a class="anchorjs-link " href="#enable~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -3183,7 +4648,12 @@ Format: ddd:hh24:mi-ddd:hh24:mi
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket<wbr>Name</span>
+        <span id="bucketname~csharp">
+<span class="nx">
+Bucket<wbr>Name
+<a class="anchorjs-link " href="#bucketname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3193,7 +4663,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Key<wbr>Prefix</span>
+        <span id="s3keyprefix~csharp">
+<span class="nx">
+S3Key<wbr>Prefix
+<a class="anchorjs-link " href="#s3keyprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3209,7 +4684,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>Enable</span>
+        <span id="enable~go">
+<span class="nx">
+Enable
+<a class="anchorjs-link " href="#enable~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -3218,7 +4698,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>Bucket<wbr>Name</span>
+        <span id="bucketname~go">
+<span class="nx">
+Bucket<wbr>Name
+<a class="anchorjs-link " href="#bucketname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3228,7 +4713,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Key<wbr>Prefix</span>
+        <span id="s3keyprefix~go">
+<span class="nx">
+S3Key<wbr>Prefix
+<a class="anchorjs-link " href="#s3keyprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3244,7 +4734,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>enable</span>
+        <span id="enable~nodejs">
+<span class="nx">
+enable
+<a class="anchorjs-link " href="#enable~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -3253,7 +4748,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket<wbr>Name</span>
+        <span id="bucketname~nodejs">
+<span class="nx">
+bucket<wbr>Name
+<a class="anchorjs-link " href="#bucketname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3263,7 +4763,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Key<wbr>Prefix</span>
+        <span id="s3keyprefix~nodejs">
+<span class="nx">
+s3Key<wbr>Prefix
+<a class="anchorjs-link " href="#s3keyprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3279,7 +4784,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>enable</span>
+        <span id="enable~python">
+<span class="nx">
+enable
+<a class="anchorjs-link " href="#enable~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -3288,7 +4798,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>bucket_<wbr>name</span>
+        <span id="bucket_name~python">
+<span class="nx">
+bucket_<wbr>name
+<a class="anchorjs-link " href="#bucket_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3298,7 +4813,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3_<wbr>key_<wbr>prefix</span>
+        <span id="s3_key_prefix~python">
+<span class="nx">
+s3_<wbr>key_<wbr>prefix
+<a class="anchorjs-link " href="#s3_key_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3332,7 +4852,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>Destination<wbr>Region</span>
+        <span id="destinationregion~csharp">
+<span class="nx">
+Destination<wbr>Region
+<a class="anchorjs-link " href="#destinationregion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3341,7 +4866,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>Grant<wbr>Name</span>
+        <span id="grantname~csharp">
+<span class="nx">
+Grant<wbr>Name
+<a class="anchorjs-link " href="#grantname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -3350,7 +4880,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retention<wbr>Period</span>
+        <span id="retentionperiod~csharp">
+<span class="nx">
+Retention<wbr>Period
+<a class="anchorjs-link " href="#retentionperiod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -3366,7 +4901,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>Destination<wbr>Region</span>
+        <span id="destinationregion~go">
+<span class="nx">
+Destination<wbr>Region
+<a class="anchorjs-link " href="#destinationregion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3375,7 +4915,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>Grant<wbr>Name</span>
+        <span id="grantname~go">
+<span class="nx">
+Grant<wbr>Name
+<a class="anchorjs-link " href="#grantname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -3384,7 +4929,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>Retention<wbr>Period</span>
+        <span id="retentionperiod~go">
+<span class="nx">
+Retention<wbr>Period
+<a class="anchorjs-link " href="#retentionperiod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -3400,7 +4950,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>destination<wbr>Region</span>
+        <span id="destinationregion~nodejs">
+<span class="nx">
+destination<wbr>Region
+<a class="anchorjs-link " href="#destinationregion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3409,7 +4964,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>grant<wbr>Name</span>
+        <span id="grantname~nodejs">
+<span class="nx">
+grant<wbr>Name
+<a class="anchorjs-link " href="#grantname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -3418,7 +4978,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>retention<wbr>Period</span>
+        <span id="retentionperiod~nodejs">
+<span class="nx">
+retention<wbr>Period
+<a class="anchorjs-link " href="#retentionperiod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -3434,7 +4999,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-required"
             title="Required">
-        <span>destination<wbr>Region</span>
+        <span id="destinationregion~python">
+<span class="nx">
+destination<wbr>Region
+<a class="anchorjs-link " href="#destinationregion~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3443,7 +5013,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>grant<wbr>Name</span>
+        <span id="grantname~python">
+<span class="nx">
+grant<wbr>Name
+<a class="anchorjs-link " href="#grantname~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -3452,7 +5027,12 @@ For more information on the permissions required for the bucket, please read the
 
     <dt class="property-optional"
             title="Optional">
-        <span>retention_<wbr>period</span>
+        <span id="retention_period~python">
+<span class="nx">
+retention_<wbr>period
+<a class="anchorjs-link " href="#retention_period~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>

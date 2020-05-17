@@ -68,19 +68,19 @@ const defaultDefaultVpc = new aws.ec2.DefaultVpc("default", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpc">DefaultVpc</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpcArgs">DefaultVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpc">DefaultVpc</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpcArgs">DefaultVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DefaultVpc</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>enable_classiclink=None<span class="p">, </span>enable_classiclink_dns_support=None<span class="p">, </span>enable_dns_hostnames=None<span class="p">, </span>enable_dns_support=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/ec2/#DefaultVpc">DefaultVpc</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>enable_classiclink=None<span class="p">, </span>enable_classiclink_dns_support=None<span class="p">, </span>enable_dns_hostnames=None<span class="p">, </span>enable_dns_support=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDefaultVpc<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpcArgs">DefaultVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpc">DefaultVpc</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpc">NewDefaultVpc</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpcArgs">DefaultVpcArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpc">DefaultVpc</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpc.html">DefaultVpc</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpcArgs.html">DefaultVpcArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpc.html">DefaultVpc</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpcArgs.html">DefaultVpcArgs</a></span><span class="p">? </span><span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -246,7 +246,12 @@ The DefaultVpc resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink</span>
+        <span id="enableclassiclink~csharp">
+<span class="nx">
+Enable<wbr>Classiclink
+<a class="anchorjs-link " href="#enableclassiclink~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -257,7 +262,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink<wbr>Dns<wbr>Support</span>
+        <span id="enableclassiclinkdnssupport~csharp">
+<span class="nx">
+Enable<wbr>Classiclink<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enableclassiclinkdnssupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -265,7 +275,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="enablednshostnames~csharp">
+<span class="nx">
+Enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#enablednshostnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -274,7 +289,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Support</span>
+        <span id="enablednssupport~csharp">
+<span class="nx">
+Enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enablednssupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -283,7 +303,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -299,7 +324,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink</span>
+        <span id="enableclassiclink~go">
+<span class="nx">
+Enable<wbr>Classiclink
+<a class="anchorjs-link " href="#enableclassiclink~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -310,7 +340,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink<wbr>Dns<wbr>Support</span>
+        <span id="enableclassiclinkdnssupport~go">
+<span class="nx">
+Enable<wbr>Classiclink<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enableclassiclinkdnssupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -318,7 +353,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="enablednshostnames~go">
+<span class="nx">
+Enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#enablednshostnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -327,7 +367,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Support</span>
+        <span id="enablednssupport~go">
+<span class="nx">
+Enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enablednssupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -336,7 +381,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -352,7 +402,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Classiclink</span>
+        <span id="enableclassiclink~nodejs">
+<span class="nx">
+enable<wbr>Classiclink
+<a class="anchorjs-link " href="#enableclassiclink~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -363,7 +418,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Classiclink<wbr>Dns<wbr>Support</span>
+        <span id="enableclassiclinkdnssupport~nodejs">
+<span class="nx">
+enable<wbr>Classiclink<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enableclassiclinkdnssupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -371,7 +431,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="enablednshostnames~nodejs">
+<span class="nx">
+enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#enablednshostnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -380,7 +445,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Dns<wbr>Support</span>
+        <span id="enablednssupport~nodejs">
+<span class="nx">
+enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#enablednssupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -389,7 +459,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -405,7 +480,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>classiclink</span>
+        <span id="enable_classiclink~python">
+<span class="nx">
+enable_<wbr>classiclink
+<a class="anchorjs-link " href="#enable_classiclink~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -416,7 +496,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>classiclink_<wbr>dns_<wbr>support</span>
+        <span id="enable_classiclink_dns_support~python">
+<span class="nx">
+enable_<wbr>classiclink_<wbr>dns_<wbr>support
+<a class="anchorjs-link " href="#enable_classiclink_dns_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -424,7 +509,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>dns_<wbr>hostnames</span>
+        <span id="enable_dns_hostnames~python">
+<span class="nx">
+enable_<wbr>dns_<wbr>hostnames
+<a class="anchorjs-link " href="#enable_dns_hostnames~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -433,7 +523,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>dns_<wbr>support</span>
+        <span id="enable_dns_support~python">
+<span class="nx">
+enable_<wbr>dns_<wbr>support
+<a class="anchorjs-link " href="#enable_dns_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -442,7 +537,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -469,7 +569,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -478,7 +583,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block</span>
+        <span id="assigngeneratedipv6cidrblock~csharp">
+<span class="nx">
+Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#assigngeneratedipv6cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -488,7 +598,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -497,7 +612,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Network<wbr>Acl<wbr>Id</span>
+        <span id="defaultnetworkaclid~csharp">
+<span class="nx">
+Default<wbr>Network<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#defaultnetworkaclid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -506,7 +626,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="defaultroutetableid~csharp">
+<span class="nx">
+Default<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#defaultroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -515,7 +640,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="defaultsecuritygroupid~csharp">
+<span class="nx">
+Default<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#defaultsecuritygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -524,7 +654,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~csharp">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -532,7 +667,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -540,7 +680,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Tenancy</span>
+        <span id="instancetenancy~csharp">
+<span class="nx">
+Instance<wbr>Tenancy
+<a class="anchorjs-link " href="#instancetenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -549,7 +694,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Ipv6Association<wbr>Id</span>
+        <span id="ipv6associationid~csharp">
+<span class="nx">
+Ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#ipv6associationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -558,7 +708,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Ipv6Cidr<wbr>Block</span>
+        <span id="ipv6cidrblock~csharp">
+<span class="nx">
+Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#ipv6cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -567,7 +722,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="mainroutetableid~csharp">
+<span class="nx">
+Main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#mainroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -578,7 +738,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~csharp">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -594,7 +759,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -603,7 +773,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block</span>
+        <span id="assigngeneratedipv6cidrblock~go">
+<span class="nx">
+Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#assigngeneratedipv6cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -613,7 +788,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Cidr<wbr>Block</span>
+        <span id="cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -622,7 +802,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Network<wbr>Acl<wbr>Id</span>
+        <span id="defaultnetworkaclid~go">
+<span class="nx">
+Default<wbr>Network<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#defaultnetworkaclid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -631,7 +816,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="defaultroutetableid~go">
+<span class="nx">
+Default<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#defaultroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -640,7 +830,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Default<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="defaultsecuritygroupid~go">
+<span class="nx">
+Default<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#defaultsecuritygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -649,7 +844,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~go">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -657,7 +857,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -665,7 +870,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Instance<wbr>Tenancy</span>
+        <span id="instancetenancy~go">
+<span class="nx">
+Instance<wbr>Tenancy
+<a class="anchorjs-link " href="#instancetenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -674,7 +884,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Ipv6Association<wbr>Id</span>
+        <span id="ipv6associationid~go">
+<span class="nx">
+Ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#ipv6associationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -683,7 +898,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Ipv6Cidr<wbr>Block</span>
+        <span id="ipv6cidrblock~go">
+<span class="nx">
+Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#ipv6cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -692,7 +912,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>Main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="mainroutetableid~go">
+<span class="nx">
+Main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#mainroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -703,7 +928,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>Owner<wbr>Id</span>
+        <span id="ownerid~go">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -719,7 +949,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -728,7 +963,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block</span>
+        <span id="assigngeneratedipv6cidrblock~nodejs">
+<span class="nx">
+assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#assigngeneratedipv6cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -738,7 +978,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>cidr<wbr>Block</span>
+        <span id="cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -747,7 +992,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>default<wbr>Network<wbr>Acl<wbr>Id</span>
+        <span id="defaultnetworkaclid~nodejs">
+<span class="nx">
+default<wbr>Network<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#defaultnetworkaclid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -756,7 +1006,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>default<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="defaultroutetableid~nodejs">
+<span class="nx">
+default<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#defaultroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -765,7 +1020,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>default<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="defaultsecuritygroupid~nodejs">
+<span class="nx">
+default<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#defaultsecuritygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -774,7 +1034,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>dhcp<wbr>Options<wbr>Id</span>
+        <span id="dhcpoptionsid~nodejs">
+<span class="nx">
+dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#dhcpoptionsid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -782,7 +1047,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -790,7 +1060,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>instance<wbr>Tenancy</span>
+        <span id="instancetenancy~nodejs">
+<span class="nx">
+instance<wbr>Tenancy
+<a class="anchorjs-link " href="#instancetenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -799,7 +1074,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>ipv6Association<wbr>Id</span>
+        <span id="ipv6associationid~nodejs">
+<span class="nx">
+ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#ipv6associationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -808,7 +1088,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>ipv6Cidr<wbr>Block</span>
+        <span id="ipv6cidrblock~nodejs">
+<span class="nx">
+ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#ipv6cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -817,7 +1102,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="mainroutetableid~nodejs">
+<span class="nx">
+main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#mainroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -828,7 +1118,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>owner<wbr>Id</span>
+        <span id="ownerid~nodejs">
+<span class="nx">
+owner<wbr>Id
+<a class="anchorjs-link " href="#ownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -844,7 +1139,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -853,7 +1153,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>assign_<wbr>generated_<wbr>ipv6_<wbr>cidr_<wbr>block</span>
+        <span id="assign_generated_ipv6_cidr_block~python">
+<span class="nx">
+assign_<wbr>generated_<wbr>ipv6_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#assign_generated_ipv6_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -863,7 +1168,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>cidr_<wbr>block</span>
+        <span id="cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -872,7 +1182,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>default_<wbr>network_<wbr>acl_<wbr>id</span>
+        <span id="default_network_acl_id~python">
+<span class="nx">
+default_<wbr>network_<wbr>acl_<wbr>id
+<a class="anchorjs-link " href="#default_network_acl_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -881,7 +1196,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>default_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="default_route_table_id~python">
+<span class="nx">
+default_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#default_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -890,7 +1210,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>default_<wbr>security_<wbr>group_<wbr>id</span>
+        <span id="default_security_group_id~python">
+<span class="nx">
+default_<wbr>security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#default_security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -899,7 +1224,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>dhcp_<wbr>options_<wbr>id</span>
+        <span id="dhcp_options_id~python">
+<span class="nx">
+dhcp_<wbr>options_<wbr>id
+<a class="anchorjs-link " href="#dhcp_options_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -907,7 +1237,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -915,7 +1250,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>instance_<wbr>tenancy</span>
+        <span id="instance_tenancy~python">
+<span class="nx">
+instance_<wbr>tenancy
+<a class="anchorjs-link " href="#instance_tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -924,7 +1264,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>ipv6_<wbr>association_<wbr>id</span>
+        <span id="ipv6_association_id~python">
+<span class="nx">
+ipv6_<wbr>association_<wbr>id
+<a class="anchorjs-link " href="#ipv6_association_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -933,7 +1278,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>ipv6_<wbr>cidr_<wbr>block</span>
+        <span id="ipv6_cidr_block~python">
+<span class="nx">
+ipv6_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#ipv6_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -942,7 +1292,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-"
             title="">
-        <span>main_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="main_route_table_id~python">
+<span class="nx">
+main_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#main_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -953,7 +1308,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-"
             title="">
-        <span>owner_<wbr>id</span>
+        <span id="owner_id~python">
+<span class="nx">
+owner_<wbr>id
+<a class="anchorjs-link " href="#owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -975,7 +1335,7 @@ Get an existing DefaultVpc resource's state with the given name, ID, and optiona
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpcState">DefaultVpcState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpc">DefaultVpc</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpcState">DefaultVpcState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#DefaultVpc">DefaultVpc</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -983,11 +1343,11 @@ Get an existing DefaultVpc resource's state with the given name, ID, and optiona
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDefaultVpc<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpcState">DefaultVpcState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpc">DefaultVpc</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDefaultVpc<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpcState">DefaultVpcState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#DefaultVpc">DefaultVpc</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpc.html">DefaultVpc</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpcState.html">DefaultVpcState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpc.html">DefaultVpc</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.DefaultVpcState.html">DefaultVpcState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1095,7 +1455,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1104,7 +1469,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block</span>
+        <span id="state_assigngeneratedipv6cidrblock~csharp">
+<span class="nx">
+Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_assigngeneratedipv6cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1114,7 +1484,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Block</span>
+        <span id="state_cidrblock~csharp">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1123,7 +1498,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Network<wbr>Acl<wbr>Id</span>
+        <span id="state_defaultnetworkaclid~csharp">
+<span class="nx">
+Default<wbr>Network<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#state_defaultnetworkaclid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1132,7 +1512,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="state_defaultroutetableid~csharp">
+<span class="nx">
+Default<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#state_defaultroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1141,7 +1526,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="state_defaultsecuritygroupid~csharp">
+<span class="nx">
+Default<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_defaultsecuritygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1150,7 +1540,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="state_dhcpoptionsid~csharp">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#state_dhcpoptionsid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1158,7 +1553,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink</span>
+        <span id="state_enableclassiclink~csharp">
+<span class="nx">
+Enable<wbr>Classiclink
+<a class="anchorjs-link " href="#state_enableclassiclink~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1169,7 +1569,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink<wbr>Dns<wbr>Support</span>
+        <span id="state_enableclassiclinkdnssupport~csharp">
+<span class="nx">
+Enable<wbr>Classiclink<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#state_enableclassiclinkdnssupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1177,7 +1582,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="state_enablednshostnames~csharp">
+<span class="nx">
+Enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#state_enablednshostnames~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1186,7 +1596,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Support</span>
+        <span id="state_enablednssupport~csharp">
+<span class="nx">
+Enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#state_enablednssupport~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1195,7 +1610,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Tenancy</span>
+        <span id="state_instancetenancy~csharp">
+<span class="nx">
+Instance<wbr>Tenancy
+<a class="anchorjs-link " href="#state_instancetenancy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1204,7 +1624,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Association<wbr>Id</span>
+        <span id="state_ipv6associationid~csharp">
+<span class="nx">
+Ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#state_ipv6associationid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1213,7 +1638,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Cidr<wbr>Block</span>
+        <span id="state_ipv6cidrblock~csharp">
+<span class="nx">
+Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_ipv6cidrblock~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1222,7 +1652,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="state_mainroutetableid~csharp">
+<span class="nx">
+Main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#state_mainroutetableid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1233,7 +1668,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Id</span>
+        <span id="state_ownerid~csharp">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#state_ownerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1242,7 +1682,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1258,7 +1703,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1267,7 +1717,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block</span>
+        <span id="state_assigngeneratedipv6cidrblock~go">
+<span class="nx">
+Assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_assigngeneratedipv6cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1277,7 +1732,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cidr<wbr>Block</span>
+        <span id="state_cidrblock~go">
+<span class="nx">
+Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1286,7 +1746,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Network<wbr>Acl<wbr>Id</span>
+        <span id="state_defaultnetworkaclid~go">
+<span class="nx">
+Default<wbr>Network<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#state_defaultnetworkaclid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1295,7 +1760,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="state_defaultroutetableid~go">
+<span class="nx">
+Default<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#state_defaultroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1304,7 +1774,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Default<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="state_defaultsecuritygroupid~go">
+<span class="nx">
+Default<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_defaultsecuritygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1313,7 +1788,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Dhcp<wbr>Options<wbr>Id</span>
+        <span id="state_dhcpoptionsid~go">
+<span class="nx">
+Dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#state_dhcpoptionsid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1321,7 +1801,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink</span>
+        <span id="state_enableclassiclink~go">
+<span class="nx">
+Enable<wbr>Classiclink
+<a class="anchorjs-link " href="#state_enableclassiclink~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1332,7 +1817,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Classiclink<wbr>Dns<wbr>Support</span>
+        <span id="state_enableclassiclinkdnssupport~go">
+<span class="nx">
+Enable<wbr>Classiclink<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#state_enableclassiclinkdnssupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1340,7 +1830,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="state_enablednshostnames~go">
+<span class="nx">
+Enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#state_enablednshostnames~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1349,7 +1844,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Dns<wbr>Support</span>
+        <span id="state_enablednssupport~go">
+<span class="nx">
+Enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#state_enablednssupport~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1358,7 +1858,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Instance<wbr>Tenancy</span>
+        <span id="state_instancetenancy~go">
+<span class="nx">
+Instance<wbr>Tenancy
+<a class="anchorjs-link " href="#state_instancetenancy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1367,7 +1872,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Association<wbr>Id</span>
+        <span id="state_ipv6associationid~go">
+<span class="nx">
+Ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#state_ipv6associationid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1376,7 +1886,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ipv6Cidr<wbr>Block</span>
+        <span id="state_ipv6cidrblock~go">
+<span class="nx">
+Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_ipv6cidrblock~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1385,7 +1900,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>Main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="state_mainroutetableid~go">
+<span class="nx">
+Main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#state_mainroutetableid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1396,7 +1916,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>Owner<wbr>Id</span>
+        <span id="state_ownerid~go">
+<span class="nx">
+Owner<wbr>Id
+<a class="anchorjs-link " href="#state_ownerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1405,7 +1930,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1421,7 +1951,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1430,7 +1965,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block</span>
+        <span id="state_assigngeneratedipv6cidrblock~nodejs">
+<span class="nx">
+assign<wbr>Generated<wbr>Ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_assigngeneratedipv6cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1440,7 +1980,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr<wbr>Block</span>
+        <span id="state_cidrblock~nodejs">
+<span class="nx">
+cidr<wbr>Block
+<a class="anchorjs-link " href="#state_cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1449,7 +1994,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Network<wbr>Acl<wbr>Id</span>
+        <span id="state_defaultnetworkaclid~nodejs">
+<span class="nx">
+default<wbr>Network<wbr>Acl<wbr>Id
+<a class="anchorjs-link " href="#state_defaultnetworkaclid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1458,7 +2008,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="state_defaultroutetableid~nodejs">
+<span class="nx">
+default<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#state_defaultroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1467,7 +2022,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>default<wbr>Security<wbr>Group<wbr>Id</span>
+        <span id="state_defaultsecuritygroupid~nodejs">
+<span class="nx">
+default<wbr>Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#state_defaultsecuritygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1476,7 +2036,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>dhcp<wbr>Options<wbr>Id</span>
+        <span id="state_dhcpoptionsid~nodejs">
+<span class="nx">
+dhcp<wbr>Options<wbr>Id
+<a class="anchorjs-link " href="#state_dhcpoptionsid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1484,7 +2049,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Classiclink</span>
+        <span id="state_enableclassiclink~nodejs">
+<span class="nx">
+enable<wbr>Classiclink
+<a class="anchorjs-link " href="#state_enableclassiclink~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1495,7 +2065,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Classiclink<wbr>Dns<wbr>Support</span>
+        <span id="state_enableclassiclinkdnssupport~nodejs">
+<span class="nx">
+enable<wbr>Classiclink<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#state_enableclassiclinkdnssupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1503,7 +2078,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Dns<wbr>Hostnames</span>
+        <span id="state_enablednshostnames~nodejs">
+<span class="nx">
+enable<wbr>Dns<wbr>Hostnames
+<a class="anchorjs-link " href="#state_enablednshostnames~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1512,7 +2092,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Dns<wbr>Support</span>
+        <span id="state_enablednssupport~nodejs">
+<span class="nx">
+enable<wbr>Dns<wbr>Support
+<a class="anchorjs-link " href="#state_enablednssupport~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1521,7 +2106,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance<wbr>Tenancy</span>
+        <span id="state_instancetenancy~nodejs">
+<span class="nx">
+instance<wbr>Tenancy
+<a class="anchorjs-link " href="#state_instancetenancy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1530,7 +2120,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Association<wbr>Id</span>
+        <span id="state_ipv6associationid~nodejs">
+<span class="nx">
+ipv6Association<wbr>Id
+<a class="anchorjs-link " href="#state_ipv6associationid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1539,7 +2134,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6Cidr<wbr>Block</span>
+        <span id="state_ipv6cidrblock~nodejs">
+<span class="nx">
+ipv6Cidr<wbr>Block
+<a class="anchorjs-link " href="#state_ipv6cidrblock~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1548,7 +2148,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>main<wbr>Route<wbr>Table<wbr>Id</span>
+        <span id="state_mainroutetableid~nodejs">
+<span class="nx">
+main<wbr>Route<wbr>Table<wbr>Id
+<a class="anchorjs-link " href="#state_mainroutetableid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1559,7 +2164,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner<wbr>Id</span>
+        <span id="state_ownerid~nodejs">
+<span class="nx">
+owner<wbr>Id
+<a class="anchorjs-link " href="#state_ownerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1568,7 +2178,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1584,7 +2199,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1593,7 +2213,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>assign_<wbr>generated_<wbr>ipv6_<wbr>cidr_<wbr>block</span>
+        <span id="state_assign_generated_ipv6_cidr_block~python">
+<span class="nx">
+assign_<wbr>generated_<wbr>ipv6_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#state_assign_generated_ipv6_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1603,7 +2228,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>cidr_<wbr>block</span>
+        <span id="state_cidr_block~python">
+<span class="nx">
+cidr_<wbr>block
+<a class="anchorjs-link " href="#state_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1612,7 +2242,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>network_<wbr>acl_<wbr>id</span>
+        <span id="state_default_network_acl_id~python">
+<span class="nx">
+default_<wbr>network_<wbr>acl_<wbr>id
+<a class="anchorjs-link " href="#state_default_network_acl_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1621,7 +2256,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="state_default_route_table_id~python">
+<span class="nx">
+default_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#state_default_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1630,7 +2270,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>default_<wbr>security_<wbr>group_<wbr>id</span>
+        <span id="state_default_security_group_id~python">
+<span class="nx">
+default_<wbr>security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#state_default_security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1639,7 +2284,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>dhcp_<wbr>options_<wbr>id</span>
+        <span id="state_dhcp_options_id~python">
+<span class="nx">
+dhcp_<wbr>options_<wbr>id
+<a class="anchorjs-link " href="#state_dhcp_options_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1647,7 +2297,12 @@ block with a /56 prefix length for the VPC was assigned
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>classiclink</span>
+        <span id="state_enable_classiclink~python">
+<span class="nx">
+enable_<wbr>classiclink
+<a class="anchorjs-link " href="#state_enable_classiclink~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1658,7 +2313,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>classiclink_<wbr>dns_<wbr>support</span>
+        <span id="state_enable_classiclink_dns_support~python">
+<span class="nx">
+enable_<wbr>classiclink_<wbr>dns_<wbr>support
+<a class="anchorjs-link " href="#state_enable_classiclink_dns_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1666,7 +2326,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>dns_<wbr>hostnames</span>
+        <span id="state_enable_dns_hostnames~python">
+<span class="nx">
+enable_<wbr>dns_<wbr>hostnames
+<a class="anchorjs-link " href="#state_enable_dns_hostnames~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1675,7 +2340,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>dns_<wbr>support</span>
+        <span id="state_enable_dns_support~python">
+<span class="nx">
+enable_<wbr>dns_<wbr>support
+<a class="anchorjs-link " href="#state_enable_dns_support~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1684,7 +2354,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>instance_<wbr>tenancy</span>
+        <span id="state_instance_tenancy~python">
+<span class="nx">
+instance_<wbr>tenancy
+<a class="anchorjs-link " href="#state_instance_tenancy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1693,7 +2368,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>association_<wbr>id</span>
+        <span id="state_ipv6_association_id~python">
+<span class="nx">
+ipv6_<wbr>association_<wbr>id
+<a class="anchorjs-link " href="#state_ipv6_association_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1702,7 +2382,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>ipv6_<wbr>cidr_<wbr>block</span>
+        <span id="state_ipv6_cidr_block~python">
+<span class="nx">
+ipv6_<wbr>cidr_<wbr>block
+<a class="anchorjs-link " href="#state_ipv6_cidr_block~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1711,7 +2396,12 @@ See the [ClassicLink documentation](https://docs.aws.amazon.com/AWSEC2/latest/Us
 
     <dt class="property-optional"
             title="Optional">
-        <span>main_<wbr>route_<wbr>table_<wbr>id</span>
+        <span id="state_main_route_table_id~python">
+<span class="nx">
+main_<wbr>route_<wbr>table_<wbr>id
+<a class="anchorjs-link " href="#state_main_route_table_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1722,7 +2412,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>owner_<wbr>id</span>
+        <span id="state_owner_id~python">
+<span class="nx">
+owner_<wbr>id
+<a class="anchorjs-link " href="#state_owner_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1731,7 +2426,12 @@ this VPC. Note that you can change a VPC's main route table by using an
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>

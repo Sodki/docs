@@ -301,19 +301,19 @@ const exampleRecord = new aws.route53.Record("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainName">DomainName</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainNameArgs">DomainNameArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainName">DomainName</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainNameArgs">DomainNameArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DomainName</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>certificate_arn=None<span class="p">, </span>certificate_body=None<span class="p">, </span>certificate_chain=None<span class="p">, </span>certificate_name=None<span class="p">, </span>certificate_private_key=None<span class="p">, </span>domain_name=None<span class="p">, </span>endpoint_configuration=None<span class="p">, </span>regional_certificate_arn=None<span class="p">, </span>regional_certificate_name=None<span class="p">, </span>security_policy=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigateway/#DomainName">DomainName</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>certificate_arn=None<span class="p">, </span>certificate_body=None<span class="p">, </span>certificate_chain=None<span class="p">, </span>certificate_name=None<span class="p">, </span>certificate_private_key=None<span class="p">, </span>domain_name=None<span class="p">, </span>endpoint_configuration=None<span class="p">, </span>regional_certificate_arn=None<span class="p">, </span>regional_certificate_name=None<span class="p">, </span>security_policy=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDomainName<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameArgs">DomainNameArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">DomainName</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">NewDomainName</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameArgs">DomainNameArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">DomainName</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainName.html">DomainName</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainNameArgs.html">DomainNameArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainName.html">DomainName</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainNameArgs.html">DomainNameArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -479,7 +479,12 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Domain</span>
+        <span id="domain~csharp">
+<span class="nx">
+Domain
+<a class="anchorjs-link " href="#domain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -488,7 +493,12 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Arn</span>
+        <span id="certificatearn~csharp">
+<span class="nx">
+Certificate<wbr>Arn
+<a class="anchorjs-link " href="#certificatearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -497,7 +507,12 @@ The DomainName resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Body</span>
+        <span id="certificatebody~csharp">
+<span class="nx">
+Certificate<wbr>Body
+<a class="anchorjs-link " href="#certificatebody~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -508,7 +523,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Chain</span>
+        <span id="certificatechain~csharp">
+<span class="nx">
+Certificate<wbr>Chain
+<a class="anchorjs-link " href="#certificatechain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -520,7 +540,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Name</span>
+        <span id="certificatename~csharp">
+<span class="nx">
+Certificate<wbr>Name
+<a class="anchorjs-link " href="#certificatename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -531,7 +556,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Private<wbr>Key</span>
+        <span id="certificateprivatekey~csharp">
+<span class="nx">
+Certificate<wbr>Private<wbr>Key
+<a class="anchorjs-link " href="#certificateprivatekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -541,7 +571,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint<wbr>Configuration</span>
+        <span id="endpointconfiguration~csharp">
+<span class="nx">
+Endpoint<wbr>Configuration
+<a class="anchorjs-link " href="#endpointconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -550,7 +585,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Arn</span>
+        <span id="regionalcertificatearn~csharp">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#regionalcertificatearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -559,7 +599,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Name</span>
+        <span id="regionalcertificatename~csharp">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Name
+<a class="anchorjs-link " href="#regionalcertificatename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -569,7 +614,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Policy</span>
+        <span id="securitypolicy~csharp">
+<span class="nx">
+Security<wbr>Policy
+<a class="anchorjs-link " href="#securitypolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -578,7 +628,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -594,7 +649,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-required"
             title="Required">
-        <span>Domain<wbr>Name</span>
+        <span id="domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -603,7 +663,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Arn</span>
+        <span id="certificatearn~go">
+<span class="nx">
+Certificate<wbr>Arn
+<a class="anchorjs-link " href="#certificatearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -612,7 +677,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Body</span>
+        <span id="certificatebody~go">
+<span class="nx">
+Certificate<wbr>Body
+<a class="anchorjs-link " href="#certificatebody~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -623,7 +693,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Chain</span>
+        <span id="certificatechain~go">
+<span class="nx">
+Certificate<wbr>Chain
+<a class="anchorjs-link " href="#certificatechain~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -635,7 +710,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Name</span>
+        <span id="certificatename~go">
+<span class="nx">
+Certificate<wbr>Name
+<a class="anchorjs-link " href="#certificatename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -646,7 +726,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Private<wbr>Key</span>
+        <span id="certificateprivatekey~go">
+<span class="nx">
+Certificate<wbr>Private<wbr>Key
+<a class="anchorjs-link " href="#certificateprivatekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -656,7 +741,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint<wbr>Configuration</span>
+        <span id="endpointconfiguration~go">
+<span class="nx">
+Endpoint<wbr>Configuration
+<a class="anchorjs-link " href="#endpointconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
@@ -665,7 +755,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Arn</span>
+        <span id="regionalcertificatearn~go">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#regionalcertificatearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -674,7 +769,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Name</span>
+        <span id="regionalcertificatename~go">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Name
+<a class="anchorjs-link " href="#regionalcertificatename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -684,7 +784,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Policy</span>
+        <span id="securitypolicy~go">
+<span class="nx">
+Security<wbr>Policy
+<a class="anchorjs-link " href="#securitypolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -693,7 +798,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -709,7 +819,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-required"
             title="Required">
-        <span>domain<wbr>Name</span>
+        <span id="domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -718,7 +833,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Arn</span>
+        <span id="certificatearn~nodejs">
+<span class="nx">
+certificate<wbr>Arn
+<a class="anchorjs-link " href="#certificatearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -727,7 +847,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Body</span>
+        <span id="certificatebody~nodejs">
+<span class="nx">
+certificate<wbr>Body
+<a class="anchorjs-link " href="#certificatebody~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -738,7 +863,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Chain</span>
+        <span id="certificatechain~nodejs">
+<span class="nx">
+certificate<wbr>Chain
+<a class="anchorjs-link " href="#certificatechain~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -750,7 +880,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Name</span>
+        <span id="certificatename~nodejs">
+<span class="nx">
+certificate<wbr>Name
+<a class="anchorjs-link " href="#certificatename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -761,7 +896,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Private<wbr>Key</span>
+        <span id="certificateprivatekey~nodejs">
+<span class="nx">
+certificate<wbr>Private<wbr>Key
+<a class="anchorjs-link " href="#certificateprivatekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -771,7 +911,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint<wbr>Configuration</span>
+        <span id="endpointconfiguration~nodejs">
+<span class="nx">
+endpoint<wbr>Configuration
+<a class="anchorjs-link " href="#endpointconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
@@ -780,7 +925,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional<wbr>Certificate<wbr>Arn</span>
+        <span id="regionalcertificatearn~nodejs">
+<span class="nx">
+regional<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#regionalcertificatearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -789,7 +939,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional<wbr>Certificate<wbr>Name</span>
+        <span id="regionalcertificatename~nodejs">
+<span class="nx">
+regional<wbr>Certificate<wbr>Name
+<a class="anchorjs-link " href="#regionalcertificatename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -799,7 +954,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Policy</span>
+        <span id="securitypolicy~nodejs">
+<span class="nx">
+security<wbr>Policy
+<a class="anchorjs-link " href="#securitypolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -808,7 +968,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -824,7 +989,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-required"
             title="Required">
-        <span>domain_<wbr>name</span>
+        <span id="domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -833,7 +1003,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>arn</span>
+        <span id="certificate_arn~python">
+<span class="nx">
+certificate_<wbr>arn
+<a class="anchorjs-link " href="#certificate_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -842,7 +1017,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>body</span>
+        <span id="certificate_body~python">
+<span class="nx">
+certificate_<wbr>body
+<a class="anchorjs-link " href="#certificate_body~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -853,7 +1033,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>chain</span>
+        <span id="certificate_chain~python">
+<span class="nx">
+certificate_<wbr>chain
+<a class="anchorjs-link " href="#certificate_chain~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -865,7 +1050,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>name</span>
+        <span id="certificate_name~python">
+<span class="nx">
+certificate_<wbr>name
+<a class="anchorjs-link " href="#certificate_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -876,7 +1066,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>private_<wbr>key</span>
+        <span id="certificate_private_key~python">
+<span class="nx">
+certificate_<wbr>private_<wbr>key
+<a class="anchorjs-link " href="#certificate_private_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -886,7 +1081,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint_<wbr>configuration</span>
+        <span id="endpoint_configuration~python">
+<span class="nx">
+endpoint_<wbr>configuration
+<a class="anchorjs-link " href="#endpoint_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Dict[Domain<wbr>Name<wbr>Endpoint<wbr>Configuration]</a></span>
     </dt>
@@ -895,7 +1095,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional_<wbr>certificate_<wbr>arn</span>
+        <span id="regional_certificate_arn~python">
+<span class="nx">
+regional_<wbr>certificate_<wbr>arn
+<a class="anchorjs-link " href="#regional_certificate_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -904,7 +1109,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional_<wbr>certificate_<wbr>name</span>
+        <span id="regional_certificate_name~python">
+<span class="nx">
+regional_<wbr>certificate_<wbr>name
+<a class="anchorjs-link " href="#regional_certificate_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -914,7 +1124,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>policy</span>
+        <span id="security_policy~python">
+<span class="nx">
+security_<wbr>policy
+<a class="anchorjs-link " href="#security_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -923,7 +1138,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -950,7 +1170,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -959,7 +1184,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Certificate<wbr>Upload<wbr>Date</span>
+        <span id="certificateuploaddate~csharp">
+<span class="nx">
+Certificate<wbr>Upload<wbr>Date
+<a class="anchorjs-link " href="#certificateuploaddate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -968,7 +1198,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Cloudfront<wbr>Domain<wbr>Name</span>
+        <span id="cloudfrontdomainname~csharp">
+<span class="nx">
+Cloudfront<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#cloudfrontdomainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -978,7 +1213,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-"
             title="">
-        <span>Cloudfront<wbr>Zone<wbr>Id</span>
+        <span id="cloudfrontzoneid~csharp">
+<span class="nx">
+Cloudfront<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#cloudfrontzoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -988,7 +1228,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -996,7 +1241,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Regional<wbr>Domain<wbr>Name</span>
+        <span id="regionaldomainname~csharp">
+<span class="nx">
+Regional<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#regionaldomainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1005,7 +1255,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Regional<wbr>Zone<wbr>Id</span>
+        <span id="regionalzoneid~csharp">
+<span class="nx">
+Regional<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#regionalzoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1021,7 +1276,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1030,7 +1290,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Certificate<wbr>Upload<wbr>Date</span>
+        <span id="certificateuploaddate~go">
+<span class="nx">
+Certificate<wbr>Upload<wbr>Date
+<a class="anchorjs-link " href="#certificateuploaddate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1039,7 +1304,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Cloudfront<wbr>Domain<wbr>Name</span>
+        <span id="cloudfrontdomainname~go">
+<span class="nx">
+Cloudfront<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#cloudfrontdomainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1049,7 +1319,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-"
             title="">
-        <span>Cloudfront<wbr>Zone<wbr>Id</span>
+        <span id="cloudfrontzoneid~go">
+<span class="nx">
+Cloudfront<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#cloudfrontzoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1059,7 +1334,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1067,7 +1347,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Regional<wbr>Domain<wbr>Name</span>
+        <span id="regionaldomainname~go">
+<span class="nx">
+Regional<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#regionaldomainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1076,7 +1361,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>Regional<wbr>Zone<wbr>Id</span>
+        <span id="regionalzoneid~go">
+<span class="nx">
+Regional<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#regionalzoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1092,7 +1382,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1101,7 +1396,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>certificate<wbr>Upload<wbr>Date</span>
+        <span id="certificateuploaddate~nodejs">
+<span class="nx">
+certificate<wbr>Upload<wbr>Date
+<a class="anchorjs-link " href="#certificateuploaddate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1110,7 +1410,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>cloudfront<wbr>Domain<wbr>Name</span>
+        <span id="cloudfrontdomainname~nodejs">
+<span class="nx">
+cloudfront<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#cloudfrontdomainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1120,7 +1425,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-"
             title="">
-        <span>cloudfront<wbr>Zone<wbr>Id</span>
+        <span id="cloudfrontzoneid~nodejs">
+<span class="nx">
+cloudfront<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#cloudfrontzoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1130,7 +1440,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1138,7 +1453,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>regional<wbr>Domain<wbr>Name</span>
+        <span id="regionaldomainname~nodejs">
+<span class="nx">
+regional<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#regionaldomainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1147,7 +1467,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>regional<wbr>Zone<wbr>Id</span>
+        <span id="regionalzoneid~nodejs">
+<span class="nx">
+regional<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#regionalzoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1163,7 +1488,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1172,7 +1502,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>certificate_<wbr>upload_<wbr>date</span>
+        <span id="certificate_upload_date~python">
+<span class="nx">
+certificate_<wbr>upload_<wbr>date
+<a class="anchorjs-link " href="#certificate_upload_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1181,7 +1516,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>cloudfront_<wbr>domain_<wbr>name</span>
+        <span id="cloudfront_domain_name~python">
+<span class="nx">
+cloudfront_<wbr>domain_<wbr>name
+<a class="anchorjs-link " href="#cloudfront_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1191,7 +1531,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-"
             title="">
-        <span>cloudfront_<wbr>zone_<wbr>id</span>
+        <span id="cloudfront_zone_id~python">
+<span class="nx">
+cloudfront_<wbr>zone_<wbr>id
+<a class="anchorjs-link " href="#cloudfront_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1201,7 +1546,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1209,7 +1559,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>regional_<wbr>domain_<wbr>name</span>
+        <span id="regional_domain_name~python">
+<span class="nx">
+regional_<wbr>domain_<wbr>name
+<a class="anchorjs-link " href="#regional_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1218,7 +1573,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-"
             title="">
-        <span>regional_<wbr>zone_<wbr>id</span>
+        <span id="regional_zone_id~python">
+<span class="nx">
+regional_<wbr>zone_<wbr>id
+<a class="anchorjs-link " href="#regional_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1240,7 +1600,7 @@ Get an existing DomainName resource's state with the given name, ID, and optiona
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainNameState">DomainNameState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainName">DomainName</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainNameState">DomainNameState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#DomainName">DomainName</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1248,11 +1608,11 @@ Get an existing DomainName resource's state with the given name, ID, and optiona
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomainName<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameState">DomainNameState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">DomainName</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDomainName<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainNameState">DomainNameState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#DomainName">DomainName</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainName.html">DomainName</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainNameState.html">DomainNameState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainName.html">DomainName</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.DomainNameState.html">DomainNameState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1360,7 +1720,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1369,7 +1734,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Arn</span>
+        <span id="state_certificatearn~csharp">
+<span class="nx">
+Certificate<wbr>Arn
+<a class="anchorjs-link " href="#state_certificatearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1378,7 +1748,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Body</span>
+        <span id="state_certificatebody~csharp">
+<span class="nx">
+Certificate<wbr>Body
+<a class="anchorjs-link " href="#state_certificatebody~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1389,7 +1764,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Chain</span>
+        <span id="state_certificatechain~csharp">
+<span class="nx">
+Certificate<wbr>Chain
+<a class="anchorjs-link " href="#state_certificatechain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1401,7 +1781,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Name</span>
+        <span id="state_certificatename~csharp">
+<span class="nx">
+Certificate<wbr>Name
+<a class="anchorjs-link " href="#state_certificatename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1412,7 +1797,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Private<wbr>Key</span>
+        <span id="state_certificateprivatekey~csharp">
+<span class="nx">
+Certificate<wbr>Private<wbr>Key
+<a class="anchorjs-link " href="#state_certificateprivatekey~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1422,7 +1812,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Upload<wbr>Date</span>
+        <span id="state_certificateuploaddate~csharp">
+<span class="nx">
+Certificate<wbr>Upload<wbr>Date
+<a class="anchorjs-link " href="#state_certificateuploaddate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1431,7 +1826,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudfront<wbr>Domain<wbr>Name</span>
+        <span id="state_cloudfrontdomainname~csharp">
+<span class="nx">
+Cloudfront<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#state_cloudfrontdomainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1441,7 +1841,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudfront<wbr>Zone<wbr>Id</span>
+        <span id="state_cloudfrontzoneid~csharp">
+<span class="nx">
+Cloudfront<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_cloudfrontzoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1451,7 +1856,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain</span>
+        <span id="state_domain~csharp">
+<span class="nx">
+Domain
+<a class="anchorjs-link " href="#state_domain~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1460,7 +1870,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint<wbr>Configuration</span>
+        <span id="state_endpointconfiguration~csharp">
+<span class="nx">
+Endpoint<wbr>Configuration
+<a class="anchorjs-link " href="#state_endpointconfiguration~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration<wbr>Args</a></span>
     </dt>
@@ -1469,7 +1884,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Arn</span>
+        <span id="state_regionalcertificatearn~csharp">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#state_regionalcertificatearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1478,7 +1898,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Name</span>
+        <span id="state_regionalcertificatename~csharp">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Name
+<a class="anchorjs-link " href="#state_regionalcertificatename~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1488,7 +1913,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Domain<wbr>Name</span>
+        <span id="state_regionaldomainname~csharp">
+<span class="nx">
+Regional<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#state_regionaldomainname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1497,7 +1927,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Zone<wbr>Id</span>
+        <span id="state_regionalzoneid~csharp">
+<span class="nx">
+Regional<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_regionalzoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1506,7 +1941,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Policy</span>
+        <span id="state_securitypolicy~csharp">
+<span class="nx">
+Security<wbr>Policy
+<a class="anchorjs-link " href="#state_securitypolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1515,7 +1955,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1531,7 +1976,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1540,7 +1990,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Arn</span>
+        <span id="state_certificatearn~go">
+<span class="nx">
+Certificate<wbr>Arn
+<a class="anchorjs-link " href="#state_certificatearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1549,7 +2004,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Body</span>
+        <span id="state_certificatebody~go">
+<span class="nx">
+Certificate<wbr>Body
+<a class="anchorjs-link " href="#state_certificatebody~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1560,7 +2020,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Chain</span>
+        <span id="state_certificatechain~go">
+<span class="nx">
+Certificate<wbr>Chain
+<a class="anchorjs-link " href="#state_certificatechain~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1572,7 +2037,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Name</span>
+        <span id="state_certificatename~go">
+<span class="nx">
+Certificate<wbr>Name
+<a class="anchorjs-link " href="#state_certificatename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1583,7 +2053,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Private<wbr>Key</span>
+        <span id="state_certificateprivatekey~go">
+<span class="nx">
+Certificate<wbr>Private<wbr>Key
+<a class="anchorjs-link " href="#state_certificateprivatekey~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1593,7 +2068,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Certificate<wbr>Upload<wbr>Date</span>
+        <span id="state_certificateuploaddate~go">
+<span class="nx">
+Certificate<wbr>Upload<wbr>Date
+<a class="anchorjs-link " href="#state_certificateuploaddate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1602,7 +2082,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudfront<wbr>Domain<wbr>Name</span>
+        <span id="state_cloudfrontdomainname~go">
+<span class="nx">
+Cloudfront<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#state_cloudfrontdomainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1612,7 +2097,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloudfront<wbr>Zone<wbr>Id</span>
+        <span id="state_cloudfrontzoneid~go">
+<span class="nx">
+Cloudfront<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_cloudfrontzoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1622,7 +2112,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Domain<wbr>Name</span>
+        <span id="state_domainname~go">
+<span class="nx">
+Domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1631,7 +2126,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Endpoint<wbr>Configuration</span>
+        <span id="state_endpointconfiguration~go">
+<span class="nx">
+Endpoint<wbr>Configuration
+<a class="anchorjs-link " href="#state_endpointconfiguration~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
@@ -1640,7 +2140,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Arn</span>
+        <span id="state_regionalcertificatearn~go">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#state_regionalcertificatearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1649,7 +2154,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Certificate<wbr>Name</span>
+        <span id="state_regionalcertificatename~go">
+<span class="nx">
+Regional<wbr>Certificate<wbr>Name
+<a class="anchorjs-link " href="#state_regionalcertificatename~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1659,7 +2169,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Domain<wbr>Name</span>
+        <span id="state_regionaldomainname~go">
+<span class="nx">
+Regional<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#state_regionaldomainname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1668,7 +2183,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Regional<wbr>Zone<wbr>Id</span>
+        <span id="state_regionalzoneid~go">
+<span class="nx">
+Regional<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_regionalzoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1677,7 +2197,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Security<wbr>Policy</span>
+        <span id="state_securitypolicy~go">
+<span class="nx">
+Security<wbr>Policy
+<a class="anchorjs-link " href="#state_securitypolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1686,7 +2211,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1702,7 +2232,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1711,7 +2246,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Arn</span>
+        <span id="state_certificatearn~nodejs">
+<span class="nx">
+certificate<wbr>Arn
+<a class="anchorjs-link " href="#state_certificatearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1720,7 +2260,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Body</span>
+        <span id="state_certificatebody~nodejs">
+<span class="nx">
+certificate<wbr>Body
+<a class="anchorjs-link " href="#state_certificatebody~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1731,7 +2276,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Chain</span>
+        <span id="state_certificatechain~nodejs">
+<span class="nx">
+certificate<wbr>Chain
+<a class="anchorjs-link " href="#state_certificatechain~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1743,7 +2293,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Name</span>
+        <span id="state_certificatename~nodejs">
+<span class="nx">
+certificate<wbr>Name
+<a class="anchorjs-link " href="#state_certificatename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1754,7 +2309,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Private<wbr>Key</span>
+        <span id="state_certificateprivatekey~nodejs">
+<span class="nx">
+certificate<wbr>Private<wbr>Key
+<a class="anchorjs-link " href="#state_certificateprivatekey~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1764,7 +2324,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate<wbr>Upload<wbr>Date</span>
+        <span id="state_certificateuploaddate~nodejs">
+<span class="nx">
+certificate<wbr>Upload<wbr>Date
+<a class="anchorjs-link " href="#state_certificateuploaddate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1773,7 +2338,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudfront<wbr>Domain<wbr>Name</span>
+        <span id="state_cloudfrontdomainname~nodejs">
+<span class="nx">
+cloudfront<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#state_cloudfrontdomainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1783,7 +2353,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudfront<wbr>Zone<wbr>Id</span>
+        <span id="state_cloudfrontzoneid~nodejs">
+<span class="nx">
+cloudfront<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_cloudfrontzoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1793,7 +2368,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain<wbr>Name</span>
+        <span id="state_domainname~nodejs">
+<span class="nx">
+domain<wbr>Name
+<a class="anchorjs-link " href="#state_domainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1802,7 +2382,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint<wbr>Configuration</span>
+        <span id="state_endpointconfiguration~nodejs">
+<span class="nx">
+endpoint<wbr>Configuration
+<a class="anchorjs-link " href="#state_endpointconfiguration~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Domain<wbr>Name<wbr>Endpoint<wbr>Configuration</a></span>
     </dt>
@@ -1811,7 +2396,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional<wbr>Certificate<wbr>Arn</span>
+        <span id="state_regionalcertificatearn~nodejs">
+<span class="nx">
+regional<wbr>Certificate<wbr>Arn
+<a class="anchorjs-link " href="#state_regionalcertificatearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1820,7 +2410,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional<wbr>Certificate<wbr>Name</span>
+        <span id="state_regionalcertificatename~nodejs">
+<span class="nx">
+regional<wbr>Certificate<wbr>Name
+<a class="anchorjs-link " href="#state_regionalcertificatename~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1830,7 +2425,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional<wbr>Domain<wbr>Name</span>
+        <span id="state_regionaldomainname~nodejs">
+<span class="nx">
+regional<wbr>Domain<wbr>Name
+<a class="anchorjs-link " href="#state_regionaldomainname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1839,7 +2439,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional<wbr>Zone<wbr>Id</span>
+        <span id="state_regionalzoneid~nodejs">
+<span class="nx">
+regional<wbr>Zone<wbr>Id
+<a class="anchorjs-link " href="#state_regionalzoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1848,7 +2453,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security<wbr>Policy</span>
+        <span id="state_securitypolicy~nodejs">
+<span class="nx">
+security<wbr>Policy
+<a class="anchorjs-link " href="#state_securitypolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1857,7 +2467,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1873,7 +2488,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1882,7 +2502,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>arn</span>
+        <span id="state_certificate_arn~python">
+<span class="nx">
+certificate_<wbr>arn
+<a class="anchorjs-link " href="#state_certificate_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1891,7 +2516,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>body</span>
+        <span id="state_certificate_body~python">
+<span class="nx">
+certificate_<wbr>body
+<a class="anchorjs-link " href="#state_certificate_body~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1902,7 +2532,12 @@ being registered, in PEM format. Only valid for `EDGE` endpoint configuration ty
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>chain</span>
+        <span id="state_certificate_chain~python">
+<span class="nx">
+certificate_<wbr>chain
+<a class="anchorjs-link " href="#state_certificate_chain~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1914,7 +2549,12 @@ create an unbroken chain to a certificate trusted by the intended API clients. O
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>name</span>
+        <span id="state_certificate_name~python">
+<span class="nx">
+certificate_<wbr>name
+<a class="anchorjs-link " href="#state_certificate_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1925,7 +2565,12 @@ certificate as an IAM server certificate. Conflicts with `certificate_arn`, `reg
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>private_<wbr>key</span>
+        <span id="state_certificate_private_key~python">
+<span class="nx">
+certificate_<wbr>private_<wbr>key
+<a class="anchorjs-link " href="#state_certificate_private_key~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1935,7 +2580,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>certificate_<wbr>upload_<wbr>date</span>
+        <span id="state_certificate_upload_date~python">
+<span class="nx">
+certificate_<wbr>upload_<wbr>date
+<a class="anchorjs-link " href="#state_certificate_upload_date~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1944,7 +2594,12 @@ domain certificate given in `certificate_body`. Only valid for `EDGE` endpoint c
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudfront_<wbr>domain_<wbr>name</span>
+        <span id="state_cloudfront_domain_name~python">
+<span class="nx">
+cloudfront_<wbr>domain_<wbr>name
+<a class="anchorjs-link " href="#state_cloudfront_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1954,7 +2609,12 @@ the distribution that implements this domain name mapping.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloudfront_<wbr>zone_<wbr>id</span>
+        <span id="state_cloudfront_zone_id~python">
+<span class="nx">
+cloudfront_<wbr>zone_<wbr>id
+<a class="anchorjs-link " href="#state_cloudfront_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1964,7 +2624,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>domain_<wbr>name</span>
+        <span id="state_domain_name~python">
+<span class="nx">
+domain_<wbr>name
+<a class="anchorjs-link " href="#state_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1973,7 +2638,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>endpoint_<wbr>configuration</span>
+        <span id="state_endpoint_configuration~python">
+<span class="nx">
+endpoint_<wbr>configuration
+<a class="anchorjs-link " href="#state_endpoint_configuration~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#domainnameendpointconfiguration">Dict[Domain<wbr>Name<wbr>Endpoint<wbr>Configuration]</a></span>
     </dt>
@@ -1982,7 +2652,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional_<wbr>certificate_<wbr>arn</span>
+        <span id="state_regional_certificate_arn~python">
+<span class="nx">
+regional_<wbr>certificate_<wbr>arn
+<a class="anchorjs-link " href="#state_regional_certificate_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1991,7 +2666,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional_<wbr>certificate_<wbr>name</span>
+        <span id="state_regional_certificate_name~python">
+<span class="nx">
+regional_<wbr>certificate_<wbr>name
+<a class="anchorjs-link " href="#state_regional_certificate_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2001,7 +2681,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional_<wbr>domain_<wbr>name</span>
+        <span id="state_regional_domain_name~python">
+<span class="nx">
+regional_<wbr>domain_<wbr>name
+<a class="anchorjs-link " href="#state_regional_domain_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2010,7 +2695,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>regional_<wbr>zone_<wbr>id</span>
+        <span id="state_regional_zone_id~python">
+<span class="nx">
+regional_<wbr>zone_<wbr>id
+<a class="anchorjs-link " href="#state_regional_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2019,7 +2709,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>security_<wbr>policy</span>
+        <span id="state_security_policy~python">
+<span class="nx">
+security_<wbr>policy
+<a class="anchorjs-link " href="#state_security_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2028,7 +2723,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -2070,7 +2770,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-required"
             title="Required">
-        <span>Types</span>
+        <span id="types~csharp">
+<span class="nx">
+Types
+<a class="anchorjs-link " href="#types~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2086,7 +2791,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-required"
             title="Required">
-        <span>Types</span>
+        <span id="types~go">
+<span class="nx">
+Types
+<a class="anchorjs-link " href="#types~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2102,7 +2812,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-required"
             title="Required">
-        <span>types</span>
+        <span id="types~nodejs">
+<span class="nx">
+types
+<a class="anchorjs-link " href="#types~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2118,7 +2833,12 @@ that can be used to create a Route53 alias record for the distribution.
 
     <dt class="property-required"
             title="Required">
-        <span>types</span>
+        <span id="types~python">
+<span class="nx">
+types
+<a class="anchorjs-link " href="#types~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

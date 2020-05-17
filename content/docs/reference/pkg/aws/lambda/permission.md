@@ -220,19 +220,19 @@ const allowCloudwatch = new aws.lambda.Permission("allow_cloudwatch", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#Permission">Permission</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#PermissionArgs">PermissionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#Permission">Permission</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#PermissionArgs">PermissionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Permission</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>action=None<span class="p">, </span>event_source_token=None<span class="p">, </span>function=None<span class="p">, </span>principal=None<span class="p">, </span>qualifier=None<span class="p">, </span>source_account=None<span class="p">, </span>source_arn=None<span class="p">, </span>statement_id=None<span class="p">, </span>statement_id_prefix=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/lambda/#Permission">Permission</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>action=None<span class="p">, </span>event_source_token=None<span class="p">, </span>function=None<span class="p">, </span>principal=None<span class="p">, </span>qualifier=None<span class="p">, </span>source_account=None<span class="p">, </span>source_arn=None<span class="p">, </span>statement_id=None<span class="p">, </span>statement_id_prefix=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPermission<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#PermissionArgs">PermissionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Permission">Permission</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Permission">NewPermission</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#PermissionArgs">PermissionArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Permission">Permission</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.Permission.html">Permission</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.PermissionArgs.html">PermissionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.Permission.html">Permission</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.PermissionArgs.html">PermissionArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -398,7 +398,12 @@ The Permission resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Action</span>
+        <span id="action~csharp">
+<span class="nx">
+Action
+<a class="anchorjs-link " href="#action~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -407,7 +412,12 @@ The Permission resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Function</span>
+        <span id="function~csharp">
+<span class="nx">
+Function
+<a class="anchorjs-link " href="#function~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -416,7 +426,12 @@ The Permission resource accepts the following [input]({{< relref "/docs/intro/co
 
     <dt class="property-required"
             title="Required">
-        <span>Principal</span>
+        <span id="principal~csharp">
+<span class="nx">
+Principal
+<a class="anchorjs-link " href="#principal~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -427,7 +442,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Source<wbr>Token</span>
+        <span id="eventsourcetoken~csharp">
+<span class="nx">
+Event<wbr>Source<wbr>Token
+<a class="anchorjs-link " href="#eventsourcetoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -436,7 +456,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Qualifier</span>
+        <span id="qualifier~csharp">
+<span class="nx">
+Qualifier
+<a class="anchorjs-link " href="#qualifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -447,7 +472,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Account</span>
+        <span id="sourceaccount~csharp">
+<span class="nx">
+Source<wbr>Account
+<a class="anchorjs-link " href="#sourceaccount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -456,7 +486,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Arn</span>
+        <span id="sourcearn~csharp">
+<span class="nx">
+Source<wbr>Arn
+<a class="anchorjs-link " href="#sourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -470,7 +505,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id</span>
+        <span id="statementid~csharp">
+<span class="nx">
+Statement<wbr>Id
+<a class="anchorjs-link " href="#statementid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -479,7 +519,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id<wbr>Prefix</span>
+        <span id="statementidprefix~csharp">
+<span class="nx">
+Statement<wbr>Id<wbr>Prefix
+<a class="anchorjs-link " href="#statementidprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -495,7 +540,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>Action</span>
+        <span id="action~go">
+<span class="nx">
+Action
+<a class="anchorjs-link " href="#action~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -504,7 +554,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>Function</span>
+        <span id="function~go">
+<span class="nx">
+Function
+<a class="anchorjs-link " href="#function~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -513,7 +568,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>Principal</span>
+        <span id="principal~go">
+<span class="nx">
+Principal
+<a class="anchorjs-link " href="#principal~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -524,7 +584,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Source<wbr>Token</span>
+        <span id="eventsourcetoken~go">
+<span class="nx">
+Event<wbr>Source<wbr>Token
+<a class="anchorjs-link " href="#eventsourcetoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -533,7 +598,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Qualifier</span>
+        <span id="qualifier~go">
+<span class="nx">
+Qualifier
+<a class="anchorjs-link " href="#qualifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -544,7 +614,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Account</span>
+        <span id="sourceaccount~go">
+<span class="nx">
+Source<wbr>Account
+<a class="anchorjs-link " href="#sourceaccount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -553,7 +628,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Arn</span>
+        <span id="sourcearn~go">
+<span class="nx">
+Source<wbr>Arn
+<a class="anchorjs-link " href="#sourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -567,7 +647,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id</span>
+        <span id="statementid~go">
+<span class="nx">
+Statement<wbr>Id
+<a class="anchorjs-link " href="#statementid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -576,7 +661,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id<wbr>Prefix</span>
+        <span id="statementidprefix~go">
+<span class="nx">
+Statement<wbr>Id<wbr>Prefix
+<a class="anchorjs-link " href="#statementidprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -592,7 +682,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>action</span>
+        <span id="action~nodejs">
+<span class="nx">
+action
+<a class="anchorjs-link " href="#action~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -601,7 +696,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>function</span>
+        <span id="function~nodejs">
+<span class="nx">
+function
+<a class="anchorjs-link " href="#function~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Function</span>
     </dt>
@@ -610,7 +710,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>principal</span>
+        <span id="principal~nodejs">
+<span class="nx">
+principal
+<a class="anchorjs-link " href="#principal~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -621,7 +726,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>event<wbr>Source<wbr>Token</span>
+        <span id="eventsourcetoken~nodejs">
+<span class="nx">
+event<wbr>Source<wbr>Token
+<a class="anchorjs-link " href="#eventsourcetoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -630,7 +740,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>qualifier</span>
+        <span id="qualifier~nodejs">
+<span class="nx">
+qualifier
+<a class="anchorjs-link " href="#qualifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -641,7 +756,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Account</span>
+        <span id="sourceaccount~nodejs">
+<span class="nx">
+source<wbr>Account
+<a class="anchorjs-link " href="#sourceaccount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -650,7 +770,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Arn</span>
+        <span id="sourcearn~nodejs">
+<span class="nx">
+source<wbr>Arn
+<a class="anchorjs-link " href="#sourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -664,7 +789,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement<wbr>Id</span>
+        <span id="statementid~nodejs">
+<span class="nx">
+statement<wbr>Id
+<a class="anchorjs-link " href="#statementid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -673,7 +803,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement<wbr>Id<wbr>Prefix</span>
+        <span id="statementidprefix~nodejs">
+<span class="nx">
+statement<wbr>Id<wbr>Prefix
+<a class="anchorjs-link " href="#statementidprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -689,7 +824,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>action</span>
+        <span id="action~python">
+<span class="nx">
+action
+<a class="anchorjs-link " href="#action~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -698,7 +838,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>function</span>
+        <span id="function~python">
+<span class="nx">
+function
+<a class="anchorjs-link " href="#function~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -707,7 +852,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-required"
             title="Required">
-        <span>principal</span>
+        <span id="principal~python">
+<span class="nx">
+principal
+<a class="anchorjs-link " href="#principal~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -718,7 +868,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>event_<wbr>source_<wbr>token</span>
+        <span id="event_source_token~python">
+<span class="nx">
+event_<wbr>source_<wbr>token
+<a class="anchorjs-link " href="#event_source_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -727,7 +882,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>qualifier</span>
+        <span id="qualifier~python">
+<span class="nx">
+qualifier
+<a class="anchorjs-link " href="#qualifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -738,7 +898,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>account</span>
+        <span id="source_account~python">
+<span class="nx">
+source_<wbr>account
+<a class="anchorjs-link " href="#source_account~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -747,7 +912,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>arn</span>
+        <span id="source_arn~python">
+<span class="nx">
+source_<wbr>arn
+<a class="anchorjs-link " href="#source_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -761,7 +931,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement_<wbr>id</span>
+        <span id="statement_id~python">
+<span class="nx">
+statement_<wbr>id
+<a class="anchorjs-link " href="#statement_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -770,7 +945,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement_<wbr>id_<wbr>prefix</span>
+        <span id="statement_id_prefix~python">
+<span class="nx">
+statement_<wbr>id_<wbr>prefix
+<a class="anchorjs-link " href="#statement_id_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -797,7 +977,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -812,7 +997,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -827,7 +1017,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -842,7 +1037,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -863,7 +1063,7 @@ Get an existing Permission resource's state with the given name, ID, and optiona
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#PermissionState">PermissionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#Permission">Permission</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#PermissionState">PermissionState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/lambda/#Permission">Permission</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -871,11 +1071,11 @@ Get an existing Permission resource's state with the given name, ID, and optiona
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPermission<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#PermissionState">PermissionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Permission">Permission</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPermission<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#PermissionState">PermissionState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/lambda?tab=doc#Permission">Permission</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.Permission.html">Permission</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.PermissionState.html">PermissionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.Permission.html">Permission</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Lambda.PermissionState.html">PermissionState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -983,7 +1183,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Action</span>
+        <span id="state_action~csharp">
+<span class="nx">
+Action
+<a class="anchorjs-link " href="#state_action~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -992,7 +1197,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Source<wbr>Token</span>
+        <span id="state_eventsourcetoken~csharp">
+<span class="nx">
+Event<wbr>Source<wbr>Token
+<a class="anchorjs-link " href="#state_eventsourcetoken~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1001,7 +1211,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Function</span>
+        <span id="state_function~csharp">
+<span class="nx">
+Function
+<a class="anchorjs-link " href="#state_function~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1010,7 +1225,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Principal</span>
+        <span id="state_principal~csharp">
+<span class="nx">
+Principal
+<a class="anchorjs-link " href="#state_principal~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1021,7 +1241,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Qualifier</span>
+        <span id="state_qualifier~csharp">
+<span class="nx">
+Qualifier
+<a class="anchorjs-link " href="#state_qualifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1032,7 +1257,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Account</span>
+        <span id="state_sourceaccount~csharp">
+<span class="nx">
+Source<wbr>Account
+<a class="anchorjs-link " href="#state_sourceaccount~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1041,7 +1271,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Arn</span>
+        <span id="state_sourcearn~csharp">
+<span class="nx">
+Source<wbr>Arn
+<a class="anchorjs-link " href="#state_sourcearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1055,7 +1290,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id</span>
+        <span id="state_statementid~csharp">
+<span class="nx">
+Statement<wbr>Id
+<a class="anchorjs-link " href="#state_statementid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1064,7 +1304,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id<wbr>Prefix</span>
+        <span id="state_statementidprefix~csharp">
+<span class="nx">
+Statement<wbr>Id<wbr>Prefix
+<a class="anchorjs-link " href="#state_statementidprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1080,7 +1325,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Action</span>
+        <span id="state_action~go">
+<span class="nx">
+Action
+<a class="anchorjs-link " href="#state_action~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1089,7 +1339,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Source<wbr>Token</span>
+        <span id="state_eventsourcetoken~go">
+<span class="nx">
+Event<wbr>Source<wbr>Token
+<a class="anchorjs-link " href="#state_eventsourcetoken~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1098,7 +1353,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Function</span>
+        <span id="state_function~go">
+<span class="nx">
+Function
+<a class="anchorjs-link " href="#state_function~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -1107,7 +1367,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Principal</span>
+        <span id="state_principal~go">
+<span class="nx">
+Principal
+<a class="anchorjs-link " href="#state_principal~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1118,7 +1383,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Qualifier</span>
+        <span id="state_qualifier~go">
+<span class="nx">
+Qualifier
+<a class="anchorjs-link " href="#state_qualifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1129,7 +1399,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Account</span>
+        <span id="state_sourceaccount~go">
+<span class="nx">
+Source<wbr>Account
+<a class="anchorjs-link " href="#state_sourceaccount~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1138,7 +1413,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Source<wbr>Arn</span>
+        <span id="state_sourcearn~go">
+<span class="nx">
+Source<wbr>Arn
+<a class="anchorjs-link " href="#state_sourcearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1152,7 +1432,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id</span>
+        <span id="state_statementid~go">
+<span class="nx">
+Statement<wbr>Id
+<a class="anchorjs-link " href="#state_statementid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1161,7 +1446,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>Statement<wbr>Id<wbr>Prefix</span>
+        <span id="state_statementidprefix~go">
+<span class="nx">
+Statement<wbr>Id<wbr>Prefix
+<a class="anchorjs-link " href="#state_statementidprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1177,7 +1467,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>action</span>
+        <span id="state_action~nodejs">
+<span class="nx">
+action
+<a class="anchorjs-link " href="#state_action~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1186,7 +1481,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>event<wbr>Source<wbr>Token</span>
+        <span id="state_eventsourcetoken~nodejs">
+<span class="nx">
+event<wbr>Source<wbr>Token
+<a class="anchorjs-link " href="#state_eventsourcetoken~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1195,7 +1495,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>function</span>
+        <span id="state_function~nodejs">
+<span class="nx">
+function
+<a class="anchorjs-link " href="#state_function~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Function</span>
     </dt>
@@ -1204,7 +1509,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>principal</span>
+        <span id="state_principal~nodejs">
+<span class="nx">
+principal
+<a class="anchorjs-link " href="#state_principal~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1215,7 +1525,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>qualifier</span>
+        <span id="state_qualifier~nodejs">
+<span class="nx">
+qualifier
+<a class="anchorjs-link " href="#state_qualifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1226,7 +1541,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Account</span>
+        <span id="state_sourceaccount~nodejs">
+<span class="nx">
+source<wbr>Account
+<a class="anchorjs-link " href="#state_sourceaccount~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1235,7 +1555,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source<wbr>Arn</span>
+        <span id="state_sourcearn~nodejs">
+<span class="nx">
+source<wbr>Arn
+<a class="anchorjs-link " href="#state_sourcearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1249,7 +1574,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement<wbr>Id</span>
+        <span id="state_statementid~nodejs">
+<span class="nx">
+statement<wbr>Id
+<a class="anchorjs-link " href="#state_statementid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1258,7 +1588,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement<wbr>Id<wbr>Prefix</span>
+        <span id="state_statementidprefix~nodejs">
+<span class="nx">
+statement<wbr>Id<wbr>Prefix
+<a class="anchorjs-link " href="#state_statementidprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1274,7 +1609,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>action</span>
+        <span id="state_action~python">
+<span class="nx">
+action
+<a class="anchorjs-link " href="#state_action~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1283,7 +1623,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>event_<wbr>source_<wbr>token</span>
+        <span id="state_event_source_token~python">
+<span class="nx">
+event_<wbr>source_<wbr>token
+<a class="anchorjs-link " href="#state_event_source_token~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1292,7 +1637,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>function</span>
+        <span id="state_function~python">
+<span class="nx">
+function
+<a class="anchorjs-link " href="#state_function~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -1301,7 +1651,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>principal</span>
+        <span id="state_principal~python">
+<span class="nx">
+principal
+<a class="anchorjs-link " href="#state_principal~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1312,7 +1667,12 @@ such as `events.amazonaws.com` or `sns.amazonaws.com`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>qualifier</span>
+        <span id="state_qualifier~python">
+<span class="nx">
+qualifier
+<a class="anchorjs-link " href="#state_qualifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1323,7 +1683,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>account</span>
+        <span id="state_source_account~python">
+<span class="nx">
+source_<wbr>account
+<a class="anchorjs-link " href="#state_source_account~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1332,7 +1697,12 @@ e.g. `arn:aws:lambda:aws-region:acct-id:function:function-name:2`
 
     <dt class="property-optional"
             title="Optional">
-        <span>source_<wbr>arn</span>
+        <span id="state_source_arn~python">
+<span class="nx">
+source_<wbr>arn
+<a class="anchorjs-link " href="#state_source_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1346,7 +1716,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement_<wbr>id</span>
+        <span id="state_statement_id~python">
+<span class="nx">
+statement_<wbr>id
+<a class="anchorjs-link " href="#state_statement_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1355,7 +1730,12 @@ API Gateway ARNs have a unique structure described
 
     <dt class="property-optional"
             title="Optional">
-        <span>statement_<wbr>id_<wbr>prefix</span>
+        <span id="state_statement_id_prefix~python">
+<span class="nx">
+statement_<wbr>id_<wbr>prefix
+<a class="anchorjs-link " href="#state_statement_id_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

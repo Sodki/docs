@@ -135,19 +135,19 @@ const myDemoMethod = new aws.apigateway.Method("MyDemoMethod", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Method">Method</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#MethodArgs">MethodArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Method">Method</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#MethodArgs">MethodArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Method</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_key_required=None<span class="p">, </span>authorization=None<span class="p">, </span>authorization_scopes=None<span class="p">, </span>authorizer_id=None<span class="p">, </span>http_method=None<span class="p">, </span>request_models=None<span class="p">, </span>request_parameters=None<span class="p">, </span>request_validator_id=None<span class="p">, </span>resource_id=None<span class="p">, </span>rest_api=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/apigateway/#Method">Method</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>api_key_required=None<span class="p">, </span>authorization=None<span class="p">, </span>authorization_scopes=None<span class="p">, </span>authorizer_id=None<span class="p">, </span>http_method=None<span class="p">, </span>request_models=None<span class="p">, </span>request_parameters=None<span class="p">, </span>request_validator_id=None<span class="p">, </span>resource_id=None<span class="p">, </span>rest_api=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewMethod<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#MethodArgs">MethodArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Method">Method</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Method">NewMethod</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#MethodArgs">MethodArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Method">Method</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Method.html">Method</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.MethodArgs.html">MethodArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Method.html">Method</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.MethodArgs.html">MethodArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -313,7 +313,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Authorization</span>
+        <span id="authorization~csharp">
+<span class="nx">
+Authorization
+<a class="anchorjs-link " href="#authorization~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -322,7 +327,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Method</span>
+        <span id="httpmethod~csharp">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#httpmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -331,7 +341,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Id</span>
+        <span id="resourceid~csharp">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#resourceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -340,7 +355,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Rest<wbr>Api</span>
+        <span id="restapi~csharp">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#restapi~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -349,7 +369,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="apikeyrequired~csharp">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#apikeyrequired~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -358,7 +383,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="authorizationscopes~csharp">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#authorizationscopes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -367,7 +397,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="authorizerid~csharp">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#authorizerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -376,7 +411,12 @@ The Method resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="requestmodels~csharp">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#requestmodels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -387,7 +427,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="requestparameters~csharp">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#requestparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, bool&gt;</span>
     </dt>
@@ -397,7 +442,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Validator<wbr>Id</span>
+        <span id="requestvalidatorid~csharp">
+<span class="nx">
+Request<wbr>Validator<wbr>Id
+<a class="anchorjs-link " href="#requestvalidatorid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -413,7 +463,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>Authorization</span>
+        <span id="authorization~go">
+<span class="nx">
+Authorization
+<a class="anchorjs-link " href="#authorization~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -422,7 +477,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>Http<wbr>Method</span>
+        <span id="httpmethod~go">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#httpmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -431,7 +491,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>Resource<wbr>Id</span>
+        <span id="resourceid~go">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#resourceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -440,7 +505,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>Rest<wbr>Api</span>
+        <span id="restapi~go">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#restapi~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -449,7 +519,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="apikeyrequired~go">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#apikeyrequired~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -458,7 +533,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="authorizationscopes~go">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#authorizationscopes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -467,7 +547,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="authorizerid~go">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#authorizerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -476,7 +561,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="requestmodels~go">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#requestmodels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -487,7 +577,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="requestparameters~go">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#requestparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]bool</span>
     </dt>
@@ -497,7 +592,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Validator<wbr>Id</span>
+        <span id="requestvalidatorid~go">
+<span class="nx">
+Request<wbr>Validator<wbr>Id
+<a class="anchorjs-link " href="#requestvalidatorid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -513,7 +613,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>authorization</span>
+        <span id="authorization~nodejs">
+<span class="nx">
+authorization
+<a class="anchorjs-link " href="#authorization~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -522,7 +627,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>http<wbr>Method</span>
+        <span id="httpmethod~nodejs">
+<span class="nx">
+http<wbr>Method
+<a class="anchorjs-link " href="#httpmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -531,7 +641,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>resource<wbr>Id</span>
+        <span id="resourceid~nodejs">
+<span class="nx">
+resource<wbr>Id
+<a class="anchorjs-link " href="#resourceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -540,7 +655,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>rest<wbr>Api</span>
+        <span id="restapi~nodejs">
+<span class="nx">
+rest<wbr>Api
+<a class="anchorjs-link " href="#restapi~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
@@ -549,7 +669,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Key<wbr>Required</span>
+        <span id="apikeyrequired~nodejs">
+<span class="nx">
+api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#apikeyrequired~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -558,7 +683,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization<wbr>Scopes</span>
+        <span id="authorizationscopes~nodejs">
+<span class="nx">
+authorization<wbr>Scopes
+<a class="anchorjs-link " href="#authorizationscopes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -567,7 +697,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer<wbr>Id</span>
+        <span id="authorizerid~nodejs">
+<span class="nx">
+authorizer<wbr>Id
+<a class="anchorjs-link " href="#authorizerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -576,7 +711,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Models</span>
+        <span id="requestmodels~nodejs">
+<span class="nx">
+request<wbr>Models
+<a class="anchorjs-link " href="#requestmodels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -587,7 +727,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Parameters</span>
+        <span id="requestparameters~nodejs">
+<span class="nx">
+request<wbr>Parameters
+<a class="anchorjs-link " href="#requestparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: boolean}</span>
     </dt>
@@ -597,7 +742,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Validator<wbr>Id</span>
+        <span id="requestvalidatorid~nodejs">
+<span class="nx">
+request<wbr>Validator<wbr>Id
+<a class="anchorjs-link " href="#requestvalidatorid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -613,7 +763,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>authorization</span>
+        <span id="authorization~python">
+<span class="nx">
+authorization
+<a class="anchorjs-link " href="#authorization~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -622,7 +777,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>http_<wbr>method</span>
+        <span id="http_method~python">
+<span class="nx">
+http_<wbr>method
+<a class="anchorjs-link " href="#http_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -631,7 +791,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>resource_<wbr>id</span>
+        <span id="resource_id~python">
+<span class="nx">
+resource_<wbr>id
+<a class="anchorjs-link " href="#resource_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -640,7 +805,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-required"
             title="Required">
-        <span>rest_<wbr>api</span>
+        <span id="rest_api~python">
+<span class="nx">
+rest_<wbr>api
+<a class="anchorjs-link " href="#rest_api~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -649,7 +819,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>key_<wbr>required</span>
+        <span id="api_key_required~python">
+<span class="nx">
+api_<wbr>key_<wbr>required
+<a class="anchorjs-link " href="#api_key_required~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -658,7 +833,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization_<wbr>scopes</span>
+        <span id="authorization_scopes~python">
+<span class="nx">
+authorization_<wbr>scopes
+<a class="anchorjs-link " href="#authorization_scopes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -667,7 +847,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer_<wbr>id</span>
+        <span id="authorizer_id~python">
+<span class="nx">
+authorizer_<wbr>id
+<a class="anchorjs-link " href="#authorizer_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -676,7 +861,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>models</span>
+        <span id="request_models~python">
+<span class="nx">
+request_<wbr>models
+<a class="anchorjs-link " href="#request_models~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -687,7 +877,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>parameters</span>
+        <span id="request_parameters~python">
+<span class="nx">
+request_<wbr>parameters
+<a class="anchorjs-link " href="#request_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Boolean]</span>
     </dt>
@@ -697,7 +892,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>validator_<wbr>id</span>
+        <span id="request_validator_id~python">
+<span class="nx">
+request_<wbr>validator_<wbr>id
+<a class="anchorjs-link " href="#request_validator_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -724,7 +924,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -739,7 +944,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -754,7 +964,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -769,7 +984,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -790,7 +1010,7 @@ Get an existing Method resource's state with the given name, ID, and optional ex
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#MethodState">MethodState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Method">Method</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#MethodState">MethodState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/apigateway/#Method">Method</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -798,11 +1018,11 @@ Get an existing Method resource's state with the given name, ID, and optional ex
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMethod<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#MethodState">MethodState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Method">Method</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMethod<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#MethodState">MethodState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/apigateway?tab=doc#Method">Method</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Method.html">Method</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.MethodState.html">MethodState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.Method.html">Method</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ApiGateway.MethodState.html">MethodState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -910,7 +1130,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="state_apikeyrequired~csharp">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#state_apikeyrequired~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -919,7 +1144,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization</span>
+        <span id="state_authorization~csharp">
+<span class="nx">
+Authorization
+<a class="anchorjs-link " href="#state_authorization~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -928,7 +1158,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="state_authorizationscopes~csharp">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#state_authorizationscopes~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -937,7 +1172,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="state_authorizerid~csharp">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#state_authorizerid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -946,7 +1186,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Method</span>
+        <span id="state_httpmethod~csharp">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#state_httpmethod~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -955,7 +1200,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="state_requestmodels~csharp">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#state_requestmodels~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
@@ -966,7 +1216,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="state_requestparameters~csharp">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#state_requestparameters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, bool&gt;</span>
     </dt>
@@ -976,7 +1231,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Validator<wbr>Id</span>
+        <span id="state_requestvalidatorid~csharp">
+<span class="nx">
+Request<wbr>Validator<wbr>Id
+<a class="anchorjs-link " href="#state_requestvalidatorid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -985,7 +1245,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Id</span>
+        <span id="state_resourceid~csharp">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#state_resourceid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -994,7 +1259,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Rest<wbr>Api</span>
+        <span id="state_restapi~csharp">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#state_restapi~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1010,7 +1280,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Api<wbr>Key<wbr>Required</span>
+        <span id="state_apikeyrequired~go">
+<span class="nx">
+Api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#state_apikeyrequired~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1019,7 +1294,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization</span>
+        <span id="state_authorization~go">
+<span class="nx">
+Authorization
+<a class="anchorjs-link " href="#state_authorization~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1028,7 +1308,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorization<wbr>Scopes</span>
+        <span id="state_authorizationscopes~go">
+<span class="nx">
+Authorization<wbr>Scopes
+<a class="anchorjs-link " href="#state_authorizationscopes~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1037,7 +1322,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Authorizer<wbr>Id</span>
+        <span id="state_authorizerid~go">
+<span class="nx">
+Authorizer<wbr>Id
+<a class="anchorjs-link " href="#state_authorizerid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1046,7 +1336,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Http<wbr>Method</span>
+        <span id="state_httpmethod~go">
+<span class="nx">
+Http<wbr>Method
+<a class="anchorjs-link " href="#state_httpmethod~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1055,7 +1350,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Models</span>
+        <span id="state_requestmodels~go">
+<span class="nx">
+Request<wbr>Models
+<a class="anchorjs-link " href="#state_requestmodels~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
@@ -1066,7 +1366,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Parameters</span>
+        <span id="state_requestparameters~go">
+<span class="nx">
+Request<wbr>Parameters
+<a class="anchorjs-link " href="#state_requestparameters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]bool</span>
     </dt>
@@ -1076,7 +1381,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Request<wbr>Validator<wbr>Id</span>
+        <span id="state_requestvalidatorid~go">
+<span class="nx">
+Request<wbr>Validator<wbr>Id
+<a class="anchorjs-link " href="#state_requestvalidatorid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1085,7 +1395,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Resource<wbr>Id</span>
+        <span id="state_resourceid~go">
+<span class="nx">
+Resource<wbr>Id
+<a class="anchorjs-link " href="#state_resourceid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1094,7 +1409,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>Rest<wbr>Api</span>
+        <span id="state_restapi~go">
+<span class="nx">
+Rest<wbr>Api
+<a class="anchorjs-link " href="#state_restapi~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -1110,7 +1430,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>api<wbr>Key<wbr>Required</span>
+        <span id="state_apikeyrequired~nodejs">
+<span class="nx">
+api<wbr>Key<wbr>Required
+<a class="anchorjs-link " href="#state_apikeyrequired~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1119,7 +1444,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization</span>
+        <span id="state_authorization~nodejs">
+<span class="nx">
+authorization
+<a class="anchorjs-link " href="#state_authorization~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1128,7 +1458,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization<wbr>Scopes</span>
+        <span id="state_authorizationscopes~nodejs">
+<span class="nx">
+authorization<wbr>Scopes
+<a class="anchorjs-link " href="#state_authorizationscopes~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1137,7 +1472,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer<wbr>Id</span>
+        <span id="state_authorizerid~nodejs">
+<span class="nx">
+authorizer<wbr>Id
+<a class="anchorjs-link " href="#state_authorizerid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1146,7 +1486,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>http<wbr>Method</span>
+        <span id="state_httpmethod~nodejs">
+<span class="nx">
+http<wbr>Method
+<a class="anchorjs-link " href="#state_httpmethod~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1155,7 +1500,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Models</span>
+        <span id="state_requestmodels~nodejs">
+<span class="nx">
+request<wbr>Models
+<a class="anchorjs-link " href="#state_requestmodels~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
@@ -1166,7 +1516,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Parameters</span>
+        <span id="state_requestparameters~nodejs">
+<span class="nx">
+request<wbr>Parameters
+<a class="anchorjs-link " href="#state_requestparameters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: boolean}</span>
     </dt>
@@ -1176,7 +1531,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request<wbr>Validator<wbr>Id</span>
+        <span id="state_requestvalidatorid~nodejs">
+<span class="nx">
+request<wbr>Validator<wbr>Id
+<a class="anchorjs-link " href="#state_requestvalidatorid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1185,7 +1545,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource<wbr>Id</span>
+        <span id="state_resourceid~nodejs">
+<span class="nx">
+resource<wbr>Id
+<a class="anchorjs-link " href="#state_resourceid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1194,7 +1559,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>rest<wbr>Api</span>
+        <span id="state_restapi~nodejs">
+<span class="nx">
+rest<wbr>Api
+<a class="anchorjs-link " href="#state_restapi~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Rest<wbr>Api</span>
     </dt>
@@ -1210,7 +1580,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>api_<wbr>key_<wbr>required</span>
+        <span id="state_api_key_required~python">
+<span class="nx">
+api_<wbr>key_<wbr>required
+<a class="anchorjs-link " href="#state_api_key_required~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1219,7 +1594,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization</span>
+        <span id="state_authorization~python">
+<span class="nx">
+authorization
+<a class="anchorjs-link " href="#state_authorization~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1228,7 +1608,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorization_<wbr>scopes</span>
+        <span id="state_authorization_scopes~python">
+<span class="nx">
+authorization_<wbr>scopes
+<a class="anchorjs-link " href="#state_authorization_scopes~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1237,7 +1622,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>authorizer_<wbr>id</span>
+        <span id="state_authorizer_id~python">
+<span class="nx">
+authorizer_<wbr>id
+<a class="anchorjs-link " href="#state_authorizer_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1246,7 +1636,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>http_<wbr>method</span>
+        <span id="state_http_method~python">
+<span class="nx">
+http_<wbr>method
+<a class="anchorjs-link " href="#state_http_method~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1255,7 +1650,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>models</span>
+        <span id="state_request_models~python">
+<span class="nx">
+request_<wbr>models
+<a class="anchorjs-link " href="#state_request_models~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
@@ -1266,7 +1666,12 @@ and value is either `Error`, `Empty` (built-in models) or `aws.apigateway.Model`
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>parameters</span>
+        <span id="state_request_parameters~python">
+<span class="nx">
+request_<wbr>parameters
+<a class="anchorjs-link " href="#state_request_parameters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Boolean]</span>
     </dt>
@@ -1276,7 +1681,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>request_<wbr>validator_<wbr>id</span>
+        <span id="state_request_validator_id~python">
+<span class="nx">
+request_<wbr>validator_<wbr>id
+<a class="anchorjs-link " href="#state_request_validator_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1285,7 +1695,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>resource_<wbr>id</span>
+        <span id="state_resource_id~python">
+<span class="nx">
+resource_<wbr>id
+<a class="anchorjs-link " href="#state_resource_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1294,7 +1709,12 @@ For example: `request_parameters = {"method.request.header.X-Some-Header" = true
 
     <dt class="property-optional"
             title="Optional">
-        <span>rest_<wbr>api</span>
+        <span id="state_rest_api~python">
+<span class="nx">
+rest_<wbr>api
+<a class="anchorjs-link " href="#state_rest_api~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>

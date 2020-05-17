@@ -56,7 +56,7 @@ const cluster = pulumi.output(aws.cloudhsmv2.getCluster({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCluster<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudhsmv2/#GetClusterArgs">GetClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudhsmv2/#GetClusterResult">GetClusterResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getCluster<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudhsmv2/#GetClusterArgs">GetClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudhsmv2/#GetClusterResult">GetClusterResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -66,13 +66,16 @@ const cluster = pulumi.output(aws.cloudhsmv2.getCluster({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudhsmv2?tab=doc#LookupClusterArgs">LookupClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudhsmv2?tab=doc#LookupClusterResult">LookupClusterResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupCluster<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudhsmv2?tab=doc#LookupClusterArgs">LookupClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudhsmv2?tab=doc#LookupClusterResult">LookupClusterResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupCluster` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetCluster </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cloudhsmv2.GetClusterResult.html">GetClusterResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudHsmV2.GetClusterArgs.html">GetClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Cloudhsmv2.GetClusterResult.html">GetClusterResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudHsmV2.GetClusterArgs.html">GetClusterArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -87,7 +90,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Id</span>
+        <span id="clusterid~csharp">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -96,7 +104,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>State</span>
+        <span id="clusterstate~csharp">
+<span class="nx">
+Cluster<wbr>State
+<a class="anchorjs-link " href="#clusterstate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -112,7 +125,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Id</span>
+        <span id="clusterid~go">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -121,7 +139,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cluster<wbr>State</span>
+        <span id="clusterstate~go">
+<span class="nx">
+Cluster<wbr>State
+<a class="anchorjs-link " href="#clusterstate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -137,7 +160,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Id</span>
+        <span id="clusterid~nodejs">
+<span class="nx">
+cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -146,7 +174,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster<wbr>State</span>
+        <span id="clusterstate~nodejs">
+<span class="nx">
+cluster<wbr>State
+<a class="anchorjs-link " href="#clusterstate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -162,7 +195,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>cluster_<wbr>id</span>
+        <span id="cluster_id~python">
+<span class="nx">
+cluster_<wbr>id
+<a class="anchorjs-link " href="#cluster_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -171,7 +209,12 @@ The following arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>cluster_<wbr>state</span>
+        <span id="cluster_state~python">
+<span class="nx">
+cluster_<wbr>state
+<a class="anchorjs-link " href="#cluster_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -200,7 +243,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Certificates</span>
+        <span id="clustercertificates~csharp">
+<span class="nx">
+Cluster<wbr>Certificates
+<a class="anchorjs-link " href="#clustercertificates~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterclustercertificates">Get<wbr>Cluster<wbr>Cluster<wbr>Certificates</a></span>
     </dt>
@@ -215,7 +263,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Id</span>
+        <span id="clusterid~csharp">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -223,7 +276,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>State</span>
+        <span id="clusterstate~csharp">
+<span class="nx">
+Cluster<wbr>State
+<a class="anchorjs-link " href="#clusterstate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -231,7 +289,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -240,7 +303,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Security<wbr>Group<wbr>Id</span>
+        <span id="securitygroupid~csharp">
+<span class="nx">
+Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#securitygroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -249,7 +317,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Subnet<wbr>Ids</span>
+        <span id="subnetids~csharp">
+<span class="nx">
+Subnet<wbr>Ids
+<a class="anchorjs-link " href="#subnetids~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -258,7 +331,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~csharp">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -274,7 +352,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Certificates</span>
+        <span id="clustercertificates~go">
+<span class="nx">
+Cluster<wbr>Certificates
+<a class="anchorjs-link " href="#clustercertificates~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterclustercertificates">Get<wbr>Cluster<wbr>Cluster<wbr>Certificates</a></span>
     </dt>
@@ -289,7 +372,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>Id</span>
+        <span id="clusterid~go">
+<span class="nx">
+Cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -297,7 +385,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Cluster<wbr>State</span>
+        <span id="clusterstate~go">
+<span class="nx">
+Cluster<wbr>State
+<a class="anchorjs-link " href="#clusterstate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -305,7 +398,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -314,7 +412,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Security<wbr>Group<wbr>Id</span>
+        <span id="securitygroupid~go">
+<span class="nx">
+Security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#securitygroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -323,7 +426,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Subnet<wbr>Ids</span>
+        <span id="subnetids~go">
+<span class="nx">
+Subnet<wbr>Ids
+<a class="anchorjs-link " href="#subnetids~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -332,7 +440,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>Vpc<wbr>Id</span>
+        <span id="vpcid~go">
+<span class="nx">
+Vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -348,7 +461,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>cluster<wbr>Certificates</span>
+        <span id="clustercertificates~nodejs">
+<span class="nx">
+cluster<wbr>Certificates
+<a class="anchorjs-link " href="#clustercertificates~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterclustercertificates">Get<wbr>Cluster<wbr>Cluster<wbr>Certificates</a></span>
     </dt>
@@ -363,7 +481,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>cluster<wbr>Id</span>
+        <span id="clusterid~nodejs">
+<span class="nx">
+cluster<wbr>Id
+<a class="anchorjs-link " href="#clusterid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -371,7 +494,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>cluster<wbr>State</span>
+        <span id="clusterstate~nodejs">
+<span class="nx">
+cluster<wbr>State
+<a class="anchorjs-link " href="#clusterstate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -379,7 +507,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -388,7 +521,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>security<wbr>Group<wbr>Id</span>
+        <span id="securitygroupid~nodejs">
+<span class="nx">
+security<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#securitygroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -397,7 +535,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>subnet<wbr>Ids</span>
+        <span id="subnetids~nodejs">
+<span class="nx">
+subnet<wbr>Ids
+<a class="anchorjs-link " href="#subnetids~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -406,7 +549,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>vpc<wbr>Id</span>
+        <span id="vpcid~nodejs">
+<span class="nx">
+vpc<wbr>Id
+<a class="anchorjs-link " href="#vpcid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -422,7 +570,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>cluster_<wbr>certificates</span>
+        <span id="cluster_certificates~python">
+<span class="nx">
+cluster_<wbr>certificates
+<a class="anchorjs-link " href="#cluster_certificates~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterclustercertificates">Dict[Get<wbr>Cluster<wbr>Cluster<wbr>Certificates]</a></span>
     </dt>
@@ -437,7 +590,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>cluster_<wbr>id</span>
+        <span id="cluster_id~python">
+<span class="nx">
+cluster_<wbr>id
+<a class="anchorjs-link " href="#cluster_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -445,7 +603,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>cluster_<wbr>state</span>
+        <span id="cluster_state~python">
+<span class="nx">
+cluster_<wbr>state
+<a class="anchorjs-link " href="#cluster_state~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -453,7 +616,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -462,7 +630,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>security_<wbr>group_<wbr>id</span>
+        <span id="security_group_id~python">
+<span class="nx">
+security_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#security_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -471,7 +644,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>subnet_<wbr>ids</span>
+        <span id="subnet_ids~python">
+<span class="nx">
+subnet_<wbr>ids
+<a class="anchorjs-link " href="#subnet_ids~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -480,7 +658,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-"
             title="">
-        <span>vpc_<wbr>id</span>
+        <span id="vpc_id~python">
+<span class="nx">
+vpc_<wbr>id
+<a class="anchorjs-link " href="#vpc_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -520,7 +703,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Aws<wbr>Hardware<wbr>Certificate</span>
+        <span id="awshardwarecertificate~csharp">
+<span class="nx">
+Aws<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#awshardwarecertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -528,7 +716,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Certificate</span>
+        <span id="clustercertificate~csharp">
+<span class="nx">
+Cluster<wbr>Certificate
+<a class="anchorjs-link " href="#clustercertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -536,7 +729,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Csr</span>
+        <span id="clustercsr~csharp">
+<span class="nx">
+Cluster<wbr>Csr
+<a class="anchorjs-link " href="#clustercsr~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -544,7 +742,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Hsm<wbr>Certificate</span>
+        <span id="hsmcertificate~csharp">
+<span class="nx">
+Hsm<wbr>Certificate
+<a class="anchorjs-link " href="#hsmcertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -552,7 +755,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Manufacturer<wbr>Hardware<wbr>Certificate</span>
+        <span id="manufacturerhardwarecertificate~csharp">
+<span class="nx">
+Manufacturer<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#manufacturerhardwarecertificate~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -567,7 +775,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Aws<wbr>Hardware<wbr>Certificate</span>
+        <span id="awshardwarecertificate~go">
+<span class="nx">
+Aws<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#awshardwarecertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -575,7 +788,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Certificate</span>
+        <span id="clustercertificate~go">
+<span class="nx">
+Cluster<wbr>Certificate
+<a class="anchorjs-link " href="#clustercertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -583,7 +801,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Cluster<wbr>Csr</span>
+        <span id="clustercsr~go">
+<span class="nx">
+Cluster<wbr>Csr
+<a class="anchorjs-link " href="#clustercsr~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -591,7 +814,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Hsm<wbr>Certificate</span>
+        <span id="hsmcertificate~go">
+<span class="nx">
+Hsm<wbr>Certificate
+<a class="anchorjs-link " href="#hsmcertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -599,7 +827,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>Manufacturer<wbr>Hardware<wbr>Certificate</span>
+        <span id="manufacturerhardwarecertificate~go">
+<span class="nx">
+Manufacturer<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#manufacturerhardwarecertificate~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -614,7 +847,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>aws<wbr>Hardware<wbr>Certificate</span>
+        <span id="awshardwarecertificate~nodejs">
+<span class="nx">
+aws<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#awshardwarecertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -622,7 +860,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Certificate</span>
+        <span id="clustercertificate~nodejs">
+<span class="nx">
+cluster<wbr>Certificate
+<a class="anchorjs-link " href="#clustercertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -630,7 +873,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Csr</span>
+        <span id="clustercsr~nodejs">
+<span class="nx">
+cluster<wbr>Csr
+<a class="anchorjs-link " href="#clustercsr~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -638,7 +886,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>hsm<wbr>Certificate</span>
+        <span id="hsmcertificate~nodejs">
+<span class="nx">
+hsm<wbr>Certificate
+<a class="anchorjs-link " href="#hsmcertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -646,7 +899,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>manufacturer<wbr>Hardware<wbr>Certificate</span>
+        <span id="manufacturerhardwarecertificate~nodejs">
+<span class="nx">
+manufacturer<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#manufacturerhardwarecertificate~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -661,7 +919,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>aws<wbr>Hardware<wbr>Certificate</span>
+        <span id="awshardwarecertificate~python">
+<span class="nx">
+aws<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#awshardwarecertificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -669,7 +932,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Certificate</span>
+        <span id="clustercertificate~python">
+<span class="nx">
+cluster<wbr>Certificate
+<a class="anchorjs-link " href="#clustercertificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -677,7 +945,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>cluster<wbr>Csr</span>
+        <span id="clustercsr~python">
+<span class="nx">
+cluster<wbr>Csr
+<a class="anchorjs-link " href="#clustercsr~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -685,7 +958,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>hsm<wbr>Certificate</span>
+        <span id="hsmcertificate~python">
+<span class="nx">
+hsm<wbr>Certificate
+<a class="anchorjs-link " href="#hsmcertificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -693,7 +971,12 @@ The number of available cluster certificates may vary depending on state of the 
 
     <dt class="property-required"
             title="Required">
-        <span>manufacturer<wbr>Hardware<wbr>Certificate</span>
+        <span id="manufacturerhardwarecertificate~python">
+<span class="nx">
+manufacturer<wbr>Hardware<wbr>Certificate
+<a class="anchorjs-link " href="#manufacturerhardwarecertificate~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

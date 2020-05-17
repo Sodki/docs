@@ -282,19 +282,19 @@ const example = new aws.cloudtrail.Trail("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#Trail">Trail</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#TrailArgs">TrailArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#Trail">Trail</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#TrailArgs">TrailArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Trail</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cloud_watch_logs_group_arn=None<span class="p">, </span>cloud_watch_logs_role_arn=None<span class="p">, </span>enable_log_file_validation=None<span class="p">, </span>enable_logging=None<span class="p">, </span>event_selectors=None<span class="p">, </span>include_global_service_events=None<span class="p">, </span>is_multi_region_trail=None<span class="p">, </span>is_organization_trail=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>name=None<span class="p">, </span>s3_bucket_name=None<span class="p">, </span>s3_key_prefix=None<span class="p">, </span>sns_topic_name=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/cloudtrail/#Trail">Trail</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>cloud_watch_logs_group_arn=None<span class="p">, </span>cloud_watch_logs_role_arn=None<span class="p">, </span>enable_log_file_validation=None<span class="p">, </span>enable_logging=None<span class="p">, </span>event_selectors=None<span class="p">, </span>include_global_service_events=None<span class="p">, </span>is_multi_region_trail=None<span class="p">, </span>is_organization_trail=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>name=None<span class="p">, </span>s3_bucket_name=None<span class="p">, </span>s3_key_prefix=None<span class="p">, </span>sns_topic_name=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTrail<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailArgs">TrailArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">Trail</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">NewTrail</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailArgs">TrailArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">Trail</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.Trail.html">Trail</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.TrailArgs.html">TrailArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.Trail.html">Trail</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.TrailArgs.html">TrailArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -460,7 +460,12 @@ The Trail resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-required"
             title="Required">
-        <span>S3Bucket<wbr>Name</span>
+        <span id="s3bucketname~csharp">
+<span class="nx">
+S3Bucket<wbr>Name
+<a class="anchorjs-link " href="#s3bucketname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -469,7 +474,12 @@ The Trail resource accepts the following [input]({{< relref "/docs/intro/concept
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn</span>
+        <span id="cloudwatchlogsgrouparn~csharp">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchlogsgrouparn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -479,7 +489,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn</span>
+        <span id="cloudwatchlogsrolearn~csharp">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchlogsrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -489,7 +504,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Log<wbr>File<wbr>Validation</span>
+        <span id="enablelogfilevalidation~csharp">
+<span class="nx">
+Enable<wbr>Log<wbr>File<wbr>Validation
+<a class="anchorjs-link " href="#enablelogfilevalidation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -499,7 +519,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Logging</span>
+        <span id="enablelogging~csharp">
+<span class="nx">
+Enable<wbr>Logging
+<a class="anchorjs-link " href="#enablelogging~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -509,7 +534,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Selectors</span>
+        <span id="eventselectors~csharp">
+<span class="nx">
+Event<wbr>Selectors
+<a class="anchorjs-link " href="#eventselectors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List&lt;Trail<wbr>Event<wbr>Selector<wbr>Args&gt;</a></span>
     </dt>
@@ -518,7 +548,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Global<wbr>Service<wbr>Events</span>
+        <span id="includeglobalserviceevents~csharp">
+<span class="nx">
+Include<wbr>Global<wbr>Service<wbr>Events
+<a class="anchorjs-link " href="#includeglobalserviceevents~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -528,7 +563,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Multi<wbr>Region<wbr>Trail</span>
+        <span id="ismultiregiontrail~csharp">
+<span class="nx">
+Is<wbr>Multi<wbr>Region<wbr>Trail
+<a class="anchorjs-link " href="#ismultiregiontrail~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -538,7 +578,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Organization<wbr>Trail</span>
+        <span id="isorganizationtrail~csharp">
+<span class="nx">
+Is<wbr>Organization<wbr>Trail
+<a class="anchorjs-link " href="#isorganizationtrail~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -547,7 +592,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -556,7 +606,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -565,7 +620,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Key<wbr>Prefix</span>
+        <span id="s3keyprefix~csharp">
+<span class="nx">
+S3Key<wbr>Prefix
+<a class="anchorjs-link " href="#s3keyprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -575,7 +635,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sns<wbr>Topic<wbr>Name</span>
+        <span id="snstopicname~csharp">
+<span class="nx">
+Sns<wbr>Topic<wbr>Name
+<a class="anchorjs-link " href="#snstopicname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -585,7 +650,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -601,7 +671,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>S3Bucket<wbr>Name</span>
+        <span id="s3bucketname~go">
+<span class="nx">
+S3Bucket<wbr>Name
+<a class="anchorjs-link " href="#s3bucketname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -610,7 +685,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn</span>
+        <span id="cloudwatchlogsgrouparn~go">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchlogsgrouparn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -620,7 +700,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn</span>
+        <span id="cloudwatchlogsrolearn~go">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchlogsrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -630,7 +715,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Log<wbr>File<wbr>Validation</span>
+        <span id="enablelogfilevalidation~go">
+<span class="nx">
+Enable<wbr>Log<wbr>File<wbr>Validation
+<a class="anchorjs-link " href="#enablelogfilevalidation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -640,7 +730,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Logging</span>
+        <span id="enablelogging~go">
+<span class="nx">
+Enable<wbr>Logging
+<a class="anchorjs-link " href="#enablelogging~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -650,7 +745,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Selectors</span>
+        <span id="eventselectors~go">
+<span class="nx">
+Event<wbr>Selectors
+<a class="anchorjs-link " href="#eventselectors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">[]Trail<wbr>Event<wbr>Selector</a></span>
     </dt>
@@ -659,7 +759,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Global<wbr>Service<wbr>Events</span>
+        <span id="includeglobalserviceevents~go">
+<span class="nx">
+Include<wbr>Global<wbr>Service<wbr>Events
+<a class="anchorjs-link " href="#includeglobalserviceevents~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -669,7 +774,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Multi<wbr>Region<wbr>Trail</span>
+        <span id="ismultiregiontrail~go">
+<span class="nx">
+Is<wbr>Multi<wbr>Region<wbr>Trail
+<a class="anchorjs-link " href="#ismultiregiontrail~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -679,7 +789,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Organization<wbr>Trail</span>
+        <span id="isorganizationtrail~go">
+<span class="nx">
+Is<wbr>Organization<wbr>Trail
+<a class="anchorjs-link " href="#isorganizationtrail~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -688,7 +803,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -697,7 +817,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -706,7 +831,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Key<wbr>Prefix</span>
+        <span id="s3keyprefix~go">
+<span class="nx">
+S3Key<wbr>Prefix
+<a class="anchorjs-link " href="#s3keyprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -716,7 +846,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sns<wbr>Topic<wbr>Name</span>
+        <span id="snstopicname~go">
+<span class="nx">
+Sns<wbr>Topic<wbr>Name
+<a class="anchorjs-link " href="#snstopicname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -726,7 +861,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -742,7 +882,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>s3Bucket<wbr>Name</span>
+        <span id="s3bucketname~nodejs">
+<span class="nx">
+s3Bucket<wbr>Name
+<a class="anchorjs-link " href="#s3bucketname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -751,7 +896,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn</span>
+        <span id="cloudwatchlogsgrouparn~nodejs">
+<span class="nx">
+cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchlogsgrouparn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -761,7 +911,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn</span>
+        <span id="cloudwatchlogsrolearn~nodejs">
+<span class="nx">
+cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#cloudwatchlogsrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -771,7 +926,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Log<wbr>File<wbr>Validation</span>
+        <span id="enablelogfilevalidation~nodejs">
+<span class="nx">
+enable<wbr>Log<wbr>File<wbr>Validation
+<a class="anchorjs-link " href="#enablelogfilevalidation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -781,7 +941,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Logging</span>
+        <span id="enablelogging~nodejs">
+<span class="nx">
+enable<wbr>Logging
+<a class="anchorjs-link " href="#enablelogging~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -791,7 +956,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>event<wbr>Selectors</span>
+        <span id="eventselectors~nodejs">
+<span class="nx">
+event<wbr>Selectors
+<a class="anchorjs-link " href="#eventselectors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">Trail<wbr>Event<wbr>Selector[]</a></span>
     </dt>
@@ -800,7 +970,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Global<wbr>Service<wbr>Events</span>
+        <span id="includeglobalserviceevents~nodejs">
+<span class="nx">
+include<wbr>Global<wbr>Service<wbr>Events
+<a class="anchorjs-link " href="#includeglobalserviceevents~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -810,7 +985,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is<wbr>Multi<wbr>Region<wbr>Trail</span>
+        <span id="ismultiregiontrail~nodejs">
+<span class="nx">
+is<wbr>Multi<wbr>Region<wbr>Trail
+<a class="anchorjs-link " href="#ismultiregiontrail~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -820,7 +1000,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is<wbr>Organization<wbr>Trail</span>
+        <span id="isorganizationtrail~nodejs">
+<span class="nx">
+is<wbr>Organization<wbr>Trail
+<a class="anchorjs-link " href="#isorganizationtrail~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -829,7 +1014,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -838,7 +1028,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -847,7 +1042,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Key<wbr>Prefix</span>
+        <span id="s3keyprefix~nodejs">
+<span class="nx">
+s3Key<wbr>Prefix
+<a class="anchorjs-link " href="#s3keyprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -857,7 +1057,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sns<wbr>Topic<wbr>Name</span>
+        <span id="snstopicname~nodejs">
+<span class="nx">
+sns<wbr>Topic<wbr>Name
+<a class="anchorjs-link " href="#snstopicname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -867,7 +1072,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -883,7 +1093,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>s3_<wbr>bucket_<wbr>name</span>
+        <span id="s3_bucket_name~python">
+<span class="nx">
+s3_<wbr>bucket_<wbr>name
+<a class="anchorjs-link " href="#s3_bucket_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -892,7 +1107,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud_<wbr>watch_<wbr>logs_<wbr>group_<wbr>arn</span>
+        <span id="cloud_watch_logs_group_arn~python">
+<span class="nx">
+cloud_<wbr>watch_<wbr>logs_<wbr>group_<wbr>arn
+<a class="anchorjs-link " href="#cloud_watch_logs_group_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -902,7 +1122,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud_<wbr>watch_<wbr>logs_<wbr>role_<wbr>arn</span>
+        <span id="cloud_watch_logs_role_arn~python">
+<span class="nx">
+cloud_<wbr>watch_<wbr>logs_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#cloud_watch_logs_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -912,7 +1137,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>log_<wbr>file_<wbr>validation</span>
+        <span id="enable_log_file_validation~python">
+<span class="nx">
+enable_<wbr>log_<wbr>file_<wbr>validation
+<a class="anchorjs-link " href="#enable_log_file_validation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -922,7 +1152,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>logging</span>
+        <span id="enable_logging~python">
+<span class="nx">
+enable_<wbr>logging
+<a class="anchorjs-link " href="#enable_logging~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -932,7 +1167,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>event_<wbr>selectors</span>
+        <span id="event_selectors~python">
+<span class="nx">
+event_<wbr>selectors
+<a class="anchorjs-link " href="#event_selectors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List[Trail<wbr>Event<wbr>Selector]</a></span>
     </dt>
@@ -941,7 +1181,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include_<wbr>global_<wbr>service_<wbr>events</span>
+        <span id="include_global_service_events~python">
+<span class="nx">
+include_<wbr>global_<wbr>service_<wbr>events
+<a class="anchorjs-link " href="#include_global_service_events~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -951,7 +1196,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is_<wbr>multi_<wbr>region_<wbr>trail</span>
+        <span id="is_multi_region_trail~python">
+<span class="nx">
+is_<wbr>multi_<wbr>region_<wbr>trail
+<a class="anchorjs-link " href="#is_multi_region_trail~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -961,7 +1211,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is_<wbr>organization_<wbr>trail</span>
+        <span id="is_organization_trail~python">
+<span class="nx">
+is_<wbr>organization_<wbr>trail
+<a class="anchorjs-link " href="#is_organization_trail~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -970,7 +1225,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -979,7 +1239,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -988,7 +1253,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3_<wbr>key_<wbr>prefix</span>
+        <span id="s3_key_prefix~python">
+<span class="nx">
+s3_<wbr>key_<wbr>prefix
+<a class="anchorjs-link " href="#s3_key_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -998,7 +1268,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sns_<wbr>topic_<wbr>name</span>
+        <span id="sns_topic_name~python">
+<span class="nx">
+sns_<wbr>topic_<wbr>name
+<a class="anchorjs-link " href="#sns_topic_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1008,7 +1283,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1035,7 +1315,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1044,7 +1329,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Home<wbr>Region</span>
+        <span id="homeregion~csharp">
+<span class="nx">
+Home<wbr>Region
+<a class="anchorjs-link " href="#homeregion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1053,7 +1343,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1068,7 +1363,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Arn</span>
+        <span id="arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1077,7 +1377,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Home<wbr>Region</span>
+        <span id="homeregion~go">
+<span class="nx">
+Home<wbr>Region
+<a class="anchorjs-link " href="#homeregion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1086,7 +1391,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1101,7 +1411,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1110,7 +1425,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>home<wbr>Region</span>
+        <span id="homeregion~nodejs">
+<span class="nx">
+home<wbr>Region
+<a class="anchorjs-link " href="#homeregion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1119,7 +1439,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1134,7 +1459,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>arn</span>
+        <span id="arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1143,7 +1473,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>home_<wbr>region</span>
+        <span id="home_region~python">
+<span class="nx">
+home_<wbr>region
+<a class="anchorjs-link " href="#home_region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1152,7 +1487,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1173,7 +1513,7 @@ Get an existing Trail resource's state with the given name, ID, and optional ext
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#TrailState">TrailState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#Trail">Trail</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#TrailState">TrailState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudtrail/#Trail">Trail</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1181,11 +1521,11 @@ Get an existing Trail resource's state with the given name, ID, and optional ext
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTrail<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailState">TrailState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">Trail</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTrail<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#TrailState">TrailState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudtrail?tab=doc#Trail">Trail</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.Trail.html">Trail</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.TrailState.html">TrailState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.Trail.html">Trail</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudTrail.TrailState.html">TrailState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1293,7 +1633,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~csharp">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1302,7 +1647,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn</span>
+        <span id="state_cloudwatchlogsgrouparn~csharp">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#state_cloudwatchlogsgrouparn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1312,7 +1662,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn</span>
+        <span id="state_cloudwatchlogsrolearn~csharp">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_cloudwatchlogsrolearn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1322,7 +1677,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Log<wbr>File<wbr>Validation</span>
+        <span id="state_enablelogfilevalidation~csharp">
+<span class="nx">
+Enable<wbr>Log<wbr>File<wbr>Validation
+<a class="anchorjs-link " href="#state_enablelogfilevalidation~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1332,7 +1692,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Logging</span>
+        <span id="state_enablelogging~csharp">
+<span class="nx">
+Enable<wbr>Logging
+<a class="anchorjs-link " href="#state_enablelogging~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1342,7 +1707,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Selectors</span>
+        <span id="state_eventselectors~csharp">
+<span class="nx">
+Event<wbr>Selectors
+<a class="anchorjs-link " href="#state_eventselectors~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List&lt;Trail<wbr>Event<wbr>Selector<wbr>Args&gt;</a></span>
     </dt>
@@ -1351,7 +1721,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Home<wbr>Region</span>
+        <span id="state_homeregion~csharp">
+<span class="nx">
+Home<wbr>Region
+<a class="anchorjs-link " href="#state_homeregion~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1360,7 +1735,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Global<wbr>Service<wbr>Events</span>
+        <span id="state_includeglobalserviceevents~csharp">
+<span class="nx">
+Include<wbr>Global<wbr>Service<wbr>Events
+<a class="anchorjs-link " href="#state_includeglobalserviceevents~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1370,7 +1750,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Multi<wbr>Region<wbr>Trail</span>
+        <span id="state_ismultiregiontrail~csharp">
+<span class="nx">
+Is<wbr>Multi<wbr>Region<wbr>Trail
+<a class="anchorjs-link " href="#state_ismultiregiontrail~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1380,7 +1765,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Organization<wbr>Trail</span>
+        <span id="state_isorganizationtrail~csharp">
+<span class="nx">
+Is<wbr>Organization<wbr>Trail
+<a class="anchorjs-link " href="#state_isorganizationtrail~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1389,7 +1779,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~csharp">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1398,7 +1793,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1407,7 +1807,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Bucket<wbr>Name</span>
+        <span id="state_s3bucketname~csharp">
+<span class="nx">
+S3Bucket<wbr>Name
+<a class="anchorjs-link " href="#state_s3bucketname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1416,7 +1821,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Key<wbr>Prefix</span>
+        <span id="state_s3keyprefix~csharp">
+<span class="nx">
+S3Key<wbr>Prefix
+<a class="anchorjs-link " href="#state_s3keyprefix~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1426,7 +1836,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sns<wbr>Topic<wbr>Name</span>
+        <span id="state_snstopicname~csharp">
+<span class="nx">
+Sns<wbr>Topic<wbr>Name
+<a class="anchorjs-link " href="#state_snstopicname~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1436,7 +1851,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~csharp">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
@@ -1452,7 +1872,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Arn</span>
+        <span id="state_arn~go">
+<span class="nx">
+Arn
+<a class="anchorjs-link " href="#state_arn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1461,7 +1886,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn</span>
+        <span id="state_cloudwatchlogsgrouparn~go">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#state_cloudwatchlogsgrouparn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1471,7 +1901,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn</span>
+        <span id="state_cloudwatchlogsrolearn~go">
+<span class="nx">
+Cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_cloudwatchlogsrolearn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1481,7 +1916,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Log<wbr>File<wbr>Validation</span>
+        <span id="state_enablelogfilevalidation~go">
+<span class="nx">
+Enable<wbr>Log<wbr>File<wbr>Validation
+<a class="anchorjs-link " href="#state_enablelogfilevalidation~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1491,7 +1931,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Enable<wbr>Logging</span>
+        <span id="state_enablelogging~go">
+<span class="nx">
+Enable<wbr>Logging
+<a class="anchorjs-link " href="#state_enablelogging~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1501,7 +1946,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Event<wbr>Selectors</span>
+        <span id="state_eventselectors~go">
+<span class="nx">
+Event<wbr>Selectors
+<a class="anchorjs-link " href="#state_eventselectors~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">[]Trail<wbr>Event<wbr>Selector</a></span>
     </dt>
@@ -1510,7 +1960,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Home<wbr>Region</span>
+        <span id="state_homeregion~go">
+<span class="nx">
+Home<wbr>Region
+<a class="anchorjs-link " href="#state_homeregion~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1519,7 +1974,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Global<wbr>Service<wbr>Events</span>
+        <span id="state_includeglobalserviceevents~go">
+<span class="nx">
+Include<wbr>Global<wbr>Service<wbr>Events
+<a class="anchorjs-link " href="#state_includeglobalserviceevents~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1529,7 +1989,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Multi<wbr>Region<wbr>Trail</span>
+        <span id="state_ismultiregiontrail~go">
+<span class="nx">
+Is<wbr>Multi<wbr>Region<wbr>Trail
+<a class="anchorjs-link " href="#state_ismultiregiontrail~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1539,7 +2004,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Is<wbr>Organization<wbr>Trail</span>
+        <span id="state_isorganizationtrail~go">
+<span class="nx">
+Is<wbr>Organization<wbr>Trail
+<a class="anchorjs-link " href="#state_isorganizationtrail~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1548,7 +2018,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~go">
+<span class="nx">
+Kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1557,7 +2032,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1566,7 +2046,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Bucket<wbr>Name</span>
+        <span id="state_s3bucketname~go">
+<span class="nx">
+S3Bucket<wbr>Name
+<a class="anchorjs-link " href="#state_s3bucketname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1575,7 +2060,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>S3Key<wbr>Prefix</span>
+        <span id="state_s3keyprefix~go">
+<span class="nx">
+S3Key<wbr>Prefix
+<a class="anchorjs-link " href="#state_s3keyprefix~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1585,7 +2075,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Sns<wbr>Topic<wbr>Name</span>
+        <span id="state_snstopicname~go">
+<span class="nx">
+Sns<wbr>Topic<wbr>Name
+<a class="anchorjs-link " href="#state_snstopicname~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1595,7 +2090,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Tags</span>
+        <span id="state_tags~go">
+<span class="nx">
+Tags
+<a class="anchorjs-link " href="#state_tags~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
@@ -1611,7 +2111,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~nodejs">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1620,7 +2125,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn</span>
+        <span id="state_cloudwatchlogsgrouparn~nodejs">
+<span class="nx">
+cloud<wbr>Watch<wbr>Logs<wbr>Group<wbr>Arn
+<a class="anchorjs-link " href="#state_cloudwatchlogsgrouparn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1630,7 +2140,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn</span>
+        <span id="state_cloudwatchlogsrolearn~nodejs">
+<span class="nx">
+cloud<wbr>Watch<wbr>Logs<wbr>Role<wbr>Arn
+<a class="anchorjs-link " href="#state_cloudwatchlogsrolearn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1640,7 +2155,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Log<wbr>File<wbr>Validation</span>
+        <span id="state_enablelogfilevalidation~nodejs">
+<span class="nx">
+enable<wbr>Log<wbr>File<wbr>Validation
+<a class="anchorjs-link " href="#state_enablelogfilevalidation~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1650,7 +2170,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable<wbr>Logging</span>
+        <span id="state_enablelogging~nodejs">
+<span class="nx">
+enable<wbr>Logging
+<a class="anchorjs-link " href="#state_enablelogging~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1660,7 +2185,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>event<wbr>Selectors</span>
+        <span id="state_eventselectors~nodejs">
+<span class="nx">
+event<wbr>Selectors
+<a class="anchorjs-link " href="#state_eventselectors~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">Trail<wbr>Event<wbr>Selector[]</a></span>
     </dt>
@@ -1669,7 +2199,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>home<wbr>Region</span>
+        <span id="state_homeregion~nodejs">
+<span class="nx">
+home<wbr>Region
+<a class="anchorjs-link " href="#state_homeregion~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1678,7 +2213,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Global<wbr>Service<wbr>Events</span>
+        <span id="state_includeglobalserviceevents~nodejs">
+<span class="nx">
+include<wbr>Global<wbr>Service<wbr>Events
+<a class="anchorjs-link " href="#state_includeglobalserviceevents~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1688,7 +2228,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is<wbr>Multi<wbr>Region<wbr>Trail</span>
+        <span id="state_ismultiregiontrail~nodejs">
+<span class="nx">
+is<wbr>Multi<wbr>Region<wbr>Trail
+<a class="anchorjs-link " href="#state_ismultiregiontrail~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1698,7 +2243,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is<wbr>Organization<wbr>Trail</span>
+        <span id="state_isorganizationtrail~nodejs">
+<span class="nx">
+is<wbr>Organization<wbr>Trail
+<a class="anchorjs-link " href="#state_isorganizationtrail~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1707,7 +2257,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms<wbr>Key<wbr>Id</span>
+        <span id="state_kmskeyid~nodejs">
+<span class="nx">
+kms<wbr>Key<wbr>Id
+<a class="anchorjs-link " href="#state_kmskeyid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1716,7 +2271,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1725,7 +2285,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Bucket<wbr>Name</span>
+        <span id="state_s3bucketname~nodejs">
+<span class="nx">
+s3Bucket<wbr>Name
+<a class="anchorjs-link " href="#state_s3bucketname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1734,7 +2299,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3Key<wbr>Prefix</span>
+        <span id="state_s3keyprefix~nodejs">
+<span class="nx">
+s3Key<wbr>Prefix
+<a class="anchorjs-link " href="#state_s3keyprefix~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1744,7 +2314,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sns<wbr>Topic<wbr>Name</span>
+        <span id="state_snstopicname~nodejs">
+<span class="nx">
+sns<wbr>Topic<wbr>Name
+<a class="anchorjs-link " href="#state_snstopicname~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1754,7 +2329,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~nodejs">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
@@ -1770,7 +2350,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>arn</span>
+        <span id="state_arn~python">
+<span class="nx">
+arn
+<a class="anchorjs-link " href="#state_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1779,7 +2364,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud_<wbr>watch_<wbr>logs_<wbr>group_<wbr>arn</span>
+        <span id="state_cloud_watch_logs_group_arn~python">
+<span class="nx">
+cloud_<wbr>watch_<wbr>logs_<wbr>group_<wbr>arn
+<a class="anchorjs-link " href="#state_cloud_watch_logs_group_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1789,7 +2379,12 @@ that represents the log group to which CloudTrail logs will be delivered.
 
     <dt class="property-optional"
             title="Optional">
-        <span>cloud_<wbr>watch_<wbr>logs_<wbr>role_<wbr>arn</span>
+        <span id="state_cloud_watch_logs_role_arn~python">
+<span class="nx">
+cloud_<wbr>watch_<wbr>logs_<wbr>role_<wbr>arn
+<a class="anchorjs-link " href="#state_cloud_watch_logs_role_arn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1799,7 +2394,12 @@ endpoint to assume to write to a user’s log group.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>log_<wbr>file_<wbr>validation</span>
+        <span id="state_enable_log_file_validation~python">
+<span class="nx">
+enable_<wbr>log_<wbr>file_<wbr>validation
+<a class="anchorjs-link " href="#state_enable_log_file_validation~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1809,7 +2409,12 @@ Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>enable_<wbr>logging</span>
+        <span id="state_enable_logging~python">
+<span class="nx">
+enable_<wbr>logging
+<a class="anchorjs-link " href="#state_enable_logging~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1819,7 +2424,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>event_<wbr>selectors</span>
+        <span id="state_event_selectors~python">
+<span class="nx">
+event_<wbr>selectors
+<a class="anchorjs-link " href="#state_event_selectors~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselector">List[Trail<wbr>Event<wbr>Selector]</a></span>
     </dt>
@@ -1828,7 +2438,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>home_<wbr>region</span>
+        <span id="state_home_region~python">
+<span class="nx">
+home_<wbr>region
+<a class="anchorjs-link " href="#state_home_region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1837,7 +2452,12 @@ Setting this to `false` will pause logging.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include_<wbr>global_<wbr>service_<wbr>events</span>
+        <span id="state_include_global_service_events~python">
+<span class="nx">
+include_<wbr>global_<wbr>service_<wbr>events
+<a class="anchorjs-link " href="#state_include_global_service_events~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1847,7 +2467,12 @@ from global services such as IAM to the log files. Defaults to `true`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is_<wbr>multi_<wbr>region_<wbr>trail</span>
+        <span id="state_is_multi_region_trail~python">
+<span class="nx">
+is_<wbr>multi_<wbr>region_<wbr>trail
+<a class="anchorjs-link " href="#state_is_multi_region_trail~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1857,7 +2482,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>is_<wbr>organization_<wbr>trail</span>
+        <span id="state_is_organization_trail~python">
+<span class="nx">
+is_<wbr>organization_<wbr>trail
+<a class="anchorjs-link " href="#state_is_organization_trail~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1866,7 +2496,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>kms_<wbr>key_<wbr>id</span>
+        <span id="state_kms_key_id~python">
+<span class="nx">
+kms_<wbr>key_<wbr>id
+<a class="anchorjs-link " href="#state_kms_key_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1875,7 +2510,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1884,7 +2524,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3_<wbr>bucket_<wbr>name</span>
+        <span id="state_s3_bucket_name~python">
+<span class="nx">
+s3_<wbr>bucket_<wbr>name
+<a class="anchorjs-link " href="#state_s3_bucket_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1893,7 +2538,12 @@ region or in all regions. Defaults to `false`.
 
     <dt class="property-optional"
             title="Optional">
-        <span>s3_<wbr>key_<wbr>prefix</span>
+        <span id="state_s3_key_prefix~python">
+<span class="nx">
+s3_<wbr>key_<wbr>prefix
+<a class="anchorjs-link " href="#state_s3_key_prefix~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1903,7 +2553,12 @@ the name of the bucket you have designated for log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>sns_<wbr>topic_<wbr>name</span>
+        <span id="state_sns_topic_name~python">
+<span class="nx">
+sns_<wbr>topic_<wbr>name
+<a class="anchorjs-link " href="#state_sns_topic_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1913,7 +2568,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>tags</span>
+        <span id="state_tags~python">
+<span class="nx">
+tags
+<a class="anchorjs-link " href="#state_tags~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
@@ -1955,7 +2615,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Resources</span>
+        <span id="dataresources~csharp">
+<span class="nx">
+Data<wbr>Resources
+<a class="anchorjs-link " href="#dataresources~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">List&lt;Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource<wbr>Args&gt;</a></span>
     </dt>
@@ -1964,7 +2629,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Management<wbr>Events</span>
+        <span id="includemanagementevents~csharp">
+<span class="nx">
+Include<wbr>Management<wbr>Events
+<a class="anchorjs-link " href="#includemanagementevents~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1973,7 +2643,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Read<wbr>Write<wbr>Type</span>
+        <span id="readwritetype~csharp">
+<span class="nx">
+Read<wbr>Write<wbr>Type
+<a class="anchorjs-link " href="#readwritetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1989,7 +2664,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Data<wbr>Resources</span>
+        <span id="dataresources~go">
+<span class="nx">
+Data<wbr>Resources
+<a class="anchorjs-link " href="#dataresources~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">[]Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource</a></span>
     </dt>
@@ -1998,7 +2678,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Include<wbr>Management<wbr>Events</span>
+        <span id="includemanagementevents~go">
+<span class="nx">
+Include<wbr>Management<wbr>Events
+<a class="anchorjs-link " href="#includemanagementevents~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -2007,7 +2692,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Read<wbr>Write<wbr>Type</span>
+        <span id="readwritetype~go">
+<span class="nx">
+Read<wbr>Write<wbr>Type
+<a class="anchorjs-link " href="#readwritetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2023,7 +2713,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Resources</span>
+        <span id="dataresources~nodejs">
+<span class="nx">
+data<wbr>Resources
+<a class="anchorjs-link " href="#dataresources~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource[]</a></span>
     </dt>
@@ -2032,7 +2727,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Management<wbr>Events</span>
+        <span id="includemanagementevents~nodejs">
+<span class="nx">
+include<wbr>Management<wbr>Events
+<a class="anchorjs-link " href="#includemanagementevents~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -2041,7 +2741,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>read<wbr>Write<wbr>Type</span>
+        <span id="readwritetype~nodejs">
+<span class="nx">
+read<wbr>Write<wbr>Type
+<a class="anchorjs-link " href="#readwritetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2057,7 +2762,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>data<wbr>Resources</span>
+        <span id="dataresources~python">
+<span class="nx">
+data<wbr>Resources
+<a class="anchorjs-link " href="#dataresources~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#traileventselectordataresource">List[Trail<wbr>Event<wbr>Selector<wbr>Data<wbr>Resource]</a></span>
     </dt>
@@ -2066,7 +2776,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>include<wbr>Management<wbr>Events</span>
+        <span id="includemanagementevents~python">
+<span class="nx">
+include<wbr>Management<wbr>Events
+<a class="anchorjs-link " href="#includemanagementevents~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -2075,7 +2790,12 @@ defined for notification of log file delivery.
 
     <dt class="property-optional"
             title="Optional">
-        <span>read<wbr>Write<wbr>Type</span>
+        <span id="readwritetype~python">
+<span class="nx">
+read<wbr>Write<wbr>Type
+<a class="anchorjs-link " href="#readwritetype~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2109,7 +2829,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2118,7 +2843,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~csharp">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -2134,7 +2864,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2143,7 +2878,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>Values</span>
+        <span id="values~go">
+<span class="nx">
+Values
+<a class="anchorjs-link " href="#values~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -2159,7 +2899,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2168,7 +2913,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~nodejs">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -2184,7 +2934,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2193,7 +2948,12 @@ defined for notification of log file delivery.
 
     <dt class="property-required"
             title="Required">
-        <span>values</span>
+        <span id="values~python">
+<span class="nx">
+values
+<a class="anchorjs-link " href="#values~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>

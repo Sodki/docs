@@ -56,7 +56,7 @@ const bar = pulumi.output(aws.elasticache.getReplicationGroup({
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getReplicationGroup<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#GetReplicationGroupArgs">GetReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#GetReplicationGroupResult">GetReplicationGroupResult</a></span>></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getReplicationGroup<span class="p">(</span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#GetReplicationGroupArgs">GetReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/elasticache/#GetReplicationGroupResult">GetReplicationGroupResult</a></span>></span></code></pre></div>
 {{% /choosable %}}
 
 
@@ -66,13 +66,16 @@ const bar = pulumi.output(aws.elasticache.getReplicationGroup({
 
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupReplicationGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#LookupReplicationGroupArgs">LookupReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#LookupReplicationGroupResult">LookupReplicationGroupResult</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupReplicationGroup<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#LookupReplicationGroupArgs">LookupReplicationGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/elasticache?tab=doc#LookupReplicationGroupResult">LookupReplicationGroupResult</a></span>, error)</span></code></pre></div>
+
+> Note: This function is named `LookupReplicationGroup` in the Go SDK.
+
 {{% /choosable %}}
 
 
 {{% choosable language csharp %}}
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetReplicationGroup </span><span class="p">{</span><span class="k">
-    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Elasticache.GetReplicationGroupResult.html">GetReplicationGroupResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.GetReplicationGroupArgs.html">GetReplicationGroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
+    public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Elasticache.GetReplicationGroupResult.html">GetReplicationGroupResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.ElastiCache.GetReplicationGroupArgs.html">GetReplicationGroupArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
 {{% /choosable %}}
 
@@ -87,7 +90,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -103,7 +111,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -119,7 +132,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -135,7 +153,12 @@ The following arguments are supported:
 
     <dt class="property-required"
             title="Required">
-        <span>replication_<wbr>group_<wbr>id</span>
+        <span id="replication_group_id~python">
+<span class="nx">
+replication_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#replication_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -164,7 +187,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Auth<wbr>Token<wbr>Enabled</span>
+        <span id="authtokenenabled~csharp">
+<span class="nx">
+Auth<wbr>Token<wbr>Enabled
+<a class="anchorjs-link " href="#authtokenenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -173,7 +201,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="automaticfailoverenabled~csharp">
+<span class="nx">
+Automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#automaticfailoverenabled~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -182,7 +215,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="configurationendpointaddress~csharp">
+<span class="nx">
+Configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#configurationendpointaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -191,7 +229,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -200,7 +243,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Member<wbr>Clusters</span>
+        <span id="memberclusters~csharp">
+<span class="nx">
+Member<wbr>Clusters
+<a class="anchorjs-link " href="#memberclusters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -209,7 +257,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~csharp">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -218,7 +271,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Number<wbr>Cache<wbr>Clusters</span>
+        <span id="numbercacheclusters~csharp">
+<span class="nx">
+Number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#numbercacheclusters~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -227,7 +285,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Port</span>
+        <span id="port~csharp">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -236,7 +299,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Primary<wbr>Endpoint<wbr>Address</span>
+        <span id="primaryendpointaddress~csharp">
+<span class="nx">
+Primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#primaryendpointaddress~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -245,7 +313,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Replication<wbr>Group<wbr>Description</span>
+        <span id="replicationgroupdescription~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#replicationgroupdescription~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -254,7 +327,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~csharp">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -263,7 +341,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~csharp">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -272,7 +355,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Snapshot<wbr>Window</span>
+        <span id="snapshotwindow~csharp">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -288,7 +376,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Auth<wbr>Token<wbr>Enabled</span>
+        <span id="authtokenenabled~go">
+<span class="nx">
+Auth<wbr>Token<wbr>Enabled
+<a class="anchorjs-link " href="#authtokenenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -297,7 +390,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="automaticfailoverenabled~go">
+<span class="nx">
+Automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#automaticfailoverenabled~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -306,7 +404,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="configurationendpointaddress~go">
+<span class="nx">
+Configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#configurationendpointaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -315,7 +418,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -324,7 +432,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Member<wbr>Clusters</span>
+        <span id="memberclusters~go">
+<span class="nx">
+Member<wbr>Clusters
+<a class="anchorjs-link " href="#memberclusters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -333,7 +446,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Node<wbr>Type</span>
+        <span id="nodetype~go">
+<span class="nx">
+Node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -342,7 +460,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Number<wbr>Cache<wbr>Clusters</span>
+        <span id="numbercacheclusters~go">
+<span class="nx">
+Number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#numbercacheclusters~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -351,7 +474,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Port</span>
+        <span id="port~go">
+<span class="nx">
+Port
+<a class="anchorjs-link " href="#port~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -360,7 +488,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Primary<wbr>Endpoint<wbr>Address</span>
+        <span id="primaryendpointaddress~go">
+<span class="nx">
+Primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#primaryendpointaddress~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -369,7 +502,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Replication<wbr>Group<wbr>Description</span>
+        <span id="replicationgroupdescription~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#replicationgroupdescription~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -378,7 +516,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~go">
+<span class="nx">
+Replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -387,7 +530,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~go">
+<span class="nx">
+Snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -396,7 +544,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>Snapshot<wbr>Window</span>
+        <span id="snapshotwindow~go">
+<span class="nx">
+Snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -412,7 +565,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>auth<wbr>Token<wbr>Enabled</span>
+        <span id="authtokenenabled~nodejs">
+<span class="nx">
+auth<wbr>Token<wbr>Enabled
+<a class="anchorjs-link " href="#authtokenenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -421,7 +579,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>automatic<wbr>Failover<wbr>Enabled</span>
+        <span id="automaticfailoverenabled~nodejs">
+<span class="nx">
+automatic<wbr>Failover<wbr>Enabled
+<a class="anchorjs-link " href="#automaticfailoverenabled~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -430,7 +593,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>configuration<wbr>Endpoint<wbr>Address</span>
+        <span id="configurationendpointaddress~nodejs">
+<span class="nx">
+configuration<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#configurationendpointaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -439,7 +607,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -448,7 +621,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>member<wbr>Clusters</span>
+        <span id="memberclusters~nodejs">
+<span class="nx">
+member<wbr>Clusters
+<a class="anchorjs-link " href="#memberclusters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -457,7 +635,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>node<wbr>Type</span>
+        <span id="nodetype~nodejs">
+<span class="nx">
+node<wbr>Type
+<a class="anchorjs-link " href="#nodetype~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -466,7 +649,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>number<wbr>Cache<wbr>Clusters</span>
+        <span id="numbercacheclusters~nodejs">
+<span class="nx">
+number<wbr>Cache<wbr>Clusters
+<a class="anchorjs-link " href="#numbercacheclusters~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -475,7 +663,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>port</span>
+        <span id="port~nodejs">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -484,7 +677,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>primary<wbr>Endpoint<wbr>Address</span>
+        <span id="primaryendpointaddress~nodejs">
+<span class="nx">
+primary<wbr>Endpoint<wbr>Address
+<a class="anchorjs-link " href="#primaryendpointaddress~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -493,7 +691,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>replication<wbr>Group<wbr>Description</span>
+        <span id="replicationgroupdescription~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Description
+<a class="anchorjs-link " href="#replicationgroupdescription~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -502,7 +705,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>replication<wbr>Group<wbr>Id</span>
+        <span id="replicationgroupid~nodejs">
+<span class="nx">
+replication<wbr>Group<wbr>Id
+<a class="anchorjs-link " href="#replicationgroupid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -511,7 +719,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>snapshot<wbr>Retention<wbr>Limit</span>
+        <span id="snapshotretentionlimit~nodejs">
+<span class="nx">
+snapshot<wbr>Retention<wbr>Limit
+<a class="anchorjs-link " href="#snapshotretentionlimit~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -520,7 +733,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>snapshot<wbr>Window</span>
+        <span id="snapshotwindow~nodejs">
+<span class="nx">
+snapshot<wbr>Window
+<a class="anchorjs-link " href="#snapshotwindow~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -536,7 +754,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>auth_<wbr>token_<wbr>enabled</span>
+        <span id="auth_token_enabled~python">
+<span class="nx">
+auth_<wbr>token_<wbr>enabled
+<a class="anchorjs-link " href="#auth_token_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -545,7 +768,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>automatic_<wbr>failover_<wbr>enabled</span>
+        <span id="automatic_failover_enabled~python">
+<span class="nx">
+automatic_<wbr>failover_<wbr>enabled
+<a class="anchorjs-link " href="#automatic_failover_enabled~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -554,7 +782,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>configuration_<wbr>endpoint_<wbr>address</span>
+        <span id="configuration_endpoint_address~python">
+<span class="nx">
+configuration_<wbr>endpoint_<wbr>address
+<a class="anchorjs-link " href="#configuration_endpoint_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -563,7 +796,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -572,7 +810,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>member_<wbr>clusters</span>
+        <span id="member_clusters~python">
+<span class="nx">
+member_<wbr>clusters
+<a class="anchorjs-link " href="#member_clusters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -581,7 +824,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>node_<wbr>type</span>
+        <span id="node_type~python">
+<span class="nx">
+node_<wbr>type
+<a class="anchorjs-link " href="#node_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -590,7 +838,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>number_<wbr>cache_<wbr>clusters</span>
+        <span id="number_cache_clusters~python">
+<span class="nx">
+number_<wbr>cache_<wbr>clusters
+<a class="anchorjs-link " href="#number_cache_clusters~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -599,7 +852,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>port</span>
+        <span id="port~python">
+<span class="nx">
+port
+<a class="anchorjs-link " href="#port~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -608,7 +866,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>primary_<wbr>endpoint_<wbr>address</span>
+        <span id="primary_endpoint_address~python">
+<span class="nx">
+primary_<wbr>endpoint_<wbr>address
+<a class="anchorjs-link " href="#primary_endpoint_address~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -617,7 +880,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>replication_<wbr>group_<wbr>description</span>
+        <span id="replication_group_description~python">
+<span class="nx">
+replication_<wbr>group_<wbr>description
+<a class="anchorjs-link " href="#replication_group_description~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -626,7 +894,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>replication_<wbr>group_<wbr>id</span>
+        <span id="replication_group_id~python">
+<span class="nx">
+replication_<wbr>group_<wbr>id
+<a class="anchorjs-link " href="#replication_group_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -635,7 +908,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>snapshot_<wbr>retention_<wbr>limit</span>
+        <span id="snapshot_retention_limit~python">
+<span class="nx">
+snapshot_<wbr>retention_<wbr>limit
+<a class="anchorjs-link " href="#snapshot_retention_limit~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -644,7 +922,12 @@ The following output properties are available:
 
     <dt class="property-"
             title="">
-        <span>snapshot_<wbr>window</span>
+        <span id="snapshot_window~python">
+<span class="nx">
+snapshot_<wbr>window
+<a class="anchorjs-link " href="#snapshot_window~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>

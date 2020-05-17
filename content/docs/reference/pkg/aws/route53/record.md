@@ -244,19 +244,19 @@ const exampleRecord = new aws.route53.Record("example", {
 
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#Record">Record</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#RecordArgs">RecordArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#Record">Record</a></span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#RecordArgs">RecordArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Record</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>aliases=None<span class="p">, </span>allow_overwrite=None<span class="p">, </span>failover_routing_policies=None<span class="p">, </span>geolocation_routing_policies=None<span class="p">, </span>health_check_id=None<span class="p">, </span>latency_routing_policies=None<span class="p">, </span>multivalue_answer_routing_policy=None<span class="p">, </span>name=None<span class="p">, </span>records=None<span class="p">, </span>set_identifier=None<span class="p">, </span>ttl=None<span class="p">, </span>type=None<span class="p">, </span>weighted_routing_policies=None<span class="p">, </span>zone_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nx"><a href="/docs/reference/pkg/python/pulumi_aws/route53/#Record">Record</a></span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>aliases=None<span class="p">, </span>allow_overwrite=None<span class="p">, </span>failover_routing_policies=None<span class="p">, </span>geolocation_routing_policies=None<span class="p">, </span>health_check_id=None<span class="p">, </span>latency_routing_policies=None<span class="p">, </span>multivalue_answer_routing_policy=None<span class="p">, </span>name=None<span class="p">, </span>records=None<span class="p">, </span>set_identifier=None<span class="p">, </span>ttl=None<span class="p">, </span>type=None<span class="p">, </span>weighted_routing_policies=None<span class="p">, </span>zone_id=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRecord<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#RecordArgs">RecordArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#Record">Record</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#Record">NewRecord</a></span><span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#RecordArgs">RecordArgs</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#Record">Record</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.Record.html">Record</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.RecordArgs.html">RecordArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.Record.html">Record</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.RecordArgs.html">RecordArgs</a></span><span class="p"> </span><span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -422,7 +422,12 @@ The Record resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -431,7 +436,12 @@ The Record resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -440,7 +450,12 @@ The Record resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-required"
             title="Required">
-        <span>Zone<wbr>Id</span>
+        <span id="zoneid~csharp">
+<span class="nx">
+Zone<wbr>Id
+<a class="anchorjs-link " href="#zoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -449,7 +464,12 @@ The Record resource accepts the following [input]({{< relref "/docs/intro/concep
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="aliases~csharp">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#aliases~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">List&lt;Record<wbr>Alias<wbr>Args&gt;</a></span>
     </dt>
@@ -459,7 +479,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Overwrite</span>
+        <span id="allowoverwrite~csharp">
+<span class="nx">
+Allow<wbr>Overwrite
+<a class="anchorjs-link " href="#allowoverwrite~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -468,7 +493,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Failover<wbr>Routing<wbr>Policies</span>
+        <span id="failoverroutingpolicies~csharp">
+<span class="nx">
+Failover<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#failoverroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">List&lt;Record<wbr>Failover<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -477,7 +507,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Geolocation<wbr>Routing<wbr>Policies</span>
+        <span id="geolocationroutingpolicies~csharp">
+<span class="nx">
+Geolocation<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#geolocationroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">List&lt;Record<wbr>Geolocation<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -486,7 +521,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Health<wbr>Check<wbr>Id</span>
+        <span id="healthcheckid~csharp">
+<span class="nx">
+Health<wbr>Check<wbr>Id
+<a class="anchorjs-link " href="#healthcheckid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -495,7 +535,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Latency<wbr>Routing<wbr>Policies</span>
+        <span id="latencyroutingpolicies~csharp">
+<span class="nx">
+Latency<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#latencyroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">List&lt;Record<wbr>Latency<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -504,7 +549,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Multivalue<wbr>Answer<wbr>Routing<wbr>Policy</span>
+        <span id="multivalueanswerroutingpolicy~csharp">
+<span class="nx">
+Multivalue<wbr>Answer<wbr>Routing<wbr>Policy
+<a class="anchorjs-link " href="#multivalueanswerroutingpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -513,7 +563,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Records</span>
+        <span id="records~csharp">
+<span class="nx">
+Records
+<a class="anchorjs-link " href="#records~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -522,7 +577,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Set<wbr>Identifier</span>
+        <span id="setidentifier~csharp">
+<span class="nx">
+Set<wbr>Identifier
+<a class="anchorjs-link " href="#setidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -531,7 +591,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ttl</span>
+        <span id="ttl~csharp">
+<span class="nx">
+Ttl
+<a class="anchorjs-link " href="#ttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -540,7 +605,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Routing<wbr>Policies</span>
+        <span id="weightedroutingpolicies~csharp">
+<span class="nx">
+Weighted<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#weightedroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">List&lt;Record<wbr>Weighted<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -556,7 +626,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -565,7 +640,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -574,7 +654,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Zone<wbr>Id</span>
+        <span id="zoneid~go">
+<span class="nx">
+Zone<wbr>Id
+<a class="anchorjs-link " href="#zoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -583,7 +668,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="aliases~go">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#aliases~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">[]Record<wbr>Alias</a></span>
     </dt>
@@ -593,7 +683,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Overwrite</span>
+        <span id="allowoverwrite~go">
+<span class="nx">
+Allow<wbr>Overwrite
+<a class="anchorjs-link " href="#allowoverwrite~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -602,7 +697,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Failover<wbr>Routing<wbr>Policies</span>
+        <span id="failoverroutingpolicies~go">
+<span class="nx">
+Failover<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#failoverroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">[]Record<wbr>Failover<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -611,7 +711,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Geolocation<wbr>Routing<wbr>Policies</span>
+        <span id="geolocationroutingpolicies~go">
+<span class="nx">
+Geolocation<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#geolocationroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">[]Record<wbr>Geolocation<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -620,7 +725,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Health<wbr>Check<wbr>Id</span>
+        <span id="healthcheckid~go">
+<span class="nx">
+Health<wbr>Check<wbr>Id
+<a class="anchorjs-link " href="#healthcheckid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -629,7 +739,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Latency<wbr>Routing<wbr>Policies</span>
+        <span id="latencyroutingpolicies~go">
+<span class="nx">
+Latency<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#latencyroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">[]Record<wbr>Latency<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -638,7 +753,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Multivalue<wbr>Answer<wbr>Routing<wbr>Policy</span>
+        <span id="multivalueanswerroutingpolicy~go">
+<span class="nx">
+Multivalue<wbr>Answer<wbr>Routing<wbr>Policy
+<a class="anchorjs-link " href="#multivalueanswerroutingpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -647,7 +767,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Records</span>
+        <span id="records~go">
+<span class="nx">
+Records
+<a class="anchorjs-link " href="#records~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -656,7 +781,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Set<wbr>Identifier</span>
+        <span id="setidentifier~go">
+<span class="nx">
+Set<wbr>Identifier
+<a class="anchorjs-link " href="#setidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -665,7 +795,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ttl</span>
+        <span id="ttl~go">
+<span class="nx">
+Ttl
+<a class="anchorjs-link " href="#ttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -674,7 +809,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Routing<wbr>Policies</span>
+        <span id="weightedroutingpolicies~go">
+<span class="nx">
+Weighted<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#weightedroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">[]Record<wbr>Weighted<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -690,7 +830,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -699,7 +844,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Record<wbr>Type</span>
     </dt>
@@ -708,7 +858,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>zone<wbr>Id</span>
+        <span id="zoneid~nodejs">
+<span class="nx">
+zone<wbr>Id
+<a class="anchorjs-link " href="#zoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -717,7 +872,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="aliases~nodejs">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#aliases~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">Record<wbr>Alias[]</a></span>
     </dt>
@@ -727,7 +887,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Overwrite</span>
+        <span id="allowoverwrite~nodejs">
+<span class="nx">
+allow<wbr>Overwrite
+<a class="anchorjs-link " href="#allowoverwrite~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -736,7 +901,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>failover<wbr>Routing<wbr>Policies</span>
+        <span id="failoverroutingpolicies~nodejs">
+<span class="nx">
+failover<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#failoverroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">Record<wbr>Failover<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -745,7 +915,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>geolocation<wbr>Routing<wbr>Policies</span>
+        <span id="geolocationroutingpolicies~nodejs">
+<span class="nx">
+geolocation<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#geolocationroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">Record<wbr>Geolocation<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -754,7 +929,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>health<wbr>Check<wbr>Id</span>
+        <span id="healthcheckid~nodejs">
+<span class="nx">
+health<wbr>Check<wbr>Id
+<a class="anchorjs-link " href="#healthcheckid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -763,7 +943,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>latency<wbr>Routing<wbr>Policies</span>
+        <span id="latencyroutingpolicies~nodejs">
+<span class="nx">
+latency<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#latencyroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">Record<wbr>Latency<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -772,7 +957,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>multivalue<wbr>Answer<wbr>Routing<wbr>Policy</span>
+        <span id="multivalueanswerroutingpolicy~nodejs">
+<span class="nx">
+multivalue<wbr>Answer<wbr>Routing<wbr>Policy
+<a class="anchorjs-link " href="#multivalueanswerroutingpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -781,7 +971,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>records</span>
+        <span id="records~nodejs">
+<span class="nx">
+records
+<a class="anchorjs-link " href="#records~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -790,7 +985,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>set<wbr>Identifier</span>
+        <span id="setidentifier~nodejs">
+<span class="nx">
+set<wbr>Identifier
+<a class="anchorjs-link " href="#setidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -799,7 +999,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ttl</span>
+        <span id="ttl~nodejs">
+<span class="nx">
+ttl
+<a class="anchorjs-link " href="#ttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -808,7 +1013,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted<wbr>Routing<wbr>Policies</span>
+        <span id="weightedroutingpolicies~nodejs">
+<span class="nx">
+weighted<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#weightedroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">Record<wbr>Weighted<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -824,7 +1034,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -833,7 +1048,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -842,7 +1062,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>zone_<wbr>id</span>
+        <span id="zone_id~python">
+<span class="nx">
+zone_<wbr>id
+<a class="anchorjs-link " href="#zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -851,7 +1076,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="aliases~python">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#aliases~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">List[Record<wbr>Alias]</a></span>
     </dt>
@@ -861,7 +1091,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>overwrite</span>
+        <span id="allow_overwrite~python">
+<span class="nx">
+allow_<wbr>overwrite
+<a class="anchorjs-link " href="#allow_overwrite~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -870,7 +1105,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>failover_<wbr>routing_<wbr>policies</span>
+        <span id="failover_routing_policies~python">
+<span class="nx">
+failover_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#failover_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">List[Record<wbr>Failover<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -879,7 +1119,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>geolocation_<wbr>routing_<wbr>policies</span>
+        <span id="geolocation_routing_policies~python">
+<span class="nx">
+geolocation_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#geolocation_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">List[Record<wbr>Geolocation<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -888,7 +1133,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>health_<wbr>check_<wbr>id</span>
+        <span id="health_check_id~python">
+<span class="nx">
+health_<wbr>check_<wbr>id
+<a class="anchorjs-link " href="#health_check_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -897,7 +1147,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>latency_<wbr>routing_<wbr>policies</span>
+        <span id="latency_routing_policies~python">
+<span class="nx">
+latency_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#latency_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">List[Record<wbr>Latency<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -906,7 +1161,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>multivalue_<wbr>answer_<wbr>routing_<wbr>policy</span>
+        <span id="multivalue_answer_routing_policy~python">
+<span class="nx">
+multivalue_<wbr>answer_<wbr>routing_<wbr>policy
+<a class="anchorjs-link " href="#multivalue_answer_routing_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -915,7 +1175,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>records</span>
+        <span id="records~python">
+<span class="nx">
+records
+<a class="anchorjs-link " href="#records~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -924,7 +1189,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>set_<wbr>identifier</span>
+        <span id="set_identifier~python">
+<span class="nx">
+set_<wbr>identifier
+<a class="anchorjs-link " href="#set_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -933,7 +1203,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ttl</span>
+        <span id="ttl~python">
+<span class="nx">
+ttl
+<a class="anchorjs-link " href="#ttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -942,7 +1217,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted_<wbr>routing_<wbr>policies</span>
+        <span id="weighted_routing_policies~python">
+<span class="nx">
+weighted_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#weighted_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">List[Record<wbr>Weighted<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -969,7 +1249,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Fqdn</span>
+        <span id="fqdn~csharp">
+<span class="nx">
+Fqdn
+<a class="anchorjs-link " href="#fqdn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -978,7 +1263,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~csharp">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -993,7 +1283,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Fqdn</span>
+        <span id="fqdn~go">
+<span class="nx">
+Fqdn
+<a class="anchorjs-link " href="#fqdn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1002,7 +1297,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>Id</span>
+        <span id="id~go">
+<span class="nx">
+Id
+<a class="anchorjs-link " href="#id~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1017,7 +1317,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>fqdn</span>
+        <span id="fqdn~nodejs">
+<span class="nx">
+fqdn
+<a class="anchorjs-link " href="#fqdn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1026,7 +1331,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~nodejs">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1041,7 +1351,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>fqdn</span>
+        <span id="fqdn~python">
+<span class="nx">
+fqdn
+<a class="anchorjs-link " href="#fqdn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1050,7 +1365,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
     <dt class="property-"
             title="">
-        <span>id</span>
+        <span id="id~python">
+<span class="nx">
+id
+<a class="anchorjs-link " href="#id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1071,7 +1391,7 @@ Get an existing Record resource's state with the given name, ID, and optional ex
 {{< chooser language "typescript,python,go,csharp" / >}}
 
 {{% choosable language nodejs %}}
-<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#RecordState">RecordState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#Record">Record</a></span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p">:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#RecordState">RecordState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p">?:</span> <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/route53/#Record">Record</a></span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language python %}}
@@ -1079,11 +1399,11 @@ Get an existing Record resource's state with the given name, ID, and optional ex
 {{% /choosable %}}
 
 {{% choosable language go %}}
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRecord<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#RecordState">RecordState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#Record">Record</a></span>, error)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRecord<span class="p">(</span><span class="nx">ctx</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span><span class="p"> </span><span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span><span class="p"> </span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span><span class="p"> *</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#RecordState">RecordState</a></span><span class="p">, </span><span class="nx">opts</span><span class="p"> ...</span><span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/route53?tab=doc#Record">Record</a></span>, error)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language csharp %}}
-<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.Record.html">Record</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.RecordState.html">RecordState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.Record.html">Record</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span><span class="p"> </span><span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span><span class="p"> </span><span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Route53.RecordState.html">RecordState</a></span><span class="p">? </span><span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span><span class="p">? </span><span class="nx">opts = null<span class="p">)</span></code></pre></div>
 {{% /choosable %}}
 
 {{% choosable language nodejs %}}
@@ -1191,7 +1511,12 @@ The following state arguments are supported:
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="state_aliases~csharp">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#state_aliases~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">List&lt;Record<wbr>Alias<wbr>Args&gt;</a></span>
     </dt>
@@ -1201,7 +1526,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Overwrite</span>
+        <span id="state_allowoverwrite~csharp">
+<span class="nx">
+Allow<wbr>Overwrite
+<a class="anchorjs-link " href="#state_allowoverwrite~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1210,7 +1540,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Failover<wbr>Routing<wbr>Policies</span>
+        <span id="state_failoverroutingpolicies~csharp">
+<span class="nx">
+Failover<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_failoverroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">List&lt;Record<wbr>Failover<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -1219,7 +1554,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fqdn</span>
+        <span id="state_fqdn~csharp">
+<span class="nx">
+Fqdn
+<a class="anchorjs-link " href="#state_fqdn~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1228,7 +1568,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Geolocation<wbr>Routing<wbr>Policies</span>
+        <span id="state_geolocationroutingpolicies~csharp">
+<span class="nx">
+Geolocation<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_geolocationroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">List&lt;Record<wbr>Geolocation<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -1237,7 +1582,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Health<wbr>Check<wbr>Id</span>
+        <span id="state_healthcheckid~csharp">
+<span class="nx">
+Health<wbr>Check<wbr>Id
+<a class="anchorjs-link " href="#state_healthcheckid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1246,7 +1596,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Latency<wbr>Routing<wbr>Policies</span>
+        <span id="state_latencyroutingpolicies~csharp">
+<span class="nx">
+Latency<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_latencyroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">List&lt;Record<wbr>Latency<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -1255,7 +1610,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Multivalue<wbr>Answer<wbr>Routing<wbr>Policy</span>
+        <span id="state_multivalueanswerroutingpolicy~csharp">
+<span class="nx">
+Multivalue<wbr>Answer<wbr>Routing<wbr>Policy
+<a class="anchorjs-link " href="#state_multivalueanswerroutingpolicy~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1264,7 +1624,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1273,7 +1638,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Records</span>
+        <span id="state_records~csharp">
+<span class="nx">
+Records
+<a class="anchorjs-link " href="#state_records~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
@@ -1282,7 +1652,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Set<wbr>Identifier</span>
+        <span id="state_setidentifier~csharp">
+<span class="nx">
+Set<wbr>Identifier
+<a class="anchorjs-link " href="#state_setidentifier~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1291,7 +1666,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ttl</span>
+        <span id="state_ttl~csharp">
+<span class="nx">
+Ttl
+<a class="anchorjs-link " href="#state_ttl~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -1300,7 +1680,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="state_type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#state_type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
@@ -1309,7 +1694,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Routing<wbr>Policies</span>
+        <span id="state_weightedroutingpolicies~csharp">
+<span class="nx">
+Weighted<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_weightedroutingpolicies~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">List&lt;Record<wbr>Weighted<wbr>Routing<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
@@ -1318,7 +1708,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zone<wbr>Id</span>
+        <span id="state_zoneid~csharp">
+<span class="nx">
+Zone<wbr>Id
+<a class="anchorjs-link " href="#state_zoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1334,7 +1729,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Aliases</span>
+        <span id="state_aliases~go">
+<span class="nx">
+Aliases
+<a class="anchorjs-link " href="#state_aliases~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">[]Record<wbr>Alias</a></span>
     </dt>
@@ -1344,7 +1744,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Allow<wbr>Overwrite</span>
+        <span id="state_allowoverwrite~go">
+<span class="nx">
+Allow<wbr>Overwrite
+<a class="anchorjs-link " href="#state_allowoverwrite~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1353,7 +1758,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Failover<wbr>Routing<wbr>Policies</span>
+        <span id="state_failoverroutingpolicies~go">
+<span class="nx">
+Failover<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_failoverroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">[]Record<wbr>Failover<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -1362,7 +1772,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Fqdn</span>
+        <span id="state_fqdn~go">
+<span class="nx">
+Fqdn
+<a class="anchorjs-link " href="#state_fqdn~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1371,7 +1786,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Geolocation<wbr>Routing<wbr>Policies</span>
+        <span id="state_geolocationroutingpolicies~go">
+<span class="nx">
+Geolocation<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_geolocationroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">[]Record<wbr>Geolocation<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -1380,7 +1800,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Health<wbr>Check<wbr>Id</span>
+        <span id="state_healthcheckid~go">
+<span class="nx">
+Health<wbr>Check<wbr>Id
+<a class="anchorjs-link " href="#state_healthcheckid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1389,7 +1814,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Latency<wbr>Routing<wbr>Policies</span>
+        <span id="state_latencyroutingpolicies~go">
+<span class="nx">
+Latency<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_latencyroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">[]Record<wbr>Latency<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -1398,7 +1828,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Multivalue<wbr>Answer<wbr>Routing<wbr>Policy</span>
+        <span id="state_multivalueanswerroutingpolicy~go">
+<span class="nx">
+Multivalue<wbr>Answer<wbr>Routing<wbr>Policy
+<a class="anchorjs-link " href="#state_multivalueanswerroutingpolicy~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1407,7 +1842,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Name</span>
+        <span id="state_name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#state_name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1416,7 +1856,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Records</span>
+        <span id="state_records~go">
+<span class="nx">
+Records
+<a class="anchorjs-link " href="#state_records~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
@@ -1425,7 +1870,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Set<wbr>Identifier</span>
+        <span id="state_setidentifier~go">
+<span class="nx">
+Set<wbr>Identifier
+<a class="anchorjs-link " href="#state_setidentifier~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1434,7 +1884,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Ttl</span>
+        <span id="state_ttl~go">
+<span class="nx">
+Ttl
+<a class="anchorjs-link " href="#state_ttl~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -1443,7 +1898,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Type</span>
+        <span id="state_type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#state_type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
@@ -1452,7 +1912,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Weighted<wbr>Routing<wbr>Policies</span>
+        <span id="state_weightedroutingpolicies~go">
+<span class="nx">
+Weighted<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_weightedroutingpolicies~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">[]Record<wbr>Weighted<wbr>Routing<wbr>Policy</a></span>
     </dt>
@@ -1461,7 +1926,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Zone<wbr>Id</span>
+        <span id="state_zoneid~go">
+<span class="nx">
+Zone<wbr>Id
+<a class="anchorjs-link " href="#state_zoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1477,7 +1947,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="state_aliases~nodejs">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#state_aliases~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">Record<wbr>Alias[]</a></span>
     </dt>
@@ -1487,7 +1962,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow<wbr>Overwrite</span>
+        <span id="state_allowoverwrite~nodejs">
+<span class="nx">
+allow<wbr>Overwrite
+<a class="anchorjs-link " href="#state_allowoverwrite~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1496,7 +1976,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>failover<wbr>Routing<wbr>Policies</span>
+        <span id="state_failoverroutingpolicies~nodejs">
+<span class="nx">
+failover<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_failoverroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">Record<wbr>Failover<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -1505,7 +1990,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>fqdn</span>
+        <span id="state_fqdn~nodejs">
+<span class="nx">
+fqdn
+<a class="anchorjs-link " href="#state_fqdn~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1514,7 +2004,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>geolocation<wbr>Routing<wbr>Policies</span>
+        <span id="state_geolocationroutingpolicies~nodejs">
+<span class="nx">
+geolocation<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_geolocationroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">Record<wbr>Geolocation<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -1523,7 +2018,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>health<wbr>Check<wbr>Id</span>
+        <span id="state_healthcheckid~nodejs">
+<span class="nx">
+health<wbr>Check<wbr>Id
+<a class="anchorjs-link " href="#state_healthcheckid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1532,7 +2032,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>latency<wbr>Routing<wbr>Policies</span>
+        <span id="state_latencyroutingpolicies~nodejs">
+<span class="nx">
+latency<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_latencyroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">Record<wbr>Latency<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -1541,7 +2046,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>multivalue<wbr>Answer<wbr>Routing<wbr>Policy</span>
+        <span id="state_multivalueanswerroutingpolicy~nodejs">
+<span class="nx">
+multivalue<wbr>Answer<wbr>Routing<wbr>Policy
+<a class="anchorjs-link " href="#state_multivalueanswerroutingpolicy~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1550,7 +2060,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1559,7 +2074,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>records</span>
+        <span id="state_records~nodejs">
+<span class="nx">
+records
+<a class="anchorjs-link " href="#state_records~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
@@ -1568,7 +2088,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>set<wbr>Identifier</span>
+        <span id="state_setidentifier~nodejs">
+<span class="nx">
+set<wbr>Identifier
+<a class="anchorjs-link " href="#state_setidentifier~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1577,7 +2102,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ttl</span>
+        <span id="state_ttl~nodejs">
+<span class="nx">
+ttl
+<a class="anchorjs-link " href="#state_ttl~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -1586,7 +2116,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="state_type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#state_type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | Record<wbr>Type</span>
     </dt>
@@ -1595,7 +2130,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted<wbr>Routing<wbr>Policies</span>
+        <span id="state_weightedroutingpolicies~nodejs">
+<span class="nx">
+weighted<wbr>Routing<wbr>Policies
+<a class="anchorjs-link " href="#state_weightedroutingpolicies~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">Record<wbr>Weighted<wbr>Routing<wbr>Policy[]</a></span>
     </dt>
@@ -1604,7 +2144,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>zone<wbr>Id</span>
+        <span id="state_zoneid~nodejs">
+<span class="nx">
+zone<wbr>Id
+<a class="anchorjs-link " href="#state_zoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1620,7 +2165,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>aliases</span>
+        <span id="state_aliases~python">
+<span class="nx">
+aliases
+<a class="anchorjs-link " href="#state_aliases~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordalias">List[Record<wbr>Alias]</a></span>
     </dt>
@@ -1630,7 +2180,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>allow_<wbr>overwrite</span>
+        <span id="state_allow_overwrite~python">
+<span class="nx">
+allow_<wbr>overwrite
+<a class="anchorjs-link " href="#state_allow_overwrite~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1639,7 +2194,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>failover_<wbr>routing_<wbr>policies</span>
+        <span id="state_failover_routing_policies~python">
+<span class="nx">
+failover_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#state_failover_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordfailoverroutingpolicy">List[Record<wbr>Failover<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -1648,7 +2208,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>fqdn</span>
+        <span id="state_fqdn~python">
+<span class="nx">
+fqdn
+<a class="anchorjs-link " href="#state_fqdn~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1657,7 +2222,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>geolocation_<wbr>routing_<wbr>policies</span>
+        <span id="state_geolocation_routing_policies~python">
+<span class="nx">
+geolocation_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#state_geolocation_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordgeolocationroutingpolicy">List[Record<wbr>Geolocation<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -1666,7 +2236,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>health_<wbr>check_<wbr>id</span>
+        <span id="state_health_check_id~python">
+<span class="nx">
+health_<wbr>check_<wbr>id
+<a class="anchorjs-link " href="#state_health_check_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1675,7 +2250,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>latency_<wbr>routing_<wbr>policies</span>
+        <span id="state_latency_routing_policies~python">
+<span class="nx">
+latency_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#state_latency_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordlatencyroutingpolicy">List[Record<wbr>Latency<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -1684,7 +2264,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>multivalue_<wbr>answer_<wbr>routing_<wbr>policy</span>
+        <span id="state_multivalue_answer_routing_policy~python">
+<span class="nx">
+multivalue_<wbr>answer_<wbr>routing_<wbr>policy
+<a class="anchorjs-link " href="#state_multivalue_answer_routing_policy~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1693,7 +2278,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>name</span>
+        <span id="state_name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#state_name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1702,7 +2292,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>records</span>
+        <span id="state_records~python">
+<span class="nx">
+records
+<a class="anchorjs-link " href="#state_records~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
@@ -1711,7 +2306,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>set_<wbr>identifier</span>
+        <span id="state_set_identifier~python">
+<span class="nx">
+set_<wbr>identifier
+<a class="anchorjs-link " href="#state_set_identifier~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1720,7 +2320,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>ttl</span>
+        <span id="state_ttl~python">
+<span class="nx">
+ttl
+<a class="anchorjs-link " href="#state_ttl~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
@@ -1729,7 +2334,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>type</span>
+        <span id="state_type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#state_type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
@@ -1738,7 +2348,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>weighted_<wbr>routing_<wbr>policies</span>
+        <span id="state_weighted_routing_policies~python">
+<span class="nx">
+weighted_<wbr>routing_<wbr>policies
+<a class="anchorjs-link " href="#state_weighted_routing_policies~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#recordweightedroutingpolicy">List[Record<wbr>Weighted<wbr>Routing<wbr>Policy]</a></span>
     </dt>
@@ -1747,7 +2362,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>zone_<wbr>id</span>
+        <span id="state_zone_id~python">
+<span class="nx">
+zone_<wbr>id
+<a class="anchorjs-link " href="#state_zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1789,7 +2409,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Evaluate<wbr>Target<wbr>Health</span>
+        <span id="evaluatetargethealth~csharp">
+<span class="nx">
+Evaluate<wbr>Target<wbr>Health
+<a class="anchorjs-link " href="#evaluatetargethealth~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
@@ -1798,7 +2423,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~csharp">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1807,7 +2437,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Zone<wbr>Id</span>
+        <span id="zoneid~csharp">
+<span class="nx">
+Zone<wbr>Id
+<a class="anchorjs-link " href="#zoneid~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1823,7 +2458,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Evaluate<wbr>Target<wbr>Health</span>
+        <span id="evaluatetargethealth~go">
+<span class="nx">
+Evaluate<wbr>Target<wbr>Health
+<a class="anchorjs-link " href="#evaluatetargethealth~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
@@ -1832,7 +2472,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Name</span>
+        <span id="name~go">
+<span class="nx">
+Name
+<a class="anchorjs-link " href="#name~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1841,7 +2486,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Zone<wbr>Id</span>
+        <span id="zoneid~go">
+<span class="nx">
+Zone<wbr>Id
+<a class="anchorjs-link " href="#zoneid~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1857,7 +2507,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>evaluate<wbr>Target<wbr>Health</span>
+        <span id="evaluatetargethealth~nodejs">
+<span class="nx">
+evaluate<wbr>Target<wbr>Health
+<a class="anchorjs-link " href="#evaluatetargethealth~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
@@ -1866,7 +2521,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~nodejs">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1875,7 +2535,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>zone<wbr>Id</span>
+        <span id="zoneid~nodejs">
+<span class="nx">
+zone<wbr>Id
+<a class="anchorjs-link " href="#zoneid~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1891,7 +2556,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>evaluate<wbr>Target<wbr>Health</span>
+        <span id="evaluatetargethealth~python">
+<span class="nx">
+evaluate<wbr>Target<wbr>Health
+<a class="anchorjs-link " href="#evaluatetargethealth~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
@@ -1900,7 +2570,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>name</span>
+        <span id="name~python">
+<span class="nx">
+name
+<a class="anchorjs-link " href="#name~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1909,7 +2584,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>zone_<wbr>id</span>
+        <span id="zone_id~python">
+<span class="nx">
+zone_<wbr>id
+<a class="anchorjs-link " href="#zone_id~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -1943,7 +2623,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~csharp">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -1959,7 +2644,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Type</span>
+        <span id="type~go">
+<span class="nx">
+Type
+<a class="anchorjs-link " href="#type~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -1975,7 +2665,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~nodejs">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -1991,7 +2686,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>type</span>
+        <span id="type~python">
+<span class="nx">
+type
+<a class="anchorjs-link " href="#type~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2025,7 +2725,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Continent</span>
+        <span id="continent~csharp">
+<span class="nx">
+Continent
+<a class="anchorjs-link " href="#continent~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2034,7 +2739,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Country</span>
+        <span id="country~csharp">
+<span class="nx">
+Country
+<a class="anchorjs-link " href="#country~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2043,7 +2753,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subdivision</span>
+        <span id="subdivision~csharp">
+<span class="nx">
+Subdivision
+<a class="anchorjs-link " href="#subdivision~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2059,7 +2774,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Continent</span>
+        <span id="continent~go">
+<span class="nx">
+Continent
+<a class="anchorjs-link " href="#continent~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2068,7 +2788,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Country</span>
+        <span id="country~go">
+<span class="nx">
+Country
+<a class="anchorjs-link " href="#country~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2077,7 +2802,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>Subdivision</span>
+        <span id="subdivision~go">
+<span class="nx">
+Subdivision
+<a class="anchorjs-link " href="#subdivision~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2093,7 +2823,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>continent</span>
+        <span id="continent~nodejs">
+<span class="nx">
+continent
+<a class="anchorjs-link " href="#continent~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2102,7 +2837,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>country</span>
+        <span id="country~nodejs">
+<span class="nx">
+country
+<a class="anchorjs-link " href="#country~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2111,7 +2851,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subdivision</span>
+        <span id="subdivision~nodejs">
+<span class="nx">
+subdivision
+<a class="anchorjs-link " href="#subdivision~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2127,7 +2872,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>continent</span>
+        <span id="continent~python">
+<span class="nx">
+continent
+<a class="anchorjs-link " href="#continent~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2136,7 +2886,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>country</span>
+        <span id="country~python">
+<span class="nx">
+country
+<a class="anchorjs-link " href="#country~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2145,7 +2900,12 @@ Alias record documented below.
 
     <dt class="property-optional"
             title="Optional">
-        <span>subdivision</span>
+        <span id="subdivision~python">
+<span class="nx">
+subdivision
+<a class="anchorjs-link " href="#subdivision~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2179,7 +2939,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Region</span>
+        <span id="region~csharp">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
@@ -2195,7 +2960,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Region</span>
+        <span id="region~go">
+<span class="nx">
+Region
+<a class="anchorjs-link " href="#region~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
@@ -2211,7 +2981,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>region</span>
+        <span id="region~nodejs">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
@@ -2227,7 +3002,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>region</span>
+        <span id="region~python">
+<span class="nx">
+region
+<a class="anchorjs-link " href="#region~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
@@ -2261,7 +3041,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Weight</span>
+        <span id="weight~csharp">
+<span class="nx">
+Weight
+<a class="anchorjs-link " href="#weight~csharp" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
@@ -2277,7 +3062,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>Weight</span>
+        <span id="weight~go">
+<span class="nx">
+Weight
+<a class="anchorjs-link " href="#weight~go" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
@@ -2293,7 +3083,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>weight</span>
+        <span id="weight~nodejs">
+<span class="nx">
+weight
+<a class="anchorjs-link " href="#weight~nodejs" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
@@ -2309,7 +3104,12 @@ Alias record documented below.
 
     <dt class="property-required"
             title="Required">
-        <span>weight</span>
+        <span id="weight~python">
+<span class="nx">
+weight
+<a class="anchorjs-link " href="#weight~python" aria-label="Anchor" data-anchorjs-icon="" style="font: 1em / 1 anchorjs-icons;padding-left: 0.375em;"></a>
+</span>
+</span> 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
